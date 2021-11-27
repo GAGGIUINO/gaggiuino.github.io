@@ -53,7 +53,7 @@
 ***
 ### Mod in operation:
 <div align="center">
-<div align="left">**WARMUP:**</div>
+**WARMUP:**
 <video width="320" height="240" controls>
   <source src="https://user-images.githubusercontent.com/42692077/143676550-4e1284ea-8d00-4317-bc0e-6a00d9153400.mp4" type="video/mp4">
 Your browser does not support the video tag.
@@ -62,17 +62,17 @@ Your browser does not support the video tag.
   <source src="https://user-images.githubusercontent.com/42692077/143675667-df061080-e474-4967-9907-e938d678861e.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-<div align="left">**Brew mode:**</div>
+**Brew mode:**
 <video width="320" height="240" controls>
   <source src="https://user-images.githubusercontent.com/42692077/139340155-a3739359-33e1-423f-9ecf-10836f9446de.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-<div align="left">**Steaming mode:**</div>   
+**Steaming mode:**
 <video width="320" height="240" controls>
   <source src="https://user-images.githubusercontent.com/42692077/139340240-0602f792-8052-4ba4-96f8-e54d31add210.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-<div align="left">**Flush:**</div> 
+**Flush:**
 <video width="320" height="240" controls>
   <source src="https://user-images.githubusercontent.com/42692077/139340295-698b1392-94cd-418b-8a63-222a4390aed5.mp4" type="video/mp4">
 Your browser does not support the video tag.
