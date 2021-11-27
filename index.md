@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Gaggiuino](/images/GAGGIUINO_LOGO_transp.png)](https://github.com/Zer0-bit/gaggiuino)
+![Gaggiuino](/images/GAGGIUINO_LOGO_transp.png)
 </div>
 
 
