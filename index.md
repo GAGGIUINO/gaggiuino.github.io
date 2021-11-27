@@ -78,7 +78,7 @@ Your browser does not support the video tag.
   <source src="https://user-images.githubusercontent.com/42692077/139340240-0602f792-8052-4ba4-96f8-e54d31add210.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-</di>
+</div>
 **Flush:**
 <div class="column 5" align="center">
 <video width="320" height="240" controls>
