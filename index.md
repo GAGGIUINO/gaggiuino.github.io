@@ -295,9 +295,6 @@ First let's check that the setup works as expected while outside the machine so 
   
    **Dimmer high voltage circuit control ports will act as a passthrough for the pump positive circuit wire**
 
-
-### Now I won't be explaining every single detail, as always with such projects common sense should be applied at all times, it's expected people doing such sort of modifications will have some basic understanding. ###
-
 >*AGAIN!!! Triple check your machine is disconnected from any power sources, even better just pull the power cable out of it!*
 
 #### BASE FUNCTIONALITY
