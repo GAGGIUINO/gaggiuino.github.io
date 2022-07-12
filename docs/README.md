@@ -136,7 +136,7 @@ _Descaling should be done with a blind basket in the pf and the pf locked in the
    * [cloudcraft3d.com](https://craftcloud3d.com/)
 
 
-# Gaggia Classic
+# **Gaggia Classic**
 
 ## **REQUIREMENTS** 
 ### **Software requirements:**
@@ -392,7 +392,7 @@ So you end up having them connected like this:
   ![New Project (12)](https://user-images.githubusercontent.com/42692077/146647809-970c0ccd-47c6-430c-9c71-9b651bab4bf4.png)
 
 
-#
+# **Gaggia Classic PRO (New Classic)**
 
 
 ## 1.0 PROJECT REQUIREMENTS
