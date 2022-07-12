@@ -3,43 +3,45 @@
 **_Documentation contributors:_**
 * [mr.toor](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 * [Samir Kouider](https://github.com/samirkouider)
+
 # Features / Completeness 
+**BASE:**
+- [x] Integrated Housings - **credits** [![I'm on Reddit](https://img.shields.io/reddit/user-karma/combined/LikeableBump1?style=social)](https://www.reddit.com/user/LikeableBump1 "I'm on Reddit")
+- [x] Customised UI/UX - **credits** [![I'm on Reddit](https://img.shields.io/reddit/user-karma/combined/different-wishbone81?style=social)](https://www.reddit.com/user/different-wishbone81 "I'm on Reddit")
+- [x] Brew/Steam temp control
+- [x] Shot timer
+- [x] Graphing
+- [x] Realtime values update/save
 
-- [x] [Housing](https://www.thingiverse.com/thing:4949471) - **credits** [![I'm on Reddit](https://img.shields.io/reddit/user-karma/combined/LikeableBump1?style=social)](https://www.reddit.com/user/LikeableBump1 "I'm on Reddit")
-- [x] UI/UX - **credits** [![I'm on Reddit](https://img.shields.io/reddit/user-karma/combined/different-wishbone81?style=social)](https://www.reddit.com/user/different-wishbone81 "I'm on Reddit")
-- [x] Temp control
-- [x] Steam control and alerting
-- [x] Preinfusion
-- [x] Realtime pressure feedback
-- [x] Pressure profiling (realtime feedback loop)
+**EXTENDED:**
+- [x] Pre-infusion
+- [x] Pressure profiling
 - [x] Manual pressure control
-- [x] Graphing shot stats
-- [x] Realtime values update
-- [x] Saving selected values
 - [x] Descale program
-- [x] Brew start sense
-- [x] Auto shot timer
-- [ ] Tray integrated load cells - WIP ~55%
+- [x] Integrated scales
 - [ ] Saving/Loading profiles
+- [ ] Web interface
+- [ ] OTA updates
+- [ ] Advanced Flow control
 
-# Mod in operation:
-[![Video](https://img.youtube.com/vi/hpxB1Q6AFkY/maxresdefault.jpg)](https://www.youtube.com/watch?v=hpxB1Q6AFkY)
+# Community speaks:
+[![Video](https://img.youtube.com/vi/MxPNQRCxQZc/maxresdefault.jpg)](https://youtu.be/MxPNQRCxQZc)
 
 ***USAGE:***
 
  * **BOILER**      - sets the desired temperature at the boiler level
  * **OFFSET**      - sets the offset value used to calculate the real water temperature
  * **HPWR**        - sets the relay start pulse length
- * **M.C.DIV**     - sets the main cycle divider(aka non brew heating beahaviour), used in conjunction with HPWR
+ * **M.C.DIV**     - sets the main cycle divider(aka non brew heating behaviour), used in conjunction with HPWR
  * **B.C.DIV**     - sets the brew cycle divider
  * **Brew(Auto)**  - all pressure settings are following the bellow:
-   * PREINFUSION - enables preinfusion
+   * PREINFUSION - enables pre-infusion
      * Time       - sets the length of the PI phase
-     * Bar        - sets the max reacheable pressure for the PI phase
+     * Bar        - sets the max reachable pressure for the PI phase
      * Soak       - sets the length of the soaking(blooming) phase
    * P-PROFILING - enables AUTO pressure profiling mode
      * Start      - sets the desired starting point  of the PP phase, can be High->Low or Low->High.
-     * Finish     - sets the desired finish point of the PP pahse, same as above can be from High->Low or Low->High.
+     * Finish     - sets the desired finish point of the PP phase, same as above can be from High->Low or Low->High.
      * Hold       - sets the length of the PP hold period, if it's desired to maintain the "Start" pressure for a period of time before the pressure drop/raise is applied this is where it's done.
      * Length     - sets the length(aka speed) of the PP drop/raise behaviour, so one can change the pressure slow or fast if desired.
  * **Brew(Manual)** - allows for manual pressure control at brew time.
@@ -48,22 +50,17 @@
          flush - 10s x5 at 2bar
          flush - 20s x5 at 1 bar
          idle  - 5min at 0 bar
+_Descaling should be done with a blind basket in the pf and the pf locked in the group, steam valve open for the water to flow in a separate reservoir and water tank fully loaded with water mixed with descale solution._
+ 
 
-# **PROJECT REQUIREMENTS**
+# **Deprecations:**
+* NANO Development:
+> Arduino NANO based development has reached EOL, if it's feature set is enough for your needs grab the code from [release-nano-final](https://github.com/Zer0-bit/gaggiuino/releases/tag/release-nano-final-v2)
+* Pressure control:
+> Pump actuation was switched form PWM to PSM and as a result, if PWM is preferred then **release-0.2.2** is the one to stay on. Static pressure control is only possible by using PWM as a result if there are no pressure sensing devices installed it's advised to stay on PWM. 
 
-* **9bar** OPV: 
-> This can be done either by purchasing the 9bar spring or cutting down the original until you get 9bar reading from a pressure gauge.
-
-* Region Power:
-> Select your regional power setting, this is needed so the code loads the correct pump calibration array.
-
-* Deprecations:
-  * **ACS712**
-  > As of **release-0.2.3** the hall effect sensor was deprecated due to it's unstable work and configuration complexity, it is highly recommended to update to the optocoupler board that took it's place as not doing that means being stuck on **realeas-0.2.2** feature set.
-
-Below is a pic of the mod with all the components excluding the pressure transducer and load cells.
-
-![image](https://user-images.githubusercontent.com/53577819/154987765-a7e13895-e669-41cf-925c-8b7895a8d6cc.jpg)
+* **ACS712**
+> As of **release-0.2.3** the hall effect sensor was deprecated due to it's unstable work and configuration complexity, it is highly recommended to update to the optocoupler board that took it's place as not doing that means being stuck on **realeas-0.2.2** feature set.
 
 # TIMELINE
 ## Initial
