@@ -124,11 +124,12 @@
 5. Check all other settings save correctly.
 6. Record your first shot. Post this to [#first-shot](https://discord.com/channels/890339612441063494/910972035205857320) on Discord.
 
-# **Bill of Materials**
-***The code has been designed to be plugable, meaning there is a minimal hardware configuration one can start with if certain features are not something of interest, it's all appropriately split under "BASE" or "EXTENDED" functionality (see bellow).***
+# Bill of Materials
 
-#### **BASE FUNCTIONALITY** 
-***
+The code has been designed to be plugable, meaning there is a minimal hardware configuration one can start with if certain features are not something of interest, it's all appropriately split under "BASE" or "EXTENDED" functionality (see below).
+
+## BASE FUNCTIONALITY
+
 * [Arduino Nano AT328](https://bit.ly/3eXSfXZ)
   * [Arduino Nano expansion board](https://www.aliexpress.com/item/32831772475.html?spm=a2g0o.store_pc_allProduct.8148356.21.7ed173b9bTMew3)
 * [2.4" Nextion LCD](https://bit.ly/3CAUzPj)
@@ -140,30 +141,33 @@
 * Power Supply:
   * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html) and [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl) (these two should only be used together)
 
-#### **EXTENDED FUNCTIONALITY**
-***
+## EXTENDED FUNCTIONALITY
+
 * [RobotDYN dimmer module - Dimmer 4A-400V ](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-* **GC specific:**
-  * [Fitting - 6-02/PCF ](https://www.aliexpress.com/item/4001338642124.html)
-  * [Transducer Fitting - 6mm/PE](https://www.aliexpress.com/item/4001338085412.html)
-  * [Hose - 6x4 - 1 meter](https://www.aliexpress.com/item/4000383354010.html)
-  * [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html)
-* **GCP specific:**
-  * [Hose - 4mm x 9mm](https://www.aliexpress.com/item/1005003157483270.html)
-  * [Transducer Fitting - 6mm x 1/4](https://www.aliexpress.com/item/33059380672.html)
-  * [T-fitting - 6mm](https://www.aliexpress.com/item/1005002749996345.html)
-  * [Clamps - 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html)
 
+### Gaggia Classic-specific
 
+* [Fitting - 6-02/PCF ](https://www.aliexpress.com/item/4001338642124.html)
+* [Transducer Fitting - 6mm/PE](https://www.aliexpress.com/item/4001338085412.html)
+* [Hose - 6x4 - 1 meter](https://www.aliexpress.com/item/4000383354010.html)
+* [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html)
 
-#### **Housing variants:**
- * [Gaggiuino v1](https://www.thingiverse.com/thing:4949471)
- * [Gaggiuino v2](https://www.thingiverse.com/thing:5236286)
+### Gaggia Classic Pro-specific
 
- **Cheap services to order the prints if not owning a printer:**
-   * [cloudcraft3d.com](https://craftcloud3d.com/)
+* [Hose - 4mm x 9mm](https://www.aliexpress.com/item/1005003157483270.html)
+* [Transducer Fitting - 6mm x 1/4](https://www.aliexpress.com/item/33059380672.html)
+* [T-fitting - 6mm](https://www.aliexpress.com/item/1005002749996345.html)
+* [Clamps - 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html)
 
+### Gaggiuino Housing
+
+* [Gaggiuino v1](https://www.thingiverse.com/thing:4949471)
+* [Gaggiuino v2](https://www.thingiverse.com/thing:5236286)
+
+**Cheap services to order the prints if not owning a printer:**
+
+* [cloudcraft3d.com](https://craftcloud3d.com/)
 
 # **Gaggia Classic**
 
