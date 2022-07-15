@@ -29,7 +29,7 @@
     >*USB driver so your system recognizes the Arduino clone board, let's say i have found this the hard way as apparetly the majority of cloned arduinos use a cheaper USB controller comparing to "genuino"*
 
 
-### Schematics & diagrams:
+### **Schematics & diagrams**:
 **Schematics:**
 * [GAGGIA Classic](https://user-images.githubusercontent.com/42692077/161397293-82df427a-2ac2-4226-bdc6-fa831a962265.png)
 
@@ -40,7 +40,7 @@
 ***!! WARNING !!***
 >*First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's  completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!*
 
-## Assembling
+## **ASSEMBLING**
 First we need to understand what goes where. The schematics aren't really rocket science but for someone who's never disassembled or has no experience working with electrical circuits it might get confusing really fast so I will try to describe it as simple as possible yet limited by my vocabulary.
 First let's check that the setup works as expected while outside the machine so you don't have it all installed and realise just afterwards it's not reading any temperature because of a faulty component or the relay doesn't switch between the ON/OFF modes.
 
@@ -171,7 +171,7 @@ _Dimmer high voltage circuit control ports will act as a passthrough for the pum
 
 >_AGAIN!!! Triple check your machine is disconnected from any power sources, even better just pull the power cable out of it if you haven't done so yet!_
 
-#### BASE FUNCTIONALITY
+#### *BASE FUNCTIONALITY*
 ***
 1. Take off the top cover by unscrewing the 2 top screws. You should be able to see something similar to the below image minus the SSR relay:
 <div align="center">
@@ -224,7 +224,7 @@ So you end up having them connected like this:
 10. Now you're ready to connect everything to the arduino like you did it when testing everything, one piece of advice would be to solder all the Arduino connected cables as during the machine operation there is quite a bit of vibration and that can introduce all sorts of noise/frequent disconnects to certain pins which will lead to unexplained behaviours.
 
 
-#### EXTENDED FUNCTIONALITY
+#### *EXTENDED FUNCTIONALITY*
 ***
 1. **BREW DETECTION** 
 
