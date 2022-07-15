@@ -1,10 +1,14 @@
 !> ***!! WARNING !!***
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 !> *First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!*
 =======
 !> *First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's  completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!*
 >>>>>>> 6e71dfc (+ sidebar and more editing)
+=======
+!> *First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's  completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!*
+>>>>>>> 6e71dfccbedf4a4263fcfaf557f95b41dd45fdf7
 
 **_Total estimated install time will be based on understanding and experience._**
 
@@ -81,6 +85,7 @@
 - **ACS712**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   > As of `release-0.2.3` the hall effect sensor was deprecated due to its unstable work and configuration complexity. It is highly recommended to update to the optocoupler board that took its place as not doing that means being stuck on `release-0.2.2` feature set.
 
 ## Timeline
@@ -135,6 +140,8 @@ The code has been designed to be plugable, meaning there is a minimal hardware c
 
 ## BASE FUNCTIONALITY
 =======
+=======
+>>>>>>> 6e71dfccbedf4a4263fcfaf557f95b41dd45fdf7
 # **BILL OF MATERIALS**
 ***The code has been designed to be plugable, meaning there is a minimal hardware configuration one can start with if certain features are not something of interest, it's all appropriately split under "BASE" or "EXTENDED" functionality (see bellow).***
 >>>>>>> 6e71dfc (+ sidebar and more editing)
@@ -211,8 +218,11 @@ The code has been designed to be plugable, meaning there is a minimal hardware c
 ## Schematics & Diagrams
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Schematics
 =======
+=======
+>>>>>>> 6e71dfccbedf4a4263fcfaf557f95b41dd45fdf7
 #### **Housing variants**
  * [Gaggiuino v1](https://www.thingiverse.com/thing:4949471)
  * [Gaggiuino v2](https://www.thingiverse.com/thing:5236286)
@@ -220,6 +230,7 @@ The code has been designed to be plugable, meaning there is a minimal hardware c
 
 [GAGGIA Classic](https://user-images.githubusercontent.com/42692077/161397293-82df427a-2ac2-4226-bdc6-fa831a962265.png)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ### Diagrams
 
@@ -971,3 +982,10 @@ TO DO
 
 # **[Learnign Materials](https://zer0-bit.github.io/#/learning/learning-materials)** -->
 >>>>>>> 6e71dfc (+ sidebar and more editing)
+=======
+<!-- # **[Gaggia Classic](https://zer0-bit.github.io/#/gc/gaggia-classic)**
+
+# **[Gaggia Classic Pro / New Classic](https://zer0-bit.github.io/#/gcp/gaggia-classic-pro-new-classic)**
+
+# **[Learnign Materials](https://zer0-bit.github.io/#/learning/learning-materials)** -->
+>>>>>>> 6e71dfccbedf4a4263fcfaf557f95b41dd45fdf7
