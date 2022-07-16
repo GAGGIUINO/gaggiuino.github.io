@@ -1,4 +1,5 @@
-!> *First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!*
+!> **First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!**
+
 
 **_Total estimated install time will be based on understanding and experience._**
 
@@ -26,10 +27,17 @@
 - [ ] Advanced Flow control
 
 ## Community Speaks
-
-[![Video](https://img.youtube.com/vi/MxPNQRCxQZc/maxresdefault.jpg)](https://youtu.be/MxPNQRCxQZc)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MxPNQRCxQZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
+
+<summary>MORE FROM THE COMMUNITY(Click to expand)</summary>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hpxB1Q6AFkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</details>
+
+<details>
+
 <summary>Usage (Click to expand)</summary>
 
  - **BOILER**: Sets the desired temperature at the boiler level
