@@ -1,35 +1,7 @@
-***!! WARNING !!***
+!> *First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's  completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!*
 
-!>*First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's  completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!*
+### **SCHEMATICS & DIAGRAMS**
 
-# **Gaggia Classic**
-
-## **REQUIREMENTS** 
-### **Software requirements:**
-1. [Arduino IDE](https://www.arduino.cc/en/software)
-    >*Needed to upload the code ".ino" to the arduino ROM*
-
-
-   **Libraries to [add](https://www.arduino.cc/en/Guide/Libraries?setlang=en):**
-   
-         Library manager:
-          - Easy Nextion Library
-          - MAX6675 by Adafruit
-          - TimerInterrupt_Generic
-
-
-         External libraries:
-          - PSM > https://github.com/banoz/PSM.Library
-          - HX711 > https://github.com/banoz/HX711
-
-
-2. [Nextion Editor](https://nextion.tech/nextion-editor/)
-    >*Only necessary if planning on editing the ".HMI" file to ammend the LCD functionality*
-3. [CH340 USB Driver](http://www.wch-ic.com/downloads/CH341SER_ZIP.html)
-    >*USB driver so your system recognizes the Arduino clone board, let's say i have found this the hard way as apparetly the majority of cloned arduinos use a cheaper USB controller comparing to "genuino"*
-
-
-### **Schematics & diagrams**:
 **Schematics:**
 * [GAGGIA Classic](https://user-images.githubusercontent.com/42692077/161397293-82df427a-2ac2-4226-bdc6-fa831a962265.png)
 
@@ -40,7 +12,7 @@
 ***!! WARNING !!***
 >*First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's  completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!*
 
-## **ASSEMBLING**
+### **ASSEMBLING**
 First we need to understand what goes where. The schematics aren't really rocket science but for someone who's never disassembled or has no experience working with electrical circuits it might get confusing really fast so I will try to describe it as simple as possible yet limited by my vocabulary.
 First let's check that the setup works as expected while outside the machine so you don't have it all installed and realise just afterwards it's not reading any temperature because of a faulty component or the relay doesn't switch between the ON/OFF modes.
 
@@ -48,7 +20,7 @@ First let's check that the setup works as expected while outside the machine so 
 >
 >**Note 2 - the 5v/GND Arduino board pins will be shared between all the connected devices.**
 
-#### **ARDUINO CONNECTIONS**
+#### *ARDUINO CONNECTIONS*
 1. The first step will be connecting the MAX6675 module to the arduino board using the pins defined in the code. You can find them defined at the top of the .ino file.
 
     MAX6675  |  Arduino

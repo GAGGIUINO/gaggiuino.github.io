@@ -1,35 +1,6 @@
-***!! WARNING !!***
+!> *First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's  completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!*
 
-!>*First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's  completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!*
-
-# **Gaggia Classic PRO (New Classic)**
-
-
-## 1.0 PROJECT REQUIREMENTS
-
-### 1.1 Software requirements
-1. [Arduino IDE](https://www.arduino.cc/en/software)
-    >*Needed to upload the code ".ino" to the arduino ROM*
-
-
-   **Libraries to [add](https://www.arduino.cc/en/Guide/Libraries?setlang=en):**
-   
-         Library manager:
-          - Easy Nextion Library
-          - MAX6675 by Adafruit
-          - TimerInterrupt_Generic
-
-         External libraries:
-          - PSM > https://github.com/banoz/PSM.Library
-          - HX711 > https://github.com/banoz/HX711
-
-2. [Nextion Editor](https://nextion.tech/nextion-editor/)
-    >*Only necessary if planning on editing the ".HMI" file to ammend the LCD functionality*
-3. [CH340 USB Driver](http://www.wch-ic.com/downloads/CH341SER_ZIP.html)
-    >*USB driver so your system recognizes the Arduino clone board, let's say i have found this the hard way as apparetly the majority of cloned arduinos use a cheaper USB controller comparing to "genuino"*
-
-
-# 2.0.0 TEST INSTALL
+## **1.0.0 TEST INSTALL**
 We are not installing inside the machine yet and we are doing minimal soldering at this point. We just want to test as much as we can to make sure we've not got any duds from a base functionality point of view.
 
 We need to understand what goes where. The schematics in (**3.0.1 Schematics & Diagrams**) aren't really rocket science but for someone who's never disassembled or has no experience working with electrical circuits it might get confusing really fast. 
@@ -37,7 +8,7 @@ We need to understand what goes where. The schematics in (**3.0.1 Schematics & D
 Note 1 - No permanent connections are needed during testing so no soldering needed for now.
 Note 2 - The 5v/GND Arduino board pins will be shared between all the connected devices.
 
-### 2.0.1 Arduino Config 
+### *1.0.1 Arduino Config* 
 Place Arduino into the expansion board the correct way round. Power it through USB adapter for now during the testing phase.
 
 Image of Arduino with pins soldered:
@@ -56,7 +27,7 @@ If you have to solder your pins then take the time now to get your soldering per
 
 _**Attention! You are not soldering the Arduino to the expansion board itself. You are only soldering the pins to the Arduino and pins to the expansion board. The Arduino then just sits/connects into the expansion board pins.**_
 
-### 2.0.2 MAX6675 Config
+### *1.0.2 MAX6675 Config*
 ***
 For the below section you are using **26AWG** cable to connect to the Arduino board.
  
@@ -69,7 +40,7 @@ You should have bought and received a MAX6675 board which comes with a test ther
 
 <img src="https://user-images.githubusercontent.com/53577819/154988423-f741a369-ec60-4266-9544-0effedb57292.jpg" width="400" height="250">
 
-### 2.0.3 Nextion Config
+### *1.0.3 Nextion Config*
 ***
 For the below section you are using **26AWG** cable to connect to the Arduino board. 
  
@@ -82,7 +53,7 @@ The correct screen size is **2.4**". If yours does not have markings for wiring 
 
 <img src="https://user-images.githubusercontent.com/53577819/154988514-13a1d7af-f704-49b6-975b-aeee1318cf36.jpg" width="400" height="250">
 
-### 2.0.4 Relay Config
+### *1.0.4 Relay Config*
 ***
 For the below section you are using **26AWG** cable to connect to the Arduino board. 
  
@@ -93,8 +64,8 @@ This relay is what manages the temp by cutting the voltage when the thermocouple
 
 <img src="https://user-images.githubusercontent.com/53577819/154988554-5be0bb0a-dcf2-4bf7-a70f-4c356d00eea6.jpg" width="600" height="450">
 
-### 2.0.5 Software Install
-#### Arduino Software Upload
+### *1.0.5 Software Install*
+**Arduino Software Upload**
 Plug the Arduino board into PC/Mac using the mini-USB cable that came with it and upload the code to the Arduino board.
 Note: Uploading won't work with the LCD connected
 
@@ -128,7 +99,7 @@ Note: Uploading won't work with the LCD connected
 10. Press Upload (***Make sure LCD is UNPLUGGED before uploading otherwise upload will fail***)
 11. If upload is Successful, unplug Arduino Board from computer
 
-#### Flashing the Nextion LCD Software Upload
+**Flashing the Nextion LCD Software Upload**
 _Uploading the LCD ROM code_
 Method 1 - Download and unzip the *.tft file on a FAT32(MS-DOS (FAT32)) formatted microSD card and upload on the LCD panel using the onboard card reader.
 
@@ -142,7 +113,7 @@ Method 2 - Open the .HMI file using Nextion Editor and using the File menu uploa
 5. Power on the Arduino Board Setup and installation should occur automatically
 6. Once “successed” reboot the Arduino
 
-### 2.0.6 Test
+### *1.0.6 Test*
 
 You should now see the Gaggiuino project on the LCD. If your connections are all right (and well secured), you should see a temperature reading from the thermocouple (temp reading will contain the default offset of 7 which means the initial temp will be - room temp -7)
 
@@ -152,7 +123,7 @@ If everything looks good, move on to Installing into the Gaggia Classic Pro
 
 _**If all the above works as expected you're ready to install it inside the machine.**_
 
-# 2.1.0 INSTALL
+## **2.0.0 INSTALL**
 ***
 
 _**!! WARNING !!**_
@@ -170,8 +141,8 @@ For each of the components we want to start guesstimating on cable length. You c
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on pin connections to the Arduino. 
 
-### Base Functionality
-#### 2.1.1 Power Delivery
+**Base Functionality**
+### *2.0.1 Power Delivery*
 Take off the top cover of your machine by unscrewing the 2 top screws. Be sure to mark your top left power connector so you don't mix them up (even though it's not that hard to understand which one is which).
 
 Prepare splitter cables with the below specs:
@@ -249,7 +220,7 @@ _**Make sure this component is well insulated and enclosed. You do not want to t
 
 <img src="https://user-images.githubusercontent.com/53577819/154989122-6237e1af-62d1-4289-901c-47c69ea3b1b9.jpg" width="600" height="350">
 
-### 2.1.2 Thermocouple and MAX6675 Config 
+### *2.0.2 Thermocouple and MAX6675 Config* 
 
 Prepare the following cable to the below spec:
 
@@ -279,7 +250,7 @@ Check the appendix section **## 3.0.2 Component Wiring  2. MAX6675 WIRING**
 
 _**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**_
 
-### 2.1.3 Relay Config 
+### *2.0.3 Relay Config* 
 
 Prepare cables with below spec:
 
@@ -302,7 +273,7 @@ Optional: might be a good idea to either tape up the exposed steam thermostat or
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on 3 & 4 connections to the Arduino. 
 
-### 2.1.4 Steam Config
+### *2.0.4 Steam Config*
 
 _**Very important to not turn on the machine until we check the steam switch wire positions**_
 
@@ -334,7 +305,7 @@ Image for reference below:
 <img src="https://user-images.githubusercontent.com/53577819/155016949-a070e451-2bd8-45e8-9acb-669b7cc28bab.jpg" width="600" height="450">
 
 
-### 2.1.5 Continuity Brew Detection
+### *2.0.5 Continuity Brew Detection*
 
 Prepare 2 cables with the below spec:
 1. Green (not red or black), 26AWG, length from brew to Arduino, one exposed end, one female end 
@@ -346,9 +317,9 @@ As shown below plug your cables in to the circled connections on the brew switch
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on GND and OUT connections to the Arduino.
 
-## Extended Functionality
+**Extended Functionality**
 
-### 2.1.6 RobotDYN Dimmer Config
+### *2.0.6 RobotDYN Dimmer Config*
 Prepare 3 cables with the below spec:
 1. Red, 18/20AWG, 15cm, one exposed end, one female end 
 2. Red, 18/20AWG, 15cm, one exposed end, one male end 
@@ -384,7 +355,7 @@ _**Again!!! Make sure this component is well insulated and enclosed. You do not 
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on VCC, GND, Z-C and PSM connections to the Arduino. 
 
-### 2.1.7 Pressure Transducer Config
+### *2.0.7 Pressure Transducer Config*
 Installing the pressure transducer. The pressure sensor will be tapping into the orange braided hose connecting the pump outlet and the boiler inlet. I would generally advise to take out the original hose and use the one ordered together with the pressure sensor, cut a similarly sized one out of the hose purchased and use the rest of the left length as additional transducer buffer.
 
 It's advisable after making the connections and just before connecting the transducer itself turn on the machine and while cold engage the pump to fill the transducer hose with water as well, leaving a lot of air in the system might play funny with the readings (please be careful to do this outside the machine as water spill out...).
@@ -393,10 +364,10 @@ It's advisable after making the connections and just before connecting the trans
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on RED, BLACK andYELLOW wire connections to the Arduino. 
 
-### 2.1.8 Load Cells Config
+### *2.0.8 Load Cells Config*
 _**TO DO**_
 
-### 2.1.9 Finish
+### *2.0.9 Finish*
 ***
 If you haven't already, you're ready to connect everything to the Arduino. Use 3.0.2 Appendix for **Component Wiring** tables. 
 
@@ -415,15 +386,16 @@ Configure you PP and PI settings and get prepped for a shot if all is well. Reco
 
 All going well, feel like an absolute coffee titan each and every time you pull a shot.
 
-## 3.0 Appendix
-### 3.0.1 Schematics & Diagrams
-#### Schematics
+## **3.0 Appendix**
+
+### *3.0.1 Schematics & Diagrams*
+*Schematics*
 [GAGGIA Classic Pro](https://github.com/Zer0-bit/gaggiuino/blob/release-0.2.2/schematics/gcp-schematics.png)
 
-### Diagrams
+*Diagrams*
 [GAGGIA Classic Pro](https://github.com/Zer0-bit/gaggiuino/blob/release-0.2.2/schematics/GCP-CONNECTIONS-DIAGRAM.png)
 
-### 3.0.2 Component Wiring 
+### *3.0.2 Component Wiring* 
 You can find the defined pins at the top of the .ino file.
 
 A suggestion on wiring; components that are inside same enclosure, the same connection can be linked i.e. solder a cable to the 5v pin then take the other end and solder to the 5V of the other component, from there take one cable to the Arduino. An alternative way is to  solder similar connections and apply heat-shrink before the exit to the machine then take one wire through the machine to the Arduino.
@@ -473,7 +445,7 @@ All the other boards below will get their power from the Arduino 5v / GND pins a
 
 5. STEAM HANDLING WIRING
 
-4 & 5 are the switch points from 2.1.4 Steam Config
+4 & 5 are the switch points from 2.0.4 Steam Config
 
 | GCP SWITCH | ARDUINO |
 | --- | --- |

@@ -1,3 +1,5 @@
 * [WELCOME PAGE](/)
+* [Prerequisites](prereq/prerequisites.md)
 * [Gaggia Classic](gc/gaggia-classic.md)
 * [Gaggia Classic Pro](gcp/gaggia-classic-pro-new-classic.md)
+* [Recommendations](learning/learning-sources.md)
