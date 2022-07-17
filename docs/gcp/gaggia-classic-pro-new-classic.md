@@ -1,4 +1,4 @@
-!> *First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's  completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!*
+!> **Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project.**
 
 ## **1.0.0 TEST INSTALL**
 We are not installing inside the machine yet and we are doing minimal soldering at this point. We just want to test as much as we can to make sure we've not got any duds from a base functionality point of view.
