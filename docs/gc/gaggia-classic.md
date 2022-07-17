@@ -1,4 +1,6 @@
+***
 !> **Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project.**
+***
 
 ### **SCHEMATICS & DIAGRAMS**
 
@@ -9,8 +11,8 @@
 * [GAGGIA Classic](https://user-images.githubusercontent.com/42692077/160548957-88c93198-6d81-4081-8db6-552b6f6c5281.png)
 
 ***
-***!! WARNING !!***
->*First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's  completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!*
+!> **First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's  completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!**
+***
 
 ### **ASSEMBLING**
 First we need to understand what goes where. The schematics aren't really rocket science but for someone who's never disassembled or has no experience working with electrical circuits it might get confusing really fast so I will try to describe it as simple as possible yet limited by my vocabulary.
@@ -37,8 +39,8 @@ First let's check that the setup works as expected while outside the machine so 
     --------|-----------
       4     |   GND
       3     |   D8
-      
-   **Relay ports [1] and [2] are the high voltage circuit breaker**
+
+  **Relay ports [1] and [2] are the high voltage circuit breaker**
 
 4. Plug the arduino board in using the mini USB cable that came with it and upload the code to the arduino board. 
     >*Note: uploading won't work with the LCD connected*
@@ -50,7 +52,7 @@ First let's check that the setup works as expected while outside the machine so 
       RX     |   TX
       VCC    |   5v
       GND    |   GND
-      
+   
 6. Uploading the LCD ROM code
 
     **Method 1** 
@@ -111,8 +113,8 @@ GC SWITCH| Arduino
    VCC   |   5v
    GND   |   GND
    OUT   |   A0
-   
-  _The high voltage circuit control ports will splice into existing brew switch wires._
+
+*The high voltage circuit control ports will splice into existing brew switch wires.*
   
 ***
 **DIMMER**
@@ -123,7 +125,7 @@ GC SWITCH| Arduino
   GND   |   GND
   Z-C   |   D2
   PSM   |   D9
-  
+
 _Dimmer high voltage circuit control ports will act as a passthrough for the pump LIVE and NEUTRAL wires_
    
 ***
@@ -141,7 +143,7 @@ _Dimmer high voltage circuit control ports will act as a passthrough for the pum
 
 **As always with such projects common sense should be applied at all times, it's expected people doing such sort of modifications will have some basic understanding.**
 
->_AGAIN!!! Triple check your machine is disconnected from any power sources, even better just pull the power cable out of it if you haven't done so yet!_
+!> **Triple check your machine is disconnected from any power sources, even better just pull the power cable out of it if you haven't done so yet!**
 
 #### *BASE FUNCTIONALITY*
 ***
