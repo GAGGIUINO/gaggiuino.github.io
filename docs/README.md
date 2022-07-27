@@ -55,6 +55,9 @@
      - **Finish**: Sets the desired finish point of the PP phase, same as above can be from High->Low or Low->High.
      - **Hold**: Sets the length of the PP hold period, if it's desired to maintain the "Start" pressure for a period of time before the pressure drop/raise is applied this is where it's done.
      - **Length**: Sets the length (AKA speed) of the PP drop/raise behaviour, so one can change the pressure slow or fast if desired.
+
+![img](https://cdn.discordapp.com/attachments/928336129588092949/1001851572415909898/PressureGraph.png)
+
  - **Brew(Manual)**: Allows for manual pressure control at brew time.
  - **DESCALE**: Enables the descaling program. At this point there's only one default behaviour:
 
@@ -152,7 +155,12 @@
   * [Thermo-resistant cables AWG15 and AWG20 ( 1m black/red ) and AWG26 ( 5m black/red/yellow/blue )](https://bit.ly/3tjSQbI)
   * [Spade connectors M/F 6.3mm](https://bit.ly/2Sjrkhu)
   * Power Supply:
-    * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html) and [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl) (these two should only be used together)
+    * OPTION 1
+      * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
+      * [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
+    * OPTION 2
+      * [5V/2A PSU](https://www.aliexpress.com/item/4001068579272.html)
+      * [Plug Wires](https://www.aliexpress.com/item/1005001727355478.html)
 
 ### EXTENDED FUNCTIONALITY
 
