@@ -56,7 +56,8 @@
      - **Hold**: Sets the length of the PP hold period, if it's desired to maintain the "Start" pressure for a period of time before the pressure drop/raise is applied this is where it's done.
      - **Length**: Sets the length (AKA speed) of the PP drop/raise behaviour, so one can change the pressure slow or fast if desired.
 
-![img](https://cdn.discordapp.com/attachments/928336129588092949/1001851572415909898/PressureGraph.png)
+![PressureGraph](https://user-images.githubusercontent.com/109426580/181831162-10ba0770-ee1a-4e76-a273-fb0f337f99e5.png)
+
 
  - **Brew(Manual)**: Allows for manual pressure control at brew time.
  - **DESCALE**: Enables the descaling program. At this point there's only one default behaviour:
