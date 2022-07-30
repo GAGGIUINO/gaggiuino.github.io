@@ -173,14 +173,25 @@
   * [Fitting - 6-02/PCF ](https://www.aliexpress.com/item/4001338642124.html)
   * [Transducer Fitting - 6mm/PE](https://www.aliexpress.com/item/4001338085412.html)
   * [Hose - 6x4 - 1 meter](https://www.aliexpress.com/item/4000383354010.html)
-  * [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html)
+  * [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html) 
+
+!> If planning on adding scales check the scales section as the optocoupler is not the right choice then.
 
 * **Gaggia Classic Pro-specific**
+<div style='color: red'>ATTENTION! Please read the warning related to the hose choice.</div>
 
-  * [Hose - 4mm x 9mm](https://www.aliexpress.com/item/1005003157483270.html)
+  * [Hose - 4mm x 9mm](https://www.aliexpress.com/item/1005003157483270.html) **HAS VERY LIMITED SUCCESS**
+  * [Hose Saeco](https://www.ebay.co.uk/itm/115431428020) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
   * [Transducer Fitting - 6mm x 1/4](https://www.aliexpress.com/item/33059380672.html)
   * [T-fitting - 6mm](https://www.aliexpress.com/item/1005002749996345.html)
-  * [Clamps - 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html)
+  * [Clamps - 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
+
+!> The Aliexpress hose IS NOT rated for the full output the pump can develop, please use common sense when operating the machine if you can't buy the recommended original SAECO hose as it WILL BURST at pressures higher than 10 bar.
+
+* **Scales**
+  * [RELAY](https://a.aliexpress.com/_vpUdrT) **This deprecates the optocoupler from the GC section above**
+  * [500g LOADCELLS x 2](https://www.aliexpress.com/item/32670225988.html)
+  * [HX711 amplifier x 2](https://www.aliexpress.com/item/32670225988.html)
 
 * **Gaggiuino Housing**
 
