@@ -189,7 +189,7 @@
 !> The Aliexpress hose IS NOT rated for the full output the pump can develop, please use common sense when operating the machine if you can't buy the recommended original SAECO hose as it WILL BURST at pressures higher than 10 bar.
 
 * **Scales**
-  * [RELAY](https://a.aliexpress.com/_vpUdrT) **This deprecates the optocoupler from the GC section above**
+  * [5V RELAY x 1](https://a.aliexpress.com/_vpUdrT) **This deprecates the optocoupler from the GC section above**
   * [500g LOADCELLS x 2](https://www.aliexpress.com/item/32670225988.html)
   * [HX711 amplifier x 2](https://www.aliexpress.com/item/32670225988.html)
 
