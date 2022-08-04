@@ -18,9 +18,11 @@
 First we need to understand what goes where. The schematics aren't really rocket science but for someone who's never disassembled or has no experience working with electrical circuits it might get confusing really fast so I will try to describe it as simple as possible yet limited by my vocabulary.
 First let's check that the setup works as expected while outside the machine so you don't have it all installed and realise just afterwards it's not reading any temperature because of a faulty component or the relay doesn't switch between the ON/OFF modes.
 
->**Note 1 - no permanent connections are needed during testing so no soldering needed for now.**
+!>**Note 1 - no permanent connections are needed during testing so no soldering needed for now.**
 >
->**Note 2 - the 5v/GND Arduino board pins will be shared between all the connected devices.**
+!>**Note 2 - all LV(low voltage) sides of the boards will connect to a single 5V and GND rail.**
+>
+!>**Note 3 - DO NOT FEED POWER TO ALL THE BOARDS THROUGH THE MCU USB PORT.**
 
 #### *ARDUINO CONNECTIONS*
 1. The first step will be connecting the MAX6675 module to the arduino board using the pins defined in the code. You can find them defined at the top of the .ino file.
@@ -67,8 +69,6 @@ First let's check that the setup works as expected while outside the machine so 
 7. After the upload is finished get the card out and power cycle the LCD.
 8. You should see temp readings on your screen if everything went according to plan.
     >*Don't forget to test the thermocouple/relay combo operation, apply some heat to the thermocouple end and see whether the relay led operates in HIGH/LOW modes*
-    >
-    >*Due to the way the Arduino design works as well as the nature of how the on-board ADC functions in order to avoid a loop in regards to the **BREW MODE** it's required to connect the pins A0 -> GND, this is only needed if the ACS712 sensor board is not connected to the Arduino.*
 
 **At this point if all the above works as expected you're ready to install it all inside the machine. For this we'll need to prepare some splitters that we'll use to connect to the Gaggia internals without introducing any permanent modifications so in the event of a desire to revert to stock it's a few disconnects away!**
 

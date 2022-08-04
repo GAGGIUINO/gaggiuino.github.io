@@ -356,9 +356,9 @@ Please use the tables in **3.0.2 Appendix - Component Wiring** for details on VC
 ### *2.0.7 Pressure Transducer Config*
 Installing the pressure transducer. The pressure sensor will be tapping into the orange braided hose connecting the pump outlet and the boiler inlet. I would generally advise to take out the original hose and use the one ordered together with the pressure sensor, cut a similarly sized one out of the hose purchased and use the rest of the left length as additional transducer buffer.
 
-It's advisable after making the connections and just before connecting the transducer itself turn on the machine and while cold engage the pump to fill the transducer hose with water as well, leaving a lot of air in the system might play funny with the readings (please be careful to do this outside the machine as water spill out...).
+It's advisable after making the connections and just before connecting the transducer itself turn on the machine and while cold engage the pump to fill the transducer hose with water as well, leaving a lot of air in the system might play funny with the readings.
 
-(INSERT IMAGES - of pressure transducer set up)
+![GCP TRANSDUCER](https://user-images.githubusercontent.com/42692077/146647809-970c0ccd-47c6-430c-9c71-9b651bab4bf4.png)
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on RED, BLACK andYELLOW wire connections to the Arduino. 
 
