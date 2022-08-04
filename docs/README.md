@@ -180,13 +180,13 @@
 * **Gaggia Classic Pro-specific**
 <div style='color: red'>ATTENTION! Please read the warning related to the hose choice.</div>
 
-  * [Hose - 4mm x 9mm](https://www.aliexpress.com/item/1005003157483270.html) **HAS VERY LIMITED SUCCESS**
+  * [Hose - 5mm x 11mm](https://www.aliexpress.com/item/1005001729453617.html) **READ BELOW WARNING**
   * [Hose Saeco](https://www.ebay.co.uk/itm/115431428020) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
   * [Transducer Fitting - 6mm x 1/4](https://www.aliexpress.com/item/33059380672.html)
   * [T-fitting - 6mm](https://www.aliexpress.com/item/1005002749996345.html)
   * [Clamps - 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
-!> The Aliexpress hose IS NOT rated for the full output the pump can develop, please use common sense when operating the machine if you can't buy the recommended original SAECO hose as it WILL BURST at pressures higher than 10 bar.
+!> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
 
 * **Scales**
   * [5V RELAY x 1](https://a.aliexpress.com/_vpUdrT) **This deprecates the optocoupler from the GC section above**
