@@ -193,10 +193,15 @@
   * [500g LOADCELLS x 2](https://www.aliexpress.com/item/32670225988.html)
   * [HX711 amplifier x 2](https://www.aliexpress.com/item/32670225988.html)
 
-* **Gaggiuino Housing**
+* **Gaggiuino Housing&Scales mounting**
+  * **HOUSINGS**
+    * [Gaggiuino v1](https://www.thingiverse.com/thing:4949471)
+    * [Gaggiuino v2](https://www.thingiverse.com/thing:5236286)
 
-  * [Gaggiuino v1](https://www.thingiverse.com/thing:4949471)
-  * [Gaggiuino v2](https://www.thingiverse.com/thing:5236286)
+  * **SCALES**
+    * [Gaggia Classic Load Cell Integration (no drill)](https://www.thingiverse.com/thing:5276489)
+    * [Gaggia Classic Pro Load Cell Integration (no drill)](https://www.thingiverse.com/thing:5276492)
+    * [Gaggia Classic Pro Load Cell Integration single HX711 board (no drill)](https://www.thingiverse.com/thing:5276496)
 
 **Cheap services to order the prints if not owning a printer:**
 
