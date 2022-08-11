@@ -45,7 +45,7 @@
  - **HPWR**: Sets the relay start pulse length
  - **M.C.DIV**: Sets the main cycle divider (aka non brew heating behaviour), used in conjunction with HPWR
  - **B.C.DIV**: Sets the brew cycle divider
- - **Brew(Auto)**: All pressure settings are following the bellow:
+ - **Brew(Auto)**: All pressure settings are following the below:
    - **PREINFUSION**: Enables pre-infusion
      - **Time**: Sets the length of the PI phase
      - **Bar**: Sets the max reachable pressure for the PI phase
@@ -125,8 +125,8 @@
 <details>
 <summary>Extended (Click to expand)</summary>
 
-1. Install dimmer - isolate the board using an enclosure or tape it up after wiring.
-2. Install the pressure sensor.
+1. Install the pressure sensor. Ensure it does not leak under pressure.
+2. Install dimmer - isolate the board using an enclosure or tape it up after wiring.
 3. Install the load cells.
 </details>
 
@@ -143,13 +143,13 @@
 
 # Bill of Materials
 
-> The code has been designed to be plugable, meaning there is a minimal hardware configuration one can start with if certain features are not something of interest, it's all appropriately split under "BASE" or "EXTENDED" functionality (see below).
+> The code has been designed to be modular, meaning there is a minimal hardware configuration one can start with if certain features are not something of interest, it's all appropriately split under "BASE" or "EXTENDED" functionality (see below).
 
 ### BASE FUNCTIONALITY
 
   * [Arduino Nano AT328](https://bit.ly/3eXSfXZ)
     * [Arduino Nano expansion board](https://www.aliexpress.com/item/32831772475.html?spm=a2g0o.store_pc_allProduct.8148356.21.7ed173b9bTMew3)
-  * [2.4" Nextion LCD](https://bit.ly/3CAUzPj)
+  * [2.4" Nextion LCD](https://bit.ly/3CAUzPj) + MicroSD card
   * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
   * [C-M4 screw K-Type thermocouple sensor](https://bit.ly/3nP1WMm)
   * [40DA SSR Relay](https://bit.ly/33g1Pjr)
@@ -162,6 +162,7 @@
     * OPTION 2
       * [5V/2A PSU](https://www.aliexpress.com/item/4001068579272.html)
       * [Plug Wires](https://www.aliexpress.com/item/1005001727355478.html)
+  * Optional: Wago connectors (useful for connected the many 5v and GND wires to the Arduino)
 
 ### EXTENDED FUNCTIONALITY
 
