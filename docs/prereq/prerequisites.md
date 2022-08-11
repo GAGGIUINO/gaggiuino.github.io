@@ -1,4 +1,4 @@
-## **REQUIREMENTS** 
+## **PREREQUISITES** 
 ### **Software requirements:**
 1. [Arduino IDE](https://www.arduino.cc/en/software)
     >*Needed to upload the code ".ino" to the arduino ROM*
