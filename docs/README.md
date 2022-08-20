@@ -1,30 +1,29 @@
-!> **First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!**
+!>**This page is a general guide, not an exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the _Recommendations_ page of this site.**
 
 
 **_Total estimated install time will be based on understanding and experience._**
 
 ## Features / Completeness
 
-### BASE
-
-- [x] Integrated Housings - **credits** [![I'm on Reddit](https://img.shields.io/reddit/user-karma/combined/LikeableBump1?style=social)](https://www.reddit.com/user/LikeableBump1 "I'm on Reddit")
-- [x] Customised UI/UX - **credits** [![I'm on Reddit](https://img.shields.io/reddit/user-karma/combined/different-wishbone81?style=social)](https://www.reddit.com/user/different-wishbone81 "I'm on Reddit")
-- [x] Brew/Steam temp control
-- [x] Shot timer
-- [x] Graphing
-- [x] Realtime values update/save
-
-### EXTENDED
-
-- [x] Pre-infusion
-- [x] Pressure profiling
-- [x] Manual pressure control
-- [x] Descale program
-- [x] Integrated scales
-- [ ] Saving/Loading profiles
-- [ ] Web interface
-- [ ] OTA updates
-- [ ] Advanced Flow control
+  Feature                |  Arduino Nano  |  STM32 Blackpill
+-----------------------  |----------------|-----------------
+  Integrated Housing     |       ✔      |       ✔       
+  Embedded UI            |       ✔      |       ✔       
+  Brew/Steam control     |       ✔      |       ✔       
+  Auto Shot Timer        |       ✔      |       ✔       
+  Graphing               |       ✔      |       ✔       
+  Settings saving        |       ✔      |       ✔       
+  Pre-infusion           |       ✔      |       ✔       
+  Pressure profiling     |       ✔      |       ✔       
+  Manual flow control    |       ✔      |       ✔       
+  Descale program        |       ✔      |       ✔       
+  Integrated scales      |       ✔      |       ✔       
+  Advanced Flow control  |       ✘      |       ✔       
+  Stop on Weight/Dose    |       ✘      |       ✔       
+  Steam Boost            |       ✘      |       ✔       
+  Saving/Loading profiles|       ✘      |       ✘       
+  Web interface          |       ✘      |       ✘       
+  OTA updates            |       ✘      |       ✘       
 
 ## Community Speaks
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MxPNQRCxQZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

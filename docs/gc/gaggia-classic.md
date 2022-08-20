@@ -32,7 +32,7 @@
     --------|-----------
       4     |   GND
       3     |   D8
-      
+
    **Relay ports [1] and [2] are the high voltage circuit breaker**
 ***
 3. Nextion LCD
@@ -104,12 +104,8 @@ First let's check that the setup works as expected while outside the machine so 
 >
 !>**Note 3 - DO NOT FEED POWER TO ALL THE BOARDS THROUGH THE MCU USB PORT.**
 >
-!>**Note 4 - This page is a general guide, not an exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the Recommendations page of this site.**
-
-**ATTENTION !!!**
-
-**As always with such projects common sense should be applied at all times, it's expected people doing such sort of modifications will have some basic understanding.**
-
+!>**Note 4 - As always with such projects common sense should be applied at all times, it's expected people doing such sort of modifications will have some basic understanding.**
+>
 !> **Triple check your machine is disconnected from any power sources, even better just pull the power cable out of it if you haven't done so yet!**
 
 #### *BASE FUNCTIONALITY BENCH TEST*
