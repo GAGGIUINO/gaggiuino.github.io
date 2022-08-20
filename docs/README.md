@@ -1,30 +1,29 @@
-!> **First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!**
+!>**This page is a general guide, not an exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the _Recommendations_ page of this site.**
 
 
 **_Total estimated install time will be based on understanding and experience._**
 
 ## Features / Completeness
 
-### BASE
-
-- [x] Integrated Housings - **credits** [![I'm on Reddit](https://img.shields.io/reddit/user-karma/combined/LikeableBump1?style=social)](https://www.reddit.com/user/LikeableBump1 "I'm on Reddit")
-- [x] Customised UI/UX - **credits** [![I'm on Reddit](https://img.shields.io/reddit/user-karma/combined/different-wishbone81?style=social)](https://www.reddit.com/user/different-wishbone81 "I'm on Reddit")
-- [x] Brew/Steam temp control
-- [x] Shot timer
-- [x] Graphing
-- [x] Realtime values update/save
-
-### EXTENDED
-
-- [x] Pre-infusion
-- [x] Pressure profiling
-- [x] Manual pressure control
-- [x] Descale program
-- [x] Integrated scales
-- [ ] Saving/Loading profiles
-- [ ] Web interface
-- [ ] OTA updates
-- [ ] Advanced Flow control
+  Feature                |  Arduino Nano  |  STM32 Blackpill
+-----------------------  |----------------|-----------------
+  Integrated Housing     |       ✔      |       ✔       
+  Embedded UI            |       ✔      |       ✔       
+  Brew/Steam control     |       ✔      |       ✔       
+  Auto Shot Timer        |       ✔      |       ✔       
+  Graphing               |       ✔      |       ✔       
+  Settings saving        |       ✔      |       ✔       
+  Pre-infusion           |       ✔      |       ✔       
+  Pressure profiling     |       ✔      |       ✔       
+  Manual flow control    |       ✔      |       ✔       
+  Descale program        |       ✔      |       ✔       
+  Integrated scales      |       ✔      |       ✔       
+  Advanced Flow control  |       ✘      |       ✔       
+  Stop on Weight/Dose    |       ✘      |       ✔       
+  Steam Boost            |       ✘      |       ✔       
+  Saving/Loading profiles|       ✘      |       ✘       
+  Web interface          |       ✘      |       ✘       
+  OTA updates            |       ✘      |       ✘       
 
 ## Community Speaks
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MxPNQRCxQZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -45,7 +44,7 @@
  - **HPWR**: Sets the relay start pulse length
  - **M.C.DIV**: Sets the main cycle divider (aka non brew heating behaviour), used in conjunction with HPWR
  - **B.C.DIV**: Sets the brew cycle divider
- - **Brew(Auto)**: All pressure settings are following the bellow:
+ - **Brew(Auto)**: All pressure settings are following the below:
    - **PREINFUSION**: Enables pre-infusion
      - **Time**: Sets the length of the PI phase
      - **Bar**: Sets the max reachable pressure for the PI phase
@@ -125,8 +124,8 @@
 <details>
 <summary>Extended (Click to expand)</summary>
 
-1. Install dimmer - isolate the board using an enclosure or tape it up after wiring.
-2. Install the pressure sensor.
+1. Install the pressure sensor. Ensure it does not leak under pressure.
+2. Install dimmer - isolate the board using an enclosure or tape it up after wiring.
 3. Install the load cells.
 </details>
 
@@ -143,13 +142,13 @@
 
 # Bill of Materials
 
-> The code has been designed to be plugable, meaning there is a minimal hardware configuration one can start with if certain features are not something of interest, it's all appropriately split under "BASE" or "EXTENDED" functionality (see below).
+> The code has been designed to be modular, meaning there is a minimal hardware configuration one can start with if certain features are not something of interest, it's all appropriately split under "BASE" or "EXTENDED" functionality (see below).
 
 ### BASE FUNCTIONALITY
 
   * [Arduino Nano AT328](https://bit.ly/3eXSfXZ)
     * [Arduino Nano expansion board](https://www.aliexpress.com/item/32831772475.html?spm=a2g0o.store_pc_allProduct.8148356.21.7ed173b9bTMew3)
-  * [2.4" Nextion LCD](https://bit.ly/3CAUzPj)
+  * [2.4" Nextion LCD](https://bit.ly/3CAUzPj) + MicroSD card
   * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
   * [C-M4 screw K-Type thermocouple sensor](https://bit.ly/3nP1WMm)
   * [40DA SSR Relay](https://bit.ly/33g1Pjr)
@@ -162,6 +161,7 @@
     * OPTION 2
       * [5V/2A PSU](https://www.aliexpress.com/item/4001068579272.html)
       * [Plug Wires](https://www.aliexpress.com/item/1005001727355478.html)
+  * Optional: Wago connectors (useful for connected the many 5v and GND wires to the Arduino)
 
 ### EXTENDED FUNCTIONALITY
 
