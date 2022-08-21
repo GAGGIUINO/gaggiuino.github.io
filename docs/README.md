@@ -5,25 +5,25 @@
 
 ## Features / Completeness
 
-  Feature                |  Arduino Nano  |  STM32 Blackpill
------------------------  |----------------|-----------------
-  Integrated Housing     |       ✔      |       ✔       
-  Embedded UI            |       ✔      |       ✔       
-  Brew/Steam control     |       ✔      |       ✔       
-  Auto Shot Timer        |       ✔      |       ✔       
-  Graphing               |       ✔      |       ✔       
-  Settings saving        |       ✔      |       ✔       
-  Pre-infusion           |       ✔      |       ✔       
-  Pressure profiling     |       ✔      |       ✔       
-  Manual flow control    |       ✔      |       ✔       
-  Descale program        |       ✔      |       ✔       
-  Integrated scales      |       ✔      |       ✔       
-  Advanced Flow control  |       ✘      |       ✔       
-  Stop on Weight/Dose    |       ✘      |       ✔       
-  Steam Boost            |       ✘      |       ✔       
-  Saving/Loading profiles|       ✘      |       ✘       
-  Web interface          |       ✘      |       ✘       
-  OTA updates            |       ✘      |       ✘       
+  Feature                |  Arduino Nano    |  STM32 Blackpill
+-----------------------  |------------------|-----------------
+  Integrated Housing     |:heavy_check_mark:|:heavy_check_mark:       
+  Embedded UI            |:heavy_check_mark:|:heavy_check_mark:       
+  Brew/Steam control     |:heavy_check_mark:|:heavy_check_mark:       
+  Auto Shot Timer        |:heavy_check_mark:|:heavy_check_mark:       
+  Graphing               |:heavy_check_mark:|:heavy_check_mark:       
+  Settings persistence   |:heavy_check_mark:|:heavy_check_mark:       
+  Pre-infusion           |:heavy_check_mark:|:heavy_check_mark:       
+  Pressure profiling     |:heavy_check_mark:|:heavy_check_mark:       
+  Manual flow control    |:heavy_check_mark:|:heavy_check_mark:       
+  Descale program        |:heavy_check_mark:|:heavy_check_mark:       
+  Integrated scales      |:heavy_check_mark:|:heavy_check_mark:       
+  Advanced Flow control  |       :x:        |:heavy_check_mark:       
+  Stop on Weight/Dose    |       :x:        |:heavy_check_mark:       
+  Steam Boost            |       :x:        |:heavy_check_mark:       
+  Saving/Loading profiles|       :x:        |       :x:       
+  Web interface          |       :x:        |       :x:       
+  OTA updates            |       :x:        |       :x:       
 
 ## Community Speaks
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MxPNQRCxQZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
