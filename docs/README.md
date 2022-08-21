@@ -172,10 +172,11 @@
 !> If planning on adding scales check the scales section as the optocoupler is not the right choice then.
 
 * **Gaggia Classic Pro-specific**
-<div style='color: red'>ATTENTION! Please read the warning related to the hose choice.</div>
+<div style='color: red'>:heavy_exclamation_mark:Please read the warning related to the hose choice.</div>
 
-  * [Hose - ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html) **READ BELOW WARNING**
-  * [Hose Saeco](https://www.ebay.co.uk/itm/115431428020) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
+  * **Hose** _Just one of the two hose options is needed_ 
+    * [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html) **READ BELOW WARNING**
+    * [Saeco](https://www.ebay.co.uk/itm/115431428020) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
   * [Transducer Fitting - 6mm x 1/4](https://www.aliexpress.com/item/33059380672.html)
   * [T-fitting - 6mm](https://www.aliexpress.com/item/1005002749996345.html)
   * [Clamps - 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
@@ -183,16 +184,16 @@
 !> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
 
 * **STM32 UPGRADE PACK**
-<div style='color: red'>ATTENTION! Please read the warning related to the STM32 availability.</div>
+<div style='color: red'>:heavy_exclamation_mark:Please read the warning related to the STM32 availability.</div>
 
   * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
   * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
+  * [5V RELAY](https://a.aliexpress.com/_vpUdrT) **Supersedes the 1-bit opto**
 
   !>Due to global shortages the semiconductors sector was hit hard, as a result STM32 chips are quite hard to obtain, be wary of resources selling fakes or low quality clones which will lead to either bad experience or no experience.
   If the reccommended seller doesn't have it in stock you will have to shop around.
 
 * **Scales**
-  * [5V RELAY x 1](https://a.aliexpress.com/_vpUdrT) **This deprecates the optocoupler from the GC section above**
   * [500g LOADCELLS x 2](https://www.aliexpress.com/item/32670225988.html)
   * [HX711 amplifier x 2](https://www.aliexpress.com/item/32670225988.html)
 
