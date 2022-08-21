@@ -1,4 +1,4 @@
-!>**This page is a general guide, not an exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the _Recommendations_ page of this site.**
+!>**This site is a general guide and *ABSOLUTELY NOT* an exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the _Recommendations_ page of this site.**
 
 
 **_Total estimated install time will be based on understanding and experience._**
@@ -59,15 +59,9 @@
 
 
  - **Brew(Manual)**: Allows for manual pressure control at brew time.
- - **DESCALE**: Enables the descaling program. At this point there's only one default behaviour:
+ - **DESCALE**: Enables the descaling program.
 
-   ```none
-   flush - 10s x5 at 2bar
-   flush - 20s x5 at 1 bar
-   idle - 5min at 0 bar
-   ```
-
-   Descaling should be done with a blind basket in the portafilter and the portafilter locked in the group, steam valve open for the water to flow in a separate reservoir and water tank fully loaded with water mixed with descale solution.
+  >Descaling should be done with a blind basket portafilter locked in the group, steam valve slightly open for the water to flow in a separate reservoir and water tank fully loaded with water mixed with descale solution.
 </details>
 
 ## EOL
