@@ -162,15 +162,6 @@
   * [RobotDYN dimmer module - Dimmer 4A-400V ](https://bit.ly/3xhTwQy)
   * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
 
-### STM32 UPGRADE PACK
-<div style='color: red'>ATTENTION! Please read the warning related to the STM32 availability.</div>
-
-* [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
-* [ADS1115](https://www.aliexpress.com/item/32869421559.html)
-
-  !>Due to global shortages the semiconductors sector was hit hard, as a result STM32 chips are quite hard to obtain, be wary of resources selling fakes or low quality clones which will lead to either bad experience or no experience.
-  If the reccommended seller doesn't have it in stock you will have to shop around.
-
 * **Gaggia Classic-specific**
 
   * [Fitting - 6-02/PCF ](https://www.aliexpress.com/item/4001338642124.html)
@@ -190,6 +181,15 @@
   * [Clamps - 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
 !> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
+
+* **STM32 UPGRADE PACK**
+<div style='color: red'>ATTENTION! Please read the warning related to the STM32 availability.</div>
+
+  * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
+  * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
+
+  !>Due to global shortages the semiconductors sector was hit hard, as a result STM32 chips are quite hard to obtain, be wary of resources selling fakes or low quality clones which will lead to either bad experience or no experience.
+  If the reccommended seller doesn't have it in stock you will have to shop around.
 
 * **Scales**
   * [5V RELAY x 1](https://a.aliexpress.com/_vpUdrT) **This deprecates the optocoupler from the GC section above**
