@@ -362,10 +362,7 @@ It's advisable after making the connections and just before connecting the trans
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on RED, BLACK andYELLOW wire connections to the Arduino. 
 
-### *2.0.8 Load Cells Config*
-_**TO DO**_
-
-### *2.0.9 Finish*
+### *2.0.8 Finish*
 ***
 If you haven't already, you're ready to connect everything to the Arduino. Use 3.0.2 Appendix for **Component Wiring** tables. 
 
