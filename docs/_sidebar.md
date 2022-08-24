@@ -2,5 +2,6 @@
 * [Prerequisites](prereq/prerequisites.md)
 * [Gaggia Classic](gc/gaggia-classic.md)
 * [Gaggia Classic Pro](gcp/gaggia-classic-pro-new-classic.md)
+* [STM32 UPGRADE](STM32-upgrade-pack/blackpill.md)
 * [Scales Configuration](scales/scales.md)
 * [Recommendations](learning/learning-sources.md)
