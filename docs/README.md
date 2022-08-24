@@ -21,9 +21,13 @@
   Advanced Flow control  |       :x:        |:heavy_check_mark:       
   Stop on Weight/Dose    |       :x:        |:heavy_check_mark:       
   Steam Boost            |       :x:        |:heavy_check_mark:       
-  Saving/Loading profiles|       :x:        |       :x:       
-  Web interface          |       :x:        |       :x:       
-  OTA updates            |       :x:        |       :x:       
+  Saving/Loading profiles|       :x:        |:heavy_plus_sign: 
+  Web interface          |       :x:        |:heavy_plus_sign: 
+  OTA updates            |       :x:        |:heavy_plus_sign: 
+
+:heavy_check_mark:  Complete
+:x:  Not available
+:heavy_plus_sign: Planned
 
 ## Community Speaks
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MxPNQRCxQZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
