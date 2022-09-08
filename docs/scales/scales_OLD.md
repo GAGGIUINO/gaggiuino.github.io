@@ -110,9 +110,7 @@ Files from the  scales-calibration folder in the main directory need to be flash
 
 ![Known 50-gram mass directly on load cell.](https://user-images.githubusercontent.com/80347096/187000236-65dbac3e-95af-462d-837d-177f7e411399.jpg)
 
-If you flashed the system correctly, then you should see a screen similar to the figures below.
-
-![Nextion calibration screen.](https://user-images.githubusercontent.com/80347096/188332313-c2a598b3-dd8c-4f4a-ac1a-b7c68ab9cd87.jpg)
+If you flashed the system correctly, then you should see a screen similar to the figure below.
 
 ![Nextion calibration screen.](https://user-images.githubusercontent.com/80347096/187000647-ba72fabd-3803-4207-9397-135843081593.jpg)
 
@@ -126,50 +124,27 @@ Adjust the Scale factors by tapping on the + or - buttons until the "Weight outp
 
 ![Calibration factor adjusted to match object's mass.](https://user-images.githubusercontent.com/80347096/187000749-8fd5f694-5533-435a-a60a-71868a601efb.jpg)
 
-### nano
-- Press the SAVE button to store the values of the Scale factors into eeprom. 
-   - It is recommended that you write these values down as a safeguard. 
+**For nano**, press the SAVE button to store the values of the Scale factors into eeprom. It is recommended that you write these values down as a safeguard. Reflash both the Nextion and the nano MCU to the appropriate gaggiuino code.
 
-- Reflash both the Nextion and the nano MCU with the appropriate gaggiuino code.
-   - **Single Clock users need to uncomment the first line of the gaggiuino.ino file.** 
+**For STM32**, write the values down on a piece of paper.
 
-- Make sure your scales hardware is connected, and place the drip tray on the assembly. 
+- Locate the eeprom_data.cpp file in the src directory.
+- Change the values for the following variables to the values obtained during calibration.
+   - defaultData.scalesF1
+   - defaultData.scalesF2
+    
+- Locate the eeprom_data.h file in the src directory.
+- Change the value for the following variable to a different integer.
+	- EEPROM_DATA_VERSION (Line 7)
+- Reflash both the Nextion and the STM32.
 
-- Power on the Gaggia and pull some amazing shots.
 
-### STM32 
-- Write the values down on a piece of paper. 
-   - You will update the coefficients from the Settings page on the gaggiuino display. 
+Connect the rest of the scales hardware, and place the drip tray on the assembly. Turn on Gaggiuino and enjoy some espresso.
 
-- Reflash both the Nextion and the STM32 MCU with the appropriate gaggiuino code. 
-   - **Single Clock users make sure that your platformio.ini environment has a the following switch under build_flags: -DSINGLE_HX711_CLOCK**
-
-- Power on the Gaggia.
-
-- Tap on the Settings icon on the Gaggiuino Home screen.
-
-- Tap on the Power button.
-
-![Tap the Power button to get to the calibration factors.](https://user-images.githubusercontent.com/80347096/188330783-70f1b55a-35ba-48b8-9224-f11a22a90c8c.jpg)
-
-- The figure below shows the screen you should see for updaing the calibration coefficients for the load cells.
-
-![Updating calibration coefficients via Settings page in NEXTION.](https://user-images.githubusercontent.com/80347096/188330921-40f59182-c4c4-40e6-9f57-783d6d1c3326.jpg)
-
-- Update LC1 and LC2 factors based on the calibration you just performed.
-
-- Press the Save button. 
-
-- Enjoy the frutis of your labor by pulling a shot or two!
-
-## Troubleshooting load cells
+## Troubleshooting
 Issues can arise while installing scales. The white epoxy on the load cell is designed to protect the strain sensor and add strain relief for the small wires. Take caution while handling the load cell's wires. If there is no signal from an HX711 amplifier, there are a few things you can troubleshoot.
 
-- *First and foremost*, check and double-check the connections from the load cell to the HX711 (typically soldered so check all solder joints) and the connections from the HX711 to the MCU (can be performed with a multimeter by checking for electrical continuity). 
-
-- Make sure that you flashed the correct code with the correct clock settings (single clock nano users need to uncomment the first line of the gaggiuino.ino file and STM32 users need to be sure that the -DSINGLE_HX711_CLOCK switch is listed under build_flags in the platformio.ini file.)
-
-- If you suspect a bad load cell, then you can check the resistance between the four wires (disconnected from the HX711). Below is a table showing the resistances between two different load cell wires. Thanks to Novarion for pointing out the resistance values as a check.
+*First and foremost*, check and double-check the connections from the load cell to the HX711 (typically soldered so check all solder joints) and the connections from the HX711 to the MCU (can be performed with a multimeter by checking for electrical continuity). If you suspect a bad load cell, then you can check the resistance between the four wires (disconnected from the HX711). Below is a table showing the resistances between two different load cell wires. Thanks to Novarion for pointing out the resistance values as a check.
 
 | Color 1    	| Color 2		| Resistance	(Ω)	|
 | :---:        |    :----:   	|        :---:	      |
