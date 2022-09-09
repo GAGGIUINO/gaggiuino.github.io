@@ -11,14 +11,14 @@
   Embedded UI            |:heavy_check_mark:|:heavy_check_mark:       
   Brew/Steam control     |:heavy_check_mark:|:heavy_check_mark:       
   Auto Shot Timer        |:heavy_check_mark:|:heavy_check_mark:       
-  Graphing               |:heavy_check_mark:|:heavy_check_mark:       
-  Settings persistence   |:heavy_check_mark:|:heavy_check_mark:       
+  Graphing               |:heavy_check_mark:|:heavy_check_mark:             
   Pre-infusion           |:heavy_check_mark:|:heavy_check_mark:       
-  Pressure profiling     |:heavy_check_mark:|:heavy_check_mark:       
+  Pressure profiling     |:heavy_check_mark:|:heavy_check_mark:   
   Manual flow control    |:heavy_check_mark:|:heavy_check_mark:       
+  Settings persistence   |:heavy_check_mark:|:heavy_check_mark: 
   Descale program        |:heavy_check_mark:|:heavy_check_mark:       
-  Integrated scales      |:heavy_check_mark:|:heavy_check_mark:       
-  Advanced Flow control  |       :x:        |:heavy_check_mark:       
+  Integrated scales      |:heavy_check_mark:|:heavy_check_mark:      
+  Flow profilling        |       :x:        |:heavy_check_mark:       
   Stop on Weight/Dose    |       :x:        |:heavy_check_mark:       
   Steam Boost            |       :x:        |:heavy_check_mark:       
   Saving/Loading profiles|       :x:        |:heavy_plus_sign: 
@@ -73,23 +73,13 @@
 
   > Arduino NANO based development has reached EOL, if its featureset is enough for your needs grab the code from [release-nano-final](https://github.com/Zer0-bit/gaggiuino/releases/tag/release-nano-final-v2)
 
-## Deprecations
-
-- **Pressure control**
-
-  > Pump actuation was switched from PWM to PSM and as a result, if PWM is preferred then `release-0.2.2` is the one to stay on. Static pressure control is only possible by using PWM as a result if there are no pressure sensing devices installed it's advised to stay on PWM.
-
-- **ACS712**
-
-  > As of `release-0.2.3` the hall effect sensor was deprecated due to its unstable work and configuration complexity. It is highly recommended to update to the optocoupler board that took its place as not doing that means being stuck on `release-0.2.2` feature set.
-
 ## Timeline
 
 <details>
 <summary>Initial (Click to expand)</summary>
 
 
-1. Purchase the parts listed from Ali and expect a wait of 21 days.
+1. Purchase the parts listed from Ali and expect a wait of ~1 month.
 
    Any parts purchased anywhere else are done so at your own risk (they've not been tested).
 
