@@ -18,7 +18,7 @@
   Settings persistence   |:heavy_check_mark:|:heavy_check_mark: 
   Descale program        |:heavy_check_mark:|:heavy_check_mark:       
   Integrated scales      |:heavy_check_mark:|:heavy_check_mark:      
-  Flow profilling        |       :x:        |:heavy_check_mark:       
+  Flow profiling         |       :x:        |:heavy_check_mark:       
   Stop on Weight/Dose    |       :x:        |:heavy_check_mark:       
   Steam Boost            |       :x:        |:heavy_check_mark:       
   Saving/Loading profiles|       :x:        |:heavy_plus_sign: 
@@ -132,31 +132,33 @@
 
 > The code has been designed to be modular, meaning there is a minimal hardware configuration one can start with if certain features are not something of interest, it's all appropriately split under "BASE" or "EXTENDED" functionality (see below).
 
-### BASE FUNCTIONALITY
+### BASE FUNCTIONALITY 
+_Will enable only brew and steam temperature control_
 
   * [Arduino Nano AT328](https://bit.ly/3eXSfXZ)
-    * [Arduino Nano expansion board](https://www.aliexpress.com/item/32831772475.html?spm=a2g0o.store_pc_allProduct.8148356.21.7ed173b9bTMew3)
+    * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
   * [2.4" Nextion LCD](https://bit.ly/3CAUzPj) + MicroSD card
   * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
   * [C-M4 screw K-Type thermocouple sensor](https://bit.ly/3nP1WMm)
-  * [40DA SSR Relay](https://bit.ly/33g1Pjr)
-  * [Thermo-resistant cables AWG15 and AWG20 ( 1m black/red ) and AWG26 ( 5m black/red/yellow/blue )](https://bit.ly/3tjSQbI)
-  * [Spade connectors M/F 6.3mm](https://bit.ly/2Sjrkhu)
-  * Power Supply:
+  * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
+  * [Thermo-resistant cables AWG15 and AWG20 ( 1m black & red ) and AWG26 ( 5m black,red,yellow & blue )](https://bit.ly/3tjSQbI)
+  * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
+  * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
+  * Power Supply: _Just one of the two options is needed_
     * OPTION 1
       * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
       * [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
     * OPTION 2
       * [5V/2A PSU](https://www.aliexpress.com/item/4001068579272.html)
       * [Plug Wires](https://www.aliexpress.com/item/1005001727355478.html)
-  * Optional: Wago connectors (useful for connected the many 5v and GND wires to the Arduino)
 
 ### EXTENDED FUNCTIONALITY
+_Will enable pump control based on active pressure feedback, thies enables pressure and flow profiling as well as other functionality._
 
-  * [RobotDYN dimmer module - Dimmer 4A-400V ](https://bit.ly/3xhTwQy)
+  * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
   * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
 
-* **Gaggia Classic-specific**
+* **Gaggia Classic Specific:**
 
   * [Fitting - 6-02/PCF ](https://www.aliexpress.com/item/4001338642124.html)
   * [Transducer Fitting - 6mm/PE](https://www.aliexpress.com/item/4001338085412.html)
@@ -165,10 +167,10 @@
 
 !> If planning on adding scales check the scales section as the optocoupler is not the right choice then.
 
-* **Gaggia Classic Pro-specific**
+* **Gaggia Classic Pro Specific:**
 <div style='color: red'>:heavy_exclamation_mark:Please read the warning related to the hose choice.</div>
 
-  * **Hose** _Just one of the two hose options is needed_ 
+  * **Hose:**  _Just one of the two hose options is needed_ 
     * [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html) **READ BELOW WARNING**
     * [Saeco](https://www.ebay.co.uk/itm/115431428020) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
   * [Transducer Fitting - 6mm x 1/4](https://www.aliexpress.com/item/33059380672.html)
@@ -177,7 +179,10 @@
 
 !> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
 
-* **STM32 UPGRADE PACK**
+* **STM32 UPGRADE PACK:**
+
+_Will allow for all the additional features listed in the Featrures tabble under the STM32 column_
+
 <div style='color: red'>:heavy_exclamation_mark:Please read the warning related to the STM32 availability.</div>
 
   * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
@@ -187,7 +192,9 @@
   !>Due to global shortages the semiconductors sector was hit hard, as a result STM32 chips are quite hard to obtain, be wary of resources selling fakes or low quality clones which will lead to either bad experience or no experience.
   If the reccommended seller doesn't have it in stock you will have to shop around.
 
-* **Scales**
+* **SCALES:**
+_Will enable for realtime shot weight tracking without external scales_
+
   * [500g LOADCELLS x 2](https://www.aliexpress.com/item/32670225988.html)
   * [HX711 amplifier x 2](https://www.aliexpress.com/item/32670225988.html)
 
