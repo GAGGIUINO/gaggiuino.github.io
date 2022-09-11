@@ -2,8 +2,8 @@
 
   * [STM32F411CEU6 AKA BLACKPILL](https://www.digikey.co.uk/en/products/detail/adafruit-industries-llc/4877/13922051)
   * [2.4" Nextion LCD](https://bit.ly/3CAUzPj)
-  * [C-M4 screw K-Type thermocouple sensor](https://bit.ly/3nP1WMm)
-  * [40DA SSR Relay](https://bit.ly/33g1Pjr)
+  * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/32842805668.html)
+  * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
   * [Thermo-resistant cables](https://bit.ly/3tjSQbI)
     * **AWG15** - 1m black and red 
     * **AWG20** - 1m black and red
