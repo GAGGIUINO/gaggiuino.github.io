@@ -132,16 +132,16 @@
 
 > The code has been designed to be modular, meaning there is a minimal hardware configuration one can start with if certain features are not something of interest, it's all appropriately split under "BASE" or "EXTENDED" functionality (see below).
 
-### BASE FUNCTIONALITY 
+### BASE FUNCTIONALITY
 _Will enable only brew and steam temperature control_
 
   * [Arduino Nano AT328](https://bit.ly/3eXSfXZ)
     * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
-  * [2.4" Nextion LCD](https://bit.ly/3CAUzPj) + MicroSD card
+  * [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
   * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
-  * [C-M4 screw K-Type thermocouple sensor](https://bit.ly/3nP1WMm)
+  * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/32842805668.html)
   * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
-  * [Thermo-resistant cables AWG15 and AWG20 ( 1m black & red ) and AWG26 ( 5m black,red,yellow & blue )](https://bit.ly/3tjSQbI)
+  * [Thermo-resistant cables AWG18 ( 1m black & red ) and AWG22 ( 5m black,red,yellow & blue )](https://bit.ly/3tjSQbI)
   * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
   * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
   * Power Supply: _Just one of the two options is needed_
