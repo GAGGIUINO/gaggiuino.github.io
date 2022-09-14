@@ -19,8 +19,9 @@
   Descale program        |:heavy_check_mark:|:heavy_check_mark:       
   Integrated scales      |:heavy_check_mark:|:heavy_check_mark:      
   Flow profiling         |       :x:        |:heavy_check_mark:       
-  Stop on Weight/Dose    |       :x:        |:heavy_check_mark:       
-  Steam Boost            |       :x:        |:heavy_check_mark:       
+  Stop on Weight/Dose*   |       :x:        |:heavy_check_mark:       
+  Steam Boost*           |       :x:        |:heavy_check_mark:  
+  Predictive scales*     |       :x:        |:heavy_check_mark:  
   Saving/Loading profiles|       :x:        |:heavy_plus_sign: 
   Web interface          |       :x:        |:heavy_plus_sign: 
   OTA updates            |       :x:        |:heavy_plus_sign: 
@@ -28,6 +29,12 @@
 :heavy_check_mark:  Complete
 :x:  Not available
 :heavy_plus_sign: Planned
+
+>_*1_ __Stop on Weight/Dose__ - requires the relay that's part of the STM32 UPGRADE.
+>
+>_*2_ __Steam Boost__ - software driven steam boosting, requires the relay that's part of the STM32 UPGRADE.
+>
+>_*3_ __Predictive scales__ - software driven predicted weight output, doesn't need any scales hardware.
 
 ## Community Speaks
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MxPNQRCxQZc" title="GAGGIUINO Upgrade Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -183,7 +190,7 @@ _Will enable pump control based on active pressure feedback, thies enables press
 
 * **STM32 UPGRADE PACK:**
 
-_Will allow for all the additional features listed in the Featrures tabble under the STM32 column_
+_Will allow for all the additional features listed in the Featrures table under the STM32 column_
 
 <div style='color: red'>:heavy_exclamation_mark:Please read the warning related to the STM32 availability.</div>
 
