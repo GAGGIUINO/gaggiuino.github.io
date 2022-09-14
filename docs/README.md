@@ -32,6 +32,7 @@
 ## Community Speaks
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MxPNQRCxQZc" title="GAGGIUINO Upgrade Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+!> The below video shows extensive use of duponts during the install which can lead to many issues if left like that for the actual install, it's recommended to solder all those terminals.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EJFadpL9aOE" title="GAGGIUINO BUILD LOG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <details>
 
