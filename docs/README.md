@@ -30,8 +30,9 @@
 :heavy_plus_sign: Planned
 
 ## Community Speaks
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MxPNQRCxQZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MxPNQRCxQZc" title="GAGGIUINO Upgrade Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EJFadpL9aOE" title="GAGGIUINO BUILD LOG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <details>
 
 <summary>MORE FROM THE COMMUNITY(Click to expand)</summary>
@@ -199,9 +200,15 @@ _Will enable for realtime shot weight tracking without external scales_
   * [HX711 amplifier x 2](https://www.aliexpress.com/item/32670225988.html)
 
 * **Gaggiuino Housing&Scales mounting**
+
+_Choose what's best for you, naturally you can mix and match as well, for example the LCD enclosure printed from the Gaggiuino v2 files set and all the components going inside the machine using the INTERNAL COMPONENTS HOUSING designs._
   * **HOUSINGS**
     * [Gaggiuino v1](https://www.thingiverse.com/thing:4949471)
     * [Gaggiuino v2](https://www.thingiverse.com/thing:5236286)
+
+  * **INTERNAL COMPONENTS ONLY HOUSING**
+    * [Gaggiuino Nano Internal Component Housing](https://www.printables.com/model/262346-gaggiuino-nano-internal-component-housing)
+    * [Gaggiuino STM32 Internal Component Housing](https://www.printables.com/model/269394-gaggiuino-stm32-internal-component-housing)
 
   * **SCALES**
     * [Gaggia Classic Load Cell Integration (no drill)](https://www.thingiverse.com/thing:5276489)
