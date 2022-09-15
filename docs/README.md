@@ -182,7 +182,7 @@ _Will enable pump control based on active pressure feedback, thies enables press
   * **Hose:**  _Just one of the two hose options is needed_ 
     * [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html) **READ BELOW WARNING**
     * [Saeco](https://www.ebay.co.uk/itm/115431428020) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
-  * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.htmll)
+  * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
   * [T-fitting | 6mm](https://www.aliexpress.com/item/1005002749996345.html)
   * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
