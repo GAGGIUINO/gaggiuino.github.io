@@ -145,12 +145,12 @@
 _Will enable only brew and steam temperature control_
 
   * [Arduino Nano AT328](https://bit.ly/3eXSfXZ)
-    * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
+  * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
   * [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
   * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
   * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/32842805668.html)
   * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
-  * [Thermo-resistant cables AWG15( 1m black & red ), AWG18 ( 1m black & red ) and AWG22 ( 5m black,red,yellow & blue )](https://bit.ly/3tjSQbI)
+  * [Thermo-resistant cables AWG18 (1m black & red) and AWG22 ( 5m black,red,yellow & blue )](https://www.aliexpress.com/item/4000627624331.html)
   * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
   * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
   * Power Supply: _Just one of the two options is needed_
@@ -169,9 +169,9 @@ _Will enable pump control based on active pressure feedback, thies enables press
 
 * **Gaggia Classic Specific:**
 
-  * [Fitting - 6-02/PCF ](https://www.aliexpress.com/item/4001338642124.html)
-  * [Transducer Fitting - 6mm/PE](https://www.aliexpress.com/item/4001338085412.html)
-  * [Hose - 6x4 - 1 meter](https://www.aliexpress.com/item/4000383354010.html)
+  * [T-fitting | 6-02/PCF ](https://www.aliexpress.com/item/4001338642124.html)
+  * [Transducer Fitting | 6mm/PE](https://www.aliexpress.com/item/4001338085412.html)
+  * [Hose 1 meter | 6x4](https://www.aliexpress.com/item/4000383354010.html)
   * [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html) 
 
 !> If planning on adding scales check the scales section as the optocoupler is not the right choice then.
@@ -182,9 +182,9 @@ _Will enable pump control based on active pressure feedback, thies enables press
   * **Hose:**  _Just one of the two hose options is needed_ 
     * [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html) **READ BELOW WARNING**
     * [Saeco](https://www.ebay.co.uk/itm/115431428020) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
-  * [Transducer Fitting - 6mm x 1/4](https://www.aliexpress.com/item/33059380672.html)
-  * [T-fitting - 6mm](https://www.aliexpress.com/item/1005002749996345.html)
-  * [Clamps - 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
+  * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.htmll)
+  * [T-fitting | 6mm](https://www.aliexpress.com/item/1005002749996345.html)
+  * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
 !> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
 
