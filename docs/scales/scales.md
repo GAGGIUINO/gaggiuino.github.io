@@ -142,7 +142,11 @@ Adjust the Scale factors by tapping on the + or - buttons until the "Weight outp
    - You will update the coefficients from the Settings page on the gaggiuino display. 
 
 - Reflash both the Nextion and the STM32 MCU with the appropriate gaggiuino code. 
-   - **Single Clock users make sure that your platformio.ini environment has a the following switch under build_flags: -DSINGLE_HX711_CLOCK**
+   - **Be sure to select the correct platformio environment from the environment tab like the example as shown below**
+
+   ![platformio_branch_environment_bar](https://user-images.githubusercontent.com/80347096/191513895-bf86b2a1-7a81-4972-a21a-120d20a83193.jpg)
+   
+  <!--  ![platformio_stm32_environments](https://user-images.githubusercontent.com/80347096/191513205-bbff4100-7173-49a7-a95e-4603614064e8.jpg) -->
 
 - Power on the Gaggia.
 
@@ -152,7 +156,7 @@ Adjust the Scale factors by tapping on the + or - buttons until the "Weight outp
 
 ![Tap the Power button to get to the calibration factors.](https://user-images.githubusercontent.com/80347096/188330783-70f1b55a-35ba-48b8-9224-f11a22a90c8c.jpg)
 
-- The figure below shows the screen you should see for updaing the calibration coefficients for the load cells.
+- The figure below shows the screen you should see for updating the calibration coefficients for the load cells.
 
 ![Updating calibration coefficients via Settings page in NEXTION.](https://user-images.githubusercontent.com/80347096/188330921-40f59182-c4c4-40e6-9f57-783d6d1c3326.jpg)
 
