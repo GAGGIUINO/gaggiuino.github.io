@@ -104,8 +104,27 @@ The figure below shows a 1-kΩ resistor connected between 5VDC and the SCK pin o
 Once the connections are made, it's time to *calibrate* the load cells.
 
 ## Calibration
+### nano (branch and environment)
+Files from the scales-calibration folder in the main directory need to be flashed to **both** the Nextion and MCU. Be sure to select the correct platformio branch and environment as shown in figures below for nano
 
-Files from the  scales-calibration folder in the main directory need to be flashed to both the Nextion and MCU. You will need an object with a known mass which you place **directly** on the load cell as shown in the figure below.
+![nano_branch](https://user-images.githubusercontent.com/80347096/191635523-0eeb9ca2-173e-444a-875b-889a3a8b701c.jpg)
+
+![Nano_environment](https://user-images.githubusercontent.com/80347096/191634757-c95249a7-6162-4212-a5c8-af67fd23aae0.jpg)
+
+### STM32 (branch and environment)
+Files from the scales-calibration folder in the main directory need to be flashed to **both** the Nextion and MCU. Be sure to select the correct platformio branch and environment as shown in figures below for STM32
+
+Select the appropriate branch for STM32 (the dev branch is used in this example)
+
+![STM32_branch](https://user-images.githubusercontent.com/80347096/191636260-ac47f90a-7bb9-4cec-8d5b-530450e3e00e.jpg)
+
+Select the appropriate environment for uploading to the STM32
+
+![STM32_environment](https://user-images.githubusercontent.com/80347096/191636552-59431719-a869-4845-842c-88c099bd4f22.jpg)
+
+### Software Interface with Known Mass
+
+You will need an object with a known mass which you place **directly** on the load cell as shown in the figure below.
 
 
 ![Known 50-gram mass directly on load cell.](https://user-images.githubusercontent.com/80347096/187000236-65dbac3e-95af-462d-837d-177f7e411399.jpg)
@@ -126,7 +145,7 @@ Adjust the Scale factors by tapping on the + or - buttons until the "Weight outp
 
 ![Calibration factor adjusted to match object's mass.](https://user-images.githubusercontent.com/80347096/187000749-8fd5f694-5533-435a-a60a-71868a601efb.jpg)
 
-### nano
+### Saving Calibration Constants to nano
 - Press the SAVE button to store the values of the Scale factors into eeprom. 
    - It is recommended that you write these values down as a safeguard. 
 
@@ -137,14 +156,14 @@ Adjust the Scale factors by tapping on the + or - buttons until the "Weight outp
 
 - Power on the Gaggia and pull some amazing shots.
 
-### STM32 
+### Saving Calibration Constants to STM32 
 - Write the values down on a piece of paper. 
    - You will update the coefficients from the Settings page on the gaggiuino display. 
 
 - Reflash both the Nextion and the STM32 MCU with the appropriate gaggiuino code. 
-   - **Be sure to select the correct platformio environment from the environment tab like the example as shown below**
+   - **Be sure to select the correct platformio environment from the environment tab. For this example, a single clock is used in a Gaggiuino that uses a relay to stop the pump.**
 
-   ![platformio_branch_environment_bar](https://user-images.githubusercontent.com/80347096/191513895-bf86b2a1-7a81-4972-a21a-120d20a83193.jpg)
+![STM32_appropriate_env](https://user-images.githubusercontent.com/80347096/191637488-68c23a6a-24ff-4d92-9b72-6a257c58e7e6.jpg)
    
   <!--  ![platformio_stm32_environments](https://user-images.githubusercontent.com/80347096/191513205-bbff4100-7173-49a7-a95e-4603614064e8.jpg) -->
 
@@ -164,7 +183,7 @@ Adjust the Scale factors by tapping on the + or - buttons until the "Weight outp
 
 - Press the Save button. 
 
-- Enjoy the frutis of your labor by pulling a shot or two!
+- Enjoy the fruits of your labor by pulling a shot or two!
 
 ## Troubleshooting load cells
 Issues can arise while installing scales. The white epoxy on the load cell is designed to protect the strain sensor and add strain relief for the small wires. Take caution while handling the load cell's wires. If there is no signal from an HX711 amplifier, there are a few things you can troubleshoot.
