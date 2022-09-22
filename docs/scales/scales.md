@@ -32,7 +32,7 @@ A wiring diagram for typical load cells is shown in the above figure. The connec
 
 ## Load Cell Frame
 
-This section shows a typical load frame cell setup using one of likeablebump's design. The idea remains the same if you chose to create your own rigid frame. You need to "lock'' the load cell to the frame using the rear mounting screws (M3 screws will work if you purchase the 500g load cells from AliExpress). The load cell needs to have a gap between it and the rigid frame. An extension piece is locked to the top of the load cell to give the load cell better leveraging.
+This section shows a typical load cell frame setup using one of likeablebump's design. The idea remains the same if you chose to create your own rigid frame. You need to "lock'' the load cell to the frame using the rear mounting screws (M3 screws will work if you purchase the 500g load cells from AliExpress). The load cell needs to have a gap between it and the rigid frame. An extension piece is locked to the top of the load cell to give the load cell better leveraging.
 
 The figure below shows the M3 screws locking the load cell to frame and leverage extension.
 ![Locking load cell to frame and leverage extension.](https://user-images.githubusercontent.com/80347096/186999854-024d76ba-9c30-4cf8-9f71-3587203d2789.jpg)
