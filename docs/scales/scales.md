@@ -105,14 +105,14 @@ Once the connections are made, it's time to *calibrate* the load cells.
 
 ## Calibration
 ### nano (branch and environment)
-Files from the scales-calibration folder in the main directory need to be flashed to **both** the Nextion and MCU. Be sure to select the correct platformio branch and environment as shown in figures below for nano
+Files from the scales-calibration folder in the main directory need to be flashed to **both** the Nextion and MCU. **If using a single clock, then the first line of the scales-calibration.ino needs to be uncommented.** Be sure to select the correct platformio branch and environment as shown in figures below for nano
 
 ![nano_branch](https://user-images.githubusercontent.com/80347096/191635523-0eeb9ca2-173e-444a-875b-889a3a8b701c.jpg)
 
 ![Nano_environment](https://user-images.githubusercontent.com/80347096/191634757-c95249a7-6162-4212-a5c8-af67fd23aae0.jpg)
 
 ### STM32 (branch and environment)
-Files from the scales-calibration folder in the main directory need to be flashed to **both** the Nextion and MCU. Be sure to select the correct platformio branch and environment as shown in figures below for STM32
+Files from the scales-calibration folder in the main directory need to be flashed to **both** the Nextion and MCU. **If using a single clock, then the first line of the scales-calibration.ino needs to be uncommented.** Be sure to select the correct platformio branch and environment as shown in figures below for STM32
 
 Select the appropriate branch for STM32 (the dev branch is used in this example)
 
