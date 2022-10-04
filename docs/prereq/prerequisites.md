@@ -7,7 +7,7 @@ Then pull the code as shown in the below video:
 <details>
 <summary>Setup project using PIO (Click to expand)</summary>
 
-[Platform IO](https://user-images.githubusercontent.com/109426580/193900425-15c42d9c-adf4-4073-aa46-34874528bf43.mp4 ':include')
+[Platform IO](https://user-images.githubusercontent.com/109426580/193900425-15c42d9c-adf4-4073-aa46-34874528bf43.mp4 ':include :type=video controls width=70%')
 </details>
 
 Make sure to switch to the necessary branch once pulled, depending on the target platform.
