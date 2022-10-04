@@ -36,6 +36,14 @@
 >
 >_*3_ __Predictive scales__ - software driven predicted weight output, doesn't need any scales hardware.
 
+## VERSIONS
+
+  Code branch            |  Arduino Nano    |  STM32 Blackpill
+-----------------------  |------------------|-----------------
+  release-nano-final     |:heavy_check_mark:|      :x:  
+  release/stm32-blackpill|        :x:       |:heavy_check_mark: 
+
+
 ## Community Speaks
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MxPNQRCxQZc" title="GAGGIUINO Upgrade Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

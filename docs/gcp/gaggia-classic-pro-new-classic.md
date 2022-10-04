@@ -67,45 +67,17 @@ This relay is what manages the temp by cutting the voltage when the thermocouple
 <img src="https://user-images.githubusercontent.com/53577819/154988554-5be0bb0a-dcf2-4bf7-a70f-4c356d00eea6.jpg" width="600" height="450">
 
 ### *1.0.5 Software Install*
-**Arduino Software Upload**
-Plug the Arduino board into PC/Mac using the mini-USB cable that came with it and upload the code to the Arduino board.
-Note: Uploading won't work with the LCD connected
+To flash the microcontroller Arduino Nano or the STM32 Blackpill, pls follow the video form the ***Prerequisites*** section of this site.
 
-1. Download/Install [Arduino IDE](https://www.arduino.cc/en/software)
-2. Download/Install [CH340 USB Driver](http://www.wch-ic.com/downloads/CH341SER_ZIP.html)
-3. Download the latest version of Gaggiuino from the GitHub main repository.  Copy the unzipped files to an easily accessible location
-4. Add Libraries:
-* Click Sketch\Include Libraries\Manage Libraries
-* Type in the Library name and install most recent version
-* Install 2 Libraries:
-  * Easy Nextion Library
-  * MAX6675 by Ada-fruit
-5. Add External Libraries:
-* Download Library Zip Files:
-  * PSM
-**Files must be unzipped** to the Arduino Library folder (default path is located in your local documents folder.  You should see the added libraries from step 4 here as well.)
-6. Open Gaggiuino.ino (located in Gaggiuino folder from step 3). If prompted to create a sketch folder, press OK
-
-**AT THIS POINT AFTER INSTALLING LIBRARIES RESTART THE IDE SOFTWARE**
-
-7. Unplug the LCD from our Arduino Board mock setup
-8. Plug the Arduino in via USB cable (must be a data transfer cable, not just a power cable)
-9. Set Board, Processor, Port:  Navigate to “Tools” in the top menu: 
-* Board: “Arduino Nano”
-* Processor: “ATmega328P”
-* * Use the “Old Bootloader” version, but results may vary depending on your hardware.
-* * When plugged in and the “port” section should be active and something should be selected.  If not manually select the port that contains the Arduino.  Mine was on “Com4”. Try unplugging then plugging in again if it doesn't work.
-
-<img src="https://user-images.githubusercontent.com/53577819/154988600-334dd985-f9c1-4aed-a55c-ab5c03ef51ab.png" width="600" height="450">
- 
-10. Press Upload (***Make sure LCD is UNPLUGGED before uploading otherwise upload will fail***)
-11. If upload is Successful, unplug Arduino Board from computer
+!> Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.
 
 **Flashing the Nextion LCD Software Upload**
-_Uploading the LCD ROM code_
-Method 1 - Download and unzip the *.tft file on a FAT32(MS-DOS (FAT32)) formatted microSD card and upload on the LCD panel using the onboard card reader.
 
-Method 2 - Open the .HMI file using Nextion Editor and using the File menu upload it on a microSD card
+_Uploading the LCD ROM code_
+
+**Method** 1 - Download and unzip the *.tft file on a FAT32(MS-DOS (FAT32)) formatted microSD card and upload on the LCD panel using the onboard card reader.
+
+**Method 2** - Open the .HMI file using Nextion Editor and using the File menu upload it on a microSD card
 
 1. Plug LCD back into Arduino Board Setup
 2. Locate “nextion-discovery-lcd.tft” or “nextion-basic-lcd.tft” (depends on what you purchased)

@@ -113,8 +113,9 @@ First let's check that the setup works as expected while outside the machine so 
 1. The first step will be to test the electronics outside the Gaggia. Connect the MAX6675 module, relay, and nextion to the arduino board using the pins defined above. You can also find them defined at the top of the .ino file.
 For now only connect the low voltage circuit controlling ports of the relay to check whether the relay LED indicates the power states.
 
-4. Plug the arduino board in using the mini USB cable that came with it and upload the code to the arduino board, using your chosen IDE (Arduino or VSCode with PlatformIO).
-    >*Note: uploading won't work with the LCD connected*
+4. To flash the microcontroller Arduino Nano or the STM32 Blackpill, pls follow the video form the ***Prerequisites*** section of this site.
+
+!> Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.
 
 5. Upload the LCD ROM code to the Nextion.
 
