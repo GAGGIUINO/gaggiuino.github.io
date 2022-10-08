@@ -26,7 +26,7 @@
   Web interface          |       :x:        |:heavy_plus_sign: 
   OTA updates            |       :x:        |:heavy_plus_sign: 
 
-:heavy_check_mark:  Complete
+:heavy_check_mark:  Available
 :x:  Not available
 :heavy_plus_sign: Planned
 
@@ -36,12 +36,17 @@
 >
 >_*3_ __Predictive scales__ - software driven predicted weight output, doesn't need any scales hardware.
 
-## VERSIONS
+## CODE VERSIONS
 
-  Code branch            |  Arduino Nano    |  STM32 Blackpill
------------------------  |------------------|-----------------
-  release-nano-final     |:heavy_check_mark:|      :x:  
-  release/stm32-blackpill|        :x:       |:heavy_check_mark: 
+  MCU             |                               Code branch         
+------------------|------------------------------------------------------------------------------------
+  Arduino Nano    |[release-nano-final](https://github.com/Zer0-bit/gaggiuino/tree/release-nano-final)
+  STM32 Blackpill |[release/stm32-blackpill](https://github.com/Zer0-bit/gaggiuino/tree/release/stm32-blackpill)
+
+
+> 1. Failing to run the right code branch on the chosen set of hardware will yield unexpected results.
+>
+> 2. Make sure you **ALWAYS** flash both the microcontroller as well as the LCD unit.
 
 
 ## Community Speaks
