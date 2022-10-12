@@ -1,13 +1,15 @@
 # Bill of Materials
 
-  * [STM32F411CEU6 AKA BLACKPILL](https://www.digikey.co.uk/en/products/detail/adafruit-industries-llc/4877/13922051)
+  * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
   * [2.4" Nextion LCD](https://bit.ly/3CAUzPj)
   * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/32842805668.html)
   * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
   * [Thermo-resistant cables](https://bit.ly/3tjSQbI)
     * **AWG15** - 1m black and red 
     * **AWG20** - 1m black and red
-    * **AWG26** - 5m black and red and 4 other colours of your choice
+  * [JST XH 4P](https://www.aliexpress.us/item/2251832768103991.html)
+  * [JST PH 3P,4P and 5P](https://www.aliexpress.com/item/4000091077742.html)
+
   * [Spade connectors M/F 6.3mm](https://bit.ly/2Sjrkhu)
   * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
 
