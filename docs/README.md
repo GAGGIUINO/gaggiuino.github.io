@@ -217,24 +217,35 @@ _Will allow for all the additional features listed in the Featrures table under 
 * **SCALES:**
 _Will enable for realtime shot weight tracking without external scales_
 
-  * [500g LOADCELLS x 2](https://www.aliexpress.com/item/32670225988.html)
+  * Load cells (pick one based on your scale housing selection)
+    * [500g LOADCELLS x 2](https://www.aliexpress.com/item/32670225988.html)
+    * [750g LOADCELLS x 2](https://www.aliexpress.com/item/32670225988.html)
   * [HX711 amplifier x 2](https://www.aliexpress.com/item/32670225988.html)
+  * Additional adhesive/fasteners depending on scale housing selection
 
 * **Gaggiuino Housing&Scales mounting**
 
 _Choose what's best for you, naturally you can mix and match as well, for example the LCD enclosure printed from the Gaggiuino v2 files set and all the components going inside the machine using the INTERNAL COMPONENTS HOUSING designs._
-  * **HOUSINGS**
+  * **EXTERNAL HOUSINGS**
     * [Gaggiuino v1](https://www.thingiverse.com/thing:4949471)
     * [Gaggiuino v2](https://www.thingiverse.com/thing:5236286)
 
-  * **INTERNAL COMPONENTS ONLY HOUSING**
+  * **INTERNAL COMPONENTS ONLY HOUSINGS**
     * [Gaggiuino Nano Internal Component Housing](https://www.printables.com/model/262346-gaggiuino-nano-internal-component-housing)
     * [Gaggiuino STM32 Internal Component Housing](https://www.printables.com/model/269394-gaggiuino-stm32-internal-component-housing)
 
-  * **SCALES**
-    * [Gaggia Classic Load Cell Integration (no drill)](https://www.thingiverse.com/thing:5276489)
-    * [Gaggia Classic Pro Load Cell Integration (no drill)](https://www.thingiverse.com/thing:5276492)
-    * [Gaggia Classic Pro Load Cell Integration single HX711 board (no drill)](https://www.thingiverse.com/thing:5276496)
+  * **INTERNAL PCB HOUSINGS**
+    * [GaggiaBoard V2 Housing A](https://www.printables.com/model/260901)
+    * [GaggiaBoard V2 Housing B](https://www.printables.com/model/261267)
+    * [GaggiaBoard V3 Housing](https://www.printables.com/model/304637)
+
+  * **SCALE HOUSINGS**
+    * 500g Load Cells
+      * [Gaggia Classic Load Cell Integration (no drill)](https://www.thingiverse.com/thing:5276489)
+      * [Gaggia Classic Pro Load Cell Integration (no drill)](https://www.thingiverse.com/thing:5276492)
+      * [Gaggia Classic Pro Load Cell Integration single HX711 board (no drill)](https://www.thingiverse.com/thing:5276496)
+    * 750g Load Cells
+      * [Gaggia Classic | Pro Scales (no drill, single or dual HX711 board)](https://www.printables.com/model/285370)
 
 **Cheap services to order the prints if not owning a printer:**
 
