@@ -5,10 +5,13 @@
 ### **SCHEMATICS & DIAGRAMS**
 
 **Schematics:**
-* [GAGGIA Classic](https://user-images.githubusercontent.com/42692077/161397293-82df427a-2ac2-4226-bdc6-fa831a962265.png)
+* [GAGGIA Classic **Nano** wiring](https://user-images.githubusercontent.com/42692077/161397293-82df427a-2ac2-4226-bdc6-fa831a962265.png)
+
+* [GAGGIA Classic **STM32-Blackpill** wiring](https://user-images.githubusercontent.com/109426580/202476409-f76be79d-b51c-4130-adc1-d494a65e6114.jpeg)
+
 
 **Diagrams:**
-* [GAGGIA Classic](https://user-images.githubusercontent.com/42692077/160548957-88c93198-6d81-4081-8db6-552b6f6c5281.png)
+* [GAGGIA Classic **Nano** wiring](https://user-images.githubusercontent.com/42692077/160548957-88c93198-6d81-4081-8db6-552b6f6c5281.png)
 
 ***
 !> **First and foremost, please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's  completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or  your gold fish. It will be entirely your fault!**

@@ -215,10 +215,30 @@ _Will allow for all the additional features listed in the Featrures table under 
   If the reccommended seller doesn't have it in stock you will have to shop around.
 
 * **SCALES:**
-_Will enable for realtime shot weight tracking without external scales_
+
+_Will enable for realtime shot weight tracking without external scales, be aware this is a highly advanced installation step and requires in depth understanding to achieve optimal results, it can't be simplified due to the higly sensitive nature scales require in terms of both installation as well as various tolerances._
+
+<details>
+<summary>Scales V1 (Click to expand)</summary>
 
   * [500g LOADCELLS x 2](https://www.aliexpress.com/item/32670225988.html)
-  * [HX711 amplifier x 2](https://www.aliexpress.com/item/32670225988.html)
+  * [HX711 amplifier x 2](https://www.aliexpress.com/item/33041823995.html)
+
+  * **Printing materials**
+    * [Gaggia Classic Load Cell Integration (no drill)](https://www.thingiverse.com/thing:5276489)
+    * [Gaggia Classic Pro Load Cell Integration (no drill)](https://www.thingiverse.com/thing:5276492)
+</details>
+
+<details>
+<summary>Scales V2 (Click to expand)</summary>
+
+  * [750g LOADCELLS x 2](https://www.aliexpress.com/item/1644918827.html)
+  * [HX711 amplifier x 2](https://www.aliexpress.com/item/33041823995.html)
+
+  * **Printing materials**
+    * [Gaggia Classic & Classic Pro scales housing](https://www.printables.com/model/285370-gaggia-classic-pro-scales)
+</details>
+
 
 * **Gaggiuino Housing&Scales mounting**
 
@@ -228,13 +248,8 @@ _Choose what's best for you, naturally you can mix and match as well, for exampl
     * [Gaggiuino v2](https://www.thingiverse.com/thing:5236286)
 
   * **INTERNAL COMPONENTS ONLY HOUSING**
-    * [Gaggiuino Nano Internal Component Housing](https://www.printables.com/model/262346-gaggiuino-nano-internal-component-housing)
-    * [Gaggiuino STM32 Internal Component Housing](https://www.printables.com/model/269394-gaggiuino-stm32-internal-component-housing)
-
-  * **SCALES**
-    * [Gaggia Classic Load Cell Integration (no drill)](https://www.thingiverse.com/thing:5276489)
-    * [Gaggia Classic Pro Load Cell Integration (no drill)](https://www.thingiverse.com/thing:5276492)
-    * [Gaggia Classic Pro Load Cell Integration single HX711 board (no drill)](https://www.thingiverse.com/thing:5276496)
+    * [Gaggiuino **Nano** Internal Component Housing](https://www.printables.com/model/262346-gaggiuino-nano-internal-component-housing)
+    * [Gaggiuino **STM32-Blackpill** Internal Component Housing](https://www.printables.com/model/269394-gaggiuino-stm32-internal-component-housing)
 
 **Cheap services to order the prints if not owning a printer:**
 
