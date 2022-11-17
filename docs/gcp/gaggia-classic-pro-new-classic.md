@@ -356,11 +356,11 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 ## **3.0 Appendix**
 
 ### *3.0.1 Schematics & Diagrams*
-*Schematics*
-[GAGGIA Classic Pro](https://github.com/Zer0-bit/gaggiuino/blob/release-0.2.2/schematics/gcp-schematics.png)
+**Schematics:**
+* [GAGGIA Classic Pro **Nano** wiring](https://user-images.githubusercontent.com/109426580/202481338-a90ea5db-dfe9-44e8-8209-f97dd5e7960c.png)
 
-*Diagrams*
-[GAGGIA Classic Pro](https://github.com/Zer0-bit/gaggiuino/blob/release-0.2.2/schematics/GCP-CONNECTIONS-DIAGRAM.png)
+**Diagrams:**
+* [GAGGIA Classic Pro **Nano** wiring](https://user-images.githubusercontent.com/109426580/202481332-a040752f-0d45-41fd-b6ec-3d84a332f097.png)
 
 ### *3.0.2 Component Wiring* 
 You can find the defined pins at the top of the .ino file.
