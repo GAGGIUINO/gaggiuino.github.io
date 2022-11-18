@@ -48,6 +48,7 @@
 >
 > 2. Make sure you **ALWAYS** flash both the microcontroller as well as the LCD unit.
 
+!> Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.
 
 ## Community Speaks
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MxPNQRCxQZc" title="GAGGIUINO Upgrade Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -56,14 +57,14 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EJFadpL9aOE" title="GAGGIUINO BUILD LOG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <details>
 
-<summary>MORE FROM THE COMMUNITY(Click to expand)</summary>
+<summary><b>MORE FROM THE COMMUNITY</b> <i>(Click to expand)</i></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hpxB1Q6AFkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </details>
 
 <details>
 
-<summary>Usage (Click to expand)</summary>
+<summary><b>MOD FUNCTIONS AND USAGE</b> <i>(Click to expand)</i></summary>
 
  - **BOILER**: Sets the desired temperature at the boiler level
  - **OFFSET**: Sets the offset value used to calculate the real water temperature
@@ -98,7 +99,7 @@
 ## Timeline
 
 <details>
-<summary>Initial (Click to expand)</summary>
+<summary><b>Initial checks</b> <i>(Click to expand)</i></summary>
 
 
 1. Purchase the parts listed from Ali and expect a wait of ~1 month.
@@ -117,7 +118,7 @@
 </details>
 
 <details>
-<summary>Base (Click to expand)</summary>
+<summary><b>Base Install</b> <i>(Click to expand)</i></summary>
 
 1. Plan out where the components will sit inside the machine to determine cable length
 2. Create piggyback cables. Determine what switch points to piggyback from.
@@ -132,7 +133,7 @@
 </details>
 
 <details>
-<summary>Extended (Click to expand)</summary>
+<summary><b>Extended Install</b> <i>(Click to expand)</i></summary>
 
 1. Install the pressure sensor. Ensure it does not leak under pressure.
 2. Install dimmer - isolate the board using an enclosure or tape it up after wiring.
@@ -140,7 +141,7 @@
 </details>
 
 <details>
-<summary>Finish (Click to expand)</summary>
+<summary><b>Final checks</b> <i>(Click to expand)</i></summary>
 
 1. Make sure all connections are proper i.e., no metal is exposed and well isolated, all soldering is perfect and wrapped in heat-shrink.
 2. Flash the Arduino and LCD with the latest version from GitHub (there could have been changes since).
@@ -149,6 +150,9 @@
 5. Check all other settings save correctly.
 6. Record your first shot. Post this to [#first-shot](https://discord.com/channels/890339612441063494/910972035205857320) on Discord.
 </details>
+
+> 
+> 
 
 # Bill of Materials
 
@@ -240,12 +244,12 @@ _Will enable for realtime shot weight tracking without external scales, be aware
 </details>
 
 
-* **Gaggiuino Housing&Scales mounting**
+* **Gaggiuino Housings**
 
 _Choose what's best for you, naturally you can mix and match as well, for example the LCD enclosure printed from the Gaggiuino v2 files set and all the components going inside the machine using the INTERNAL COMPONENTS HOUSING designs._
   * **HOUSINGS**
-    * [Gaggiuino v1](https://www.thingiverse.com/thing:4949471)
-    * [Gaggiuino v2](https://www.thingiverse.com/thing:5236286)
+    * [Gaggiuino v2 GCP LCD Enclosure](https://www.thingiverse.com/thing:5236286)
+    * [Gaggiuino v2 GC LCD Enclosure](https://www.printables.com/model/280617-gaggiuino-gaggia-classic-touchscreen-housing-and-f)
 
   * **INTERNAL COMPONENTS ONLY HOUSING**
     * [Gaggiuino **Nano** Internal Component Housing](https://www.printables.com/model/262346-gaggiuino-nano-internal-component-housing)
