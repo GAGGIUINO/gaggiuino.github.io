@@ -202,14 +202,14 @@ So you end up having them connected like this:
   The pressure sensor will be tapping into the PTFE tube connecting the **pump outlet** and the **boiler inlet**. How you connect it is up to you.
   
   When installing the T-fitting:
-    * Do not use diagonal cutters or pliers to cut the tube. These cutters pinch the tube out of round which can cause sealing problems. Use a very sharp razor blade or scalpel with a slow sawing motion to make a clean cut. To seal well in the T-fitting the cut hose ends must be smooth and square to the tube.
-    * Try to install the T-fitting along a straighter section of the tube. If the tube bends sharply immediatley after exiting the T-fitting it may not seal.
-    * If you see large scratches on the outside of your hose try to place the splice for the tee away from the scratches. The O-rings in the fitting may not seal well on scratched sections of tube. 
+     * Do not use diagonal cutters or pliers to cut the tube. These cutters pinch the tube out of round which can cause sealing problems. Use a very sharp razor blade or scalpel with a slow sawing motion to make a clean cut. To seal well in the T-fitting the cut hose ends must be smooth and square to the tube.
+     * Try to install the T-fitting along a straighter section of the tube. If the tube bends sharply immediatley after exiting the T-fitting it may not seal.
+     * If you see large scratches on the outside of your hose try to place the splice for the tee away from the scratches. The O-rings in the fitting may not seal well on scratched sections of tube. 
 
   When installing the transducer:
-    * Connect the entire 1m length of PU tubing to the T-fitting and bundle it up inside the machine with a zip tie. Leaving this tube long helps smooth out the pressure transducer readings.
-    * To get the transducer to seal to the brass push-to-connect fitting, wrap the threads in PTFE tape and place a dash 011 or similarly sized O-ring at the bottom of the brass push-to-connect fitting.
-    * Place the transducer as low as possible in the case and far away from the boiler. Ensure the transducer is resting so that the push-to-connect fitting is pointing upwards or the transducer is sitting perpendicular to gravity to avoid noisy transducer readings.
+     * Connect the entire 1m length of PU tubing to the T-fitting and bundle it up inside the machine with a zip tie. Leaving this tube long helps smooth out the pressure transducer readings.
+     * To get the transducer to seal to the brass push-to-connect fitting, wrap the threads in PTFE tape and place a dash 011 or similarly sized O-ring at the bottom of the brass push-to-connect fitting.
+     * Place the transducer as low as possible in the case and far away from the boiler. Ensure the transducer is resting so that the push-to-connect fitting is pointing upwards or the transducer is sitting perpendicular to gravity to avoid noisy transducer readings.
 
 ***Its advisable after making the connections and just before connecting the transducer itself turn on the machine and while cold engage the pump to fill the transducer hose with water as well, leaving a lot of air in the system might play funny with the readings. After the transducer is connected, be sure to test the fittings under pressure.***
   
