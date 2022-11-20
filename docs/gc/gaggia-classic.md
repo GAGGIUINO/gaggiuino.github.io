@@ -199,14 +199,14 @@ So you end up having them connected like this:
   * Tap into the **PSU** splitter used for the **N** connection using the **BLACK** splitter and connect the bare end to the optocoupler **N**
 ***
 2. Install the pressure transducer.
-  The pressure sensor will be tapping into the PTFE tube connecting the **pump outlet** and the **boiler inlet**. How you connect it is up to you.
+  The pressure sensor will be tapping into the PTFE tube connecting the **pump outlet** and the **boiler inlet**.
   
-When installing the T-fitting:
+**When installing the T-fitting:**
   * Do not use diagonal cutters or pliers to cut the tube. These cutters pinch the tube out of round which can cause sealing problems. Use a very sharp razor blade or scalpel with a slow sawing motion to make a clean cut. To seal well in the T-fitting the cut hose ends must be smooth and square to the tube.
   * Try to install the T-fitting along a straighter section of the tube. If the tube bends sharply after exiting the T-fitting it may not seal.
   * If you see large scratches on the outside of your hose try to place the splice for the T-fitting away from the scratches. The O-rings in the fitting may not seal well on scratched sections of tube. 
 
-  When installing the transducer:
+**When installing the transducer:**
   * Connect the entire 1m length of PU tubing to the T-fitting and bundle it up inside the machine with a zip tie. Leaving this tube long helps smooth out the pressure transducer readings.
   * To get the transducer to seal to the brass push-to-connect fitting wrap the threads in PTFE tape and place a dash 011 or similarly sized O-ring at the bottom of the brass push-to-connect fitting.
   * Place the transducer as low as possible in the case and far away from the boiler. Ensure the transducer is resting so that the push-to-connect fitting is pointing upwards or is perpendicular to gravity to avoid noisy transducer readings.
