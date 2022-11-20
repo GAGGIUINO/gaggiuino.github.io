@@ -193,7 +193,7 @@ _Will enable pump control based on active pressure feedback, thies enables press
   * [Hose 1 meter | 6x4](https://www.aliexpress.com/item/4000383354010.html)
   * [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html) 
 
-_EU Gaggia Classics come with a chassis PE/GND, while US models do not. If modding a US GC, consider purchasing the below parts to allow grounding of the machine chassis as an extra safety precaution._
+  _EU Gaggia Classics come with a chassis PE/GND, while US models do not. If modding a US GC, consider purchasing the below parts to allow grounding of the machine chassis as an extra safety precaution._
 
   * [3 Prong Socket | AC-09 ](https://www.aliexpress.us/item/2255800283408912.html)
   * [Right Angle C13 Power Cord | 3ft](https://www.monoprice.com/product?p_id=7679)
