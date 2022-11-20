@@ -178,7 +178,7 @@ _Will enable only brew and steam temperature control_
       * [5V/2A PSU](https://www.aliexpress.com/item/4001068579272.html)
       * [Plug Wires](https://www.aliexpress.com/item/1005001727355478.html)
 
-!> The linked spade connectors are cheap but may not provide secure crimps! If wires pull out of the connectors easily when crimped solder the wires in as shown in the crimping video on the Recommendations page.
+!> The linked spade connectors are cheap but may not provide secure crimps! If wires pull out of the connectors easily when crimped, solder the wires in as shown in the crimping video on the Recommendations page.
 
 ### EXTENDED FUNCTIONALITY
 _Will enable pump control based on active pressure feedback, thies enables pressure and flow profiling as well as other functionality._
