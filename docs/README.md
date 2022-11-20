@@ -222,7 +222,7 @@ _Will allow for all the additional features listed in the Featrures table under 
   * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
   * [5V RELAY](https://a.aliexpress.com/_vpUdrT) **Supersedes the 1-bit opto**
   
-    _It is optional, but highly recommended, to purchase an ST-Link V2 to program the STM32 because the STM32 boot button often fails._
+  _It is optional, but highly recommended, to purchase an ST-Link V2 to program the STM32 because the STM32 boot button often fails._
 
   * [ST-Link V2](https://www.aliexpress.us/item/3256801435312142.html) **DO NOT BUY THE STM32 FROM THIS LINK. ONLY THE ST-LINK V2**
 
