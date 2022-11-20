@@ -178,6 +178,8 @@ _Will enable only brew and steam temperature control_
       * [5V/2A PSU](https://www.aliexpress.com/item/4001068579272.html)
       * [Plug Wires](https://www.aliexpress.com/item/1005001727355478.html)
 
+!> The linked spade connectors are cheap but may not provide secure crimps! If wires pull out of the connectors easily when crimped solder the wires in as shown in the crimping video on the Recommendations page.
+
 ### EXTENDED FUNCTIONALITY
 _Will enable pump control based on active pressure feedback, thies enables pressure and flow profiling as well as other functionality._
 
@@ -190,6 +192,11 @@ _Will enable pump control based on active pressure feedback, thies enables press
   * [Transducer Fitting | 6mm/PE](https://www.aliexpress.com/item/4001338085412.html)
   * [Hose 1 meter | 6x4](https://www.aliexpress.com/item/4000383354010.html)
   * [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html) 
+
+_EU Gaggia Classics come with a chassis PE/GND, while US models do not. If modding a US GC, consider purchasing the below parts to allow grounding of the machine chassis as an extra safety precaution._
+
+  * [3 Prong Socket | AC-09 ](https://www.aliexpress.us/item/2255800283408912.html)
+  * [Right Angle C13 Power Cord | 3ft](https://www.monoprice.com/product?p_id=7679)
 
 !> If planning on adding scales check the scales section as the optocoupler is not the right choice then.
 
@@ -214,6 +221,10 @@ _Will allow for all the additional features listed in the Featrures table under 
   * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
   * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
   * [5V RELAY](https://a.aliexpress.com/_vpUdrT) **Supersedes the 1-bit opto**
+  
+_It is optional, but highly recommended, to purchase an ST-Link V2 to program the STM32 because the STM32 boot button often fails_
+
+  * [ST-Link V2](https://www.aliexpress.us/item/3256801435312142.html) **DO NOT BUY THE STM32 FROM THIS LINK. ONLY THE ST-LINK V2**
 
   !>Due to global shortages the semiconductors sector was hit hard, as a result STM32 chips are quite hard to obtain, be wary of resources selling fakes or low quality clones which will lead to either bad experience or no experience.
   If the reccommended seller doesn't have it in stock you will have to shop around.
