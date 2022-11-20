@@ -203,8 +203,8 @@ So you end up having them connected like this:
   
 When installing the T-fitting:
   * Do not use diagonal cutters or pliers to cut the tube. These cutters pinch the tube out of round which can cause sealing problems. Use a very sharp razor blade or scalpel with a slow sawing motion to make a clean cut. To seal well in the T-fitting the cut hose ends must be smooth and square to the tube.
-  * Try to install the T-fitting along a straighter section of the tube. If the tube bends sharply immediatley after exiting the T-fitting it may not seal.
-  * If you see large scratches on the outside of your hose try to place the splice for the tee away from the scratches. The O-rings in the fitting may not seal well on scratched sections of tube. 
+  * Try to install the T-fitting along a straighter section of the tube. If the tube bends sharply after exiting the T-fitting it may not seal.
+  * If you see large scratches on the outside of your hose try to place the splice for the T-fitting away from the scratches. The O-rings in the fitting may not seal well on scratched sections of tube. 
 
   When installing the transducer:
   * Connect the entire 1m length of PU tubing to the T-fitting and bundle it up inside the machine with a zip tie. Leaving this tube long helps smooth out the pressure transducer readings.
