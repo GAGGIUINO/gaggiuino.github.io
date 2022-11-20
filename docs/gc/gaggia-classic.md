@@ -201,7 +201,7 @@ So you end up having them connected like this:
 2. Install the pressure transducer.
   The pressure sensor will be tapping into the PTFE tube connecting the **pump outlet** and the **boiler inlet**. How you connect it is up to you.
   
-  When installing the T-fitting:
+When installing the T-fitting:
      * Do not use diagonal cutters or pliers to cut the tube. These cutters pinch the tube out of round which can cause sealing problems. Use a very sharp razor blade or scalpel with a slow sawing motion to make a clean cut. To seal well in the T-fitting the cut hose ends must be smooth and square to the tube.
      * Try to install the T-fitting along a straighter section of the tube. If the tube bends sharply immediatley after exiting the T-fitting it may not seal.
      * If you see large scratches on the outside of your hose try to place the splice for the tee away from the scratches. The O-rings in the fitting may not seal well on scratched sections of tube. 
