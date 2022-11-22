@@ -165,7 +165,7 @@ _Will enable only brew and steam temperature control_
   * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
   * [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
   * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
-  * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/32842805668.html)
+  * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
   * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
   * [Thermo-resistant cables AWG18 (1m black & red) and AWG22 ( 5m black,red,yellow & blue )](https://www.aliexpress.com/item/4000627624331.html)
   * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
