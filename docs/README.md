@@ -82,7 +82,7 @@
      - **Hold**: Sets the length of the PP hold period, if it's desired to maintain the "Start" pressure for a period of time before the pressure drop/raise is applied this is where it's done.
      - **Length**: Sets the length (AKA speed) of the PP drop/raise behaviour, so one can change the pressure slow or fast if desired.
 
-![PressureGraph](https://user-images.githubusercontent.com/109426580/203847013-a88db8d5-7fcd-4029-b976-70c6d9f3b2c8.png)
+![PressureGraph](https://user-images.githubusercontent.com/109426580/203859993-3cac595b-4e67-433f-93f5-b58f68b41ed3.png)
 
 
  - **Brew(Manual)**: Allows for manual pressure control at brew time.
