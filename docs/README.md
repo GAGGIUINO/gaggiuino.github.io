@@ -82,7 +82,9 @@
      - **Hold**: Sets the length of the PP hold period, if it's desired to maintain the "Start" pressure for a period of time before the pressure drop/raise is applied this is where it's done.
      - **Length**: Sets the length (AKA speed) of the PP drop/raise behaviour, so one can change the pressure slow or fast if desired.
 
-![PressureGraph](https://user-images.githubusercontent.com/109426580/203859993-3cac595b-4e67-433f-93f5-b58f68b41ed3.png)
+**Here is a classic prexample of how a declining profile can be used once the mod is installed.**
+
+![PressureGraph](https://user-images.githubusercontent.com/109426580/204081504-90cd4961-5a0f-4911-b4db-00411437ff2f.png)
 
 
  - **Brew(Manual)**: Allows for manual pressure control at brew time.
