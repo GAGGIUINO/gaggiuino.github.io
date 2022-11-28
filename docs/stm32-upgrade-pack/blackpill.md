@@ -76,7 +76,12 @@ The nano expansion board you already have mirrors the nano pin locations but not
 |   HX711_dout_2    |   5V                  |   PB9                     |   C15                 |   GND                     |   steamPin                    |
 |   5V              |   RST                 |   5V                      |   C14                 |   RST                     |   brewPin                     |
 |   GND             |   GND                 |   GND                     |   C13                 |   RXO                     |   valvePin                    |
-|                   |   VIN                 |   3V3                     |   VB                  |   TXT                     |                               |      
+|                   |   VIN                 |   3V3                     |   VB                  |   TXT                     |                               |   
+
+**DIAGRAM**
+   
+![STM32-Blackpill LV wiring](https://user-images.githubusercontent.com/109426580/204258094-15e89441-748a-40e7-9c86-ad6946581ab5.png)
+
 
 ## SOFTWARE INSTALLATION
 
