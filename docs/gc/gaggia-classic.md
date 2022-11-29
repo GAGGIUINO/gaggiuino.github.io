@@ -6,12 +6,11 @@
 
 **Schematics:**
 * [GAGGIA Classic **Nano** HV wiring](https://user-images.githubusercontent.com/42692077/161397293-82df427a-2ac2-4226-bdc6-fa831a962265.png)
-* [GAGGIA Classic **STM32-Blackpill** HV wiring](https://user-images.githubusercontent.com/109426580/202476409-f76be79d-b51c-4130-adc1-d494a65e6114.jpeg)
-
+* [GAGGIA Classic **STM32-Blackpill** HV wiring](https://user-images.githubusercontent.com/117388662/204613299-8921379c-7bc0-4cf2-ae9f-0b7c7dd12654.JPG)
+* [GAGGIA Classic **STM32-Blackpill** LV wiring](https://user-images.githubusercontent.com/117388662/204613314-01b55b08-4702-4de5-8a25-f4e9dd1442b6.JPG)
 
 **Diagrams:**
 * [GAGGIA Classic **Nano** LV wiring](https://user-images.githubusercontent.com/42692077/160548957-88c93198-6d81-4081-8db6-552b6f6c5281.png)
-* [GAGGIA Classic **STM32-Blackpill** LV wiring](https://user-images.githubusercontent.com/109426580/202657197-430f272b-d3cd-4502-926b-75b32c482dac.jpg)
 
 ***
 !> **First and foremost, please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's  completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or  your gold fish. It will be entirely your fault!**
