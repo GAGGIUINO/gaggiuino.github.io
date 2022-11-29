@@ -80,8 +80,7 @@ The nano expansion board you already have mirrors the nano pin locations but not
 
 **DIAGRAM**
    
-![STM32-Blackpill LV wiring](https://user-images.githubusercontent.com/109426580/204258094-15e89441-748a-40e7-9c86-ad6946581ab5.png)
-
+![STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/204611412-72767f49-de68-4166-9511-50cf8f2e3794.png)
 
 ## SOFTWARE INSTALLATION
 
