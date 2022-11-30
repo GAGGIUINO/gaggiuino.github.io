@@ -66,7 +66,7 @@ The nano expansion board you already have mirrors the nano pin locations but not
 |           	    |   3V3               	|   PA10         		    |   PB0                 |   D11                     |   HX711_sck_1                 |
 |   		        |   REF		            |   PA11  		            |   PA7                 |   D10                     |                               |
 |                   |   A0                  |   PA12                    |   PA6                 |   D9                      |   thermoCS                    |
-|   relayPin        |   A1                  |   PA15                    |   PA5                 |   D8                      |   thermoCLK                   |
+|   relayPin*       |   A1                  |   PA15                    |   PA5                 |   D8                      |   thermoCLK                   |
 |                   |   A2                  |   PB3                     |   PA4                 |   D7                      |                               |
 |   thermoDO        |   A3                  |   PB4                     |   PA3                 |   D6                      |   TX                          |
 |                   |   A4                  |   PB5                     |   PA2                 |   D5                      |   RX                          |
@@ -75,8 +75,11 @@ The nano expansion board you already have mirrors the nano pin locations but not
 |   HX711_dout_1    |   A7                  |   PB8                     |   R                   |   D2                      |                               |
 |   HX711_dout_2    |   5V                  |   PB9                     |   C15                 |   GND                     |   steamPin                    |
 |   5V              |   RST                 |   5V                      |   C14                 |   RST                     |   brewPin                     |
-|   GND             |   GND                 |   GND                     |   C13                 |   RXO                     |   valvePin                    |
+|   GND             |   GND                 |   GND                     |   C13                 |   RXO                     |   valvePin^                   |
 |                   |   VIN                 |   3V3                     |   VB                  |   TXT                     |                               |      
+
+<sup>*</sup> this is the SSR controlling the heater  
+<sup>^</sup> this is the 5V relay that replaces the optocoupler
 
 ## SOFTWARE INSTALLATION
 
@@ -93,7 +96,7 @@ Consider buying an ST-Link v2 to more easily upgrade the firmware onto the Black
 
 ![ST-Link](https://user-images.githubusercontent.com/80347096/191400915-6ed2a991-5f0c-4d2a-b52d-aad29978c0d1.jpg)
 
-## RELAY INSTALLATION
+## 5V RELAY INSTALLATION
 
 Installing the relay allows the Gaggiuino to perform advanced functions (in conjunction with other necessary hardware): 
 
