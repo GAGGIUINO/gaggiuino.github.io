@@ -26,8 +26,8 @@ Always refer to the official Gaggiuino BOM on the Github project page for the mo
 
 ### Expansion Board Compatibility 
  
-Ensure your expansion board circuitry looks like the bottom left (green) and not the bottom right (blue). The bottom right (blue) will not work correctly with the standard pindefs (it will not trigger the relay to heat up the boiler), so it is advised for most people to purchase the board from the BOM that looks like the green expansion board. 
-![Expansion Boards](https://user-images.githubusercontent.com/80347096/191157625-4ef4f8d1-0811-4800-b28f-b26ab0f22a12.png)
+Ensure your expansion board circuitry looks like the bottom left (green) and not the bottom right (blue). The bottom right (blue) will not work correctly with the standard pindefs (it will not trigger the relay to heat up the boiler - the two circled pins in yellow are marked `GND` on the reverse and are both connected to the groundplane and each other), so it is advised for most people to purchase the board from the BOM that looks like the green expansion board.  
+![Expansion Boards](https://user-images.githubusercontent.com/2452284/204672901-ac1a89d9-cbf2-4367-9196-e1a74fbce7dd.png)
 
 ### Important Considerations Before You Begin The Next Section
 
