@@ -188,8 +188,8 @@ _Will enable pump control based on active pressure feedback, thies enables press
 
 * **Gaggia Classic Specific:**
 
-  * [T-fitting | 6-02/PCF ](https://www.aliexpress.com/item/4001338642124.html)
-  * [Transducer Fitting | 6mm/PE](https://www.aliexpress.com/item/4001338085412.html)
+  * [T-fitting | PE/6mm ]https://www.aliexpress.com/item/1005003750203358.html)
+  * [Transducer Fitting | PLF/6mm](https://www.aliexpress.com/item/1005003753827787.html)
   * [Hose 1 meter | 6x4](https://www.aliexpress.com/item/4000383354010.html)
   * [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html) 
 
