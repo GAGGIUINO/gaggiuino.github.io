@@ -377,12 +377,12 @@ Method 1 - If choosing to power the system using the AC adapter then the Arduino
 
 Method 2 - If powering using the [ 12v ] power supply module + [ 9v ] step-down convertor follow the bellow scheme:
 
-| PS | Arduino | 
-| --- | --- |
-| 9v | VIN | 
-| GND | GND |
+| Stepdown | Arduino | 
+| -------- | ------- |
+| OUT +    | 5v      | 
+| OUT -    | GND     |
 
-All the other boards below will get their power from the Arduino 5v / GND pins and it's extremely important they are powered using those outputs.
+All the other boards should be connected to the same GND / 5v plane as arduino.
 
 2. MAX6675 WIRING
 
