@@ -345,11 +345,11 @@ Any components sitting next to each other can have their equivalent pins linked 
 You will be expected to solder similar pins i.e. GND and 5v together in order to fit into and screw down on the expansion board terminals.
 ***
 
-On first start up record and send to #first-start channel of discord. This helps with diagnosing issues.
+On first start up record and send to [#first-start](https://discord.com/channels/890339612441063494/919183771079692328) channel of discord. This helps with diagnosing issues.
 
 Remember to change and save your correct region settings.
 
-Configure you PP and PI settings and get prepped for a shot if all is well. Record and upload to #first-shot on the discord. 
+Configure you PP and PI settings and get prepped for a shot if all is well. Record and upload to [#first-shot](https://discord.com/channels/890339612441063494/910972035205857320) on the discord. 
 
 All going well, feel like an absolute coffee titan each and every time you pull a shot.
 
