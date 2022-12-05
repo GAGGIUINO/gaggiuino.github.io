@@ -332,7 +332,7 @@ It's advisable after making the connections and just before connecting the trans
 
 ![GCP TRANSDUCER](https://user-images.githubusercontent.com/42692077/146647809-970c0ccd-47c6-430c-9c71-9b651bab4bf4.png)
 
-Please use the tables in **3.0.2 Appendix - Component Wiring** for details on RED, BLACK andYELLOW wire connections to the Arduino. 
+Please use the tables in **3.0.2 Appendix - Component Wiring** for details on RED, BLACK and YELLOW wire connections to the Arduino. 
 
 ### *2.0.8 Finish*
 ***
