@@ -15,9 +15,9 @@
 
 * **Gaggia Classic-specific**
 
-  * [Fitting - 6-02/PCF ](https://www.aliexpress.com/item/4001338642124.html)
-  * [Transducer Fitting - 6mm/PE](https://www.aliexpress.com/item/4001338085412.html)
-  * [Hose - 6x4 - 1 meter](https://www.aliexpress.com/item/4000383354010.html)
+  * [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
+  * [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
+  * [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
 
 * **Gaggia Classic Pro-specific**
 <div style='color: red'>ATTENTION! Please read the warning related to the hose choice.</div>
