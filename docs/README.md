@@ -160,10 +160,12 @@
 
 > The code has been designed to be modular, meaning there is a minimal hardware configuration one can start with if certain features are not something of interest, it's all appropriately split under "BASE" or "EXTENDED" functionality (see below).
 
+!> The current recommendation is to do the Nano build first, after which one should upgrade to STM32 if further functionality is desired, jumping straight inot STM32 is not encouraged for the inexperienced.
+
 ### BASE FUNCTIONALITY
 _Will enable only brew and steam temperature control_
 
-  * [Arduino Nano AT328](https://bit.ly/3eXSfXZ)
+  * [Arduino Nano AT328](https://bit.ly/3eXSfXZ)  _Not needed if one wants to jump straight to STM32_ 
   * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
   * [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
   * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
@@ -173,7 +175,7 @@ _Will enable only brew and steam temperature control_
   * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
   * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
   * Power Supply: _Just one of the two options is needed_
-    * OPTION 1
+    * OPTION 1 - _PREFERRED_
       * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
       * [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
     * OPTION 2
@@ -191,7 +193,7 @@ _Will enable pump control based on active pressure feedback, thies enables press
   * [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
   * [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
   * [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
-  * [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html) 
+  * [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html)  _Not needed if one wants to jump straight to STM32_ 
 
 !> If planning on adding scales check the scales section as the optocoupler is not the right choice then.
 
