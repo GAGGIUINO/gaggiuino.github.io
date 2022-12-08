@@ -1,4 +1,6 @@
-!>**This site is a general guide and *ABSOLUTELY NOT* an exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the _Recommendations_ page of this site.**
+>
+>
+!>**This site is a general guide and *ABSOLUTELY NOT* an exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the _Recommendations_ page of this site. For anyone attempting the install it's strongly recommended to read the planned install route in it's entirety.**
 
 
 **_Total estimated install time will be based on understanding and experience._**
@@ -216,6 +218,7 @@ _Will allow for all the additional features listed in the Featrures table under 
 <div style='color: red'>:heavy_exclamation_mark:Please read the warning related to the STM32 availability.</div>
 
   * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
+  * [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
   * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
   * [5V RELAY](https://a.aliexpress.com/_vpUdrT) **Supersedes the 1-bit opto**
 
