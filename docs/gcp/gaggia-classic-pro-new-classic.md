@@ -15,17 +15,17 @@ Place Arduino into the expansion board the correct way round. Power it through U
 
 Image of Arduino with pins soldered:
 
-<img src="https://user-images.githubusercontent.com/53577819/154988207-3d54e924-3ab0-4e47-a4e9-188f7e839610.jpg" width="400" height="250">
+![image](https://user-images.githubusercontent.com/53577819/154988207-3d54e924-3ab0-4e47-a4e9-188f7e839610.jpg)
 
 Image of expansion with pins (solder from the bottom):
 
-<img src="https://user-images.githubusercontent.com/53577819/154988218-26160147-e821-47e7-8152-d8ec0a8f0d43.png" width="400" height="250">
+![image](https://user-images.githubusercontent.com/53577819/154988218-26160147-e821-47e7-8152-d8ec0a8f0d43.png)
 
 Make sure the terminals are correct way round and place the Arduino into the expansion board.
 
 If you have to solder your pins then take the time now to get your soldering perfect. It'll save time in the long run. REFER TO APPENDIX *3.0.3 Recommendations* FOR SOLDERING GUIDES!
 
-<img src="https://user-images.githubusercontent.com/53577819/154988330-430df58d-773c-4084-b7b3-921ca43909f2.jpg" width="400" height="250">
+![image](https://user-images.githubusercontent.com/53577819/154988330-430df58d-773c-4084-b7b3-921ca43909f2.jpg)
 
 _**Attention! You are not soldering the Arduino to the expansion board itself. You are only soldering the pins to the Arduino and pins to the expansion board. The Arduino then just sits/connects into the expansion board pins.**_
 
@@ -38,9 +38,9 @@ For the below section you are using **26AWG** cable to connect to the Arduino bo
 
 You should have bought and received a MAX6675 board which comes with a test thermocouple. We're swapping this for the "C-M4 screw K-Type thermocouple sensor" as this is what will be replacing the original that's in the machine.
  
-<img src="https://user-images.githubusercontent.com/53577819/154988392-619a5bc2-99cc-499d-8ad8-42792b094fd2.jpg" width="400" height="250">
+![image](https://user-images.githubusercontent.com/53577819/154988392-619a5bc2-99cc-499d-8ad8-42792b094fd2.jpg)
 
-<img src="https://user-images.githubusercontent.com/53577819/154988423-f741a369-ec60-4266-9544-0effedb57292.jpg" width="400" height="250">
+![image](https://user-images.githubusercontent.com/53577819/154988423-f741a369-ec60-4266-9544-0effedb57292.jpg)
 
 ### *1.0.3 Nextion Config*
 ***
@@ -51,9 +51,9 @@ For the below section you are using **26AWG** cable to connect to the Arduino bo
 
 The correct screen size is **2.4**". If yours does not have markings for wiring then please see below image
 
-<img src="https://user-images.githubusercontent.com/53577819/154988491-28c1e861-46bc-433b-a5f8-8e9eeb8b51ed.png" width="400" height="250">
+![image](https://user-images.githubusercontent.com/53577819/154988491-28c1e861-46bc-433b-a5f8-8e9eeb8b51ed.png)
 
-<img src="https://user-images.githubusercontent.com/53577819/154988514-13a1d7af-f704-49b6-975b-aeee1318cf36.jpg" width="400" height="250">
+![image](https://user-images.githubusercontent.com/53577819/154988514-13a1d7af-f704-49b6-975b-aeee1318cf36.jpg)
 
 ### *1.0.4 Relay Config*
 ***
@@ -64,7 +64,7 @@ For the below section you are using **26AWG** cable to connect to the Arduino bo
 
 This relay is what manages the temp by cutting the voltage when the thermocouple is at a set temp. 
 
-<img src="https://user-images.githubusercontent.com/53577819/154988554-5be0bb0a-dcf2-4bf7-a70f-4c356d00eea6.jpg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154988554-5be0bb0a-dcf2-4bf7-a70f-4c356d00eea6.jpg)
 
 ### *1.0.5 Software Install*
 To flash the microcontroller Arduino Nano or the STM32 Blackpill, pls follow the video form the ***Prerequisites*** section of this site.
@@ -121,12 +121,12 @@ Prepare splitter cables with the below specs:
 
 Example of a red and black splitter:
 
-<img src="https://user-images.githubusercontent.com/53577819/154988645-5f1da175-7d09-437a-ac2c-f64e16f3a564.jpg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154988645-5f1da175-7d09-437a-ac2c-f64e16f3a564.jpg)
 
 The female end will go in Gaggia's front panel. One male splitter end will go into the connection that came out of the switch position the other male will be for some more wires further down.
 
 
-<img src="https://user-images.githubusercontent.com/53577819/154988784-7ddbc106-4744-4d9f-8879-b9a107a9fe7c.jpg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154988784-7ddbc106-4744-4d9f-8879-b9a107a9fe7c.jpg)
 
 
 **Before trying to copy piggyback locations from below it’s recommended to check what the schematics say (3.0.1 Schematics & Diagrams).** 
@@ -136,17 +136,17 @@ By way of context, if looking inside the machine from the back, the left of the 
 On the power switch - wire in the middle left as LIVE and middle right as GND 
 
 
-<img src="https://user-images.githubusercontent.com/53577819/154979422-f78d41c4-87f4-4474-ab68-a3466d5e9e5e.jpeg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154979422-f78d41c4-87f4-4474-ab68-a3466d5e9e5e.jpeg)
 
 The above translates to the following (**please be aware the image below has top connectors removed for clarity)**:
 
-<img src="https://user-images.githubusercontent.com/53577819/154979529-eae513b2-00e3-40c9-a581-47be4da68edc.jpg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154979529-eae513b2-00e3-40c9-a581-47be4da68edc.jpg)
 
 
 
 If above standard schematics do not work it can be that your wiring is different. It is recommended to use a multimeter to test. 
 
-<img src="https://user-images.githubusercontent.com/53577819/154982423-82b4bdb4-ca78-4077-90c0-77b349c8c3d2.JPG" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154982423-82b4bdb4-ca78-4077-90c0-77b349c8c3d2.JPG)
 
 
 
@@ -165,7 +165,7 @@ Please see some examples of known differences but really you should be testing w
 
 **KNOWN - ECO - EU/UK - piggyback locations non-schematic:**
 
-<img src="https://user-images.githubusercontent.com/53577819/154988901-b79270da-5bb3-4507-9ef2-57bf2e791d77.JPG" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154988901-b79270da-5bb3-4507-9ef2-57bf2e791d77.JPG)
 
 
 Prepare 2 more cables with the below spec:
@@ -176,7 +176,7 @@ Connect the female end to the male end of the splitter cable from above step (ma
 
 If using the 5v PS - the 2 AC IN ports will be where the exposed end of your red or black piggyback cable go, it doesn't matter which way round (yes, you need to fiddle about getting wires in and solder correctly - recommended to trim, twist, tin and apply heat shrink).
 
-<img src="https://user-images.githubusercontent.com/53577819/154989029-59ab20c6-fdda-4510-a9e0-50579b8e4a54.jpg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154989029-59ab20c6-fdda-4510-a9e0-50579b8e4a54.jpg)
 
 Prepare more cables with the below spec:
 1. Black, 26AWG, about 25cm, exposed ends
@@ -188,7 +188,7 @@ _**Make sure this component is well insulated and enclosed. You do not want to t
 
 **_If you have the ECO version (the machine turns off automatically after 20mins) bridge your brew switch with a 15AWG cable with two male ends, as per below:_**
 
-<img src="https://user-images.githubusercontent.com/53577819/154989122-6237e1af-62d1-4289-901c-47c69ea3b1b9.jpg" width="600" height="350">
+![image](https://user-images.githubusercontent.com/53577819/154989122-6237e1af-62d1-4289-901c-47c69ea3b1b9.jpg)
 
 ### *2.0.2 Thermocouple and MAX6675 Config* 
 
@@ -203,16 +203,16 @@ You’ll obviously need to remove the two connectors from the original thermosta
 The small black cable you prepared with the male ends is used to bridge the two wires that you just disconnected from the brew thermostat. 
 
 
-<img src="https://user-images.githubusercontent.com/53577819/154983715-46b1332f-f88a-4ef3-a625-b7f2788caf97.jpeg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154983715-46b1332f-f88a-4ef3-a625-b7f2788caf97.jpeg)
 
 
 Now unscrew the original thermostat and replace with the m4 brass thermocouple. Be sure to apply some thermal paste (just a teeny tiny bit) on the _**threads only**_. It is important to barely tighten the m4 bolt at **barely** fingertip strength. 
 
-<img src="https://user-images.githubusercontent.com/53577819/154989188-6bc38c2c-60df-47f6-98d9-b121f28438d6.jpg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154989188-6bc38c2c-60df-47f6-98d9-b121f28438d6.jpg)
 
-<img src="https://user-images.githubusercontent.com/53577819/154989228-2f9a3669-551b-4f45-a82a-22b4fe41fa89.jpg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154989228-2f9a3669-551b-4f45-a82a-22b4fe41fa89.jpg)
 
-<img src="https://user-images.githubusercontent.com/53577819/154984016-714b6532-e31d-42d3-b2ee-cf064487db66.jpeg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154984016-714b6532-e31d-42d3-b2ee-cf064487db66.jpeg)
 
 
 Now re-attach the boiler.
@@ -229,17 +229,17 @@ Prepare cables with below spec:
 
 The 2 are used to connect the steam thermostat connections to port 1 and 2 of the SSR relay, so:
 
-<img src="https://user-images.githubusercontent.com/53577819/154989308-14e9ea82-8a60-4f3d-bd9f-05dda6fa15c8.JPG" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154989308-14e9ea82-8a60-4f3d-bd9f-05dda6fa15c8.JPG)
 
 
 Optional: might be a good idea to either tape up the exposed steam thermostat or remove it and tape up the exposed location.
 
 
-<img src="https://user-images.githubusercontent.com/53577819/154989373-57093be0-ac48-4ac6-ad0b-d88adc2415d9.jpg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154989373-57093be0-ac48-4ac6-ad0b-d88adc2415d9.jpg)
 
-<img src="https://user-images.githubusercontent.com/53577819/154989357-ec8c4853-0bb9-4eec-8629-dfc76e72e725.jpg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154989357-ec8c4853-0bb9-4eec-8629-dfc76e72e725.jpg)
 
-<img src="https://user-images.githubusercontent.com/53577819/154989336-76f91fb5-2fdd-4c53-b968-e860af3f8505.jpg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154989336-76f91fb5-2fdd-4c53-b968-e860af3f8505.jpg)
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on 3 & 4 connections to the Arduino. 
 
@@ -251,7 +251,7 @@ _**Very important to not turn on the machine until we check the steam switch wir
 
 Image of the steam switch schematic:
 
-<img src="https://user-images.githubusercontent.com/53577819/154989457-f5ac859e-5aa5-4554-be46-fba6ad4fa1f0.png" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154989457-f5ac859e-5aa5-4554-be46-fba6ad4fa1f0.png)
 
 1. Move steam switch wire 4 to steam switch pole 1.
 2. Unplug and secure steam switch wire 5.
@@ -272,7 +272,7 @@ Prepare a black splitter with below spec:
 
 Image for reference below:
 
-<img src="https://user-images.githubusercontent.com/53577819/155016949-a070e451-2bd8-45e8-9acb-669b7cc28bab.jpg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/155016949-a070e451-2bd8-45e8-9acb-669b7cc28bab.jpg)
 
 
 ### *2.0.5 Continuity Brew Detection*
@@ -283,7 +283,7 @@ Prepare 2 cables with the below spec:
 
 As shown below plug your cables in to the circled connections on the brew switch  
 
-<img src="https://user-images.githubusercontent.com/53577819/154985120-fe503708-50c1-4376-9459-d72312fbbadc.jpeg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154985120-fe503708-50c1-4376-9459-d72312fbbadc.jpeg)
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on GND and OUT connections to the Arduino.
 
@@ -299,11 +299,11 @@ Please check whether your dimmer ports placement in the case it differs from the
 
 Example of dimmer ports:
 
-<img src="https://user-images.githubusercontent.com/53577819/154989499-7e95ca82-f8eb-4f63-b57b-3ca1e7e14eeb.png" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154989499-7e95ca82-f8eb-4f63-b57b-3ca1e7e14eeb.png)
 
 Remove the connections detailed in the image below from the pump (mark the connector either L or R for where it was located either left or right in relation to the pump):-
 
-<img src="https://user-images.githubusercontent.com/53577819/154989519-4e5ba059-22a4-4397-8dfb-5b7dff411bbf.jpg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/154989519-4e5ba059-22a4-4397-8dfb-5b7dff411bbf.jpg)
 
 With the cables you prepared:
 * Cable 1: From the dimmer positive line Out - single red wire with the female end going into one of (choose the left connection according to the image above) the pump connections itself. 
@@ -314,10 +314,10 @@ With the cables you prepared:
 
 _**Triple check your dimmer board on what is marked as IN and OUT. 100% need to make sure they are connected properly.**_
 
-<img src="https://user-images.githubusercontent.com/53577819/155005284-b22a6652-87b0-42db-9d35-5d2bc8b9247e.jpg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/155005284-b22a6652-87b0-42db-9d35-5d2bc8b9247e.jpg)
 
 
-<img src="https://user-images.githubusercontent.com/53577819/155005572-1d7c2ef1-ed1e-4c6e-9004-2fc22c73d83b.jpg" width="600" height="450">
+![image](https://user-images.githubusercontent.com/53577819/155005572-1d7c2ef1-ed1e-4c6e-9004-2fc22c73d83b.jpg)
 
 
 
