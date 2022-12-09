@@ -1,6 +1,11 @@
->
+**Contribute to better docs written by a professional documenattion writer.**
+<!-- ko-fi :id=zer0bit :color=<color> -->
+    Support better docs
+<!-- ko-fi -->
 >
 !>**This site is a general guide and *ABSOLUTELY NOT* an exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the _Recommendations_ page of this site. For anyone attempting the install it's strongly recommended to read the planned install route in it's entirety.**
+
+
 
 
 **_Total estimated install time will be based on understanding and experience._**

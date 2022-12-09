@@ -29,7 +29,17 @@
       mergeNavbar: true,
       auto2top: true,
       coverpage: true,
-      logo: '/media/GAGGIUINO_ICON_transp.png'
+      logo: '/media/GAGGIUINO_ICON_transp.png',
+      progress: {
+        position: "top",
+        color: "var(--theme-color,#42b983)",
+        height: "10px",
+      },
+      timeUpdater: {
+        text: ">last updated: {docsify-updated}",
+        formatUpdated: "{DD}/{MM}/{YYYY}",
+        whereToPlace: "top",  // "top" or "bottom", default to "bottom"
+      },
     }
   </script>
   <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script> -->
@@ -39,5 +49,11 @@
     src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
     type="text/javascript">
   </script>
+  <!-- Read progress -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+  <!-- Last updated -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
+  <!-- docsify-ko-fi (latest) -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-ko-fi"></script>
 </body>
 </html>
