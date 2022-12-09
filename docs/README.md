@@ -1,4 +1,4 @@
-**Contribute to better docs written by a professional documenattion writer.**
+**Contribute to better docs written by a professional technical writer.**
 <!-- ko-fi :id=zer0bit :color=<color> -->
     Support better docs
 <!-- ko-fi -->
