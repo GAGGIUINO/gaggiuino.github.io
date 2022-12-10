@@ -139,46 +139,58 @@ For now only connect the low voltage circuit controlling ports of the relay to c
 #### *BASE FUNCTIONALITY*
 ***
 1. Take off the top cover by unscrewing the 2 top screws. You should be able to see something similar to the below image minus the SSR relay:
-![PXL_20210527_181116200 1](https://user-images.githubusercontent.com/109426580/190676716-bf126fbc-2177-43d0-8300-3525e7daac8c.jpg)
+>
+![PXL_20210527_181116200 1](https://user-images.githubusercontent.com/109426580/190676716-bf126fbc-2177-43d0-8300-3525e7daac8c.jpg ':size=500')
 
 2. Prepare 2 splitters like in the below image using the AWG15 cable, be sure one splitter to be black(negative) and one red(positive)
-![PXL_20210527_183052740 1](https://user-images.githubusercontent.com/109426580/190676830-420e5ff8-d29b-4221-8c71-41de8c92c52a.jpg)
+>
+![PXL_20210527_183052740 1](https://user-images.githubusercontent.com/109426580/190676830-420e5ff8-d29b-4221-8c71-41de8c92c52a.jpg ':size=500')
 
 3. Be sure to mark your top left power connector so you don't mix them up. If you want to be sure, you can number all the connectors with a sharpie, to make for easier reconnections later down the road.
-![PXL_20210527_181404819 1](https://user-images.githubusercontent.com/109426580/190676906-c9d34b70-ef66-4de1-a28d-7761502ebac8.jpg)
+>
+![PXL_20210527_181404819 1](https://user-images.githubusercontent.com/109426580/190676906-c9d34b70-ef66-4de1-a28d-7761502ebac8.jpg ':size=500')
 
 4. Disconnect all 3 of the power switch connectors. You'll use the middle and bottom ones for power sharing.
-![PXL_20210527_181526240 1](https://user-images.githubusercontent.com/109426580/190677058-ee7538a3-82c5-4f3a-83a8-6897610f46db.jpg)
+>
+![PXL_20210527_181526240 1](https://user-images.githubusercontent.com/109426580/190677058-ee7538a3-82c5-4f3a-83a8-6897610f46db.jpg ':size=500')
 
 5. The hardest part will be now (in my opinion). You'll have to unscrew the bottom boiler stock thermostat and screw back in the new thermocouple. You may have to unscrew and move the boiler in order to do so. Be sure to apply some thermal paste on the thermocouple threads. (Just a teeny tiny bit). It is important to barely tighten the m4 bolt at **barely** fingertip strength.
-![PXL_20210527_181116200 1](https://user-images.githubusercontent.com/109426580/190677178-fb9fdefc-731c-4a09-87b7-a5bfdf37f50b.png)
+>
+![PXL_20210527_181116200 1](https://user-images.githubusercontent.com/109426580/190677178-fb9fdefc-731c-4a09-87b7-a5bfdf37f50b.png ':size=500')
 
 
 6. Prepare 2 cables you'll use to connect the cables disconnected from the bottom thermostat to ports 1 and 2 of the SSR relay. Use the red cable for that. They shouldn't be too long, about 10cm will suffice. One end should be crimped with a male spade connector and the loose end screwed to the relay. After this, attach the relay to the machine case itself with an M4 screw and nut, though smaller will work. Be sure to apply some thermal paste to the SSR backplate that will make contact with the metal case of the machine, not critical in any way of form but will provide better heat transfer if ever the needs is there.
-![PXL_20210527_184425223_c](https://user-images.githubusercontent.com/109426580/190677929-aef4ced7-c3d8-4a1f-bf3e-c5d0e2af5a7c.jpg)
+
+![PXL_20210527_184425223_c](https://user-images.githubusercontent.com/109426580/190677929-aef4ced7-c3d8-4a1f-bf3e-c5d0e2af5a7c.jpg ':size=500')
 
 So you end up having them connected like this:
-![PXL_20210527_181116200c (1)](https://user-images.githubusercontent.com/109426580/190678041-1c3b3d7f-d9b1-4289-aea2-f5623d323170.png)
+>
+![PXL_20210527_181116200c (1)](https://user-images.githubusercontent.com/109426580/190678041-1c3b3d7f-d9b1-4289-aea2-f5623d323170.png ':size=500')
 
 
 7. Connect the front panel cables to any of the free male ends of the splitters, black one for the neutral wire (N) and red for the line wire (L).
-![PXL_20210527_183052740 2](https://user-images.githubusercontent.com/109426580/190678786-d67b8034-f37e-41ed-a713-bbf2d4a2efb4.jpg)
+
+![PXL_20210527_183052740 2](https://user-images.githubusercontent.com/109426580/190678786-d67b8034-f37e-41ed-a713-bbf2d4a2efb4.jpg ':size=500')
 
 
 8. To power the Arduino system I have used an old 5v mobile charger which I'm sure all of us have laying around. Just solder 2 cables to the 2 ends of the charger and for the other ends use 2 F spade connectors, after which plug them to the remaining 2 splitter (2) ends.
-![PXL_20210527_183052740 2](https://user-images.githubusercontent.com/109426580/190678786-d67b8034-f37e-41ed-a713-bbf2d4a2efb4.jpg)
+
+![PXL_20210527_183052740 2](https://user-images.githubusercontent.com/109426580/190678786-d67b8034-f37e-41ed-a713-bbf2d4a2efb4.jpg ':size=500')
 
 10. Next, you'll be setting up steam switch detection. First, disconnect the steam switch high voltage wires connected to poles 3 and 4.
-![GC - brew handling](https://user-images.githubusercontent.com/42692077/154805193-76068521-3ad4-4020-b2ee-8dab9394d4fe.png)
+
+![GC - brew handling](https://user-images.githubusercontent.com/42692077/154805193-76068521-3ad4-4020-b2ee-8dab9394d4fe.png ':size=500')
 
 11. Leave the wires connected to the steam switch poles 1 and 2 connected.
 
 12. Bridge the steam thermostat wires. The steam thermostat is on the top of the boiler.
-![image](https://user-images.githubusercontent.com/109426580/190679925-4bfb1574-1af0-414f-b38c-18a5d8c6f8c2.png)
+
+![image](https://user-images.githubusercontent.com/109426580/190679925-4bfb1574-1af0-414f-b38c-18a5d8c6f8c2.png ':size=500')
 
 
 13. Connect steam switch poles 3 and 4 to the arduino nano as listed above using some AWG26 wires.
-![image](https://user-images.githubusercontent.com/109426580/190680352-503d1a21-676c-4ec2-95dc-9a12ee5161ac.png)
+>
+![image](https://user-images.githubusercontent.com/109426580/190680352-503d1a21-676c-4ec2-95dc-9a12ee5161ac.png ':size=500')
 
 14. Make sure you secure all the disconnected wires so they cannot make any accidental contact.
 
@@ -202,14 +214,13 @@ So you end up having them connected like this:
 
 ***It's advisable after making the connections and just before connecting the transducer itself turn on the machine and while cold engage the pump to fill the transducer hose with water as well, leaving a lot of air in the system might play funny with the readings. After the transducer is connected, be sure to test the fittings under pressure.***
   
-  ![New Project (11) (1)](https://user-images.githubusercontent.com/42692077/146647799-f4887edb-95ec-4a33-8561-4e4afda6256e.png)
+  ![New Project (11) (1)](https://user-images.githubusercontent.com/42692077/146647799-f4887edb-95ec-4a33-8561-4e4afda6256e.png ':size=500')
   
 
 3. Install the RobotDYN dimmer module.
 
-![dimmer_guide](https://user-images.githubusercontent.com/42692077/162638303-dd1333b0-212f-41b5-be64-de8543dc1153.png)
-  
-![dimmer-install-info](https://user-images.githubusercontent.com/42692077/147135452-fb3931c5-ac48-4a61-91ff-1b4275aaccb2.png)
+![dimmer_guide](https://user-images.githubusercontent.com/42692077/162638303-dd1333b0-212f-41b5-be64-de8543dc1153.png ':size=500')
+
 </div>
 
 >**The image above is provided as a reference to understand how the connection through the dimmer is made, please check whether your dimmer high voltage ports placement differs from the above image before connecting the dimmer, it's very important to feed the IN wires properly.**
