@@ -8,7 +8,7 @@
 
 
 
-**_Total estimated install time will be based on understanding and experience._**
+?> **_Total estimated install time will be based on understanding and experience._**
 
 ## Features / Completeness
 
@@ -37,11 +37,11 @@
 :x:  Not available
 :heavy_plus_sign: Planned
 
->_*1_ __Stop on Weight/Dose__ - requires the relay that's part of the STM32 UPGRADE.
+_*1_ __Stop on Weight/Dose__ - requires the relay that's part of the STM32 UPGRADE.
 >
->_*2_ __Steam Boost__ - software driven steam boosting, requires the relay that's part of the STM32 UPGRADE.
+_*2_ __Steam Boost__ - software driven steam boosting, requires the relay that's part of the STM32 UPGRADE.
 >
->_*3_ __Predictive scales__ - software driven predicted weight output, doesn't need any scales hardware.
+_*3_ __Predictive scales__ - software driven predicted weight output, doesn't need any scales hardware.
 
 ## CURRENT STABLE RELEASES
 
@@ -117,7 +117,7 @@
 
 # Bill of Materials
 
-!> The current recommendation is to perform the Nano build first, after which one can easily upgrade to STM32 if further functionality is desired, jumping straight into STM32 is not encouraged for the inexperienced due to the documentation targetting a direct Nano install at this point in time.
+?> The current recommendation is to perform the Nano build first, after which one can easily upgrade to STM32 if further functionality is desired, jumping straight into STM32 is not encouraged for the inexperienced due to the documentation targetting a direct Nano install at this point in time.
 
 <!-- tabs:start -->
 #### **Arduino Nano**
@@ -195,9 +195,9 @@ _Will enable pump control based on active pressure feedback, thies enables press
 
 * **SCALES:**
 
-_Will enable for realtime shot weight tracking without external scales, be aware this is a highly advanced installation step and requires in depth understanding to achieve optimal results, it can't be simplified due to the higly sensitive nature scales require in terms of both installation as well as various tolerances._
+?> _Will enable for realtime shot weight tracking without external scales, be aware this is a highly advanced installation step and requires in depth understanding to achieve optimal results, it can't be simplified due to the higly sensitive nature scales require in terms of both installation as well as various tolerances._
 
-_By default a STM32 based build has **predictive scales**(software emulated scales) enabled hence one might be content enough with the results seen by using these after the calibration has been performed using the discord **#predictive-scales-config-bot**_
+?> _By default a STM32 based build has **predictive scales**(software emulated scales) enabled hence one might be content enough with the results seen by using these after the calibration has been performed using the discord **#predictive-scales-config-bot**_
 
   * [750g LOADCELLS x 2](https://www.aliexpress.com/item/1644918827.html)
   * [HX711 amplifier x 2](https://www.aliexpress.com/item/33041823995.html)

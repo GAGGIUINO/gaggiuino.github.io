@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](media/GAGGIUINO_LOGO_transp.png)
+![](media/GAGGIUINO_LOGO_transp.png)
 
 
 > **Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project.**
@@ -9,4 +9,5 @@
 [I understand](#HOME)
 
 <!-- background color -->
-![](#091a28)
+
+![](#E78104)
