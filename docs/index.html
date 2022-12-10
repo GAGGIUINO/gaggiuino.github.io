@@ -13,8 +13,15 @@
     title="docsify-darklight-theme"
     type="text/css"
   />
-
 </head>
+<!-- CSS Styles -->
+<!-- <style>
+  :root {
+    --docsifytabs-border-color: #ededed;
+    --docsifytabs-tab-highlight-color: purple;
+  }
+</style> -->
+
 <body>
   <div id="app"></div>
   <script>
@@ -40,20 +47,47 @@
         formatUpdated: "{DD}/{MM}/{YYYY}",
         whereToPlace: "top",  // "top" or "bottom", default to "bottom"
       },
+      // search: 'auto',
+      // search: [
+      // '/',
+      // '/gc/gaggia-classic',
+      // '/gcp/gaggia-classic-pro-new-classic',
+      // '/learning/learning-sources',
+      // '/prereq/prerequisites',
+      // '/scales/scales',
+      // '/stm32-upgrade-pack/blackpill'
+      // ],
+      noData: 'No Results!',
+      depth: 6,
+      hideOtherSidebarContent: true,
+      tabs: {
+        persist    : true,      // default
+        sync       : true,      // default
+        theme      : 'material', // default
+        tabComments: true,      // default
+        tabHeadings: true       // default
+      }
     }
   </script>
   <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script> -->
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
   <script 
     src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
     type="text/javascript">
   </script>
+
   <!-- Read progress -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
   <!-- Last updated -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
   <!-- docsify-ko-fi (latest) -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-ko-fi"></script>
+  <!-- Search plugin -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script> -->
+  <!-- docsify-tabs (latest v1.x.x) -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+
 </body>
 </html>

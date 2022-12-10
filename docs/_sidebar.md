@@ -1,4 +1,6 @@
 * [HOME](/)
+* [Announcements](announcements/)
+* [Community media & guides](guides/)
 * [Prerequisites](prereq/prerequisites.md)
 * [Gaggia Classic](gc/gaggia-classic.md)
 * [Gaggia Classic Pro](gcp/gaggia-classic-pro-new-classic.md)
