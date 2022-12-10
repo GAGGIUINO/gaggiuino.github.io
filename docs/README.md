@@ -117,58 +117,64 @@
 
 # Bill of Materials
 
-!> The current recommendation is to perform the Nano build first, after which one can easily upgrade to STM32 if further functionality is desired, jumping straight inot STM32 is not encouraged for the inexperienced due to the documentation targetting a direct Nano install at this point in time.
+!> The current recommendation is to perform the Nano build first, after which one can easily upgrade to STM32 if further functionality is desired, jumping straight into STM32 is not encouraged for the inexperienced due to the documentation targetting a direct Nano install at this point in time.
 
 <!-- tabs:start -->
 #### **Arduino Nano**
 ### BASE FUNCTIONALITY
 _Will enable only brew and steam temperature control_
 
-  * [Arduino Nano AT328](https://bit.ly/3eXSfXZ)  _Not needed if one wants to jump straight to STM32_ 
-  * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
-  * [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
-  * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
-  * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
-  * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
-  * [Thermo-resistant cables AWG18 (1m black & red) and AWG22 ( 5m black,red,yellow & blue )](https://www.aliexpress.com/item/4000627624331.html)
-  * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
-  * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
-  * [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html)
-  * Power Supply:
-      * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
-      * [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
+* [Arduino Nano AT328](https://bit.ly/3eXSfXZ)  _Not needed if one wants to jump straight to STM32_ 
+* [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
+* [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
+* [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
+* [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
+* [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
+* [Thermo-resistant cables AWG18 (1m black & red) and AWG22 ( 5m black,red,yellow & blue )](https://www.aliexpress.com/item/4000627624331.html)
+* [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
+* [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
+* [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html)
+* Power Supply:
+    * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
+    * [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
 
 ### EXTENDED FUNCTIONALITY
 _Will enable pump control based on active pressure feedback, thies enables pressure and flow profiling as well as other functionality._
 
-  * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
-  * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
+* [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
+* [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
 
 #### **STM32 Blackpill**
 ### BASE FUNCTIONALITY
 _Will enable only brew and steam temperature control_
 
-  * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
-  * [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
-  * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
-  * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
-  * [5V RELAY](https://a.aliexpress.com/_vpUdrT) 
-  * [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
-  * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
-  * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
-  * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
-  * [Thermo-resistant cables AWG18 (1m black & red) and AWG22 ( 5m black,red,yellow & blue )](https://www.aliexpress.com/item/4000627624331.html)
-  * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
-  * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
-  * Power Supply:
-      * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
-      * [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
+* [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
+* [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
+* [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
+* [ADS1115](https://www.aliexpress.com/item/32869421559.html)
+* [5V RELAY](https://a.aliexpress.com/_vpUdrT) 
+* [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
+* [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
+* [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
+* [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
+* [Thermo-resistant cables AWG18 (1m black & red) and AWG22 ( 5m black,red,yellow & blue )](https://www.aliexpress.com/item/4000627624331.html)
+* [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
+* [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
+* Power Supply:
+    * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
+    * [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
 
 ### EXTENDED FUNCTIONALITY
 _Will enable pump control based on active pressure feedback, thies enables pressure and flow profiling as well as other functionality._
 
-  * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
-  * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
+* [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
+* [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
+
+#### **Nano to STM32 Upgrade**
+* [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
+* [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
+* [ADS1115](https://www.aliexpress.com/item/32869421559.html)
+* [5V RELAY](https://a.aliexpress.com/_vpUdrT) 
 <!-- tabs:end -->
 <!-- tabs:start -->
 #### **Gaggia Classic**
@@ -203,20 +209,11 @@ _By default a STM32 based build has **predictive scales**(software emulated scal
 > 
 
 * **PRINTED HOUSINGS**
-
-_Choose what's best for you, naturally you can mix and match as well, for example the LCD enclosure printed from the Gaggiuino v2 files set and all the components going inside the machine using the INTERNAL COMPONENTS HOUSING designs._
-
-<!-- tabs:start -->
-#### **Arduino Nano**
-* [GC - LCD Enclosure](https://www.printables.com/model/280617-gaggiuino-gaggia-classic-touchscreen-housing-and-f)
-* [GCP - LCD Enclosure](https://www.thingiverse.com/thing:5236286) _Only the lid and LCD housing files should be printed_
-* [Internal Component Housing](https://www.printables.com/model/262346-gaggiuino-nano-internal-component-housing)
-
-#### **STM32 Blackpill**
+>
 * [GC - LCD Enclosure](https://www.printables.com/model/280617-gaggiuino-gaggia-classic-touchscreen-housing-and-f)
 * [GCP - LCD Enclosure](https://www.thingiverse.com/thing:5236286) _Only the lid and LCD housing files should be printed_
 * [Internal Component Housing](https://www.printables.com/model/269394-gaggiuino-stm32-internal-component-housing)
-<!-- tabs:end -->
+
 **Cheap services to order the prints if not owning a printer:**
 
   * [cloudcraft3d.com](https://craftcloud3d.com/)
