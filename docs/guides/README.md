@@ -1,17 +1,29 @@
 ## Community Speaks
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MxPNQRCxQZc" title="GAGGIUINO Upgrade Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-!> The below video shows extensive use of duponts during the install which can lead to many issues if left like that for the actual install, it's recommended to solder all those terminals.
+<!-- panels:start -->
+<!-- div:left-panel -->
+?> Nano install overview
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EJFadpL9aOE" title="GAGGIUINO BUILD LOG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!-- div:right-panel -->
+
+?> Follow up review.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Dm1uVyiZOOE" title="GAGGIUINO BUILD LOG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!-- panels:end -->
+
+?> STM32 install overview.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5-PWW3dbh1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
 
 <summary><b>MORE FROM THE COMMUNITY</b> <i>(Click to expand)</i></summary>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hpxB1Q6AFkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MxPNQRCxQZc" title="GAGGIUINO Upgrade Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </details>
 
+<!-- panels:start -->
+<!-- div:title-panel -->
 ## Functions and usage
 
  - **BOILER**: Sets the desired temperature at the boiler level
@@ -40,3 +52,4 @@
  - **DESCALE**: Enables the descaling program.
 
   >Descaling should be done with a blind basket portafilter locked in the group, steam valve slightly open for the water to flow in a separate reservoir and water tank fully loaded with water mixed with descale solution.
+  <!-- div:title-panel -->
