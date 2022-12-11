@@ -15,12 +15,15 @@
   />
 </head>
 <!-- CSS Styles -->
-<!-- <style>
+<style>
   :root {
-    --docsifytabs-border-color: #ededed;
-    --docsifytabs-tab-highlight-color: purple;
+    --docsifytabs-border-color: #918e8e;
+    --docsifytabs-tab-highlight-color: rgb(8, 126, 8);
+    --docsify-example-panels-document-width: 90%; /* Remove margins */
+    --docsify-example-panels-left-panel-width : 50%; /* bit more for left */
+    --docsify-example-panels-right-panel-width : 50%; /* bit less for right */
   }
-</style> -->
+</style>
 
 <body>
   <div id="app"></div>
@@ -91,6 +94,7 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
   <!-- Image zoom -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-
+  <!-- docsify-panels (latest) -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-example-panels"></script>
 </body>
 </html>

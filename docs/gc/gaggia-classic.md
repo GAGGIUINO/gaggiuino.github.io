@@ -17,8 +17,8 @@
 ***
 
 ### **ARDUINO CONNECTIONS**
-***
-
+<!-- panels:start -->
+<!-- div:left-panel -->
 1. MAX6675 (Temperature sensing)
     MAX6675  |  Arduino
     ---------|-----------
@@ -27,7 +27,7 @@
      SCK     |   D6
      SO      |   D4
      CS      |   D5
-***
+<!-- div:right-panel -->
 2. Relay (Boiler power control)
 
     Relay Port  |  Arduino
@@ -36,7 +36,11 @@
       3     |   D8
 
    ***Relay ports [1] and [2] are the high voltage circuit breaker so not mentioned here as they get covered further in the guide.***
+<!-- panels:end -->
+
 ***
+<!-- panels:start -->
+<!-- div:left-panel -->
 3. Nextion LCD
 
     Nextion  |  Arduino
@@ -47,7 +51,7 @@
       GND    |   GND
 
    ***Nextion and Arduino TX/RX are reversed intentionally.***
-***
+<!-- div:right-panel -->
 4. Power delivery
 
     PS   |  Arduino
@@ -56,59 +60,64 @@
     GND  |   GND
 
    ***Powering using the [ 12v ] power supply module + [ 5v ] stepdown convertor is the recommended way. Powering all the arduino connected boards through the Arduino's USB port is not recommended due to the low power capacity of the on-board voltage regulator. Doing so will kill your arduino eventually. You've been warned!***
+<!-- panels:end -->
 *** 
+<!-- panels:start -->
+<!-- div:left-panel -->
 5. Steam detection
 
-   ![GC - steam handling](https://user-images.githubusercontent.com/42692077/147904917-feeb3230-3ea0-460c-82de-4ad16034a48e.png)
+GC SWITCH | Arduino
+-----------|-----------
+3          |   D7
+4          |   GND
 
-    GC SWITCH | Arduino
-   -----------|-----------
-   3          |   D7
-   4          |   GND
-***
+![GC - brew handling](https://user-images.githubusercontent.com/42692077/154805193-76068521-3ad4-4020-b2ee-8dab9394d4fe.png ':size=500')
+***Make sure to mark the HV wires disconnected from the STEAM switch poles as they will be needed later in the install.***
+<!-- div:right-panel -->
 6. Brew detection
 
-   OPTOCOUPLER |  Arduino
-   ------------|-----------
-    VCC        |   5v
-    GND        |   GND
-    OUT        |   A0
-   
+OPTOCOUPLER |  Arduino
+------------|-----------
+VCC        |   5v
+GND        |   GND
+OUT        |   A0
+
   _The high voltage circuit control ports will splice into existing brew switch wires._
+<!-- panels:end -->
 ***
+<!-- panels:start -->
+<!-- div:left-panel -->
 7. Pressure sensing
 
-    Transducer|  Arduino
-    ----------|-----------
-     RED      |   5v
-     BLACK    |   GND
-     YELLOW   |   A1
-***
+Transducer|  Arduino
+----------|-----------
+  RED      |   5v
+  BLACK    |   GND
+  YELLOW   |   A1
+<!-- div:right-panel -->
 8. Dimmer (pressure control)
 
-    Dimmer  |  Arduino
-    --------|-----------
-    VCC     |   5v
-    GND     |   GND
-    Z-C     |   D2
-    PSM     |   D9
-  
+Dimmer  |  Arduino
+--------|-----------
+VCC     |   5v
+GND     |   GND
+Z-C     |   D2
+PSM     |   D9
+
 _Dimmer high voltage circuit control ports will act as a passthrough for the pump LIVE and NEUTRAL wires_
-   
+<!-- panels:end -->
 ***
 
 ### **ASSEMBLING**
 First let's check that the setup works as expected while outside the machine so you don't have it all installed and realise just afterwards it's not reading any temperature because of a faulty component or the relay doesn't switch between the ON/OFF modes.
 
-!>**Note 1 - No permanent connections are needed during testing, so no soldering needed for now.**
+?>**Note 1 - No permanent connections are needed during testing, so no soldering needed for now.**
 >
-!>**Note 2 - All LV(low voltage) sides of the boards will connect to a single 5V and GND rail on the Arduino.**
+?>**Note 2 - All LV(low voltage) sides of the boards will connect to a single 5V and GND rail on the Arduino.**
 >
-!>**Note 3 - DO NOT FEED POWER TO ALL THE BOARDS THROUGH THE MCU USB PORT.**
+?>**Note 3 - DO NOT FEED POWER TO ALL THE BOARDS THROUGH THE MCU USB PORT.**
 >
-!>**Note 4 - As always with such projects common sense should be applied at all times, it's expected people doing such sort of modifications will have some basic understanding.**
->
-!> **Triple check your machine is disconnected from any power sources, even better just pull the power cable out of it if you haven't done so yet!**
+!>**As always with such projects common sense should be applied at all times, it's expected people doing such sort of modifications will have some basic understanding. Triple check your machine is disconnected from any power sources, even better just pull the power cable out of it if you haven't done so yet!**
 
 #### *BASE FUNCTIONALITY BENCH TEST*
 ***
