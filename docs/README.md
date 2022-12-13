@@ -157,9 +157,6 @@ _Will enable pump control based on active pressure feedback, thies enables press
   <!-- tabs:end -->
 
 <!-- tab:STM32 Blackpill -->
-### BASE FUNCTIONALITY
-_Will enable only brew and steam temperature control_
-
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
 * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
