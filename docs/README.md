@@ -5,12 +5,9 @@
 >
 !>**This site is a general guide and *ABSOLUTELY NOT* an exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the _Recommendations_ page of this site. For anyone attempting the install it's strongly recommended to read the planned install route in it's entirety.**
 
-
-
-
 ?> **_Total estimated install time will be based on understanding and experience._**
 
-## Features / Completeness
+# Features
 
   Feature                |  Arduino Nano    |  STM32 Blackpill
 -----------------------  |------------------|-----------------
@@ -43,7 +40,7 @@ _*2_ __Steam Boost__ - software driven steam boosting, requires the relay that's
 >
 _*3_ __Predictive scales__ - software driven predicted weight output, doesn't need any scales hardware.
 
-## CURRENT STABLE RELEASES
+# Releases
 
   MCU             |                               Code branch         
 ------------------|------------------------------------------------------------------------------------
@@ -57,7 +54,7 @@ _*3_ __Predictive scales__ - software driven predicted weight output, doesn't ne
 
 !> Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.
 
-## Timeline
+# Timeline
 
 <details>
 <summary><b>Initial checks</b> <i>(Click to expand)</i></summary>
@@ -116,14 +113,13 @@ _*3_ __Predictive scales__ - software driven predicted weight output, doesn't ne
 > 
 
 # Bill of Materials
-
 ?> The current recommendation is to perform the Nano build first, after which one can easily upgrade to STM32 if further functionality is desired, jumping straight into STM32 is not encouraged for the inexperienced due to the documentation targetting a direct Nano install at this point in time.
-
-<!-- tabs:start -->
-#### **Arduino Nano**
+<!-- panels:start -->
+<!-- div:title-panel -->
 ### BASE FUNCTIONALITY
 _Will enable only brew and steam temperature control_
-
+<!-- tabs:start -->
+<!-- tab:Arduino Nano -->
 * [Arduino Nano AT328](https://bit.ly/3eXSfXZ)  _Not needed if one wants to jump straight to STM32_ 
 * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
 * [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
@@ -143,8 +139,24 @@ _Will enable pump control based on active pressure feedback, thies enables press
 
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
+  <!-- tabs:start -->
+  <!-- tab:Gaggia Classic -->
+  * [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
+  * [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
+  * [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
 
-#### **STM32 Blackpill**
+  <!-- tab:Gaggia Classic Pro -->
+  * **Hose:**  _Just one of the two hose options is needed_ 
+    * [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html) **READ BELOW WARNING**
+    * [Saeco](https://www.ebay.co.uk/itm/115431428020) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
+  * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
+  * [T-fitting | 6mm](https://www.aliexpress.com/item/1005002749996345.html)
+  * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
+
+  !> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
+  <!-- tabs:end -->
+
+<!-- tab:STM32 Blackpill -->
 ### BASE FUNCTIONALITY
 _Will enable only brew and steam temperature control_
 
@@ -169,51 +181,47 @@ _Will enable pump control based on active pressure feedback, thies enables press
 
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
+  <!-- tabs:start -->
+  <!-- tab:Gaggia Classic -->
+  * [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
+  * [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
+  * [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
 
-#### **Nano to STM32 Upgrade**
+  <!-- tab:Gaggia Classic Pro -->
+  * **Hose:**  _Just one of the two hose options is needed_ 
+    * [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html) **READ BELOW WARNING**
+    * [Saeco](https://www.ebay.co.uk/itm/115431428020) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
+  * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
+  * [T-fitting | 6mm](https://www.aliexpress.com/item/1005002749996345.html)
+  * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
+
+  !> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
+  <!-- tabs:end -->
+
+<!-- tab:Nano to STM32 Upgrade -->
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
 * [5V RELAY](https://a.aliexpress.com/_vpUdrT) 
 <!-- tabs:end -->
-<!-- tabs:start -->
-#### **Gaggia Classic**
-* [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
-* [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
-* [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
 
-#### **Gaggia Classic Pro**
-* **Hose:**  _Just one of the two hose options is needed_ 
-  * [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html) **READ BELOW WARNING**
-  * [Saeco](https://www.ebay.co.uk/itm/115431428020) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
-* [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
-* [T-fitting | 6mm](https://www.aliexpress.com/item/1005002749996345.html)
-* [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
-
-!> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
-<!-- tabs:end -->
-
-* **SCALES:**
+* **Scales:**
 
 ?> _Will enable for realtime shot weight tracking without external scales, be aware this is a highly advanced installation step and requires in depth understanding to achieve optimal results, it can't be simplified due to the higly sensitive nature scales require in terms of both installation as well as various tolerances._
 
 ?> _By default a STM32 based build has **predictive scales**(software emulated scales) enabled hence one might be content enough with the results seen by using these after the calibration has been performed using the discord **#predictive-scales-config-bot**_
-
-  * [750g LOADCELLS x 2](https://www.aliexpress.com/item/1644918827.html)
-  * [HX711 amplifier x 2](https://www.aliexpress.com/item/33041823995.html)
-  * **Printing materials**
-    * [Gaggia Classic & Classic Pro scales housing](https://www.printables.com/model/285370-gaggia-classic-pro-scales)
-
-> 
-> 
-> 
-
-* **PRINTED HOUSINGS**
 >
-* [GC - LCD Enclosure](https://www.printables.com/model/280617-gaggiuino-gaggia-classic-touchscreen-housing-and-f)
-* [GCP - LCD Enclosure](https://www.thingiverse.com/thing:5236286) _Only the lid and LCD housing files should be printed_
-* [Internal Component Housing](https://www.printables.com/model/269394-gaggiuino-stm32-internal-component-housing)
+* [750g LOADCELLS x 2](https://www.aliexpress.com/item/1644918827.html)
+* [HX711 amplifier x 2](https://www.aliexpress.com/item/33041823995.html)
+* [Gaggia Classic & Classic Pro scales housing](https://www.printables.com/model/285370-gaggia-classic-pro-scales)
+<!-- div:panel-end -->
+> 
+> 
+> 
+>
+* **Printed Housings**
+  * [GC - LCD Enclosure](https://www.printables.com/model/280617)
+  * [Internal Component Housing](https://www.printables.com/model/269394)
 
-**Cheap services to order the prints if not owning a printer:**
-
+* **Print service**
   * [cloudcraft3d.com](https://craftcloud3d.com/)
