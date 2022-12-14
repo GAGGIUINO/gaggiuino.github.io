@@ -116,8 +116,8 @@ Please use the tables in **3.0.2 Appendix - Component Wiring** for details on pi
 Take off the top cover of your machine by unscrewing the 2 top screws. Be sure to mark your top left power connector so you don't mix them up (even though it's not that hard to understand which one is which).
 
 Prepare splitter cables with the below specs:
-1. Black splitter, 15AWG, 10cm, female end, male end, male end
-2. Red splitter, 15AWG, 10cm, female end, male end, male end
+1. Black splitter, 18AWG, 10cm, female end, male end, male end
+2. Red splitter, 18AWG, 10cm, female end, male end, male end
 
 Example of a red and black splitter:
 
@@ -169,8 +169,8 @@ Please see some examples of known differences but really you should be testing w
 
 
 Prepare 2 more cables with the below spec:
-1. Black, 18/20AWG, about 15cm, female end, exposed end
-2. Red, 18/20AWG, about 15cm, female end, exposed end
+1. Black, 18AWG, about 15cm, female end, exposed end
+2. Red, 18AWG, about 15cm, female end, exposed end
 
 Connect the female end to the male end of the splitter cable from above step (match the colours)
 
@@ -186,7 +186,7 @@ In relation to the image above - the black will be connected to the GND and the 
 
 _**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on! **_
 
-**_If you have the ECO version (the machine turns off automatically after 20mins) bridge your brew switch with a 15AWG cable with two male ends, as per below:_**
+**_If you have the ECO version (the machine turns off automatically after 20mins) bridge your brew switch with a 18AWG cable with two male ends, as per below:_**
 
 ![image](https://user-images.githubusercontent.com/53577819/154989122-6237e1af-62d1-4289-901c-47c69ea3b1b9.jpg ':size=500')
 
@@ -194,7 +194,7 @@ _**Make sure this component is well insulated and enclosed. You do not want to t
 
 Prepare the following cable to the below spec:
 
-1. Black, 15AWG, 5cm, two male ends
+1. Black, 18AWG, 5cm, two male ends
 
 [Detach the boiler](https://www.youtube.com/watch?v=0ipvBdWaVzQ) (only watch as far as the 5min mark) to gain enough access to remove the thermocouple and replace it with the m4 bolted thermocouple sensor. 
 
@@ -224,8 +224,8 @@ _**Make sure this component is well insulated and enclosed. You do not want to t
 
 Prepare cables with below spec:
 
-1. Red, 15AWG, 10cm, one male end, one exposed end
-2. Red, 15AWG, 10cm, one male end, one exposed end
+1. Red, 18AWG, 10cm, one male end, one exposed end
+2. Red, 18AWG, 10cm, one male end, one exposed end
 
 The 2 are used to connect the steam thermostat connections to port 1 and 2 of the SSR relay, so:
 
@@ -261,7 +261,7 @@ Image of the steam switch schematic:
 
 Prepare a black splitter with below spec:
 
-1. Black splitter, 15AWG, 5cm, two male ends and one female end
+1. Black splitter, 18AWG, 5cm, two male ends and one female end
 
 
 1. Disconnect the two top poles (1 & 4)
@@ -291,9 +291,9 @@ Please use the tables in **3.0.2 Appendix - Component Wiring** for details on GN
 
 ### *2.0.6 RobotDYN Dimmer Config*
 Prepare 3 cables with the below spec:
-1. Red, 18/20AWG, 15cm, one exposed end, one female end 
-2. Red, 18/20AWG, 15cm, one exposed end, one male end 
-3. Black splitter, 18/20AWG, 15cm, one exposed end, one male end, one female end
+1. Red, 18AWG, 15cm, one exposed end, one female end 
+2. Red, 18AWG, 15cm, one exposed end, one male end 
+3. Black splitter, 18AWG, 15cm, one exposed end, one male end, one female end
 
 Please check whether your dimmer ports placement in the case it differs from the images before connecting the dimmer, it's very important to feed the IN and OUT wires correctly!
 

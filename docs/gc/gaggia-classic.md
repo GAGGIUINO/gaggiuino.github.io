@@ -151,7 +151,7 @@ For now only connect the low voltage circuit controlling ports of the relay to c
 >
 ![PXL_20210527_181116200 1](https://user-images.githubusercontent.com/109426580/190676716-bf126fbc-2177-43d0-8300-3525e7daac8c.jpg ':size=500')
 
-2. Prepare 2 splitters like in the below image using the AWG15 cable, be sure one splitter to be black(negative) and one red(positive)
+2. Prepare 2 splitters like in the below image using the 18AWG cable, be sure one splitter to be black(negative) and one red(positive)
 >
 ![PXL_20210527_183052740 1](https://user-images.githubusercontent.com/109426580/190676830-420e5ff8-d29b-4221-8c71-41de8c92c52a.jpg ':size=500')
 
