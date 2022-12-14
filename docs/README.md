@@ -111,16 +111,16 @@ _*3_ __Predictive scales__ - software driven predicted weight output, doesn't ne
 
 > 
 > 
-
-# Bill of Materials
-?> The current recommendation is to perform the Nano build first, after which one can easily upgrade to STM32 if further functionality is desired, jumping straight into STM32 is not encouraged for the inexperienced due to the documentation targetting a direct Nano install at this point in time.
 <!-- panels:start -->
 <!-- div:title-panel -->
-### BASE FUNCTIONALITY
-_Will enable only brew and steam temperature control_
+# Bill of Materials
+?> The current recommendation is to perform the Nano build first, after which one can easily upgrade to STM32 if further functionality is desired, jumping straight into STM32 is not encouraged for the inexperienced due to the documentation targetting a direct Nano install at this point in time.
 <!-- tabs:start -->
 <!-- tab:Arduino Nano -->
-* [Arduino Nano AT328](https://bit.ly/3eXSfXZ)  _Not needed if one wants to jump straight to STM32_ 
+### BASE FUNCTIONALITY
+_Will enable only brew and steam temperature control_
+>
+* [Arduino Nano AT328](https://bit.ly/3eXSfXZ) 
 * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
 * [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
 * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
@@ -136,7 +136,6 @@ _Will enable only brew and steam temperature control_
 
 ### EXTENDED FUNCTIONALITY
 _Will enable pump control based on active pressure feedback, thies enables pressure and flow profiling as well as other functionality._
-
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
   <!-- tabs:start -->
@@ -157,6 +156,9 @@ _Will enable pump control based on active pressure feedback, thies enables press
   <!-- tabs:end -->
 
 <!-- tab:STM32 Blackpill -->
+### BASE FUNCTIONALITY
+_Will enable only brew and steam temperature control_
+>
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
 * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
