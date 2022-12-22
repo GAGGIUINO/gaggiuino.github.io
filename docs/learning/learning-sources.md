@@ -12,10 +12,10 @@
 
 ## Resources
 * GitHub: https://github.com/Zer0-bit/gaggiuino
-* Discord: https://discord.com/channels/890339612441063494/890339612441063497
 * Soldering 1: https://youtu.be/Fb7ONG08BUk
 * Soldering 2: https://youtu.be/Fp37DPZVdRI
 * Crimping : https://youtu.be/nvPESov0HbY
 * Nextion : https://nextion.tech/faq-items/using-nextion-microsd/
 * Pipe Fittings : https://www.youtube.com/watch?v=qtWLFKpItz8
 * Preventing Pipe Leaks: https://www.youtube.com/watch?v=_3L__RFcaOI
+
