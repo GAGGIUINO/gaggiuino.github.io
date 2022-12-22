@@ -80,7 +80,7 @@ The nano expansion board you already have mirrors the nano pin locations but not
 
 **DIAGRAM**
    
-![STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/204611412-72767f49-de68-4166-9511-50cf8f2e3794.png)
+![STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/209090732-28ab3147-38c6-4571-8668-803e8d9155e9.png)
 
 ## SOFTWARE INSTALLATION
 
