@@ -129,7 +129,7 @@ _Will enable only brew and steam temperature control_
 * [Thermo-resistant cables AWG18 (1m black & red) and AWG22 ( 5m black,red,yellow & blue )](https://www.aliexpress.com/item/4000627624331.html)
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
-* [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html)
+* [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html) **SKIP FOR THE GAGGIA CLASSIC PRO/NEW CLASSIC**
 * Power Supply:
     * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
     * [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
@@ -147,9 +147,9 @@ _Will enable pump control based on active pressure feedback, thies enables press
   <!-- tab:Gaggia Classic Pro -->
   * **Hose:**  _Just one of the two hose options is needed_ 
     * [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html) **READ BELOW WARNING**
-    * [Saeco](https://www.ebay.co.uk/itm/115431428020) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
+    * [Saeco](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
   * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
-  * [T-fitting | 6mm](https://www.aliexpress.com/item/1005002749996345.html)
+  * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
   * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
   !> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
@@ -189,9 +189,9 @@ _Will enable pump control based on active pressure feedback, thies enables press
   <!-- tab:Gaggia Classic Pro -->
   * **Hose:**  _Just one of the two hose options is needed_ 
     * [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html) **READ BELOW WARNING**
-    * [Saeco](https://www.ebay.co.uk/itm/115431428020) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
+    * [Saeco](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
   * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
-  * [T-fitting | 6mm](https://www.aliexpress.com/item/1005002749996345.html)
+  * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
   * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
   !> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
