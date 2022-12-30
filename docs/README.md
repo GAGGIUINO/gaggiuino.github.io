@@ -126,14 +126,14 @@ _Will enable only brew and steam temperature control_
 * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
 * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
-* [Thermo-resistant cables AWG18 (1m black & red) and AWG22 ( 5m black,red,yellow & blue )](https://www.aliexpress.com/item/4000627624331.html)
+* [Thermo-resistant cables AWG18 (1m black & red) and AWG22 ( 5m black, red, yellow, blue, green and purple )](https://www.aliexpress.com/item/4000627624331.html)
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
+* [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
+* [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
+<!-- tab:Gaggia Classic -->
 * [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html) **SKIP FOR THE GAGGIA CLASSIC PRO/NEW CLASSIC**
-* Power Supply:
-    * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
-    * [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
-
+  
 ### EXTENDED FUNCTIONALITY
 _Will enable pump control based on active pressure feedback, thies enables pressure and flow profiling as well as other functionality._
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
