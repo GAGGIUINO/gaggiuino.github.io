@@ -274,7 +274,6 @@ Image for reference below:
 
 ![image](https://user-images.githubusercontent.com/53577819/155016949-a070e451-2bd8-45e8-9acb-669b7cc28bab.jpg ':size=500')
 
-
 ### *2.0.5 Continuity Brew Detection*
 
 Prepare 2 cables with the below spec:
@@ -320,14 +319,11 @@ _**Triple check your dimmer board on what is marked as IN and OUT. 100% need to 
 ![image](https://user-images.githubusercontent.com/53577819/155005572-1d7c2ef1-ed1e-4c6e-9004-2fc22c73d83b.jpg ':size=500')
 
 
-
 _**Again!!! Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**_
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on VCC, GND, Z-C and PSM connections to the Arduino. 
 
 ### *2.0.7 Pressure Transducer Config*
-Installing the pressure transducer. T
-
 The pressure sensor will be tapping into the orange braided hose connecting the pump outlet and the boiler inlet. 
 
 **There is no need to take off your original saeco hose.** 
