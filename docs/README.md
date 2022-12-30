@@ -145,9 +145,10 @@ _Will enable pump control based on active pressure feedback, thies enables press
   * [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
 
   <!-- tab:Gaggia Classic Pro -->
-  * **Hose:**  _Just one of the two hose options is needed_ 
-    * [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html) **READ BELOW WARNING**
-    * [Saeco](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
+  * Saeco  **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
+  * >[US](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169)
+  * >[UK](https://www.ebay.co.uk/itm/114865529829)
+  * **THIS ALTERNATE HOSE OPTION IS A LAST RESORT - READ BELOW WARNING** [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html)
   * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
   * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
   * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
@@ -171,9 +172,8 @@ _Will enable only brew and steam temperature control_
 * [Thermo-resistant cables AWG18 (1m black & red) and AWG22 ( 5m black,red,yellow & blue )](https://www.aliexpress.com/item/4000627624331.html)
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
-* Power Supply:
-    * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
-    * [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
+* [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
+* [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
 
 ### EXTENDED FUNCTIONALITY
 _Will enable pump control based on active pressure feedback, thies enables pressure and flow profiling as well as other functionality._
@@ -187,9 +187,10 @@ _Will enable pump control based on active pressure feedback, thies enables press
   * [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
 
   <!-- tab:Gaggia Classic Pro -->
-  * **Hose:**  _Just one of the two hose options is needed_ 
-    * [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html) **READ BELOW WARNING**
-    * [Saeco](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
+  * Saeco  **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
+  * >[US](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169)
+  * >[UK](https://www.ebay.co.uk/itm/114865529829)
+  * **THIS ALTERNATE HOSE OPTION IS A LAST RESORT - READ BELOW WARNING** [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html)
   * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
   * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
   * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
