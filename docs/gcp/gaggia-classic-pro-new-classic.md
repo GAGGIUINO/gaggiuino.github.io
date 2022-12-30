@@ -167,14 +167,13 @@ Please see some examples of known differences but really you should be testing w
 
 ![image](https://user-images.githubusercontent.com/53577819/154988901-b79270da-5bb3-4507-9ef2-57bf2e791d77.JPG ':size=500')
 
-
 Prepare 2 more cables with the below spec:
 1. Black, 18AWG, about 15cm, female end, exposed end
 2. Red, 18AWG, about 15cm, female end, exposed end
 
 Connect the female end to the male end of the splitter cable from above step (match the colours)
 
-If using the 5v PS - the 2 AC IN ports will be where the exposed end of your red or black piggyback cable go, it doesn't matter which way round (yes, you need to fiddle about getting wires in and solder correctly - recommended to trim, twist, tin and apply heat shrink).
+On the 12v PSU the 2 AC IN ports will be where the exposed end of your red or black piggyback cable go, it doesn't matter which way round (yes, you need to fiddle about getting wires in and solder correctly - recommended to trim, twist, tin and apply heat shrink).
 
 Prepare more cables with the below spec:
 1. Black, 18AWG, about ~10cm, exposed ends
@@ -182,7 +181,7 @@ Prepare more cables with the below spec:
 3. Black, 26AWG, about ~25cm, exposed ends
 4. Red, 26AWG, about ~25cm, exposed ends
 
-![image](https://user-images.githubusercontent.com/53577819/154989029-59ab20c6-fdda-4510-a9e0-50579b8e4a54.jpg ':size=500')
+<img width="672" alt="image" src="https://user-images.githubusercontent.com/53577819/210059859-be0135a8-7041-48ab-a2a5-daa8c86d04a1.png">
 
 In relation to the image above - 
 - The short red 18AWG wire goes from 12v VCC/+ -> 5V IN + 
@@ -386,17 +385,9 @@ You can find the defined pins at the top of the .ino file.
 A suggestion on wiring; components that are inside same enclosure, the same connection can be linked i.e. solder a cable to the 5v pin then take the other end and solder to the 5V of the other component, from there take one cable to the Arduino. An alternative way is to  solder similar connections and apply heat-shrink before the exit to the machine then take one wire through the machine to the Arduino.
 
 1. POWER DELIVERY RECOMMENDATION
-Method 1 - If choosing to power the system using the AC adapter then the Arduino board and all the connected components will receive power by the means of the regulated 5v the AC adapter delivers through the USB port.
 
-| PS | Arduino | 
-| --- | --- |
-| VCC OUT | 5v | 
-| GND OUT | GND |
-
-Method 2 - If powering using the [ 12v ] power supply module + [ 5v ] step-down convertor follow the bellow scheme:
-
-|   12v | 5v IN | 5v OUT | Arduino | 
-| ----- | ----- | ------ | ------- |
+| 12v | 5v IN | 5v OUT | Arduino | 
+| ---- | ---- | ---- | ---- |
 | VCC   | IN +  | OUT +  | 5v      | 
 | GND   | IN -  | OUT -  | GND     |
 
@@ -425,7 +416,7 @@ All the other boards should be connected to the same GND / 5v plane as arduino.
 | --- | --- |
 |TX | RX |
 |RX | TX |
-|VCC/5V | 5v |
+|VCC/5v | 5v |
 |GND | GND |
 
 5. STEAM HANDLING WIRING
@@ -441,7 +432,7 @@ All the other boards should be connected to the same GND / 5v plane as arduino.
 
 | BREW SWITCH | ARDUINO |
 | --- | --- |
-|TOP | A0 |
+|TOP  | A0 |
 |BOTTOM | GND |
 
 7. ROBOTDYN DIMMER WIRING
@@ -451,7 +442,7 @@ All the other boards should be connected to the same GND / 5v plane as arduino.
 | VCC | 5v |
 | GND | GND |
 | Z-C | D2 |
-| PSM | D9 |
+| PSM/DIM | D9 |
 
 8. TRANSDUCER WIRING
 
