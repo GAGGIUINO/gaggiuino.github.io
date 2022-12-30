@@ -326,13 +326,25 @@ _**Again!!! Make sure this component is well insulated and enclosed. You do not 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on VCC, GND, Z-C and PSM connections to the Arduino. 
 
 ### *2.0.7 Pressure Transducer Config*
-Installing the pressure transducer. The pressure sensor will be tapping into the orange braided hose connecting the pump outlet and the boiler inlet. I would generally advise to take out the original hose and use the one ordered together with the pressure sensor, cut a similarly sized one out of the hose purchased and use the rest of the left length as additional transducer buffer.
+Installing the pressure transducer. T
+
+The pressure sensor will be tapping into the orange braided hose connecting the pump outlet and the boiler inlet. 
+
+**There is no need to take off your original saeco hose.** 
+
+Splice into it from the centre and add the T fitting with clamps. Add the additional/new hose to the free T end with clamps and to the other side, the fitting with clamps and tighten the pressure sensor on to it with teflon tape. 
 
 It's advisable after making the connections and just before connecting the transducer itself turn on the machine and while cold engage the pump to fill the transducer hose with water as well, leaving a lot of air in the system might play funny with the readings.
 
+**Try to keep the sensor itself away from HV lines and also the pump itself. This will help reduce noise. **
+
+<img width="334" alt="image" src="https://user-images.githubusercontent.com/53577819/210058187-e04d976e-cc38-43f1-90fd-3a380e603ef7.png">
+
+<img width="339" alt="image" src="https://user-images.githubusercontent.com/53577819/210058289-44393a75-a9c4-4ef7-b5c1-c558a574a1c6.png">
+
 ![GCP TRANSDUCER](https://user-images.githubusercontent.com/42692077/146647809-970c0ccd-47c6-430c-9c71-9b651bab4bf4.png ':size=500')
 
-Please use the tables in **3.0.2 Appendix - Component Wiring** for details on RED, BLACK andYELLOW wire connections to the Arduino. 
+Please use the tables in **3.0.2 Appendix - Component Wiring** for details on RED, BLACK and YELLOW wire connections to the Arduino. 
 
 ### *2.0.8 Finish*
 ***
@@ -423,8 +435,8 @@ All the other boards should be connected to the same GND / 5v plane as arduino.
 
 | BREW SWITCH | ARDUINO |
 | --- | --- |
-|TOP | GND |
-|BOTTOM | A0 |
+|TOP | A0 |
+|BOTTOM | GND |
 
 7. ROBOTDYN DIMMER WIRING
 
@@ -442,9 +454,5 @@ All the other boards should be connected to the same GND / 5v plane as arduino.
 | RED | 5v |
 | BLACK | GND |
 | YELLOW | A1 |
-
-9. LOAD CELLS
-
-TO DO
 
 ***
