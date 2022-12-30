@@ -22,8 +22,8 @@
 * **Gaggia Classic Pro-specific**
 <div style='color: red'>ATTENTION! Please read the warning related to the hose choice.</div>
 
-  * [Hose - ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html) **READ BELOW WARNING**
-  * [Hose Saeco](https://www.ebay.co.uk/itm/115431428020) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
+  * [Hose Saeco](https://www.ebay.co.uk/itm/114865529829) **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
+  > * [Hose - ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html) **THIS ALTERNATE HOSE OPTION IS A LAST RESORT - READ BELOW WARNING**
   * [Transducer Fitting - 6mm x 1/4](https://www.aliexpress.com/item/33059380672.html)
   * [T-fitting - 6mm](https://www.aliexpress.com/item/1005002749996345.html)
   * [Clamps - 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
