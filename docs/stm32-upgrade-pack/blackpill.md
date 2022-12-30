@@ -29,6 +29,8 @@ Always refer to the official Gaggiuino BOM on the Github project page for the mo
 Ensure your expansion board circuitry looks like the bottom left (green) and not the bottom right (blue). The bottom right (blue) will not work correctly with the standard pindefs (it will not trigger the relay to heat up the boiler - the two circled pins in yellow are marked `GND` on the reverse and are both connected to the groundplane and each other), so it is advised for most people to purchase the board from the BOM that looks like the green expansion board.  
 ![Expansion Boards](https://user-images.githubusercontent.com/2452284/204672901-ac1a89d9-cbf2-4367-9196-e1a74fbce7dd.png)
 
+If you do purchase a green expansion board but see on the reverse side this connection between two pins - it will have the same problem as the blue board (two sets of pins are connected to each other) this can be fixed by cutting this trace.
+![Connected trace](https://user-images.githubusercontent.com/2452284/208331321-cef4d700-b961-4725-9cf1-f99202f1785a.jpg)
 ### Important Considerations Before You Begin The Next Section
 
 ![Warning](https://user-images.githubusercontent.com/80347096/191159408-7902397d-a255-4dbb-889c-581c6492b357.png)
@@ -80,7 +82,7 @@ The nano expansion board you already have mirrors the nano pin locations but not
 
 **DIAGRAM**
    
-![STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/204611412-72767f49-de68-4166-9511-50cf8f2e3794.png)
+![STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/209090732-28ab3147-38c6-4571-8668-803e8d9155e9.png)
 
 ## SOFTWARE INSTALLATION
 

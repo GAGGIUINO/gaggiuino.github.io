@@ -167,22 +167,27 @@ Please see some examples of known differences but really you should be testing w
 
 ![image](https://user-images.githubusercontent.com/53577819/154988901-b79270da-5bb3-4507-9ef2-57bf2e791d77.JPG ':size=500')
 
-
 Prepare 2 more cables with the below spec:
 1. Black, 18AWG, about 15cm, female end, exposed end
 2. Red, 18AWG, about 15cm, female end, exposed end
 
 Connect the female end to the male end of the splitter cable from above step (match the colours)
 
-If using the 5v PS - the 2 AC IN ports will be where the exposed end of your red or black piggyback cable go, it doesn't matter which way round (yes, you need to fiddle about getting wires in and solder correctly - recommended to trim, twist, tin and apply heat shrink).
-
-![image](https://user-images.githubusercontent.com/53577819/154989029-59ab20c6-fdda-4510-a9e0-50579b8e4a54.jpg ':size=500')
+On the 12v PSU the 2 AC IN ports will be where the exposed end of your red or black piggyback cable go, it doesn't matter which way round (yes, you need to fiddle about getting wires in and solder correctly - recommended to trim, twist, tin and apply heat shrink).
 
 Prepare more cables with the below spec:
-1. Black, 26AWG, about 25cm, exposed ends
-2. Red, 26AWG, about 25cm, exposed ends
+1. Black, 18AWG, about ~10cm, exposed ends
+2. Red, 18AWG, about ~10cm, exposed ends
+3. Black, 26AWG, about ~25cm, exposed ends
+4. Red, 26AWG, about ~25cm, exposed ends
 
-In relation to the image above - the black will be connected to the GND and the red to the VCC the other ends are going to the Arduino. Please use the tables in **3.0.2 Appendix - Component Wiring** for details on wiring VCC and GND connections to the Arduino. 
+<img width="672" alt="image" src="https://user-images.githubusercontent.com/53577819/210059859-be0135a8-7041-48ab-a2a5-daa8c86d04a1.png">
+
+In relation to the image above - 
+- The short red 18AWG wire goes from 12v VCC/+ -> 5V IN + 
+- The short black 18AWG wire goes from 12v GND/- -> 5V IN -  
+- The longer 26AWG black will be connected from 5v OUT- to the GND of expansion
+- The longer 26AWG red will be connected from 5v OUT+ to the 5V of expansion. Please use the tables in **3.0.2 Appendix - Component Wiring** for details on wiring VCC/5V/+ and GND/- connections to the Arduino. 
 
 _**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on! **_
 
@@ -274,7 +279,6 @@ Image for reference below:
 
 ![image](https://user-images.githubusercontent.com/53577819/155016949-a070e451-2bd8-45e8-9acb-669b7cc28bab.jpg ':size=500')
 
-
 ### *2.0.5 Continuity Brew Detection*
 
 Prepare 2 cables with the below spec:
@@ -320,19 +324,32 @@ _**Triple check your dimmer board on what is marked as IN and OUT. 100% need to 
 ![image](https://user-images.githubusercontent.com/53577819/155005572-1d7c2ef1-ed1e-4c6e-9004-2fc22c73d83b.jpg ':size=500')
 
 
-
 _**Again!!! Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**_
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on VCC, GND, Z-C and PSM connections to the Arduino. 
 
 ### *2.0.7 Pressure Transducer Config*
-Installing the pressure transducer. The pressure sensor will be tapping into the orange braided hose connecting the pump outlet and the boiler inlet. I would generally advise to take out the original hose and use the one ordered together with the pressure sensor, cut a similarly sized one out of the hose purchased and use the rest of the left length as additional transducer buffer.
+The pressure sensor will be tapping into the orange braided hose connecting the pump outlet and the boiler inlet. 
+
+**There is no need to take off your original saeco hose.** 
+
+Splice into it from the centre and add the T fitting with clamps. Add the additional/new hose to the free T end with clamps and to the other side, the fitting with clamps and tighten the pressure sensor on to it with teflon tape. 
 
 It's advisable after making the connections and just before connecting the transducer itself turn on the machine and while cold engage the pump to fill the transducer hose with water as well, leaving a lot of air in the system might play funny with the readings.
 
-![GCP TRANSDUCER](https://user-images.githubusercontent.com/42692077/146647809-970c0ccd-47c6-430c-9c71-9b651bab4bf4.png ':size=500')
+**Try to keep the sensor itself away from HV lines and also the pump itself. This will help reduce noise.**
 
-Please use the tables in **3.0.2 Appendix - Component Wiring** for details on RED, BLACK andYELLOW wire connections to the Arduino. 
+<img width="334" alt="image" src="https://user-images.githubusercontent.com/53577819/210058187-e04d976e-cc38-43f1-90fd-3a380e603ef7.png">
+
+<img width="339" alt="image" src="https://user-images.githubusercontent.com/53577819/210058289-44393a75-a9c4-4ef7-b5c1-c558a574a1c6.png">
+
+Make sure to push the hose all the way up to the ends on each side, the T and the pressure sensor
+
+<img width="235" alt="image" src="https://user-images.githubusercontent.com/53577819/210059113-91543a43-2b47-4828-8e3b-59ab303a4449.png">
+
+![Diagram](https://user-images.githubusercontent.com/42692077/146647809-970c0ccd-47c6-430c-9c71-9b651bab4bf4.png ':size=500')
+
+Please use the tables in **3.0.2 Appendix - Component Wiring** for details on RED, BLACK and YELLOW wire connections to the Arduino. 
 
 ### *2.0.8 Finish*
 ***
@@ -368,19 +385,11 @@ You can find the defined pins at the top of the .ino file.
 A suggestion on wiring; components that are inside same enclosure, the same connection can be linked i.e. solder a cable to the 5v pin then take the other end and solder to the 5V of the other component, from there take one cable to the Arduino. An alternative way is to  solder similar connections and apply heat-shrink before the exit to the machine then take one wire through the machine to the Arduino.
 
 1. POWER DELIVERY RECOMMENDATION
-Method 1 - If choosing to power the system using the AC adapter then the Arduino board and all the connected components will receive power by the means of the regulated 5v the AC adapter delivers through the USB port.
 
-| PS | Arduino | 
-| --- | --- |
-| VCC OUT | 5v | 
-| GND OUT | GND |
-
-Method 2 - If powering using the [ 12v ] power supply module + [ 9v ] step-down convertor follow the bellow scheme:
-
-| Stepdown | Arduino | 
-| -------- | ------- |
-| OUT +    | 5v      | 
-| OUT -    | GND     |
+| 12v | 5v IN | 5v OUT | Arduino | 
+| ---- | ---- | ---- | ---- |
+| VCC   | IN +  | OUT +  | 5v      | 
+| GND   | IN -  | OUT -  | GND     |
 
 All the other boards should be connected to the same GND / 5v plane as arduino.
 
@@ -407,7 +416,7 @@ All the other boards should be connected to the same GND / 5v plane as arduino.
 | --- | --- |
 |TX | RX |
 |RX | TX |
-|VCC | 5v |
+|VCC/5v | 5v |
 |GND | GND |
 
 5. STEAM HANDLING WIRING
@@ -423,8 +432,8 @@ All the other boards should be connected to the same GND / 5v plane as arduino.
 
 | BREW SWITCH | ARDUINO |
 | --- | --- |
-|TOP | GND |
-|BOTTOM | A0 |
+|TOP  | A0 |
+|BOTTOM | GND |
 
 7. ROBOTDYN DIMMER WIRING
 
@@ -433,7 +442,7 @@ All the other boards should be connected to the same GND / 5v plane as arduino.
 | VCC | 5v |
 | GND | GND |
 | Z-C | D2 |
-| PSM | D9 |
+| PSM/DIM | D9 |
 
 8. TRANSDUCER WIRING
 
@@ -442,9 +451,5 @@ All the other boards should be connected to the same GND / 5v plane as arduino.
 | RED | 5v |
 | BLACK | GND |
 | YELLOW | A1 |
-
-9. LOAD CELLS
-
-TO DO
 
 ***
