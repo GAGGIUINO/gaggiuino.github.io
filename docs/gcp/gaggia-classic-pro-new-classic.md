@@ -337,7 +337,7 @@ Splice into it from the centre and add the T fitting with clamps. Add the additi
 
 It's advisable after making the connections and just before connecting the transducer itself turn on the machine and while cold engage the pump to fill the transducer hose with water as well, leaving a lot of air in the system might play funny with the readings.
 
-**Try to keep the sensor itself away from HV lines and also the pump itself. This will help reduce noise. **
+**Try to keep the sensor itself away from HV lines and also the pump itself. This will help reduce noise.**
 
 <img width="334" alt="image" src="https://user-images.githubusercontent.com/53577819/210058187-e04d976e-cc38-43f1-90fd-3a380e603ef7.png">
 
