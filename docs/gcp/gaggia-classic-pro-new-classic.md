@@ -176,13 +176,19 @@ Connect the female end to the male end of the splitter cable from above step (ma
 
 If using the 5v PS - the 2 AC IN ports will be where the exposed end of your red or black piggyback cable go, it doesn't matter which way round (yes, you need to fiddle about getting wires in and solder correctly - recommended to trim, twist, tin and apply heat shrink).
 
+Prepare more cables with the below spec:
+1. Black, 18AWG, about ~10cm, exposed ends
+2. Red, 18AWG, about ~10cm, exposed ends
+3. Black, 26AWG, about ~25cm, exposed ends
+4. Red, 26AWG, about ~25cm, exposed ends
+
 ![image](https://user-images.githubusercontent.com/53577819/154989029-59ab20c6-fdda-4510-a9e0-50579b8e4a54.jpg ':size=500')
 
-Prepare more cables with the below spec:
-1. Black, 26AWG, about 25cm, exposed ends
-2. Red, 26AWG, about 25cm, exposed ends
-
-In relation to the image above - the black will be connected to the GND and the red to the VCC the other ends are going to the Arduino. Please use the tables in **3.0.2 Appendix - Component Wiring** for details on wiring VCC and GND connections to the Arduino. 
+In relation to the image above - 
+- The short red 18AWG wire goes from 12v VCC/+ -> 5V IN + 
+- The short black 18AWG wire goes from 12v GND/- -> 5V IN -  
+- The longer 26AWG black will be connected from 5v OUT- to the GND of expansion
+- The longer 26AWG red will be connected from 5v OUT+ to the 5V of expansion. Please use the tables in **3.0.2 Appendix - Component Wiring** for details on wiring VCC/5V/+ and GND/- connections to the Arduino. 
 
 _**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on! **_
 
@@ -387,12 +393,12 @@ Method 1 - If choosing to power the system using the AC adapter then the Arduino
 | VCC OUT | 5v | 
 | GND OUT | GND |
 
-Method 2 - If powering using the [ 12v ] power supply module + [ 9v ] step-down convertor follow the bellow scheme:
+Method 2 - If powering using the [ 12v ] power supply module + [ 5v ] step-down convertor follow the bellow scheme:
 
-| Stepdown | Arduino | 
-| -------- | ------- |
-| OUT +    | 5v      | 
-| OUT -    | GND     |
+|   12v | 5v IN | 5v OUT | Arduino | 
+| ----- | ----- | ------ | ------- |
+| VCC   | IN +  | OUT +  | 5v      | 
+| GND   | IN -  | OUT -  | GND     |
 
 All the other boards should be connected to the same GND / 5v plane as arduino.
 
@@ -419,7 +425,7 @@ All the other boards should be connected to the same GND / 5v plane as arduino.
 | --- | --- |
 |TX | RX |
 |RX | TX |
-|VCC | 5v |
+|VCC/5V | 5v |
 |GND | GND |
 
 5. STEAM HANDLING WIRING
