@@ -131,9 +131,10 @@ _Will enable only brew and steam temperature control_
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
 * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
 * [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
-<!-- tab:Gaggia Classic -->
-* [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html) **SKIP FOR THE GAGGIA CLASSIC PRO/NEW CLASSIC**
-  
+
+**Gaggia Classic Specific**
+* [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html)  
+
 ### EXTENDED FUNCTIONALITY
 _Will enable pump control based on active pressure feedback, thies enables pressure and flow profiling as well as other functionality._
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
@@ -145,9 +146,7 @@ _Will enable pump control based on active pressure feedback, thies enables press
   * [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
 
   <!-- tab:Gaggia Classic Pro -->
-  * Saeco  **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
-  * >[US](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169)
-  * >[UK](https://www.ebay.co.uk/itm/114865529829)
+  * Saeco - [Option 1](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) | [Option 2](https://www.ebay.co.uk/itm/114865529829)  **HIGHLY RECOMMENDED ORIGINAL PART - AVAILABLE LOCALLY**
   * **THIS ALTERNATE HOSE OPTION IS A LAST RESORT - READ BELOW WARNING** [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html)
   * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
   * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
@@ -187,9 +186,7 @@ _Will enable pump control based on active pressure feedback, thies enables press
   * [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
 
   <!-- tab:Gaggia Classic Pro -->
-  * Saeco  **HIGHLY RECOMMENDED ORIGINAL PART, PROBABLY AVAILABLE LOCALLY**
-  * >[US](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169)
-  * >[UK](https://www.ebay.co.uk/itm/114865529829)
+  * Saeco - [Option 1](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) | [Option 2](https://www.ebay.co.uk/itm/114865529829)  **HIGHLY RECOMMENDED ORIGINAL PART - AVAILABLE LOCALLY**
   * **THIS ALTERNATE HOSE OPTION IS A LAST RESORT - READ BELOW WARNING** [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html)
   * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
   * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
