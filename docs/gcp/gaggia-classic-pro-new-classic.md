@@ -181,7 +181,7 @@ Prepare more cables with the below spec:
 3. Black, 26AWG, about ~25cm, exposed ends
 4. Red, 26AWG, about ~25cm, exposed ends
 
-<img width="672" alt="image" src="https://user-images.githubusercontent.com/53577819/210059859-be0135a8-7041-48ab-a2a5-daa8c86d04a1.png">
+![image](https://user-images.githubusercontent.com/53577819/210059859-be0135a8-7041-48ab-a2a5-daa8c86d04a1.png" ':size=500')
 
 In relation to the image above - 
 - The short red 18AWG wire goes from 12v VCC/+ -> 5V IN + 
