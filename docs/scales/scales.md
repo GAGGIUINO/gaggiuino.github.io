@@ -120,7 +120,8 @@ Select the appropriate branch for STM32 (the dev branch is used in this example)
 
 Select the appropriate environment for uploading to the STM32
 
-![STM32_environment](https://user-images.githubusercontent.com/80347096/191636552-59431719-a869-4845-842c-88c099bd4f22.jpg)
+![STM32_environment](https://user-images.githubusercontent.com/109426580/210405159-576b8d54-6562-4720-9810-311593c3232b.png)
+
 
 ### Software Interface with Known Mass
 
