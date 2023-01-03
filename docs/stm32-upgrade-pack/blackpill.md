@@ -93,9 +93,11 @@ ArduinoIDE will no longer work for building and uploading the software to the bo
 
 - After pulling the project, build and then flash from tasks (shown in the figure below) based on your hardware and flashing configuration. If you do not have an STLink, then choose the appropriate DFU task and enter DFU mode on the STM32 by plugging in the board, hold boot, and then press reset and let go of boot.
 
-![Platformio Project Tasks](https://user-images.githubusercontent.com/80347096/191400246-b9dd4b1e-4c5f-4e42-a48a-41a0145d0a8e.png)
+![Platformio Project Tasks](https://user-images.githubusercontent.com/109426580/210403570-5a0093b2-5f5b-4b2b-af6e-bbc652c802b2.png)
 
 Consider buying an ST-Link v2 to more easily upgrade the firmware onto the Blackpill. They can be found on eBay, Amazon and Ali. You will need to solder the 4 angled pins to the board and connect the correct corresponding pins to the stm32 when updating with this tool.
+
+!> Be warned DFU mode falshing isn't recommended due to it's very finicky nature, do your research individually if you can't be bothered to shed 2$ for a STLink adapter.
 
 ![ST-Link](https://user-images.githubusercontent.com/80347096/191400915-6ed2a991-5f0c-4d2a-b52d-aad29978c0d1.jpg)
 
