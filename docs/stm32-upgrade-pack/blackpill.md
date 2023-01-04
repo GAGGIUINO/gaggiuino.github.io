@@ -27,9 +27,11 @@ Always refer to the official Gaggiuino BOM on the Github project page for the mo
 ### Expansion Board Compatibility 
  
 Ensure your expansion board circuitry looks like the bottom left (green) and not the bottom right (blue). The bottom right (blue) will not work correctly with the standard pindefs (it will not trigger the relay to heat up the boiler - the two circled pins in yellow are marked `GND` on the reverse and are both connected to the groundplane and each other), so it is advised for most people to purchase the board from the BOM that looks like the green expansion board.  
+
 ![Expansion Boards](https://user-images.githubusercontent.com/2452284/204672901-ac1a89d9-cbf2-4367-9196-e1a74fbce7dd.png)
 
 If you do purchase a green expansion board but see on the reverse side this connection between two pins - it will have the same problem as the blue board (two sets of pins are connected to each other) this can be fixed by cutting this trace.
+
 ![Connected trace](https://user-images.githubusercontent.com/2452284/208331321-cef4d700-b961-4725-9cf1-f99202f1785a.jpg)
 ### Important Considerations Before You Begin The Next Section
 
@@ -51,8 +53,6 @@ The major upgrade procedure involved with this process is changing the wires fro
 
 The nano and blackpill/stm32 have different pin setups on their respective boards so the wires terminating on the nano expansion (which were defined in the nano instructions) will need to be moved to the newly defined pins (shown below) to work properly on stm32. 
 
-
-  
 ### Install the ADS1115 
 
 With the STM32 upgrade, the pressure transducer data line no longer directly connects to the expansion board. It will now connect to the A0 pin on the new ads1115 board (shown as TS DATA). The ads1115 SCA and SCL connections will go to the main board, and the rest should be self-explanatory per the diagram below. G and ADDR are connected together to GND (such as to your GND Wago). 
@@ -89,6 +89,7 @@ The nano expansion board you already have mirrors the nano pin locations but not
 ArduinoIDE will no longer work for building and uploading the software to the board as it was done for the nano. You will need to download the official STM32 drivers or the STM32 cube programmer and use VSCode and the PlatformIO extension to upload to the STM32.
 
 - Setup VSCode with platformio as shown in the video linked below.  
+- 
 [VSCode and platformio setup](https://discord.com/channels/890339612441063494/922092497847582721/997109453994328075)
 
 - After pulling the project, build and then flash from tasks (shown in the figure below) based on your hardware and flashing configuration. If you do not have an STLink, then choose the appropriate DFU task and enter DFU mode on the STM32 by plugging in the board, hold boot, and then press reset and let go of boot.
