@@ -121,7 +121,7 @@ _*3_ __Predictive scales__ - software driven predicted weight output, doesn't ne
 _Will enable only brew and steam temperature control_
 >
 * [Arduino Nano AT328](https://bit.ly/3eXSfXZ) 
-* [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
+* [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html) **GET GREEN - BLUE IS NOT COMPATIBLE FOR STM32 - SEE STM GUIDE FOR MORE INFO**
 * [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
 * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
 * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
@@ -161,7 +161,7 @@ _Will enable only brew and steam temperature control_
 >
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
-* [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
+* [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html) **GET THE GREEN ONE**
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
 * [5V RELAY](https://a.aliexpress.com/_vpUdrT) 
 * [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**

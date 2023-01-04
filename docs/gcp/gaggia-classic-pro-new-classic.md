@@ -131,24 +131,24 @@ The female end will go in Gaggia's front panel. One male splitter end will go in
 
 **Before trying to copy piggyback locations from below it’s recommended to check what the schematics say (3.0.1 Schematics & Diagrams).** 
 
+**PLEASE NOTE THE OFFICIAL SCHEMATIC DRAWINGS HAVE BEEN DRAWN FLIPPED AND UPSIDE DOWN**
+
 
 By way of context, if looking inside the machine from the back, the left of the power switch is the brew switch. 
-On the power switch - wire in the middle left as LIVE and middle right as GND 
 
+**Below is a snippit of the power switch which is in the schematics**
+
+On the power switch - wire in the middle left as LIVE and middle right as GND 
 
 ![image](https://user-images.githubusercontent.com/53577819/154979422-f78d41c4-87f4-4474-ab68-a3466d5e9e5e.jpeg ':size=350')
 
-The above translates to the following (**please be aware the image below has top connectors removed for clarity)**:
+The above translates to the following **(please be aware the image below has top connectors removed for clarity)**:
 
 ![image](https://user-images.githubusercontent.com/53577819/154979529-eae513b2-00e3-40c9-a581-47be4da68edc.jpg ':size=350')
-
-
 
 If above standard schematics do not work it can be that your wiring is different. It is recommended to use a multimeter to test. 
 
 ![image](https://user-images.githubusercontent.com/53577819/154982423-82b4bdb4-ca78-4077-90c0-77b349c8c3d2.JPG ':size=350')
-
-
 
 * Set it to 600V~ (AC) as shown above and test the connectors on the switches
 * Just wiggle the connector on the switch out a touch to expose a tiny bit of metal where you put your lead on
@@ -158,8 +158,6 @@ If above standard schematics do not work it can be that your wiring is different
 As stated you want to find the connector that only shows voltage after flipping the machine machine on. 
 
 If your LCD is on even though you've not flipped the machine switch on, this means you've piggybacked into the mains live which is constantly got voltage - this is not correct!
-
-
 
 Please see some examples of known differences but really you should be testing with a multimeter.
 
@@ -181,7 +179,7 @@ Prepare more cables with the below spec:
 3. Black, 26AWG, about ~25cm, exposed ends
 4. Red, 26AWG, about ~25cm, exposed ends
 
-![image](https://user-images.githubusercontent.com/53577819/210059859-be0135a8-7041-48ab-a2a5-daa8c86d04a1.png" ':size=350')
+![image](https://user-images.githubusercontent.com/53577819/210059859-be0135a8-7041-48ab-a2a5-daa8c86d04a1.png" ':size=500')
 
 In relation to the image above - 
 - The short red 18AWG wire goes from 12v VCC/+ -> 5V IN + 
