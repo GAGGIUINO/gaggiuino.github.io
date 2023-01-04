@@ -121,12 +121,12 @@ Prepare splitter cables with the below specs:
 
 Example of a red and black splitter:
 
-![image](https://user-images.githubusercontent.com/53577819/154988645-5f1da175-7d09-437a-ac2c-f64e16f3a564.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154988645-5f1da175-7d09-437a-ac2c-f64e16f3a564.jpg ':size=350')
 
 The female end will go in Gaggia's front panel. One male splitter end will go into the connection that came out of the switch position the other male will be for some more wires further down.
 
 
-![image](https://user-images.githubusercontent.com/53577819/154988784-7ddbc106-4744-4d9f-8879-b9a107a9fe7c.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154988784-7ddbc106-4744-4d9f-8879-b9a107a9fe7c.jpg ':size=350')
 
 
 **Before trying to copy piggyback locations from below it’s recommended to check what the schematics say (3.0.1 Schematics & Diagrams).** 
@@ -136,17 +136,17 @@ By way of context, if looking inside the machine from the back, the left of the 
 On the power switch - wire in the middle left as LIVE and middle right as GND 
 
 
-![image](https://user-images.githubusercontent.com/53577819/154979422-f78d41c4-87f4-4474-ab68-a3466d5e9e5e.jpeg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154979422-f78d41c4-87f4-4474-ab68-a3466d5e9e5e.jpeg ':size=350')
 
 The above translates to the following (**please be aware the image below has top connectors removed for clarity)**:
 
-![image](https://user-images.githubusercontent.com/53577819/154979529-eae513b2-00e3-40c9-a581-47be4da68edc.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154979529-eae513b2-00e3-40c9-a581-47be4da68edc.jpg ':size=350')
 
 
 
 If above standard schematics do not work it can be that your wiring is different. It is recommended to use a multimeter to test. 
 
-![image](https://user-images.githubusercontent.com/53577819/154982423-82b4bdb4-ca78-4077-90c0-77b349c8c3d2.JPG ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154982423-82b4bdb4-ca78-4077-90c0-77b349c8c3d2.JPG ':size=350')
 
 
 
@@ -165,7 +165,7 @@ Please see some examples of known differences but really you should be testing w
 
 **KNOWN - ECO - EU/UK - piggyback locations non-schematic:**
 
-![image](https://user-images.githubusercontent.com/53577819/154988901-b79270da-5bb3-4507-9ef2-57bf2e791d77.JPG ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154988901-b79270da-5bb3-4507-9ef2-57bf2e791d77.JPG ':size=350')
 
 Prepare 2 more cables with the below spec:
 1. Black, 18AWG, about 15cm, female end, exposed end
@@ -181,7 +181,7 @@ Prepare more cables with the below spec:
 3. Black, 26AWG, about ~25cm, exposed ends
 4. Red, 26AWG, about ~25cm, exposed ends
 
-![image](https://user-images.githubusercontent.com/53577819/210059859-be0135a8-7041-48ab-a2a5-daa8c86d04a1.png" ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/210059859-be0135a8-7041-48ab-a2a5-daa8c86d04a1.png" ':size=350')
 
 In relation to the image above - 
 - The short red 18AWG wire goes from 12v VCC/+ -> 5V IN + 
@@ -193,7 +193,7 @@ _**Make sure this component is well insulated and enclosed. You do not want to t
 
 **_If you have the ECO version (the machine turns off automatically after 20mins) bridge your brew switch with a 18AWG cable with two male ends, as per below:_**
 
-![image](https://user-images.githubusercontent.com/53577819/154989122-6237e1af-62d1-4289-901c-47c69ea3b1b9.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989122-6237e1af-62d1-4289-901c-47c69ea3b1b9.jpg ':size=350')
 
 ### *2.0.2 Thermocouple and MAX6675 Config* 
 
@@ -208,16 +208,16 @@ You’ll obviously need to remove the two connectors from the original thermosta
 The small black cable you prepared with the male ends is used to bridge the two wires that you just disconnected from the brew thermostat. 
 
 
-![image](https://user-images.githubusercontent.com/53577819/154983715-46b1332f-f88a-4ef3-a625-b7f2788caf97.jpeg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154983715-46b1332f-f88a-4ef3-a625-b7f2788caf97.jpeg ':size=350')
 
 
 Now unscrew the original thermostat and replace with the m4 brass thermocouple. Be sure to apply some thermal paste (just a teeny tiny bit) on the _**threads only**_. It is important to barely tighten the m4 bolt at **barely** fingertip strength. 
 
-![image](https://user-images.githubusercontent.com/53577819/154989188-6bc38c2c-60df-47f6-98d9-b121f28438d6.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989188-6bc38c2c-60df-47f6-98d9-b121f28438d6.jpg ':size=350')
 
-![image](https://user-images.githubusercontent.com/53577819/154989228-2f9a3669-551b-4f45-a82a-22b4fe41fa89.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989228-2f9a3669-551b-4f45-a82a-22b4fe41fa89.jpg ':size=350')
 
-![image](https://user-images.githubusercontent.com/53577819/154984016-714b6532-e31d-42d3-b2ee-cf064487db66.jpeg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154984016-714b6532-e31d-42d3-b2ee-cf064487db66.jpeg ':size=350')
 
 
 Now re-attach the boiler.
@@ -234,17 +234,17 @@ Prepare cables with below spec:
 
 The 2 are used to connect the steam thermostat connections to port 1 and 2 of the SSR relay, so:
 
-![image](https://user-images.githubusercontent.com/53577819/154989308-14e9ea82-8a60-4f3d-bd9f-05dda6fa15c8.JPG ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989308-14e9ea82-8a60-4f3d-bd9f-05dda6fa15c8.JPG ':size=350')
 
 
 Optional: might be a good idea to either tape up the exposed steam thermostat or remove it and tape up the exposed location.
 
 
-![image](https://user-images.githubusercontent.com/53577819/154989373-57093be0-ac48-4ac6-ad0b-d88adc2415d9.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989373-57093be0-ac48-4ac6-ad0b-d88adc2415d9.jpg ':size=350')
 
-![image](https://user-images.githubusercontent.com/53577819/154989357-ec8c4853-0bb9-4eec-8629-dfc76e72e725.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989357-ec8c4853-0bb9-4eec-8629-dfc76e72e725.jpg ':size=350')
 
-![image](https://user-images.githubusercontent.com/53577819/154989336-76f91fb5-2fdd-4c53-b968-e860af3f8505.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989336-76f91fb5-2fdd-4c53-b968-e860af3f8505.jpg ':size=350')
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on 3 & 4 connections to the Arduino. 
 
@@ -256,7 +256,7 @@ _**Very important to not turn on the machine until we check the steam switch wir
 
 Image of the steam switch schematic:
 
-![image](https://user-images.githubusercontent.com/53577819/154989457-f5ac859e-5aa5-4554-be46-fba6ad4fa1f0.png ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989457-f5ac859e-5aa5-4554-be46-fba6ad4fa1f0.png ':size=350')
 
 1. Move steam switch wire 4 to steam switch pole 1.
 2. Unplug and secure steam switch wire 5.
@@ -277,7 +277,7 @@ Prepare a black splitter with below spec:
 
 Image for reference below:
 
-![image](https://user-images.githubusercontent.com/53577819/155016949-a070e451-2bd8-45e8-9acb-669b7cc28bab.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/155016949-a070e451-2bd8-45e8-9acb-669b7cc28bab.jpg ':size=350')
 
 ### *2.0.5 Continuity Brew Detection*
 
@@ -287,7 +287,7 @@ Prepare 2 cables with the below spec:
 
 As shown below plug your cables in to the circled connections on the brew switch  
 
-![image](https://user-images.githubusercontent.com/53577819/154985120-fe503708-50c1-4376-9459-d72312fbbadc.jpeg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154985120-fe503708-50c1-4376-9459-d72312fbbadc.jpeg ':size=350')
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on GND and OUT connections to the Arduino.
 
