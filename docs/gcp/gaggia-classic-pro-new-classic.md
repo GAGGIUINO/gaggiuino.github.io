@@ -303,11 +303,11 @@ Please check whether your dimmer ports placement in the case it differs from the
 
 Example of dimmer ports:
 
-![image](https://user-images.githubusercontent.com/53577819/154989499-7e95ca82-f8eb-4f63-b57b-3ca1e7e14eeb.png ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989499-7e95ca82-f8eb-4f63-b57b-3ca1e7e14eeb.png ':size=350')
 
 Remove the connections detailed in the image below from the pump (mark the connector either L or R for where it was located either left or right in relation to the pump):-
 
-![image](https://user-images.githubusercontent.com/53577819/154989519-4e5ba059-22a4-4397-8dfb-5b7dff411bbf.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989519-4e5ba059-22a4-4397-8dfb-5b7dff411bbf.jpg ':size=350')
 
 With the cables you prepared:
 * Cable 1: From the dimmer positive line Out - single red wire with the female end going into one of (choose the left connection according to the image above) the pump connections itself. 
@@ -318,10 +318,10 @@ With the cables you prepared:
 
 _**Triple check your dimmer board on what is marked as IN and OUT. 100% need to make sure they are connected properly.**_
 
-![image](https://user-images.githubusercontent.com/53577819/155005284-b22a6652-87b0-42db-9d35-5d2bc8b9247e.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/155005284-b22a6652-87b0-42db-9d35-5d2bc8b9247e.jpg ':size=350')
 
 
-![image](https://user-images.githubusercontent.com/53577819/155005572-1d7c2ef1-ed1e-4c6e-9004-2fc22c73d83b.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/155005572-1d7c2ef1-ed1e-4c6e-9004-2fc22c73d83b.jpg ':size=350')
 
 
 _**Again!!! Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**_
@@ -339,15 +339,15 @@ It's advisable after making the connections and just before connecting the trans
 
 **Try to keep the sensor itself away from HV lines and also the pump itself. This will help reduce noise.**
 
-<img width="334" alt="image" src="https://user-images.githubusercontent.com/53577819/210058187-e04d976e-cc38-43f1-90fd-3a380e603ef7.png">
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/53577819/210058187-e04d976e-cc38-43f1-90fd-3a380e603ef7.png">
 
-<img width="339" alt="image" src="https://user-images.githubusercontent.com/53577819/210058289-44393a75-a9c4-4ef7-b5c1-c558a574a1c6.png">
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/53577819/210058289-44393a75-a9c4-4ef7-b5c1-c558a574a1c6.png">
 
 Make sure to push the hose all the way up to the ends on each side, the T and the pressure sensor
 
-<img width="235" alt="image" src="https://user-images.githubusercontent.com/53577819/210059113-91543a43-2b47-4828-8e3b-59ab303a4449.png">
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/53577819/210059113-91543a43-2b47-4828-8e3b-59ab303a4449.png">
 
-![Diagram](https://user-images.githubusercontent.com/42692077/146647809-970c0ccd-47c6-430c-9c71-9b651bab4bf4.png ':size=500')
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/42692077/146647809-970c0ccd-47c6-430c-9c71-9b651bab4bf4.png">
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on RED, BLACK and YELLOW wire connections to the Arduino. 
 
@@ -374,10 +374,10 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 
 ### *3.0.1 Schematics & Diagrams*
 **Schematics:**
-* [GAGGIA Classic Pro **Nano** wiring](https://user-images.githubusercontent.com/109426580/202481338-a90ea5db-dfe9-44e8-8209-f97dd5e7960c.png ':size=500')
+* [GAGGIA Classic Pro **Nano** wiring](https://user-images.githubusercontent.com/53577819/210629004-f423f988-cf88-4fae-8f3f-103a8cfbe7e4.png ':size=350')
 
 **Diagrams:**
-* [GAGGIA Classic Pro **Nano** wiring](https://user-images.githubusercontent.com/109426580/202481332-a040752f-0d45-41fd-b6ec-3d84a332f097.png ':size=500')
+* [GAGGIA Classic Pro **Nano** wiring](https://user-images.githubusercontent.com/53577819/210629022-76457adc-3575-4a9c-8d6f-a8f7bc18fd2a.png ':size=350')
 
 ### *3.0.2 Component Wiring* 
 You can find the defined pins at the top of the .ino file.
