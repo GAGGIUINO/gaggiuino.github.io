@@ -114,3 +114,8 @@ Installing the relay is relatively simple as it is essentially a drop-in replace
 ![Figure 6 - Relay diagram for the GCP](https://user-images.githubusercontent.com/80347096/191401329-cdcc0a6a-b414-4c01-bbc8-07d16a5a4282.png)
 
 For the GCP, the LV connection side to the relay and switch are the same as the diagram above. The HV wires on the brew switch connect to the COM and NO HV connectors on the relay.
+
+* BREW MIDDLE HV - Disconnect the middle HV cable from brew switch common pole 5, connect to relay COM.
+* BREW TOP HV - Disconnect the top HV cable from brew switch pole 4, connect to relay NO.  
+
+![relay-gcp](https://user-images.githubusercontent.com/53577819/210641843-8c41ea6c-78d7-4233-b2db-fbc5449ae8d2.png)
