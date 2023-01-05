@@ -159,7 +159,7 @@ Above translates to the following **(please be aware the image below has top con
 
 ![image](https://user-images.githubusercontent.com/53577819/154979529-eae513b2-00e3-40c9-a581-47be4da68edc.jpg ':size=350')
 
-<!-- tab: ECO - EU/UK -->
+<!-- tab: ECO -->
 
 !>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins.
 
