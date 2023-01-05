@@ -66,7 +66,7 @@ This relay is what manages the temp by cutting the voltage when the thermocouple
 ![image](https://user-images.githubusercontent.com/53577819/154988554-5be0bb0a-dcf2-4bf7-a70f-4c356d00eea6.jpg ':size=500')
 
 ## 1.0.5 Software Install
-To flash the micro-controller Arduino Nano or the STM32 Blackpill, pls follow the video form the ***Prerequisites*** section of this site.
+To flash the micro-controller Arduino Nano or the STM32 Blackpill, pls follow the video from the ***Prerequisites*** section of this site.
 
 !>Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.
 
