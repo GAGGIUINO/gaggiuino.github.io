@@ -96,10 +96,6 @@ If everything looks good, move on to Installing into the Gaggia Classic Pro
 
 _**If all the above works as expected you're ready to install it inside the machine.**_
 
-> 
-> 
-<!-- panels:start -->
-<!-- div:title-panel -->
 # 2.0.0 INSTALL
 ***
 !>**Do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or goldfish and it will be entirely your fault!**
@@ -354,11 +350,6 @@ Make sure to push the hose all the way up to the ends on each side, the T and th
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/53577819/210632536-762bff36-2776-4a6c-8c40-ea43f9e2f1d3.png">
 
 Please use the tables in **3.0.2 Component Wiring** for details on RED, BLACK and YELLOW wire connections to the Arduino. 
-<!-- div:panel-end -->
-> 
-> 
-> 
->
 
 ### 2.2.3 Finish
 ***
