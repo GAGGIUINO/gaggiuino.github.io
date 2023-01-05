@@ -104,6 +104,7 @@ _**If all the above works as expected you're ready to install it inside the mach
 Undo everything as we will now install into the machine. 
 
 All components except the Arduino and LCD will be internal to the machine. Remember this when wiring the LCD. 
+
 For each of the components we want to start guesstimating on cable length. You can do this by placing components where you want to place them. Close together components can share similar wiring i.e. 5v and GND.
 
 Please use the tables in **3.0.2 Component Wiring** for details on pin connections to the Arduino. 
@@ -160,6 +161,8 @@ Above translates to the following **(please be aware the image below has top con
 
 <!-- tab: ECO - EU/UK -->
 
+!>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins.
+
 The LIVE is the top right of the **brew** switch and the GND is top right of the **power** switch.
 
 ![eco-power](https://user-images.githubusercontent.com/53577819/210780103-6d9e9c78-6349-4a30-be2e-2298040e17a3.png ':size=350')
@@ -193,7 +196,7 @@ In relation to the image above -
 ### 2.1.2 Disable ECO timer
 !>**SKIP TO 2.1.3 IF YOU DO NOT HAVE AN ECO MACHINE** 
 
-If you have the ECO version (the machine turns off automatically after 20mins) please read below. 
+!>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins.
 
 This requires you to look at the schematics. Remove the connections from the coffee/brew switch pole 2 and 1. With your 18AWG cable with two male ends bridge them together as per below:
 
