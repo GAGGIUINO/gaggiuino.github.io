@@ -377,7 +377,7 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 
 # 3.0.0 Appendix
 
-## 3.0.1 Schematics & Diagrams
+## 3.1.0 Schematics & Diagrams
 
 !>**PLEASE NOTE THE SCHEMATIC DRAWINGS HAVE BEEN DRAWN FLIPPED AND UPSIDE DOWN. BLAME GAGGIA.**
 
@@ -387,76 +387,60 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 **Diagrams:**
 * [GAGGIA Classic Pro **Nano** wiring](https://user-images.githubusercontent.com/53577819/210629022-76457adc-3575-4a9c-8d6f-a8f7bc18fd2a.png ':size=350')
 
-## 3.0.2 Component Wiring
+## 3.2.0 Component Wiring
 You can find the defined pins at the top of the .ino file.
 
 A suggestion on wiring; components that are inside same enclosure, the same connection can be linked i.e. solder a cable to the 5v pin then take the other end and solder to the 5V of the other component, from there take one cable to the Arduino. An alternative way is to  solder similar connections and apply heat-shrink before the exit to the machine then take one wire through the machine to the Arduino.
-
-1. POWER DELIVERY RECOMMENDATION
-
-| 12v | 5v IN | 5v OUT | NANO | 
+### 3.2.1 POWER DELIVERY
+| 12v | 5V IN | 5V OUT | NANO | 
 | ---- | ---- | ---- | ---- |
 | VCC   | IN +  | OUT +  | 5v      | 
 | GND   | IN -  | OUT -  | GND     |
 
-All the other boards should be connected to the same GND / 5v plane as NANO.
-
-2. MAX6675 WIRING
-
+All the other boards should be connected to the same GND / 5V plane as NANO.
+### 3.2.2 MAX6675
 | MAX6675 | NANO |
 | ------- | ------- |
-| VCC | 5v |
+| VCC | 5V |
 | GND | GND |
 | SCK | D6 |
 | SO  | D4 |
 | CS  | D5 | 
-
-3. RELAY WIRING 
-
+### 3.2.3 SSR RELAY 
 | RELAY | NANO |
 | --- | --- |
 | 4 | GND |
 | 3 | D8 |
-
-4. NEXTION WIRING
-
+### 3.2.4 LCD NEXTION
 | NEXTION | NANO |
 | --- | --- |
 |TX | RX |
 |RX | TX |
-|VCC/5v | 5v |
+|VCC/5V | 5V |
 |GND | GND |
-
-5. STEAM HANDLING WIRING
-
-4 & 5 are the switch points from 2.0.4 Steam Config
+### 3.2.5 STEAM HANDLING
+4 & 5 are the steam switch points from 2.0.4 Steam Config
 
 | GCP SWITCH | NANO |
 | --- | --- |
 | 4 | D7 | 
 | 5 | GND |
-
-6. CONTINUITY WIRING
-
+### 3.2.6 BREW CONTINUITY
 | BREW SWITCH | NANO |
 | --- | --- |
 |TOP  | A0 |
 |BOTTOM | GND |
-
-7. ROBOTDYN DIMMER WIRING
-
+### 3.2.7 ROBOTDYN DIMMER 
 | DIMMER | NANO |
 | --- | --- |
-| VCC | 5v |
+| VCC | 5V |
 | GND | GND |
 | Z-C | D2 |
 | PSM/DIM | D9 |
-
-8. TRANSDUCER WIRING
-
+### 3.2.8 PRESSURE TRANSDUCER 
 | TRANSDUCER | NANO |
 | --- | --- |
-| RED | 5v |
+| RED | 5V |
 | BLACK | GND |
 | YELLOW | A1 |
 
