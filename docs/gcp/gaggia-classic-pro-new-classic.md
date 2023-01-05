@@ -163,7 +163,7 @@ Please see some examples of known differences but really you should be testing w
 
 **KNOWN - ECO - EU/UK - piggyback locations non-schematic:**
 
-![image](https://user-images.githubusercontent.com/53577819/154988901-b79270da-5bb3-4507-9ef2-57bf2e791d77.JPG ':size=350')
+![eco-power](https://user-images.githubusercontent.com/53577819/210780103-6d9e9c78-6349-4a30-be2e-2298040e17a3.png ':size=350')
 
 Prepare 2 more cables with the below spec:
 1. Black, 18AWG, about 15cm, female end, exposed end
