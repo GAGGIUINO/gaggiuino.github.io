@@ -121,34 +121,34 @@ Prepare splitter cables with the below specs:
 
 Example of a red and black splitter:
 
-![image](https://user-images.githubusercontent.com/53577819/154988645-5f1da175-7d09-437a-ac2c-f64e16f3a564.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154988645-5f1da175-7d09-437a-ac2c-f64e16f3a564.jpg ':size=350')
 
 The female end will go in Gaggia's front panel. One male splitter end will go into the connection that came out of the switch position the other male will be for some more wires further down.
 
 
-![image](https://user-images.githubusercontent.com/53577819/154988784-7ddbc106-4744-4d9f-8879-b9a107a9fe7c.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154988784-7ddbc106-4744-4d9f-8879-b9a107a9fe7c.jpg ':size=350')
 
 
 **Before trying to copy piggyback locations from below it’s recommended to check what the schematics say (3.0.1 Schematics & Diagrams).** 
 
+**PLEASE NOTE THE OFFICIAL SCHEMATIC DRAWINGS HAVE BEEN DRAWN FLIPPED AND UPSIDE DOWN**
+
 
 By way of context, if looking inside the machine from the back, the left of the power switch is the brew switch. 
+
+**Below is a snippit of the power switch which is in the schematics**
+
 On the power switch - wire in the middle left as LIVE and middle right as GND 
 
+![image](https://user-images.githubusercontent.com/53577819/154979422-f78d41c4-87f4-4474-ab68-a3466d5e9e5e.jpeg ':size=350')
 
-![image](https://user-images.githubusercontent.com/53577819/154979422-f78d41c4-87f4-4474-ab68-a3466d5e9e5e.jpeg ':size=500')
+The above translates to the following **(please be aware the image below has top connectors removed for clarity)**:
 
-The above translates to the following (**please be aware the image below has top connectors removed for clarity)**:
-
-![image](https://user-images.githubusercontent.com/53577819/154979529-eae513b2-00e3-40c9-a581-47be4da68edc.jpg ':size=500')
-
-
+![image](https://user-images.githubusercontent.com/53577819/154979529-eae513b2-00e3-40c9-a581-47be4da68edc.jpg ':size=350')
 
 If above standard schematics do not work it can be that your wiring is different. It is recommended to use a multimeter to test. 
 
-![image](https://user-images.githubusercontent.com/53577819/154982423-82b4bdb4-ca78-4077-90c0-77b349c8c3d2.JPG ':size=500')
-
-
+![image](https://user-images.githubusercontent.com/53577819/154982423-82b4bdb4-ca78-4077-90c0-77b349c8c3d2.JPG ':size=350')
 
 * Set it to 600V~ (AC) as shown above and test the connectors on the switches
 * Just wiggle the connector on the switch out a touch to expose a tiny bit of metal where you put your lead on
@@ -159,13 +159,11 @@ As stated you want to find the connector that only shows voltage after flipping 
 
 If your LCD is on even though you've not flipped the machine switch on, this means you've piggybacked into the mains live which is constantly got voltage - this is not correct!
 
-
-
 Please see some examples of known differences but really you should be testing with a multimeter.
 
 **KNOWN - ECO - EU/UK - piggyback locations non-schematic:**
 
-![image](https://user-images.githubusercontent.com/53577819/154988901-b79270da-5bb3-4507-9ef2-57bf2e791d77.JPG ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154988901-b79270da-5bb3-4507-9ef2-57bf2e791d77.JPG ':size=350')
 
 Prepare 2 more cables with the below spec:
 1. Black, 18AWG, about 15cm, female end, exposed end
@@ -193,7 +191,7 @@ _**Make sure this component is well insulated and enclosed. You do not want to t
 
 **_If you have the ECO version (the machine turns off automatically after 20mins) bridge your brew switch with a 18AWG cable with two male ends, as per below:_**
 
-![image](https://user-images.githubusercontent.com/53577819/154989122-6237e1af-62d1-4289-901c-47c69ea3b1b9.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989122-6237e1af-62d1-4289-901c-47c69ea3b1b9.jpg ':size=350')
 
 ### *2.0.2 Thermocouple and MAX6675 Config* 
 
@@ -208,16 +206,16 @@ You’ll obviously need to remove the two connectors from the original thermosta
 The small black cable you prepared with the male ends is used to bridge the two wires that you just disconnected from the brew thermostat. 
 
 
-![image](https://user-images.githubusercontent.com/53577819/154983715-46b1332f-f88a-4ef3-a625-b7f2788caf97.jpeg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154983715-46b1332f-f88a-4ef3-a625-b7f2788caf97.jpeg ':size=350')
 
 
 Now unscrew the original thermostat and replace with the m4 brass thermocouple. Be sure to apply some thermal paste (just a teeny tiny bit) on the _**threads only**_. It is important to barely tighten the m4 bolt at **barely** fingertip strength. 
 
-![image](https://user-images.githubusercontent.com/53577819/154989188-6bc38c2c-60df-47f6-98d9-b121f28438d6.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989188-6bc38c2c-60df-47f6-98d9-b121f28438d6.jpg ':size=350')
 
-![image](https://user-images.githubusercontent.com/53577819/154989228-2f9a3669-551b-4f45-a82a-22b4fe41fa89.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989228-2f9a3669-551b-4f45-a82a-22b4fe41fa89.jpg ':size=350')
 
-![image](https://user-images.githubusercontent.com/53577819/154984016-714b6532-e31d-42d3-b2ee-cf064487db66.jpeg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154984016-714b6532-e31d-42d3-b2ee-cf064487db66.jpeg ':size=350')
 
 
 Now re-attach the boiler.
@@ -234,17 +232,17 @@ Prepare cables with below spec:
 
 The 2 are used to connect the steam thermostat connections to port 1 and 2 of the SSR relay, so:
 
-![image](https://user-images.githubusercontent.com/53577819/154989308-14e9ea82-8a60-4f3d-bd9f-05dda6fa15c8.JPG ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989308-14e9ea82-8a60-4f3d-bd9f-05dda6fa15c8.JPG ':size=350')
 
 
 Optional: might be a good idea to either tape up the exposed steam thermostat or remove it and tape up the exposed location.
 
 
-![image](https://user-images.githubusercontent.com/53577819/154989373-57093be0-ac48-4ac6-ad0b-d88adc2415d9.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989373-57093be0-ac48-4ac6-ad0b-d88adc2415d9.jpg ':size=350')
 
-![image](https://user-images.githubusercontent.com/53577819/154989357-ec8c4853-0bb9-4eec-8629-dfc76e72e725.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989357-ec8c4853-0bb9-4eec-8629-dfc76e72e725.jpg ':size=350')
 
-![image](https://user-images.githubusercontent.com/53577819/154989336-76f91fb5-2fdd-4c53-b968-e860af3f8505.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989336-76f91fb5-2fdd-4c53-b968-e860af3f8505.jpg ':size=350')
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on 3 & 4 connections to the Arduino. 
 
@@ -256,7 +254,7 @@ _**Very important to not turn on the machine until we check the steam switch wir
 
 Image of the steam switch schematic:
 
-![image](https://user-images.githubusercontent.com/53577819/154989457-f5ac859e-5aa5-4554-be46-fba6ad4fa1f0.png ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989457-f5ac859e-5aa5-4554-be46-fba6ad4fa1f0.png ':size=350')
 
 1. Move steam switch wire 4 to steam switch pole 1.
 2. Unplug and secure steam switch wire 5.
@@ -277,7 +275,7 @@ Prepare a black splitter with below spec:
 
 Image for reference below:
 
-![image](https://user-images.githubusercontent.com/53577819/155016949-a070e451-2bd8-45e8-9acb-669b7cc28bab.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/155016949-a070e451-2bd8-45e8-9acb-669b7cc28bab.jpg ':size=350')
 
 ### *2.0.5 Continuity Brew Detection*
 
@@ -287,7 +285,7 @@ Prepare 2 cables with the below spec:
 
 As shown below plug your cables in to the circled connections on the brew switch  
 
-![image](https://user-images.githubusercontent.com/53577819/154985120-fe503708-50c1-4376-9459-d72312fbbadc.jpeg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154985120-fe503708-50c1-4376-9459-d72312fbbadc.jpeg ':size=350')
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on GND and OUT connections to the Arduino.
 
@@ -303,11 +301,11 @@ Please check whether your dimmer ports placement in the case it differs from the
 
 Example of dimmer ports:
 
-![image](https://user-images.githubusercontent.com/53577819/154989499-7e95ca82-f8eb-4f63-b57b-3ca1e7e14eeb.png ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989499-7e95ca82-f8eb-4f63-b57b-3ca1e7e14eeb.png ':size=350')
 
 Remove the connections detailed in the image below from the pump (mark the connector either L or R for where it was located either left or right in relation to the pump):-
 
-![image](https://user-images.githubusercontent.com/53577819/154989519-4e5ba059-22a4-4397-8dfb-5b7dff411bbf.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/154989519-4e5ba059-22a4-4397-8dfb-5b7dff411bbf.jpg ':size=350')
 
 With the cables you prepared:
 * Cable 1: From the dimmer positive line Out - single red wire with the female end going into one of (choose the left connection according to the image above) the pump connections itself. 
@@ -318,10 +316,10 @@ With the cables you prepared:
 
 _**Triple check your dimmer board on what is marked as IN and OUT. 100% need to make sure they are connected properly.**_
 
-![image](https://user-images.githubusercontent.com/53577819/155005284-b22a6652-87b0-42db-9d35-5d2bc8b9247e.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/155005284-b22a6652-87b0-42db-9d35-5d2bc8b9247e.jpg ':size=350')
 
 
-![image](https://user-images.githubusercontent.com/53577819/155005572-1d7c2ef1-ed1e-4c6e-9004-2fc22c73d83b.jpg ':size=500')
+![image](https://user-images.githubusercontent.com/53577819/155005572-1d7c2ef1-ed1e-4c6e-9004-2fc22c73d83b.jpg ':size=350')
 
 
 _**Again!!! Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**_
@@ -339,15 +337,15 @@ It's advisable after making the connections and just before connecting the trans
 
 **Try to keep the sensor itself away from HV lines and also the pump itself. This will help reduce noise.**
 
-<img width="334" alt="image" src="https://user-images.githubusercontent.com/53577819/210058187-e04d976e-cc38-43f1-90fd-3a380e603ef7.png">
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/53577819/210058187-e04d976e-cc38-43f1-90fd-3a380e603ef7.png">
 
-<img width="339" alt="image" src="https://user-images.githubusercontent.com/53577819/210058289-44393a75-a9c4-4ef7-b5c1-c558a574a1c6.png">
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/53577819/210058289-44393a75-a9c4-4ef7-b5c1-c558a574a1c6.png">
 
 Make sure to push the hose all the way up to the ends on each side, the T and the pressure sensor
 
-<img width="235" alt="image" src="https://user-images.githubusercontent.com/53577819/210059113-91543a43-2b47-4828-8e3b-59ab303a4449.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/53577819/210059113-91543a43-2b47-4828-8e3b-59ab303a4449.png">
 
-![Diagram](https://user-images.githubusercontent.com/42692077/146647809-970c0ccd-47c6-430c-9c71-9b651bab4bf4.png ':size=500')
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/53577819/210632536-762bff36-2776-4a6c-8c40-ea43f9e2f1d3.png">
 
 Please use the tables in **3.0.2 Appendix - Component Wiring** for details on RED, BLACK and YELLOW wire connections to the Arduino. 
 
@@ -374,10 +372,10 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 
 ### *3.0.1 Schematics & Diagrams*
 **Schematics:**
-* [GAGGIA Classic Pro **Nano** wiring](https://user-images.githubusercontent.com/109426580/202481338-a90ea5db-dfe9-44e8-8209-f97dd5e7960c.png ':size=500')
+* [GAGGIA Classic Pro **Nano** wiring](https://user-images.githubusercontent.com/53577819/210629004-f423f988-cf88-4fae-8f3f-103a8cfbe7e4.png ':size=350')
 
 **Diagrams:**
-* [GAGGIA Classic Pro **Nano** wiring](https://user-images.githubusercontent.com/109426580/202481332-a040752f-0d45-41fd-b6ec-3d84a332f097.png ':size=500')
+* [GAGGIA Classic Pro **Nano** wiring](https://user-images.githubusercontent.com/53577819/210629022-76457adc-3575-4a9c-8d6f-a8f7bc18fd2a.png ':size=350')
 
 ### *3.0.2 Component Wiring* 
 You can find the defined pins at the top of the .ino file.
