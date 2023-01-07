@@ -50,7 +50,7 @@ _*3_ __Predictive scales__ - software driven predicted weight output, doesn't ne
 
 > 1. Failing to run the right code branch on the chosen set of hardware will yield unexpected results.
 >
-> 2. Make sure you **ALWAYS** flash both the micro-controller as well as the LCD unit.
+> 2. Make sure you **ALWAYS** flash both the microcontroller as well as the LCD unit.
 
 !> Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.
 

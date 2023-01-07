@@ -2,7 +2,7 @@
 !> **Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project.**
 ***
 # 1.0.0 TEST INSTALL
-We are not installing inside the machine yet. We need to ensure our nano/stm and expansion board are soldered to a good standard. We just want to test as much as we can to make sure we've not got any duds from a base functionality point of view.
+We are not installing inside the machine yet. We need to ensure our nano and expansion board are soldered to a good standard. We just want to test as much as we can to make sure we've not got any duds from a base functionality point of view.
 
 We need to understand what goes where. The schematics in **3.0.1 Schematics & Diagrams** aren't really rocket science but for someone who's never disassembled or has no experience working with electrical circuits it might get confusing really fast. 
 
@@ -66,7 +66,7 @@ This SSR is what manages the temp by cutting the voltage when the thermocouple i
 ![image](https://user-images.githubusercontent.com/53577819/154988554-5be0bb0a-dcf2-4bf7-a70f-4c356d00eea6.jpg ':size=500')
 
 ## 1.0.5 Software Install
-To flash the micro-controller Arduino Nano or the STM32 Blackpill, pls follow the video from the ***Prerequisites*** section of this site.
+To flash the Arduino Nano microcontroller, pls follow the video from the ***Prerequisites*** section of this site.
 
 !>Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.
 
