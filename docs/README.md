@@ -121,7 +121,7 @@ _*3_ __Predictive scales__ - software driven predicted weight output, doesn't ne
 _Will enable only brew and steam temperature control_
 >
 * [Arduino Nano AT328](https://bit.ly/3eXSfXZ) 
-* [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
+* [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html) **GET GREEN - BLUE IS NOT COMPATIBLE FOR STM32 - SEE STM GUIDE FOR MORE INFO**
 * [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
 * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
 * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
@@ -161,7 +161,7 @@ _Will enable only brew and steam temperature control_
 >
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
-* [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html)
+* [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html) **GET THE GREEN ONE**
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
 * [5V RELAY](https://a.aliexpress.com/_vpUdrT) 
 * [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
@@ -175,7 +175,7 @@ _Will enable only brew and steam temperature control_
 * [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
 
 ### EXTENDED FUNCTIONALITY
-_Will enable pump control based on active pressure feedback, thies enables pressure and flow profiling as well as other functionality._
+_Will enable pump control based on active pressure feedback, this enables pressure and flow profiling as well as other functionality._
 
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
@@ -204,9 +204,9 @@ _Will enable pump control based on active pressure feedback, thies enables press
 
 * **Scales:**
 
-?> _Will enable for realtime shot weight tracking without external scales, be aware this is a highly advanced installation step and requires in depth understanding to achieve optimal results, it can't be simplified due to the higly sensitive nature scales require in terms of both installation as well as various tolerances._
+?> _Will enable for realtime shot weight tracking without external scales, be aware this is a highly advanced installation step and requires in depth understanding to achieve optimal results, it can't be simplified due to the highly sensitive nature scales require in terms of both installation as well as various tolerances._
 
-?> _By default a STM32 based build has **predictive scales**(software emulated scales) enabled hence one might be content enough with the results seen by using these after the calibration has been performed using the discord **#predictive-scales-config-bot**_
+?> _By default a STM32 based build has **predictive scales** (software emulated scales) enabled hence one might be content enough with the results seen by using these after the calibration has been performed using the discord **#predictive-scales-config-bot**_
 >
 * [750g LOADCELLS x 2](https://www.aliexpress.com/item/1644918827.html)
 * [HX711 amplifier x 2](https://www.aliexpress.com/item/33041823995.html)
