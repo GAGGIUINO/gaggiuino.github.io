@@ -114,7 +114,7 @@ _*3_ __Predictive scales__ - software driven predicted weight output, doesn't ne
 <!-- panels:start -->
 <!-- div:title-panel -->
 # Bill of Materials
-?> The current recommendation is to perform the Nano build first, after which one can easily upgrade to STM32 if further functionality is desired, jumping straight into STM32 is not encouraged for the inexperienced due to the documentation targetting a direct Nano install at this point in time.
+?> The current recommendation is to perform the Nano build first, after which one can easily upgrade to STM32 if further functionality is desired, jumping straight into STM32 is not encouraged for the inexperienced due to the documentation targeting a direct Nano install at this point in time.
 <!-- tabs:start -->
 <!-- tab:Arduino Nano -->
 ### BASE FUNCTIONALITY
@@ -136,7 +136,7 @@ _Will enable only brew and steam temperature control_
 * [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html)  
 
 ### EXTENDED FUNCTIONALITY
-_Will enable pump control based on active pressure feedback, thies enables pressure and flow profiling as well as other functionality._
+_Will enable pump control based on active pressure feedback, this enables pressure and flow profiling as well as other functionality._
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
   <!-- tabs:start -->
