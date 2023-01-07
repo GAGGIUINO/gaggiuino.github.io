@@ -54,14 +54,14 @@ The correct screen size is **2.4"**. If yours does not have markings for wiring 
 
 ![image](https://user-images.githubusercontent.com/53577819/154988514-13a1d7af-f704-49b6-975b-aeee1318cf36.jpg ':size=500')
 
-## 1.0.4 Relay Config
+## 1.0.4 SSR Config
 ***
 For the below section you are using **26AWG** cable to connect to the Arduino board. 
  
 **Refer to 3.0.2 Component Wiring.**
 ***
 
-This relay is what manages the temp by cutting the voltage when the thermocouple is at a set temp. 
+This SSR is what manages the temp by cutting the voltage when the thermocouple is at a set temp. 
 
 ![image](https://user-images.githubusercontent.com/53577819/154988554-5be0bb0a-dcf2-4bf7-a70f-4c356d00eea6.jpg ':size=500')
 
@@ -72,11 +72,9 @@ To flash the micro-controller Arduino Nano or the STM32 Blackpill, pls follow th
 
 **Flashing the Nextion LCD Software Upload**
 
-_Uploading the LCD ROM code_
+_Uploading the LCD Firmware_
 
-**Method** 1 - Download and unzip the *.tft file on a FAT32(MS-DOS (FAT32)) formatted microSD card and upload on the LCD panel using the onboard card reader.
-
-**Method 2** - Open the .HMI file using Nextion Editor and using the File menu upload it on a microSD card
+Download and unzip the *.tft file on a FAT32(MS-DOS (FAT32)) formatted microSD card and upload on the LCD panel using the onboard card reader.
 
 1. Plug LCD back into Arduino Board Setup
 2. Locate “nextion-discovery-lcd.tft” or “nextion-basic-lcd.tft” (depends on what you purchased)
@@ -84,7 +82,7 @@ _Uploading the LCD ROM code_
 * If on Mac for some reason it adds a second file beginning with a "." use terminal to change directory to the microSD and use "rm ._nextion-*YOUR-VERSION*-lcd.tft" to remove that file.
 4. Place MicroSD card inside the Nextion display
 5. Power on the Arduino Board Setup and installation should occur automatically
-6. Once “successed” reboot the Arduino
+6. Once “successed” turn power off and remove the MicroSD card, only now setup can be powered.
 
 ## 1.0.6 Test
 
@@ -145,7 +143,7 @@ If your LCD is on even though you've not flipped the machine switch on, this mea
 Please see some examples of known differences between piggyback location but really you should be testing with a multimeter.
 
 <!-- tabs:start -->
-<!-- tab:Standard Non-ECO -->
+<!-- tab:Gaggia Classic Pro -->
 
 By way of context, if looking inside the machine from the back, the left of the power switch is the brew switch. 
 
@@ -159,7 +157,7 @@ Above translates to the following **(please be aware the image below has top con
 
 ![image](https://user-images.githubusercontent.com/53577819/154979529-eae513b2-00e3-40c9-a581-47be4da68edc.jpg ':size=350')
 
-<!-- tab: ECO -->
+<!-- tab: Gaggia New Classic (auto shut-off) -->
 
 !>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins.
 
@@ -233,14 +231,14 @@ Check **3.0.2 Component Wiring**
 
 !>**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**
 
-### 2.1.4 SSR Relay Config
+### 2.1.4 Solid State Relay Config
 
 Prepare cables with below spec:
 
 1. Red, 18AWG, 10cm, one male end, one exposed end
 2. Red, 18AWG, 10cm, one male end, one exposed end
 
-The 2 are used to connect the steam thermostat connections to port 1 and 2 of the SSR relay, so:
+The 2 are used to connect the steam thermostat connections to port 1 and 2 of the Solid State Relay, so:
 
 ![image](https://user-images.githubusercontent.com/53577819/154989308-14e9ea82-8a60-4f3d-bd9f-05dda6fa15c8.JPG ':size=350')
 
@@ -259,7 +257,7 @@ Please use the tables in **3.0.2 Component Wiring** for details on 3 & 4 connect
 !>**Very important to not turn on the machine until we check the steam switch wire positions**
 
 <!-- tabs:start -->
-<!-- tab:Standard Non-ECO -->
+<!-- tab:Gaggia Classic Pro -->
 Image of the steam switch schematic:
 
 ![image](https://user-images.githubusercontent.com/53577819/154989457-f5ac859e-5aa5-4554-be46-fba6ad4fa1f0.png ':size=350')
@@ -268,7 +266,7 @@ Image of the steam switch schematic:
 2. Unplug and secure steam switch wire 5.
 3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in **3.0.2 Component Wiring - 5. STEAM HANDLING WIRING**, using 26AWG wires.
 
-<!-- tab:ECO -->
+<!-- tab:Gaggia New Classic (auto shut-off) -->
 Prepare a black splitter with below spec:
 1. Black splitter, 18AWG, 5cm, two male ends and one female end
 
@@ -342,15 +340,15 @@ It's advisable after making the connections and just before connecting the trans
 
 **Try to keep the sensor itself away from HV lines and also the pump itself. This will help reduce noise.**
 
-<img width="350" alt="image" src="https://user-images.githubusercontent.com/53577819/210058187-e04d976e-cc38-43f1-90fd-3a380e603ef7.png">
+![image](https://user-images.githubusercontent.com/53577819/210058187-e04d976e-cc38-43f1-90fd-3a380e603ef7.png ':size=500')
 
-<img width="350" alt="image" src="https://user-images.githubusercontent.com/53577819/210058289-44393a75-a9c4-4ef7-b5c1-c558a574a1c6.png">
+![image](https://user-images.githubusercontent.com/53577819/210058289-44393a75-a9c4-4ef7-b5c1-c558a574a1c6.png ':size=500')
 
 Make sure to push the hose all the way up to the ends on each side, the T and the pressure sensor
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/53577819/210059113-91543a43-2b47-4828-8e3b-59ab303a4449.png">
+![image](https://user-images.githubusercontent.com/53577819/210059113-91543a43-2b47-4828-8e3b-59ab303a4449.png ':size=500')
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/53577819/210632536-762bff36-2776-4a6c-8c40-ea43f9e2f1d3.png">
+![image](https://user-images.githubusercontent.com/53577819/210632536-762bff36-2776-4a6c-8c40-ea43f9e2f1d3.png ':size=500')
 
 Please use the tables in **3.0.2 Component Wiring** for details on RED, BLACK and YELLOW wire connections to the Arduino. 
 
@@ -406,8 +404,8 @@ All the other boards should be connected to the same GND / 5V plane as NANO.
 | SCK | D6 |
 | SO  | D4 |
 | CS  | D5 | 
-### 3.2.3 SSR RELAY 
-| RELAY | NANO |
+### 3.2.3 Solid State Relay 
+| SSR | NANO |
 | --- | --- |
 | 4 | GND |
 | 3 | D8 |
