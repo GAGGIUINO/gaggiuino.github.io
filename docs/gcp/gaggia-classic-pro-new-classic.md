@@ -4,12 +4,12 @@
 # 1.0.0 TEST INSTALL
 We are not installing inside the machine yet. We need to ensure our nano and expansion board are soldered to a good standard. We just want to test as much as we can to make sure we've not got any duds from a base functionality point of view.
 
-We need to understand what goes where. The schematics in [**3.1.0 Schematics and Diagrams**](#_310-schematics-and-diagrams) aren't really rocket science but for someone who's never disassembled or has no experience working with electrical circuits it might get confusing really fast. 
+We need to understand what goes where. The schematics in [3.1.0 Schematics and Diagrams](#_310-schematics-and-diagrams) aren't really rocket science but for someone who's never disassembled or has no experience working with electrical circuits it might get confusing really fast. 
 
 Note 1 - No permanent connections are needed during testing so no soldering needed for now.
 Note 2 - The 5v/GND Arduino board pins will be shared between all the connected devices.
 
-?>All component wiring tables are in the appendix at the end [**3.2.0 Component Wiring**](#_320-component-wiring).
+?>All component wiring tables are in the appendix at the end [3.2.0 Component Wiring](#_320-component-wiring).
 
 ## 1.0.1 Arduino Config 
 Place Arduino into the expansion board the correct way round. Power it through USB adapter for now during the testing phase.
@@ -37,13 +37,13 @@ You should have bought and received a MAX6675 board which comes with a test ther
 
 ![image](https://user-images.githubusercontent.com/53577819/154988423-f741a369-ec60-4266-9544-0effedb57292.jpg ':size=500')
 
-?>Refer to the [**3.2.2 Component Wiring**](#_322-thermocouple-max6675) section on wiring to the arduino.
+?>Refer to the [3.2.2 Component Wiring](#_322-thermocouple-max6675) section on wiring to the arduino.
 ## 1.0.3 Solid State Relay Config
 This relay is what manages the temp by cutting the voltage when the thermocouple is at a set temp. 
 
 ![image](https://user-images.githubusercontent.com/53577819/154988554-5be0bb0a-dcf2-4bf7-a70f-4c356d00eea6.jpg ':size=500')
 
-?>Refer to the [**3.2.3 Component Wiring**](#_323-solid-state-relay) section on wiring to the arduino.
+?>Refer to the [3.2.3 Component Wiring](#_323-solid-state-relay) section on wiring to the arduino.
 ## 1.0.4 Nextion LCD Config
 The correct screen size is **2.4"**. If yours does not have markings for wiring then please see below image
 
@@ -51,7 +51,7 @@ The correct screen size is **2.4"**. If yours does not have markings for wiring 
 
 ![image](https://user-images.githubusercontent.com/53577819/154988514-13a1d7af-f704-49b6-975b-aeee1318cf36.jpg ':size=500')
 
-?>Refer to the [**3.2.4 Component Wiring**](#_324-nextion-lcd-display) section on wiring to the arduino.
+?>Refer to the [3.2.4 Component Wiring](#_324-nextion-lcd-display) section on wiring to the arduino.
 ## 1.0.5 Software Install
 To flash the Arduino Nano microcontroller, pls follow the video from the [Prerequisites](prereq/prerequisites.md) section of this site.
 
@@ -91,7 +91,7 @@ All components except the Arduino and LCD will be internal to the machine. Remem
 
 For each of the components we want to start guesstimating on cable length. You can do this by placing components where you want to place them. Close together components can share similar wiring i.e. 5v and GND.
 
-?>Please use the tables in [**3.2.0 Component Wiring**](#_320-component-wiring) for details on pin connections to the Arduino. 
+?>Please use the tables in [3.2.0 Component Wiring](#_320-component-wiring) for details on pin connections to the Arduino. 
 
 ## 2.1.0 Base Functionality
 ### 2.1.1 Power Delivery
@@ -176,7 +176,7 @@ In relation to the image above -
 
 !>**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**
 
-?>Refer to the [**3.2.1 Component Wiring**](#_321-power-delivery) section on wiring to the arduino.
+?>Refer to the [3.2.1 Component Wiring](#_321-power-delivery) section on wiring to the arduino.
 ### 2.1.2 Disable ECO timer
 !>**SKIP TO 2.1.3 IF YOU DO NOT HAVE AN ECO MACHINE** 
 
@@ -197,7 +197,7 @@ Prepare the following cable to the below spec:
 
 1. Black, 18AWG, 5cm, two male ends.
 
-[Detach the boiler](https://www.youtube.com/watch?v=0ipvBdWaVzQ) (only watch as far as the 5min mark) to gain enough access to remove the thermocouple and replace it with the m4 bolted thermocouple sensor. 
+ [Detach the boiler](https://www.youtube.com/watch?v=0ipvBdWaVzQ) (only watch as far as the 5min mark) to gain enough access to remove the thermocouple and replace it with the m4 bolted thermocouple sensor. 
 
 You’ll obviously need to remove the two connectors from the original thermostat first - which is located at the bottom of the boiler on the side closest to the power on switch.  
 
@@ -219,7 +219,7 @@ Now re-attach the boiler.
 
 !>**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**
 
-?>Refer to the [**3.2.2 Component Wiring**](#_322-thermocouple-max6675) section on wiring to the arduino.
+?>Refer to the [3.2.2 Component Wiring](#_322-thermocouple-max6675) section on wiring to the arduino.
 ### 2.1.4 Solid State Relay
 Prepare cables with below spec:
 
@@ -238,7 +238,7 @@ Optional: might be a good idea to either tape up the exposed steam thermostat or
 
 ![image](https://user-images.githubusercontent.com/53577819/154989336-76f91fb5-2fdd-4c53-b968-e860af3f8505.jpg ':size=350')
 
-?>Refer to the [**3.2.3 Component Wiring**](#_323-solid-state-relay) section on wiring to the arduino.
+?>Refer to the [3.2.3 Component Wiring](#_323-solid-state-relay) section on wiring to the arduino.
 ### 2.1.5 Steam Handling
 !>**Very important to NOT turn on the machine until we check the steam switch wire positions**
 
@@ -250,7 +250,7 @@ Image of the steam switch schematic:
 
 1. Move steam switch wire 4 to steam switch pole 1.
 2. Unplug and secure steam switch wire 5.
-3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [**3.2.5 Component Wiring**](#_325-steam-handling), using 26AWG wires.
+3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 26AWG wires.
 
 <!-- tab:Gaggia New Classic (auto shut-off) -->
 Prepare a black splitter with below spec:
@@ -260,7 +260,7 @@ Prepare a black splitter with below spec:
 2. Use the splitter to bridge the connections you just removed and plug the female into pole 1.
 3. The connector with two white wires is not on the side of the orange wire (which is at the bottom) then make it so (to match schematics) - i.e move pole 5 connector into pole 2's location (should be two white wires going into the connector).
 4. Leave the single white wire disconnected which was in pole 2's location.
-3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [**3.2.5 Component Wiring](#_325-steam-handling), using 26AWG wires.
+3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 26AWG wires.
 
 Image for reference below:
 
@@ -276,7 +276,7 @@ As shown below plug your cables in to the circled connections on the brew switch
 
 ![image](https://user-images.githubusercontent.com/53577819/154985120-fe503708-50c1-4376-9459-d72312fbbadc.jpeg ':size=350')
 
-?>Refer to the [**3.2.6 Component Wiring**](#_326-continuity-brew-detection) section on wiring to the arduino.
+?>Refer to the [3.2.6 Component Wiring](#_326-continuity-brew-detection) section on wiring to the arduino.
 ## 2.2.0 Extended Functionality
 ### 2.2.1 RobotDYN Dimmer
 Prepare 3 cables with the below spec:
@@ -309,7 +309,7 @@ With the cables you prepared:
 
 !>**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**
 
-?>Refer to the [**3.2.7 Component Wiring**](#_327-robotdyn-dimmer) section on wiring to the arduino.
+?>Refer to the [3.2.7 Component Wiring](#_327-robotdyn-dimmer) section on wiring to the arduino.
 ### 2.2.2 Pressure Transducer
 The pressure sensor will be tapping into the orange braided hose connecting the pump outlet and the boiler inlet. 
 
@@ -331,10 +331,10 @@ Make sure to push the hose all the way up to the ends on each side, the T and th
 
 ![image](https://user-images.githubusercontent.com/53577819/210632536-762bff36-2776-4a6c-8c40-ea43f9e2f1d3.png ':size=500')
 
-?>Refer to the [**3.2.8 Component Wiring**](#_328-pressure-transducer) section on wiring to the arduino.
+?>Refer to the [3.2.8 Component Wiring](#_328-pressure-transducer) section on wiring to the arduino.
 ### 2.2.3 Finish
 ***
-If you haven't already, you're ready to connect everything to the Arduino. Use [**3.2.0 Component Wiring**](#_320-component-wiring) for quickly referencing all components. 
+If you haven't already, you're ready to connect everything to the Arduino. Use [3.2.0 Component Wiring](#_320-component-wiring) for quickly referencing all components. 
 
 One piece of advice would be to solder all cables to their respective boards as during the machine operation there is quite a bit of vibration which can introduce noise/frequent. This can lead to unexplained behaviours.
 
