@@ -3,7 +3,7 @@
     Support better docs
 <!-- ko-fi -->
 >
-!>**This site is a general guide and *ABSOLUTELY NOT* an exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the _Recommendations_ page of this site. For anyone attempting the install it's strongly recommended to read the planned install route in it's entirety.**
+!>**This site is a general guide and *ABSOLUTELY NOT* an exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the [Recommendations](learning/learning-sources.md) page. For anyone attempting the install it's strongly recommended to read the planned install route in it's entirety.**
 
 ?> **_Total estimated install time will be based on understanding and experience._**
 
@@ -50,7 +50,7 @@ _*3_ __Predictive scales__ - software driven predicted weight output, doesn't ne
 
 > 1. Failing to run the right code branch on the chosen set of hardware will yield unexpected results.
 >
-> 2. Make sure you **ALWAYS** flash both the micro-controller as well as the LCD unit.
+> 2. Make sure you **ALWAYS** flash both the microcontroller as well as the LCD unit.
 
 !> Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.
 
