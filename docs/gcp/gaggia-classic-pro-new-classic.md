@@ -4,10 +4,13 @@
 # 1.0.0 TEST INSTALL
 We are not installing inside the machine yet. We need to ensure our nano/stm and expansion board are soldered to a good standard. We just want to test as much as we can to make sure we've not got any duds from a base functionality point of view.
 
-We need to understand what goes where. The schematics in **3.0.1 Schematics & Diagrams** aren't really rocket science but for someone who's never disassembled or has no experience working with electrical circuits it might get confusing really fast. 
+We need to understand what goes where. The schematics in [**3.1.0 Schematics and Diagrams**](#310-schematics--diagrams)
+ aren't really rocket science but for someone who's never disassembled or has no experience working with electrical circuits it might get confusing really fast. 
 
 Note 1 - No permanent connections are needed during testing so no soldering needed for now.
 Note 2 - The 5v/GND Arduino board pins will be shared between all the connected devices.
+
+!>All component wiring tables are in the appendix at the end [**Component Wiring**](#320-component-wiring).
 
 ## 1.0.1 Arduino Config 
 Place Arduino into the expansion board the correct way round. Power it through USB adapter for now during the testing phase.
@@ -22,31 +25,25 @@ Image of expansion with pins (solder from the bottom):
 
 Make sure the terminals are correct way round and place the Arduino into the expansion board.
 
-!>If you have to solder your pins then take the time now to get your soldering perfect. It'll save time in the long run. REFER TO Recommendations FOR SOLDERING GUIDES!
+!>You must solder your pins and take the time now to get your soldering perfect. It'll save time in the long run. **Refer to [Recommendations](learning/learning-sources.md) for soldering!**
 
-![image](https://user-images.githubusercontent.com/53577819/154988330-430df58d-773c-4084-b7b3-921ca43909f2.jpg ':size=500')
+!>**Attention! You are not soldering the Arduino to the expansion board itself. You are only soldering the pins to the Arduino and pins to the expansion board. The Arduino then just sits/connects into the expansion board pins.**
 
-_**Attention! You are not soldering the Arduino to the expansion board itself. You are only soldering the pins to the Arduino and pins to the expansion board. The Arduino then just sits/connects into the expansion board pins.**_
+***
+Any wires going to the expansion board itself will be **26AWG**.
+***
 
 ## 1.0.2 MAX6675 Config
-***
-For the below section you are using **26AWG** cable to connect to the Arduino board.
- 
-**Refer to 3.0.2 Component Wiring.**
-***
+[**Component Wiring**](#322-max6675)
 
-You should have bought and received a MAX6675 board which comes with a test thermocouple. We're swapping this for the "C-M4 screw K-Type thermocouple sensor" as this is what will be replacing the original that's in the machine.
+You should have bought and received a MAX6675 board which comes with a test thermocouple. We're swapping this for the **C-M4 screw K-Type thermocouple sensor** as this is what will be replacing the original that's in the machine.
  
 ![image](https://user-images.githubusercontent.com/53577819/154988392-619a5bc2-99cc-499d-8ad8-42792b094fd2.jpg ':size=500')
 
 ![image](https://user-images.githubusercontent.com/53577819/154988423-f741a369-ec60-4266-9544-0effedb57292.jpg ':size=500')
 
 ## 1.0.3 Nextion Config
-***
-For the below section you are using **26AWG** cable to connect to the Arduino board. 
- 
-**Refer to 3.0.2 Component Wiring.**
-***
+[**Component Wiring**](#324-lcd-nextion)
 
 The correct screen size is **2.4"**. If yours does not have markings for wiring then please see below image
 
@@ -54,12 +51,8 @@ The correct screen size is **2.4"**. If yours does not have markings for wiring 
 
 ![image](https://user-images.githubusercontent.com/53577819/154988514-13a1d7af-f704-49b6-975b-aeee1318cf36.jpg ':size=500')
 
-## 1.0.4 Relay Config
-***
-For the below section you are using **26AWG** cable to connect to the Arduino board. 
- 
-**Refer to 3.0.2 Component Wiring.**
-***
+## 1.0.4 Solid State Relay Config
+[**Component Wiring**](#323-solid-state-relay)
 
 This relay is what manages the temp by cutting the voltage when the thermocouple is at a set temp. 
 
@@ -94,7 +87,7 @@ Try applying heat with your hand and you should see the temperature respond (if 
 
 If everything looks good, move on to Installing into the Gaggia Classic Pro
 
-_**If all the above works as expected you're ready to install it inside the machine.**_
+**If all the above works as expected you're ready to install it inside the machine.**
 
 # 2.0.0 INSTALL
 ***
@@ -107,7 +100,7 @@ All components except the Arduino and LCD will be internal to the machine. Remem
 
 For each of the components we want to start guesstimating on cable length. You can do this by placing components where you want to place them. Close together components can share similar wiring i.e. 5v and GND.
 
-Please use the tables in **3.0.2 Component Wiring** for details on pin connections to the Arduino. 
+Please use the tables in [**3.2.0 Component Wiring**](#320-component-wiring) for details on pin connections to the Arduino. 
 
 ## 2.1.0 Base Functionality
 ### 2.1.1 Power Delivery
@@ -125,11 +118,11 @@ The female end will go in Gaggia's front panel. One male splitter end will go in
 
 ![image](https://user-images.githubusercontent.com/53577819/154988784-7ddbc106-4744-4d9f-8879-b9a107a9fe7c.jpg ':size=350')
 
-**Before trying to copy piggyback locations from below it’s recommended to check what the schematics say (3.0.1 Schematics & Diagrams).** 
+Before trying to copy piggyback locations from below it’s recommended to check what the schematics say [3.1.0 Schematics & Diagrams](#310-schematics--diagrams).
 
 !>**PLEASE NOTE THE OFFICIAL SCHEMATIC DRAWINGS HAVE BEEN DRAWN FLIPPED AND UPSIDE DOWN**
 
-Whilst following schematics it's important to test you have found the correct piggyback loactions. In order to do this please follow the below instructions before turning on your machine.
+Whilst following schematics it's important to test you have found the correct piggyback locations. In order to do this please follow the below instructions before turning on your machine.
 
 ![image](https://user-images.githubusercontent.com/53577819/154982423-82b4bdb4-ca78-4077-90c0-77b349c8c3d2.JPG ':size=350')
 
@@ -149,7 +142,7 @@ Please see some examples of known differences between piggyback location but rea
 
 By way of context, if looking inside the machine from the back, the left of the power switch is the brew switch. 
 
-**Below is a snippit of the power switch which is in the schematics. The red box is showing example of where piggyback should connect.**
+**Below is a snippet of the power switch which is in the schematics. The red box is showing example of where piggyback should connect.**
 
 On the power switch - wire in the middle **left** as LIVE and middle **right** as GND.
 
@@ -189,7 +182,9 @@ In relation to the image above -
 - The short red 18AWG wire goes from 12v VCC/+ -> 5V IN + 
 - The short black 18AWG wire goes from 12v GND/- -> 5V IN -  
 - The longer 26AWG black will be connected from 5v OUT- to the GND of expansion
-- The longer 26AWG red will be connected from 5v OUT+ to the 5V of expansion. Please use the tables in **3.0.2 Component Wiring** for details on wiring VCC/5V/+ and GND/- connections to the Arduino. 
+- The longer 26AWG red will be connected from 5v OUT+ to the 5V of expansion. 
+
+Please use the tables in [**Component Wiring**](#321-power-delivery) for details on wiring VCC/5V/+ and GND/- connections to the Arduino. 
 
 !>**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**
 
@@ -198,14 +193,13 @@ In relation to the image above -
 
 !>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins.
 
-This requires you to look at the schematics. Remove the connections from the coffee/brew switch pole 2 and 1. With your 18AWG cable with two male ends bridge them together as per below:
+This requires you to look at the [schematics](#310-schematics--diagrams). Remove the connections from the coffee/brew switch pole 2 and 1. With your 18AWG cable with two male ends bridge them together as per below:
 
 ![image](https://user-images.githubusercontent.com/53577819/154989122-6237e1af-62d1-4289-901c-47c69ea3b1b9.jpg ':size=350')
 
-!> If you plan on going through the V3 PCB install, it is recommended to get rid of or completely [bypass](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) the ECO PCB. Steps for removing the eco PCB are not provided as there are other resources on the web on how to do this. It's also pretty trivial.
+!> If you plan on going through the GAGGIUINO PCB install, it is recommended to get rid of or completely [bypass](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) the ECO PCB. Steps for removing the ECO PCB are not provided as there are other resources on the web on how to do this. It's also pretty trivial. **If you do get rid of the ECO PCB then follow standard non-eco instructions.**
 
 ### 2.1.3 Thermocouple Config
-
 Prepare the following cable to the below spec:
 
 1. Black, 18AWG, 5cm, two male ends
@@ -229,11 +223,12 @@ Now unscrew the original thermostat and replace with the m4 brass thermocouple. 
 ![image](https://user-images.githubusercontent.com/53577819/154984016-714b6532-e31d-42d3-b2ee-cf064487db66.jpeg ':size=350')
 
 Now re-attach the boiler.
-Check **3.0.2 Component Wiring**
+
+Check [**Component Wiring**](#322-max6675)
 
 !>**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**
 
-### 2.1.4 SSR Relay Config
+### 2.1.4 Solid State Relay Config
 
 Prepare cables with below spec:
 
@@ -252,10 +247,9 @@ Optional: might be a good idea to either tape up the exposed steam thermostat or
 
 ![image](https://user-images.githubusercontent.com/53577819/154989336-76f91fb5-2fdd-4c53-b968-e860af3f8505.jpg ':size=350')
 
-Please use the tables in **3.0.2 Component Wiring** for details on 3 & 4 connections to the Arduino. 
+Please use the tables in [**Component Wiring**](#323-solid-state-relay) for details on 3 & 4 connections to the Arduino. 
 
 ### 2.1.5 Steam Config
-
 !>**Very important to not turn on the machine until we check the steam switch wire positions**
 
 <!-- tabs:start -->
@@ -276,7 +270,7 @@ Prepare a black splitter with below spec:
 2. Use the splitter to bridge the connections you just removed and plug the female into pole 1
 3. The connector with two white wires is not on the side of the orange wire (which is at the bottom) then make it so (to match schematics) - i.e move pole 5 connector into pole 2's location (should be two white wires going into the connector)
 4. Leave the single white wire disconnected which was in pole 2's location
-3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in **3.0.2 Component Wiring - 5. STEAM HANDLING WIRING**, using 26AWG wires.
+3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [**Component Wiring](#325-steam-handling), using 26AWG wires.
 
 Image for reference below:
 
@@ -285,7 +279,6 @@ Image for reference below:
 <!-- tabs:end -->
 
 ### 2.1.6 Continuity Brew Detection
-
 Prepare 2 cables with the below spec:
 1. Green (not red or black), 26AWG, length from brew to Arduino, one exposed end, one female end 
 2. Black, 26AWG, length from brew to Arduino, one exposed end, one female end
@@ -294,10 +287,9 @@ As shown below plug your cables in to the circled connections on the brew switch
 
 ![image](https://user-images.githubusercontent.com/53577819/154985120-fe503708-50c1-4376-9459-d72312fbbadc.jpeg ':size=350')
 
-Please use the tables in **3.0.2 Component Wiring** for details on GND and OUT connections to the Arduino.
+Please use the tables in [**Component Wiring**](#326-brew-continuity) for details on GND and OUT connections to the Arduino.
 
 ## 2.2.0 Extended Functionality
-
 ### 2.2.1 RobotDYN Dimmer Config
 Prepare 3 cables with the below spec:
 1. Red, 18AWG, 15cm, one exposed end, one female end 
@@ -329,7 +321,7 @@ With the cables you prepared:
 
 !> **Again!!! Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**
 
-Please use the tables in **3.0.2 Component Wiring** for details on VCC, GND, Z-C and PSM connections to the Arduino. 
+Please use the tables in [**Component Wiring**](#327-robotdyn-dimmer) for details on VCC, GND, Z-C and PSM connections to the Arduino. 
 
 ### 2.2.2 Pressure Transducer Config
 The pressure sensor will be tapping into the orange braided hose connecting the pump outlet and the boiler inlet. 
@@ -352,11 +344,11 @@ Make sure to push the hose all the way up to the ends on each side, the T and th
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/53577819/210632536-762bff36-2776-4a6c-8c40-ea43f9e2f1d3.png">
 
-Please use the tables in **3.0.2 Component Wiring** for details on RED, BLACK and YELLOW wire connections to the Arduino. 
+Please use the tables in [**Component Wiring**](#328-pressure-transducer) for details on RED, BLACK and YELLOW wire connections to the Arduino. 
 
 ### 2.2.3 Finish
 ***
-If you haven't already, you're ready to connect everything to the Arduino. Use **3.0.2 Component Wiring** for quickly referencing all components. 
+If you haven't already, you're ready to connect everything to the Arduino. Use [**Component Wiring**](#320-component-wiring) for quickly referencing all components. 
 
 One piece of advice would be to solder all cables to their respective boards as during the machine operation there is quite a bit of vibration which can introduce noise/frequent. This can lead to unexplained behaviours.
 
@@ -376,7 +368,6 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 !>If you have any issues, firstly check the rules on the discord and then open an **#install-help...** for your respective machine. Try to make sure you do some research with the use of the powerful search function on discord to search for keywords with images or links etc...
 
 # 3.0.0 Appendix
-
 ## 3.1.0 Schematics & Diagrams
 
 !>**PLEASE NOTE THE SCHEMATIC DRAWINGS HAVE BEEN DRAWN FLIPPED AND UPSIDE DOWN. BLAME GAGGIA.**
@@ -391,6 +382,8 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 You can find the defined pins at the top of the .ino file.
 
 A suggestion on wiring; components that are inside same enclosure, the same connection can be linked i.e. solder a cable to the 5v pin then take the other end and solder to the 5V of the other component, from there take one cable to the Arduino. An alternative way is to  solder similar connections and apply heat-shrink before the exit to the machine then take one wire through the machine to the Arduino.
+
+!>Any wires going to the expansion board itself will be **26AWG**.
 ### 3.2.1 POWER DELIVERY
 | 12v | 5V IN | 5V OUT | NANO | 
 | ---- | ---- | ---- | ---- |
@@ -406,7 +399,7 @@ All the other boards should be connected to the same GND / 5V plane as NANO.
 | SCK | D6 |
 | SO  | D4 |
 | CS  | D5 | 
-### 3.2.3 SSR RELAY 
+### 3.2.3 Solid State RELAY 
 | RELAY | NANO |
 | --- | --- |
 | 4 | GND |
