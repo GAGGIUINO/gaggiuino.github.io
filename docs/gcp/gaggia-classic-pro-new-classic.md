@@ -190,7 +190,7 @@ This step is straight forward, with the 18AWG cable, bridge the top and bottom (
 
 ![image](https://user-images.githubusercontent.com/53577819/154989122-6237e1af-62d1-4289-901c-47c69ea3b1b9.jpg ':size=350')
 
-?>If you plan on going through the GAGGIUINO PCB install, it is recommended to get rid of or completely [bypass](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) the ECO PCB. Steps for removing the ECO PCB are not provided as there are other resources on the web on how to do this. It's also pretty trivial. **If you do get rid of the ECO PCB then follow standard Gaggia Callic Pro instructions.**
+?>If you plan on going through the GAGGIUINO PCB install, it is recommended to get rid of or completely [bypass](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) the ECO PCB. Steps for removing the ECO PCB are not provided as there are other resources on the web on how to do this. It's also pretty trivial. **If you do get rid of the ECO PCB then follow standard Gaggia Classic Pro instructions.**
 
 ### 2.1.3 Thermocouple MAX6675
 Prepare the following cable to the below spec:
