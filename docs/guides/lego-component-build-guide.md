@@ -4,21 +4,35 @@ I recommend removing pins on the dimmer and thermocouple interface boards for th
 An easy way to remove header pins is to cut the plastic linkage between each pin with snips, then de-solder the pins individually. Solder wick or a solder sucker can help get the thru holes nice and clean.
 
 
+<img width="240" alt="image" src="https://user-images.githubusercontent.com/53577819/211652146-fc29d237-0d93-42c4-861e-bc928f1411e9.png">
+<img width="229" alt="image" src="https://user-images.githubusercontent.com/53577819/211652214-fc0e0670-4cf7-4ad2-9bcc-ea8c3f1cf3a4.png">
+<img width="236" alt="image" src="https://user-images.githubusercontent.com/53577819/211652260-bdcd3e94-a3c6-4831-bf13-34b99d6514b2.png">
+
 
 If necessary, solder female headers and screw terminals to the nano expansion board. Make sure the headers and terminals are flush to the board. 
 Bad
+<img width="613" alt="image" src="https://user-images.githubusercontent.com/53577819/211652382-dff7fc6f-ac02-494a-a506-9d4a22fbb792.png">
 
 Acceptable
+<img width="596" alt="image" src="https://user-images.githubusercontent.com/53577819/211652433-0c49b699-9370-4639-8b9a-b78eb15b1948.png">
+
 
 Solder header pins to the Blackpill. Make sure the plastic linkage is flush with the board when soldering, and make sure all solder joints are properly reflowed. 
 Bad
+<img width="609" alt="image" src="https://user-images.githubusercontent.com/53577819/211652496-980a3551-d6f9-44b4-91f7-3b5944996c51.png">
 
 Acceptable
+<img width="608" alt="image" src="https://user-images.githubusercontent.com/53577819/211652544-adf88443-8a51-4836-80ee-97c130007bf3.png">
 
 Perform a fit-check in the housing of all your components. Make sure the lid closes with no interference.
 Note: I’m using a stripboard for power distribution (cut for 6x5 usable points). Wago connectors or soldering wires to each other are also acceptable options.
+<img width="547" alt="image" src="https://user-images.githubusercontent.com/53577819/211652610-4b63d97b-90fd-43b1-b37f-a71ad0523008.png">
+
 
 The next steps describe the process of wiring the components together. I chose to do the power wiring first, then follow it up with the component signal wiring, but it can be done in whatever order you like. Trust the schematic if you’re confused on a step or there appears to be a difference between an image and the schematic. I used 22 gauge wires unless otherwise noted; see the schematic for permissible wire gauges.
+
+<img width="649" alt="image" src="https://user-images.githubusercontent.com/53577819/211652678-d2f92acd-9b50-41ec-885b-a6c1a043e969.png">
+
 
 Power wiring. If using a stripboard I recommend an arrangement like this with two rows of 5V and two rows of 5V GND (0 VDC). 
 Have the wires from the PSU go in thru from the top, then fold over underneath and solder to connect the 2 rails.
