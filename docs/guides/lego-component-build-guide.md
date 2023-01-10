@@ -91,3 +91,4 @@ Close the housing with 4 screws to complete.
 
 Things that are not pictured – connections to solid state relay (SSR), touchscreen, scales, thermocouple, steam/brew switches. Please continue the install by referencing the machine-specific schematic and/or install instructions as they may vary.
 Here are the labeled component connections to wiring that should be referenced by the machine-specific schematic(s). 
+<img width="629" alt="image" src="https://user-images.githubusercontent.com/53577819/211653789-00be52a2-e019-43f2-94af-1c9425beb54b.png">
