@@ -341,6 +341,8 @@ One piece of advice would be to solder all cables to their respective boards as 
 Any components sitting next to each other can have their equivalent pins linked with a cable.
 
 You will be expected to solder similar pins i.e. all GND and all 5v together in order to fit into and screw down on the expansion board terminals. You can use either WAGOS for this or using some strip-board. 
+
+?>Please refer to [Lego Component Housing Guide](guides/lego-component-build-guide.md) on how to setup and house your components for best fit into the machine.
 ***
 
 On first start up record and send to #first-start channel of discord. This helps with diagnosing issues.
