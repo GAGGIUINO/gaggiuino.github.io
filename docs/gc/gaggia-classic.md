@@ -2,8 +2,7 @@
 !> **Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project.**
 ***
 
-### **SCHEMATICS & DIAGRAMS**
-
+# SCHEMATICS & DIAGRAMS
 **Schematics:**
 * [GAGGIA Classic **Nano** HV wiring](https://user-images.githubusercontent.com/42692077/161397293-82df427a-2ac2-4226-bdc6-fa831a962265.png)
 * [GAGGIA Classic **STM32-Blackpill** HV wiring](https://user-images.githubusercontent.com/117388662/204613299-8921379c-7bc0-4cf2-ae9f-0b7c7dd12654.JPG)
@@ -16,7 +15,7 @@
 !> **First and foremost, please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's  completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or  your gold fish. It will be entirely your fault!**
 ***
 
-### **ARDUINO CONNECTIONS**
+# ARDUINO CONNECTIONS
 <!-- panels:start -->
 <!-- div:left-panel -->
 1. MAX6675 (Temperature sensing)
@@ -37,7 +36,6 @@
 
    ***Relay ports [1] and [2] are the high voltage circuit breaker so not mentioned here as they get covered further in the guide.***
 <!-- panels:end -->
-
 ***
 <!-- panels:start -->
 <!-- div:left-panel -->
@@ -108,7 +106,7 @@ _Dimmer high voltage circuit control ports will act as a passthrough for the pum
 <!-- panels:end -->
 ***
 
-### **ASSEMBLING**
+# ASSEMBLING
 First let's check that the setup works as expected while outside the machine so you don't have it all installed and realise just afterwards it's not reading any temperature because of a faulty component or the relay doesn't switch between the ON/OFF modes.
 
 ?>**Note 1 - No permanent connections are needed during testing, so no soldering needed for now.**
@@ -119,7 +117,7 @@ First let's check that the setup works as expected while outside the machine so 
 >
 !>**As always with such projects common sense should be applied at all times, it's expected people doing such sort of modifications will have some basic understanding. Triple check your machine is disconnected from any power sources, even better just pull the power cable out of it if you haven't done so yet!**
 
-#### *BASE FUNCTIONALITY BENCH TEST*
+# BASE FUNCTIONALITY BENCH TEST
 ***
 1. The first step will be to test the electronics outside the Gaggia. Connect the MAX6675 module, relay, and nextion to the arduino board using the pins defined above. You can also find them defined at the top of the .ino file.
 For now only connect the low voltage circuit controlling ports of the relay to check whether the relay LED indicates the power states.
@@ -145,7 +143,7 @@ For now only connect the low voltage circuit controlling ports of the relay to c
 
 **At this point if all the above works as expected, then you're ready to install it all inside the machine. We'll be preparing some splitters that we'll use to connect to the Gaggia internals without introducing any permanent modifications so in the event of a desire to revert to stock it's a few disconnects away!**
 
-#### *BASE FUNCTIONALITY*
+# BASE FUNCTIONALITY
 ***
 1. Take off the top cover by unscrewing the 2 top screws. You should be able to see something similar to the below image minus the SSR relay:
 >
@@ -205,7 +203,7 @@ So you end up having them connected like this:
 
 15. Now you're ready to connect the rest of the electronics to the Arduino like you did when testing everything. This time, it is recommended to solder all the Arduino connected cables, instead of using the provided dupont connectors, as during the machine operation there is quite a bit of vibration. This can introduce all sorts of noise/frequent disconnects to certain pins which will lead to unexpected behaviour.
 
-#### *EXTENDED FUNCTIONALITY*
+# EXTENDED FUNCTIONALITY
 ***
 1. Install the Optocoupler, which will detect when the brew switch is flipped.
 
@@ -233,3 +231,7 @@ So you end up having them connected like this:
 </div>
 
 >**The image above is provided as a reference to understand how the connection through the dimmer is made, please check whether your dimmer high voltage ports placement differs from the above image before connecting the dimmer, it's very important to feed the IN wires properly.**
+
+***
+?>Please refer to [Lego Component Housing Guide](guides/lego-component-build-guide.md) on how to setup and house your components for best fit into the machine.
+***
