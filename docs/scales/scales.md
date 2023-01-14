@@ -8,21 +8,14 @@ The scales functionality will require two load cells and a rigid frame that need
 
 For scales to function properly, the following hardware will be needed:
 
-- [2x 500g Load Cells](https://www.aliexpress.com/item/32670225988.html)
+- [2x 750g Load Cells](https://www.aliexpress.com/item/32670225988.html)
 - [2 x HX711 Amplifiers](https://www.aliexpress.com/item/32670225988.html)
 - (STM32 ONLY) 1 kΩ resistor[^1] x the number of clock lines you plan on using.
 
-[^1]: The addition of this resistor is credited to Havald.
+A stable, rigid frame to mount the load cells is highly recommended. Check the housing assembly and install instructions on the printables page.
+- [Scales frame](https://www.printables.com/model/285370-gaggia-classic-pro-scales)
 
-**OPTIONAL** (needed for weight based pump control)
-- [5V Relay x 1](https://a.aliexpress.com/_vpUdrT) (Deprecates the existing opto-coupler for the GC. **Needed for all that want weight-based pump control**)
-
-A stable, rigid frame to mount the load cells is highly recommended. You can create your own mounting frame, but likeablebump has a few designs on thingiverse that have been used by others. Your frame needs to be able support (lift) the drip tray.
-
-- [GC Load Cell Integration - no drill](https://www.thingiverse.com/thing:5276489)
-- [GCP Load Cell Integration - no drill](https://www.thingiverse.com/thing:5276492)
-- [GCP Load Cell Integration single HX711 board - no drill](https://www.thingiverse.com/thing:5276496)
-
+Calibration can be done using this page or printables, the process is virtually the same.
 
 ## Wiring Load Cell to HX711
 
@@ -32,7 +25,7 @@ A wiring diagram for typical load cells is shown in the above figure. The connec
 
 ## Load Cell Frame
 
-This section shows a typical load cell frame setup using one of likeablebump's design. The idea remains the same if you chose to create your own rigid frame. You need to "lock'' the load cell to the frame using the rear mounting screws (M3 screws will work if you purchase the 500g load cells from AliExpress). The load cell needs to have a gap between it and the rigid frame. An extension piece is locked to the top of the load cell to give the load cell better leveraging.
+This section shows a typical load cell frame setup using one of likeablebump's design. The idea remains the same if you chose to create your own rigid frame. You need to "lock'' the load cell to the frame using the rear mounting screws (M3 screws will work if you purchase the 750g load cells from AliExpress). The load cell needs to have a gap between it and the rigid frame. An extension piece is locked to the top of the load cell to give the load cell better leveraging.
 
 The figure below shows the M3 screws locking the load cell to frame and leverage extension.
 ![Locking load cell to frame and leverage extension.](https://user-images.githubusercontent.com/80347096/186999854-024d76ba-9c30-4cf8-9f71-3587203d2789.jpg)
@@ -164,8 +157,6 @@ Adjust the Scale factors by tapping on the + or - buttons until the "Weight outp
    - **Be sure to select the correct platformio environment from the environment tab. For this example, a single clock is used in a Gaggiuino that uses a relay to stop the pump.**
 
 ![STM32_appropriate_env](https://user-images.githubusercontent.com/80347096/191637488-68c23a6a-24ff-4d92-9b72-6a257c58e7e6.jpg)
-   
-  <!--  ![platformio_stm32_environments](https://user-images.githubusercontent.com/80347096/191513205-bbff4100-7173-49a7-a95e-4603614064e8.jpg) -->
 
 - Power on the Gaggia.
 

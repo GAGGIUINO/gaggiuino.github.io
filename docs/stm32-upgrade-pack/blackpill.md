@@ -16,13 +16,11 @@ This guide will explain how to upgrade or start the project with an STM32F4xxx (
 - VSCode and PlatformIO instead of ArduinoIDE to upload to board.
 
 ### Components 
-Always refer to the official Gaggiuino BOM on the Github project page for the most current materials and links: https://gaggiuino.github.io/#/?id=bill-of-materials
+Always refer to the official [Gaggiuino BOM]() for the latest harware:
 
-- [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html ) **MAKE SURE THE PROPER BOARD IS SELECTED**
-
-- [ADS1115](https://www.aliexpress.com/item/32869421559.html) 
-
-- [5V RELAY](https://a.aliexpress.com/_vpUdrT) **Supersedes the 1-bit opto**
+- **STM32F411CEU6**
+- **ADS1115**
+- **RELAY**
 
 ### Expansion Board Compatibility 
  
@@ -110,7 +108,7 @@ Installing the relay allows the Gaggiuino to perform advanced functions (in conj
 
 - Pump assist during descale program. 
 
-Installing the relay is relatively simple as it is essentially a drop-in replacement for the Optocoupler. The below diagram demonstrates the install with the GC switch panel, relay and related pins.   
+Installing the relay is relatively simple as it is essentially a drop-in replacement for the optocoupler on GC and just an additional component for GCP. The below diagram demonstrates the install with the GC switch panel, relay and related pins, the installation is very similar for both GC and GCP, the goal is to move all brew switch HV wires to the relay HV ports, then on the GC/GCP brew switch only LV wires should be connected when the relay is fully wired.
 
 ![Figure 6 - Relay diagram for the GCP](https://user-images.githubusercontent.com/80347096/191401329-cdcc0a6a-b414-4c01-bbc8-07d16a5a4282.png)
 

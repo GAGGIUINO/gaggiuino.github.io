@@ -27,14 +27,14 @@
      SO      |   D4
      CS      |   D5
 <!-- div:right-panel -->
-2. Relay (Boiler power control)
+2. SSR (Boiler power control)
 
-    Relay Port  |  Arduino
+    SSR Port  |  Arduino
     --------|-----------
       4     |   GND
       3     |   D8
 
-   ***Relay ports [1] and [2] are the high voltage circuit breaker so not mentioned here as they get covered further in the guide.***
+   ***SSR ports [1] and [2] are the high voltage circuit breaker so not mentioned here as they get covered further in the guide.***
 <!-- panels:end -->
 ***
 <!-- panels:start -->
@@ -107,7 +107,7 @@ _Dimmer high voltage circuit control ports will act as a passthrough for the pum
 ***
 
 # ASSEMBLING
-First let's check that the setup works as expected while outside the machine so you don't have it all installed and realise just afterwards it's not reading any temperature because of a faulty component or the relay doesn't switch between the ON/OFF modes.
+First let's check that the setup works as expected while outside the machine so you don't have it all installed and realise just afterwards it's not reading any temperature because of a faulty component or the SSR doesn't switch between the ON/OFF modes.
 
 ?>**Note 1 - No permanent connections are needed during testing, so no soldering needed for now.**
 >
@@ -119,8 +119,8 @@ First let's check that the setup works as expected while outside the machine so 
 
 # BASE FUNCTIONALITY BENCH TEST
 ***
-1. The first step will be to test the electronics outside the Gaggia. Connect the MAX6675 module, relay, and nextion to the arduino board using the pins defined above. You can also find them defined at the top of the .ino file.
-For now only connect the low voltage circuit controlling ports of the relay to check whether the relay LED indicates the power states.
+1. The first step will be to test the electronics outside the Gaggia. Connect the MAX6675 module, SSR, and nextion to the arduino board using the pins defined above. You can also find them defined at the top of the .ino file.
+For now only connect the low voltage circuit controlling ports of the SSR to check whether the SSR LED indicates the power states.
 
 4. To flash the microcontroller Arduino Nano or the STM32 Blackpill, pls follow the video form the ***Prerequisites*** section of this site.
 
@@ -139,13 +139,13 @@ For now only connect the low voltage circuit controlling ports of the relay to c
 
 6. After the upload is finished get the card out and power cycle the LCD.
 7. You should see temp readings on your screen if everything went according to plan.
-    >*Don't forget to test the thermocouple/relay combo operation, apply some heat to the thermocouple end and see whether the relay led operates in HIGH/LOW modes*
+    >*Don't forget to test the thermocouple/SSR combo operation, apply some heat to the thermocouple end and see whether the SSR led operates in HIGH/LOW modes*
 
 **At this point if all the above works as expected, then you're ready to install it all inside the machine. We'll be preparing some splitters that we'll use to connect to the Gaggia internals without introducing any permanent modifications so in the event of a desire to revert to stock it's a few disconnects away!**
 
 # BASE FUNCTIONALITY
 ***
-1. Take off the top cover by unscrewing the 2 top screws. You should be able to see something similar to the below image minus the SSR relay:
+1. Take off the top cover by unscrewing the 2 top screws. You should be able to see something similar to the below image minus the SSR:
 >
 ![PXL_20210527_181116200 1](https://user-images.githubusercontent.com/109426580/190676716-bf126fbc-2177-43d0-8300-3525e7daac8c.jpg ':size=500')
 
@@ -166,7 +166,7 @@ For now only connect the low voltage circuit controlling ports of the relay to c
 ![PXL_20210527_181116200 1](https://user-images.githubusercontent.com/109426580/190677178-fb9fdefc-731c-4a09-87b7-a5bfdf37f50b.png ':size=500')
 
 
-6. Prepare 2 cables you'll use to connect the cables disconnected from the bottom thermostat to ports 1 and 2 of the SSR relay. Use the red cable for that. They shouldn't be too long, about 10cm will suffice. One end should be crimped with a male spade connector and the loose end screwed to the relay. After this, attach the relay to the machine case itself with an M4 screw and nut, though smaller will work. Be sure to apply some thermal paste to the SSR backplate that will make contact with the metal case of the machine, not critical in any way of form but will provide better heat transfer if ever the needs is there.
+6. Prepare 2 cables you'll use to connect the cables disconnected from the bottom thermostat to ports 1 and 2 of the SSR. Use the red cable for that. They shouldn't be too long, about 10cm will suffice. One end should be crimped with a male spade connector and the loose end screwed to the SSR. After this, attach the SSR to the machine case itself with an M4 screw and nut, though smaller will work. Be sure to apply some thermal paste to the SSR backplate that will make contact with the metal case of the machine, not critical in any way of form but will provide better heat transfer if ever the needs is there.
 
 ![PXL_20210527_184425223_c](https://user-images.githubusercontent.com/109426580/190677929-aef4ced7-c3d8-4a1f-bf3e-c5d0e2af5a7c.jpg ':size=500')
 
