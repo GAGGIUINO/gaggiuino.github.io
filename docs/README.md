@@ -1,11 +1,12 @@
+> [!NOTE]
+>This site is a general guide and not a exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the [Recommendations](learning/learning-sources.md) page. For anyone attempting the install it's strongly recommended to read the planned install route in it's entirety.
+
+
 **Contribute to better docs written by a professional technical writer.**
 <!-- ko-fi :id=zer0bit :color=<color> -->
     Support better docs
 <!-- ko-fi -->
->
-!>**This site is a general guide and *ABSOLUTELY NOT* an exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the [Recommendations](learning/learning-sources.md) page. For anyone attempting the install it's strongly recommended to read the planned install route in it's entirety.**
 
-?> **_Total estimated install time will be based on understanding and experience._**
 
 # Features
 
@@ -52,7 +53,8 @@ _*3_ __Predictive scales__ - software driven predicted weight output, doesn't ne
 >
 > 2. Make sure you **ALWAYS** flash both the microcontroller as well as the LCD unit.
 
-!> Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.
+> [!TIP]
+> Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.
 
 # Timeline
 
@@ -109,7 +111,8 @@ _*3_ __Predictive scales__ - software driven predicted weight output, doesn't ne
 6. Record your first shot. Post this to [#first-shot](https://discord.com/channels/890339612441063494/910972035205857320) on Discord.
 </details>
 
-> 
+>
+?> **_Total estimated install time will be based on understanding and experience._** 
 > 
 <!-- panels:start -->
 <!-- div:title-panel -->
