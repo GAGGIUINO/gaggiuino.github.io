@@ -12,7 +12,7 @@
 * [GAGGIA Classic **Nano** LV wiring](https://user-images.githubusercontent.com/42692077/160548957-88c93198-6d81-4081-8db6-552b6f6c5281.png)
 
 ***
-!> **First and foremost, please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's  completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or  your gold fish. It will be entirely your fault!**
+!> **First and foremost, please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!**
 ***
 
 # ARDUINO CONNECTIONS
@@ -52,12 +52,12 @@
 <!-- div:right-panel -->
 4. Power delivery
 
-    PS   |  Arduino
-    -----|-----------
-    5v   |   5v
-    GND  |   GND
+| 12v | 5V IN | 5V OUT | NANO | 
+| ---- | ---- | ---- | ---- |
+| VCC   | IN +  | OUT +  | 5v      | 
+| GND   | IN -  | OUT -  | GND     |
 
-   ***Powering using the [ 12v ] power supply module + [ 5v ] stepdown convertor is the recommended way. Powering all the arduino connected boards through the Arduino's USB port is not recommended due to the low power capacity of the on-board voltage regulator. Doing so will kill your arduino eventually. You've been warned!***
+   ***Powering using the [ 12v ] power supply module + [ 5v ] stepdown convertor is the recommended way. DO NOT power the arduino connected boards through the Arduino's USB port. This is due to the low power capacity of the on-board voltage regulator. Doing so will kill your arduino eventually. You've been warned!***
 <!-- panels:end -->
 *** 
 <!-- panels:start -->
@@ -109,7 +109,7 @@ _Dimmer high voltage circuit control ports will act as a passthrough for the pum
 # ASSEMBLING
 First let's check that the setup works as expected while outside the machine so you don't have it all installed and realise just afterwards it's not reading any temperature because of a faulty component or the SSR doesn't switch between the ON/OFF modes.
 
-?>**Note 1 - No permanent connections are needed during testing, so no soldering needed for now.**
+?>**Note 1 - No permanent connections are needed during testing, so no soldering needed for now (excludes soldering pins to arduino and expansion board).**
 >
 ?>**Note 2 - All LV(low voltage) sides of the boards will connect to a single 5V and GND rail on the Arduino.**
 >
@@ -122,7 +122,7 @@ First let's check that the setup works as expected while outside the machine so 
 1. The first step will be to test the electronics outside the Gaggia. Connect the MAX6675 module, SSR, and nextion to the arduino board using the pins defined above. You can also find them defined at the top of the .ino file.
 For now only connect the low voltage circuit controlling ports of the SSR to check whether the SSR LED indicates the power states.
 
-4. To flash the microcontroller Arduino Nano or the STM32 Blackpill, pls follow the video form the ***Prerequisites*** section of this site.
+4. To flash the microcontroller Arduino Nano or the STM32 Blackpill, pls follow the video form the [Prerequisites](prereq/prerequisites.md) section of this site.
 
 !> Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.
 
@@ -130,7 +130,7 @@ For now only connect the low voltage circuit controlling ports of the SSR to che
 
     **Method 1** 
 
-        Just copy the *.tft file on a FAT32 formatted microSD card and upload onthe LCD panel using the onboard card reader
+        Just copy the *.tft file on a FAT32 formatted microSD card and upload on the LCD panel using the onboard card reader
 
     **Method2** 
 
@@ -153,7 +153,7 @@ For now only connect the low voltage circuit controlling ports of the SSR to che
 >
 ![PXL_20210527_183052740 1](https://user-images.githubusercontent.com/109426580/190676830-420e5ff8-d29b-4221-8c71-41de8c92c52a.jpg ':size=500')
 
-3. Be sure to mark your top left power connector so you don't mix them up. If you want to be sure, you can number all the connectors with a sharpie, to make for easier reconnections later down the road.
+3. Be sure to mark your top left power connector so you don't mix them up. If you want to be sure, you can number all the connectors with a sharpie for identification purposes.
 >
 ![PXL_20210527_181404819 1](https://user-images.githubusercontent.com/109426580/190676906-c9d34b70-ef66-4de1-a28d-7761502ebac8.jpg ':size=500')
 
@@ -179,29 +179,28 @@ So you end up having them connected like this:
 
 ![PXL_20210527_183052740 2](https://user-images.githubusercontent.com/109426580/190678786-d67b8034-f37e-41ed-a713-bbf2d4a2efb4.jpg ':size=500')
 
+8. To power the Arduino system, the 12v PSU has 2 AC IN ports which will be where the ends from the piggybacks will connect to - it doesn't matter which way round. Yes, you need to fiddle about getting wires in and solder correctly - recommended to trim, twist, tin and apply heat shrink. Then the 12V VCC goes to the IN + of the stepdown and the 12V GND goes to the IN -. Out connections on the stepdown connections will then go to the arduino. 
 
-8. To power the Arduino system I have used an old 5v mobile charger which I'm sure all of us have laying around. Just solder 2 cables to the 2 ends of the charger and for the other ends use 2 F spade connectors, after which plug them to the remaining 2 splitter (2) ends.
+![image](https://user-images.githubusercontent.com/53577819/210059859-be0135a8-7041-48ab-a2a5-daa8c86d04a1.png" ':size=500')
 
-![PXL_20210527_183052740 2](https://user-images.githubusercontent.com/109426580/190678786-d67b8034-f37e-41ed-a713-bbf2d4a2efb4.jpg ':size=500')
-
-10. Next, you'll be setting up steam switch detection. First, disconnect the steam switch high voltage wires connected to poles 3 and 4.
+9. Next, you'll be setting up steam switch detection. First, disconnect the steam switch high voltage wires connected to poles 3 and 4.
 
 ![GC - brew handling](https://user-images.githubusercontent.com/42692077/154805193-76068521-3ad4-4020-b2ee-8dab9394d4fe.png ':size=500')
 
-11. Leave the wires connected to the steam switch poles 1 and 2 connected.
+10. Leave the wires connected to the steam switch poles 1 and 2 connected.
 
-12. Bridge the steam thermostat wires. The steam thermostat is on the top of the boiler.
+11. Bridge the steam thermostat wires. The steam thermostat is on the top of the boiler.
 
 ![image](https://user-images.githubusercontent.com/109426580/190679925-4bfb1574-1af0-414f-b38c-18a5d8c6f8c2.png ':size=500')
 
 
-13. Connect steam switch poles 3 and 4 to the arduino nano as listed above using some AWG26 wires.
+12. Connect steam switch poles 3 and 4 to the arduino nano as listed above using some AWG26 wires.
 >
 ![image](https://user-images.githubusercontent.com/109426580/190680352-503d1a21-676c-4ec2-95dc-9a12ee5161ac.png ':size=500')
 
-14. Make sure you secure all the disconnected wires so they cannot make any accidental contact.
+13. Make sure you secure all the disconnected wires so they cannot make any accidental contact.
 
-15. Now you're ready to connect the rest of the electronics to the Arduino like you did when testing everything. This time, it is recommended to solder all the Arduino connected cables, instead of using the provided dupont connectors, as during the machine operation there is quite a bit of vibration. This can introduce all sorts of noise/frequent disconnects to certain pins which will lead to unexpected behaviour.
+14. Now you're ready to connect the rest of the electronics to the Arduino like you did when testing everything. This time, it is recommended to solder all the Arduino connected cables, instead of using the provided dupont connectors, as during the machine operation there is quite a bit of vibration. This can introduce all sorts of noise/frequent disconnects to certain pins which will lead to unexpected behaviour.
 
 # EXTENDED FUNCTIONALITY
 ***
