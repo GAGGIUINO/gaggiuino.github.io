@@ -8,7 +8,7 @@
 * >[Gaggia Classic](gc/gaggia-classic.md)
 * >[Gaggia Classic Pro](gcp/gaggia-classic-pro-new-classic.md)
     * Upgrades:
-    * >[Lego AIO Husing](guides/lego-component-build-guide.md)
+    * >[Lego AIO Housing](guides/lego-component-build-guide.md)
     * >[STM32 UPGRADE](stm32-upgrade-pack/blackpill.md)
     * >[Scales Configuration](scales/scales.md)
     * >[PCB](pcb/singleboard.md)
