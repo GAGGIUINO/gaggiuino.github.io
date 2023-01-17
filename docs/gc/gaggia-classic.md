@@ -122,7 +122,7 @@ First let's check that the setup works as expected while outside the machine so 
 1. The first step will be to test the electronics outside the Gaggia. Connect the MAX6675 module, SSR, and nextion to the arduino board using the pins defined above. You can also find them defined at the top of the .ino file.
 For now only connect the low voltage circuit controlling ports of the SSR to check whether the SSR LED indicates the power states.
 
-4. To flash the microcontroller Arduino Nano or the STM32 Blackpill, pls follow the video form the [Prerequisites](prereq/prerequisites.md) section of this site.
+4. To flash the microcontroller Arduino Nano or the STM32 Blackpill, pls follow the video from the [Prerequisites](prereq/prerequisites.md) section of this site.
 
 !> Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.
 
