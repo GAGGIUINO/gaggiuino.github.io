@@ -1,7 +1,6 @@
 > [!NOTE]
 >This site is a general guide and not a exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the [Recommendations](learning/learning-sources.md) page. For anyone attempting the install it's strongly recommended to read the planned install route in it's entirety.
 
-
 **Contribute to better docs written by a professional technical writer.**
 <!-- ko-fi :id=zer0bit :color=<color> -->
     Support better docs
@@ -225,3 +224,11 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 
 * **Print service**
   * [cloudcraft3d.com](https://craftcloud3d.com/)
+
+# Statistics
+
+<details>
+<div>
+<a href="https://flagcounter.me/details/dj0"><img src="https://flagcounter.me/dj0/" alt="Flag Counter"></a>
+</div>
+</details>
