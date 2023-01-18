@@ -65,6 +65,7 @@ The POGO connector snaps onto the mating POGO connector inside the tank riser pi
 | PB8         	   | DOUT               	| -            	   |
 | PB9		         | -			            |DOUT			         |
 
+> [!NOTE]
 > **FOR STM32 ONLY: You need to connect one 1-kΩ resistor between the 5 VDC source voltage and PB0.**
 
 The figure below shows a 1-kΩ resistor connected between 5VDC and the SCK pin on STM32. Heatshrink tubing was used to isolate/protect the electrical connection. 
@@ -97,15 +98,20 @@ The figure below shows a 1-kΩ resistor connected between 5VDC and the SCK pin o
 Once the connections are made, it's time to *calibrate* the load cells.
 
 ## Calibration
-### nano (branch and environment)
-Files from the scales-calibration folder in the main directory need to be flashed to **both** the Nextion and MCU. **If using a single clock, then the first line of the scales-calibration.ino needs to be uncommented.** Be sure to select the correct platformio branch and environment as shown in figures below for nano
+### nano-final (branch and environment)
+Files from the scales-calibration folder in the main directory need to be flashed to **both** the Nextion and MCU.  Be sure to select the correct platformio branch and environment as shown in figures below for nano
 
 ![nano_branch](https://user-images.githubusercontent.com/80347096/191635523-0eeb9ca2-173e-444a-875b-889a3a8b701c.jpg)
 
 ![Nano_environment](https://user-images.githubusercontent.com/80347096/191634757-c95249a7-6162-4212-a5c8-af67fd23aae0.jpg)
 
+
+> [!NOTE]
+>**If using a single clock, then the first line of the scales-calibration.ino needs to be uncommented.**
+
+
 ### STM32 (branch and environment)
-Files from the scales-calibration folder in the main directory need to be flashed to **both** the Nextion and MCU. **If using a single clock, then the first line of the scales-calibration.ino needs to be uncommented.** Be sure to select the correct platformio branch and environment as shown in figures below for STM32
+Files from the scales-calibration folder in the main directory need to be flashed to **both** the Nextion and MCU. Be sure to select the correct platformio branch and environment as shown in figures below for STM32
 
 Select the appropriate branch for STM32 (the dev branch is used in this example)
 
