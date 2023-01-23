@@ -28,7 +28,7 @@ Make sure the terminals are correct way round and place the Arduino into the exp
 
 !>**Attention! You are not soldering the Arduino to the expansion board itself. You are only soldering the pins to the Arduino and pins to the expansion board. The Arduino then just sits/connects into the expansion board pins.**
 
-?>Any wires going to the expansion board itself will be **26AWG**.
+?>Any wires going to the expansion board itself will be **22AWG**.
 
 ## 1.0.2 Thermocouple MAX6675 Config
 You should have bought and received a MAX6675 board which comes with a test thermocouple. We're swapping this for the **C-M4 screw K-Type thermocouple sensor** as this is what will be replacing the original that's in the machine.
@@ -153,26 +153,26 @@ The LIVE is the top right of the **brew** switch and the GND is top right of the
 <!-- tabs:end -->
 
 Prepare 2 more cables with the below spec:
-1. Black, 18AWG, about 15cm, female spade end, exposed end.
-2. Red, 18AWG, about 15cm, female spade end, exposed end.
+1. Black, 22AWG, about 15cm, female spade end, exposed end.
+2. Red, 22AWG, about 15cm, female spade end, exposed end.
 
 Connect the female end to the male end of the splitter cable from above step (match the colours).
 
 On the 12v PSU the 2 AC IN ports will be where the exposed end of your red or black piggyback cable go, it doesn't matter which way round (yes, you need to fiddle about getting wires in and solder correctly - recommended to trim, twist, tin and apply heat shrink).
 
 Prepare more cables with the below spec:
-1. Black, 18AWG, about ~10cm, exposed ends.
-2. Red, 18AWG, about ~10cm, exposed ends.
-3. Black, 26AWG, about ~25cm, exposed ends.
-4. Red, 26AWG, about ~25cm, exposed ends.
+1. Black, 22AWG, about ~10cm, exposed ends.
+2. Red, 22AWG, about ~10cm, exposed ends.
+3. Black, 22AWG, about ~25cm, exposed ends.
+4. Red, 22AWG, about ~25cm, exposed ends.
 
 ![image](https://user-images.githubusercontent.com/53577819/210059859-be0135a8-7041-48ab-a2a5-daa8c86d04a1.png" ':size=500')
 
 In relation to the image above - 
-- The short red 18AWG wire goes from 12v VCC/+ -> 5V IN + 
-- The short black 18AWG wire goes from 12v GND/- -> 5V IN -  
-- The longer 26AWG black will be connected from 5v OUT- to the GND of expansion
-- The longer 26AWG red will be connected from 5v OUT+ to the 5V of expansion. 
+- The short red 22AWG wire goes from 12v VCC/+ -> 5V IN + 
+- The short black 22AWG wire goes from 12v GND/- -> 5V IN -  
+- The longer 22AWG black will be connected from 5v OUT- to the GND of expansion
+- The longer 22AWG red will be connected from 5v OUT+ to the 5V of expansion. 
 
 !>**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**
 
@@ -250,17 +250,19 @@ Image of the steam switch schematic:
 
 1. Move steam switch wire 4 to steam switch pole 1.
 2. Unplug and secure steam switch wire 5.
-3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 26AWG wires.
+3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 22AWG wires.
 
 <!-- tab:Gaggia New Classic (auto shut-off) -->
 Prepare a black splitter with below spec:
 1. Black splitter, 18AWG, 5cm, two male spade ends and one female spade end.
 
+
 1. Disconnect the two top poles (1 & 4).
 2. Use the splitter to bridge the connections you just removed and plug the female into pole 1.
-3. The connector with two white wires is not on the side of the orange wire (which is at the bottom) then make it so (to match schematics) - i.e move pole 5 connector into pole 2's location (should be two white wires going into the connector).
-4. Leave the single white wire disconnected which was in pole 2's location.
-3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 26AWG wires.
+3. Unplug and secure the connector with the single white wire (possibly on switch pole 2).
+4. Move the connector with two white wires on to switch pole 2. 
+5. Move the orange connector on to switch pole 3. 
+6. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 22AWG wires.
 
 Image for reference below:
 
@@ -269,8 +271,8 @@ Image for reference below:
 
 ### 2.1.6 Continuity Brew Detection
 Prepare 2 cables with the below spec:
-1. Green (not red or black), 26AWG, length from brew to Arduino, one exposed end, one female spade end.
-2. Black, 26AWG, length from brew to Arduino, one exposed end, one female spade end.
+1. Green (just not red or black), 22AWG, length from brew to Arduino, one exposed end, one female spade end.
+2. Black, 22AWG, length from brew to Arduino, one exposed end, one female spade end.
 
 As shown below plug your cables in to the circled connections on the brew switch:  
 
@@ -371,7 +373,7 @@ You can find the defined pins at the top of the .ino file.
 
 A suggestion on wiring; components that are inside same enclosure, the same connection can be linked i.e. solder a cable to the 5v pin then take the other end and solder to the 5V of the other component, from there take one cable to the Arduino. An alternative way is to  solder similar connections and apply heat-shrink before the exit to the machine then take one wire through the machine to the Arduino.
 
-?>Any wires going to the expansion board itself will be **26AWG**.
+?>Any wires going to the expansion board itself will be **22AWG**.
 ### 3.2.1 Power Delivery
 | 12v | 5V IN | 5V OUT | NANO | 
 | ---- | ---- | ---- | ---- |
@@ -400,12 +402,12 @@ All the other boards should be connected to the same GND / 5V plane as NANO.
 |VCC/5V | 5V |
 |GND | GND |
 ### 3.2.5 Steam Handling
-4 & 5 are the steam switch points from 2.0.4 Steam Config
+4 & 5 are the steam switch points from [2.1.5 Steam Handling](#_215-steam-handling)
 
 | GCP SWITCH | NANO |
-| --- | --- |
-| 4 | D7 | 
-| 5 | GND |
+| ----- | ---- |
+|   4   | D7 | 
+|   5   | GND |
 ### 3.2.6 Continuity Brew Detection
 | BREW SWITCH | NANO |
 | --- | --- |
