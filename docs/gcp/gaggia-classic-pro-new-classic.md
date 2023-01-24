@@ -157,7 +157,7 @@ If you decide to bypass your ECO PCB then use **power** switch poles 1 as LIVE a
 
 If you do not bypass you ECO PCB (just disable the timer) then LIVE is the top right of the **brew** switch and the GND is top right of the **power** switch.
 
-![eco-power](https://user-images.githubusercontent.com/53577819/210780103-6d9e9c78-6349-4a30-be2e-2298040e17a3.png':size=350')
+![eco-power](https://user-images.githubusercontent.com/53577819/210780103-6d9e9c78-6349-4a30-be2e-2298040e17a3.png ':size=350')
 <!-- tabs:end -->
 
 Prepare 2 more cables with the below spec:
@@ -261,23 +261,15 @@ Image of the steam switch schematic:
 3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 22AWG wires.
 
 <!-- tab:Gaggia New Classic (auto shut-off) -->
-Prepare a black splitter with below spec:
-1. Black splitter, 18AWG, 5cm, two male spade ends and one female spade end.
-
-
-1. Disconnect the two top poles (1 & 4).
-2. Use the splitter to bridge the connections you just removed and plug the female into pole 1.
-3. Unplug and secure the connector with the single white wire (possibly on switch pole 2).
-4. Move the connector with two white wires on to switch pole 2. 
+1. Unplug and secure the green connector (steam poles 1).
+2. Move the single black connector on switch pole 4 to switch pole 1.
+3. Unplug and secure the single white connector (possibly on switch pole 2 or 5).
+4. Move the double white connector to switch pole 2. 
 5. Move the orange connector on to switch pole 3. 
 6. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 22AWG wires.
 
-
 ![image](https://user-images.githubusercontent.com/53577819/214284971-76c6e9bb-f4ab-459d-aba1-740be164bca3.png ':size=350')
 
-Image for reference below:
-
-![image](https://user-images.githubusercontent.com/53577819/155016949-a070e451-2bd8-45e8-9acb-669b7cc28bab.jpg ':size=350')
 <!-- tabs:end -->
 
 ### 2.1.6 Continuity Brew Detection
