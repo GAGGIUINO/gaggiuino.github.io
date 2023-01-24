@@ -94,6 +94,11 @@ For each of the components we want to start guesstimating on cable length. You c
 ?>Please use the tables in [3.2.0 Component Wiring](#_320-component-wiring) for details on pin connections to the Arduino. 
 
 ## 2.1.0 Base Functionality
+
+> [!NOTE]
+> If you have the Gaggia New Classic (auto shut-off after 20mins), then it is highly recommended to fully bypass the ECO PCB that is on board by following [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) video. Instead of buying a new switch just remove the spring inside it.
+
+
 ### 2.1.1 Power Delivery
 Take off the top cover of your machine by unscrewing the 2 top screws. Be sure to mark your top left power connector so you don't mix them up (even though it's not that hard to understand which one is which).
 
@@ -143,11 +148,13 @@ Above translates to the following **(please be aware the image below has top con
 ![image](https://user-images.githubusercontent.com/53577819/154979529-eae513b2-00e3-40c9-a581-47be4da68edc.jpg ':size=350')
 
 <!-- tab: Gaggia New Classic (auto shut-off) -->
-?>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins.
+> [!NOTE]
+>Firstly refer to section [2.1.2 Disable ECO timer](#_212-disable-eco-timer). 
 
-Firstly refer to section [2.1.2 Disable ECO timer](#_212-disable-eco-timer). If you decide to remove/bypass your ECO PCB then use the **Gaggia Classic Pro** tab.
+If you decide to bypass your ECO PCB then use **power** switch poles 1 as LIVE and 4 as GND.
 
-The LIVE is the top right of the **brew** switch and the GND is top right of the **power** switch.
+
+If you do not bypass you ECO PCB (just disable the timer) then LIVE is the top right of the **brew** switch and the GND is top right of the **power** switch.
 
 ![eco-power](https://user-images.githubusercontent.com/53577819/210780103-6d9e9c78-6349-4a30-be2e-2298040e17a3.png ':size=350')
 <!-- tabs:end -->
@@ -190,7 +197,7 @@ This step is straight forward, with the 18AWG cable, bridge the top and bottom (
 
 ![image](https://user-images.githubusercontent.com/53577819/154989122-6237e1af-62d1-4289-901c-47c69ea3b1b9.jpg ':size=350')
 
-?>If you plan on going through the GAGGIUINO PCB install, it is recommended to get rid of or completely [bypass](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) the ECO PCB. Steps for removing the ECO PCB are not provided as there are other resources on the web on how to do this. It's also pretty trivial. **If you do get rid of the ECO PCB then follow standard Gaggia Classic Pro instructions.**
+?>If you plan on going through the GAGGIUINO PCB install, it is recommended to get rid of or completely the ECO PCB by following [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s)  video. Steps for removing the ECO PCB are not provided as there are other resources on the web on how to do this. It's also pretty trivial. **If you do get rid of the ECO PCB then follow standard Gaggia Classic Pro instructions.**
 
 ### 2.1.3 Thermocouple MAX6675
 Prepare the following cable to the below spec:
