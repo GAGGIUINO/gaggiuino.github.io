@@ -141,18 +141,18 @@ By way of context, if looking inside the machine from the back, the left of the 
 
 On the power switch - wire in the middle **left** as LIVE and middle **right** as GND.
 
-![image](https://user-images.githubusercontent.com/53577819/154979422-f78d41c4-87f4-4474-ab68-a3466d5e9e5e.jpeg':size=350')
+![image](https://user-images.githubusercontent.com/53577819/154979422-f78d41c4-87f4-4474-ab68-a3466d5e9e5e.jpeg ':size=350')
 
 Above translates to the following **(please be aware the image below has top connectors removed for clarity)**:
 
-![image](https://user-images.githubusercontent.com/53577819/154979529-eae513b2-00e3-40c9-a581-47be4da68edc.jpg':size=350')
+![image](https://user-images.githubusercontent.com/53577819/154979529-eae513b2-00e3-40c9-a581-47be4da68edc.jpg ':size=350')
 
 <!-- tab: Gaggia New Classic (auto shut-off) -->
 > [!NOTE]
 >Firstly refer to section [2.1.2 Disable ECO timer](#_212-disable-eco-timer). 
 
 If you decide to bypass your ECO PCB then use **power** switch poles 1 as LIVE and 4 as GND.
-![image](https://user-images.githubusercontent.com/53577819/214280699-7a5a3a9e-48e6-4fcf-891c-fe0a9311796e.png':size=350')
+![image](https://user-images.githubusercontent.com/53577819/214280699-7a5a3a9e-48e6-4fcf-891c-fe0a9311796e.png ':size=350')
 
 
 If you do not bypass you ECO PCB (just disable the timer) then LIVE is the top right of the **brew** switch and the GND is top right of the **power** switch.
