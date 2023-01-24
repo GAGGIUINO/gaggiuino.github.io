@@ -272,6 +272,9 @@ Prepare a black splitter with below spec:
 5. Move the orange connector on to switch pole 3. 
 6. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 22AWG wires.
 
+
+![image](https://user-images.githubusercontent.com/53577819/214284971-76c6e9bb-f4ab-459d-aba1-740be164bca3.png ':size=350')
+
 Image for reference below:
 
 ![image](https://user-images.githubusercontent.com/53577819/155016949-a070e451-2bd8-45e8-9acb-669b7cc28bab.jpg ':size=350')
