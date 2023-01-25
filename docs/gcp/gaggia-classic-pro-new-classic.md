@@ -80,7 +80,7 @@ If everything looks good, move on to Installing into the Gaggia Classic Pro
 
 **If all the above works as expected you're ready to install it inside the machine.**
 
-# 2.0.0 INSTALL
+# 2.0.0 Install
 ***
 !>**Do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or goldfish and it will be entirely your fault!**
 ***
@@ -96,8 +96,7 @@ For each of the components we want to start guesstimating on cable length. You c
 ## 2.1.0 Base Functionality
 
 > [!NOTE]
-> If you have the Gaggia New Classic (auto shut-off after 20mins), then it is highly recommended to fully bypass the ECO PCB that is on board by following [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) video. Instead of buying a new switch just remove the spring inside it.
-
+> If you have the GAGGIA New Classic 2018/2019 (auto shut-off after 20mins), then it is highly recommended to fully bypass the ECO PCB that is on board by following [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) video. Instead of buying a new switch just remove the spring inside it.
 
 ### 2.1.1 Power Delivery
 Take off the top cover of your machine by unscrewing the 2 top screws. Be sure to mark your top left power connector so you don't mix them up (even though it's not that hard to understand which one is which).
@@ -154,7 +153,6 @@ Above translates to the following **(please be aware the image below has top con
 If you decide to bypass your ECO PCB then use **power** switch poles 1 as LIVE and 4 as GND.
 ![image](https://user-images.githubusercontent.com/53577819/214280699-7a5a3a9e-48e6-4fcf-891c-fe0a9311796e.png ':size=350')
 
-
 If you do not bypass you ECO PCB (just disable the timer) then LIVE is the top right of the **brew** switch and the GND is top right of the **power** switch.
 
 ![eco-power](https://user-images.githubusercontent.com/53577819/210780103-6d9e9c78-6349-4a30-be2e-2298040e17a3.png ':size=350')
@@ -198,7 +196,7 @@ This step is straight forward, with the 18AWG cable, bridge the top and bottom (
 
 ![image](https://user-images.githubusercontent.com/53577819/154989122-6237e1af-62d1-4289-901c-47c69ea3b1b9.jpg ':size=350')
 
-?>If you plan on going through the GAGGIUINO PCB install, it is recommended to get rid of or completely the ECO PCB by following [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s)  video. Steps for removing the ECO PCB are not provided as there are other resources on the web on how to do this. It's also pretty trivial. **If you do get rid of the ECO PCB then follow standard Gaggia Classic Pro instructions.**
+?>If you plan on going through the GAGGIUINO PCB install, it is recommended to get rid of or completely bypass the ECO PCB by following [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) video. Steps for physically removing the ECO PCB are not provided as there are other resources on the web on how to do this.
 
 ### 2.1.3 Thermocouple MAX6675
 Prepare the following cable to the below spec:
@@ -369,12 +367,12 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 
 * [GAGGIA New Classic 2018/19](https://user-images.githubusercontent.com/53577819/214380779-ec53b99b-2b7c-4781-acdc-90c3879353c0.png ':size=350')
 
-* [GAGGIA New Classic 2018/19 **Nano** wiring](https://user-images.githubusercontent.com/53577819/214559884-e290cae7-68c3-4f4a-8479-f0de6e9591c1.png ':size=350')
+* [GAGGIA New Classic 2018/19 **Nano** Wiring](https://user-images.githubusercontent.com/53577819/214559884-e290cae7-68c3-4f4a-8479-f0de6e9591c1.png ':size=350')
 
-* [GAGGIA Classic Pro **Nano** wiring](https://user-images.githubusercontent.com/53577819/210629004-f423f988-cf88-4fae-8f3f-103a8cfbe7e4.png ':size=350')
+* [GAGGIA Classic Pro **Nano** Wiring](https://user-images.githubusercontent.com/53577819/210629004-f423f988-cf88-4fae-8f3f-103a8cfbe7e4.png ':size=350')
 
 **Diagrams:**
-* [GAGGIA Classic Pro **Nano** wiring](https://user-images.githubusercontent.com/53577819/210629022-76457adc-3575-4a9c-8d6f-a8f7bc18fd2a.png ':size=350')
+* [GAGGIA Classic Pro **Nano** Wiring](https://user-images.githubusercontent.com/53577819/210629022-76457adc-3575-4a9c-8d6f-a8f7bc18fd2a.png ':size=350')
 
 ## 3.2.0 Component Wiring
 You can find the defined pins at the top of the .ino file.
