@@ -118,3 +118,9 @@ For the GCP, the LV connection side to the relay and switch are the same as the 
 * BREW TOP HV - Disconnect the top HV cable from brew switch pole 4, connect to relay NO.  
 
 ![relay-gcp](https://user-images.githubusercontent.com/53577819/210641843-8c41ea6c-78d7-4233-b2db-fbc5449ae8d2.png)
+
+# Schematic
+![GCP_ECO_STM](https://user-images.githubusercontent.com/53577819/214559644-9ead4c9e-6405-4710-8965-148e731bea3b.png)
+
+
+
