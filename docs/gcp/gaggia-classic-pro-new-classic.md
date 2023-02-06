@@ -96,7 +96,7 @@ For each of the components we want to start guesstimating on cable length. You c
 ## 2.1.0 Base Functionality
 
 > [!NOTE]
-> If you have the GAGGIA New Classic 2018/2019 (auto shut-off after 20mins), then you will need to fully bypass the ECO PCB that is on board by following [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) video. Instead of buying a new switch just remove the spring inside it. Further steps are shown here [ECO  bypass](#_212-bypass-eco-board-and-disable-eco-timer).
+> If you have the GAGGIA New Classic 2018/2019 (auto shut-off after 20mins), then you will need to fully bypass the ECO PCB that is on board by following [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) video. Instead of buying a new switch just remove the spring inside it. Further steps are shown here [Bypass ECO Board](#_212-bypass-eco-board).
 
 ### 2.1.1 Power Delivery
 Take off the top cover of your machine by unscrewing the 2 top screws. Be sure to mark your top left power connector so you don't mix them up (even though it's not that hard to understand which one is which).
@@ -148,7 +148,7 @@ Above translates to the following **(please be aware the image below has top con
 
 <!-- tab: Gaggia New Classic (auto shut-off) -->
 > [!NOTE]
->Firstly refer to section [2.1.2 Bypass ECO Board](#212_bypass-eco-board-and-disable-eco-timer212-disable-eco-timer). 
+>Firstly refer to section [2.1.2 Bypass ECO Board](#_212-bypass-eco-board). 
 
 After bypassing the eco board you can then use **power** switch poles 1 as LIVE and 4 as GND.
 
@@ -181,8 +181,8 @@ In relation to the image above -
 !>**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**
 
 ?>Refer to the [3.2.1 Component Wiring](#_321-power-delivery) section on wiring to the arduino.
-### 2.1.2 Bypass ECO Board and Disable ECO timer
-!>**SKIP TO 2.1.3 IF YOU DO NOT HAVE AN ECO MACHINE** 
+### 2.1.2 Bypass ECO Board
+!>**SKIP IF YOU DO NOT HAVE AN ECO MACHINE** 
 
 ?>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins. This requires you to look at the ECO [schematics](#_310-schematics-and-diagrams). 
 
