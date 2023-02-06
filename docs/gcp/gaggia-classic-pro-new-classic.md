@@ -152,7 +152,7 @@ Above translates to the following **(please be aware the image below has top con
 
 After bypassing the eco board you can then use **power** switch poles 1 as LIVE and 4 as GND.
 
-![image](https://user-images.githubusercontent.com/53577819/214280699-7a5a3a9e-48e6-4fcf-891c-fe0a9311796e.png ':size=350')
+<img width="470" alt="image" src="https://user-images.githubusercontent.com/53577819/217042451-28d73f79-0eda-45e0-a6f5-f5784cfe840f.png">
 
 <!-- tabs:end -->
 
@@ -374,7 +374,7 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 
 * [GAGGIA New Classic 2018/19](https://user-images.githubusercontent.com/53577819/214380779-ec53b99b-2b7c-4781-acdc-90c3879353c0.png ':size=350')
 
-* [GAGGIA New Classic 2018/19 **Nano** Wiring](https://user-images.githubusercontent.com/53577819/214559884-e290cae7-68c3-4f4a-8479-f0de6e9591c1.png ':size=350')
+* [GAGGIA New Classic 2018/19 **Nano** Wiring](https://user-images.githubusercontent.com/53577819/217041805-25ea7206-7511-4900-a150-43e994e7252e.png)
 
 * [GAGGIA Classic Pro **Nano** Wiring](https://user-images.githubusercontent.com/53577819/210629004-f423f988-cf88-4fae-8f3f-103a8cfbe7e4.png ':size=350')
 
