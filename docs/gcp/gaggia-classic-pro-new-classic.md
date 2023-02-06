@@ -96,7 +96,7 @@ For each of the components we want to start guesstimating on cable length. You c
 ## 2.1.0 Base Functionality
 
 > [!NOTE]
-> If you have the GAGGIA New Classic 2018/2019 (auto shut-off after 20mins), then it is highly recommended to fully bypass the ECO PCB that is on board by following [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) video. Instead of buying a new switch just remove the spring inside it.
+> If you have the GAGGIA New Classic 2018/2019 (auto shut-off after 20mins), then you will need to fully bypass the ECO PCB that is on board by following [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) video. Instead of buying a new switch just remove the spring inside it. Further steps are shown here [ECO  bypass](#_212-bypass-eco-board-and-disable-eco-timer).
 
 ### 2.1.1 Power Delivery
 Take off the top cover of your machine by unscrewing the 2 top screws. Be sure to mark your top left power connector so you don't mix them up (even though it's not that hard to understand which one is which).
@@ -148,14 +148,12 @@ Above translates to the following **(please be aware the image below has top con
 
 <!-- tab: Gaggia New Classic (auto shut-off) -->
 > [!NOTE]
->Firstly refer to section [2.1.2 Disable ECO timer](#_212-disable-eco-timer). 
+>Firstly refer to section [2.1.2 Bypass ECO Board](#212_bypass-eco-board-and-disable-eco-timer212-disable-eco-timer). 
 
-If you decide to bypass your ECO PCB then use **power** switch poles 1 as LIVE and 4 as GND.
+After bypassing the eco board you can then use **power** switch poles 1 as LIVE and 4 as GND.
+
 ![image](https://user-images.githubusercontent.com/53577819/214280699-7a5a3a9e-48e6-4fcf-891c-fe0a9311796e.png ':size=350')
 
-If you do not bypass you ECO PCB (just disable the timer) then LIVE is the top right of the **brew** switch and the GND is top right of the **power** switch.
-
-![eco-power](https://user-images.githubusercontent.com/53577819/210780103-6d9e9c78-6349-4a30-be2e-2298040e17a3.png ':size=350')
 <!-- tabs:end -->
 
 Prepare 2 more cables with the below spec:
@@ -183,20 +181,29 @@ In relation to the image above -
 !>**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**
 
 ?>Refer to the [3.2.1 Component Wiring](#_321-power-delivery) section on wiring to the arduino.
-### 2.1.2 Disable ECO timer
+### 2.1.2 Bypass ECO Board and Disable ECO timer
 !>**SKIP TO 2.1.3 IF YOU DO NOT HAVE AN ECO MACHINE** 
 
-?>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins. This requires you to look at the [schematics](#_310-schematics-and-diagrams). 
+?>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins. This requires you to look at the ECO [schematics](#_310-schematics-and-diagrams). 
 
-Prepare the following cable to the below spec:
+Prepare the following cables to the below spec:
 
-1. Red, 18AWG, 5cm, two male spade ends.
+1. Red, 16/18AWG, 5cm, male spade ends.
 
-This step is straight forward, with the 18AWG cable, bridge the top and bottom (switch poles 1 & 2) that sit on the left of the brew switch. This will disable the 20mins timer. It does not however completely bypass ECO board. 
+_Length for below two cables is to cover the distance from the back to the front of machine + extra._
+
+2. Red 16/18AWG, female spade ends.
+3. Black 16/18AWG female spade ends.
+
+With cable #1, on the brew switch remove switch poles 1 & 2 that sit on the left of the brew switch and bridge. This will disable the 20mins timer. It does not however completely bypass ECO board. 
 
 ![image](https://user-images.githubusercontent.com/53577819/154989122-6237e1af-62d1-4289-901c-47c69ea3b1b9.jpg ':size=350')
 
-?>If you plan on going through the GAGGIUINO PCB install, it is recommended to get rid of or completely bypass the ECO PCB by following [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) video. Steps for physically removing the ECO PCB are not provided as there are other resources on the web on how to do this.
+With cable #2 and #3 remove the L and N line from the back of the machine and connect to power switch poles 2 (LIVE) and 5 (NEUTRAL).
+
+?>If you're struggling to follow schematics you can follow [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) video. Steps for physically removing the ECO PCB are not provided as there are other resources on the web on how to do this.
+
+?>Remember to remove the middle spring from your power switch.
 
 ### 2.1.3 Thermocouple MAX6675
 Prepare the following cable to the below spec:
