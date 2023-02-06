@@ -374,9 +374,9 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 
 * [GAGGIA New Classic 2018/19](https://user-images.githubusercontent.com/53577819/214380779-ec53b99b-2b7c-4781-acdc-90c3879353c0.png ':size=350')
 
-* [GAGGIA New Classic 2018/19 **Nano** Wiring](https://user-images.githubusercontent.com/53577819/217041805-25ea7206-7511-4900-a150-43e994e7252e.png)
+* [GAGGIA New Classic 2018/19 **Nano** Wiring](https://user-images.githubusercontent.com/53577819/217092632-8ad5c7cd-0fb0-4f7e-a55a-f0ba203be7ef.png)
 
-* [GAGGIA Classic Pro **Nano** Wiring](https://user-images.githubusercontent.com/53577819/210629004-f423f988-cf88-4fae-8f3f-103a8cfbe7e4.png ':size=350')
+* [GAGGIA Classic Pro **Nano** Wiring](https://user-images.githubusercontent.com/53577819/217092639-3cc8c026-dc5f-4909-a851-9fa31a379eb4.png)
 
 **Diagrams:**
 * [GAGGIA Classic Pro **Nano** Wiring](https://user-images.githubusercontent.com/53577819/210629022-76457adc-3575-4a9c-8d6f-a8f7bc18fd2a.png ':size=350')
