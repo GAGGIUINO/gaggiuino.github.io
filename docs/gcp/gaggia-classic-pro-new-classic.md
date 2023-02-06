@@ -1,6 +1,6 @@
-***
-!>**Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project.**
-***
+> [!Warning]
+> Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project.
+
 # 1.0.0 TEST INSTALL
 We are not installing inside the machine yet. We need to ensure our nano and expansion board are soldered to a good standard. We just want to test as much as we can to make sure we've not got any duds from a base functionality point of view.
 
