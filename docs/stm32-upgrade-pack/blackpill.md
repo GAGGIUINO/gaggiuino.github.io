@@ -101,10 +101,41 @@ The nano and blackpill/stm32 have different pin setups on their respective board
 |   GND             |   GND                 |   GND                     |   C13                 |   RXO                     |   valvePin                    |
 |                   |   VIN                 |   3V3                     |   VB                  |   TXT                     |                               |   
 
-## Schematics and Diagrams
-* [GAGGIA New Classic 2018/19 **STM** Wiring](https://user-images.githubusercontent.com/53577819/214559644-9ead4c9e-6405-4710-8965-148e731bea3b.png)
+**DIAGRAM**
+   
+![STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/209090732-28ab3147-38c6-4571-8668-803e8d9155e9.png)
 
-* [STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/209090732-28ab3147-38c6-4571-8668-803e8d9155e9.png)
+## SOFTWARE INSTALLATION
+
+ArduinoIDE will no longer work for building and uploading the software to the board as it was done for the nano. You will need to download the official STM32 drivers or the STM32 cube programmer and use VSCode and the PlatformIO extension to upload to the STM32.
+
+- Setup VSCode with platformio as shown in the video linked below.  
+- 
+[VSCode and platformio setup](https://discord.com/channels/890339612441063494/922092497847582721/997109453994328075)
+
+- After pulling the project, build and then flash from tasks (shown in the figure below) based on your hardware and flashing configuration. If you do not have an STLink, then choose the appropriate DFU task and enter DFU mode on the STM32 by plugging in the board, hold boot, and then press reset and let go of boot.
+
+![Platformio Project Tasks](https://user-images.githubusercontent.com/109426580/210403570-5a0093b2-5f5b-4b2b-af6e-bbc652c802b2.png)
+
+Consider buying an ST-Link v2 to more easily upgrade the firmware onto the Blackpill. They can be found on eBay, Amazon and Ali. You will need to solder the 4 angled pins to the board and connect the correct corresponding pins to the stm32 when updating with this tool.
+
+!> Be warned DFU mode falshing isn't recommended due to it's very finicky nature, do your research individually if you can't be bothered to shed 2$ for a STLink adapter.
+
+![ST-Link](https://user-images.githubusercontent.com/80347096/191400915-6ed2a991-5f0c-4d2a-b52d-aad29978c0d1.jpg)
+
+## RELAY INSTALLATION
+
+Installing the relay allows the Gaggiuino to perform advanced functions (in conjunction with other necessary hardware): 
+
+- Stop the pump during brew for stop-on-weight (currently requires scales) 
+
+- Pump assist during steaming to maintain extended steam pressure (requires pressure sensor) 
+
+- Pump assist during descale program. 
+
+Installing the relay is relatively simple as it is essentially a drop-in replacement for the optocoupler on GC and just an additional component for GCP. The below diagram demonstrates the install with the GC switch panel, relay and related pins, the installation is very similar for both GC and GCP, the goal is to move all brew switch HV wires to the relay HV ports, then on the GC/GCP brew switch only LV wires should be connected when the relay is fully wired.
+
+![Figure 6 - Relay diagram for the GCP](https://user-images.githubusercontent.com/80347096/191401329-cdcc0a6a-b414-4c01-bbc8-07d16a5a4282.png)
 
 
 
