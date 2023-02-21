@@ -1,6 +1,6 @@
-***
-!>**Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project.**
-***
+> [!Warning]
+> Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project.
+
 # 1.0.0 TEST INSTALL
 We are not installing inside the machine yet. We need to ensure our nano and expansion board are soldered to a good standard. We just want to test as much as we can to make sure we've not got any duds from a base functionality point of view.
 
@@ -28,7 +28,7 @@ Make sure the terminals are correct way round and place the Arduino into the exp
 
 !>**Attention! You are not soldering the Arduino to the expansion board itself. You are only soldering the pins to the Arduino and pins to the expansion board. The Arduino then just sits/connects into the expansion board pins.**
 
-?>Any wires going to the expansion board itself will be **26AWG**.
+?>Any wires going to the expansion board itself will be **22AWG**.
 
 ## 1.0.2 Thermocouple MAX6675 Config
 You should have bought and received a MAX6675 board which comes with a test thermocouple. We're swapping this for the **C-M4 screw K-Type thermocouple sensor** as this is what will be replacing the original that's in the machine.
@@ -80,7 +80,7 @@ If everything looks good, move on to Installing into the Gaggia Classic Pro
 
 **If all the above works as expected you're ready to install it inside the machine.**
 
-# 2.0.0 INSTALL
+# 2.0.0 Install
 ***
 !>**Do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or goldfish and it will be entirely your fault!**
 ***
@@ -94,6 +94,10 @@ For each of the components we want to start guesstimating on cable length. You c
 ?>Please use the tables in [3.2.0 Component Wiring](#_320-component-wiring) for details on pin connections to the Arduino. 
 
 ## 2.1.0 Base Functionality
+
+> [!NOTE]
+> If you have the GAGGIA New Classic 2018/2019 (auto shut-off after 20mins), then you will need to fully bypass the ECO PCB that is on board by following [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) video. Instead of buying a new switch just remove the spring inside it. Further steps are shown here [Bypass ECO Board](#_212-bypass-eco-board).
+
 ### 2.1.1 Power Delivery
 Take off the top cover of your machine by unscrewing the 2 top screws. Be sure to mark your top left power connector so you don't mix them up (even though it's not that hard to understand which one is which).
 
@@ -143,54 +147,63 @@ Above translates to the following **(please be aware the image below has top con
 ![image](https://user-images.githubusercontent.com/53577819/154979529-eae513b2-00e3-40c9-a581-47be4da68edc.jpg ':size=350')
 
 <!-- tab: Gaggia New Classic (auto shut-off) -->
-?>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins.
+> [!NOTE]
+>Firstly refer to section [2.1.2 Bypass ECO Board](#_212-bypass-eco-board). 
 
-Firstly refer to section [2.1.2 Disable ECO timer](#_212-disable-eco-timer). If you decide to remove/bypass your ECO PCB then use the **Gaggia Classic Pro** tab.
+After bypassing the eco board you can then use **power** switch poles 1 as LIVE and 4 as GND.
 
-The LIVE is the top right of the **brew** switch and the GND is top right of the **power** switch.
+<img width="470" alt="image" src="https://user-images.githubusercontent.com/53577819/217042451-28d73f79-0eda-45e0-a6f5-f5784cfe840f.png">
 
-![eco-power](https://user-images.githubusercontent.com/53577819/210780103-6d9e9c78-6349-4a30-be2e-2298040e17a3.png ':size=350')
 <!-- tabs:end -->
 
 Prepare 2 more cables with the below spec:
-1. Black, 18AWG, about 15cm, female spade end, exposed end.
-2. Red, 18AWG, about 15cm, female spade end, exposed end.
+1. Black, 22AWG, about 15cm, female spade end, exposed end.
+2. Red, 22AWG, about 15cm, female spade end, exposed end.
 
 Connect the female end to the male end of the splitter cable from above step (match the colours).
 
 On the 12v PSU the 2 AC IN ports will be where the exposed end of your red or black piggyback cable go, it doesn't matter which way round (yes, you need to fiddle about getting wires in and solder correctly - recommended to trim, twist, tin and apply heat shrink).
 
 Prepare more cables with the below spec:
-1. Black, 18AWG, about ~10cm, exposed ends.
-2. Red, 18AWG, about ~10cm, exposed ends.
-3. Black, 26AWG, about ~25cm, exposed ends.
-4. Red, 26AWG, about ~25cm, exposed ends.
+1. Black, 22AWG, about ~10cm, exposed ends.
+2. Red, 22AWG, about ~10cm, exposed ends.
+3. Black, 22AWG, about ~25cm, exposed ends.
+4. Red, 22AWG, about ~25cm, exposed ends.
 
 ![image](https://user-images.githubusercontent.com/53577819/210059859-be0135a8-7041-48ab-a2a5-daa8c86d04a1.png" ':size=500')
 
 In relation to the image above - 
-- The short red 18AWG wire goes from 12v VCC/+ -> 5V IN + 
-- The short black 18AWG wire goes from 12v GND/- -> 5V IN -  
-- The longer 26AWG black will be connected from 5v OUT- to the GND of expansion
-- The longer 26AWG red will be connected from 5v OUT+ to the 5V of expansion. 
+- The short red 22AWG wire goes from 12v VCC/+ -> 5V IN + 
+- The short black 22AWG wire goes from 12v GND/- -> 5V IN -  
+- The longer 22AWG black will be connected from 5v OUT- to the GND of expansion
+- The longer 22AWG red will be connected from 5v OUT+ to the 5V of expansion. 
 
 !>**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**
 
 ?>Refer to the [3.2.1 Component Wiring](#_321-power-delivery) section on wiring to the arduino.
-### 2.1.2 Disable ECO timer
-!>**SKIP TO 2.1.3 IF YOU DO NOT HAVE AN ECO MACHINE** 
+### 2.1.2 Bypass ECO Board
+!>**SKIP IF YOU DO NOT HAVE AN ECO MACHINE** 
 
-?>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins. This requires you to look at the [schematics](#_310-schematics-and-diagrams). 
+?>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins. This requires you to look at the ECO [schematics](#_310-schematics-and-diagrams). 
 
-Prepare the following cable to the below spec:
+Prepare the following cables to the below spec:
 
-1. Red, 18AWG, 5cm, two male spade ends.
+1. Red, 16/18AWG, 5cm, male spade ends.
 
-This step is straight forward, with the 18AWG cable, bridge the top and bottom (switch poles 1 & 2) that sit on the left of the brew switch. This will disable the 20mins timer. It does not however completely bypass ECO board. 
+_Length for below two cables is to cover the distance from the back to the front of machine + extra._
+
+2. Red 16/18AWG, female spade ends.
+3. Black 16/18AWG female spade ends.
+
+With cable #1, on the brew switch remove switch poles 1 & 2 that sit on the left of the brew switch and bridge. This will disable the 20mins timer. It does not however completely bypass ECO board. 
 
 ![image](https://user-images.githubusercontent.com/53577819/154989122-6237e1af-62d1-4289-901c-47c69ea3b1b9.jpg ':size=350')
 
-?>If you plan on going through the GAGGIUINO PCB install, it is recommended to get rid of or completely [bypass](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) the ECO PCB. Steps for removing the ECO PCB are not provided as there are other resources on the web on how to do this. It's also pretty trivial. **If you do get rid of the ECO PCB then follow standard Gaggia Classic Pro instructions.**
+With cable #2 and #3 remove the L and N line from the back of the machine and connect to power switch poles 2 (LIVE) and 5 (NEUTRAL).
+
+?>If you're struggling to follow schematics you can follow [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) video. Steps for physically removing the ECO PCB are not provided as there are other resources on the web on how to do this.
+
+?>Remember to remove the middle spring from your power switch.
 
 ### 2.1.3 Thermocouple MAX6675
 Prepare the following cable to the below spec:
@@ -250,27 +263,24 @@ Image of the steam switch schematic:
 
 1. Move steam switch wire 4 to steam switch pole 1.
 2. Unplug and secure steam switch wire 5.
-3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 26AWG wires.
+3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 22AWG wires.
 
 <!-- tab:Gaggia New Classic (auto shut-off) -->
-Prepare a black splitter with below spec:
-1. Black splitter, 18AWG, 5cm, two male spade ends and one female spade end.
+1. Unplug and secure the green connector (steam poles 1).
+2. Move the single black connector on switch pole 4 to switch pole 1.
+3. Unplug and secure the single white connector (possibly on switch pole 2 or 5).
+4. Move the double white connector to switch pole 2. 
+5. Move the orange connector on to switch pole 3. 
+6. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 22AWG wires.
 
-1. Disconnect the two top poles (1 & 4).
-2. Use the splitter to bridge the connections you just removed and plug the female into pole 1.
-3. The connector with two white wires is not on the side of the orange wire (which is at the bottom) then make it so (to match schematics) - i.e move pole 5 connector into pole 2's location (should be two white wires going into the connector).
-4. Leave the single white wire disconnected which was in pole 2's location.
-3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 26AWG wires.
+![image](https://user-images.githubusercontent.com/53577819/214284971-76c6e9bb-f4ab-459d-aba1-740be164bca3.png ':size=350')
 
-Image for reference below:
-
-![image](https://user-images.githubusercontent.com/53577819/155016949-a070e451-2bd8-45e8-9acb-669b7cc28bab.jpg ':size=350')
 <!-- tabs:end -->
 
 ### 2.1.6 Continuity Brew Detection
 Prepare 2 cables with the below spec:
-1. Green (not red or black), 26AWG, length from brew to Arduino, one exposed end, one female spade end.
-2. Black, 26AWG, length from brew to Arduino, one exposed end, one female spade end.
+1. Green (just not red or black), 22AWG, length from brew to Arduino, one exposed end, one female spade end.
+2. Black, 22AWG, length from brew to Arduino, one exposed end, one female spade end.
 
 As shown below plug your cables in to the circled connections on the brew switch:  
 
@@ -361,17 +371,22 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 ?>**PLEASE NOTE THE SCHEMATIC DRAWINGS HAVE BEEN DRAWN FLIPPED AND UPSIDE DOWN. BLAME GAGGIA.**
 
 **Schematics:**
-* [GAGGIA Classic Pro **Nano** wiring](https://user-images.githubusercontent.com/53577819/210629004-f423f988-cf88-4fae-8f3f-103a8cfbe7e4.png ':size=350')
+
+* [GAGGIA New Classic 2018/19](https://user-images.githubusercontent.com/53577819/214380779-ec53b99b-2b7c-4781-acdc-90c3879353c0.png ':size=350')
+
+* [GAGGIA New Classic 2018/19 **Nano** Wiring](https://user-images.githubusercontent.com/53577819/217092632-8ad5c7cd-0fb0-4f7e-a55a-f0ba203be7ef.png)
+
+* [GAGGIA Classic Pro **Nano** Wiring](https://user-images.githubusercontent.com/53577819/217093675-cd4e3f2c-ac7e-457b-a18d-0c86105a8f7e.png)
 
 **Diagrams:**
-* [GAGGIA Classic Pro **Nano** wiring](https://user-images.githubusercontent.com/53577819/210629022-76457adc-3575-4a9c-8d6f-a8f7bc18fd2a.png ':size=350')
+* [GAGGIA Classic Pro **Nano** Wiring](https://user-images.githubusercontent.com/53577819/210629022-76457adc-3575-4a9c-8d6f-a8f7bc18fd2a.png ':size=350')
 
 ## 3.2.0 Component Wiring
 You can find the defined pins at the top of the .ino file.
 
 A suggestion on wiring; components that are inside same enclosure, the same connection can be linked i.e. solder a cable to the 5v pin then take the other end and solder to the 5V of the other component, from there take one cable to the Arduino. An alternative way is to  solder similar connections and apply heat-shrink before the exit to the machine then take one wire through the machine to the Arduino.
 
-?>Any wires going to the expansion board itself will be **26AWG**.
+?>Any wires going to the expansion board itself will be **22AWG**.
 ### 3.2.1 Power Delivery
 | 12v | 5V IN | 5V OUT | NANO | 
 | ---- | ---- | ---- | ---- |
@@ -400,12 +415,12 @@ All the other boards should be connected to the same GND / 5V plane as NANO.
 |VCC/5V | 5V |
 |GND | GND |
 ### 3.2.5 Steam Handling
-4 & 5 are the steam switch points from 2.0.4 Steam Config
+4 & 5 are the steam switch points from [2.1.5 Steam Handling](#_215-steam-handling)
 
 | GCP SWITCH | NANO |
-| --- | --- |
-| 4 | D7 | 
-| 5 | GND |
+| ----- | ---- |
+|   4   | D7 | 
+|   5   | GND |
 ### 3.2.6 Continuity Brew Detection
 | BREW SWITCH | NANO |
 | --- | --- |
