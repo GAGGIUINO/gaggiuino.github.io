@@ -45,6 +45,8 @@ ArduinoIDE will no longer work for building and uploading the software to the bo
 
 - Make sure you have git installed - https://www.git-scm.com/
 
+- Make sure to update your version of python to the latest - https://www.python.org/downloads/ 
+
 - After pulling the project, build and then flash from tasks (shown in the figure below) based on your hardware and flashing configuration. If you do not have an STLink, then choose the appropriate DFU task and enter DFU mode on the STM32 by plugging in the board, hold boot, and then press reset and let go of boot.
 
 ![Platformio Project Tasks](https://user-images.githubusercontent.com/80347096/191400246-b9dd4b1e-4c5f-4e42-a48a-41a0145d0a8e.png)
@@ -71,7 +73,7 @@ Installing the relay is relatively simple as it is essentially a drop-in replace
 
 ![Figure 6 - Relay diagram for the GCP](https://user-images.githubusercontent.com/80347096/191401329-cdcc0a6a-b414-4c01-bbc8-07d16a5a4282.png)
 
-For the GCP, the LV connection side to the relay and switch are the same as the diagram above. The HV wires on the brew switch are removed and connected to the COM and NO HV connectors on the relay - thus leaving no connections on the right side of the brew switch, plugged into it. See [Schematics](#_schematics-and-diagrams).
+For the GCP, the LV connection side to the relay and switch are the same as the diagram above. The HV wires on the brew switch are removed and connected to the COM and NO HV connectors on the relay - thus leaving no connections on the right side of the brew switch, plugged into it. See [Schematics](#schematics-and-diagrams).
 
 * BREW MIDDLE HV - Disconnect the middle HV cable from brew switch common pole 5, connect to relay COM.
 * BREW TOP HV - Disconnect the top HV cable from brew switch pole 4, connect to relay NO.  
@@ -99,6 +101,6 @@ The nano and blackpill/stm32 have different pin setups on their respective board
 |   GND             |   GND                 |   GND                     |   C13                 |   RXO                     |   valvePin                    |
 |                   |   VIN                 |   3V3                     |   VB                  |   TXT                     |                               |   
 
-## Diagram
+## Schematics and Diagrams
    
 ![STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/209090732-28ab3147-38c6-4571-8668-803e8d9155e9.png)

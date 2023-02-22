@@ -141,7 +141,7 @@ _Will enable only brew and steam temperature control_
 _Will enable pump control based on active pressure feedback, this enables pressure and flow profiling as well as other functionality._
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-* [O-Ring - OD 11mm CS 1.5mm](https://www.aliexpress.com/item/1005002102273390.html)
+  * [O Ring - OD 11mm](https://www.aliexpress.com/item/1005003662931218.html) 
 
   <!-- tabs:start -->
   <!-- tab:Gaggia Classic -->
@@ -183,7 +183,8 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-* [O-Ring - OD 11mm CS 1.5mm](https://www.aliexpress.com/item/1005002102273390.html)
+  * [O Ring - OD 11mm](https://www.aliexpress.com/item/1005003662931218.html) 
+  
   <!-- tabs:start -->
   <!-- tab:Gaggia Classic -->
   * [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)

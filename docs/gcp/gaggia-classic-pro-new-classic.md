@@ -228,6 +228,8 @@ Now unscrew the original thermostat and replace with the m4 brass thermocouple. 
 
 ![image](https://user-images.githubusercontent.com/53577819/154984016-714b6532-e31d-42d3-b2ee-cf064487db66.jpeg ':size=350')
 
+?>Consider installing the pressure sensor now whilst the boiler is out [Pressure Transducer](#_222-pressure-transducer).
+
 Now re-attach the boiler.
 
 !>**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**

@@ -1,21 +1,26 @@
-?> **The PCB can only be ordered through discord where the ordering process can be monitored and any possible frauds averted. Install resources are also on discord at this point in time while a more tailored process is being formulated.**
+> [!Warning]
+> Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project.
 
-?> *Make sure to read the info in the **#pcb-interest-registration** discord channel as well for more info on the ordering process as well as searching discord for any PCB related questions as many have been answered multiple times already.*
+> [!Note] 
+> The PCB can only be ordered through discord where the ordering process can be monitored and any possible frauds averted. Install resources are also on discord at this point in time while a more tailored process is being formulated.
+>
+> **Make sure to read the info in the *#pcb-interest-registration* discord channel as well for more info on the ordering process as well as searching discord for any PCB related questions as many have been answered multiple times already.**
 
 # Bill of Materials
 
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
 * [2.4" Nextion LCD](https://bit.ly/3CAUzPj)
-* [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
+* [C-M4 ungrounded screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
-* [Thermo-resistant cables](https://bit.ly/3tjSQbI)
-  * **AWG15** - 1m black and red 
-  * **AWG20** - 1m black and red
+* [Cables option 1](https://bit.ly/3tjSQbI) or [Cables option 2](https://www.aliexpress.com/item/1005002288468147.html)
+  * **HV - AWG16 - 1m:** black, red, brown, white, green, blue and yellow
+  * **LV - AWG22 - 1m:** black, red, white, yellow, orange and green
 * [JST XH 4P](https://www.aliexpress.us/item/2251832768103991.html)
 * [JST PH 3P,4P and 5P](https://www.aliexpress.com/item/4000091077742.html)
 * [Spade connectors M/F 6.3mm](https://bit.ly/2Sjrkhu)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
+  * [O Ring - OD 11mm](https://www.aliexpress.com/item/1005003662931218.html) 
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
@@ -32,3 +37,17 @@
 
 !> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
 <!-- tabs:end -->
+
+# Considerations
+* Get rid of old harness and replace with homemade one. 
+* Try to maintain the wiring for the thermal fuse. If not get a resettable thermostat (**Rancilio Silvia Boiler Thermostat 165º**).
+* Get covers for spades, possibly hard covers.
+* Knowing difference between HV and LV lines.
+* Gaggia Classic New 2018/19 - ECO board must be bypassed. Highly recommend getting PCB v3 as you can slot it into the pump tower where the eco board would be.
+
+# Schematics
+## PCB v2
+
+## PCB v3
+
+
