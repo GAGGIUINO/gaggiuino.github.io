@@ -83,6 +83,8 @@ For the GCP, the LV connection side to the relay and switch are the same as the 
 ## Pin changes from Nano to STM32 
 The nano and blackpill/stm32 have different pin setups on their respective boards so the wires terminating on the nano expansion (which were defined in the nano instructions) will need to be moved to the newly defined pins (shown below) to work properly on stm32.
 
+?>Initially make sure you blackpill is correctly positioned in the expansion board. This will allow you to then just focus on the labels written on nano expansion board.
+
 | Wires     	    | nano EXP L         	| STM32 L              	    | STM32 R               | nano EXP R                | Wires                         |
 | :---:       	    |    :----:          	|        :---:	            |   :---:               |      :---:                |       :---:                   |
 |           	    |   D13             	|   PA9			            |   PB1                 |   D12                     |   HX711_sck_2                 |   
@@ -104,15 +106,15 @@ The nano and blackpill/stm32 have different pin setups on their respective board
 ## Schematics and Diagrams
 ?>Readers must be aware that you must study both HV and LV diagrams for your specific machine.
 
-*HV Diagrams*
-![STM32 Comp GCP_Eco HV](https://user-images.githubusercontent.com/53577819/220784834-fb1536e3-81cc-47e8-a243-21f6c3e49a7f.JPG)
-![STM32 Comp GC HV](https://user-images.githubusercontent.com/53577819/220784848-ab1fe9f1-92cc-40b4-a1c7-7200ab9a2b87.JPG)
-![STM32 Comp GCP HV](https://user-images.githubusercontent.com/53577819/220784874-583bb885-dce0-4fda-a920-4dc289607213.JPG)
+**HV Diagrams**
+* [STM32 Comp GCP_Eco HV](https://user-images.githubusercontent.com/53577819/220784834-fb1536e3-81cc-47e8-a243-21f6c3e49a7f.JPG)
+* [STM32 Comp GC HV](https://user-images.githubusercontent.com/53577819/220784848-ab1fe9f1-92cc-40b4-a1c7-7200ab9a2b87.JPG)
+* [STM32 Comp GCP HV](https://user-images.githubusercontent.com/53577819/220784874-583bb885-dce0-4fda-a920-4dc289607213.JPG)
 
-*LV Diagrams*
-![STM32 Comp GC LV](https://user-images.githubusercontent.com/53577819/220784856-c1b5f073-5c0b-470e-b47e-c78eda7099ea.JPG)
-![STM32 Comp GCP_Eco LV](https://user-images.githubusercontent.com/53577819/220784865-b52ffb3f-8380-4225-a539-15d44738d2fe.JPG)
-![STM32 Comp GCP LV](https://user-images.githubusercontent.com/53577819/220784877-279de614-afe9-4bcf-bf27-a6e25edb06bc.JPG)
+**LV Diagrams**
+* [STM32 Comp GCP_Eco LV](https://user-images.githubusercontent.com/53577819/220784865-b52ffb3f-8380-4225-a539-15d44738d2fe.JPG)
+* [STM32 Comp GC LV](https://user-images.githubusercontent.com/53577819/220784856-c1b5f073-5c0b-470e-b47e-c78eda7099ea.JPG)
+* [STM32 Comp GCP LV](https://user-images.githubusercontent.com/53577819/220784877-279de614-afe9-4bcf-bf27-a6e25edb06bc.JPG)
 
-*Internal component config*
-[STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/209090732-28ab3147-38c6-4571-8668-803e8d9155e9.png)
+**Internal component config**
+* [STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/209090732-28ab3147-38c6-4571-8668-803e8d9155e9.png)
