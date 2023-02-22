@@ -140,6 +140,8 @@ By way of context, if looking inside the machine from the back, the left of the 
 
 On the power switch - wire in the middle **left** as LIVE and middle **right** as GND.
 
+<img width="421" alt="image" src="https://user-images.githubusercontent.com/53577819/220789498-d8372d09-30b6-4a2a-ba05-2bad4f847aaf.png">
+
 ![image](https://user-images.githubusercontent.com/53577819/154979422-f78d41c4-87f4-4474-ab68-a3466d5e9e5e.jpeg ':size=350')
 
 Above translates to the following **(please be aware the image below has top connectors removed for clarity)**:
