@@ -40,9 +40,8 @@
 
 # Considerations
 * Get rid of old harness and replace with homemade one. 
-* Try to maintain the wiring for the thermal fuse and boiler connections. If not get a resettable thermostat (google - **Rancilio Silvia Boiler Thermostat 165º**).
-* Boiler connections are 160783-7 TE.
-* Get covers for spades, possibly hard covers. [Printable thermostat covers.](https://www.printables.com/model/380256-gaggia-boiler-terminal-shroud)
+* Try to maintain the wiring for the thermal fuse and boiler terminals. If not get a resettable thermostat - **Rancilio Silvia Boiler Thermostat 165º** and boiler terminals are **160783-7 TE**.
+* Get covers for spades, possibly hard covers. [Printable boiler terminal covers.](https://www.printables.com/model/380256-gaggia-boiler-terminal-shroud)
 * Consider buying a XH and PH JST kit to make up your own.
 * Know and study difference between HV and LV lines.
 * Gaggia Classic New 2018/19 - ECO board must be bypassed. Highly recommend getting PCB v3 as you can slot it into the pump tower where the eco board would be.
