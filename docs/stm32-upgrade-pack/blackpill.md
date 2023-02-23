@@ -15,7 +15,7 @@ This guide will explain how to upgrade or start the project with an STM32F4xxx (
 - VSCode and PlatformIO instead of ArduinoIDE to upload to board.
 
 ### Components 
-Always refer to the official [Gaggiuino BOM]() for the latest harware:
+Always refer to the official [Gaggiuino BOM](/?id=bill-of-materials) for the latest hardware:
 
 - **STM32F411CEU6**
 - **ADS1115**
