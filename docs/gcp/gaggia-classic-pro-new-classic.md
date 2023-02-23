@@ -1,7 +1,7 @@
 > [!Warning]
 > Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. 
 
-!>By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!**
+!>**By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!**
 
 # 1.0.0 TEST INSTALL
 We are not installing inside the machine yet. We need to ensure our nano and expansion board are soldered to a good standard. We just want to test as much as we can to make sure we've not got any duds from a base functionality point of view.
@@ -31,14 +31,12 @@ Make sure the terminals are correct way round and place the Arduino into the exp
 
 !>**Attention! You are not soldering the Arduino to the expansion board itself. You are only soldering the pins to the Arduino and pins to the expansion board. The Arduino then just sits/connects into the expansion board pins.**
 
-?>Any wires going to the expansion board itself will be **22/26AWG**.
-
 ## 1.0.2 Thermocouple MAX6675 Config
 You should have bought and received a MAX6675 board which comes with a test thermocouple. We're swapping this for the **C-M4 screw K-Type thermocouple sensor** as this is what will be replacing the original that's in the machine.
  
-![image](https://user-images.githubusercontent.com/53577819/154988392-619a5bc2-99cc-499d-8ad8-42792b094fd2.jpg ':size=500')
-
 ![image](https://user-images.githubusercontent.com/53577819/154988423-f741a369-ec60-4266-9544-0effedb57292.jpg ':size=500')
+
+![image](https://user-images.githubusercontent.com/53577819/154988392-619a5bc2-99cc-499d-8ad8-42792b094fd2.jpg ':size=500')
 
 ?>Refer to the [3.2.2 Component Wiring](#_322-thermocouple-max6675) section on wiring to the arduino.
 ## 1.0.3 Solid State Relay Config
@@ -56,13 +54,9 @@ The correct screen size is **2.4"**. If yours does not have markings for wiring 
 
 ?>Refer to the [3.2.4 Component Wiring](#_324-nextion-lcd-display) section on wiring to the arduino.
 ## 1.0.5 Software Install
-To flash the Arduino Nano microcontroller, pls follow the video from the [Prerequisites](prereq/prerequisites.md) section of this site.
+?>To flash the Arduino Nano microcontroller, pls follow the video from the [Prerequisites](prereq/prerequisites.md) section of this site.
 
 !>Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.
-
-**Flashing the Nextion LCD Software Upload**
-
-_Uploading the LCD Firmware_
 
 Download and unzip the *.tft file on a FAT32(MS-DOS (FAT32)) formatted microSD card and upload on the LCD panel using the onboard card reader.
 
@@ -72,10 +66,11 @@ Download and unzip the *.tft file on a FAT32(MS-DOS (FAT32)) formatted microSD c
 * If on Mac for some reason it adds a second file beginning with a "." use terminal to change.directory to the microSD and use "rm ._nextion-*YOUR-VERSION*-lcd.tft" to remove that file.
 4. Place MicroSD card inside the Nextion display.
 5. Power on the Arduino Board Setup and installation should occur automatically.
-6. Once “successed” turn power off and remove the MicroSD card, only now setup can be powered.
+6. Once “**successed**” turn power off and remove the MicroSD card, only now setup can be powered.
 
 ## 1.0.6 Test
-You should now see the Gaggiuino project on the LCD. If your connections are all right (and well secured), you should see a temperature reading from the thermocouple (temp reading will contain the default offset of 7 which means the initial temp will be - room temp -7)
+You should now see the Gaggiuino project on the LCD. 
+If your connections are sound and well secured, you should see a temperature reading on screen. The expected temp reading will contain the default offset of 7 (which means the initial temp will be = room temp -7)
 
 Try applying heat with your hand and you should see the temperature respond (if not, I recommend confirming all connections are correct and adequately tightened.  Mine did not respond at first and turned out one of the connections to the Arduino board was not tight enough)
 
@@ -118,9 +113,6 @@ The female spade end will go in Gaggia's front panel. One male splitter end will
 
 Before trying to copy piggyback locations from below it’s recommended to check what the schematics say [3.1.0 Schematics & Diagrams](#_310-schematics-and-diagrams).
 
-> [!NOTE]
-> **THE OFFICIAL SCHEMATIC DRAWINGS HAVE BEEN DRAWN FLIPPED AND UPSIDE DOWN**
-
 Whilst following schematics it's important to test you have found the correct piggyback locations. In order to do this please follow the below instructions before turning on your machine.
 
 ![image](https://user-images.githubusercontent.com/53577819/154982423-82b4bdb4-ca78-4077-90c0-77b349c8c3d2.JPG ':size=350')
@@ -136,7 +128,7 @@ If your LCD is on even though you've not flipped the machine switch on, this mea
 
 Please see some examples of known differences between piggyback location but really you should be testing with a multimeter.
 
-!>Schematics are flipped and upside down. Below are snippets of the power switch which are in [Schematics and Diagrams](#_310-schematics-and-diagrams).
+!>Below are snippets of the power switch which are in [Schematics and Diagrams](#_310-schematics-and-diagrams).
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic Pro -->
@@ -185,7 +177,7 @@ In relation to the image above -
 
 ?>Refer to the [3.2.1 Component Wiring](#_321-power-delivery) section on wiring to the arduino.
 ### 2.1.2 Bypass ECO Board
-!>**SKIP IF YOU DO NOT HAVE AN ECO MACHINE** 
+!>Skip this section if you **DO NOT** have a Gaggia New Classic 2018/19
 
 ?>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins. This requires you to look at the [GAGGIA New Classic 2018/19 Nano Wiring](#_310-schematics-and-diagrams). 
 
@@ -198,7 +190,7 @@ _Length for below two cables is to cover the distance from the back to the front
 2. Red 16/18AWG, female spade ends.
 3. Black 16/18AWG female spade ends.
 
-With cable #1, on the brew switch remove switch poles 1 & 2 that sit on the left of the brew switch and bridge. This will disable the 20mins timer. It does not however completely bypass ECO board. 
+With cable #1, remove **brew** switch poles 1 & 2 that sit on the left of the brew switch and bridge. This will disable the 20mins timer. It does not however completely bypass ECO board. 
 
 ![image](https://user-images.githubusercontent.com/53577819/154989122-6237e1af-62d1-4289-901c-47c69ea3b1b9.jpg ':size=350')
 
@@ -206,7 +198,7 @@ With cable #2 and #3 remove the L and N line from the back of the machine and co
 
 ?>If you're struggling to follow schematics you can follow [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) video. Steps for physically removing the ECO PCB are not provided as there are other resources on the web on how to do this.
 
-?>Remember to remove the middle spring from your power switch.
+!>**Remember to remove the middle spring from your power switch.**
 
 ### 2.1.3 Thermocouple MAX6675
 Prepare the following cable to the below spec:
@@ -316,7 +308,8 @@ With the cables you prepared:
 
 * Cable 3: From the dimmer neutral line In - with the black splitter with the male into the connector taken out of the pump (right connector) and female into the (right) remaining connection on the pump itself.
 
-!>**Triple check your dimmer board on what is marked as IN and OUT. 100% need to make sure they are connected properly.**
+> [!Warning]
+> Triple check your dimmer board on what is marked as IN and OUT. You need to make sure they are connected properly. **IF YOU DO NOT YOU WILL DESTROY THIS COMPONENT.**
 
 ![image](https://user-images.githubusercontent.com/53577819/155005284-b22a6652-87b0-42db-9d35-5d2bc8b9247e.jpg ':size=350')
 
