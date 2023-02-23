@@ -21,11 +21,11 @@ Always refer to the official [Gaggiuino BOM](/?id=bill-of-materials) for the lat
 ### Expansion Board Compatibility 
 Ensure your expansion board circuitry looks like the bottom left (green) and not the bottom right (blue). The bottom right (blue) will not work correctly with the standard pindefs (it will not trigger the relay to heat up the boiler - the two circled pins in yellow are marked `GND` on the reverse and are both connected to the ground plane and each other), so it is advised for most people to purchase the board from the BOM that looks like the green expansion board.  
 
-![Expansion Boards](https://user-images.githubusercontent.com/2452284/204672901-ac1a89d9-cbf2-4367-9196-e1a74fbce7dd.png)
+![Expansion Boards](https://user-images.githubusercontent.com/2452284/204672901-ac1a89d9-cbf2-4367-9196-e1a74fbce7dd.png ':size=500')
 
 If you do purchase a green expansion board but see on the reverse side this connection between two pins - it will have the same problem as the blue board (two sets of pins are connected to each other) this can be fixed by cutting this trace.
 
-![Connected trace](https://user-images.githubusercontent.com/2452284/208331321-cef4d700-b961-4725-9cf1-f99202f1785a.jpg)
+![Connected trace](https://user-images.githubusercontent.com/2452284/208331321-cef4d700-b961-4725-9cf1-f99202f1785a.jpg ':size=500')
 
 ### Important Considerations Before You Begin The Next Section
 !> Many that have performed the original nano installation have the dimmer in the same enclosure as the nano. Something to consider before starting the stm32 upgrade: when removing the wires out of the expansion/breakout board and re-twisting them to insert them into their new location, you are likely to have loose strands come off. If your dimmer is not wrapped in something (large heat shrink, silicone self-fuse electrical tape, 3d print) or isolated from other components, then one or a few of more strands may fall onto the dimmer at some point and ignite when brew is activated. 
@@ -49,19 +49,17 @@ If you do purchase a green expansion board but see on the reverse side this conn
 </details>
 
 After pulling the project, build and then flash from tasks (shown in the figure below) based on your hardware and flashing configuration. If you do not have an STLink, then choose the appropriate DFU task and enter DFU mode on the STM32 by plugging in the board, hold boot, and then press reset and let go of boot.
-- 
-<img width="297" alt="image" src="https://user-images.githubusercontent.com/53577819/220899280-554ef293-225d-4610-9c1b-81974cbec191.png">
 
-![Platformio Project Tasks](https://user-images.githubusercontent.com/80347096/191400246-b9dd4b1e-4c5f-4e42-a48a-41a0145d0a8e.png)
+![Platformio Project Tasks](https://user-images.githubusercontent.com/53577819/220899280-554ef293-225d-4610-9c1b-81974cbec191.png ':size=500')
 
 Consider buying an ST-Link v2 to more easily upgrade the firmware onto the Blackpill. They can be found on eBay, Amazon and Ali. You will need to solder the 4 angled pins to the board and connect the correct corresponding pins to the stm32 when updating with this tool.
 
-?> When flashing the blackpill after it is installed inside the machine there needs to be a disconnect of the LCD. Consider using Pogos or a JST connection to do this from the back of the machine.
+?> When flashing the blackpill after it is installed inside the machine there needs to be a disconnect of the LCD. Consider using Pogos or a JST connection to do this from the back of the machine. There are some solutions you can find within the discord.
 
 ## Install the ADS1115 
 With the STM32 upgrade, the pressure transducer data line no longer directly connects to the expansion board. It will now connect to the A0 pin on the new ads1115 board (shown as TS DATA). The ads1115 SCA and SCL connections will go to the main board, and the rest should be self-explanatory per the diagram below. G and ADDR are connected together to GND (such as to your GND Wago). 
 
-![ADS1115](https://user-images.githubusercontent.com/80347096/191159989-bdb2a54b-e610-41a7-9a17-5c668ef136de.png)
+![ADS1115](https://user-images.githubusercontent.com/80347096/191159989-bdb2a54b-e610-41a7-9a17-5c668ef136de.png ':size=500')
 
 ## 5v RELAY INSTALLATION
 Installing the relay allows the Gaggiuino to perform advanced functions (in conjunction with other necessary hardware): 
@@ -72,7 +70,7 @@ Installing the relay allows the Gaggiuino to perform advanced functions (in conj
 
 Installing the relay is relatively simple as it is essentially a drop-in replacement for the optocoupler on GC and just an additional component for GCP. The below diagram demonstrates the install with the GC switch panel, relay and related pins, the installation is very similar for both GC and GCP, the goal is to move all brew switch HV wires to the relay HV ports, then on the GC/GCP brew switch only LV wires should be connected when the relay is fully wired.
 
-![Figure 6 - Relay diagram for the GCP](https://user-images.githubusercontent.com/80347096/191401329-cdcc0a6a-b414-4c01-bbc8-07d16a5a4282.png)
+![Figure 6 - Relay diagram for the GC](https://user-images.githubusercontent.com/80347096/191401329-cdcc0a6a-b414-4c01-bbc8-07d16a5a4282.png ':size=500')
 
 For the GCP, the LV connection side to the relay and switch are the same as the diagram above. The HV wires on the brew switch are removed and connected to the COM and NO HV connectors on the relay - thus leaving no connections on the right side of the brew switch, plugged into it. See [Schematics](#schematics-and-diagrams).
 

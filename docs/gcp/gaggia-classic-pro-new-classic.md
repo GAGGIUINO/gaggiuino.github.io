@@ -143,7 +143,7 @@ Please see some examples of known differences between piggyback location but rea
 
 ![image](https://user-images.githubusercontent.com/53577819/220789498-d8372d09-30b6-4a2a-ba05-2bad4f847aaf.png ':size=350')
 
-On the power switch - wire in the middle **left** pole 2 is LIVE piggyback and middle **right** pole 5 as GND.
+On the power switch - wire in the middle **left** pole 2 as LIVE piggyback and middle **right** pole 5 as GND.
 
 Above translates to the following **(please be aware the image below has top connectors removed for clarity)**:
 
