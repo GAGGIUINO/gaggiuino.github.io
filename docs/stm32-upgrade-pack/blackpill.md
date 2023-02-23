@@ -48,6 +48,8 @@ ArduinoIDE will no longer work for building and uploading the software to the bo
 - Make sure to update your version of python to the latest - https://www.python.org/downloads/ 
 
 - After pulling the project, build and then flash from tasks (shown in the figure below) based on your hardware and flashing configuration. If you do not have an STLink, then choose the appropriate DFU task and enter DFU mode on the STM32 by plugging in the board, hold boot, and then press reset and let go of boot.
+- 
+<img width="297" alt="image" src="https://user-images.githubusercontent.com/53577819/220899280-554ef293-225d-4610-9c1b-81974cbec191.png">
 
 ![Platformio Project Tasks](https://user-images.githubusercontent.com/80347096/191400246-b9dd4b1e-4c5f-4e42-a48a-41a0145d0a8e.png)
 
