@@ -132,17 +132,14 @@ If your LCD is on even though you've not flipped the machine switch on, this mea
 
 Please see some examples of known differences between piggyback location but really you should be testing with a multimeter.
 
+!>Schematics are flipped and upside down. Below are snippets of the power switch which are in [Schematics and Diagrams](#_310-schematics-and-diagrams).
+
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic Pro -->
-By way of context, if looking inside the machine from the back, the left of the power switch is the brew switch. 
 
-**Below is a snippet of the power switch which is in the schematics. The red box is showing example of where piggyback should connect.**
+![image](https://user-images.githubusercontent.com/53577819/220789498-d8372d09-30b6-4a2a-ba05-2bad4f847aaf.png ':size=350')
 
-On the power switch - wire in the middle **left** as LIVE and middle **right** as GND.
-
-<img width="421" alt="image" src="https://user-images.githubusercontent.com/53577819/220789498-d8372d09-30b6-4a2a-ba05-2bad4f847aaf.png">
-
-![image](https://user-images.githubusercontent.com/53577819/154979422-f78d41c4-87f4-4474-ab68-a3466d5e9e5e.jpeg ':size=350')
+On the power switch - wire in the middle **left** pole 2 is LIVE piggyback and middle **right** pole 5 as GND.
 
 Above translates to the following **(please be aware the image below has top connectors removed for clarity)**:
 
@@ -186,7 +183,7 @@ In relation to the image above -
 ### 2.1.2 Bypass ECO Board
 !>**SKIP IF YOU DO NOT HAVE AN ECO MACHINE** 
 
-?>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins. This requires you to look at the ECO [schematics](#_310-schematics-and-diagrams). 
+?>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins. This requires you to look at the [GAGGIA New Classic 2018/19 Nano Wiring](#_310-schematics-and-diagrams). 
 
 Prepare the following cables to the below spec:
 
@@ -347,7 +344,6 @@ Make sure to push the hose all the way up to the ends on each side, the T and th
 
 ?>Refer to the [3.2.8 Component Wiring](#_328-pressure-transducer) section on wiring to the arduino.
 ### 2.2.3 Finish
-***
 If you haven't already, you're ready to connect everything to the Arduino. Use [3.2.0 Component Wiring](#_320-component-wiring) for quickly referencing all components. 
 
 One piece of advice would be to solder all cables to their respective boards as during the machine operation there is quite a bit of vibration which can introduce noise/frequent. This can lead to unexplained behaviours.
@@ -357,13 +353,12 @@ Any components sitting next to each other can have their equivalent pins linked 
 You will be expected to solder similar pins i.e. all GND and all 5v together in order to fit into and screw down on the expansion board terminals. You can use either WAGOS for this or using some strip-board. 
 
 ?>Please refer to [Lego Component Housing Guide](guides/lego-component-build-guide.md) on how to setup and house your components for best fit into the machine.
-***
 
-On first start up record and send to #first-start channel of discord. This helps with diagnosing issues.
+On first start up record and send to **#first-start** channel of discord. This helps with diagnosing issues.
 
 Remember to change and save your correct region settings.
 
-Configure you PP and PI settings and get prepped for a shot if all is well. Record and upload to #first-shot on the discord. 
+Configure you PP and PI settings and get prepped for a shot if all is well. Record and upload to **#first-shot** on the discord. 
 
 All going well, feel like an absolute coffee titan each and every time you pull a shot.
 
@@ -371,11 +366,9 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 
 # 3.0.0 Appendix
 ## 3.1.0 Schematics and Diagrams
-
-?>**PLEASE NOTE THE SCHEMATIC DRAWINGS HAVE BEEN DRAWN FLIPPED AND UPSIDE DOWN. BLAME GAGGIA.**
+!>**PLEASE NOTE THE SCHEMATIC DRAWINGS HAVE BEEN DRAWN FLIPPED AND UPSIDE DOWN. BLAME GAGGIA.**
 
 **Schematics:**
-
 * [GAGGIA New Classic 2018/19](https://user-images.githubusercontent.com/53577819/214380779-ec53b99b-2b7c-4781-acdc-90c3879353c0.png ':size=350')
 
 * [GAGGIA New Classic 2018/19 **Nano** Wiring](https://user-images.githubusercontent.com/53577819/217092632-8ad5c7cd-0fb0-4f7e-a55a-f0ba203be7ef.png)
