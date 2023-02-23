@@ -17,7 +17,7 @@
   * **HV - 16AWG - 1m:** black, red, brown, white, green, blue & yellow
   * **LV - 22AWG - 1m:** black, red, white, yellow, orange & green
 * [JST XH 4P](https://www.aliexpress.us/item/2251832768103991.html)
-* [JST PH 3x3P, 2x4P and 1x5P](https://www.aliexpress.com/item/4000091077742.html)
+* [JST PH 1x2P, 3x3P, 1x4P and 1x5P](https://www.aliexpress.com/item/4000091077742.html)
 * [Spade connectors M/F 6.3mm](https://bit.ly/2Sjrkhu)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
   * [O Ring - OD 11mm](https://www.aliexpress.com/item/1005003662931218.html) 
