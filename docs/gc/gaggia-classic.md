@@ -149,7 +149,7 @@ For now only connect the low voltage circuit controlling ports of the SSR to che
 >
 ![PXL_20210527_181116200 1](https://user-images.githubusercontent.com/109426580/190676716-bf126fbc-2177-43d0-8300-3525e7daac8c.jpg ':size=500')
 
-2. Prepare 2 splitters like in the below image using the 16/18AWG cable, be sure one splitter to be black(negative) and one red(positive)
+2. Prepare 2 splitters like in the below image using the 18AWG cable, be sure one splitter to be black(negative) and one red(positive)
 >
 ![PXL_20210527_183052740 1](https://user-images.githubusercontent.com/109426580/190676830-420e5ff8-d29b-4221-8c71-41de8c92c52a.jpg ':size=500')
 
@@ -194,7 +194,7 @@ So you end up having them connected like this:
 ![image](https://user-images.githubusercontent.com/109426580/190679925-4bfb1574-1af0-414f-b38c-18a5d8c6f8c2.png ':size=500')
 
 
-12. Connect steam switch poles 3 and 4 to the arduino nano as listed above using some 22/26AWG wires.
+12. Connect steam switch poles 3 and 4 to the arduino nano as listed above using some 26AWG wires.
 >
 ![image](https://user-images.githubusercontent.com/109426580/190680352-503d1a21-676c-4ec2-95dc-9a12ee5161ac.png ':size=500')
 

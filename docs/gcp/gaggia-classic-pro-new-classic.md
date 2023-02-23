@@ -100,8 +100,8 @@ For each of the components we want to start guesstimating on cable length. You c
 Take off the top cover of your machine by unscrewing the 2 top screws. Be sure to mark your top left power connector so you don't mix them up (even though it's not that hard to understand which one is which).
 
 Prepare splitter cables with the below specs:
-1. Black splitter, 16/18AWG, 10cm, female end, male end, male end.
-2. Red splitter, 16/18AWG, 10cm, female end, male end, male end.
+1. Black splitter, 18AWG, 10cm, female end, male end, male end.
+2. Red splitter, 18AWG, 10cm, female end, male end, male end.
 
 Example of a red and black splitter:
 
@@ -152,26 +152,26 @@ After bypassing the eco board you can then use **power** switch poles 1 as LIVE 
 <!-- tabs:end -->
 
 Prepare 2 more cables with the below spec:
-1. Black, 22/26AWG, about 15cm, female spade end, exposed end.
-2. Red, 22/26AWG, about 15cm, female spade end, exposed end.
+1. Black, 22AWG, about 15cm, female spade end, exposed end.
+2. Red, 22AWG, about 15cm, female spade end, exposed end.
 
 Connect the female end to the male end of the splitter cable from above step (match the colours).
 
 On the 12v PSU the 2 AC IN ports will be where the exposed end of your red or black piggyback cable go, it doesn't matter which way round (yes, you need to fiddle about getting wires in and solder correctly - recommended to trim, twist, tin and apply heat shrink).
 
 Prepare more cables with the below spec:
-1. Black, 22/26AWG, about ~10cm, exposed ends.
-2. Red, 22/26AWG, about ~10cm, exposed ends.
-3. Black, 22/26AWG, about ~25cm, exposed ends.
-4. Red, 22/26AWG, about ~25cm, exposed ends.
+1. Black, 22AWG, about ~5cm, exposed ends.
+2. Red, 22AWG, about ~5cm, exposed ends.
+3. Black, 26AWG, about ~15cm, exposed ends.
+4. Red, 26AWG, about ~15cm, exposed ends.
 
 ![image](https://user-images.githubusercontent.com/53577819/210059859-be0135a8-7041-48ab-a2a5-daa8c86d04a1.png" ':size=500')
 
 In relation to the image above - 
-- The short red 22/26AWG wire goes from 12v VCC/+ -> 5V IN + 
-- The short black 22/26AWG wire goes from 12v GND/- -> 5V IN -  
-- The longer 22/26AWG black will be connected from 5v OUT- to the GND of expansion
-- The longer 22/26AWG red will be connected from 5v OUT+ to the 5V of expansion. 
+- The short red 22AWG wire goes from 12v VCC/+ -> 5V IN + 
+- The short black 22AWG wire goes from 12v GND/- -> 5V IN -  
+- The longer 26AWG black will be connected from 5v OUT- to the GND of expansion
+- The longer 26AWG red will be connected from 5v OUT+ to the 5V of expansion. 
 
 !>**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**
 
@@ -179,16 +179,16 @@ In relation to the image above -
 ### 2.1.2 Bypass ECO Board
 !>Skip this section if you **DO NOT** have a Gaggia New Classic 2018/19
 
-?>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins. This requires you to look at the [GAGGIA New Classic 2018/19 Nano Wiring](#_310-schematics-and-diagrams). 
+?>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins. This requires you to look at the [Gaggia New Classic 2018/19 Nano Wiring](#_310-schematics-and-diagrams). 
 
 Prepare the following cables to the below spec:
 
-1. Red, 16/18AWG, 5cm, male spade ends.
+1. Red, 18AWG, 5cm, male spade ends.
 
 _Length for below two cables is to cover the distance from the back to the front of machine + extra._
 
-2. Red 16/18AWG, female spade ends.
-3. Black 16/18AWG female spade ends.
+2. Red 18AWG, female spade ends.
+3. Black 18AWG female spade ends.
 
 With cable #1, remove **brew** switch poles 1 & 2 that sit on the left of the brew switch and bridge. This will disable the 20mins timer. It does not however completely bypass ECO board. 
 
@@ -203,7 +203,7 @@ With cable #2 and #3 remove the L and N line from the back of the machine and co
 ### 2.1.3 Thermocouple MAX6675
 Prepare the following cable to the below spec:
 
-1. Black, 16/18AWG, 5cm, two male ends.
+1. Black, 18AWG, 5cm, two male ends.
 
  [Detach the boiler](https://www.youtube.com/watch?v=0ipvBdWaVzQ) (only watch as far as the 5min mark) to gain enough access to remove the thermocouple and replace it with the m4 bolted thermocouple sensor. 
 
@@ -233,8 +233,8 @@ Now re-attach the boiler.
 ### 2.1.4 Solid State Relay
 Prepare cables with below spec:
 
-1. Red, 16/18AWG, 10cm, one male spade end, one exposed end.
-2. Red, 16/18AWG, 10cm, one male spade end, one exposed end.
+1. Red, 18AWG, 10cm, one male spade end, one exposed end.
+2. Red, 18AWG, 10cm, one male spade end, one exposed end.
 
 The 2 are used to connect the steam thermostat connections to port 1 and 2 of the Solid State Relay, so:
 
@@ -260,7 +260,7 @@ Image of the steam switch schematic:
 
 1. Move steam switch wire 4 to steam switch pole 1.
 2. Unplug and secure steam switch wire 5.
-3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 22/26AWG wires.
+3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 26AWG wires.
 
 <!-- tab:Gaggia New Classic (auto shut-off) -->
 1. Unplug and secure the green connector (steam poles 1).
@@ -268,7 +268,7 @@ Image of the steam switch schematic:
 3. Unplug and secure the single white connector (possibly on switch pole 2 or 5).
 4. Move the double white connector to switch pole 2. 
 5. Move the orange connector on to switch pole 3. 
-6. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 22/26AWG wires.
+6. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 26AWG wires.
 
 ![image](https://user-images.githubusercontent.com/53577819/214284971-76c6e9bb-f4ab-459d-aba1-740be164bca3.png ':size=350')
 
@@ -276,8 +276,8 @@ Image of the steam switch schematic:
 
 ### 2.1.6 Continuity Brew Detection
 Prepare 2 cables with the below spec:
-1. Green (just not red or black), 22/26AWG, length from brew to Arduino, one exposed end, one female spade end.
-2. Black, 22/26AWG, length from brew to Arduino, one exposed end, one female spade end.
+1. Green (just not red or black), 26AWG, length from brew to Arduino, one exposed end, one female spade end.
+2. Black, 26AWG, length from brew to Arduino, one exposed end, one female spade end.
 
 As shown below plug your cables in to the circled connections on the brew switch:  
 
@@ -287,9 +287,9 @@ As shown below plug your cables in to the circled connections on the brew switch
 ## 2.2.0 Extended Functionality
 ### 2.2.1 RobotDYN Dimmer
 Prepare 3 cables with the below spec:
-1. Red, 16/18AWG, 15cm, one exposed end, one female spade end.
-2. Red, 16/18AWG, 15cm, one exposed end, one male spade end.
-3. Black splitter, 16/18AWG, 15cm, one exposed end, one male spade end, one female spade end.
+1. Red, 18AWG, 15cm, one exposed end, one female spade end.
+2. Red, 18AWG, 15cm, one exposed end, one male spade end.
+3. Black splitter, 18AWG, 15cm, one exposed end, one male spade end, one female spade end.
 
 !>Please check whether your dimmer ports placement in the case it differs from the images before connecting the dimmer, it's very important to feed the IN and OUT wires correctly!
 
@@ -379,7 +379,7 @@ You can find the defined pins at the top of the .ino file.
 
 A suggestion on wiring; components that are inside same enclosure, the same connection can be linked i.e. solder a cable to the 5v pin then take the other end and solder to the 5V of the other component, from there take one cable to the Arduino. An alternative way is to  solder similar connections and apply heat-shrink before the exit to the machine then take one wire through the machine to the Arduino.
 
-?>Any wires going to the expansion board itself will be **22/26AWG**.
+?>Any wires going to the expansion board itself will be **26AWG**.
 ### 3.2.1 Power Delivery
 | 12v | 5V IN | 5V OUT | NANO | 
 | ---- | ---- | ---- | ---- |

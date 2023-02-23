@@ -128,8 +128,9 @@ _Will enable only brew and steam temperature control_
 * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
 * [Cables option 1](https://bit.ly/3tjSQbI) or [Cables option 2](https://www.aliexpress.com/item/1005002288468147.html)
-  * **HV - 16AWG - 1m:** black & red
-  * **LV - 22AWG - 1m:** black, red, white, yellow, blue, orange & green
+  * **AC - 18AWG - 1m:** black & red
+  * **DC - 22AWG - 1m:** black & red 
+  * **LV - 26AWG - 1m:** black, red, white, yellow, blue, orange & green
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
 * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
@@ -174,8 +175,9 @@ _Will enable only brew and steam temperature control_
 * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
 * [Cables option 1](https://bit.ly/3tjSQbI) or [Cables option 2](https://www.aliexpress.com/item/1005002288468147.html)
-  * **HV - 16AWG - 1m:** black & red
-  * **LV - 22AWG - 1m:** black, red, white, yellow, blue, orange & green
+  * **AC - 18AWG - 1m:** black & red
+  * **DC - 22AWG - 1m:** black & red 
+  * **LV - 26AWG - 1m:** black, red, white, yellow, blue, orange & green
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
 * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)

@@ -14,8 +14,8 @@
 * [C-M4 ungrounded screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
 * [Cables option 1](https://bit.ly/3tjSQbI) or [Cables option 2](https://www.aliexpress.com/item/1005002288468147.html)
-  * **HV - 16AWG - 1m:** black, red, brown, white, green, blue & yellow
-  * **LV - 22AWG - 1m:** black, red, white, yellow, orange & green
+  * **HV - 18AWG - 1m:** black, red, brown, white, green, blue & yellow
+  * **LV - 26AWG - 1m:** black, red, white, yellow, orange & green
 * [JST XH 4P](https://www.aliexpress.us/item/2251832768103991.html)
 * [JST PH 3P, 4P and 5P](https://www.aliexpress.com/item/4000091077742.html)
 * [Spade connectors M/F 6.3mm](https://bit.ly/2Sjrkhu)
