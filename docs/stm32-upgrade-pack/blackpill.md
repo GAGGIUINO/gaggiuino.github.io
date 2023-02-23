@@ -7,11 +7,8 @@
 This guide will explain how to upgrade or start the project with an STM32F4xxx (Blackpill) board. The upgrade is essentially a drop-in replacement for the nano maintaining a majority of the nano installation components. The major differences between nano and STM32 are mentioned below: 
 
 - The wires from the external components to the nano expansion board must be switched around to different ports.
-
 - The ADS1115 board installed between the expansion board and the pressure sensor. 
-    
 - New 5V relay in place of Optocoupler sensor (for GC) or goes between direct connection from MCU and brew button (for GCP). 
-
 - VSCode and PlatformIO instead of ArduinoIDE to upload to board.
 
 ### Components 
@@ -38,23 +35,27 @@ If you do purchase a green expansion board but see on the reverse side this conn
 * Take tape and go over the interior of your enclosures to pick up any loose strands from the installation.  
 
 ## Software Installation
-ArduinoIDE will no longer work for building and uploading the software to the board as it was done for the nano. You will need to download the official STM32 drivers or the STM32 cube programmer and use VSCode and the PlatformIO extension to upload to the STM32.
+?>Please refer to [Prerequisites](/prereq/prerequisites.md).
 
-- Setup VSCode with platformio as shown in the video linked below.  
-- [VSCode and platformio setup](https://discord.com/channels/890339612441063494/922092497847582721/997109453994328075)
+!>ArduinoIDE will no longer work for building and uploading the software to the board as it was done for the nano. You will need to download the official STM32 drivers or the STM32 cube programmer and use VSCode and the PlatformIO extension to upload to the STM32.
+
+<details>
+<summary>Setup project using PIO (Click to expand)</summary>
+
+[Platform IO](https://user-images.githubusercontent.com/109426580/193900425-15c42d9c-adf4-4073-aa46-34874528bf43.mp4 ':include :type=video controls width=70%')
 
 - Make sure you have git installed - https://www.git-scm.com/
-
 - Make sure to update your version of python to the latest - https://www.python.org/downloads/ 
+</details>
 
-- After pulling the project, build and then flash from tasks (shown in the figure below) based on your hardware and flashing configuration. If you do not have an STLink, then choose the appropriate DFU task and enter DFU mode on the STM32 by plugging in the board, hold boot, and then press reset and let go of boot.
+After pulling the project, build and then flash from tasks (shown in the figure below) based on your hardware and flashing configuration. If you do not have an STLink, then choose the appropriate DFU task and enter DFU mode on the STM32 by plugging in the board, hold boot, and then press reset and let go of boot.
 
 ![Platformio Project Tasks](https://user-images.githubusercontent.com/80347096/191400246-b9dd4b1e-4c5f-4e42-a48a-41a0145d0a8e.png)
 
 Consider buying an ST-Link v2 to more easily upgrade the firmware onto the Blackpill. They can be found on eBay, Amazon and Ali. You will need to solder the 4 angled pins to the board and connect the correct corresponding pins to the stm32 when updating with this tool.
 
-![ST-Link](https://user-images.githubusercontent.com/80347096/191400915-6ed2a991-5f0c-4d2a-b52d-aad29978c0d1.jpg)
- 
+?> When flashing the blackpill after it is installed inside the machine there needs to be a disconnect of the LCD. Consider using Pogos or a JST connection to do this from the back of the machine.
+
 ## Install the ADS1115 
 With the STM32 upgrade, the pressure transducer data line no longer directly connects to the expansion board. It will now connect to the A0 pin on the new ads1115 board (shown as TS DATA). The ads1115 SCA and SCL connections will go to the main board, and the rest should be self-explanatory per the diagram below. G and ADDR are connected together to GND (such as to your GND Wago). 
 
@@ -64,9 +65,7 @@ With the STM32 upgrade, the pressure transducer data line no longer directly con
 Installing the relay allows the Gaggiuino to perform advanced functions (in conjunction with other necessary hardware): 
 
 - Stop the pump during brew for stop-on-weight (currently requires scales) 
-
 - Pump assist during steaming to maintain extended steam pressure (requires pressure sensor) 
-
 - Pump assist during descale program. 
 
 Installing the relay is relatively simple as it is essentially a drop-in replacement for the optocoupler on GC and just an additional component for GCP. The below diagram demonstrates the install with the GC switch panel, relay and related pins, the installation is very similar for both GC and GCP, the goal is to move all brew switch HV wires to the relay HV ports, then on the GC/GCP brew switch only LV wires should be connected when the relay is fully wired.
@@ -77,8 +76,6 @@ For the GCP, the LV connection side to the relay and switch are the same as the 
 
 * BREW MIDDLE HV - Disconnect the middle HV cable from brew switch common pole 5, connect to relay COM.
 * BREW TOP HV - Disconnect the top HV cable from brew switch pole 4, connect to relay NO.  
-
-![relay-gcp](https://user-images.githubusercontent.com/53577819/210641843-8c41ea6c-78d7-4233-b2db-fbc5449ae8d2.png ':size=350')
 
 ## Pin changes from Nano to STM32 
 The nano and blackpill/stm32 have different pin setups on their respective boards so the wires terminating on the nano expansion (which were defined in the nano instructions) will need to be moved to the newly defined pins (shown below) to work properly on stm32.

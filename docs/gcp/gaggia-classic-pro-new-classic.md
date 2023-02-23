@@ -1,15 +1,18 @@
 > [!Warning]
-> Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project.
+> Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. 
+
+!>By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!**
 
 # 1.0.0 TEST INSTALL
 We are not installing inside the machine yet. We need to ensure our nano and expansion board are soldered to a good standard. We just want to test as much as we can to make sure we've not got any duds from a base functionality point of view.
 
 We need to understand what goes where. The schematics in [3.1.0 Schematics and Diagrams](#_310-schematics-and-diagrams) aren't really rocket science but for someone who's never disassembled or has no experience working with electrical circuits it might get confusing really fast. 
 
-Note 1 - No permanent connections are needed during testing so no soldering needed for now.
-Note 2 - The 5v/GND Arduino board pins will be shared between all the connected devices.
-
-?>All component wiring tables are in the appendix at the end [3.2.0 Component Wiring](#_320-component-wiring).
+> [!NOTE]
+>1. No permanent connections are needed during testing.
+>2. Your microcontroller and expansion board header pins need to be soldered perfectly, see [Recommendations](/learning/learning-sources.md)
+>3. The 5v/GND Arduino board pins will be shared between all the connected devices.
+>4. All component wiring tables are in the appendix at the end [3.2.0 Component Wiring](#_320-component-wiring).
 
 ## 1.0.1 Arduino Config 
 Place Arduino into the expansion board the correct way round. Power it through USB adapter for now during the testing phase.
@@ -115,7 +118,8 @@ The female spade end will go in Gaggia's front panel. One male splitter end will
 
 Before trying to copy piggyback locations from below it’s recommended to check what the schematics say [3.1.0 Schematics & Diagrams](#_310-schematics-and-diagrams).
 
-?>**PLEASE NOTE THE OFFICIAL SCHEMATIC DRAWINGS HAVE BEEN DRAWN FLIPPED AND UPSIDE DOWN**
+> [!NOTE]
+> **THE OFFICIAL SCHEMATIC DRAWINGS HAVE BEEN DRAWN FLIPPED AND UPSIDE DOWN**
 
 Whilst following schematics it's important to test you have found the correct piggyback locations. In order to do this please follow the below instructions before turning on your machine.
 
@@ -366,7 +370,8 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 
 # 3.0.0 Appendix
 ## 3.1.0 Schematics and Diagrams
-!>**PLEASE NOTE THE SCHEMATIC DRAWINGS HAVE BEEN DRAWN FLIPPED AND UPSIDE DOWN. BLAME GAGGIA.**
+> [!NOTE]
+>**THE SCHEMATIC DRAWINGS HAVE BEEN DRAWN FLIPPED AND UPSIDE DOWN. BLAME GAGGIA.**
 
 **Schematics:**
 * [GAGGIA New Classic 2018/19](https://user-images.githubusercontent.com/53577819/214380779-ec53b99b-2b7c-4781-acdc-90c3879353c0.png ':size=350')
