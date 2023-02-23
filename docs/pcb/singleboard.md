@@ -14,10 +14,10 @@
 * [C-M4 ungrounded screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
 * [Cables option 1](https://bit.ly/3tjSQbI) or [Cables option 2](https://www.aliexpress.com/item/1005002288468147.html)
-  * **HV - 16AWG - 1m:** black, red, brown, white, green, blue and yellow
-  * **LV - 22AWG - 1m:** black, red, white, yellow, orange and green
+  * **HV - 16AWG - 1m:** black, red, brown, white, green, blue & yellow
+  * **LV - 22AWG - 1m:** black, red, white, yellow, orange & green
 * [JST XH 4P](https://www.aliexpress.us/item/2251832768103991.html)
-* [JST PH 3P,4P and 5P](https://www.aliexpress.com/item/4000091077742.html)
+* [JST PH 3P, 4P and 5P](https://www.aliexpress.com/item/4000091077742.html)
 * [Spade connectors M/F 6.3mm](https://bit.ly/2Sjrkhu)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
   * [O Ring - OD 11mm](https://www.aliexpress.com/item/1005003662931218.html) 
@@ -39,6 +39,8 @@
 <!-- tabs:end -->
 
 # Considerations
+!> It is expected that when going through PCB install you are able to figure out most things by yourself. Please note, these are only suggestions/food for thought/rough guidance. 
+
 * Get rid of old harness and replace with homemade one. 
 * Try to maintain the wiring for the thermal fuse and boiler terminals. If not get a resettable thermostat - **Rancilio Silvia Boiler Thermostat 165º** and boiler terminals are **160783-7 TE**.
 * Get covers for spades, possibly hard covers. [Printable boiler terminal covers.](https://www.printables.com/model/380256-gaggia-boiler-terminal-shroud)
