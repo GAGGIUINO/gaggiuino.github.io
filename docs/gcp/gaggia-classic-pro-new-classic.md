@@ -162,8 +162,8 @@ On the 12v PSU the 2 AC IN ports will be where the exposed end of your red or bl
 Prepare more cables with the below spec:
 1. Black, 22AWG, about ~5cm, exposed ends.
 2. Red, 22AWG, about ~5cm, exposed ends.
-3. Black, 26AWG, about ~15cm, exposed ends.
-4. Red, 26AWG, about ~15cm, exposed ends.
+3. Black, 26AWG, about ~10cm, exposed ends.
+4. Red, 26AWG, about ~10cm, exposed ends.
 
 ![image](https://user-images.githubusercontent.com/53577819/210059859-be0135a8-7041-48ab-a2a5-daa8c86d04a1.png" ':size=500')
 
