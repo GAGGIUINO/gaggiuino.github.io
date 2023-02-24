@@ -13,7 +13,7 @@
 * [2.4" Nextion LCD](https://bit.ly/3CAUzPj)
 * [C-M4 ungrounded screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
-* [Cables option 1](https://bit.ly/3tjSQbI) or [Cables option 2](https://www.aliexpress.com/item/1005002288468147.html)
+* [Heat-resistant silicone wires](https://bit.ly/3tjSQbI)
   * **18AWG - 1m:** Black, Red, Brown, White, Green, Blue & Yellow
   * **26AWG - 5m:** Black, Red, White, Orange & Yellow
 * [JST XH 4P](https://www.aliexpress.us/item/2251832768103991.html)
