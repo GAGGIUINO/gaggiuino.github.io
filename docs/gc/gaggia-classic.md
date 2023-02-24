@@ -179,7 +179,7 @@ So you end up having them connected like this:
 
 ![PXL_20210527_183052740 2](https://user-images.githubusercontent.com/109426580/190678786-d67b8034-f37e-41ed-a713-bbf2d4a2efb4.jpg ':size=500')
 
-8. To power the Arduino system, the 12v PSU has 2 AC IN ports which will be where the ends from the piggybacks will connect to - it doesn't matter which way round. Use the 22AWG between the PSU and the 5v Stepdown (amperage reasons). Make sure wires go through the holes then solder correctly - recommended to twist, tin and also apply heat shrink. Then with the 22AWG wire, the 12V VCC goes to the IN + of the stepdown and the 12V GND goes to the IN -. Out connections (26 AWG) on the stepdown connections will then go to the arduino. 
+8. To power the Arduino system, the 12v PSU has 2 AC IN ports which will be where the ends from the piggybacks will connect to - it doesn't matter which way round. Use the 22AWG between the PSU and the 5v Stepdown (amperage reasons). Make sure wires go through the holes then solder correctly - recommended to twist, tin and also apply heat shrink. With the 22AWG wire, the 12V VCC goes to the IN + of the stepdown and the 12V GND goes to the IN -. Out connections (26 AWG) on the stepdown connections will then go to the arduino. 
 
 ![image](https://user-images.githubusercontent.com/53577819/210059859-be0135a8-7041-48ab-a2a5-daa8c86d04a1.png" ':size=500')
 
