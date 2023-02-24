@@ -79,10 +79,6 @@ If everything looks good, move on to Installing into the Gaggia Classic Pro
 **If all the above works as expected you're ready to install it inside the machine.**
 
 # 2.0.0 Install
-***
-!>**Do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's completely disconnected from the mains power socket, also by agreeing to follow the below guide I cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or goldfish and it will be entirely your fault!**
-***
-
 Undo everything as we will now install into the machine. 
 
 All components except the Arduino and LCD will be internal to the machine. Remember this when wiring the LCD. 
@@ -94,26 +90,24 @@ For each of the components we want to start guesstimating on cable length. You c
 ## 2.1.0 Base Functionality
 
 > [!NOTE]
-> If you have the GAGGIA New Classic 2018/2019 (auto shut-off after 20mins), then you will need to fully bypass the ECO PCB that is on board by following [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) video. Instead of buying a new switch just remove the spring inside it. Further steps are shown here [Bypass ECO Board](#_212-bypass-eco-board).
+> If you have the GAGGIA New Classic 2018/2019 (auto shut-off after 20mins), then you will need to fully bypass the ECO PCB that is on board. Steps are shown here [Bypass ECO Board](#_212-bypass-eco-board).
 
 ### 2.1.1 Power Delivery
 Take off the top cover of your machine by unscrewing the 2 top screws. Be sure to mark your top left power connector so you don't mix them up (even though it's not that hard to understand which one is which).
 
 Prepare splitter cables with the below specs:
 1. Black splitter, 18AWG, 10cm, female end, male end, male end.
+    - Female end to N front power switch panel.
 2. Red splitter, 18AWG, 10cm, female end, male end, male end.
+    - Female end to L front power switch panel.
 
 Example of a red and black splitter:
 
 ![image](https://user-images.githubusercontent.com/53577819/154988645-5f1da175-7d09-437a-ac2c-f64e16f3a564.jpg ':size=350')
 
-The female spade end will go in Gaggia's front panel. One male splitter end will go into the connection that came out of the switch position the other male will be for some more wires further down.
+To determine where piggyback locations are check what the schematics say [3.1.0 Schematics & Diagrams](#_310-schematics-and-diagrams).
 
-![image](https://user-images.githubusercontent.com/53577819/154988784-7ddbc106-4744-4d9f-8879-b9a107a9fe7c.jpg ':size=350')
-
-Before trying to copy piggyback locations from below it’s recommended to check what the schematics say [3.1.0 Schematics & Diagrams](#_310-schematics-and-diagrams).
-
-Whilst following schematics it's important to test you have found the correct piggyback locations. In order to do this please follow the below instructions before turning on your machine.
+Whilst following schematics it's important to **test** you have found the correct piggyback locations. In order to do this please follow the below instructions before turning on your machine.
 
 ![image](https://user-images.githubusercontent.com/53577819/154982423-82b4bdb4-ca78-4077-90c0-77b349c8c3d2.JPG ':size=350')
 
@@ -124,9 +118,7 @@ Whilst following schematics it's important to test you have found the correct pi
 
 As stated you want to find the connector that only shows voltage after flipping the machine machine on. 
 
-If your LCD is on even though you've not flipped the machine switch on, this means you've piggybacked into the mains live which is constantly got voltage - this is not correct!
-
-Please see some examples of known differences between piggyback location but really you should be testing with a multimeter.
+If your LCD is on even though you've not flipped the machine switch on, this means you've piggybacked into the mains live which has constantly got voltage - **this is not correct!**
 
 !>Below are snippets of the power switch which are in [Schematics and Diagrams](#_310-schematics-and-diagrams).
 
@@ -135,11 +127,7 @@ Please see some examples of known differences between piggyback location but rea
 
 ![image](https://user-images.githubusercontent.com/53577819/220789498-d8372d09-30b6-4a2a-ba05-2bad4f847aaf.png ':size=350')
 
-On the power switch - wire in the middle **left** pole 2 as LIVE piggyback and middle **right** pole 5 as GND.
-
-Above translates to the following **(please be aware the image below has top connectors removed for clarity)**:
-
-![image](https://user-images.githubusercontent.com/53577819/154979529-eae513b2-00e3-40c9-a581-47be4da68edc.jpg ':size=350')
+On the power switch - wire in switch pole 2 as LIVE piggyback and switch pole 5 as GND.
 
 <!-- tab: Gaggia New Classic (auto shut-off) -->
 > [!NOTE]
@@ -151,27 +139,28 @@ After bypassing the eco board you can then use **power** switch poles 1 as LIVE 
 
 <!-- tabs:end -->
 
-Prepare 2 more cables with the below spec:
-1. Black, 22AWG, about 15cm, female spade end, exposed end.
-2. Red, 22AWG, about 15cm, female spade end, exposed end.
-
-Connect the female end to the male end of the splitter cable from above step (match the colours).
-
-On the 12v PSU the 2 AC IN ports will be where the exposed end of your red or black piggyback cable go, it doesn't matter which way round (yes, you need to fiddle about getting wires in and solder correctly - recommended to trim, twist, tin and apply heat shrink).
-
-Prepare more cables with the below spec:
-1. Black, 22AWG, about ~5cm, exposed ends.
-2. Red, 22AWG, about ~5cm, exposed ends.
-3. Black, 26AWG, about ~10cm, exposed ends.
-4. Red, 26AWG, about ~10cm, exposed ends.
+Now that you have tapped into the machine power only when it is switched on you can now wire up the 12v PSU.
 
 ![image](https://user-images.githubusercontent.com/53577819/210059859-be0135a8-7041-48ab-a2a5-daa8c86d04a1.png" ':size=500')
 
-In relation to the image above - 
-- The short red 22AWG wire goes from 12v VCC/+ -> 5V IN + 
-- The short black 22AWG wire goes from 12v GND/- -> 5V IN -  
-- The longer 26AWG black will be connected from 5v OUT- to the GND of expansion
-- The longer 26AWG red will be connected from 5v OUT+ to the 5V of expansion. 
+
+?> Below cables have exposed ends. It is recommended to twist, tin and push these through holes before soldering.
+
+Prepare 2 more cables with the below spec:
+1. Black, 22AWG, about 25cm, female spade end, exposed end.
+    - Connect female spade to your neutral piggyback spade. Exposed end goes into 12v PSU AC terminal.
+2. Red, 22AWG, about 25cm, female spade end, exposed end.
+    - Connect female spade to your live piggyback spade. Exposed end goes into remaining 12v PSU AC terminal.
+
+Prepare more cables with the below spec:
+1. Black, 22AWG, about ~5cm, exposed ends.
+    - Connects from 12v GND/- to 5V IN - 
+2. Red, 22AWG, about ~5cm, exposed ends.
+    - Connects from 12v VCC/+ to 5V IN +  
+3. Black, 26AWG, about ~10cm, exposed ends.
+    - Connects from 5v OUT- to the GND of expansion.
+4. Red, 26AWG, about ~10cm, exposed ends.
+    - Connects from 5v OUT+ to the 5V of expansion. 
 
 !>**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**
 
@@ -184,17 +173,13 @@ In relation to the image above -
 Prepare the following cables to the below spec:
 
 1. Red, 18AWG, 5cm, male spade ends.
-
-_Length for below two cables is to cover the distance from the back to the front of machine + extra._
-
+    - Refer to you **brew** switch. With this cable bridge poles 1 & 2 (on left of the brew switch). This will disable the 20mins timer. It does not however completely bypass ECO board. 
 2. Red 18AWG, female spade ends.
+    - Remove the L line from the back of the machine and connect to power switch poles 2 (LIVE)
 3. Black 18AWG female spade ends.
+    - Remove the N line from the back of the machine and connect to power switch poles 5 (NEUTRAL).
 
-With cable #1, remove **brew** switch poles 1 & 2 that sit on the left of the brew switch and bridge. This will disable the 20mins timer. It does not however completely bypass ECO board. 
-
-![image](https://user-images.githubusercontent.com/53577819/154989122-6237e1af-62d1-4289-901c-47c69ea3b1b9.jpg ':size=350')
-
-With cable #2 and #3 remove the L and N line from the back of the machine and connect to power switch poles 2 (LIVE) and 5 (NEUTRAL).
+_Length for these cables is to cover the distance from the back to the front of machine + extra._
 
 ?>If you're struggling to follow schematics you can follow [this](https://www.youtube.com/watch?v=WNs3uSLA4Ts&t=199s) video. Steps for physically removing the ECO PCB are not provided as there are other resources on the web on how to do this.
 
@@ -204,12 +189,11 @@ With cable #2 and #3 remove the L and N line from the back of the machine and co
 Prepare the following cable to the below spec:
 
 1. Black, 18AWG, 5cm, two male ends.
+    - Bridge the two wires disconnected from the brew thermostat. 
 
- [Detach the boiler](https://www.youtube.com/watch?v=0ipvBdWaVzQ) (only watch as far as the 5min mark) to gain enough access to remove the thermocouple and replace it with the m4 bolted thermocouple sensor. 
+Watch this video on how to [detach the boiler](https://www.youtube.com/watch?v=0ipvBdWaVzQ) until the 5min mark. This will allow enough access to remove the thermocouple and replace it with the m4 bolted thermocouple sensor. 
 
-You’ll obviously need to remove the two connectors from the original thermostat first - which is located at the bottom of the boiler on the side closest to the power on switch.  
-
-The small black cable you prepared with the male spade ends is used to bridge the two wires that you just disconnected from the brew thermostat. 
+Remove the two connectors from the original thermostat which are to be bridge.
 
 ![image](https://user-images.githubusercontent.com/53577819/154983715-46b1332f-f88a-4ef3-a625-b7f2788caf97.jpeg ':size=350')
 
@@ -231,18 +215,19 @@ Now re-attach the boiler.
 
 ?>Refer to the [3.2.2 Component Wiring](#_322-thermocouple-max6675) section on wiring to the arduino.
 ### 2.1.4 Solid State Relay
-Prepare cables with below spec:
 
-1. Red, 18AWG, 10cm, one male spade end, one exposed end.
-2. Red, 18AWG, 10cm, one male spade end, one exposed end.
+?>Recommended to use U type spade to connect wires to SSR.
+> Optional: might be a good idea to either tape up the exposed steam thermostat or remove it and tape up the exposed location.
 
-The 2 are used to connect the steam thermostat connections to port 1 and 2 of the Solid State Relay, so:
+Remove the steam thermostat connections cables:
 
 ![image](https://user-images.githubusercontent.com/53577819/154989308-14e9ea82-8a60-4f3d-bd9f-05dda6fa15c8.JPG ':size=350')
 
-Optional: might be a good idea to either tape up the exposed steam thermostat or remove it and tape up the exposed location.
-
-![image](https://user-images.githubusercontent.com/53577819/154989373-57093be0-ac48-4ac6-ad0b-d88adc2415d9.jpg ':size=350')
+Prepare cables with below spec:
+1. Red, 18AWG, 10cm, one male spade end, one exposed end (or U spade).
+    - Male end goes to steam thermostat connection. Other end goes to port 1 of SSR
+2. Red, 18AWG, 10cm, one male spade end, one exposed end (or U spade).
+    - Male end goes to steam thermostat connection. Other end goes to port 2 of SSR
 
 ![image](https://user-images.githubusercontent.com/53577819/154989357-ec8c4853-0bb9-4eec-8629-dfc76e72e725.jpg ':size=350')
 
@@ -288,8 +273,11 @@ As shown below plug your cables in to the circled connections on the brew switch
 ### 2.2.1 RobotDYN Dimmer
 Prepare 3 cables with the below spec:
 1. Red, 18AWG, 15cm, one exposed end, one female spade end.
+    - From the dimmer positive line OUT with the female end going into one of the pump connections itself. 
 2. Red, 18AWG, 15cm, one exposed end, one male spade end.
+    - From the dimmer L line IN with the male end going into the connector that was removed from the pump.
 3. Black splitter, 18AWG, 15cm, one exposed end, one male spade end, one female spade end.
+    - From the dimmer N line IN with the male into the connector that was removed from the pump and female into the remaining connection on the pump itself.
 
 !>Please check whether your dimmer ports placement in the case it differs from the images before connecting the dimmer, it's very important to feed the IN and OUT wires correctly!
 
@@ -297,16 +285,10 @@ Example of dimmer ports:
 
 ![image](https://user-images.githubusercontent.com/53577819/154989499-7e95ca82-f8eb-4f63-b57b-3ca1e7e14eeb.png ':size=350')
 
-Remove the connections detailed in the image below from the pump (mark the connector either L or R for where it was located either left or right in relation to the pump):-
+Connections detailed in the image below from the pump (mark the connector either L or R for where it was located either left or right in relation to the pump):-
 
 ![image](https://user-images.githubusercontent.com/53577819/154989519-4e5ba059-22a4-4397-8dfb-5b7dff411bbf.jpg ':size=350')
 
-With the cables you prepared:
-* Cable 1: From the dimmer positive line Out - single red wire with the female end going into one of (choose the left connection according to the image above) the pump connections itself. 
-
-* Cable 2: From the dimmer positive line In - single red wire with the male end going into the connector that was removed from the pump above (in this case it would be the left connector).
-
-* Cable 3: From the dimmer neutral line In - with the black splitter with the male into the connector taken out of the pump (right connector) and female into the (right) remaining connection on the pump itself.
 
 > [!Warning]
 > Triple check your dimmer board on what is marked as IN and OUT. You need to make sure they are connected properly. **IF YOU DO NOT YOU WILL DESTROY THIS COMPONENT.**
@@ -330,8 +312,6 @@ It's advisable after making the connections and just before connecting the trans
 **Try to keep the sensor itself away from HV lines and also the pump itself. This will help reduce noise.**
 
 ![image](https://user-images.githubusercontent.com/53577819/210058187-e04d976e-cc38-43f1-90fd-3a380e603ef7.png ':size=500')
-
-![image](https://user-images.githubusercontent.com/53577819/210058289-44393a75-a9c4-4ef7-b5c1-c558a574a1c6.png ':size=500')
 
 Make sure to push the hose all the way up to the ends on each side, the T and the pressure sensor.
 
