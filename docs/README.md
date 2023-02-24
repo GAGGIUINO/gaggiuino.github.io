@@ -127,10 +127,10 @@ _Will enable only brew and steam temperature control_
 * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
 * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
-* [Cables option 1](https://bit.ly/3tjSQbI) or [Cables option 2](https://www.aliexpress.com/item/1005002288468147.html)
+* [Heat-resistant Silicone Wire](https://bit.ly/3tjSQbI)
   * **18AWG - 1m:** Black, Red & White
-  * **22AWG - 1m:** Black, Red & White
-  * **26AWG - 5m:** Black, Red, Blue and Yellow
+  * **22AWG - 5m:** Black, Red & White
+  * **26AWG - 5m:** Black, Red, Blue & Yellow
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
 * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
@@ -174,10 +174,10 @@ _Will enable only brew and steam temperature control_
 * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
 * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
-* [Cables option 1](https://bit.ly/3tjSQbI) or [Cables option 2](https://www.aliexpress.com/item/1005002288468147.html)
+* [Heat-resistant Silicone Wire](https://bit.ly/3tjSQbI)
   * **18AWG - 1m:** Black, Red & White
-  * **22AWG - 1m:** Black, Red & White
-  * **26AWG - 5m:** Black, Red, Blue and Yellow
+  * **22AWG - 5m:** Black, Red & White
+  * **26AWG - 5m:** Black, Red, Blue & Yellow
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
 * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)

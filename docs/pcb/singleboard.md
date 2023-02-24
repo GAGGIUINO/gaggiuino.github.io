@@ -15,7 +15,7 @@
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
 * [Cables option 1](https://bit.ly/3tjSQbI) or [Cables option 2](https://www.aliexpress.com/item/1005002288468147.html)
   * **18AWG - 1m:** Black, Red, Brown, White, Green, Blue & Yellow
-  * **26AWG - 1m:** Black, Red, White, Orange & Yellow
+  * **26AWG - 5m:** Black, Red, White, Orange & Yellow
 * [JST XH 4P](https://www.aliexpress.us/item/2251832768103991.html)
 * [JST PH 2P, 3P, 4P and 5P](https://www.aliexpress.com/item/4000091077742.html)
 * [Spade connectors M/F 6.3mm](https://bit.ly/2Sjrkhu)
