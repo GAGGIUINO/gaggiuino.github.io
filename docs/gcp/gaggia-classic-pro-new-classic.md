@@ -124,10 +124,9 @@ If your LCD is on even though you've not flipped the machine switch on, this mea
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic Pro -->
+On the power switch - wire in switch pole 2 as LIVE piggyback and switch pole 5 as GND.
 
 ![image](https://user-images.githubusercontent.com/53577819/220789498-d8372d09-30b6-4a2a-ba05-2bad4f847aaf.png ':size=350')
-
-On the power switch - wire in switch pole 2 as LIVE piggyback and switch pole 5 as GND.
 
 <!-- tab: Gaggia New Classic (auto shut-off) -->
 > [!NOTE]
