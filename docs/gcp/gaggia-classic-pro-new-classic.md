@@ -239,12 +239,11 @@ Prepare cables with below spec:
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic Pro -->
 Image of the steam switch schematic:
-
-![image](https://user-images.githubusercontent.com/53577819/154989457-f5ac859e-5aa5-4554-be46-fba6ad4fa1f0.png ':size=350')
-
 1. Move steam switch wire 4 to steam switch pole 1.
 2. Unplug and secure steam switch wire 5.
 3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 26AWG wires.
+
+![image](https://user-images.githubusercontent.com/53577819/154989457-f5ac859e-5aa5-4554-be46-fba6ad4fa1f0.png ':size=350')
 
 <!-- tab:Gaggia New Classic (auto shut-off) -->
 1. Unplug and secure the green connector (steam poles 1).
@@ -254,7 +253,7 @@ Image of the steam switch schematic:
 5. Move the orange connector on to switch pole 3. 
 6. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 26AWG wires.
 
-![image](https://user-images.githubusercontent.com/53577819/214284971-76c6e9bb-f4ab-459d-aba1-740be164bca3.png ':size=350')
+![image](https://user-images.githubusercontent.com/53577819/221423529-7c64604f-0a47-4989-857a-09ce6ce9e2b2.png ':size=350')
 
 <!-- tabs:end -->
 
