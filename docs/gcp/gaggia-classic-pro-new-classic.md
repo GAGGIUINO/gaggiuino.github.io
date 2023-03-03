@@ -3,18 +3,18 @@
 
 !>**By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!**
 
-# 1.0.0 TEST INSTALL
+# Test Install
 We are not installing inside the machine yet. We need to ensure our nano and expansion board are soldered to a good standard. We just want to test as much as we can to make sure we've not got any duds from a base functionality point of view.
 
-We need to understand what goes where. The schematics in [3.1.0 Schematics and Diagrams](#_310-schematics-and-diagrams) aren't really rocket science but for someone who's never disassembled or has no experience working with electrical circuits it might get confusing really fast. 
+We need to understand what goes where. The schematics in [Schematics and Diagrams](#schematics-and-diagrams) aren't really rocket science but for someone who's never disassembled or has no experience working with electrical circuits it might get confusing really fast. 
 
 > [!NOTE]
 >1. No permanent connections are needed during testing.
 >2. Your microcontroller and expansion board header pins need to be soldered perfectly, see [Recommendations](/learning/learning-sources.md)
 >3. The 5v/GND Arduino board pins will be shared between all the connected devices.
->4. All component wiring tables are in the appendix at the end [3.2.0 Component Wiring](#_320-component-wiring).
+>4. All component wiring tables are in the appendix at the end [Component Wiring](#component-wiring).
 
-## 1.0.1 Arduino Config 
+## Arduino Config 
 Place Arduino into the expansion board the correct way round. Power it through USB adapter for now during the testing phase.
 
 Image of Arduino with pins soldered:
@@ -31,29 +31,29 @@ Make sure the terminals are correct way round and place the Arduino into the exp
 
 !>**Attention! You are not soldering the Arduino to the expansion board itself. You are only soldering the pins to the Arduino and pins to the expansion board. The Arduino then just sits/connects into the expansion board pins.**
 
-## 1.0.2 Thermocouple MAX6675 Config
+## Thermocouple MAX6675 Config
 You should have bought and received a MAX6675 board which comes with a test thermocouple. We're swapping this for the **C-M4 screw K-Type thermocouple sensor** as this is what will be replacing the original that's in the machine.
  
 ![image](https://user-images.githubusercontent.com/53577819/154988423-f741a369-ec60-4266-9544-0effedb57292.jpg ':size=500')
 
 ![image](https://user-images.githubusercontent.com/53577819/154988392-619a5bc2-99cc-499d-8ad8-42792b094fd2.jpg ':size=500')
 
-?>Refer to the [3.2.2 Component Wiring](#_322-thermocouple-max6675) section on wiring to the arduino.
-## 1.0.3 Solid State Relay Config
+?>Refer to the [Component Wiring](#thermocouple-max6675-wiring) section on wiring to the arduino.
+## Solid State Relay Config
 This relay is what manages the temp by cutting the voltage when the thermocouple is at a set temp. 
 
 ![image](https://user-images.githubusercontent.com/53577819/154988554-5be0bb0a-dcf2-4bf7-a70f-4c356d00eea6.jpg ':size=500')
 
-?>Refer to the [3.2.3 Component Wiring](#_323-solid-state-relay) section on wiring to the arduino.
-## 1.0.4 Nextion LCD Config
+?>Refer to the [Component Wiring](#solid-state-relay-wiring) section on wiring to the arduino.
+## Nextion LCD Config
 The correct screen size is **2.4"**. If yours does not have markings for wiring then please see below image
 
 ![image](https://user-images.githubusercontent.com/53577819/154988491-28c1e861-46bc-433b-a5f8-8e9eeb8b51ed.png ':size=500')
 
 ![image](https://user-images.githubusercontent.com/53577819/154988514-13a1d7af-f704-49b6-975b-aeee1318cf36.jpg ':size=500')
 
-?>Refer to the [3.2.4 Component Wiring](#_324-nextion-lcd-display) section on wiring to the arduino.
-## 1.0.5 Software Install
+?>Refer to the [Component Wiring](#nextion-lcd-display-wiring) section on wiring to the arduino.
+## Software Install
 ?>To flash the Arduino Nano microcontroller, pls follow the video from the [Prerequisites](prereq/prerequisites.md) section of this site.
 
 !>Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.
@@ -68,7 +68,7 @@ Download and unzip the *.tft file on a FAT32(MS-DOS (FAT32)) formatted microSD c
 5. Power on the Arduino Board Setup and installation should occur automatically.
 6. Once “**successed**” turn power off and remove the MicroSD card, only now setup can be powered.
 
-## 1.0.6 Test
+## Base Test
 You should now see the Gaggiuino project on the LCD. 
 If your connections are sound and well secured, you should see a temperature reading on screen. The expected temp reading will contain the default offset of 7 (which means the initial temp will be = room temp -7)
 
@@ -78,21 +78,21 @@ If everything looks good, move on to Installing into the Gaggia Classic Pro
 
 **If all the above works as expected you're ready to install it inside the machine.**
 
-# 2.0.0 Install
+# Machine Install
 Undo everything as we will now install into the machine. 
 
 All components except the Arduino and LCD will be internal to the machine. Remember this when wiring the LCD. 
 
 For each of the components we want to start guesstimating on cable length. You can do this by placing components where you want to place them. Close together components can share similar wiring i.e. 5v and GND.
 
-?>Please use the tables in [3.2.0 Component Wiring](#_320-component-wiring) for details on pin connections to the Arduino. 
+?>Please use the tables in [Component Wiring](#component-wiring) for details on pin connections to the Arduino. 
 
-## 2.1.0 Base Functionality
+## Base Functionality
 
 > [!NOTE]
-> If you have the GAGGIA New Classic 2018/2019 (auto shut-off after 20mins), then you will need to fully bypass the ECO PCB that is on board. Steps are shown here [Bypass ECO Board](#_212-bypass-eco-board).
+> If you have the GAGGIA New Classic 2018/2019 (auto shut-off after 20mins), then you will need to fully bypass the ECO PCB that is on board. Steps are shown here [Bypass ECO Board](#bypass-eco-board).
 
-### 2.1.1 Power Delivery
+### Power Delivery
 Take off the top cover of your machine by unscrewing the 2 top screws. Be sure to mark your top left power connector so you don't mix them up (even though it's not that hard to understand which one is which).
 
 Prepare splitter cables with the below specs:
@@ -105,7 +105,7 @@ Example of a red and black splitter:
 
 ![image](https://user-images.githubusercontent.com/53577819/154988645-5f1da175-7d09-437a-ac2c-f64e16f3a564.jpg ':size=350')
 
-To determine where piggyback locations are check what the schematics say [3.1.0 Schematics & Diagrams](#_310-schematics-and-diagrams).
+To determine where piggyback locations are check what the schematics say [Schematics & Diagrams](#schematics-and-diagrams).
 
 Whilst following schematics it's important to **test** you have found the correct piggyback locations. In order to do this please follow the below instructions before turning on your machine.
 
@@ -120,7 +120,7 @@ As stated you want to find the connector that only shows voltage after flipping 
 
 If your LCD is on even though you've not flipped the machine switch on, this means you've piggybacked into the mains live which has constantly got voltage - **this is not correct!**
 
-!>Below are snippets of the power switch which are in [Schematics and Diagrams](#_310-schematics-and-diagrams).
+!>Below are snippets of the power switch which are in [Schematics and Diagrams](#schematics-and-diagrams).
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic Pro -->
@@ -130,7 +130,7 @@ On the power switch - wire in switch pole 2 as LIVE piggyback and switch pole 5 
 
 <!-- tab: Gaggia New Classic (auto shut-off) -->
 > [!NOTE]
->Firstly refer to section [2.1.2 Bypass ECO Board](#_212-bypass-eco-board). 
+>Firstly refer to section [Bypass ECO Board](#bypass-eco-board). 
 
 After bypassing the eco board you can then use **power** switch poles 1 as LIVE and 4 as GND.
 
@@ -163,11 +163,11 @@ Prepare more cables with the below spec:
 
 !>**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**
 
-?>Refer to the [3.2.1 Component Wiring](#_321-power-delivery) section on wiring to the arduino.
-### 2.1.2 Bypass ECO Board
+?>Refer to the [Component Wiring](#power-delivery-wiring) section on wiring to the arduino.
+### Bypass ECO Board
 !>Skip this section if you **DO NOT** have a Gaggia New Classic 2018/19
 
-?>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins. This requires you to look at the [Gaggia New Classic 2018/19 Nano Wiring](#_310-schematics-and-diagrams). 
+?>You can identify if you have an ECO machine (usually sold in EU/UK) if your machine turns off automatically after 20mins. This requires you to look at the [Gaggia New Classic 2018/19 Nano Wiring](#schematics-and-diagrams). 
 
 Prepare the following cables to the below spec:
 
@@ -184,7 +184,7 @@ _Length for these cables is to cover the distance from the back to the front of 
 
 !>**Remember to remove the middle spring from your power switch.**
 
-### 2.1.3 Thermocouple MAX6675
+### Thermocouple MAX6675
 Prepare the following cable to the below spec:
 
 1. Black, 18AWG, 5cm, two male ends.
@@ -206,14 +206,14 @@ Now unscrew the original thermostat and replace with the m4 brass thermocouple. 
 
 ![image](https://user-images.githubusercontent.com/53577819/154984016-714b6532-e31d-42d3-b2ee-cf064487db66.jpeg ':size=350')
 
-?>Consider installing the pressure sensor now whilst the boiler is out [Pressure Transducer](#_222-pressure-transducer).
+?>Consider installing the pressure sensor now whilst the boiler is out [Pressure Transducer](#pressure-transducer).
 
 Now re-attach the boiler.
 
 !>**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**
 
-?>Refer to the [3.2.2 Component Wiring](#_322-thermocouple-max6675) section on wiring to the arduino.
-### 2.1.4 Solid State Relay
+?>Refer to the [Component Wiring](#thermocouple-max6675-wiring) section on wiring to the arduino.
+### Solid State Relay
 
 ?>Recommended to use U type spade to connect wires to SSR.
 > Optional: might be a good idea to either tape up the exposed steam thermostat or remove it and tape up the exposed location.
@@ -232,8 +232,8 @@ Prepare cables with below spec:
 
 ![image](https://user-images.githubusercontent.com/53577819/154989336-76f91fb5-2fdd-4c53-b968-e860af3f8505.jpg ':size=350')
 
-?>Refer to the [3.2.3 Component Wiring](#_323-solid-state-relay) section on wiring to the arduino.
-### 2.1.5 Steam Handling
+?>Refer to the [Component Wiring](#solid-state-relay-wiring) section on wiring to the arduino.
+### Steam Handling
 !>**Very important to NOT turn on the machine until we check the steam switch wire positions**
 
 <!-- tabs:start -->
@@ -241,7 +241,7 @@ Prepare cables with below spec:
 Image of the steam switch schematic:
 1. Move steam switch wire 4 to steam switch pole 1.
 2. Unplug and secure steam switch wire 5.
-3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 26AWG wires.
+3. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [Component Wiring](#steam-handling-wiring), using 26AWG wires.
 
 ![image](https://user-images.githubusercontent.com/53577819/154989457-f5ac859e-5aa5-4554-be46-fba6ad4fa1f0.png ':size=350')
 
@@ -251,13 +251,13 @@ Image of the steam switch schematic:
 3. Unplug and secure the single white connector (possibly on switch pole 2 or 5).
 4. Move the double white connector to switch pole 2. 
 5. Move the orange connector on to switch pole 3. 
-6. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [3.2.5 Component Wiring](#_325-steam-handling), using 26AWG wires.
+6. Connect steam switch poles 4 and 5 to the Arduino nano as shown in [Component Wiring](#steam-handling-wiring), using 26AWG wires.
 
 ![image](https://user-images.githubusercontent.com/53577819/221423529-7c64604f-0a47-4989-857a-09ce6ce9e2b2.png ':size=350')
 
 <!-- tabs:end -->
 
-### 2.1.6 Continuity Brew Detection
+### Continuity Brew Detection
 Prepare 2 cables with the below spec:
 1. Green (just not red or black), 26AWG, length from brew to Arduino, one exposed end, one female spade end.
 2. Black, 26AWG, length from brew to Arduino, one exposed end, one female spade end.
@@ -266,9 +266,9 @@ As shown below plug your cables in to the circled connections on the brew switch
 
 ![image](https://user-images.githubusercontent.com/53577819/154985120-fe503708-50c1-4376-9459-d72312fbbadc.jpeg ':size=350')
 
-?>Refer to the [3.2.6 Component Wiring](#_326-continuity-brew-detection) section on wiring to the arduino.
-## 2.2.0 Extended Functionality
-### 2.2.1 RobotDYN Dimmer
+?>Refer to the [Component Wiring](#continuity-brew-detection-wiring) section on wiring to the arduino.
+## Extended Functionality
+### RobotDYN Dimmer
 Prepare 3 cables with the below spec:
 1. Red, 18AWG, 15cm, one exposed end, one female spade end.
     - From the dimmer positive line OUT with the female end going into one of the pump connections itself. 
@@ -297,17 +297,26 @@ Connections detailed in the image below from the pump (mark the connector either
 
 !>**Make sure this component is well insulated and enclosed. You do not want to touch it or let it make contact with anything whilst the machine is on!**
 
-?>Refer to the [3.2.7 Component Wiring](#_327-robotdyn-dimmer) section on wiring to the arduino.
-### 2.2.2 Pressure Transducer
+?>Refer to the [Component Wiring](#robotdyn-dimmer-wiring) section on wiring to the arduino.
+### Pressure Transducer
 The pressure sensor will be tapping into the orange braided hose connecting the pump outlet and the boiler inlet. 
 
-!>**There is no need to take off your original saeco hose.** 
+>[!Note]
+> 1. There is no need to take off your original saeco hose.
+> 2. Do this with the boiler half way out for easy access.
+> 3. You can warm up the ends of the hose or use water based lubricant to ease onto barb fittings.
+> 4. If you use teflon tape only use maximum two turns but it is generally not recommended.
 
-Splice into it from the centre and add the T fitting with clamps. Add the additional/new hose to the free T end with clamps and to the other side, the fitting with clamps and tighten the pressure sensor on to it with teflon tape. 
+- Splice into the braided original saeco hose from the centre and add the T fitting.
+- Makes sure to add clamps to each end where there is a barb. 
+- Add the additional/new hose to the free T end.
+- Put the o-ring inside the 1/4" fiting.
+- Tighten the fitting to the pressure sensor (see below note). 
+- Tighten clamps. 
 
-It's advisable after making the connections and just before connecting the transducer itself turn on the machine and while cold engage the pump to fill the transducer hose with water as well, leaving a lot of air in the system might play funny with the readings.
+?> It's advisable after making the connections and just before connecting the transducer itself turn on the machine and while cold engage the pump to fill the transducer hose with water as well, leaving a lot of air in the system might play funny with the readings.
 
-?> **Try to keep the sensor itself away from HV lines and also the pump itself. Additionally it is recommended to use the full length of the new hose to connect to the pressure sensor. These things will help reduce noise.**
+!> **Try to keep the sensor itself away from HV lines and also the pump itself. Additionally it is recommended to use the full length of the new hose to connect to the pressure sensor. These things will help reduce noise.**
 
 ![image](https://user-images.githubusercontent.com/53577819/210058187-e04d976e-cc38-43f1-90fd-3a380e603ef7.png ':size=500')
 
@@ -317,9 +326,9 @@ Make sure to push the hose all the way up to the ends on each side, the T and th
 
 ![image](https://user-images.githubusercontent.com/53577819/210632536-762bff36-2776-4a6c-8c40-ea43f9e2f1d3.png ':size=500')
 
-?>Refer to the [3.2.8 Component Wiring](#_328-pressure-transducer) section on wiring to the arduino.
-### 2.2.3 Finish
-If you haven't already, you're ready to connect everything to the Arduino. Use [3.2.0 Component Wiring](#_320-component-wiring) for quickly referencing all components. 
+?>Refer to the [Component Wiring](#pressure-transducer-wiring) section on wiring to the arduino.
+## Finish
+If you haven't already, you're ready to connect everything to the Arduino. Use [Component Wiring](#component-wiring) for quickly referencing all components. 
 
 One piece of advice would be to solder all cables to their respective boards as during the machine operation there is quite a bit of vibration which can introduce noise/frequent. This can lead to unexplained behaviours.
 
@@ -339,8 +348,8 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 
 ?>If you have any issues, firstly check the rules on the discord and then open an **#install-help...** for your respective machine. Try to make sure you do some research with the use of the powerful search function on discord to search for keywords with images or links etc...
 
-# 3.0.0 Appendix
-## 3.1.0 Schematics and Diagrams
+# Appendix
+## Schematics and Diagrams
 > [!NOTE]
 >**THE SCHEMATIC DRAWINGS HAVE BEEN DRAWN FLIPPED AND UPSIDE DOWN. BLAME GAGGIA.**
 
@@ -352,20 +361,20 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 **Diagrams:**
 * [GAGGIA Classic Pro **Nano** Wiring](https://user-images.githubusercontent.com/53577819/210629022-76457adc-3575-4a9c-8d6f-a8f7bc18fd2a.png)
 
-## 3.2.0 Component Wiring
+## Component Wiring
 You can find the defined pins at the top of the .ino file.
 
 A suggestion on wiring; components that are inside same enclosure, the same connection can be linked i.e. solder a cable to the 5v pin then take the other end and solder to the 5V of the other component, from there take one cable to the Arduino. An alternative way is to  solder similar connections and apply heat-shrink before the exit to the machine then take one wire through the machine to the Arduino.
 
 ?>Any wires going to the expansion board itself will be **26AWG**.
-### 3.2.1 Power Delivery
+### Power Delivery Wiring
 | 12v | 5V IN | 5V OUT | NANO | 
 | ---- | ---- | ---- | ---- |
 | VCC   | IN +  | OUT +  | 5v      | 
 | GND   | IN -  | OUT -  | GND     |
 
 All the other boards should be connected to the same GND / 5V plane as NANO.
-### 3.2.2 Thermocouple MAX6675
+### Thermocouple MAX6675 Wiring
 | MAX6675 | NANO |
 | ------- | ------- |
 | VCC | 5V |
@@ -373,38 +382,38 @@ All the other boards should be connected to the same GND / 5V plane as NANO.
 | SCK | D6 |
 | SO  | D4 |
 | CS  | D5 | 
-### 3.2.3 Solid State Relay 
+### Solid State Relay Wiring
 | SSR | NANO |
 | --- | --- |
 | 4 | GND |
 | 3 | D8 |
-### 3.2.4 Nextion LCD Display
+### Nextion LCD Display Wiring
 | NEXTION | NANO |
 | --- | --- |
 |TX | RX |
 |RX | TX |
 |VCC/5V | 5V |
 |GND | GND |
-### 3.2.5 Steam Handling
-4 & 5 are the steam switch points from [2.1.5 Steam Handling](#_215-steam-handling)
+### Steam Handling Wiring
+4 & 5 are the steam switch points from [Steam Handling](#steam-handling)
 
 | GCP SWITCH | NANO |
 | ----- | ---- |
 |   4   | D7 | 
 |   5   | GND |
-### 3.2.6 Continuity Brew Detection
+### Continuity Brew Detection Wiring
 | BREW SWITCH | NANO |
 | --- | --- |
 |TOP  | A0 |
 |BOTTOM | GND |
-### 3.2.7 RobotDYN Dimmer
+### RobotDYN Dimmer Wiring
 | DIMMER | NANO |
 | --- | --- |
 | VCC | 5V |
 | GND | GND |
 | Z-C | D2 |
 | PSM/DIM | D9 |
-### 3.2.8 Pressure Transducer
+### Pressure Transducer Wiring
 | TRANSDUCER | NANO |
 | --- | --- |
 | RED | 5V |
