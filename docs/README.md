@@ -208,7 +208,7 @@ _Enables hardware-based realtime shot weight tracking and stop-on-weight._
 * **Scales:**
   * [Gaggia Classic & Classic Pro scales housing](https://www.printables.com/model/285370-gaggia-classic-pro-scales) *(BOM and models)*
 
-!> This is a highly advanced installation step and requires accurate 3D-printed parts, good installation practices, and in-depth understanding to achieve optimal results.
+  !> This is a highly advanced installation step and requires accurate 3D-printed parts, good installation practices, and in-depth understanding to achieve optimal results.
 
 <!-- tab:Nano to STM32 Upgrade -->
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
@@ -226,6 +226,8 @@ _Enables hardware-based realtime shot weight tracking and stop-on-weight._
 * **Base Functionality Housings**
   * [Screen Enclosure](https://www.printables.com/model/280617)
   * [Internal Component Housing](https://www.printables.com/model/269394)
+
+  ?> Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](https://www.printables.com/social/340492-loogle/collections/265668) or on Discord in the **#mod-3d-design-ideas** channel.
 
 * **Print services**
   * [Gaggiuino.HudsonCreativeGroup.com](https://gaggiuino.hudsoncreativegroup.com/) *(US-based store for Gaggiuino 3D prints)*
