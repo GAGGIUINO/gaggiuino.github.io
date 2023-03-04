@@ -1,5 +1,7 @@
 > [!Warning]
-> Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project.
+> Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. 
+
+!>By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!**
 
 # SCHEMATICS & DIAGRAMS
 **Schematics:**
@@ -9,10 +11,6 @@
 
 **Diagrams:**
 * [GAGGIA Classic **Nano** LV wiring](https://user-images.githubusercontent.com/42692077/160548957-88c93198-6d81-4081-8db6-552b6f6c5281.png)
-
-***
-!> **First and foremost, please do not underestimate the danger of electricity or overestimate your ability to work around it. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!**
-***
 
 # ARDUINO CONNECTIONS
 <!-- panels:start -->
@@ -69,6 +67,7 @@ GC SWITCH | Arduino
 4          |   GND
 
 ![GC - brew handling](https://user-images.githubusercontent.com/42692077/154805193-76068521-3ad4-4020-b2ee-8dab9394d4fe.png ':size=500')
+
 ***Make sure to mark the HV wires disconnected from the STEAM switch poles as they will be needed later in the install.***
 <!-- div:right-panel -->
 6. Brew detection
@@ -108,13 +107,15 @@ _Dimmer high voltage circuit control ports will act as a passthrough for the pum
 # ASSEMBLING
 First let's check that the setup works as expected while outside the machine so you don't have it all installed and realise just afterwards it's not reading any temperature because of a faulty component or the SSR doesn't switch between the ON/OFF modes.
 
-?>**Note 1 - No permanent connections are needed during testing, so no soldering needed for now (excludes soldering pins to arduino and expansion board).**
->
-?>**Note 2 - All LV(low voltage) sides of the boards will connect to a single 5V and GND rail on the Arduino.**
->
-?>**Note 3 - DO NOT FEED POWER TO ALL THE BOARDS THROUGH THE MCU USB PORT.**
->
-!>**As always with such projects common sense should be applied at all times, it's expected people doing such sort of modifications will have some basic understanding. Triple check your machine is disconnected from any power sources, even better just pull the power cable out of it if you haven't done so yet!**
+
+> [!NOTE]
+>1. No permanent connections are needed during testing.
+>2. Your microcontroller and expansion board header pins need to be soldered perfectly, see [Recommendations](/learning/learning-sources.md)
+>3. All LV(low voltage) sides of the boards will connect to a single 5V and GND rail on the Arduino.
+
+!>**DO NOT FEED POWER TO ALL THE BOARDS THROUGH THE MCU USB PORT.**
+
+!>As always with such projects common sense should be applied at all times, it's expected people doing such sort of modifications will have some basic understanding. Triple check your machine is disconnected from any power sources, even better just pull the power cable out of it if you haven't done so yet!
 
 # BASE FUNCTIONALITY BENCH TEST
 ***
@@ -178,7 +179,7 @@ So you end up having them connected like this:
 
 ![PXL_20210527_183052740 2](https://user-images.githubusercontent.com/109426580/190678786-d67b8034-f37e-41ed-a713-bbf2d4a2efb4.jpg ':size=500')
 
-8. To power the Arduino system, the 12v PSU has 2 AC IN ports which will be where the ends from the piggybacks will connect to - it doesn't matter which way round. Yes, you need to fiddle about getting wires in and solder correctly - recommended to trim, twist, tin and apply heat shrink. Then the 12V VCC goes to the IN + of the stepdown and the 12V GND goes to the IN -. Out connections on the stepdown connections will then go to the arduino. 
+8. To power the Arduino system, the 12v PSU has 2 AC IN ports which will be where the ends from the piggybacks will connect to - it doesn't matter which way round. Use the 22AWG between the PSU and the 5v Stepdown (amperage reasons). Make sure wires go through the holes then solder correctly - recommended to twist, tin and also apply heat shrink. With the 22AWG wire, the 12V VCC goes to the IN + of the stepdown and the 12V GND goes to the IN -. Out connections (26 AWG) on the stepdown connections will then go to the arduino. 
 
 ![image](https://user-images.githubusercontent.com/53577819/210059859-be0135a8-7041-48ab-a2a5-daa8c86d04a1.png" ':size=500')
 
@@ -193,7 +194,7 @@ So you end up having them connected like this:
 ![image](https://user-images.githubusercontent.com/109426580/190679925-4bfb1574-1af0-414f-b38c-18a5d8c6f8c2.png ':size=500')
 
 
-12. Connect steam switch poles 3 and 4 to the arduino nano as listed above using some AWG26 wires.
+12. Connect steam switch poles 3 and 4 to the arduino nano as listed above using some 26AWG wires.
 >
 ![image](https://user-images.githubusercontent.com/109426580/190680352-503d1a21-676c-4ec2-95dc-9a12ee5161ac.png ':size=500')
 

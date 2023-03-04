@@ -5,8 +5,7 @@
 <!-- ko-fi :id=zer0bit :color=<color> -->
     Support better docs
 <!-- ko-fi -->
-
-
+>
 # Features
 
   Feature                |  Arduino Nano    |  STM32 Blackpill
@@ -128,7 +127,10 @@ _Will enable only brew and steam temperature control_
 * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
 * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
-* [Thermo-resistant cables AWG18 (1m black & red) and AWG22 ( 5m black, red, yellow, blue, green and purple )](https://www.aliexpress.com/item/4000627624331.html)
+* [Heat-resistant Silicone Wire](https://bit.ly/3tjSQbI)
+  * **18AWG - 1m:** Black, Red & White
+  * **22AWG - 5m:** Black, Red & White
+  * **26AWG - 5m:** Black, Red, Blue & Yellow
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
 * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
@@ -141,7 +143,7 @@ _Will enable only brew and steam temperature control_
 _Will enable pump control based on active pressure feedback, this enables pressure and flow profiling as well as other functionality._
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-* [O-Ring - OD 11mm CS 1.5mm](https://www.aliexpress.com/item/1005002102273390.html)
+  * [O Ring - OD 11mm](https://www.aliexpress.com/item/1005003662931218.html) 
 
   <!-- tabs:start -->
   <!-- tab:Gaggia Classic -->
@@ -168,11 +170,14 @@ _Will enable only brew and steam temperature control_
 * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html) **GET THE GREEN ONE**
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
 * [5V RELAY](https://a.aliexpress.com/_vpUdrT) 
-* [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
+* [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card (Class 10 HC 8GB to 32GB)**
 * [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
 * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
-* [Thermo-resistant cables AWG18 (1m black & red) and AWG22 ( 5m black,red,yellow & blue )](https://www.aliexpress.com/item/4000627624331.html)
+* [Heat-resistant Silicone Wire](https://bit.ly/3tjSQbI)
+  * **18AWG - 1m:** Black, Red & White
+  * **22AWG - 5m:** Black, Red & White
+  * **26AWG - 5m:** Black, Red, Blue & Yellow
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
 * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
@@ -183,7 +188,8 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-* [O-Ring - OD 11mm CS 1.5mm](https://www.aliexpress.com/item/1005002102273390.html)
+  * [O Ring - OD 11mm](https://www.aliexpress.com/item/1005003662931218.html) 
+
   <!-- tabs:start -->
   <!-- tab:Gaggia Classic -->
   * [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
