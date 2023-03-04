@@ -206,33 +206,38 @@ _Will enable pump control based on active pressure feedback, this enables pressu
   !> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
   <!-- tabs:end -->
 
+### ADVANCED FUNCTIONALITY
+_Enables hardware-based realtime shot weight tracking and stop-on-weight._
+
+?> _By default the STM32 based build has **predictive scales** (software emulated scales) enabled hence one might be content enough with their performance after calibration has been performed using the discord **#predictive-scales-config-bot**_
+
+* **Scales:**
+  * [Gaggia Classic & Classic Pro scales housing](https://www.printables.com/model/285370-gaggia-classic-pro-scales) *(BOM and models)*
+
+  !> This is a highly advanced installation step and requires accurate 3D-printed parts, good installation practices, and in-depth understanding to achieve optimal results.
+
 <!-- tab:Nano to STM32 Upgrade -->
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
 * [5V RELAY](https://a.aliexpress.com/_vpUdrT) 
+
+!> See the STM32-Blackpill tab for [extended](#extended-functionality-1) and [advanced](#advanced-functionality) functionality components.
 <!-- tabs:end -->
-
-* **Scales:**
-
-?> _Will enable for realtime shot weight tracking without external scales, be aware this is a highly advanced installation step and requires in depth understanding to achieve optimal results, it can't be simplified due to the highly sensitive nature scales require in terms of both installation as well as various tolerances._
-
-?> _By default a STM32 based build has **predictive scales** (software emulated scales) enabled hence one might be content enough with the results seen by using these after the calibration has been performed using the discord **#predictive-scales-config-bot**_
->
-* [750g LOADCELLS x 2](https://www.aliexpress.com/item/1644918827.html)
-* [HX711 amplifier x 2](https://www.aliexpress.com/item/33041823995.html)
-* [Gaggia Classic & Classic Pro scales housing](https://www.printables.com/model/285370-gaggia-classic-pro-scales)
 <!-- div:panel-end -->
 > 
 > 
 > 
 >
-* **Printed Housings**
-  * [GC - LCD Enclosure](https://www.printables.com/model/280617)
+* **Base Functionality Housings**
+  * [Screen Enclosure](https://www.printables.com/model/280617)
   * [Internal Component Housing](https://www.printables.com/model/269394)
 
-* **Print service**
-  * [cloudcraft3d.com](https://craftcloud3d.com/)
+  ?> Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](https://www.printables.com/social/340492-loogle/collections/265668) or on Discord in the **#mod-3d-design-ideas** channel.
+
+* **Print services**
+  * [Gaggiuino.HudsonCreativeGroup.com](https://gaggiuino.hudsoncreativegroup.com/) *(US-based store for Gaggiuino 3D prints)*
+  * [cloudcraft3d.com](https://craftcloud3d.com/) *(International print shop aggregator)*
 
 # Statistics
 
