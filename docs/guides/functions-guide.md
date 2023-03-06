@@ -1,3 +1,7 @@
+
+> [!NOTE]
+> This page is a work in progress.
+
 # Functions and usage
 
  - **BOILER**: Sets the desired temperature at the boiler level
@@ -15,7 +19,7 @@
      - **Start**: Sets the desired starting point of the PP phase, can be High->Low or Low->High.
      - **Finish**: Sets the desired finish point of the PP phase, same as above can be from High->Low or Low->High.
      - **Hold**: Sets the length of the PP hold period, if it's desired to maintain the "Start" pressure for a period of time before the pressure drop/raise is applied this is where it's done.
-     - **Length**: Sets the length (aka curve speed) of the PP drop/raise behaviour, so one can change the pressure slow or fast if desired.
+     - **Length/Slope**: Sets the length (aka curve speed) of the PP drop/raise behaviour, so one can change the pressure slow or fast if desired.
 
 **Here is a classic pre-example of how a declining pressure profile can be used once the mod is installed.**
 
@@ -26,9 +30,9 @@
  - **DESCALE**: Enables the descaling program.
 
     1. Descaling takes around 45-50mins.
-    2. Fill up water tank fully loaded with water mixed with descale solution (possible 4tbsp citric acid per one tank of water).
+    2. Fill up water tank fully loaded with water mixed with descale solution (possible 4-6tbsp citric acid per one tank of water).
     3. Should be done with a blind basket and porta-filter locked in the grouphead.
     4. Open the steam valve one full turn to allow the water to flow in a separate reservoir.
-    5. Once finished you will be notified. Please note there could be a jump in progress from 40% to 100%. Just know it should take around 50mins and you will observe pump activation every so often.
-    6. After the descale function has finished, empty and refill the tank with water. With a blind basket, run a flush with the steam knob one full turn open into a water jug again. Repeat this 3 times.
+    5. About 30 minutes since starting the procedure the water tank should be nearly empty, once the descaling solution water mix runs out the pump pitch will change fill the reservoir with clean fresh water, the pump should prime itself in a few seconds and continue the cleaning procedure.
+    6. A **FINISHED** message will popup when descaling finishes.
 

@@ -115,7 +115,9 @@ _*3_ __Predictive scales__ - software driven predicted weight output, doesn't ne
 <!-- panels:start -->
 <!-- div:title-panel -->
 # Bill of Materials
-?> The current recommendation is to perform the Nano build first, after which one can easily upgrade to STM32 if further functionality is desired, jumping straight into STM32 is not encouraged for the inexperienced due to the documentation targeting a direct Nano install at this point in time.
+
+> [!TIP]
+> The current recommendation is to perform the Nano build first, after which one can easily upgrade to STM32 if further functionality is desired, jumping straight into STM32 is not encouraged for the inexperienced due to the documentation targeting a direct Nano install at this point in time.
 <!-- tabs:start -->
 <!-- tab:Arduino Nano -->
 ### BASE FUNCTIONALITY
@@ -143,23 +145,24 @@ _Will enable only brew and steam temperature control_
 _Will enable pump control based on active pressure feedback, this enables pressure and flow profiling as well as other functionality._
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-  * [O Ring - OD 11mm](https://www.aliexpress.com/item/1005003662931218.html) 
+* [O Ring - OD 11mm](https://www.aliexpress.com/item/1005003662931218.html) 
 
-  <!-- tabs:start -->
-  <!-- tab:Gaggia Classic -->
-  * [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
-  * [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
-  * [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
+* [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
+* [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
+* [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
 
-  <!-- tab:Gaggia Classic Pro -->
-  * Saeco - [Option 1](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) | [Option 2](https://www.ebay.co.uk/itm/114865529829)  **HIGHLY RECOMMENDED ORIGINAL PART - AVAILABLE LOCALLY**
-  * **THIS ALTERNATE HOSE OPTION IS A LAST RESORT - READ BELOW WARNING** [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html)
-  * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
-  * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
-  * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
+<!-- tab:Gaggia Classic Pro -->
+* [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
+* [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html)**THIS ALTERNATE HOSE OPTION IS A LAST RESORT - READ BELOW WARNING** 
+* [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
+* [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
+* [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
-  !> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
-  <!-- tabs:end -->
+> [!WARNING]
+> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
+<!-- tabs:end -->
 
 <!-- tab:STM32 Blackpill -->
 ### BASE FUNCTIONALITY
@@ -188,34 +191,24 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-  * [O Ring - OD 11mm](https://www.aliexpress.com/item/1005003662931218.html) 
+* [O Ring - OD 11mm](https://www.aliexpress.com/item/1005003662931218.html)
 
-  <!-- tabs:start -->
-  <!-- tab:Gaggia Classic -->
-  * [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
-  * [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
-  * [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
+* [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
+* [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
+* [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
 
-  <!-- tab:Gaggia Classic Pro -->
-  * Saeco - [Option 1](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) | [Option 2](https://www.ebay.co.uk/itm/114865529829)  **HIGHLY RECOMMENDED ORIGINAL PART - AVAILABLE LOCALLY**
-  * **THIS ALTERNATE HOSE OPTION IS A LAST RESORT - READ BELOW WARNING** [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html)
-  * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
-  * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
-  * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
+<!-- tab:Gaggia Classic Pro -->
+* [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
+* [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html)**THIS ALTERNATE HOSE OPTION IS A LAST RESORT - READ BELOW WARNING**
+* [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
+* [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
+* [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
-  !> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
-  <!-- tabs:end -->
-
-### ADVANCED FUNCTIONALITY
-_Enables hardware-based realtime shot weight tracking and stop-on-weight._
-
-?> _By default the STM32 based build has **predictive scales** (software emulated scales) enabled hence one might be content enough with their performance after calibration has been performed using the discord **#predictive-scales-config-bot**_
-
-* **Scales:**
-  * [Gaggia Classic & Classic Pro scales housing](https://www.printables.com/model/285370-gaggia-classic-pro-scales) *(BOM and models)*
-
-  !> This is a highly advanced installation step and requires accurate 3D-printed parts, good installation practices, and in-depth understanding to achieve optimal results.
-
+> [!WARNING]
+> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
+<!-- tabs:end -->
 <!-- tab:Nano to STM32 Upgrade -->
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
@@ -226,8 +219,16 @@ _Enables hardware-based realtime shot weight tracking and stop-on-weight._
 <!-- tabs:end -->
 <!-- div:panel-end -->
 > 
-> 
-> 
+### SCALES FUNCTIONALITY
+_Enables hardware-based realtime shot weight tracking and stop-on-weight._
+
+> [!NOTE]
+> _By default the STM32 based build has **predictive scales** (software emulated scales) enabled hence one might be content enough with their performance after calibration has been performed using the discord **#predictive-scales-config-bot**_
+
+> [!WARNING]
+> This is a highly advanced installation step and requires accurate 3D-printed parts, good installation practices, and in-depth understanding to achieve optimal results.
+
+* [Gaggia Classic & Classic Pro scales housing](https://www.printables.com/model/285370-gaggia-classic-pro-scales) *(BOM and models)*
 >
 * **Base Functionality Housings**
   * [Screen Enclosure](https://www.printables.com/model/280617)
@@ -236,8 +237,8 @@ _Enables hardware-based realtime shot weight tracking and stop-on-weight._
   ?> Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](https://www.printables.com/social/340492-loogle/collections/265668) or on Discord in the **#mod-3d-design-ideas** channel.
 
 * **Print services**
-  * [Gaggiuino.HudsonCreativeGroup.com](https://gaggiuino.hudsoncreativegroup.com/) *(US-based store for Gaggiuino 3D prints)*
-  * [cloudcraft3d.com](https://craftcloud3d.com/) *(International print shop aggregator)*
+  * [US based Gaggiuino tailored print service](https://gaggiuino.hudsoncreativegroup.com/)
+  * [International print shop aggregator](https://craftcloud3d.com/)
 
 # Statistics
 
