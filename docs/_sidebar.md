@@ -11,5 +11,4 @@
 * - Upgrades
     * [Lego AIO Housing](guides/lego-component-build-guide.md)
     * [STM32 UPGRADE](stm32-upgrade-pack/blackpill.md)
-    * [Scales Configuration](scales/scales.md)
     * [PCB](pcb/singleboard.md)
