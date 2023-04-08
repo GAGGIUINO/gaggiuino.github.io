@@ -5,8 +5,8 @@
 # SCHEMATICS & DIAGRAMS
 **Schematics:**
 * [GAGGIA Classic **Nano** HV wiring](https://user-images.githubusercontent.com/42692077/161397293-82df427a-2ac2-4226-bdc6-fa831a962265.png)
-* [GAGGIA Classic **STM32-Blackpill** HV wiring](https://user-images.githubusercontent.com/117388662/204613299-8921379c-7bc0-4cf2-ae9f-0b7c7dd12654.JPG)
-* [GAGGIA Classic **STM32-Blackpill** LV wiring](https://user-images.githubusercontent.com/117388662/204613314-01b55b08-4702-4de5-8a25-f4e9dd1442b6.JPG)
+* [STM32 Comp GC **STM32-Blackpill** HV wiring](https://user-images.githubusercontent.com/53577819/220784848-ab1fe9f1-92cc-40b4-a1c7-7200ab9a2b87.JPG)
+* [STM32 Comp GC **STM32-Blackpill** LV wiring](https://user-images.githubusercontent.com/53577819/220784856-c1b5f073-5c0b-470e-b47e-c78eda7099ea.JPG)
 
 **Diagrams:**
 * [GAGGIA Classic **Nano** LV wiring](https://user-images.githubusercontent.com/42692077/160548957-88c93198-6d81-4081-8db6-552b6f6c5281.png)
