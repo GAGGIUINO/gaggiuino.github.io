@@ -1,5 +1,5 @@
 This is a quick guide on how to best piece together the Gaggiuino mod into the 3D printed housing.
-Lots of images are provided to give you a sense of what a completed lego build should look like in the box.
+Lots of images are provided to give you a sense of what a completed STM32 component (Lego) build should look like in the box.
 
 # Preparation 
 It is recommended to remove pins on the dimmer and thermocouple interface boards for the smallest, best connection. If you’d prefer to not do this in later steps you can solder wires to the pins and heat shrink over them.
@@ -69,9 +69,11 @@ Note: you can use strip board for power distribution (cut for 6x5 usable points)
 <img width="547" alt="image" src="https://user-images.githubusercontent.com/53577819/211652610-4b63d97b-90fd-43b1-b37f-a71ad0523008.png">
 
 # Component Wiring 
-The next steps describe the process of wiring the components together. You can do the power wiring first, then follow it up with the component signal wiring, but it can be done in whatever order you like. Trust the schematic if you’re confused on a step or there appears to be a difference between an image and the schematic. You can use 22AWG wires unless otherwise noted; see the schematic for permissible wire gauges.
+The next steps describe the process of wiring the components together. You can do the power wiring first, then follow it up with the component signal wiring, but it can be done in whatever order you like. Trust the schematic if you’re confused on a step or there appears to be a difference between an image and the schematic. You can use 22-26AWG wires unless otherwise noted; see the schematic for permissible wire gauges.
 
-<img width="649" alt="image" src="https://user-images.githubusercontent.com/53577819/211652678-d2f92acd-9b50-41ec-885b-a6c1a043e969.png">
+<img width="854" alt="image" src="https://user-images.githubusercontent.com/117388662/230696068-e49df2fa-c3b6-49c2-80ff-629b80780938.png">
+
+[STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/230696068-e49df2fa-c3b6-49c2-80ff-629b80780938.png)
 
 ## Power wiring 
 If using a strip board it is recommended to use an arrangement like this with two rows of 5V and two rows of 5V GND (0 VDC). 
