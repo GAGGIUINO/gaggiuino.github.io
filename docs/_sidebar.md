@@ -4,7 +4,6 @@
 * - [Community media](community/community-media.md)
 * - [Functions Overview](guides/functions-guide.md)
 * - [Recommendations](learning/learning-sources.md)
-* - [Frequently Asked Questions](learning/faq.md)
 * Install Guides
 * - [Prerequisites](prereq/prerequisites.md)
 * - [Gaggia Classic](gc/gaggia-classic.md)
