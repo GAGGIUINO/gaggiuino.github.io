@@ -1,4 +1,3 @@
-
 * **Q: What is the current recommendation for the method of installation?**
 
   **A:** The "LEGO" method for STM32 Blackpill is recommended for most users.
