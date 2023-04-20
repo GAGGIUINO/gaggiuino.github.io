@@ -4,7 +4,7 @@
 
 * **Q: Why Arduino and STM32 and not some other processor like ESP32?**
 
-  **A:** STM32 and Arduino were selected because of platform familiarity and safety concerns. Different microcontrollers have different purposes and strengths. Espresso machines are potential pressure bombs, electrocusion hazzards, and (unlikely) sopurces of causing a fire or leaking water. Based on how the STM32 vs ESP32 are designed there are faster floating-point calculations, better safety controls, and fewer unnecessary performance variables.
+  **A:** STM32 and Arduino were selected because of platform familiarity and safety concerns. Different microcontrollers have different purposes and strengths. Espresso machines are potential pressure bombs, electrocution hazards, and (unlikely) sources of causing a fire or leaking water. Based on how the STM32 vs ESP32 are designed there are faster floating-point calculations, better safety controls, and fewer unnecessary performance variables.
 
 * **Q: How do I contribute to the Gaggiuino code?**
 
@@ -24,7 +24,7 @@
 
 * **Q: How do I order a V3 PCB using PCBWay?**
 
-  **A:** This is for advanced users, and only recommended for people who have ordered PCBs in the past, but the easiest way to order a board is using the "Add to cart" button in the [GaggiaBoard_V3] shared project through [PCBWay]. The defaults are fine, but it's recommended to choose a lead-free process such as "HASL lead free" or "ENIG", and make sure that the PCB quanity you choose matches the assembly quantity.
+  **A:** This is for advanced users, and only recommended for people who have ordered PCBs in the past, but the easiest way to order a board is using the "Add to cart" button in the [GaggiaBoard_V3] shared project through [PCBWay]. The defaults are fine, but it's recommended to choose a lead-free process such as "HASL lead free" or "ENIG", and make sure that the PCB quantity you choose matches the assembly quantity.
 
 [Zer0-bit/gaggiuino]: https://github.com/Zer0-bit/gaggiuino
 [GAGGIUINO/gaggiuino.github.io]: https://github.com/GAGGIUINO/gaggiuino.github.io
