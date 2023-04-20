@@ -1,4 +1,3 @@
-# PREREQUISITES 
 ## Software requirements:
 1. Install/Update [VSCode](https://code.visualstudio.com/)
 2. Install/Update [Platform IO](https://platformio.org/) 
