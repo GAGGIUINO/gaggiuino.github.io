@@ -25,18 +25,6 @@ Run a local web server on the `./docs` folder:
 docsify serve docs
 ```
 
-
-### Using Python
-
-If Python is installed on your computer, it can run a web server to preview the web pages locally.
-
-```
-cd docs && python3 -m http.server 3000
-```
-
-Then, the site can be viewed at: http://localhost:3000/
-
-
 ## Contributing Changes
 
 Pull requests are appreciated, please see the [GitHub Flow documentation] for more information on how to do that.
