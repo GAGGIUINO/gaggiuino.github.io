@@ -102,16 +102,17 @@ The nano and blackpill/stm32 have different pin setups on their respective board
 
 ## Schematics and Diagrams
 ?>Readers must be aware that you must study both HV and LV diagrams for your specific machine.
+!>Updated with new independent relay and dimmer wiring
 
 **HV Diagrams**
-* [STM32 Comp GCP_Eco HV](https://user-images.githubusercontent.com/53577819/220784834-fb1536e3-81cc-47e8-a243-21f6c3e49a7f.JPG)
-* [STM32 Comp GC HV](https://user-images.githubusercontent.com/53577819/220784848-ab1fe9f1-92cc-40b4-a1c7-7200ab9a2b87.JPG)
-* [STM32 Comp GCP HV](https://user-images.githubusercontent.com/53577819/220784874-583bb885-dce0-4fda-a920-4dc289607213.JPG)
+* [STM32 Comp GC HV - IRD](https://user-images.githubusercontent.com/117388662/235083196-739bb6db-7213-4cac-8293-75cbcc81b5ef.JPG)
+* [STM32 Comp GCP HV - IRD](https://user-images.githubusercontent.com/117388662/235083465-80c8cb69-6442-453d-ac2a-821b7da190be.JPG)
+* [STM32 Comp GCP_Eco HV - IRD](https://user-images.githubusercontent.com/117388662/235083687-5615555c-7295-4172-87b0-cbe3a2414cf9.JPG)
 
 **LV Diagrams**
-* [STM32 Comp GCP_Eco LV](https://user-images.githubusercontent.com/53577819/220784865-b52ffb3f-8380-4225-a539-15d44738d2fe.JPG)
-* [STM32 Comp GC LV](https://user-images.githubusercontent.com/53577819/220784856-c1b5f073-5c0b-470e-b47e-c78eda7099ea.JPG)
-* [STM32 Comp GCP LV](https://user-images.githubusercontent.com/53577819/220784877-279de614-afe9-4bcf-bf27-a6e25edb06bc.JPG)
+* [STM32 Comp GC LV - IRD](https://user-images.githubusercontent.com/117388662/235083350-c73974d9-bef9-4eee-9b8b-436c999ba291.JPG)
+* [STM32 Comp GCP LV - IRD](https://user-images.githubusercontent.com/117388662/235083525-713be71f-dfb9-4c73-9d89-b93d0a19b8ed.JPG)
+* [STM32 Comp GCP_Eco LV - IRD](https://user-images.githubusercontent.com/117388662/235083749-03cd7b0b-acbb-43b4-9705-1a42073605d4.JPG)
 
-**Internal component config**
-* [STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/230696068-e49df2fa-c3b6-49c2-80ff-629b80780938.png)
+**Internal Component Housing**
+* [STM32 Internal Comp Housing Schematic - IRD](https://user-images.githubusercontent.com/117388662/235083835-fa2b6721-598c-4fca-9ac7-eb23a2aa596b.png)

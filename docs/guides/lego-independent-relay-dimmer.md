@@ -1,11 +1,31 @@
 This is a guide on how to make the relay (controlling the 3-way valve) and dimmer (controlling the pump) independent on "Lego" (component) builds. 
 Independent control allows proper phase recognition, calibration, and tracking.
 
+> [!Warning]
+> Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. **Always work with the Gaggia unplugged.** You are performing this project under your own risk and the author of this guide and anyone associated with this project are NOT liable for your actions. 
+
 # Notes
 *   Pump and relay wire size recommendation is now ≤22 gauge because it is difficult to fit multiple 18 gauge wires into the screw terminals. 
 *   Standard short-circuit protection calculations show that 22 gauge wire is permissible for known breakers 20 amps and under, however, this is smaller than standard. Your safety is your responsibility.
 
 !> Powering your machine through a GFCI/AFCI/RCD device is recommended. 
+
+# Guide
+1. Disconnect pump source Line that is going to Dimmer L-IN. Tuck away the stock female spade (do not reconnect to the pump) and completely remove the wire that connected it to the Dimmer L-IN in the component housing. 
+
+    <img width="800" alt="image" src="https://user-images.githubusercontent.com/117388662/235077019-95c1681c-e3e7-40f4-bfc9-07b60f433896.JPG">
+
+2. Find the Line wire going from the coffee switch to the Relay and disconnect it (confirm, but if you followed the schematics exactly it should be connected to Relay COM). 
+
+    <img width="800" alt="image" src="https://user-images.githubusercontent.com/117388662/235077658-491bb7ed-818c-4cc8-9082-2a1d7aa85e5f.JPG">
+
+3. Move the disconnected coffee switch Line wire to Dimmer L-IN (where you removed the pump wire). You may also want to swap this for a 22 gauge wire for ease of connecting jumpers in the next step.
+
+    <img width="800" alt="image" src="https://user-images.githubusercontent.com/117388662/235077865-1c85d17f-5c47-4681-a0f0-65bbabf2ec78.JPG">
+
+4. Jumper from Dimmer L-IN to Relay COM, and from Relay COM to the snubber (if present). It is recommended to verify that your changes match the updated schematics. This completes the update.
+
+    <img width="800" alt="image" src="https://user-images.githubusercontent.com/117388662/235078161-5d425621-2257-48f2-9349-6e662d68b826.JPG">
 
 # Schematics
 
@@ -40,20 +60,3 @@ Independent control allows proper phase recognition, calibration, and tracking.
 
 **Internal Component Housing**
 * [STM32 Internal Comp Housing Schematic - IRD](https://user-images.githubusercontent.com/117388662/235083835-fa2b6721-598c-4fca-9ac7-eb23a2aa596b.png)
-
-# Guide
-1. Disconnect pump source Line that is going to Dimmer L-IN. Tuck away the stock female spade (do not reconnect to the pump) and completely remove the wire that connected it to the Dimmer L-IN in the component housing. 
-
-    <img width="800" alt="image" src="https://user-images.githubusercontent.com/117388662/235077019-95c1681c-e3e7-40f4-bfc9-07b60f433896.JPG">
-
-2. Find the Line wire going from the coffee switch to the Relay and disconnect it (confirm, but if you followed the schematics exactly it should be connected to Relay COM). 
-
-    <img width="800" alt="image" src="https://user-images.githubusercontent.com/117388662/235077658-491bb7ed-818c-4cc8-9082-2a1d7aa85e5f.JPG">
-
-3. Move the disconnected coffee switch Line wire to Dimmer L-IN (where you removed the pump wire). You may also want to swap this for a 22 gauge wire for ease of connecting jumpers in the next step.
-
-    <img width="800" alt="image" src="https://user-images.githubusercontent.com/117388662/235077865-1c85d17f-5c47-4681-a0f0-65bbabf2ec78.JPG">
-
-4. Jumper from Dimmer L-IN to Relay COM, and from Relay COM to the snubber (if present). It is recommended to verify that your changes match the updated schematics. This completes the update.
-
-    <img width="800" alt="image" src="https://user-images.githubusercontent.com/117388662/235078161-5d425621-2257-48f2-9349-6e662d68b826.JPG">

@@ -1,6 +1,8 @@
 This is a quick guide on how to best piece together the Gaggiuino mod into the 3D printed housing.
 Lots of images are provided to give you a sense of what a completed STM32 component (Lego) build should look like in the box.
 
+[comment]: # (needs new pics and updates to better align with the independent relay and dimmer guide, but is OK-ish for now)
+
 # Preparation 
 It is recommended to remove pins on the dimmer and thermocouple interface boards for the smallest, best connection. If you’d prefer to not do this in later steps you can solder wires to the pins and heat shrink over them.
 An easy way to remove header pins is to cut the plastic linkage between each pin with snips, then de-solder the pins individually. Solder wick or a solder sucker can help get the through holes nice and clean.
@@ -69,11 +71,11 @@ Note: you can use strip board for power distribution (cut for 6x5 usable points)
 <img width="547" alt="image" src="https://user-images.githubusercontent.com/53577819/211652610-4b63d97b-90fd-43b1-b37f-a71ad0523008.png">
 
 # Component Wiring 
-The next steps describe the process of wiring the components together. You can do the power wiring first, then follow it up with the component signal wiring, but it can be done in whatever order you like. Trust the schematic if you’re confused on a step or there appears to be a difference between an image and the schematic. You can use 22-26AWG wires unless otherwise noted; see the schematic for permissible wire gauges.
+The next steps describe the process of wiring the components together. You can do the power wiring first, then follow it up with the component signal wiring, but it can be done in whatever order you like. Trust the schematic if you’re confused on a step or there appears to be a difference between an image and the schematic. You can use 22-26AWG wires for LV wiring unless otherwise noted; see the schematic for permissible wire gauges.
 
-<img width="854" alt="image" src="https://user-images.githubusercontent.com/117388662/230696068-e49df2fa-c3b6-49c2-80ff-629b80780938.png">
+<img width="854" alt="image" src="https://user-images.githubusercontent.com/117388662/235083835-fa2b6721-598c-4fca-9ac7-eb23a2aa596b.png">
 
-[STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/230696068-e49df2fa-c3b6-49c2-80ff-629b80780938.png)
+[STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/235083835-fa2b6721-598c-4fca-9ac7-eb23a2aa596b.png)
 
 ## Power wiring 
 If using a strip board it is recommended to use an arrangement like this with two rows of 5V and two rows of 5V GND (0 VDC). 
@@ -89,7 +91,7 @@ Measure distance to components in the housing, cut wires to length plus ~1 cm, t
 
 <img width="610" alt="image" src="https://user-images.githubusercontent.com/53577819/211653005-8bffe9c8-1967-461d-a163-9a130534e0d0.png">
 
-Now that power wires have been added I’ll begin adding signal wires per the schematic. Just like with the power wires, measure length in the housing, then remove from housing to solder. A few notes:
+Now that power wires have been added we’ll begin adding signal wires per the schematic. Just like with the power wires, measure length in the housing, then remove from housing to solder. A few notes:
 1. Make sure to route the wires before measuring. There is not enough clearance for wires to go over the Blackpill, they must go around. 
 2. Up to you whether you cut the pressure transducer cable shorter. Option to cut it down to about 12 in / 30 cm for my GC, but you may want it longer depending on your specific machine. 
 
@@ -110,7 +112,7 @@ Wiring the pull-up 5V to A1, A2, and A3 is optional, but easy. Just make sure th
 ## Snubber
 The snubber is not required for operation but should extend the life of the 5v relay and will reduce EMI, allowing you to route wires closer together.
 
-To wire you’ll need to make a pair of jumpers from snubber to relay, with the main wire going out to the solenoid. The wires don’t need to be large, you can use 26AWG for the jumper.
+To wire you’ll need to make a pair of jumpers from snubber to relay, with the main wire going out to the solenoid. Ideal wire size is 22 gauge, per schematic.
 
 <img width="444" alt="image" src="https://user-images.githubusercontent.com/53577819/211653512-822f7705-2acd-4210-b50f-f497e9b402bc.png">
 
