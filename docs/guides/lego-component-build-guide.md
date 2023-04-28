@@ -112,7 +112,7 @@ Wiring the pull-up 5V to A1, A2, and A3 is optional, but easy. Just make sure th
 ## Snubber
 The snubber is not required for operation but should extend the life of the 5v relay and will reduce EMI, allowing you to route wires closer together.
 
-To wire you’ll need to make a pair of jumpers from snubber to relay, with the main wire going out to the solenoid. Ideal wire size is 22 gauge, per schematic.
+To wire you’ll need to make a pair of jumpers from snubber to relay, with the main wire going out to the solenoid. Reference schematic for wire gauge.
 
 <img width="444" alt="image" src="https://user-images.githubusercontent.com/53577819/211653512-822f7705-2acd-4210-b50f-f497e9b402bc.png">
 
