@@ -353,6 +353,8 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 > [!NOTE]
 >**THE SCHEMATIC DRAWINGS HAVE BEEN DRAWN FLIPPED AND UPSIDE DOWN. BLAME GAGGIA.**
 
+?> STM32 schematics are on the [STM32 UPGRADE](stm32-upgrade-pack/blackpill.md) page
+
 **Schematics:**
 * [GAGGIA New Classic 2018/19](https://user-images.githubusercontent.com/53577819/214380779-ec53b99b-2b7c-4781-acdc-90c3879353c0.png)
 * [GAGGIA New Classic 2018/19 **Nano** Wiring](https://user-images.githubusercontent.com/53577819/221353183-6b389c6e-dd53-4594-b504-79460aa15fda.png)
