@@ -1,6 +1,8 @@
 This is a guide on how to make the relay (controlling the 3-way valve) and dimmer (controlling the pump) independent on "Lego" (component) builds. 
 Independent control allows proper phase recognition, calibration, and tracking.
 
+!> Required for software releases past **e8933a6** (8-Apr-2023)
+
 > [!Warning]
 > Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. **Always work with the Gaggia unplugged.** You are performing this project under your own risk and the author of this guide and anyone associated with this project are NOT liable for your actions. 
 
