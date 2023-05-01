@@ -223,7 +223,7 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 _Enables hardware-based realtime shot weight tracking and stop-on-weight._
 
 > [!NOTE]
-> _By default the STM32 based build has **predictive scales** (software emulated scales) enabled hence one might be content enough with their performance after calibration has been performed using the discord **#predictive-scales-config-bot**_
+> _By default the STM32 based build has **predictive scales** (software emulated scales) enabled hence one might be content enough with their performance after calibration has been performed.
 
 > [!WARNING]
 > This is a highly advanced installation step and requires accurate 3D-printed parts, good installation practices, and in-depth understanding to achieve optimal results.
