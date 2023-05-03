@@ -70,7 +70,7 @@ Note: you can use strip board for power distribution (cut for 6x5 usable points)
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/53577819/211652610-4b63d97b-90fd-43b1-b37f-a71ad0523008.png">
 
-# Component Wiring 
+# LV Wiring 
 The next steps describe the process of wiring the components together. You can do the power wiring first, then follow it up with the component signal wiring, but it can be done in whatever order you like. Trust the schematic if you’re confused on a step or there appears to be a difference between an image and the schematic. You can use 22-26AWG wires for LV wiring unless otherwise noted; see the schematic for permissible wire gauges.
 
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/117388662/235083835-fa2b6721-598c-4fca-9ac7-eb23a2aa596b.png">
@@ -111,7 +111,7 @@ Wiring the pull-up 5V to A1, A2, and A3 is optional, but easy. Just make sure th
 
 ## Screen and SSR
 
-?> Wire lengths were added by request and are the length for a typical install plus a small margin. Verifying wire length in your machine is recommended. 
+?> Wire lengths were added by request and are the length for a typical install in a GC or GCP plus a small margin. Verifying wire length in your machine is recommended. 
 
 Measure and cut 400 mm each of 26 gauge Black, Yellow, Blue, and White wires for the screen connection. Cut the DuPont connectors off the screen wires, solder like colors, and cover with heat shrink so you end up with a 600 mm long screen cable. 
 
@@ -128,6 +128,42 @@ Once you're done the assembly should look like this.
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235809222-788d1771-ca1f-4924-b9bf-274fd2b487f2.png">
 
+I recommend zip-tying the cable strain relief at this point so the risk of stressing the connections in the housing is reduced. 
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235832263-5ba55ec3-1ee5-4f2f-982b-4e0a85f38d57.png">
+
+# LV Testing
+
+## Programming/Flashing
+
+!> Do not flash the Blackpill while powering the system over USB-C.  
+
+Flash the Blackpill using the ST-Link (connect SWDIO, GND, SWCLK, and 3.3V* - see [Prerequisites](prereq/prerequisites.md) for details). 
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235833233-5d8d99d3-665a-40d2-b215-489295c49480.png">
+
+Flash the Nextion with the applicable nextion-*-lcd.tft on an otherwise-empty ≤32 GB FAT32 microSD card.  
+
+Power for flashing the Nextion may be provided through the USB-C port on the Blackpill so long as you are using a USB power adapter that will supply 4.6-5.2 VDC (don't use a battery bank or your PC USB ports for power).  
+
+?> More stable voltage can be provided by using the 120 VAC PSU, however this is unnecessary for flashing and testing at this point so long as the voltage provided through the USB-C port is in range.  
+*If you wish to power the system through the 120 VAC PSU to flash the Blackpill then do **not** connect 3.3V to the ST-Link.
+
+Wait for the "Update Success" message and then shut off power and remove the microSD card.
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235833768-aa2c011c-b735-497d-b855-f04b16378eaf.png">
+
+Connect the thermocouple to the terminals and power on the system once again. If all is successful you should:
+- see a build number during boot (good Blackpill-Nextion communication)
+- hear the relay click for boiler fill
+- see a temperature reading on the screen that changes when heat is applied to the thermocouple
+- see the SSR light turn on if the temperature is below the setpoint (it will flash if temp is close to setpoint)
+- see a static pressure value of 0.0 bar
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235835473-481cc436-6b05-444a-93f8-69addbf2ef69.png">
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235835530-35a14285-d48c-4232-8fc8-bf5720a9ecdd.png">
+
 ## Snubber
 The snubber is not required for operation but should extend the life of the 5v relay and will reduce EMI, allowing you to route wires closer together.
 
@@ -140,13 +176,16 @@ To wire you’ll need to make a pair of jumpers from snubber to relay, with the 
 The jumper wires get routed under the AC-DC power supply like above. 
 
 # Finish
-The assembled housing should look like this (You can chose whether or not to use header pins on the Blackpill for connecting to an ST-Link, but you could also solder wires directly to those connection points). 
-
-<img width="544" alt="image" src="https://user-images.githubusercontent.com/53577819/211653656-a98de6f7-a900-425c-a847-361ea2e19153.png">
+You can chose whether or not to use header pins on the Blackpill for connecting to an ST-Link, but you could also solder wires directly to those connection points. 
 
 Close the housing with 4 screws to complete. 
 
-Things that are not pictured – connections to solid state relay (SSR), touchscreen, scales, thermocouple, steam/brew switches. Please continue the install by referencing the machine-specific schematic and/or install instructions as they may vary.
+Things that are not pictured 
+- steam/brew switche wiring
+- *optional* scale wiring
+- *optional* ToFnLED wiring
+
+Please continue the install by referencing the machine-specific schematic and/or install instructions as they may vary.
 Here are the labeled component connections to wiring that should be referenced by the machine-specific schematic(s). 
 
 <img width="629" alt="image" src="https://user-images.githubusercontent.com/53577819/211653789-00be52a2-e019-43f2-94af-1c9425beb54b.png">
