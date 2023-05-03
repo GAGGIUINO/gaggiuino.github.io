@@ -185,13 +185,14 @@ _Will enable only brew and steam temperature control_
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
 * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
 * [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
+* [Snubber](https://www.aliexpress.com/item/3256803573244277.html)
 
 ### EXTENDED FUNCTIONALITY
 _Will enable pump control based on active pressure feedback, this enables pressure and flow profiling as well as other functionality._
 
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-* [O Ring - OD 11mm](https://www.aliexpress.com/item/1005003662931218.html)
+* [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html)
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
@@ -214,6 +215,7 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 * [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
 * [5V RELAY](https://a.aliexpress.com/_vpUdrT) 
+* [Snubber](https://www.aliexpress.com/item/3256803573244277.html)
 
 !> See the STM32-Blackpill tab for [extended](#extended-functionality-1) and [advanced](#advanced-functionality) functionality components.
 <!-- tabs:end -->
@@ -223,7 +225,7 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 _Enables hardware-based realtime shot weight tracking and stop-on-weight._
 
 > [!NOTE]
-> _By default the STM32 based build has **predictive scales** (software emulated scales) enabled hence one might be content enough with their performance after calibration has been performed using the discord **#predictive-scales-config-bot**_
+> _By default the STM32 based build has **predictive scales** (software emulated scales) enabled hence one might be content enough with their performance after calibration_
 
 > [!WARNING]
 > This is a highly advanced installation step and requires accurate 3D-printed parts, good installation practices, and in-depth understanding to achieve optimal results.
