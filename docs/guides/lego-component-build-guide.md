@@ -70,6 +70,25 @@ Note: you can use strip board for power distribution (cut for 6x5 usable points)
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/53577819/211652610-4b63d97b-90fd-43b1-b37f-a71ad0523008.png">
 
+# Wire lengths
+
+!> Wire cut lengths to connect the housing components to the system were added by request and are the length for a typical install in a GC or GCP plus a small margin.  
+**Verifying wire length in your machine is recommended.** 
+
+Component          |Colors                  |Gauge|Length                        
+-------------------|------------------------|:---:|------------------------------
+Screen             |Black, Yellow, Blue, Red|26   |400 mm *(600 mm if crimping JST)*
+SSR                |Black                   |22   |530 mm
+SSR                |Yellow                  |22   |450 mm
+Switches           |Black, Yellow, Blue     |22   |600 mm
+Switch Jumper      |Black                   |22   |50 mm
+PSU                |Black, White            |22   |600 mm
+Snubber-Relay      |Black, Red              |22   |100 mm
+Relay-Dimmer       |Black                   |22   |50 mm
+Relay (NO)         |Red                     |22   |600 mm
+Dimmer (Out, N-In) |Red, White              |22   |250 mm
+Dimmer (L-In)      |Black                   |22   |600 mm
+
 # LV Wiring 
 The next steps describe the process of wiring the components together. You can do the power wiring first, then follow it up with the component signal wiring, but it can be done in whatever order you like. Trust the schematic if you’re confused on a step or there appears to be a difference between an image and the schematic. You can use 22-26AWG wires for LV wiring unless otherwise noted; see the schematic for permissible wire gauges.
 
@@ -109,30 +128,31 @@ Wiring the pull-up 5V to A1, A2, and A3 is optional, but easy. Just make sure th
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/53577819/211653104-486b571e-866d-4e5a-95c6-88f0271e25e3.png">
 
-## Screen and SSR
+## Screen
 
-?> Wire lengths were added by request and are the length for a typical install in a GC or GCP plus a small margin. Verifying wire length in your machine is recommended. 
-
-Measure and cut 400 mm each of 26 gauge Black, Yellow, Blue, and White wires for the screen connection. Cut the DuPont connectors off the screen wires, solder like colors, and cover with heat shrink so you end up with a 600 mm long screen cable. 
+Measure and cut 26 gauge Black, Yellow, Blue, and Red wires for the screen connection. Cut the DuPont connectors off the JST-XH pigtail included with the screen, solder like colors, and cover with heat shrink so you end up with a 600 mm long screen cable. 
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235807077-38f3fe70-f784-47da-aab0-3d9dbfc4114c.png">
 
-Make sure that the wire colors connecting to the screen line up with the schematic. If necesary, swap connector positions (a small screwdriver can be used to pry up the JST housing tabs holding the crimped connectors in place. They can then be easily removed and swapped).
+Make sure that the wire colors connecting to the screen line up with the schematic. If necesary, swap connector positions (a small screwdriver can be used to release the tabs holding the pins in place. They can then be easily removed and swapped).
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235808221-fdfc62a2-9d1f-44fa-b62b-ec041f7fc74f.png">
 
-Solder the power wires to the stripboard and connect the communication wires to the expansion board.
+Solder the power wires to the stripboard and connect the communication wires to the expansion board per the schematic.
 
-Measure and cut 530 mm of Black wire and 450 mm of Yellow wire for the SSR. Solder to the stripboard and connect to the expansion board per the schematic.  
+## SSR
+
+Measure and cut the Black and Yellow wires for the SSR. Solder to the stripboard and connect to the expansion board per the schematic.  
 Once you're done the assembly should look like this.
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235809222-788d1771-ca1f-4924-b9bf-274fd2b487f2.png">
 
-I recommend zip-tying the cable strain relief at this point so the risk of stressing the connections in the housing is reduced. 
+## Switches
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235832263-5ba55ec3-1ee5-4f2f-982b-4e0a85f38d57.png">
+Measure and cut the Black, Yellow, and Blue wires for the switch connections. Solder to the stripboard and connect to the expansion board per the schematic.  
+Once you're done the assembly should look like this.
 
-# LV Testing
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236129109-bfbb6880-8942-4009-a386-3d2be94ca1c1.png">
 
 ## Programming/Flashing
 
@@ -146,23 +166,36 @@ Flash the Nextion with the applicable nextion-*-lcd.tft on an otherwise-empty �
 
 Power for flashing the Nextion may be provided through the USB-C port on the Blackpill so long as you are using a USB power adapter that will supply 4.6-5.2 VDC (don't use a battery bank or your PC USB ports for power).  
 
-?> More stable voltage can be provided by using the 120 VAC PSU, however this is unnecessary for flashing and testing at this point so long as the voltage provided through the USB-C port is in range.  
+?> More stable voltage can be provided by using the 120 VAC PSU and piggybacking off of the Gaggia power switch ([example here](https://user-images.githubusercontent.com/117388662/235836724-71394491-c47a-46ed-920b-79ced184cc16.png)), however this is unnecessary for flashing and testing at this point so long as the voltage provided through the USB-C port is in range.  
 *If you wish to power the system through the 120 VAC PSU to flash the Blackpill then do **not** connect 3.3V to the ST-Link.
 
-Wait for the "Update Success" message and then shut off power and remove the microSD card.
+Wait for the Nextion to show the "Update Successed! (sic)" message, turn off power, and then remove the microSD card.
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235833768-aa2c011c-b735-497d-b855-f04b16378eaf.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236127637-fb83e05e-06d0-4a2f-b6e8-cdf48a36a077.png">
+
+## Component test
 
 Connect the thermocouple to the terminals and power on the system once again. If all is successful you should:
 - see a build number during boot (good Blackpill-Nextion communication)
 - hear the relay click for boiler fill
 - see a temperature reading on the screen that changes when heat is applied to the thermocouple
 - see the SSR light turn on if the temperature is below the setpoint (it will flash if temp is close to setpoint)
-- see a static pressure value of 0.0 bar
+- see a pressure value of 0.0 bar with no deviation
+- *not* see the steam temp as the target (if you do then there's a short to ground, likely through the expansion board)
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235835473-481cc436-6b05-444a-93f8-69addbf2ef69.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236076956-36ab8d35-6b5d-476e-84d2-d2e5097fafb1.png">
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235835530-35a14285-d48c-4232-8fc8-bf5720a9ecdd.png">
+>
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236077124-e318b230-908e-4715-8810-a819f260c04f.png">
+
+Recommendation: zip-tie the cable strain relief at this point so the risk of stressing the connections in the housing is reduced. 
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236130002-977f47b6-c742-4f66-b240-15cbd5664a7d.png">
+
+# HV Wiring
+
+!> TODO
 
 ## Snubber
 The snubber is not required for operation but should extend the life of the 5v relay and will reduce EMI, allowing you to route wires closer together.
@@ -176,12 +209,11 @@ To wire you’ll need to make a pair of jumpers from snubber to relay, with the 
 The jumper wires get routed under the AC-DC power supply like above. 
 
 # Finish
-You can chose whether or not to use header pins on the Blackpill for connecting to an ST-Link, but you could also solder wires directly to those connection points. 
+You can chose whether to use header pins on the Blackpill for connecting to an ST-Link or soldering wires directly to those connection points. 
 
 Close the housing with 4 screws to complete. 
 
 Things that are not pictured 
-- steam/brew switche wiring
 - *optional* scale wiring
 - *optional* ToFnLED wiring
 
