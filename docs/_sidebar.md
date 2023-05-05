@@ -9,7 +9,7 @@
 * - [Gaggia Classic](gc/gaggia-classic.md)
 * - [Gaggia Classic Pro](gcp/gaggia-classic-pro-new-classic.md)
 * - Upgrades
-    * [Lego AIO Housing](guides/lego-component-build-guide.md)
+    * [STM32 Lego Housing Build](guides/lego-component-build-guide.md)
     * [Lego Independent Relay and Dimmer](guides/lego-independent-relay-dimmer.md)
     * [STM32 UPGRADE](stm32-upgrade-pack/blackpill.md)
     * [PCB](pcb/singleboard.md)
