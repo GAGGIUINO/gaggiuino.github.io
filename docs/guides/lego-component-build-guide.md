@@ -1,7 +1,7 @@
 This is a quick guide on how to best piece together the Gaggiuino mod into the 3D printed housing.
-Lots of images are provided to give you a sense of what a completed STM32 component (Lego) build should look like in the box.
+Lots of images are provided to give you a sense of what a completed STM32 component (Lego) build should look like in the housing.
 
-## General Install Principles
+## General Install Info
 
 <details>
 <summary><b>Component prep</b> <i>(Click to expand)</i></summary>
@@ -50,7 +50,7 @@ Acceptable:
 <details>
 <summary><b>Crimping</b> <i>(Click to expand)</i></summary>
 
-Crimps are not required within the housing, but are a good idea for non-soldered component connections such as to the screw terminals on the expansion board, dimmer, and snubber to avoid stray wires. Make sure they are small enough to go into the screw terminals – 22AWG is possible, but 24-26AWG is much easier to crimp and fit in the terminals. 
+Crimp ferrules are not required within the housing, but are a good idea for non-soldered component connections such as to the screw terminals on the expansion board, dimmer, and snubber to avoid stray wires. Make sure they are small enough to go into the screw terminals – 22AWG is possible, but 24-26AWG is much easier to crimp and fit in the terminals. 
 
 !>Do **not** tin (solder) wires that will be crimped or clamped into screw terminals.
 
@@ -86,6 +86,23 @@ Make sure unshielded crimped wires are inserted into the terminal such that no b
 
 </details>
 
+<details>
+<summary><b>Expansion Board Compatibility </b> <i>(Click to expand)</i></summary>
+
+Ensure your expansion board circuitry looks like the bottom left (green) and not the bottom right (blue). The bottom right (blue) will not work correctly with the standard pindefs (the two circled pins in yellow are marked `GND` on the reverse and are both connected to the ground plane and each other), so it is advised for most people to purchase the board from the BOM that looks like the green expansion board. 
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/2452284/204672901-ac1a89d9-cbf2-4367-9196-e1a74fbce7dd.png">
+
+If you receive an expansion board with this connection between two pins it will have the same problem as the blue board (two sets of pins are connected to each other). This can be fixed by cutting the trace. 
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/2452284/208331321-cef4d700-b961-4725-9cf1-f99202f1785a.jpg">
+
+If you receive an expansion board with a linked ground plane then you'll need to cut the plane in two (likely on both sides of the board). It is recommended to not cut through the screw holes as that may allow a screw to reconnect the planes. 
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236353796-18f8c699-e251-4df1-bb13-56b204afd832.png">
+
+</details>
+
 >
 
 # Fit Check
@@ -96,14 +113,16 @@ Note: you can use strip board for power distribution (cut for 6x5 usable points)
 
 >
 
-# Wire lengths
+# External Wire Lengths
+
+You'll use these later on. The table is located by the schematic for ease of linking and jumping back and forth during the build.
 
 !> Wire cut lengths to connect the housing components to the espresso machine were added by request and are the length for a typical install in a GC or GCP plus a small margin.  
 **Verifying wire length in your machine is recommended.** 
 
 Component                                      |Colors                  |Gauge|Length                        
 -----------------------------------------------|------------------------|:---:|------------------------------
-[Screen](#screen)                              |Black, Yellow, Blue, Red|26   |400 mm *(600 mm if crimping JST)*
+[Screen](#screen)                              |Black, Yellow, Blue, Red|22-26|400 mm *(600 mm if crimping JST)*
 [SSR](#ssr)                                    |Black                   |22   |530 mm
 [SSR](#ssr)                                    |Yellow                  |22   |450 mm
 [Switches](#switches)                          |Black, Yellow, Blue     |22   |600 mm
@@ -117,12 +136,17 @@ Component                                      |Colors                  |Gauge|L
 
 >
 
-# LV Wiring 
-The next steps describe the process of wiring the components together. You can do the power wiring first, then follow it up with the component signal wiring, but it can be done in whatever order you like. Trust the schematic if you’re confused on a step or there appears to be a difference between an image and the schematic. You can use 22-26AWG wires for LV wiring unless otherwise noted; see the schematic for permissible wire gauges.
+# Schematic
+ 
+Trust the schematic if you’re confused on a step or there appears to be a difference between an image and the schematic. You can use 22-26AWG wires for LV wiring unless otherwise noted; see the schematic and table for permissible wire gauges.
 
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/117388662/235083835-fa2b6721-598c-4fca-9ac7-eb23a2aa596b.png">
 
 [STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/235083835-fa2b6721-598c-4fca-9ac7-eb23a2aa596b.png)
+
+# LV Wiring
+
+The next steps describe the process of wiring the components together. The guide will show the component power wiring first followed by the signal wiring, but it can be done in whatever order you like. 
 
 ## Power wiring 
 If using a strip board it is recommended to use an arrangement like this with two rows of 5V and two rows of 5V GND (0 VDC). 
@@ -184,7 +208,7 @@ Once you're done the assembly should look like this.
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236129109-bfbb6880-8942-4009-a386-3d2be94ca1c1.png">
 
-## Programming/Flashing
+# Programming/Flashing
 
 !> Do not flash the Blackpill while powering the system over USB-C.  
 
@@ -203,7 +227,7 @@ Wait for the Nextion to show the "Update Successed! (sic)" message, turn off pow
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236127637-fb83e05e-06d0-4a2f-b6e8-cdf48a36a077.png">
 
-## Component test
+# Component test
 
 Connect the thermocouple to the terminals and power on the system once again. If all is successful you should:
 - see a build number during boot (good Blackpill-Nextion communication)
@@ -260,3 +284,18 @@ Optional wiring that is not pictured:
 - ToFnLED
 
 !>Please continue the install by referencing the machine-specific schematics and/or install instructions as they may vary.
+
+# Machine Schematics and Diagrams
+?>Readers must be aware that you must study both HV and LV diagrams for your specific machine.
+
+**Gaggia Classic**
+* [STM32 Comp GC HV](https://user-images.githubusercontent.com/117388662/235083196-739bb6db-7213-4cac-8293-75cbcc81b5ef.JPG)
+* [STM32 Comp GC LV](https://user-images.githubusercontent.com/117388662/235083350-c73974d9-bef9-4eee-9b8b-436c999ba291.JPG)
+
+**Gaggia Classic Pro**
+* [STM32 Comp GCP HV](https://user-images.githubusercontent.com/117388662/235083465-80c8cb69-6442-453d-ac2a-821b7da190be.JPG)
+* [STM32 Comp GCP LV](https://user-images.githubusercontent.com/117388662/235083525-713be71f-dfb9-4c73-9d89-b93d0a19b8ed.JPG)
+
+**Gaggia Classic Pro Eco**
+* [STM32 Comp GCP_Eco HV](https://user-images.githubusercontent.com/117388662/235083687-5615555c-7295-4172-87b0-cbe3a2414cf9.JPG)
+* [STM32 Comp GCP_Eco LV](https://user-images.githubusercontent.com/117388662/235083749-03cd7b0b-acbb-43b4-9705-1a42073605d4.JPG)
