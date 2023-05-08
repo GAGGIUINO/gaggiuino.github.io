@@ -48,7 +48,7 @@ Acceptable:
 </details>
 
 <details>
-<summary><b>Crimping</b> <i>(Click to expand)</i></summary>
+<summary><b>Screw Terminals and Crimping</b> <i>(Click to expand)</i></summary>
 
 Crimp ferrules are not required within the housing, but are a good idea for non-soldered component connections such as to the screw terminals on the expansion board, dimmer, and snubber to avoid stray wires. Make sure they are small enough to go into the screw terminals – 22AWG is possible, but 24-26AWG is much easier to crimp and fit in the terminals. 
 

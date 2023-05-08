@@ -20,7 +20,7 @@
 * [JST PH 2P, 3P, 4P & 5P](https://www.aliexpress.com/item/4000091077742.html)
 * [Spade connectors M/F 6.3mm](https://bit.ly/2Sjrkhu)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-  * [O Ring - OD 11mm](https://www.aliexpress.com/item/1005003662931218.html) 
+* [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html) 
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
