@@ -13,3 +13,4 @@
     * [Lego Independent Relay and Dimmer](guides/lego-independent-relay-dimmer.md)
     * [STM32 UPGRADE](stm32-upgrade-pack/blackpill.md)
     * [PCB](pcb/singleboard.md)
+    * [Grounding a Gaggia Classic](guides/grounding-a-gaggia-classic.md)
