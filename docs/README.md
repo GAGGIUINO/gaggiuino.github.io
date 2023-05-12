@@ -166,7 +166,7 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 
 <!-- tab:STM32 Blackpill -->
 ### BASE FUNCTIONALITY
-_Will enable only brew and steam temperature control_
+_Will enable brew and steam temperature control as well as pump control based on active pressure feedback (this enables pressure and flow profiling as well as other functionality)._
 >
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
@@ -186,10 +186,6 @@ _Will enable only brew and steam temperature control_
 * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
 * [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
 * [Snubber](https://www.aliexpress.com/item/3256803573244277.html)
-
-### EXTENDED FUNCTIONALITY
-_Will enable pump control based on active pressure feedback, this enables pressure and flow profiling as well as other functionality._
-
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
 * [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html)
@@ -216,31 +212,53 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
 * [5V RELAY](https://a.aliexpress.com/_vpUdrT) 
 * [Snubber](https://www.aliexpress.com/item/3256803573244277.html)
+* [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
+* [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
+* [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html)
 
-!> See the STM32-Blackpill tab for [extended](#extended-functionality-1) and [advanced](#advanced-functionality) functionality components.
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
+* [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
+* [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
+* [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
+
+<!-- tab:Gaggia Classic Pro -->
+* [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
+* [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html)**THIS ALTERNATE HOSE OPTION IS A LAST RESORT - READ BELOW WARNING**
+* [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
+* [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
+* [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
+
+> [!WARNING]
+> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
+<!-- tabs:end -->
 <!-- tabs:end -->
 <!-- div:panel-end -->
 > 
-### SCALES FUNCTIONALITY
-_Enables hardware-based realtime shot weight tracking and stop-on-weight._
 
-> [!NOTE]
-> _By default the STM32 based build has **predictive scales** (software emulated scales) enabled hence one might be content enough with their performance after calibration_
+## 3D Printed Parts
+_BOM and assembly instructions for the 3D printed parts are linked here.  
+Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](https://www.printables.com/social/340492-loogle/collections/265668) or on Discord in the **#mod-3d-design-ideas** channel._
 
-> [!WARNING]
-> This is a highly advanced installation step and requires accurate 3D-printed parts, good installation practices, and in-depth understanding to achieve optimal results.
-
-* [Gaggia Classic & Classic Pro scales housing](https://www.printables.com/model/285370-gaggia-classic-pro-scales) *(BOM and models)*
->
-* **Base Functionality Housings**
+### Base Functionality
+_Parts used for the standard component install._
   * [Screen Enclosure](https://www.printables.com/model/280617)
   * [Internal Component Housing](https://www.printables.com/model/269394)
 
-  ?> Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](https://www.printables.com/social/340492-loogle/collections/265668) or on Discord in the **#mod-3d-design-ideas** channel.
+### Hardware Scales Functionality
+_The STM32 build has software emulated **predictive scales** enabled that are sufficient for users with dialed in grind and settings after calibration.  
+Hardware scales offer accurate sensing of the first drops into the cup as well as realtime shot weight tracking and stop-on-weight across a variety of settings and less traditional shot profiles._
 
-* **Print services**
-  * [US based Gaggiuino tailored print service](https://gaggiuino.hudsoncreativegroup.com/)
-  * [International print shop aggregator](https://craftcloud3d.com/)
+> [!WARNING]
+> This is an advanced installation step that requires accurate 3D-printed parts, good installation practices, and an in-depth understanding to achieve optimal results.
+
+* [Gaggia Classic & Classic Pro scales housing](https://www.printables.com/model/285370-gaggia-classic-pro-scales) *(BOM and models)*
+>
+
+### **Print services**
+_Places to get your 3D prints if you don't have a printer. The Gaggiuino print service prints to design spec and has been approved by the Gaggiuino team._
+  * [Gaggiuino print service (US Based)](https://gaggiuino.hudsoncreativegroup.com/)
+  * [CraftCloud print shop aggregator](https://craftcloud3d.com/)
 
 # Statistics
 
