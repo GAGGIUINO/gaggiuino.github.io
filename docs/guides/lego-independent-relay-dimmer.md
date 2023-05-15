@@ -1,12 +1,14 @@
-This is a guide on how to make the relay (controlling the 3-way valve) and dimmer (controlling the pump) independent on "Lego" (component) builds. 
+This is a guide on how to make the relay (controlling the 3-way valve) and dimmer (controlling the pump) independent on "Lego" (component) builds.
 Independent control allows proper phase recognition, calibration, and tracking.
 
-!> Required for software releases past **e8933a6** (8-Apr-2023)
+!> This is required for installs that followed schematics released before 5-May-2023 wanting to use software releases past **e8933a6** (8-Apr-2023) 
 
 > [!Warning]
 > Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. **Always work with the Gaggia unplugged.** You are performing this project under your own risk and the author of this guide and anyone associated with this project are NOT liable for your actions. 
 
-# Notes
+
+## Notes
+
 *   Pump and relay wire size recommendation is now ≤22 gauge because it is difficult to fit multiple 18 gauge wires into the screw terminals. 
 *   Standard short-circuit protection calculations show that 22 gauge wire is permissible for known breakers 20 amps and under, however, this is smaller than standard. Your safety is your responsibility.
 
@@ -16,6 +18,9 @@ Independent control allows proper phase recognition, calibration, and tracking.
 1. Disconnect pump source Line that is going to Dimmer L-IN. Tuck away the stock female spade (do not reconnect to the pump) and completely remove the wire that connected it to the Dimmer L-IN in the component housing. 
 
     <img width="800" alt="image" src="https://user-images.githubusercontent.com/117388662/235077019-95c1681c-e3e7-40f4-bfc9-07b60f433896.JPG">
+
+!> If you followed the Nano build pictures instead of the STM32 build schematic your pump is likely wired backward. You will need to rewire it to match the corresponding schematic above. Here is an example of a correctly wired Gaggia Classic pump:  
+<img height="300" alt="image" src="https://github.com/Loogl3/gaggiuino.github.io/assets/117388662/55e88ca2-f640-4cb9-be90-0d9c46f77fb2">
 
 2. Find the Line wire going from the coffee switch to the Relay and disconnect it (confirm, but if you followed the schematics exactly it should be connected to Relay COM). 
 
