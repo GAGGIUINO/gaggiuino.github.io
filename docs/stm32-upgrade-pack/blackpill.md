@@ -54,8 +54,6 @@ After pulling the project, build and then flash from tasks (shown in the figure 
 
 Consider buying an ST-Link v2 to more easily upgrade the firmware onto the Blackpill. They can be found on eBay, Amazon and Ali. You will need to solder the 4 angled pins to the board and connect the correct corresponding pins to the stm32 when updating with this tool.
 
-?> When flashing the blackpill after it is installed inside the machine there needs to be a disconnect of the LCD. Consider using Pogos or a JST connection to do this from the back of the machine. There are some solutions you can find within the discord.
-
 ## Install the ADS1115 
 With the STM32 upgrade, the pressure transducer data line no longer directly connects to the expansion board. It will now connect to the A0 pin on the new ads1115 board (shown as TS DATA). The ads1115 SCA and SCL connections will go to the main board, and the rest should be self-explanatory per the diagram below. G and ADDR are connected together to GND (such as to your GND Wago). 
 
@@ -102,6 +100,7 @@ The nano and blackpill/stm32 have different pin setups on their respective board
 
 ## Schematics and Diagrams
 ?>Readers must be aware that you must study both HV and LV diagrams for your specific machine.
+
 !>Updated with new independent relay and dimmer wiring
 
 **HV Diagrams**
