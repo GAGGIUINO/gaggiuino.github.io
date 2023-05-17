@@ -25,7 +25,7 @@
   Stop on Weight/Dose*   |       :x:        |:heavy_check_mark:       
   Steam Boost*           |       :x:        |:heavy_check_mark:  
   Predictive scales*     |       :x:        |:heavy_check_mark:  
-  Saving/Loading profiles|       :x:        |:heavy_plus_sign: 
+  Saving/Loading profiles|       :x:        |:heavy_check_mark: 
   Web interface          |       :x:        |:heavy_plus_sign: 
   OTA updates            |       :x:        |:heavy_plus_sign: 
 
