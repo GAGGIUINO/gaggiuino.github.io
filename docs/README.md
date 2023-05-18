@@ -130,9 +130,9 @@ _Will enable only brew and steam temperature control_
 * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
 * [Heat-resistant Silicone Wire](https://bit.ly/3tjSQbI)
-  * **18AWG - 1m:** Black, Red & White
-  * **22AWG - 5m:** Black, Red & White
-  * **26AWG - 5m:** Black, Red, Blue & Yellow
+  * **18AWG - 1m:** Black, Red, White
+  * **22AWG - 5m:** Black, Red, Blue, White
+  * **26AWG - 5m:** Black, Red, Blue, Yellow
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
 * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
@@ -178,9 +178,9 @@ _Will enable brew and steam temperature control as well as pump control based on
 * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
 * [Heat-resistant Silicone Wire](https://bit.ly/3tjSQbI)
-  * **18AWG - 1m:** Black, Red & White
-  * **22AWG - 5m:** Black, Red & White
-  * **26AWG - 5m:** Black, Red, Blue & Yellow
+  * **18AWG - 1m:** Black, Red, White
+  * **22AWG - 5m:** Black, Red, Blue, White
+  * **26AWG - 5m:** Black, Red, Blue, Yellow
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
 * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
@@ -215,6 +215,7 @@ _Will enable brew and steam temperature control as well as pump control based on
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
 * [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html)
+* Wire _(see STM32 Blackpill tab if you don't already have wire from your initial build)_
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
