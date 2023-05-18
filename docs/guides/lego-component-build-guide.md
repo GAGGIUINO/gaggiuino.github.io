@@ -1,5 +1,7 @@
-This is a quick guide on how to best piece together the Gaggiuino mod into the 3D printed housing.
-Lots of images are provided to give you a sense of what a completed STM32 component (Lego) build should look like in the housing.
+This is a quick guide on how to assemble the Gaggiuino component build into the 3D printed housing.
+
+> [!Note]
+> This guide has been updated to follow a 3PLN + SSR HV connection format to synchronize the component and PCB integration options.
 
 ## General Install Info
 
@@ -48,7 +50,7 @@ Acceptable:
 </details>
 
 <details>
-<summary><b>Crimping</b> <i>(Click to expand)</i></summary>
+<summary><b>Screw Terminals and Crimping</b> <i>(Click to expand)</i></summary>
 
 Crimp ferrules are not required within the housing, but are a good idea for non-soldered component connections such as to the screw terminals on the expansion board, dimmer, and snubber to avoid stray wires. Make sure they are small enough to go into the screw terminals – 22AWG is possible, but 24-26AWG is much easier to crimp and fit in the terminals. 
 
@@ -103,6 +105,21 @@ If you receive an expansion board with a linked ground plane then you'll need to
 
 </details>
 
+<details>
+<summary><b>3PLN + SSR</b> <i>(Click to expand)</i></summary>
+
+3PLN + SSR is a way of describing the HV integration points of Gaggiuino into an espresso machine. The Gaggiuino control device (either the component build or a PCB) can control the espresso machine either by connecting into the stock wire harness or by replacing the stock wire harness with a custom one. 
+
+Abbr. |Name         |Description 
+------|-------------------|-----------
+3     | 3-Way Valve       | 3-Way Solenoid Valve that controls flow between the group head, boiler, and vent tube
+P     | Pump              | Vibratory pump that pumps the water
+L     | Line              | AC Line voltage
+N     | Neutral           | AC Neutral voltage
+SSR   | Solid-State Relay | Relay placed in-line with the boiler heaters for control
+
+</details>
+
 >
 
 # Fit Check
@@ -127,10 +144,10 @@ Component                                      |Colors                  |Gauge|L
 [SSR](#ssr)                                    |Yellow                  |22   |450 mm
 [Switches](#switches)                          |Black, Yellow, Blue     |22   |600 mm
 *Switch Jumper*                                |*Black*                 |*22* |*50 mm (used during machine install)*
-[PSU](#psu)                                    |Black, White            |22   |600 mm
+[PSU](#psu)                                    |Black, White            |22   |60 mm
 [Snubber-Relay](#snubber-relay-and-dimmer)     |Black, Red              |22   |100 mm
 [Relay-Dimmer](#snubber-relay-and-dimmer)      |Black                   |22   |50 mm
-[Relay (NO)](#snubber-relay-and-dimmer)        |Red                     |22   |600 mm
+[Relay (NO)](#snubber-relay-and-dimmer)        |Red                     |22   |250 mm
 [Dimmer (Out, N-In)](#snubber-relay-and-dimmer)|Red, White              |22   |250 mm
 [Dimmer (L-In)](#snubber-relay-and-dimmer)     |Black                   |22   |600 mm
 
@@ -140,9 +157,9 @@ Component                                      |Colors                  |Gauge|L
  
 Trust the schematic if you’re confused on a step or there appears to be a difference between an image and the schematic. You can use 22-26AWG wires for LV wiring unless otherwise noted; see the schematic and table for permissible wire gauges.
 
-<img width="800" alt="image" src="https://user-images.githubusercontent.com/117388662/235083835-fa2b6721-598c-4fca-9ac7-eb23a2aa596b.png">
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/117388662/238550995-f972675d-5b5f-47c6-ad42-4d2c4bf8858f.png">
 
-[STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/235083835-fa2b6721-598c-4fca-9ac7-eb23a2aa596b.png)
+[STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/238550995-f972675d-5b5f-47c6-ad42-4d2c4bf8858f.png)
 
 # LV Wiring
 
@@ -182,7 +199,7 @@ Wiring the pull-up 5V to A1, A2, and A3 is optional, but easy. Just make sure th
 
 ## Screen
 
-[Measure and cut](#wire-lengths) wires for the screen connection. Cut the DuPont connectors off the JST-XH pigtail included with the screen, solder like colors, and cover with heat shrink so you end up with a 600 mm long screen cable. 
+[Measure and cut](#external-wire-lengths) wires for the screen connection. Cut the DuPont connectors off the JST-XH pigtail included with the screen, solder like colors, and cover with heat shrink so you end up with a 600 mm long screen cable. 
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235807077-38f3fe70-f784-47da-aab0-3d9dbfc4114c.png">
 
@@ -196,14 +213,14 @@ Solder the power wires to the stripboard and connect the communication wires to 
 
 ## SSR
 
-[Measure and cut](#wire-lengths) the wires for the SSR. Solder to the stripboard and connect to the expansion board per the schematic.  
+[Measure and cut](#external-wire-lengths) the wires for the SSR. Solder to the stripboard and connect to the expansion board per the schematic.  
 Once you're done the assembly should look like this.
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236147555-e463242b-1aa4-4639-8efb-f789e5074b9b.png">
 
 ## Switches
 
-[Measure and cut](#wire-lengths) the wires for the switch connections. Solder to the stripboard and connect to the expansion board per the schematic.  
+[Measure and cut](#external-wire-lengths) the wires for the switch connections. Solder to the stripboard and connect to the expansion board per the schematic.  
 Once you're done the assembly should look like this.
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236129109-bfbb6880-8942-4009-a386-3d2be94ca1c1.png">
@@ -255,27 +272,22 @@ Recommendation: zip-tie the cable strain relief at this point so the risk of str
 
 ## PSU
 
-[Measure and cut](#wire-lengths) the wires for the PSU and solder to the AC in landings. Note that "polarity" does not matter. This is the last bit of soldering for the housing!
+[Measure and cut](#external-wire-lengths) the wires for the PSU and solder to the AC in landings. It is helpful for wire routing to have the black wire closer to the snubber and white wire closer to the outside because you'll be connecting it to the snubber as seen below, but "polarity" technically doesn't matter. This is the last bit of soldering for the housing!
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236347733-2f0f105d-1157-420e-84b4-ec7f2b0efe0a.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/238552129-b682bc54-3855-48ba-af14-d60d4adca361.png">
 
 ## Snubber, Relay, and Dimmer
 
-[Measure and cut](#wire-lengths) the wires for the snubber-relay, relay-dimmer, relay, and dimmer connections. 
+[Measure and cut](#external-wire-lengths) the wires for the snubber-relay, relay-dimmer, relay, and dimmer connections. 
+As shown above, the snubber wires get routed in the channel under the PSU. Here is the full set of housing HV wires for interfacing with the power switch, 3-way solenoid valve, and pump. 
 
-The snubber wires get routed in the channel under the PSU
-
-<img width="488" alt="image" src="https://user-images.githubusercontent.com/117388662/236350069-ad339311-676a-4514-84a8-7bc9b3dcb4bd.png">
-
-And here is the full set of housing HV wires for interfacing with the power switch, 3-way solenoid valve, and pump.
-
-<img width="488" alt="image" src="https://user-images.githubusercontent.com/117388662/236350229-e6ad120d-48e7-45de-b25b-249352784fca.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/239153554-60702e5b-7fcc-45bc-99a2-07b615da3e5d.png">
 
 # Final Steps
 
 To connect the ST-Link to the Blackpill (for flashing without opening the housing or machine) this is one of the few times in the project where DuPont connectors may be used. Another option is to solder the wires directly to the Blackpill. 
 
-?> If you wish to power the system through the 120 VAC PSU (powering on the espresso machine) to flash the Blackpill then do **not** connect 3.3V to the ST-Link.
+?> If you wish to power the system through the 120 VAC PSU (powering on the espresso machine) to flash the Blackpill then do **not** connect 3.3V to the ST-Link unless you're sure you do not have a knock-off/clone ST-Link.
 
 Close the housing with 4 screws to complete. 
 
@@ -286,16 +298,11 @@ Optional wiring that is not pictured:
 !>Please continue the install by referencing the machine-specific schematics and/or install instructions as they may vary.
 
 # Machine Schematics and Diagrams
-?>Readers must be aware that you must study both HV and LV diagrams for your specific machine.
+?>Readers must be aware that you must study both HV and LV pages for your specific machine, as well as the notes. HV wiring changes should be made before LV.
 
-**Gaggia Classic**
-* [STM32 Comp GC HV](https://user-images.githubusercontent.com/117388662/235083196-739bb6db-7213-4cac-8293-75cbcc81b5ef.JPG)
-* [STM32 Comp GC LV](https://user-images.githubusercontent.com/117388662/235083350-c73974d9-bef9-4eee-9b8b-436c999ba291.JPG)
+**3PLN Schematics for stock wiring harness integration**  
+_Only one version (120 V) of the Gaggia Classic and Classic Pro schematics are shown as the connection points are identical between 120/230 V. The wire colors may be different, but those differ between models of the same voltage type as well_
 
-**Gaggia Classic Pro**
-* [STM32 Comp GCP HV](https://user-images.githubusercontent.com/117388662/235083465-80c8cb69-6442-453d-ac2a-821b7da190be.JPG)
-* [STM32 Comp GCP LV](https://user-images.githubusercontent.com/117388662/235083525-713be71f-dfb9-4c73-9d89-b93d0a19b8ed.JPG)
-
-**Gaggia Classic Pro Eco**
-* [STM32 Comp GCP_Eco HV](https://user-images.githubusercontent.com/117388662/235083687-5615555c-7295-4172-87b0-cbe3a2414cf9.JPG)
-* [STM32 Comp GCP_Eco LV](https://user-images.githubusercontent.com/117388662/235083749-03cd7b0b-acbb-43b4-9705-1a42073605d4.JPG)
+* **Gaggia Classic** [HV page](https://user-images.githubusercontent.com/117388662/239174929-500fe13f-d38d-4114-81c2-2f6c646aaf91.JPG), [LV page](https://user-images.githubusercontent.com/117388662/239174935-32adbe15-4ab5-4c39-809d-cf627ea36842.JPG)
+* **Gaggia Classic Pro** [HV page](https://user-images.githubusercontent.com/117388662/239175752-60352cd0-ad81-4e7e-8c4c-a79a1765a7da.JPG), [LV page](https://user-images.githubusercontent.com/117388662/239175755-da160ec4-a330-4ecb-b488-fc8de6eda263.JPG)
+* **Gaggia Classic Pro Eco** [HV page](https://user-images.githubusercontent.com/117388662/239175935-786110a0-635a-4afb-ad39-ff62def08d82.JPG), [LV page](https://user-images.githubusercontent.com/117388662/239175943-91f78e93-c2ea-4e9d-a445-e375ffe4b45d.JPG)

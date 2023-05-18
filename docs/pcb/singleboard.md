@@ -6,7 +6,7 @@
 >
 > **Make sure to read the info in the *#pcb-interest-registration* discord channel as well for more info on the ordering process as well as searching discord for any PCB related questions as many have been answered multiple times already.**
 
-# Bill of Materials
+## Bill of Materials
 
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
@@ -20,7 +20,7 @@
 * [JST PH 2P, 3P, 4P & 5P](https://www.aliexpress.com/item/4000091077742.html)
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-  * [O Ring - OD 11mm](https://www.aliexpress.com/item/1005003662931218.html) 
+* [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html) 
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
@@ -43,21 +43,41 @@
 
 * Get rid of old harness and replace with homemade one. 
 * Try to maintain the wiring for the thermal fuse and boiler terminals. If not get a resettable thermostat - **Rancilio Silvia Boiler Thermostat 165º** and boiler terminals are **160783-7 TE**.
-* Get covers for spades, possibly hard covers. [Printable boiler terminal covers.](https://www.printables.com/model/380256-gaggia-boiler-terminal-shroud)
+* Get covers for spades, possibly hard covers. Stock boiler terminal covers for round connectors cannot be purchased, a printable option is linked below.
 * Consider buying a XH and PH JST kit to make up your own.
 * Know and study difference between HV and LV lines.
 * Gaggia Classic New 2018/19 - ECO board must be bypassed. Highly recommend getting PCB v3 as you can slot it into the pump tower where the eco board would be.
 
+# 3D Printed Parts
+_BOM and assembly instructions for the 3D printed parts are linked here.  
+Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](https://www.printables.com/social/340492-loogle/collections/265668) or on Discord in the **#mod-3d-design-ideas** channel._
+
+> [!Note]
+> See [3D printed parts](/#_3d-printed-parts) section in the Home page for links to the hardware scales and print services.
+
+* [Screen Enclosure](https://www.printables.com/model/280617)
+* [Boiler Terminal Shrouds *(if needed))*](https://www.printables.com/model/380256-gaggia-boiler-terminal-shroud)
+* **PCB v2** *(Pick one)*
+  * [Rigid Housing](https://www.printables.com/model/260901)
+  * [Easy Access Housing)](https://www.printables.com/model/261267)
+* **PCB v3** *(Pick one - Only needed for Gaggia Classic or if you don't want to put the PCB into the Pro's pump housing)*
+  * [Protective Housing](https://www.printables.com/model/370513)
+  * [Minimal Housing](https://www.printables.com/model/304637)
+
+>
+
 # Schematics
-## PCB v2
-* [GCP 110v](https://user-images.githubusercontent.com/53577819/220784207-f16a0571-b90c-42f7-89bc-c71b61c03278.png)
-* [GCP 240v](https://user-images.githubusercontent.com/53577819/220784202-d218ff9d-0471-4209-afbd-ebc0a6fa8723.png)
+**PCB v2** 
 * [GC 110v](https://user-images.githubusercontent.com/53577819/220784209-062e3b3c-e8e7-4a49-b716-87f2ce0634c7.png)
 * [GC 240v](https://user-images.githubusercontent.com/53577819/220784212-4b767c1b-8014-4902-81a5-95765ded1181.png)
+* [GCP 110v](https://user-images.githubusercontent.com/53577819/220784207-f16a0571-b90c-42f7-89bc-c71b61c03278.png)
+* [GCP 240v](https://user-images.githubusercontent.com/53577819/220784202-d218ff9d-0471-4209-afbd-ebc0a6fa8723.png)
 
-## PCB v3
-* [GC Standard (revised)](https://user-images.githubusercontent.com/53577819/220784232-1b254cd4-d3d7-4fe9-97e5-283fa1fb2659.png)
-* [3PLN 240v](https://user-images.githubusercontent.com/53577819/220784234-0b370f5b-fd5e-4d0d-9b9d-109ff25d2cbf.png)
-* [3PLN 120v](https://user-images.githubusercontent.com/53577819/220784237-e2b841e0-4754-4657-98bd-6adb96255aa1.png)
-
-
+**PCB v3** 
+* [GC 120v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GC%20PCB%20v3%20120v/GC_wiring_PCBv3_120v.png?raw=true)
+* [GC 240v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GC%20PCB%20v3%20220v/GC_wiring_PCBv3_220v.png?raw=true)
+* [GCP 120v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GCP%20PCB%20v3%20120v/GCP_wiring_PCBv3_120v.png?raw=true)
+* [GCP 240v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GCP%20PCB%20v3%20220v/GCP_wiring_PCBv3_220v.png?raw=true)
+* [*GC Standard (revised)*](https://user-images.githubusercontent.com/53577819/220784232-1b254cd4-d3d7-4fe9-97e5-283fa1fb2659.png)
+* [*3PLN 240v*](https://user-images.githubusercontent.com/53577819/220784234-0b370f5b-fd5e-4d0d-9b9d-109ff25d2cbf.png)
+* [*3PLN 120v*](https://user-images.githubusercontent.com/53577819/220784237-e2b841e0-4754-4657-98bd-6adb96255aa1.png)
