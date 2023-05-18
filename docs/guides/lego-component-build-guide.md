@@ -1,7 +1,7 @@
 This is a quick guide on how to assemble the Gaggiuino component build into the 3D printed housing.
 
 > [!Note]
-> [This guide has been updated to follow a 3PLN + SSR integration format to synchronize with the PCBs.]
+> This guide has been updated to follow a 3PLN + SSR HV connection format to synchronize the component and PCB integration options.
 
 ## General Install Info
 
@@ -102,6 +102,21 @@ If you receive an expansion board with this connection between two pins it will 
 If you receive an expansion board with a linked ground plane then you'll need to cut the plane in two (likely on both sides of the board). It is recommended to not cut through the screw holes as that may allow a screw to reconnect the planes. 
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236353796-18f8c699-e251-4df1-bb13-56b204afd832.png">
+
+</details>
+
+<details>
+<summary><b>3PLN + SSR</b> <i>(Click to expand)</i></summary>
+
+3PLN + SSR is a way of describing the HV integration points of Gaggiuino into an espresso machine. The Gaggiuino control device (either the component build or a PCB) can control the espresso machine either by connecting into the stock wire harness or by replacing the stock wire harness with a custom one. 
+
+Abbr. |Name         |Description 
+------|-------------------|-----------
+3     | 3-Way Valve       | 3-Way Solenoid Valve that controls flow between the group head, boiler, and vent tube
+P     | Pump              | Vibratory pump that pumps the water
+L     | Line              | AC Line voltage
+N     | Neutral           | AC Neutral voltage
+SSR   | Solid-State Relay | Relay placed in-line with the boiler heaters for control
 
 </details>
 
@@ -285,6 +300,9 @@ Optional wiring that is not pictured:
 # Machine Schematics and Diagrams
 ?>Readers must be aware that you must study both HV and LV pages for your specific machine, as well as the notes. HV wiring changes should be made before LV.
 
-* [**Gaggia Classic** Stock 3PLN](https://github.com/Loogl3/gaggiuino.github.io/files/11505278/Stock.3PLN.Sch.-.120V.GC.pdf)
-* [**Gaggia Classic Pro** Stock 3PLN](https://github.com/Loogl3/gaggiuino.github.io/files/11505279/Stock.3PLN.Sch.-.120V.GCP.pdf)
-* [**Gaggia Classic Pro Eco** Stock 3PLN](https://github.com/Loogl3/gaggiuino.github.io/files/11505277/Stock.3PLN.Sch.-.240V.GCP.Eco.pdf)
+**3PLN Schematics for stock wiring harness integration**  
+_Only one version (120 V) of the Gaggia Classic and Classic Pro schematics are shown as the connection points are identical between 120/230 V. The wire colors may be different, but those differ between models of the same voltage type as well_
+
+* **Gaggia Classic** [HV page](https://user-images.githubusercontent.com/117388662/239174929-500fe13f-d38d-4114-81c2-2f6c646aaf91.JPG), [LV page](https://user-images.githubusercontent.com/117388662/239174935-32adbe15-4ab5-4c39-809d-cf627ea36842.JPG)
+* **Gaggia Classic Pro** [HV page](https://user-images.githubusercontent.com/117388662/239175752-60352cd0-ad81-4e7e-8c4c-a79a1765a7da.JPG), [LV page](https://user-images.githubusercontent.com/117388662/239175755-da160ec4-a330-4ecb-b488-fc8de6eda263.JPG)
+* **Gaggia Classic Pro Eco** [HV page](https://user-images.githubusercontent.com/117388662/239175935-786110a0-635a-4afb-ad39-ff62def08d82.JPG), [LV page](https://user-images.githubusercontent.com/117388662/239175943-91f78e93-c2ea-4e9d-a445-e375ffe4b45d.JPG)
