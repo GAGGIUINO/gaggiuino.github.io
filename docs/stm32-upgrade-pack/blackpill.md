@@ -1,4 +1,4 @@
-# GAGGIUINO STM32 UPGRADE GUIDE
+# NANO TO STM32 UPGRADE GUIDE
 
 > [!Warning]
 > Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. **Always work with the Gaggia unplugged.** You are performing this project under your own risk and the author of this guide and anyone associated with this project are NOT liable for your actions. 

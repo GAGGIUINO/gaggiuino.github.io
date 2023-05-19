@@ -116,8 +116,6 @@ _*3_ __Predictive scales__ - software driven predicted weight output, doesn't ne
 <!-- div:title-panel -->
 # Bill of Materials
 
-> [!TIP]
-> The current recommendation is to perform the Nano build first, after which one can easily upgrade to STM32 if further functionality is desired, jumping straight into STM32 is not encouraged for the inexperienced due to the documentation targeting a direct Nano install at this point in time.
 <!-- tabs:start -->
 <!-- tab:Arduino Nano -->
 ### BASE FUNCTIONALITY
@@ -258,7 +256,7 @@ Hardware scales offer accurate sensing of the first drops into the cup as well a
 
 ### **Print services**
 _Places to get your 3D prints if you don't have a printer. Gaggiuino print service partner(s) are reviewed by the Gaggiuino team for service, print quality, and cost before approval._
-  * [Gaggiuino print service (US Based)](https://gaggiuino.hudsoncreativegroup.com/)
+  * [Gaggiuino print service partner (US Based)](https://gaggiuino.hudsoncreativegroup.com/)
   * [CraftCloud print shop aggregator](https://craftcloud3d.com/)
 
 # Statistics

@@ -105,21 +105,6 @@ If you receive an expansion board with a linked ground plane then you'll need to
 
 </details>
 
-<details>
-<summary><b>3PLN + SSR</b> <i>(Click to expand)</i></summary>
-
-3PLN + SSR is a way of describing the HV integration points of Gaggiuino into an espresso machine. The Gaggiuino control device (either the component build or a PCB) can control the espresso machine either by connecting into the stock wire harness or by replacing the stock wire harness with a custom one. 
-
-Abbr. |Name         |Description 
-------|-------------------|-----------
-3     | 3-Way Valve       | 3-Way Solenoid Valve that controls flow between the group head, boiler, and vent tube
-P     | Pump              | Vibratory pump that pumps the water
-L     | Line              | AC Line voltage
-N     | Neutral           | AC Neutral voltage
-SSR   | Solid-State Relay | Relay placed in-line with the boiler heaters for control
-
-</details>
-
 >
 
 # Fit Check
@@ -238,7 +223,7 @@ Flash the Nextion with the applicable nextion-*-lcd.tft on an otherwise-empty â‰
 Power for flashing the Nextion may be provided through the USB-C port on the Blackpill so long as you are using a USB power adapter that will supply 4.6-5.2 VDC (don't use a battery bank or your PC USB ports for power).  
 
 ?> More stable voltage can be provided by using the 120 VAC PSU and piggybacking off of the Gaggia power switch ([example here](https://user-images.githubusercontent.com/117388662/235836724-71394491-c47a-46ed-920b-79ced184cc16.png)), however this is unnecessary for flashing and testing at this point so long as the voltage provided through the USB-C port is in range.  
-*If you wish to power the system through the 120 VAC PSU to flash the Blackpill then do **not** connect 3.3V to the ST-Link.
+*If you wish to power the system through the 120 VAC PSU to flash the Blackpill then do **not** connect 3.3V to the ST-Link unless you're sure you do not have a knock-off/clone ST-Link.
 
 Wait for the Nextion to show the "Update Successed! (sic)" message, turn off power, and then remove the microSD card.
 
@@ -295,14 +280,4 @@ Optional wiring that is not pictured:
 - HW Scales
 - ToFnLED
 
-!>Please continue the install by referencing the machine-specific schematics and/or install instructions as they may vary.
-
-# Machine Schematics and Diagrams
-?>Readers must be aware that you must study both HV and LV pages for your specific machine, as well as the notes. HV wiring changes should be made before LV.
-
-**3PLN Schematics for stock wiring harness integration**  
-_Only one version (120 V) of the Gaggia Classic and Classic Pro schematics are shown as the connection points are identical between 120/230 V. The wire colors may be different, but those differ between models of the same voltage type as well_
-
-* **Gaggia Classic** [HV page](https://user-images.githubusercontent.com/117388662/239174929-500fe13f-d38d-4114-81c2-2f6c646aaf91.JPG), [LV page](https://user-images.githubusercontent.com/117388662/239174935-32adbe15-4ab5-4c39-809d-cf627ea36842.JPG)
-* **Gaggia Classic Pro** [HV page](https://user-images.githubusercontent.com/117388662/239175752-60352cd0-ad81-4e7e-8c4c-a79a1765a7da.JPG), [LV page](https://user-images.githubusercontent.com/117388662/239175755-da160ec4-a330-4ecb-b488-fc8de6eda263.JPG)
-* **Gaggia Classic Pro Eco** [HV page](https://user-images.githubusercontent.com/117388662/239175935-786110a0-635a-4afb-ad39-ff62def08d82.JPG), [LV page](https://user-images.githubusercontent.com/117388662/239175943-91f78e93-c2ea-4e9d-a445-e375ffe4b45d.JPG)
+**Continue the install by referencing the 3PLN machine-specific schematics and/or install instructions on the [3PLN Stock Wiring Integration](/guides/3pln-stock-wiring-integration.md) page.**
