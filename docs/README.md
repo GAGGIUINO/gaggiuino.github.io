@@ -255,9 +255,9 @@ Hardware scales offer accurate sensing of the first drops into the cup as well a
 >
 
 ### **Print services**
-_Places to get your 3D prints if you don't have a printer. Gaggiuino print service partner(s) are reviewed by the Gaggiuino team for service, print quality, and cost before approval._
-  * [Gaggiuino print service partner (US Based)](https://gaggiuino.hudsoncreativegroup.com/)
-  * [CraftCloud print shop aggregator](https://craftcloud3d.com/)
+_Places to get your 3D prints if you don't have a printer. Gaggiuino print service providers are reviewed by the Gaggiuino team for service, print quality, and cost before approval._
+  * [Gaggiuino print service (US Based)](https://gaggiuino.hudsoncreativegroup.com/)
+  * [CraftCloud (print shop aggregator)](https://craftcloud3d.com/)
 
 # Statistics
 
