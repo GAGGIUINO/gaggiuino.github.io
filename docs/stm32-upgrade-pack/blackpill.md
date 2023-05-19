@@ -103,15 +103,35 @@ The nano and blackpill/stm32 have different pin setups on their respective board
 
 !>Updated with new independent relay and dimmer wiring
 
-**HV Diagrams**
-* [STM32 Comp GC HV - IRD](https://user-images.githubusercontent.com/117388662/235083196-739bb6db-7213-4cac-8293-75cbcc81b5ef.JPG)
-* [STM32 Comp GCP HV - IRD](https://user-images.githubusercontent.com/117388662/235083465-80c8cb69-6442-453d-ac2a-821b7da190be.JPG)
-* [STM32 Comp GCP_Eco HV - IRD](https://user-images.githubusercontent.com/117388662/235083687-5615555c-7295-4172-87b0-cbe3a2414cf9.JPG)
+Save the images or right-click and open in a new tab to view at full resolution.
 
-**LV Diagrams**
-* [STM32 Comp GC LV - IRD](https://user-images.githubusercontent.com/117388662/235083350-c73974d9-bef9-4eee-9b8b-436c999ba291.JPG)
-* [STM32 Comp GCP LV - IRD](https://user-images.githubusercontent.com/117388662/235083525-713be71f-dfb9-4c73-9d89-b93d0a19b8ed.JPG)
-* [STM32 Comp GCP_Eco LV - IRD](https://user-images.githubusercontent.com/117388662/235083749-03cd7b0b-acbb-43b4-9705-1a42073605d4.JPG)
+<details>
+<summary><b>Gaggia Classic</b> <i>(Click to expand)</i></summary>
 
-**Internal Component Housing**
-* [STM32 Internal Comp Housing Schematic - IRD](https://user-images.githubusercontent.com/117388662/235083835-fa2b6721-598c-4fca-9ac7-eb23a2aa596b.png)
+<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gc-hv-ird.jpg">
+
+<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gc-lv-ird.jpg">
+</details>
+
+<details>
+<summary><b>Gaggia Classic Pro</b> <i>(Click to expand)</i></summary>
+
+<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gcp-hv-ird.jpg">
+
+<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gcp-lv-ird.jpg">
+</details>
+
+<details>
+<summary><b>Gaggia Classic Pro Eco</b> <i>(Click to expand)</i></summary>
+
+<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gcp_eco-hv-ird.jpg">
+
+<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gcp_eco-lv-ird.jpg">
+</details>
+
+<details>
+<summary><b>STM32 Component Build</b> <i>(Click to expand)</i></summary>
+
+<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/stm32-comp-build-ird.png">
+
+</details>

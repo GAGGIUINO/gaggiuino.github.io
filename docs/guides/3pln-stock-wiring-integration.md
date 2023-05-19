@@ -24,11 +24,35 @@ With this doc update the PCB and component installs have been synchronized to bo
 These schematics show the connection points for integrating into the stock wiring harness with 3PLN + SSR. Study both HV and LV pages for your specific machine, as well as the notes on the schematic. In general, HV wiring changes must be made before LV.
 
 > [!Note]
-> Only one version (120 V) of the Gaggia Classic and Classic Pro schematics are shown as the integration points are identical between 120/230 V. The wire colors may be different, but those differ between models of the same voltage type as well
+> Only one version (120 V) of the Gaggia Classic and Classic Pro schematics are shown as the integration points are identical between 120/230 V. The wire colors may be different, but those differ between models of the same voltage type as well.  
 
-* **Gaggia Classic** [HV page](https://user-images.githubusercontent.com/117388662/239174929-500fe13f-d38d-4114-81c2-2f6c646aaf91.JPG), [LV page](https://user-images.githubusercontent.com/117388662/239174935-32adbe15-4ab5-4c39-809d-cf627ea36842.JPG)
-* **Gaggia Classic Pro** [HV page](https://user-images.githubusercontent.com/117388662/239175752-60352cd0-ad81-4e7e-8c4c-a79a1765a7da.JPG), [LV page](https://user-images.githubusercontent.com/117388662/239175755-da160ec4-a330-4ecb-b488-fc8de6eda263.JPG)
-* **Gaggia Classic Pro Eco** [HV page](https://user-images.githubusercontent.com/117388662/239175935-786110a0-635a-4afb-ad39-ff62def08d82.JPG), [LV page](https://user-images.githubusercontent.com/117388662/239175943-91f78e93-c2ea-4e9d-a445-e375ffe4b45d.JPG)
+Save the images or right-click and open in a new tab to view at full resolution.
+
+<details>
+<summary><b>Gaggia Classic</b> <i>(Click to expand)</i></summary>
+
+<img height="300" alt="image" src="/schematics/install-stock-3pln/gc-hv-3pln.jpg">
+
+<img height="300" alt="image" src="/schematics/install-stock-3pln/gc-lv-3pln.jpg">
+</details>
+
+<details>
+<summary><b>Gaggia Classic Pro</b> <i>(Click to expand)</i></summary>
+
+<img height="300" alt="image" src="/schematics/install-stock-3pln/gcp-hv-3pln.jpg">
+
+<img height="300" alt="image" src="/schematics/install-stock-3pln/gcp-lv-3pln.jpg">
+</details>
+
+<details>
+<summary><b>Gaggia Classic Pro Eco</b> <i>(Click to expand)</i></summary>
+
+<img height="300" alt="image" src="/schematics/install-stock-3pln/gcp_eco-hv-3pln.jpg">
+
+<img height="300" alt="image" src="/schematics/install-stock-3pln/gcp_eco-lv-3pln.jpg">
+</details>
+
+>
 
 # Integration
 

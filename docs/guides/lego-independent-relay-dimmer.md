@@ -36,7 +36,40 @@ Independent control allows proper phase recognition, calibration, and tracking.
 
 # Schematics
 
-[comment]: # (really wanted to make this a table but it just didn't agree with me)
+Save the images or right-click and open in a new tab to view at full resolution.
+
+## New (Independent Relay and Dimmer)
+
+<details>
+<summary><b>Gaggia Classic</b> <i>(Click to expand)</i></summary>
+
+<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gc-hv-ird.jpg">
+
+<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gc-lv-ird.jpg">
+</details>
+
+<details>
+<summary><b>Gaggia Classic Pro</b> <i>(Click to expand)</i></summary>
+
+<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gcp-hv-ird.jpg">
+
+<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gcp-lv-ird.jpg">
+</details>
+
+<details>
+<summary><b>Gaggia Classic Pro Eco</b> <i>(Click to expand)</i></summary>
+
+<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gcp_eco-hv-ird.jpg">
+
+<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gcp_eco-lv-ird.jpg">
+</details>
+
+<details>
+<summary><b>STM32 Component Build</b> <i>(Click to expand)</i></summary>
+
+<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/stm32-comp-build-ird.png">
+
+</details>
 
 ## Old
 
@@ -50,20 +83,5 @@ Independent control allows proper phase recognition, calibration, and tracking.
 * [STM32 Comp GCP LV](https://user-images.githubusercontent.com/53577819/220784877-279de614-afe9-4bcf-bf27-a6e25edb06bc.JPG)
 * [STM32 Comp GCP_Eco LV](https://user-images.githubusercontent.com/53577819/220784865-b52ffb3f-8380-4225-a539-15d44738d2fe.JPG)
 
-**Internal Component Housing**
+**STM32 Component Build**
 * [STM32 Internal Comp Housing Schematic](https://user-images.githubusercontent.com/117388662/230696068-e49df2fa-c3b6-49c2-80ff-629b80780938.png)
-
-## New (Independent Relay and Dimmer)
-
-**HV Diagrams**
-* [STM32 Comp GC HV - IRD](https://user-images.githubusercontent.com/117388662/235083196-739bb6db-7213-4cac-8293-75cbcc81b5ef.JPG)
-* [STM32 Comp GCP HV - IRD](https://user-images.githubusercontent.com/117388662/235083465-80c8cb69-6442-453d-ac2a-821b7da190be.JPG)
-* [STM32 Comp GCP_Eco HV - IRD](https://user-images.githubusercontent.com/117388662/235083687-5615555c-7295-4172-87b0-cbe3a2414cf9.JPG)
-
-**LV Diagrams**
-* [STM32 Comp GC LV - IRD](https://user-images.githubusercontent.com/117388662/235083350-c73974d9-bef9-4eee-9b8b-436c999ba291.JPG)
-* [STM32 Comp GCP LV - IRD](https://user-images.githubusercontent.com/117388662/235083525-713be71f-dfb9-4c73-9d89-b93d0a19b8ed.JPG)
-* [STM32 Comp GCP_Eco LV - IRD](https://user-images.githubusercontent.com/117388662/235083749-03cd7b0b-acbb-43b4-9705-1a42073605d4.JPG)
-
-**Internal Component Housing**
-* [STM32 Internal Comp Housing Schematic - IRD](https://user-images.githubusercontent.com/117388662/235083835-fa2b6721-598c-4fca-9ac7-eb23a2aa596b.png)
