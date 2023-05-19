@@ -34,6 +34,10 @@ Save the images or right-click and open in a new tab to view at full resolution.
 <img height="300" alt="image" src="/schematics/install-stock-3pln/gc-hv-3pln.jpg">
 
 <img height="300" alt="image" src="/schematics/install-stock-3pln/gc-lv-3pln.jpg">
+
+<img height="300" alt="image" src="/schematics/install-stock-3pln/gc-hv-3pln.png">
+
+<img height="300" alt="image" src="/schematics/install-stock-3pln/gc-lv-3pln.png">
 </details>
 
 <details>
