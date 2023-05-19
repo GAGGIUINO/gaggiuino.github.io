@@ -24,11 +24,35 @@ With this doc update the PCB and component installs have been synchronized to bo
 These schematics show the connection points for integrating into the stock wiring harness with 3PLN + SSR. Study both HV and LV pages for your specific machine, as well as the notes on the schematic. In general, HV wiring changes must be made before LV.
 
 > [!Note]
-> Only one version (120 V) of the Gaggia Classic and Classic Pro schematics are shown as the integration points are identical between 120/230 V. The wire colors may be different, but those differ between models of the same voltage type as well
+> Only one version (120 V) of the Gaggia Classic and Classic Pro schematics are shown as the integration points are identical between 120/230 V. The wire colors may be different, but those differ between models of the same voltage type as well.  
 
-* **Gaggia Classic** [HV page](https://user-images.githubusercontent.com/117388662/239174929-500fe13f-d38d-4114-81c2-2f6c646aaf91.JPG), [LV page](https://user-images.githubusercontent.com/117388662/239174935-32adbe15-4ab5-4c39-809d-cf627ea36842.JPG)
-* **Gaggia Classic Pro** [HV page](https://user-images.githubusercontent.com/117388662/239175752-60352cd0-ad81-4e7e-8c4c-a79a1765a7da.JPG), [LV page](https://user-images.githubusercontent.com/117388662/239175755-da160ec4-a330-4ecb-b488-fc8de6eda263.JPG)
-* **Gaggia Classic Pro Eco** [HV page](https://user-images.githubusercontent.com/117388662/239175935-786110a0-635a-4afb-ad39-ff62def08d82.JPG), [LV page](https://user-images.githubusercontent.com/117388662/239175943-91f78e93-c2ea-4e9d-a445-e375ffe4b45d.JPG)
+Save the images or right-click and open in a new tab to view at full resolution.
+
+<details>
+<summary><b>Gaggia Classic</b> <i>(Click to expand)</i></summary>
+
+<img height="300" alt="image" src="/schematics/install-stock-3pln/gc-hv-3pln.jpg">
+
+<img height="300" alt="image" src="/schematics/install-stock-3pln/gc-lv-3pln.jpg">
+</details>
+
+<details>
+<summary><b>Gaggia Classic Pro</b> <i>(Click to expand)</i></summary>
+
+<img height="300" alt="image" src="/schematics/install-stock-3pln/gcp-hv-3pln.jpg">
+
+<img height="300" alt="image" src="/schematics/install-stock-3pln/gcp-lv-3pln.jpg">
+</details>
+
+<details>
+<summary><b>Gaggia Classic Pro Eco</b> <i>(Click to expand)</i></summary>
+
+<img height="300" alt="image" src="/schematics/install-stock-3pln/gcp_eco-hv-3pln.jpg">
+
+<img height="300" alt="image" src="/schematics/install-stock-3pln/gcp_eco-lv-3pln.jpg">
+</details>
+
+>
 
 # Integration
 
@@ -119,9 +143,24 @@ Cut the tubing in between the pump and boiler, nearer to the boiler but high eno
 > [!Tip]
 > Make sure the tubing is fully engaged on the fittings. It can be helpful to use a grip aid such as silicone tape or a rubber glove to grip the tubing and push it in. For barbed fittings you may even need to use some water-based lubricant to get it all the way on.
 
-Cut a 200-250 mm length of your tubing from the BOM and attach it to the pressure transducer fitting. Then, fill that length of tubing with water so there are no air bubbles. This can be difficult due to surface tension if you don't use a simple trick: insert a small wire down the center of the tubing and inject water with a syringe. The wire allows the water to flow down and the air to vent up because it doesn't let surface tension seal the tube.
+Cut a 200-250 mm length of your tubing from the BOM and attach it to the pressure transducer fitting. You'll need to fill that length of tubing with water so there are no air bubbles. There are 2 options:
+
+<details>
+<summary><b>Hand fill</b> <i>(Click to expand)</i></summary>
+
+Surface tension can make hand filling the tube difficult if you don't use a simple trick: insert a small wire down the center of the tubing and inject water with a syringe. The wire allows the water to flow down and the air to vent up because it doesn't let surface tension seal the tube.
 
 ![Filling the transducer tubing](https://user-images.githubusercontent.com/117388662/239455051-c8fe0d0a-270e-4685-9478-d751eb746d49.png ':size=250')
+</details>
+
+<details>
+<summary><b>Machine fill</b> <i>(Click to expand)</i></summary>
+
+After the screen has been connected and the remainder of the install completed, go to the Brew menu, select the Manual tab, set flow to 1 ml/s and run for ~2 minutes (with open group head) to gently fill the line.
+
+![Filling the transducer tubing](https://user-images.githubusercontent.com/117388662/239618595-844609d1-7b59-456e-afba-2d2b1bf73374.png ':size=250')
+
+</details>
 
 Plug the filled tube into the T fitting and arrange the pressure transducer so that it is at the base of the machine, lower than the T fitting. 
 
@@ -135,7 +174,7 @@ Plug the filled tube into the T fitting and arrange the pressure transducer so t
 
 Remove the pins from the screen connector, add a length of heat shrink tubing around the cable bundle so the sharp vent doesn't cut through the soft silicone wire jacket (don't shrink it), and pass the screen wires and ST-Link wires through the back vents. Mount the ST-Link with some double-sided tape.
 
-![Wire pass-through](https://user-images.githubusercontent.com/117388662/239461641-e4f1d5f0-e83c-458c-94ca-61b25a6c7fa0.png ':size=500')
+![Wire pass-through](https://user-images.githubusercontent.com/117388662/239461641-e4f1d5f0-e83c-458c-94ca-61b25a6c7fa0.png ':size=250')
 
 Make sure HV AC wiring and LV DC wiring/sensors are separated. Zip-tie wire bundle, ensuring disconnected wires and connectors are constrained so they cannot make accidental contact. In a Gaggia Classic it looks like this:
 
@@ -149,6 +188,6 @@ There's extra wire length so the screen can remain connected while the cover is 
 
 ![Screen wiring](https://user-images.githubusercontent.com/117388662/239463397-25c3e82c-07e3-4b10-b056-59cbf8d36efc.png ':size=500')
 
-Put the screen housing together and you're ready for espresso! 
+Put the screen housing together, push the spare screen wire (and heat shrink tubing) back through the vent hole and you're ready for espresso! 
 
 ![Finished!](https://user-images.githubusercontent.com/117388662/239463949-0e90b52f-a5fa-4aed-8ea7-9047154cc213.png ':size=500')
