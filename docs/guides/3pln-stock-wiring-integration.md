@@ -56,7 +56,7 @@ Brew TS           |B      |a    b
 Pump              |P      |a    b <br /> _a is from fuse, unlabeled_ <br />_b is a single red wire in most machines_
 Fuse (GC)         |F      |_there should be 2 wires_ <br />_in the connector to the fuse_
 
-Here are the GC stock pump connections for clarity. Note that most connections are made at the pump, so make sure the pump wiring matches the stock schematic for your machine before continuing.
+Here are the GC stock pump connections for clarity. Note that most connections are made at the pump, so make sure the pump wiring matches the stock [schematic](#schematics) for your machine before continuing.
 
 ![Stock pump connections](https://user-images.githubusercontent.com/117388662/239372268-1605be4b-5a0c-414d-bdc2-3524ef26b11e.png ':size=250')
 
@@ -93,7 +93,7 @@ Mount the SSR to the back wall of the machine using an M4 screw and nut (you wil
 
 **High Voltage**
 
-Disconnect wires from the switch(es) and connect your last 3PLN connection (Line) with a male spade to the brew switch source wire. **Follow the schematic for your machine**, a GC example is shown here:
+Disconnect wires from the switch(es) and connect your last 3PLN connection (Line) with a male spade to the brew switch source wire. **Follow the [schematic](#schematics) for your machine**, a GC example is shown here:
 
 ![L Connection](https://user-images.githubusercontent.com/117388662/239404551-97d6f3e4-f62e-45c4-93d7-52d8ae373526.png ':size=500')
 
@@ -102,7 +102,7 @@ Disconnect wires from the switch(es) and connect your last 3PLN connection (Line
 > [!Tip]
 > Keep LV (DC) and sensors separated from HV (AC) wires to reduce interference. I like to run AC wires near the top of the machine enclosure, mostly left of the boiler. DC wires are run near the bottom of the enclosure, mostly on the right side.
 
-Connect GND, brewPin, and steamPin wires to the switches, making use of some of the space you've freed up by removing the HV wires. **Follow the schematic for your machine**, a GC example is shown here:
+Connect GND, brewPin, and steamPin wires to the switches, making use of some of the space you've freed up by removing the HV wires. **Follow the [schematic](#schematics) for your machine**, a GC example is shown here:
 
 ![Switch LV Connections](https://user-images.githubusercontent.com/117388662/239406277-7bdd8852-5fcb-454e-9521-cd9537543144.png ':size=500')
 
@@ -131,7 +131,7 @@ Plug the filled tube into the T fitting and arrange the pressure transducer so t
 
 ## Internal Finishing Touches
 
-Remove the pins from the screen connector, add a length of heat shrink tubing around the cable bundle so the sharp vent doesn't cut through the soft silicone wire jacket (don't shrink it), and pass the screen wires and ST-Link wires through the back vents. 
+Remove the pins from the screen connector, add a length of heat shrink tubing around the cable bundle so the sharp vent doesn't cut through the soft silicone wire jacket (don't shrink it), and pass the screen wires and ST-Link wires through the back vents. Mount the ST-Link with some double-sided tape.
 
 ![Wire pass-through](https://user-images.githubusercontent.com/117388662/239461641-e4f1d5f0-e83c-458c-94ca-61b25a6c7fa0.png ':size=500')
 
