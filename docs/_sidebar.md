@@ -10,7 +10,7 @@
     * [Gaggia Classic](gc/gaggia-classic.md)
     * [Gaggia Classic Pro](gcp/gaggia-classic-pro-new-classic.md)
 * - STM32
-    * [STM32 Lego Housing Build](guides/lego-component-build-guide.md)
+    * [STM32 Lego Component Build](guides/lego-component-build-guide.md)
     * [3PLN Stock Wiring Integration](guides/3pln-stock-wiring-integration.md)
 * - Upgrades
     * [Lego Independent Relay and Dimmer](guides/lego-independent-relay-dimmer.md)

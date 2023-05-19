@@ -116,8 +116,6 @@ _*3_ __Predictive scales__ - software driven predicted weight output, doesn't ne
 <!-- div:title-panel -->
 # Bill of Materials
 
-> [!TIP]
-> The current recommendation is to perform the Nano build first, after which one can easily upgrade to STM32 if further functionality is desired, jumping straight into STM32 is not encouraged for the inexperienced due to the documentation targeting a direct Nano install at this point in time.
 <!-- tabs:start -->
 <!-- tab:Arduino Nano -->
 ### BASE FUNCTIONALITY

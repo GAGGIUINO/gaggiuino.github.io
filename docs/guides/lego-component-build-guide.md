@@ -280,4 +280,4 @@ Optional wiring that is not pictured:
 - HW Scales
 - ToFnLED
 
-!>Continue the install by referencing the 3PLN machine-specific schematics and/or install instructions as they may vary.
+**Continue the install by referencing the 3PLN machine-specific schematics and/or install instructions on the [3PLN Stock Wiring Integration](/guides/3pln-stock-wiring-integration.md) page.**
