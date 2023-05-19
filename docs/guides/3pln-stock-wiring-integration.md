@@ -31,37 +31,26 @@ Save the images or right-click and open in a new tab to view at full resolution.
 <details>
 <summary><b>Gaggia Classic</b> <i>(Click to expand)</i></summary>
 
-<img height="300" alt="image" src="../schematics/install-stock-3pln/gc-hv-3pln.jpg">
+<img height="300" alt="image" src="schematics/install-stock-3pln/gc-hv-3pln.jpg">
 
-<img height="300" alt="image" src="./schematics/install-stock-3pln/gc-lv-3pln.jpg">
+<img height="300" alt="image" src="schematics/install-stock-3pln/gc-lv-3pln.jpg">
 
-<img height="300" alt="image" src="/schematics/install-stock-3pln/gc-hv-3pln.png">
-
-<img height="300" alt="image" src="schematics/install-stock-3pln/gc-lv-3pln.png">
-
-<img height="300" alt="image" src="docs/schematics/install-stock-3pln/gc-hv-3pln.png">
-
-<img height="300" alt="image" src="/install-stock-3pln/gc-lv-3pln.png">
-
-<img height="300" alt="image" src="install-stock-3pln/gc-lv-3pln.png">
-
-<img height="300" alt="image" src="gc-lv-3pln.png">
 </details>
 
 <details>
 <summary><b>Gaggia Classic Pro</b> <i>(Click to expand)</i></summary>
 
-<img height="300" alt="image" src="/schematics/install-stock-3pln/gcp-hv-3pln.jpg">
+<img height="300" alt="image" src="schematics/install-stock-3pln/gcp-hv-3pln.jpg">
 
-<img height="300" alt="image" src="/schematics/install-stock-3pln/gcp-lv-3pln.jpg">
+<img height="300" alt="image" src="schematics/install-stock-3pln/gcp-lv-3pln.jpg">
 </details>
 
 <details>
 <summary><b>Gaggia Classic Pro Eco</b> <i>(Click to expand)</i></summary>
 
-<img height="300" alt="image" src="/schematics/install-stock-3pln/gcp_eco-hv-3pln.jpg">
+<img height="300" alt="image" src="schematics/install-stock-3pln/gcp_eco-hv-3pln.jpg">
 
-<img height="300" alt="image" src="/schematics/install-stock-3pln/gcp_eco-lv-3pln.jpg">
+<img height="300" alt="image" src="schematics/install-stock-3pln/gcp_eco-lv-3pln.jpg">
 </details>
 
 >

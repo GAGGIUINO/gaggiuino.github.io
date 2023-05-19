@@ -43,31 +43,31 @@ Save the images or right-click and open in a new tab to view at full resolution.
 <details>
 <summary><b>Gaggia Classic</b> <i>(Click to expand)</i></summary>
 
-<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gc-hv-ird.jpg">
+<img height="300" alt="image" src="schematics/retrofit-indep-relay-dimmer/gc-hv-ird.jpg">
 
-<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gc-lv-ird.jpg">
+<img height="300" alt="image" src="schematics/retrofit-indep-relay-dimmer/gc-lv-ird.jpg">
 </details>
 
 <details>
 <summary><b>Gaggia Classic Pro</b> <i>(Click to expand)</i></summary>
 
-<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gcp-hv-ird.jpg">
+<img height="300" alt="image" src="schematics/retrofit-indep-relay-dimmer/gcp-hv-ird.jpg">
 
-<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gcp-lv-ird.jpg">
+<img height="300" alt="image" src="schematics/retrofit-indep-relay-dimmer/gcp-lv-ird.jpg">
 </details>
 
 <details>
 <summary><b>Gaggia Classic Pro Eco</b> <i>(Click to expand)</i></summary>
 
-<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gcp_eco-hv-ird.jpg">
+<img height="300" alt="image" src="schematics/retrofit-indep-relay-dimmer/gcp_eco-hv-ird.jpg">
 
-<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/gcp_eco-lv-ird.jpg">
+<img height="300" alt="image" src="schematics/retrofit-indep-relay-dimmer/gcp_eco-lv-ird.jpg">
 </details>
 
 <details>
 <summary><b>STM32 Component Build</b> <i>(Click to expand)</i></summary>
 
-<img height="300" alt="image" src="/schematics/retrofit-indep-relay-dimmer/stm32-comp-build-ird.png">
+<img height="300" alt="image" src="schematics/retrofit-indep-relay-dimmer/stm32-comp-build-ird.png">
 
 </details>
 
