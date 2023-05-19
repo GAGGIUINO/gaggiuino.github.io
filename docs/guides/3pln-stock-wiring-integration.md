@@ -83,6 +83,8 @@ The 3-way solenoid valve, Pump, and Neutral connections are all integrated into 
 * **Pump:** Female spade. Connect the pump control wire where the original pump wire was.  
 * **Neutral:** Piggyback spade. Piggyback the Neutral connection. 
 
+![Pump Area Connections](https://user-images.githubusercontent.com/117388662/239402660-557bd63c-4aec-4503-8b24-29163e3ed695.png ':size=500')
+
 ## SSR
 
 Mount the SSR to the back wall of the machine using an M4 screw and nut (you will need to mount sideways in a GCP) Remove the wires from the steam thermostat (Sa, Sb) and connect to the AC ports on the SSR (order doesn't matter). Remove disconnected thermostat if desired.
