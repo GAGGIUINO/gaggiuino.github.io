@@ -142,7 +142,7 @@ Component                                      |Colors                  |Gauge|L
  
 Trust the schematic if you’re confused on a step or there appears to be a difference between an image and the schematic. You can use 22-26AWG wires for LV wiring unless otherwise noted; see the schematic and table for permissible wire gauges.
 
-<img width="800" alt="image" src="/schematics/stm32-comp-build.png">
+<img width="800" alt="image" src="schematics/stm32-comp-build.png">
 
 # LV Wiring
 
