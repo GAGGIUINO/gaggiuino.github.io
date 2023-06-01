@@ -4,8 +4,6 @@
 
 # SCHEMATICS & DIAGRAMS
 
-?> STM32 schematics are on the [STM32 UPGRADE](stm32-upgrade-pack/blackpill.md) page
-
 **Schematics:**
 * [GAGGIA Classic **Nano** HV wiring](https://user-images.githubusercontent.com/42692077/161397293-82df427a-2ac2-4226-bdc6-fa831a962265.png)
 
@@ -230,7 +228,3 @@ So you end up having them connected like this:
 </div>
 
 >**The image above is provided as a reference to understand how the connection through the dimmer is made, please check whether your dimmer high voltage ports placement differs from the above image before connecting the dimmer, it's very important to feed the IN wires properly.**
-
-***
-?>Please refer to [Lego Component Housing Guide](guides/lego-component-build-guide.md) on how to setup and house your components for best fit into the machine.
-***

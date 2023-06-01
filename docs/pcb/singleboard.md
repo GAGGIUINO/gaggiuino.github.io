@@ -41,8 +41,7 @@
 # Considerations
 !> It is expected that when going through PCB install you are able to figure out most things by yourself. Please note, these are only suggestions/food for thought/rough guidance. 
 
-* Get rid of old harness and replace with homemade one. 
-* Try to maintain the wiring for the thermal fuse and boiler terminals. If not get a resettable thermostat - **Rancilio Silvia Boiler Thermostat 165º** and boiler terminals are **160783-7 TE**.
+* If you do a custom harness you can use the **Rancilio Silvia Boiler Thermostat 165º** for a resettable thermal fuse and boiler terminals are **160783-7 TE**.
 * Get covers for spades, possibly hard covers. Stock boiler terminal covers for round connectors cannot be purchased, a printable option is linked below.
 * Consider buying a XH and PH JST kit to make up your own.
 * Know and study difference between HV and LV lines.
@@ -56,7 +55,7 @@ Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](htt
 > See [3D printed parts](/#_3d-printed-parts) section in the Home page for links to the hardware scales and print services.
 
 * [Screen Enclosure](https://www.printables.com/model/280617)
-* [Boiler Terminal Shrouds *(if needed))*](https://www.printables.com/model/380256-gaggia-boiler-terminal-shroud)
+* [Boiler Terminal Shrouds *(if needed)*](https://www.printables.com/model/380256-gaggia-boiler-terminal-shroud)
 * **PCB v2** *(Pick one)*
   * [Rigid Housing](https://www.printables.com/model/260901)
   * [Easy Access Housing)](https://www.printables.com/model/261267)
