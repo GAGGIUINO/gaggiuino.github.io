@@ -3,80 +3,58 @@
 > [!Warning]
 > Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. **Always work with the Gaggia unplugged.** You are performing this project under your own risk and the author of this guide and anyone associated with this project are NOT liable for your actions. 
 
-## Introduction
-This guide will explain how to upgrade or start the project with an STM32F4xxx (Blackpill) board. The upgrade is essentially a drop-in replacement for the nano maintaining a majority of the nano installation components. The major differences between nano and STM32 are mentioned below: 
+# Introduction
+This guide will explain how to upgrade your nano build to use a STM32F4xxx (Blackpill). The upgrade is essentially a drop-in replacement for the nano maintaining a majority of the nano installation components. The major differences between nano and STM32 are mentioned below: 
 
-- The wires from the external components to the nano expansion board must be switched around to different ports.
-- The ADS1115 board installed between the expansion board and the pressure sensor. 
-- New 5V relay in place of Optocoupler sensor (for GC) or goes between direct connection from MCU and brew button (for GCP). 
+**Upgrading from Nano Extended Functionality**
+- STM32 Blackpill and ST-Link
 - VSCode and PlatformIO instead of ArduinoIDE to upload to board.
+- The wires from the external components to the nano expansion board must be switched around to different ports.
+- Addition of snubber
+- 5V relay for valve control (GC optocoupler removed)
 
-### Components 
-Always refer to the official [Gaggiuino BOM](/?id=bill-of-materials) for the latest hardware:
+**Upgrading from Nano Base Functionality also includes**
+- ADS1115 board and pressure transducer for pressure sensing 
+- Dimmer module for pump control
 
-- **STM32F411CEU6**
-- **ADS1115**
-- **5v RELAY**
+> [!Note]
+> This will upgrade you to the STM32 independent relay and dimmer schematics. Depending on when you completed your nano install your exact setup may not be covered step-by-step. When in doubt trust the schematics. If you prefer, reverting to stock and doing a new install is an option.
 
-### Expansion Board Compatibility 
-Ensure your expansion board circuitry looks like the bottom left (green) and not the bottom right (blue). The bottom right (blue) will not work correctly with the standard pindefs (it will not trigger the relay to heat up the boiler - the two circled pins in yellow are marked `GND` on the reverse and are both connected to the ground plane and each other), so it is advised for most people to purchase the board from the BOM that looks like the green expansion board.  
+## Components 
+Refer to the [Gaggiuino BOM](/?id=bill-of-materials) for the latest hardware needed.
 
-![Expansion Boards](https://user-images.githubusercontent.com/2452284/204672901-ac1a89d9-cbf2-4367-9196-e1a74fbce7dd.png ':size=500')
+## Expansion Board Compatibility 
 
-If you do purchase a green expansion board but see on the reverse side this connection between two pins - it will have the same problem as the blue board (two sets of pins are connected to each other) this can be fixed by cutting this trace.
+Ensure your expansion board circuitry looks like the bottom left (green) and not the bottom right (blue). The bottom right (blue) will not work correctly with the standard pindefs (the two circled pins in yellow are marked `GND` on the reverse and are both connected to the ground plane and each other), so it is advised for most people to purchase the board from the BOM that looks like the green expansion board. 
 
-![Connected trace](https://user-images.githubusercontent.com/2452284/208331321-cef4d700-b961-4725-9cf1-f99202f1785a.jpg ':size=500')
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/2452284/204672901-ac1a89d9-cbf2-4367-9196-e1a74fbce7dd.png">
 
-### Important Considerations Before You Begin The Next Section
-!> Many that have performed the original nano installation have the dimmer in the same enclosure as the nano. Something to consider before starting the stm32 upgrade: when removing the wires out of the expansion/breakout board and re-twisting them to insert them into their new location, you are likely to have loose strands come off. If your dimmer is not wrapped in something (large heat shrink, silicone self-fuse electrical tape, 3d print) or isolated from other components, then one or a few of more strands may fall onto the dimmer at some point and ignite when brew is activated. 
+If you receive an expansion board with this connection between two pins it will have the same problem as the blue board (two sets of pins are connected to each other). This can be fixed by cutting the trace. 
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/2452284/208331321-cef4d700-b961-4725-9cf1-f99202f1785a.jpg">
+
+If you receive an expansion board with a linked ground plane then you'll need to cut the plane in two (likely on both sides of the board). It is recommended to not cut through the screw holes as that may allow a screw to reconnect the planes. 
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236353796-18f8c699-e251-4df1-bb13-56b204afd832.png">
+
+## Important Considerations Before You Begin The Next Section
+!> In most cases there will be high voltage components in the same enclosure as the nano. Something to consider before starting the stm32 upgrade: when removing the wires out of the expansion/breakout board and reinsert them into their new location you may have loose strands come off if you're not using ferrules. If those strands fall onto HV component traces they could cause significant issues. Please use caution and blow out or carefully clean the enclosure after wiring.  
+See [Screw Terminals and Crimping](guides-stm32/lego-component-build-guide.md) for more details about making secure connections.
 
 * Consider wrapping the dimmer with appropriate material before proceeding. 
 * Using crimped ferrules for all main board connections or fully isolating the dimmer in some way to prevent the aforementioned issue from happening. 
 * Take tape and go over the interior of your enclosures to pick up any loose strands from the installation.  
 
-## Software Installation
-?>Please refer to [Prerequisites](/prereq/prerequisites.md).
+## Component Schematic
 
-!>ArduinoIDE will no longer work for building and uploading the software to the board as it was done for the nano. You will need to download the official STM32 drivers or the STM32 cube programmer and use VSCode and the PlatformIO extension to upload to the STM32.
+Refer to this schematic when completing the changes described below
 
-<details>
-<summary>Setup project using PIO (Click to expand)</summary>
+<img width="500" alt="image" src="schematics/retrofit-indep-relay-dimmer/stm32-comp-build-ird.png">
 
-[Platform IO](https://user-images.githubusercontent.com/109426580/193900425-15c42d9c-adf4-4073-aa46-34874528bf43.mp4 ':include :type=video controls width=70%')
+## Low Voltage Wiring
 
-- Make sure you have git installed - https://www.git-scm.com/
-- Make sure to update your version of python to the latest - https://www.python.org/downloads/ 
-</details>
-
-After pulling the project, build and then flash from tasks (shown in the figure below) based on your hardware and flashing configuration. If you do not have an STLink, then choose the appropriate DFU task and enter DFU mode on the STM32 by plugging in the board, hold boot, and then press reset and let go of boot.
-
-![Platformio Project Tasks](https://user-images.githubusercontent.com/53577819/220899280-554ef293-225d-4610-9c1b-81974cbec191.png ':size=500')
-
-Consider buying an ST-Link v2 to more easily upgrade the firmware onto the Blackpill. They can be found on eBay, Amazon and Ali. You will need to solder the 4 angled pins to the board and connect the correct corresponding pins to the stm32 when updating with this tool.
-
-## Install the ADS1115 
-With the STM32 upgrade, the pressure transducer data line no longer directly connects to the expansion board. It will now connect to the A0 pin on the new ads1115 board (shown as TS DATA). The ads1115 SCA and SCL connections will go to the main board, and the rest should be self-explanatory per the diagram below. G and ADDR are connected together to GND (such as to your GND Wago). 
-
-![ADS1115](https://user-images.githubusercontent.com/80347096/191159989-bdb2a54b-e610-41a7-9a17-5c668ef136de.png ':size=500')
-
-## 5v RELAY INSTALLATION
-Installing the relay allows the Gaggiuino to perform advanced functions (in conjunction with other necessary hardware): 
-
-- Stop the pump during brew for stop-on-weight (currently requires scales) 
-- Pump assist during steaming to maintain extended steam pressure (requires pressure sensor) 
-- Pump assist during descale program. 
-
-Installing the relay is relatively simple as it is essentially a drop-in replacement for the optocoupler on GC and just an additional component for GCP. The below diagram demonstrates the install with the GC switch panel, relay and related pins, the installation is very similar for both GC and GCP, the goal is to move all brew switch HV wires to the relay HV ports, then on the GC/GCP brew switch only LV wires should be connected when the relay is fully wired.
-
-![Figure 6 - Relay diagram for the GC](https://user-images.githubusercontent.com/80347096/191401329-cdcc0a6a-b414-4c01-bbc8-07d16a5a4282.png ':size=500')
-
-For the GCP, the LV connection side to the relay and switch are the same as the diagram above. The HV wires on the brew switch are removed and connected to the COM and NO HV connectors on the relay - thus leaving no connections on the right side of the brew switch, plugged into it. See [Schematics](#schematics-and-diagrams).
-
-* BREW MIDDLE HV - Disconnect the middle HV cable from brew switch common pole 5, connect to relay COM.
-* BREW TOP HV - Disconnect the top HV cable from brew switch pole 4, connect to relay NO.  
-
-## Pin changes from Nano to STM32 
-The nano and blackpill/stm32 have different pin setups on their respective boards so the wires terminating on the nano expansion (which were defined in the nano instructions) will need to be moved to the newly defined pins (shown below) to work properly on stm32.
+### Pin changes from Nano to STM32 
+The nano and blackpill/stm32 have different pin setups on their respective boards so the wires terminating on the nano expansion (which were defined in the nano instructions) will need to be moved to the newly defined pins (shown below) to work properly on stm32. You can use this table or follow the schematic above.
 
 ?>Initially make sure you blackpill is correctly positioned in the expansion board. This will allow you to then just focus on the labels written on nano expansion board.
 
@@ -96,12 +74,39 @@ The nano and blackpill/stm32 have different pin setups on their respective board
 |   HX711_dout_2    |   5V                  |   PB9                     |   C15                 |   GND                     |   steamPin                    |
 |   5V              |   RST                 |   5V                      |   C14                 |   RST                     |   brewPin                     |
 |   GND             |   GND                 |   GND                     |   C13                 |   RXO                     |   valvePin                    |
-|                   |   VIN                 |   3V3                     |   VB                  |   TXT                     |                               |   
+|                   |   VIN                 |   3V3                     |   VB                  |   TXT                     |                               |
 
-## Schematics and Diagrams
+### ADS1115 and Pressure Transducer
+The pressure transducer data line (if already installed) no longer directly connects to the expansion board. It will now connect to the A0 pin on the new ADS1115 board (shown as TS DATA). The ADS1115 SCA and SCL connections will go to the main board, and the rest should be self-explanatory per the [schematic](#component-schematic). G and ADDR are connected together to GND (such as to your stripboard or GND Wago). 
+
+![ADS1115](https://user-images.githubusercontent.com/80347096/191159989-bdb2a54b-e610-41a7-9a17-5c668ef136de.png ':size=500')
+
+> [!Note]
+> If you haven't already installed the ADS board and pressure transducer then reference the installation instructions in the Component Build Guide's LV Wiring [ADS Board section](guides-stm32/lego-component-build-guide.md#ads-board) and the 3PLN Wiring Integration [Pressure Transducer section](guides-stm32/3pln-stock-wiring-integration.md#pressure-transducer).
+
+### Dimmer Module
+
+If the dimmer has not been installed, wire the low voltage DC connections per the [schematic](#component-schematic). 
+
+If you already have the dimmer module installed then move zcPin (Z/C) to D3 and dimmerPin (PSM) to D4. In this case the high voltage AC wiring will also need to be changed - we'll take care of that after installing the 5V relay. 
+
+### 5V RELAY INSTALLATION
+Installing the relay allows the Gaggiuino to perform advanced functions (in conjunction with other necessary hardware): 
+
+- Stop the pump during brew for stop-on-weight
+- Pump assist during steaming to maintain extended steam pressure (requires pressure sensor) 
+- Pump assist during descale program. 
+
+For GC, remove the optocoupler and its splitters. See the [schematic](#component-schematic) for how the low voltage relay-in and power are connected. 
+
+## High Voltage Wiring
+
+The addition of the snubber and HV connections are where many installs diverge. If you're coming from a new-ish nano install you should be able to add the snubber per the [component schematic](#component-schematic) and follow the instructions on the [Lego Independent Relay and Dimmer page](guides-upgrade/lego-independent-relay-dimmer.md).
+
+If your install wiring is not close to what you see on that page I would recommend wiring the HV near the components (Pump Out, L In, N In, 3WV Out, jumpers) as shown in the [component schematic](#component-schematic) and then checking connections vs the [machine-specific schematic](#machine-specific-schematics) that applies for you. If it's confusing you may even wish to go as far as returning your machine wiring harness to stock and starting fresh.
+
+## Machine-Specific Schematics
 ?>Readers must be aware that you must study both HV and LV diagrams for your specific machine.
-
-!>Updated with new independent relay and dimmer wiring
 
 Save the images or right-click and open in a new tab to view at full resolution.
 
@@ -129,9 +134,24 @@ Save the images or right-click and open in a new tab to view at full resolution.
 <img height="300" alt="image" src="schematics/retrofit-indep-relay-dimmer/gcp_eco-lv-ird.jpg">
 </details>
 
+## Software Installation
+
+!>ArduinoIDE will no longer work for building and uploading the software to the board as it was done for the nano. You will need to download the official STM32 drivers or the STM32 cube programmer and use VSCode and the PlatformIO extension to upload to the STM32.  
+Please refer to [Prerequisites](/prereq/prerequisites.md) for installation and setup instructions.
+
+Flash the Blackpill using the ST-Link (connect SWDIO, GND, SWCLK, and 3.3V*). To connect the ST-Link to the Blackpill (for flashing without opening the housing or machine) this is one of the few times in the project where DuPont connectors may be used. Another option is to solder the wires directly to the Blackpill. 
+
+?> * If you wish to power the system through the 120 VAC PSU (powering on the espresso machine) to flash the Blackpill then do **not** connect 3.3V to the ST-Link unless you're sure you do not have a knock-off/clone ST-Link.
+
 <details>
-<summary><b>STM32 Component Build</b> <i>(Click to expand)</i></summary>
+<summary>Setup project using PIO (Click to expand)</summary>
 
-<img height="300" alt="image" src="schematics/retrofit-indep-relay-dimmer/stm32-comp-build-ird.png">
+[Platform IO](https://user-images.githubusercontent.com/109426580/193900425-15c42d9c-adf4-4073-aa46-34874528bf43.mp4 ':include :type=video controls width=70%')
 
+- Make sure you have git installed - https://www.git-scm.com/
+- Make sure to update your version of python to the latest - https://www.python.org/downloads/ 
 </details>
+
+After pulling the project, build and then flash from tasks (shown in the figure below) based on your hardware and flashing configuration. An ST-Link is recommended for flashing. If you do not have an STLink, then choose the appropriate DFU task and enter DFU mode on the STM32 by plugging in the board, hold boot, and then press reset and let go of boot.
+
+![Platformio Project Tasks](https://user-images.githubusercontent.com/53577819/220899280-554ef293-225d-4610-9c1b-81974cbec191.png ':size=500')

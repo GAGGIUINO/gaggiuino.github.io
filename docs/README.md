@@ -205,11 +205,14 @@ _Will enable brew and steam temperature control as well as pump control based on
 > The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
 <!-- tabs:end -->
 <!-- tab:Nano to STM32 Upgrade -->
+### UPGRADING FROM EXTENDED FUNCTIONALITY
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
 * [5V RELAY](https://a.aliexpress.com/_vpUdrT) 
 * [Snubber](https://www.aliexpress.com/item/3256803573244277.html)
+
+### UPGRADING FROM BASE FUNCTIONALITY ADD:
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
 * [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html)
