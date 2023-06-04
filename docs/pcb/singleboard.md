@@ -9,7 +9,7 @@
 ## Bill of Materials
 
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
-* [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
+* [ST-Link V2](https://www.aliexpress.com/item/1005005303809188.html)
 * [2.4" Nextion LCD](https://bit.ly/3CAUzPj)
 * [C-M4 ungrounded screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
