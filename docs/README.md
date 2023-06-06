@@ -167,7 +167,7 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 _Will enable brew and steam temperature control as well as pump control based on active pressure feedback (this enables pressure and flow profiling as well as other functionality)._
 >
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
-* [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
+* [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
 * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html) **GET THE GREEN ONE**
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
 * [5V RELAY](https://a.aliexpress.com/_vpUdrT) 
@@ -207,7 +207,7 @@ _Will enable brew and steam temperature control as well as pump control based on
 <!-- tab:Nano to STM32 Upgrade -->
 ### UPGRADING FROM EXTENDED FUNCTIONALITY
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
-* [ST-Link V2](https://www.aliexpress.com/item/32860702733.html)
+* [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
 * [5V RELAY](https://a.aliexpress.com/_vpUdrT) 
 * [Snubber](https://www.aliexpress.com/item/3256803573244277.html)
@@ -238,7 +238,7 @@ _Will enable brew and steam temperature control as well as pump control based on
 <!-- div:panel-end -->
 > 
 
-## 3D Printed Parts
+# 3D Printed Parts
 _BOM and assembly instructions for the 3D printed parts are linked here.  
 Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](https://www.printables.com/social/340492-loogle/collections/265668) or on Discord in the **#mod-3d-design-ideas** channel._
 
