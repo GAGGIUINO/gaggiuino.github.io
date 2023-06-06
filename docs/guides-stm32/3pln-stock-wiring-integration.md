@@ -67,9 +67,14 @@ Take off the top cover by unscrewing the 2 top screws. You should be able to see
 > [!Note]
 > If you have a US Gaggia Classic check whether you have a ground connection on your power input. If it's a 2 pole plug as seen in the image adding a ground is recommended prior to starting the integration. BOM and instructions can be found at [Grounding a Gaggia Classic](guides/grounding-a-gaggia-classic.md)
 
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
 ![Opened Machine](https://user-images.githubusercontent.com/117388662/239368163-aa737736-51b5-43ed-86f9-cb834e031d2a.png ':size=500')
+<!-- tab:Gaggia Classic Pro -->
+![Opened Machine](https://user-images.githubusercontent.com/117388662/243791638-b16cac88-6802-49a7-b1d8-13c04be99b96.png ':size=500')
+<!-- tabs:end -->
 
-Optional, but I recommend labeling the stock connectors with a permanent marker for ease of troubleshooting and reversal. Here are the labels I used:
+I recommend labeling the stock connectors with a permanent marker for ease of troubleshooting and reversal. Here are the labels I used:
 
 Component         |Prefix |Labels <br />_see images and schematic for detail_
 ------------------|:-----:|:-------:
@@ -78,27 +83,43 @@ Switches (GCP/Eco)|P - Power <br />B - Brew/Coffee <br />S - Steam |1   �
 Heaters           |H      |3    4 <br />1    2
 Steam TS          |S      |a    b
 Brew TS           |B      |a    b
-Pump              |P      |a    b <br /> _a is from fuse, unlabeled_ <br />_b is a single red wire in most machines_
+Pump              |P      |a    b <br /> _a is from fuse, GC unlabeled_ <br />_b is the single 18 gauge wire in most machines_
 Fuse (GC)         |F      |_there should be 2 wires_ <br />_in the connector to the fuse_
 
-Here are the GC stock pump connections for clarity. Note that most connections are made at the pump, so make sure the pump wiring matches the stock [schematic](#schematics) for your machine before continuing.
+Here are the stock pump connections for clarity. Note that most integration connections are made at the pump, so make sure the pump wiring matches the stock [schematic](#schematics) for your machine before continuing.
 
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
 ![Stock pump connections](https://user-images.githubusercontent.com/117388662/239372268-1605be4b-5a0c-414d-bdc2-3524ef26b11e.png ':size=250')
+<!-- tab:Gaggia Classic Pro -->
+![Stock pump connections](https://user-images.githubusercontent.com/117388662/243792655-6a186fde-062c-4f2d-b3ed-cba5d3b0c6c8.png ':size=250')
+<!-- tabs:end -->
 
 ## Brew Thermostat Replacement
 Make a short jumper wire with male spades on both ends. Remove the wires attached to the brew thermostat (Ba and Bb) and jumper them together. Heat shrink the connections as required to prevent electrical faults. 
 
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
 ![Brew Thermostat Jumper Wire](https://user-images.githubusercontent.com/117388662/239383435-9a3407bc-7455-4a2d-86db-e12ea441fcfc.png ':size=500')
+<!-- tab:Gaggia Classic Pro -->
+![Brew Thermostat Jumper Wire](https://user-images.githubusercontent.com/117388662/243794746-39d788cb-2b08-45ae-a08e-f1bb0907129d.png ':size=500')
+<!-- tabs:end -->
 
-Unscrew the brew thermostat and replace it with the thermocouple. ***Gently** screw in the thermocouple barely finger-tight (**do not over-tighten**). This can be done in-place, but it's easier to remove the boiler (4 SHCS up from below the sheet metal), steam knob, and steam wand so that the boiler can be tipped up a bit for easier access. 
+Unscrew the brew thermostat, transfer or add thermal paste, then ***Gently** screw in the thermocouple barely finger-tight (**do not over-tighten**). This can be done in-place, but it's easier to remove the boiler (4 SHCS up from below the sheet metal), steam knob, and steam wand so that the boiler can be tipped up a bit for easier access. You'll want to have the thermocouple wire free to rotate during the install. 
 
+>[!Note]
+>There should already be high-temp thermal paste in place. If there is not, or if the paste is dried out, replace with a paste that has at least a 180°C working temperature. Here are some possible options:
+>* Thermal Grizzly Kryonaut (350°C max)
+>* Noctua NT-H2 (200°C max)
+>* SYY-157 (200°C max)
+>* GELID GC-Extreme (180°C max)
+
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
 ![Brew Thermostat Replaced with TC](https://user-images.githubusercontent.com/117388662/239386114-4c98cdc0-8ad6-459f-921d-61014fc1cf9c.png ':size=500')
-
-There should already be high-temp thermal paste in place. If there is not, or if the paste is dried out, replace with a paste that has at least a 180°C working temperature. Here are some possible options:
-* Thermal Grizzly Kryonaut (350°C max)
-* Noctua NT-H2 (200°C max)
-* SYY-157 (200°C max)
-* GELID GC-Extreme (180°C max)
+<!-- tab:Gaggia Classic Pro -->
+![Brew Thermostat Replaced with TC](https://user-images.githubusercontent.com/117388662/243795408-5d2a4d6e-a194-4edf-a98b-608d153504ed.png ':size=500')
+<!-- tabs:end -->
 
 ## Pump Area
 
@@ -108,13 +129,23 @@ The 3-way solenoid valve, Pump, and Neutral connections are all integrated into 
 * **Pump:** Female spade. Connect the pump control wire where the original pump wire was.  
 * **Neutral:** Piggyback spade. Piggyback the Neutral connection. 
 
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
 ![Pump Area Connections](https://user-images.githubusercontent.com/117388662/239402660-557bd63c-4aec-4503-8b24-29163e3ed695.png ':size=500')
+<!-- tab:Gaggia Classic Pro -->
+![Pump Area Connections](https://user-images.githubusercontent.com/117388662/243797948-933b4a3c-172c-4ef8-8f9d-a7572624f3a2.png ':size=500')
+<!-- tabs:end -->
 
 ## SSR
 
-Mount the SSR to the back wall of the machine using an M4 screw and nut (you will need to mount sideways in a GCP) Remove the wires from the steam thermostat (Sa, Sb) and connect to the AC ports on the SSR (order doesn't matter). Remove disconnected thermostat if desired.
+Mount the SSR to the back wall of the machine using an M4 screw, washer, and nut. Remove the wires from the steam thermostat (Sa, Sb) and connect to the AC ports on the SSR (order doesn't matter). Take care to ensure the wires connected to the SSR are partially looped around the clamping screws and secure. Remove disconnected thermostat if desired.
 
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
 ![SSR Thermostat Connections](https://user-images.githubusercontent.com/117388662/239403962-c0ef2429-ec12-4d81-b56b-02c91cd702d3.png ':size=500')
+<!-- tab:Gaggia Classic Pro -->
+![SSR Thermostat Connections](https://user-images.githubusercontent.com/117388662/243798513-cf829bef-b122-4603-84f6-124c809b2c53.png ':size=500')
+<!-- tabs:end -->
 
 ## Switch
 
