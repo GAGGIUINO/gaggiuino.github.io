@@ -27,33 +27,25 @@ These schematics show the connection points for integrating into the stock wirin
 > Only one version (120 V) of the Gaggia Classic and Classic Pro schematics are shown as the integration points are identical between 120/230 V. The wire colors may be different, but those differ between models of the same voltage type as well.  
 
 Save the images or right-click and open in a new tab to view at full resolution.
-
-<details>
-<summary><b>Gaggia Classic</b> <i>(Click to expand)</i></summary>
-
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
 <img height="300" alt="image" src="schematics/install-stock-3pln/gc-hv-3pln.jpg">
 
 <img height="300" alt="image" src="schematics/install-stock-3pln/gc-lv-3pln.jpg">
+<!-- tab:Gaggia Classic Pro -->
 
-</details>
-
-<details>
-<summary><b>Gaggia Classic Pro</b> <i>(Click to expand)</i></summary>
+**Gaggia Classic Pro**
 
 <img height="300" alt="image" src="schematics/install-stock-3pln/gcp-hv-3pln.jpg">
 
 <img height="300" alt="image" src="schematics/install-stock-3pln/gcp-lv-3pln.jpg">
-</details>
 
-<details>
-<summary><b>Gaggia Classic Pro Eco</b> <i>(Click to expand)</i></summary>
+**Gaggia Classic Pro Eco**
 
 <img height="300" alt="image" src="schematics/install-stock-3pln/gcp_eco-hv-3pln.jpg">
 
 <img height="300" alt="image" src="schematics/install-stock-3pln/gcp_eco-lv-3pln.jpg">
-</details>
-
->
+<!-- tabs:end -->
 
 # Integration
 
@@ -151,10 +143,16 @@ Mount the SSR to the back wall of the machine using an M4 screw, washer, and nut
 
 **High Voltage**
 
-Disconnect wires from the switch(es) and connect your last 3PLN connection (Line) with a male spade to the brew switch source wire. **Follow the [schematic](#schematics) for your machine**, a GC example is shown here:
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
+Disconnect wires from the switch and connect your last 3PLN connection (Line) with a male spade to the brew switch source wire. **Follow the [schematic](#schematics) for your machine**
 
 ![L Connection](https://user-images.githubusercontent.com/117388662/239404551-97d6f3e4-f62e-45c4-93d7-52d8ae373526.png ':size=500')
+<!-- tab:Gaggia Classic Pro -->
+Disconnect and move wires from the switches and connect your last 3PLN connection (Line) with a male spade to the brew switch source wire. **Follow the [schematic](#schematics) for your machine**. When you're done you should have one empty column of spades on both the brew and steam switches.
 
+![L Connection](https://user-images.githubusercontent.com/117388662/243890489-77c730e4-20e3-4e6f-9cb5-6295780194fc.png ':size=500')
+<!-- tabs:end -->
 **Low Voltage**
 
 > [!Tip]
