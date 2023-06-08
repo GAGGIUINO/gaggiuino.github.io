@@ -17,10 +17,12 @@ Independent control allows proper phase recognition, calibration, and tracking.
 # Guide
 1. Disconnect pump source Line that is going to Dimmer L-IN. Tuck away the stock female spade (do not reconnect to the pump) and completely remove the wire that connected it to the Dimmer L-IN in the component housing. 
 
-    <img width="800" alt="image" src="https://user-images.githubusercontent.com/117388662/235077019-95c1681c-e3e7-40f4-bfc9-07b60f433896.JPG">
+    <img width="800" alt="image" src="https://user-images.githubusercontent.com/117388662/244449680-801d09ee-2fb7-446c-b8cc-98f8a1f8ec05.JPG">
 
-!> If you followed the Nano build pictures instead of the STM32 build schematic your pump is likely wired backward. You will need to rewire it to match the corresponding schematic above. Here is an example of a correctly wired Gaggia Classic pump:  
+!> If you followed the Nano build pictures instead of the STM32 build schematic your pump is likely wired backward. You will need to rewire it to match the corresponding schematic above. Here are examples of a correctly wired Gaggia Classic (left) and Gaggia Classic Pro pump:  
 <img height="300" alt="image" src="https://github.com/Loogl3/gaggiuino.github.io/assets/117388662/55e88ca2-f640-4cb9-be90-0d9c46f77fb2">
+<img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/244460940-96e14cea-b4bb-4853-ae07-0179167c469b.png">
+
 
 2. Find the Line wire going from the coffee switch to the Relay and disconnect it (confirm, but if you followed the schematics exactly it should be connected to Relay COM). 
 
