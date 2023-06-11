@@ -30,7 +30,7 @@
 
 <!-- tab:Gaggia Classic Pro -->
 * Saeco - [Option 1](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) | [Option 2](https://www.ebay.co.uk/itm/114865529829)  **HIGHLY RECOMMENDED ORIGINAL PART - AVAILABLE LOCALLY**
-* **THIS ALTERNATE HOSE OPTION IS A LAST RESORT - READ BELOW WARNING** [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html)
+* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high qulity hose alternative if Saeco can't be bought locally**
 * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
