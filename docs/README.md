@@ -153,7 +153,7 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 
 <!-- tab:Gaggia Classic Pro -->
 * [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
-* [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html)**THIS ALTERNATE HOSE OPTION IS A LAST RESORT - READ BELOW WARNING** 
+* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high qulity hose alternative if Saeco can't be bought locally**
 * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
@@ -196,7 +196,7 @@ _Will enable brew and steam temperature control as well as pump control based on
 
 <!-- tab:Gaggia Classic Pro -->
 * [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
-* [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html)**THIS ALTERNATE HOSE OPTION IS A LAST RESORT - READ BELOW WARNING**
+* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high qulity hose alternative if Saeco can't be bought locally**
 * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
@@ -226,7 +226,7 @@ _Will enable brew and steam temperature control as well as pump control based on
 
 <!-- tab:Gaggia Classic Pro -->
 * [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
-* [ID4mm x OD9mm](https://www.aliexpress.com/item/1005001729453617.html)**THIS ALTERNATE HOSE OPTION IS A LAST RESORT - READ BELOW WARNING**
+* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high qulity hose alternative if Saeco can't be bought locally**
 * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
