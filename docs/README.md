@@ -245,8 +245,8 @@ _Parts used for the standard component install._
   * [Internal Component Housing](https://www.printables.com/model/269394)
 
 ### Hardware Scales Functionality
-_The STM32 build has software emulated **predictive scales** enabled that are sufficient for users with dialed in grind and settings after calibration has been performed.  
-Hardware scales offer accurate sensing of the first drops into the cup as well as realtime shot weight tracking and stop-on-weight across a variety of settings and less traditional shot profiles. 
+> [!Tip]
+> The STM32 build has software emulated **predictive scales** enabled that are sufficient for users with performed calibration. Same as hardware scales predictive ones try to offer accurate sensing of the first drops into the cup as well as realtime shot weight tracking and stop-on-weight across a variety of settings and less traditional shot profiles but it's not fool proof or able to cater for the more advanced minds out there, if extreme experimentation is your fetish it's advised to use hw scales instead.
 
 > [!WARNING]
 > This is an advanced installation step that requires accurate 3D-printed parts, good installation practices, and an in-depth understanding to achieve optimal results.
