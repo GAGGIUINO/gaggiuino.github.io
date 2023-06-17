@@ -99,6 +99,9 @@ Make a short jumper wire with male spades on both ends. Remove the wires attache
 
 Unscrew the brew thermostat, transfer or add thermal paste, then ***Gently** screw in the thermocouple barely finger-tight (**do not over-tighten**). This can be done in-place, but it's easier to remove the boiler (4 SHCS up from below the sheet metal), steam knob, and steam wand so that the boiler can be tipped up a bit for easier access. You'll want to have the thermocouple wire free to rotate during the install. 
 
+>[!Tip]
+>Depending on your machine type and location of your Gaggiuino control system it may be easier to run the thermocouple wire to the front of the machine and around the boiler to the back instead of going back behind the pump area. Pick the path with the fewest AC wires in the area.
+
 >[!Note]
 >There should already be high-temp thermal paste in place. If there is not, or if the paste is dried out, replace with a paste that has at least a 180°C working temperature. Here are some possible options:
 >* Thermal Grizzly Kryonaut (350°C max)
@@ -109,6 +112,8 @@ Unscrew the brew thermostat, transfer or add thermal paste, then ***Gently** scr
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
 ![Brew Thermostat Replaced with TC](https://user-images.githubusercontent.com/117388662/239386114-4c98cdc0-8ad6-459f-921d-61014fc1cf9c.png ':size=500')
+
+*Note: Old BOM thermocouple is pictured. Yours may appear different.*
 <!-- tab:Gaggia Classic Pro -->
 ![Brew Thermostat Replaced with TC](https://user-images.githubusercontent.com/117388662/243795408-5d2a4d6e-a194-4edf-a98b-608d153504ed.png ':size=500')
 <!-- tabs:end -->
@@ -130,13 +135,15 @@ The 3-way solenoid valve, Pump, and Neutral connections are all integrated into 
 
 ## SSR
 
-Mount the SSR to the back wall of the machine using an M4 screw, washer, and nut. Remove the wires from the steam thermostat (Sa, Sb) and connect to the AC ports on the SSR (order doesn't matter). Take care to ensure the wires connected to the SSR are partially looped around the clamping screws and secure. Remove disconnected thermostat if desired.
+Mount the SSR to the back wall of the machine using an M4 screw, washer, and nut. Remove the wires from the steam thermostat (Sa, Sb) and connect to the AC ports on the SSR (order doesn't matter). To ensure a good connection, loop the bare wire around the clamping screw under the clamping plate, or crimp wire to forked spade connectors and clamp those. Remove disconnected thermostat if desired.
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
 ![SSR Thermostat Connections](https://user-images.githubusercontent.com/117388662/239403962-c0ef2429-ec12-4d81-b56b-02c91cd702d3.png ':size=500')
 <!-- tab:Gaggia Classic Pro -->
-![SSR Thermostat Connections](https://user-images.githubusercontent.com/117388662/243798513-cf829bef-b122-4603-84f6-124c809b2c53.png ':size=500')
+Make sure the SSR has space above it for the funnel piece and its screw.
+
+![SSR Thermostat Connections](https://user-images.githubusercontent.com/117388662/246569790-dfc78317-caef-4bba-a528-466affb516b1.png ':size=500')
 <!-- tabs:end -->
 
 ## Switch
@@ -158,15 +165,19 @@ Disconnect and move wires from the switches and connect your last 3PLN connectio
 > [!Tip]
 > Keep LV (DC) and sensors separated from HV (AC) wires to reduce interference. I like to run AC wires near the top of the machine enclosure, mostly left of the boiler. DC wires are run near the bottom of the enclosure, mostly on the right side.
 
-Connect GND, brewPin, and steamPin wires to the switches, making use of some of the space you've freed up by removing the HV wires. **Follow the [schematic](#schematics) for your machine**, a GC example is shown here:
-
+Connect GND, brewPin, and steamPin wires to the switches, making use of some of the space you've freed up by removing the HV wires. **Follow the [schematic](#schematics) for your machine**.
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
 ![Switch LV Connections](https://user-images.githubusercontent.com/117388662/239406277-7bdd8852-5fcb-454e-9521-cd9537543144.png ':size=500')
-
+<!-- tab:Gaggia Classic Pro -->
+![Switch LV Connections](https://user-images.githubusercontent.com/117388662/246567190-77c4ca27-fb2d-4105-bb41-cc5875a4cc50.png ':size=500')
+<!-- tabs:end -->
 ## Pressure Transducer
 
 The pressure transducer comes with a base O-ring, however, the threaded length of the fittings vary and many aren't long enough to seal against the base. Insert the small O-ring into the fitting, adjust flush, then screw on the transducer until it seals on an O-ring.
 
-![Transducer and fittings](https://user-images.githubusercontent.com/117388662/239452187-429dafd7-6844-4256-ae76-b9982dcce86c.png ':size=500')
+![Transducer and fittings](https://user-images.githubusercontent.com/117388662/239452187-429dafd7-6844-4256-ae76-b9982dcce86c.png ':size=250')
+![Transducer and fittings](https://user-images.githubusercontent.com/117388662/246572048-75f314cb-6585-4351-8c5e-085362841301.png ':size=250')
 
 Cut the tubing in between the pump and boiler, nearer to the boiler but high enough the T is mostly vertical, not horizontal. Attach the appropriate T fitting for your machine. 
 
@@ -193,8 +204,12 @@ After the screen has been connected and the remainder of the install completed, 
 </details>
 
 Plug the filled tube into the T fitting and arrange the pressure transducer so that it is at the base of the machine, lower than the T fitting. 
-
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
 ![pressure transducer placement](https://user-images.githubusercontent.com/117388662/239457706-7ee5d101-d209-41b4-a3d3-ce159e98032f.png ':size=500')
+<!-- tab:Gaggia Classic Pro -->
+![pressure transducer placement](https://user-images.githubusercontent.com/117388662/246573952-ca092066-d107-46e6-85f1-e2a7b19865e0.png ':size=500')
+<!-- tabs:end -->
 
 > [!Tip]
 > While some sensors/setups seem to have no issues with the pump vibration, others are affected by vibration and even the sensor coming in contact with the housing. In those cases it can be beneficial to wrap the sensor in foam.  
@@ -206,9 +221,14 @@ Remove the pins from the screen connector, add a length of heat shrink tubing ar
 
 ![Wire pass-through](https://user-images.githubusercontent.com/117388662/239461641-e4f1d5f0-e83c-458c-94ca-61b25a6c7fa0.png ':size=250')
 
-Make sure HV AC wiring and LV DC wiring/sensors are separated. Zip-tie wire bundle, ensuring disconnected wires and connectors are constrained so they cannot make accidental contact. In a Gaggia Classic it looks like this:
+Make sure HV AC wiring and LV DC wiring/sensors are separated. Zip-tie wire bundle, ensuring disconnected wires and connectors are constrained so they cannot make accidental contact. Here are examples with a component build enclosure:
 
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
 ![Finished Internals](https://user-images.githubusercontent.com/117388662/239461982-54c2c808-9597-4fe2-8bee-3a759064d065.png ':size=500')
+<!-- tab:Gaggia Classic Pro -->
+![Finished Internals](https://user-images.githubusercontent.com/117388662/246574886-6a137c93-dc74-4d76-9eff-661204bd7571.png ':size=500')
+<!-- tabs:end -->
 
 When you're happy with everything, put the cover back on (don't forget to connect the ground wire).
 
