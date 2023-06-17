@@ -260,6 +260,7 @@ _Parts used for the standard component install._
 ### **Print services**
 _Places to get your 3D prints if you don't have a printer. Gaggiuino print service providers are reviewed by the Gaggiuino team for service, print quality, and cost before approval._
   * [Gaggiuino print service (US Based)](https://gaggiuino.hudsoncreativegroup.com/)
+  * [Gaggiuino print service (EU Based)](https://gaggiuino.espressio.nl/)
   * [CraftCloud (print shop aggregator)](https://craftcloud3d.com/)
 
 # Statistics
