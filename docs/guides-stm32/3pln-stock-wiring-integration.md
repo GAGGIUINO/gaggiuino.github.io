@@ -22,14 +22,23 @@ With this doc update the PCB and component installs have been synchronized to bo
 # Schematics
 These schematics show the connection points for integrating into the stock wiring harness with 3PLN + SSR. Study both HV and LV pages for your specific machine, as well as the notes on the schematic. In general, HV wiring changes must be made before LV.
 
-Gaggiuino STM32 schematics/diagrams for connection reference:  
-* [STM32 Component Build](schematics/stm32-comp-build.png)
-* [STM32 PCBv3](schematics/stm32-pcbv3-boardlabels.png)
+Save the images or right-click and open in a new tab to view at full resolution.
+
+<details>
+<summary><b>Gaggiuino STM32 schematics/diagrams for connection reference  </b> <i>(Click to expand)</i></summary>
+<!-- tabs:start -->
+<!-- tab:STM32 Comp -->
+<img height="400" alt="image" src="schematics/stm32-comp-build.png">
+<!-- tab:STM32 PCBv3 -->
+<img height="400" alt="image" src="schematics/stm32-pcbv3-boardlabels.png">
+<!-- tabs:end -->
+</details>
+
+>
 
 > [!Note]
 > Only one version (120 V) of the Gaggia Classic and Classic Pro schematics are shown as the integration points are identical between 120/230 V. The wire colors may be different, but those differ between models of the same voltage type as well.  
 
-Save the images or right-click and open in a new tab to view at full resolution.
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
 <img height="300" alt="image" src="schematics/install-stock-3pln/gc-hv-3pln.jpg">
