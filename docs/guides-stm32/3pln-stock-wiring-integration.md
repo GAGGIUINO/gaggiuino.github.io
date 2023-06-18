@@ -103,11 +103,16 @@ Unscrew the brew thermostat, transfer or add thermal paste, then ***Gently** scr
 >Depending on your machine type and location of your Gaggiuino control system it may be easier to run the thermocouple wire to the front of the machine and around the boiler to the back instead of going back behind the pump area. Pick the path with the fewest AC wires in the area.
 
 >[!Note]
->There should already be high-temp thermal paste in place. If there is not, or if the paste is dried out, replace with a paste that has at least a 180°C working temperature. Here are some possible options:
->* Thermal Grizzly Kryonaut (350°C max)
->* Noctua NT-H2 (200°C max)
->* SYY-157 (200°C max)
+>There should already be high-temp thermal paste in place. If there is not, or if the paste is dried out, replace with a paste that has at least a 180°C working temperature. 
+><details>
+><summary><b>Thermal Paste Options</b> <i>(Click to expand)</i></summary>
+>
+>* Thermal Grizzly Kryonaut (350°C max)  
+>* Noctua NT-H2 (200°C max)  
+>* SYY-157 (200°C max)  
 >* GELID GC-Extreme (180°C max)
+></details>
+
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
@@ -240,4 +245,9 @@ There's extra wire length so the screen can remain connected while the cover is 
 
 Put the screen housing together, push the spare screen wire (and heat shrink tubing) back through the vent hole and you're ready for espresso! 
 
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
 ![Finished!](https://user-images.githubusercontent.com/117388662/239463949-0e90b52f-a5fa-4aed-8ea7-9047154cc213.png ':size=500')
+<!-- tab:Gaggia Classic Pro -->
+![Finished!](https://user-images.githubusercontent.com/117388662/246686394-b0ab3256-57cb-4869-b2dd-51c7778dfa68.png ':size=500')
+<!-- tabs:end -->
