@@ -156,8 +156,6 @@ _Will enable brew and steam temperature control as well as pump control based on
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
-> [!WARNING]
-> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
 <!-- tabs:end -->
 <!-- tab:STM32 PCBv3 -->
 ### BASE FUNCTIONALITY
@@ -197,8 +195,6 @@ _Will enable brew and steam temperature control as well as pump control based on
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
-> [!WARNING]
-> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
 <!-- tabs:end -->
 
 <!-- tab:Nano to STM32 Upgrade -->
@@ -228,8 +224,6 @@ _Will enable brew and steam temperature control as well as pump control based on
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
-> [!WARNING]
-> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
 <!-- tabs:end -->
 <!-- tab:Arduino Nano -->
 ### BASE FUNCTIONALITY
@@ -272,8 +266,6 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
-> [!WARNING]
-> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
 <!-- tabs:end -->
 <!-- tabs:end -->
 <!-- div:panel-end -->
