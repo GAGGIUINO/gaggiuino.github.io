@@ -7,8 +7,8 @@
 # Considerations
 !> It is expected that when going through PCB install you will follow the [3PLN Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md) guide or figure out the custom wiring by yourself. Please note, these are only suggestions/food for thought/rough guidance. 
 
-* If you do a custom harness you can use the **Rancilio Silvia Boiler Thermostat 165º** for a resettable thermal fuse and boiler terminals are **160783-7 TE**.
-* Get covers for spades, possibly hard covers. Stock boiler terminal covers for round connectors cannot be purchased, a printable option is linked below.
+* If you do a custom harness you can use the **Rancilio Silvia Boiler Thermostat 165º** (max steam temp of ~145) or [10 A Resettable Thermal Fuse 185 C](https://www.aliexpress.com/item/3256805232358051.html) for a resettable thermal fuse and boiler terminals are **160783-7 TE**.
+* Get covers for spades, possibly hard covers. Stock boiler terminal covers for round connectors cannot be purchased, a printable option is linked on the [Home page](readme.md#3d-printed-parts).
 * Consider buying a XH and PH JST kit to make up your own.
 * Know and study difference between HV and LV lines.
 * Gaggia Classic New 2018/19 - ECO board must be bypassed. Highly recommend getting PCB v3 as you can slot it into the pump tower where the eco board would be.
