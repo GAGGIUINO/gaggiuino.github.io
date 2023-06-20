@@ -7,11 +7,13 @@
 # Considerations
 !> It is expected that when going through PCB install you will follow the [3PLN Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md) guide or figure out the custom wiring by yourself. Please note, these are only suggestions/food for thought/rough guidance. 
 
-* If you do a custom harness you can use the **Rancilio Silvia Boiler Thermostat 165º** (max steam temp of ~145) or [10 A Resettable Thermal Fuse 185 C](https://www.aliexpress.com/item/3256805232358051.html) for a resettable thermal fuse and boiler terminals are **160783-7 TE**.
-* Get covers for spades, possibly hard covers. Stock boiler terminal covers for round connectors cannot be purchased, a printable option is linked on the [Home page](readme.md#3d-printed-parts).
+* If you want to do a custom harness:
+  * The [10 A Resettable Thermal Fuse 185 C](https://www.aliexpress.com/item/3256805232358051.html) or **Rancilio Silvia Boiler Thermostat 165º** (max steam temp of ~145) can be used for the thermal fuse. 
+  * Get covers for spades, possibly hard covers. Stock boiler terminal covers for round boiler terminal connectors (**160783-7 TE**) cannot be purchased, a printable option is linked on the [Home page](readme.md#3d-printed-parts).
 * Consider buying a XH and PH JST kit to make up your own.
 * Know and study difference between HV and LV lines.
-* Gaggia Classic New 2018/19 - ECO board must be bypassed. Highly recommend getting PCB v3 as you can slot it into the pump tower where the eco board would be.
+* Gaggia Classic New 2018/19 - ECO board must be bypassed or custom wiring used. PCB v3 can slot it into the pump tower where the eco board would be.
+* PCB v3 is suitable for most single-boiler espresso machines. PCB v2 supports more connection points for wiring and and/or multiple boiler control. 
 * PCB v2 housing links *(Pick one)*
   * [Rigid Housing](https://www.printables.com/model/260901)
   * [Easy Access Housing)](https://www.printables.com/model/261267)
