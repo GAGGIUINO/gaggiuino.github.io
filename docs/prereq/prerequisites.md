@@ -2,10 +2,9 @@
 1. Install/Update [VSCode](https://code.visualstudio.com/)
 2. Install/Update [Platform IO](https://platformio.org/) 
 3. Install [Git](https://www.git-scm.com/)
-4. [CH340 USB Driver](http://www.wch-ic.com/downloads/CH341SER_ZIP.html) 
-    * _Arduino Nano USB driver_
-5. [Cube Programmer](https://www.st.com/en/development-tools/stm32cubeprog.html)
-    * _STM32 USB/ST-Link drivers_
+4. Drivers (select per your build type)
+    * STM32 USB/ST-Link [Cube Programmer](https://www.st.com/en/development-tools/stm32cubeprog.html)
+    * Arduino Nano [CH340 USB Driver](http://www.wch-ic.com/downloads/CH341SER_ZIP.html)
 
 Then pull the code as shown in the below video:
 <details>
