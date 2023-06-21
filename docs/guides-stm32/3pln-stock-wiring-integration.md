@@ -17,7 +17,7 @@ L     | Line              | AC Line voltage
 N     | Neutral           | AC Neutral voltage
 SSR   | Solid-State Relay | Relay placed in-line with the boiler heaters for control
 
-With this doc update the PCB and component installs have been synchronized to both utilize 3PLN, harmonizing the install process. Although the images shown in this guide may use the component build the install principles and machine connection points are the same for the PCB when using the stock wire harness.
+The PCB and component installs have been synchronized to both utilize 3PLN, harmonizing the install process. Although the images shown in this guide may use the component build the install principles and machine connection points are the same for the PCB when using the stock wire harness.
 
 # Schematics
 These schematics show the connection points for integrating into the stock wiring harness with 3PLN + SSR. Study both HV and LV pages for your specific machine, as well as the notes on the schematic. In general, HV wiring changes must be made before LV.
