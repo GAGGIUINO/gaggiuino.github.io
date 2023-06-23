@@ -286,7 +286,8 @@ _Parts used for the standard install._
 * [Internal Component Housing](https://www.printables.com/model/269394)
 <!-- tab:STM32 PCBv3 -->
 * [Screen Enclosure](https://www.printables.com/model/280617)
-* [Protective Housing *(for Gaggia Classic or if you don't want to put the PCB into the Pro's pump housing)*](https://www.printables.com/model/370513)
+* [Protective Housing *(for Gaggia Classic or if you don't want to put the PCB into the Gaggia Classic Pro pump tower)*](https://www.printables.com/model/370513)
+* [Pump Tower Clip *(holds the PCB in non-Eco Gaggia Classic Pro pump towers)*](https://www.printables.com/model/511272)
 * [Boiler Terminal Shrouds *(for custom wire harness or to replace broken ones)*](https://www.printables.com/model/380256-gaggia-boiler-terminal-shroud)
 <!-- tab:Arduino Nano -->
 * [Screen Enclosure](https://www.printables.com/model/280617)  
