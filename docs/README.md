@@ -117,52 +117,7 @@ _*3_ __Predictive scales__ - software driven predicted weight output, doesn't ne
 # Bill of Materials
 
 <!-- tabs:start -->
-<!-- tab:Arduino Nano -->
-### BASE FUNCTIONALITY
-_Will enable only brew and steam temperature control_
->
-* [Arduino Nano AT328](https://bit.ly/3eXSfXZ) 
-* [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html) **GET GREEN - BLUE IS NOT COMPATIBLE FOR STM32 - SEE STM GUIDE FOR MORE INFO**
-* [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
-* [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
-* [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
-* [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
-* [Heat-resistant Silicone Wire](https://bit.ly/3tjSQbI)
-  * **18AWG - 1m:** Black, Red, White
-  * **22AWG - 5m:** Black, Red, Blue, White
-  * **26AWG - 5m:** Black, Red, Blue, Yellow
-* [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
-* [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
-* [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
-* [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
-
-**Gaggia Classic Specific**
-* [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html)  
-
-### EXTENDED FUNCTIONALITY
-_Will enable pump control based on active pressure feedback, this enables pressure and flow profiling as well as other functionality._
-* [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
-* [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-* [O Ring - OD 11mm](https://www.aliexpress.com/item/1005003662931218.html) 
-
-<!-- tabs:start -->
-<!-- tab:Gaggia Classic -->
-* [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
-* [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
-* [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
-
-<!-- tab:Gaggia Classic Pro -->
-* [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
-* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high qulity hose alternative if Saeco can't be bought locally**
-* [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
-* [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
-* [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
-
-> [!WARNING]
-> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
-<!-- tabs:end -->
-
-<!-- tab:STM32 Blackpill -->
+<!-- tab:STM32 Comp -->
 ### BASE FUNCTIONALITY
 _Will enable brew and steam temperature control as well as pump control based on active pressure feedback (this enables pressure and flow profiling as well as other functionality)._
 >
@@ -201,15 +156,56 @@ _Will enable brew and steam temperature control as well as pump control based on
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
-> [!WARNING]
-> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
 <!-- tabs:end -->
+<!-- tab:STM32 PCBv3 -->
+### BASE FUNCTIONALITY
+_Will enable brew and steam temperature control as well as pump control based on active pressure feedback (this enables pressure and flow profiling as well as other functionality)._
+>
+
+> [!Note] 
+> If you're not exerienced with ordering PCBs it can be group ordered through Discord where the ordering process can be monitored and possible frauds averted.
+>
+> **Make sure to read the info in the *#pcb-interest-registration* discord channel as well for more info on the ordering process as well as searching discord for any PCB related questions as many have been answered multiple times already.**
+
+* [PCBv3 *(Group buy or custom order)*](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V3)
+* [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
+* [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
+* [2.4" Nextion LCD](https://bit.ly/3CAUzPj)
+* [C-M4 ungrounded screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
+* [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
+* [Heat-resistant silicone wires](https://bit.ly/3tjSQbI)
+  * **18AWG - 1m:** Black, Red, Brown, White, Green, Blue & Yellow
+  * **26AWG - 5m:** Black, Red, White, Orange & Yellow
+* [JST XH 4P](https://www.aliexpress.us/item/2251832768103991.html)
+* [JST PH 3P, 4P & 5P](https://www.aliexpress.com/item/4000091077742.html)
+* [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
+* [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
+* [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html) 
+
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
+* [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
+* [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
+* [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
+
+<!-- tab:Gaggia Classic Pro -->
+* [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
+* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high qulity hose alternative if Saeco can't be bought locally**
+* [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
+* [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
+* [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
+
+<!-- tabs:end -->
+
 <!-- tab:Nano to STM32 Upgrade -->
+### UPGRADING FROM EXTENDED FUNCTIONALITY
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
 * [5V RELAY](https://a.aliexpress.com/_vpUdrT) 
 * [Snubber](https://www.aliexpress.com/item/3256803573244277.html)
+
+### UPGRADING FROM BASE FUNCTIONALITY ADD:
 * [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
 * [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html)
@@ -228,21 +224,76 @@ _Will enable brew and steam temperature control as well as pump control based on
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
-> [!WARNING]
-> The Aliexpress hose IS NOT rated as high as the original SAECO hose, please use common sense when operating the machine if you can't buy the recommended original SAECO hose use the exact size recommended here as pressure resistance is determined by the hose diameter as well.
+<!-- tabs:end -->
+<!-- tab:Arduino Nano -->
+### BASE FUNCTIONALITY
+_Will enable only brew and steam temperature control_
+>
+* [Arduino Nano AT328](https://bit.ly/3eXSfXZ) 
+* [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html) **GET GREEN - BLUE IS NOT COMPATIBLE FOR STM32 - SEE STM GUIDE FOR MORE INFO**
+* [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
+* [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
+* [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
+* [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
+* [Heat-resistant Silicone Wire](https://bit.ly/3tjSQbI)
+  * **18AWG - 1m:** Black, Red, White
+  * **22AWG - 5m:** Black, Red, Blue, White
+  * **26AWG - 5m:** Black, Red, Blue, Yellow
+* [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
+* [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
+* [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
+* [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
+
+**Gaggia Classic Specific**
+* [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html)  
+
+### EXTENDED FUNCTIONALITY
+_Will enable pump control based on active pressure feedback, this enables pressure and flow profiling as well as other functionality._
+* [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
+* [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
+* [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html) 
+
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
+* [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
+* [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
+* [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
+
+<!-- tab:Gaggia Classic Pro -->
+* [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
+* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high qulity hose alternative if Saeco can't be bought locally**
+* [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
+* [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
+* [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
+
 <!-- tabs:end -->
 <!-- tabs:end -->
 <!-- div:panel-end -->
 > 
 
 # 3D Printed Parts
-_BOM and assembly instructions for the 3D printed parts are linked here.  
-Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](https://www.printables.com/social/340492-loogle/collections/265668) or on Discord in the **#mod-3d-design-ideas** channel._
+_BOM and assembly instructions for the 3D printed parts are linked here._  
+If you'd like to print yourself, order from CraftCloud, or use a local print shop please carefully review the recommended print parameters on the design pages.  
+If you'd prefer to purchase printed parts the following providers use recommended materials and print settings: 
+  * [gaggiuino.hudsoncreativegroup.com (US Based)](https://gaggiuino.hudsoncreativegroup.com/)
+  * [gaggiuino.espressio.nl (EU Based)](https://gaggiuino.espressio.nl/)
 
 ### Base Functionality
-_Parts used for the standard component install._
-  * [Screen Enclosure](https://www.printables.com/model/280617)
-  * [Internal Component Housing](https://www.printables.com/model/269394)
+_Parts used for the standard install._
+<!-- tabs:start -->
+<!-- tab:STM32 Comp -->
+* [Screen Enclosure](https://www.printables.com/model/280617)  
+* [Internal Component Housing](https://www.printables.com/model/269394)
+<!-- tab:STM32 PCBv3 -->
+* [Screen Enclosure](https://www.printables.com/model/280617)
+* [Protective Housing *(for Gaggia Classic or if you don't want to put the PCB into the Gaggia Classic Pro pump tower)*](https://www.printables.com/model/370513)
+* [Pump Tower Clip *(holds the PCB in non-Eco Gaggia Classic Pro pump towers)*](https://www.printables.com/model/511272)
+* [Boiler Terminal Shrouds *(for custom wire harness or to replace broken ones)*](https://www.printables.com/model/380256-gaggia-boiler-terminal-shroud)
+<!-- tab:Arduino Nano -->
+* [Screen Enclosure](https://www.printables.com/model/280617)  
+* [Internal Component Housing](https://www.printables.com/model/269394)
+* [Optocoupler Case *(for Gaggia Classic)*](https://www.printables.com/model/339542)
+<!-- tabs:end -->
 
 ### Hardware Scales Functionality
 > [!Tip]
@@ -252,12 +303,9 @@ _Parts used for the standard component install._
 > This is an advanced installation step that requires accurate 3D-printed parts, good installation practices, and an in-depth understanding to achieve optimal results.
 
 * [Gaggia Classic & Classic Pro scales housing](https://www.printables.com/model/285370-gaggia-classic-pro-scales) *(BOM and models)*
->
 
-### **Print services**
-_Places to get your 3D prints if you don't have a printer. Gaggiuino print service providers are reviewed by the Gaggiuino team for service, print quality, and cost before approval._
-  * [Gaggiuino print service (US Based)](https://gaggiuino.hudsoncreativegroup.com/)
-  * [CraftCloud (print shop aggregator)](https://craftcloud3d.com/)
+Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](https://www.printables.com/social/340492-loogle/collections/265668) or on Discord in the **#mod-3d-design-ideas** channel.
+>
 
 # Statistics
 

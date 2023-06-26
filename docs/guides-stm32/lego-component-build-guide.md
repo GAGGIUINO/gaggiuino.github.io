@@ -162,6 +162,9 @@ Measure distance to components in the housing, cut wires to length plus ~1 cm, t
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/53577819/211653005-8bffe9c8-1967-461d-a163-9a130534e0d0.png">
 
+>[!Note]
+>Once power wiring is complete I recommend using a multimeter to check resistance between 5V and 5V GND (0 VDC) It should be extremely high or not readable. If you are getting a resistance reading under 100 kOhm it's likely you have a short (solder flux, solder pad, solder ball, wire whisker, etc.) that needs to be fixed.
+
 Now that power wires have been added we’ll begin adding signal wires per the schematic. Just like with the power wires, measure length in the housing, then remove from housing to solder. A few notes:
 1. Make sure to route the wires before measuring. There is not enough clearance for wires to go over the Blackpill, they must go around. 
 2. Up to you whether you cut the pressure transducer cable shorter. Option to cut it down to about 12 in / 30 cm for my GC, but you may want it longer depending on your specific machine. 
@@ -171,8 +174,12 @@ Here’s a pic partway through the wiring process:
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/53577819/211653439-4aa95ae9-e234-406e-a38d-0b3cdf2a377a.png">
 
 ## ADS Board
-Here are a few details on wiring the ADS:
-Connect G to ADDR like this (there’s clearance in the housing for this):
+Here are a few details on wiring the ADS
+
+>[!Note]
+> I wired power/ground first and ensured the ADDR wire was bent enough to have clearance to solder SCL and SDA connections later. You may want to solder SCL and SDA first.
+
+Connect G to ADDR like this: 
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/53577819/211653056-184db336-120e-49d9-95d9-84c5103c3227.png">
 
@@ -278,4 +285,4 @@ Optional wiring that is not pictured:
 - HW Scales
 - ToFnLED
 
-**Continue the install by referencing the 3PLN machine-specific schematics and/or install instructions on the [3PLN Stock Wiring Integration](/guides/3pln-stock-wiring-integration.md) page.**
+**Continue the install by referencing the 3PLN machine-specific schematics and/or install instructions on the [3PLN Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md) page.**

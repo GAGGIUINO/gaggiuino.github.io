@@ -336,8 +336,6 @@ Any components sitting next to each other can have their equivalent pins linked 
 
 You will be expected to solder similar pins i.e. all GND and all 5v together in order to fit into and screw down on the expansion board terminals. You can use either WAGOS for this or using some strip-board. 
 
-?>Please refer to [Lego Component Housing Guide](guides/lego-component-build-guide.md) on how to setup and house your components for best fit into the machine.
-
 On first start up record and send to **#first-start** channel of discord. This helps with diagnosing issues.
 
 Remember to change and save your correct region settings.
@@ -352,8 +350,6 @@ All going well, feel like an absolute coffee titan each and every time you pull 
 ## Schematics and Diagrams
 > [!NOTE]
 >**THE SCHEMATIC DRAWINGS HAVE BEEN DRAWN FLIPPED AND UPSIDE DOWN. BLAME GAGGIA.**
-
-?> STM32 schematics are on the [STM32 UPGRADE](stm32-upgrade-pack/blackpill.md) page
 
 **Schematics:**
 * [GAGGIA New Classic 2018/19](https://user-images.githubusercontent.com/53577819/214380779-ec53b99b-2b7c-4781-acdc-90c3879353c0.png)
