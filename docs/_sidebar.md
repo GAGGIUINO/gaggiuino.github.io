@@ -1,7 +1,7 @@
 * [Home](/)
 * Approved Official Suppliers
-* - [3D Printed Parts __North America__](https://gaggiuino.hudsoncreativegroup.com/)
 * - [3D Printed Parts __Europe__](https://gaggiuino.espressio.nl/)
+* - [3D Printed Parts __North America__](https://gaggiuino.hudsoncreativegroup.com/)
 * Useful
 * - [Announcements](announcements/)
 * - [Community media](community/community-media.md)
