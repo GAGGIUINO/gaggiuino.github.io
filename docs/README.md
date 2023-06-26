@@ -272,11 +272,11 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 > 
 
 # 3D Printed Parts
+> [!Tip]
+> If you prefer to purchase printed parts the oficially approved providers in the __Approved Official Suppliers__ sidebar section use recommended materials and print settings.
+
 _BOM and assembly instructions for the 3D printed parts are linked here._  
-If you'd like to print yourself, order from CraftCloud, or use a local print shop please carefully review the recommended print parameters on the design pages.  
-If you'd prefer to purchase printed parts the following providers use recommended materials and print settings: 
-  * [gaggiuino.hudsoncreativegroup.com (US Based)](https://gaggiuino.hudsoncreativegroup.com/)
-  * [gaggiuino.espressio.nl (EU Based)](https://gaggiuino.espressio.nl/)
+If you'd like to print yourself, order from CraftCloud, or use a local print shop please carefully review the recommended print parameters on the design pages. 
 
 ### Base Functionality
 _Parts used for the standard install._
