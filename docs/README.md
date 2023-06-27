@@ -1,5 +1,5 @@
-> [!NOTE]
->This site is a general guide and not a exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the [Recommendations](learning/learning-sources.md) page. For anyone attempting the install it's strongly recommended to read the planned install route in it's entirety.
+> [!NOTE|style:flat|label:Considerations before committing|iconVisibility:visible]
+> This site is a general guide and not a exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the [Recommendations](learning/learning-sources.md) page. For anyone attempting the install it's strongly recommended to read the planned install route in it's entirety.
 
 **Contribute to better docs written by a professional technical writer.**
 <!-- ko-fi :id=zer0bit :color=<color> -->
@@ -304,7 +304,7 @@ _Parts used for the standard install._
 
 * [Gaggia Classic & Classic Pro scales housing](https://www.printables.com/model/285370-gaggia-classic-pro-scales) *(BOM and models)*
 
-Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](https://www.printables.com/social/340492-loogle/collections/265668) or on Discord in the **#mod-3d-design-ideas** channel.
+Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](https://www.printables.com/social/340492-loogle/collections/265668) or on [Discord](community/community-media.md#community-discord) in the **#mod-3d-design-ideas** channel.
 >
 
 # Statistics
