@@ -3,8 +3,8 @@ Independent control allows proper phase recognition, calibration, and tracking.
 
 !> This is required for installs that followed schematics released before 5-May-2023 wanting to use software releases past **e8933a6** (8-Apr-2023) 
 
-> [!Warning]
-> Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. **Always work with the Gaggia unplugged.** You are performing this project under your own risk and the author of this guide and anyone associated with this project are NOT liable for your actions. 
+> [!Warning|style:callout]
+> Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
 
 
 ## Notes
