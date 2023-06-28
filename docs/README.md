@@ -1,5 +1,5 @@
 > [!NOTE|style:flat|label:Considerations before committing|iconVisibility:visible]
-> This site is a general guide and not a exhaustive, step-by-step tutorial. It is expected that anyone attempting has proficiency with the skills listed in the [Recommendations](learning/learning-sources.md) page. For anyone attempting the install it's strongly recommended to read the planned install route in it's entirety.
+> This site is a general guide and not a exhaustive, step-by-step tutorial, it is expected that anyone attempting the project has basic proficiency with the skills listed in the [Recommendations](learning/learning-sources.md) page. For anyone attempting the install it's strongly recommended to read the install route in it's entirety and plan accordingly.
 
 **Contribute to better docs written by a professional technical writer.**
 <!-- ko-fi :id=zer0bit :color=<color> -->
@@ -10,34 +10,37 @@
 
   Feature                |  Arduino Nano    |  STM32 Blackpill
 -----------------------  |------------------|-----------------
-  Integrated Housing     |:heavy_check_mark:|:heavy_check_mark:       
+  Neat integration       |:heavy_check_mark:|:heavy_check_mark:       
   Embedded UI            |:heavy_check_mark:|:heavy_check_mark:       
-  Brew/Steam control     |:heavy_check_mark:|:heavy_check_mark:       
+  Full temp control      |:heavy_check_mark:|:heavy_check_mark:       
   Auto Shot Timer        |:heavy_check_mark:|:heavy_check_mark:       
-  Graphing               |:heavy_check_mark:|:heavy_check_mark:             
-  Pre-infusion           |:heavy_check_mark:|:heavy_check_mark:       
+  Graphing               |:heavy_check_mark:|:heavy_check_mark:                
   Pressure profiling     |:heavy_check_mark:|:heavy_check_mark:   
   Manual flow control    |:heavy_check_mark:|:heavy_check_mark:       
   Settings persistence   |:heavy_check_mark:|:heavy_check_mark: 
   Descale program        |:heavy_check_mark:|:heavy_check_mark:       
   Integrated scales      |:heavy_check_mark:|:heavy_check_mark:      
-  Flow profiling         |       :x:        |:heavy_check_mark:       
-  Stop on Weight/Dose*   |       :x:        |:heavy_check_mark:       
-  Steam Boost*           |       :x:        |:heavy_check_mark:  
-  Predictive scales*     |       :x:        |:heavy_check_mark:  
-  Saving/Loading profiles|       :x:        |:heavy_check_mark: 
+  Flow profiling         |       :x:        |:heavy_check_mark:  
+  Advanced profiling     |       :x:        |:heavy_check_mark:      
+  __Stop on Weight/Dose__*|      :x:        |:heavy_check_mark:       
+  __DreamSteam__*        |       :x:        |:heavy_check_mark:  
+  __Predictive scales__* |       :x:        |:heavy_check_mark:  
+  Profiles Management    |       :x:        |:heavy_check_mark: 
   Web interface          |       :x:        |:heavy_plus_sign: 
   OTA updates            |       :x:        |:heavy_plus_sign: 
+  OTA updates            |       :x:        |:heavy_plus_sign: 
 
-:heavy_check_mark:  Available
-:x:  Not available
-:heavy_plus_sign: Planned
-
-_*1_ __Stop on Weight/Dose__ - requires the relay that's part of the STM32 UPGRADE.
+<!-- panels:start -->
+<!-- div:left-panel -->
+__Explanation__  
+:heavy_check_mark:  Available      
+:x:  Not available       
+:heavy_plus_sign: Planned   
 >
-_*2_ __Steam Boost__ - software driven steam boosting, requires the relay that's part of the STM32 UPGRADE.
->
-_*3_ __Predictive scales__ - software driven predicted weight output, doesn't need any scales hardware.
+_*1_ __Stop on Weight/Dose__ - stops at a desired yield.  
+_*2_ __DreamSteam__ - software driven steam boosting.  
+_*3_ __Predictive scales__ - software driven predicted weight output.
+<!-- panels:end -->
 
 # Releases
 
@@ -46,13 +49,10 @@ _*3_ __Predictive scales__ - software driven predicted weight output, doesn't ne
   Arduino Nano    |[release-nano-final](https://github.com/Zer0-bit/gaggiuino/tree/release-nano-final)
   STM32 Blackpill |[release/stm32-blackpill](https://github.com/Zer0-bit/gaggiuino/tree/release/stm32-blackpill)
 
-
-> 1. Failing to run the right code branch on the chosen set of hardware will yield unexpected results.
->
-> 2. Make sure you **ALWAYS** flash both the microcontroller as well as the LCD unit.
-
-> [!TIP]
-> Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.
+> [!TIP|style:callout|label:ADVICE|iconVisibility:visible]
+> __1. Failing to run the right code branch on the chosen set of hardware will yield unexpected results.__   
+> __2. Make sure you _ALWAYS_ flash both the microcontroller as well as the LCD unit.__   
+> __3. Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.__
 
 # Timeline
 
@@ -117,7 +117,7 @@ _*3_ __Predictive scales__ - software driven predicted weight output, doesn't ne
 # Bill of Materials
 
 <!-- tabs:start -->
-<!-- tab:STM32 Comp -->
+<!-- tab:STM32 LEGO -->
 ### BASE FUNCTIONALITY
 _Will enable brew and steam temperature control as well as pump control based on active pressure feedback (this enables pressure and flow profiling as well as other functionality)._
 >
@@ -157,7 +157,7 @@ _Will enable brew and steam temperature control as well as pump control based on
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
 <!-- tabs:end -->
-<!-- tab:STM32 PCBv3 -->
+<!-- tab:STM32 PCB -->
 ### BASE FUNCTIONALITY
 _Will enable brew and steam temperature control as well as pump control based on active pressure feedback (this enables pressure and flow profiling as well as other functionality)._
 >
@@ -281,10 +281,10 @@ If you'd like to print yourself, order from CraftCloud, or use a local print sho
 ### Base Functionality
 _Parts used for the standard install._
 <!-- tabs:start -->
-<!-- tab:STM32 Comp -->
+<!-- tab:STM32 LEGO -->
 * [Screen Enclosure](https://www.printables.com/model/280617)  
 * [Internal Component Housing](https://www.printables.com/model/269394)
-<!-- tab:STM32 PCBv3 -->
+<!-- tab:STM32 PCB -->
 * [Screen Enclosure](https://www.printables.com/model/280617)
 * [Protective Housing *(for Gaggia Classic or if you don't want to put the PCB into the Gaggia Classic Pro pump tower)*](https://www.printables.com/model/370513)
 * [Pump Tower Clip *(holds the PCB in non-Eco Gaggia Classic Pro pump towers)*](https://www.printables.com/model/511272)
