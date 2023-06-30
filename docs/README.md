@@ -132,7 +132,7 @@ _Will enable brew and steam temperature control as well as pump control based on
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
 * [Heat-resistant Silicone Wire](https://bit.ly/3tjSQbI)
   * **18AWG - 1m:** Black, Red, White
-  * **22AWG - 5m:** Black, Red, Blue, White
+  * **22AWG - 5m:** Black, Red, Blue, Yellow, White
   * **26AWG - 5m:** Black, Red, Blue, Yellow
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
@@ -237,7 +237,7 @@ _Will enable only brew and steam temperature control_
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
 * [Heat-resistant Silicone Wire](https://bit.ly/3tjSQbI)
   * **18AWG - 1m:** Black, Red, White
-  * **22AWG - 5m:** Black, Red, Blue, White
+  * **22AWG - 5m:** Black, Red, Blue, Yellow, White
   * **26AWG - 5m:** Black, Red, Blue, Yellow
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
