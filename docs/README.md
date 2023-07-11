@@ -28,7 +28,6 @@
   Profiles Management    |       :x:        |:heavy_check_mark: 
   Web interface          |       :x:        |:heavy_plus_sign: 
   OTA updates            |       :x:        |:heavy_plus_sign: 
-  OTA updates            |       :x:        |:heavy_plus_sign: 
 
 <!-- panels:start -->
 <!-- div:left-panel -->
@@ -131,7 +130,7 @@ _Will enable brew and steam temperature control as well as pump control based on
 * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
 * [Heat-resistant Silicone Wire](https://bit.ly/3tjSQbI)
-  * **18AWG - 1m:** Black, Red, White
+  * **18AWG - 2m:** Black, Red, White
   * **22AWG - 5m:** Black, Red, Blue, Yellow, White
   * **26AWG - 5m:** Black, Red, Blue, Yellow
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
@@ -265,6 +264,20 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
+
+<!-- tabs:end -->
+<!-- tab:Required tools -->
+> [!WARNING]
+> This is not necessarily an exhaustive list. You may need additional tools depending on your specific install. Please refrain from asking for references: use common sense, and search the Discord server for existing recommendations.
+
+* Soldering: iron, solder, flux, wick, third-hand tool
+* Multimeter - for continuity testing
+* Thermal paste - for thermocouple
+* Crimp pliers, wire stripper/cutter
+* Strip board or WAGO connectors - for lego build
+* Fork connectors - for SSR
+* Heat shrink, heat-resistant electrical tape
+* Usual tool: screwdrivers, allen keys, wrenches, etc.
 
 <!-- tabs:end -->
 <!-- tabs:end -->
