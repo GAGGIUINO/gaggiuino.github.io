@@ -213,13 +213,14 @@ Surface tension can make hand filling the tube difficult if you don't use a simp
 <details>
 <summary><b>Machine fill</b> <i>(Click to expand)</i></summary>
 
-After the screen has been connected and the remainder of the install completed, go to the Brew menu, select the Manual tab, set flow to 1 ml/s and run for ~2 minutes (with open group head) to gently fill the line.
+Plug the tube into the T fitting. After the screen has been connected and the remainder of the install completed, go to the Brew menu, select the Manual tab, set flow to 1 ml/s and run for ~2 minutes (with open group head) to gently fill the line.
 
 ![Filling the transducer tubing](https://user-images.githubusercontent.com/117388662/239618595-844609d1-7b59-456e-afba-2d2b1bf73374.png ':size=250')
 
 </details>
 
-Plug the filled tube into the T fitting and arrange the pressure transducer so that it is at the base of the machine, lower than the T fitting. 
+Arrange the connected pressure transducer so that it is at the base of the machine, lower than the T fitting. 
+
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
 ![pressure transducer placement](https://user-images.githubusercontent.com/117388662/239457706-7ee5d101-d209-41b4-a3d3-ce159e98032f.png ':size=500')

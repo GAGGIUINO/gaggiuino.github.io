@@ -22,7 +22,7 @@ An easy way to remove header pins is to cut the plastic linkage between each pin
 <details>
 <summary><b>Soldering</b> <i>(Click to expand)</i></summary>
 
-?> Additional information can be found in [Soldering Recommendations](/docs/learning/learning-sources.md/#soldering)
+?> Additional information can be found in [Soldering Recommendations](/learning/learning-sources.md#soldering)
 
 **Expansion Board Soldering** 
 
