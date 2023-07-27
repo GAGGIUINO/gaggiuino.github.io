@@ -90,10 +90,14 @@ build_flags =
 
 ## Tubing Consolidation (Optional)
 
-The intake and OPV tubes can be combined above the water tank using a T fitting. This reduces water agitation in the tank during pumping and eliminates a visible tube.
+The intake and OPV tubes can be combined above the water tank using a T fitting. This reduces water agitation in the tank during pumping and hides the OPV tube.
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256653622-6f84ea94-ee0c-4dbe-aae4-88dc015f8d03.png">
 
 The intake tube should be ~175 mm long. Cut to ~190 mm, then trim as needed. Make sure to cut the end into a very shallow "V" shape so that it can't get suctioned to the bottom of the tank.
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256655744-be96feb6-40d0-4f12-91cb-79502fb5027e.png">
+
+After completing installation, flush water with an open group head to prime the pump.  
+Once the pump is primed put in a blank portafilter basket and let it run through the backflush/pressure release cycle a few times to cycle water through the OPV tubing.  
+Finally, run flush one more time with open group head to make sure any air from the OPV line is pushed through.
