@@ -28,7 +28,7 @@ Conformal coating the PCB is highly recommended for longevity. This can be done 
     * [(Digi-Key) JST JUMPER 04SR-3S - 04SR-3S 10 A04SR04SR30K254A](https://www.digikey.com/en/products/detail/jst-sales-america-inc/A04SR04SR30K254A/9922185)
     * [(AliExpress) 10 PCS 30CM JST SH 1.0 Female Double Connector, 4P, Same Direction](https://www.aliexpress.com/item/3256804651494821.html)
 * [2 Channel IIC I2C Logic Level Converter](https://www.aliexpress.com/item/2251832426051878.html)
-* [9 mm diameter heat shrink tubing](https://www.aliexpress.com/item/3256804353582834.html)
+* [12 mm diameter heat shrink tubing](https://www.aliexpress.com/item/3256804353582834.html)
 * 3D-Printed Housing, available on [Printables](https://www.printables.com/model/502813) or can be ordered from official print providers
     * [(2 disc magnets, 5 mm dia. x 1 mm ht. (for magnetic espresso machine)](https://www.aliexpress.com/item/3256801641477250.html)
     * Double-sided tape, long-term temp rating of at least 80° C  (for non-magnetic espresso machine)
@@ -60,12 +60,12 @@ Cut off one Qwiic connector from the cable and solder it and the wires back to t
 
 <img width="600" alt="image" src="schematics/stm32-comp-build.png">
 
-Once soldered, cover with heat shrink tubing or silicone tape. 
+Once soldered cover with heat shrink tubing. 
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256456847-fcb44efb-4e87-4b8b-b4f2-4a47d036ccf5.png">
 <!-- tabs:end -->
 
-Run the cable down through the gap on the right side of the machine sheet metal, plug it into the ToFnLED board, insert the board into the housing, and mount above the water tank. 
+Run the Qwiic cable down through the gap on the right side of the machine sheet metal, plug it into the ToFnLED board, insert the board into the housing, and mount above the water tank. 
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256464601-0d54fd7a-0f65-495e-8169-83fe9bd14a53.png">
 
@@ -94,6 +94,6 @@ The intake and OPV tubes can be combined above the water tank using a T fitting.
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256653622-6f84ea94-ee0c-4dbe-aae4-88dc015f8d03.png">
 
-The intake tube should be ~175 mm long. Cut to 190 mm, then trim as needed. Make sure to cut the end into a very shallow "V" shape so that it can't get suctioned to the bottom of the tank.
+The intake tube should be ~175 mm long. Cut to ~190 mm, then trim as needed. Make sure to cut the end into a very shallow "V" shape so that it can't get suctioned to the bottom of the tank.
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256655744-be96feb6-40d0-4f12-91cb-79502fb5027e.png">
