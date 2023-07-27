@@ -41,19 +41,17 @@ For tubing consolidation (optional):
 
 >
 
-# Instructions
-
-## Housing Assembly
+# Housing Assembly
 
 Scratch up the housing magnet indentations a bit with a craft blade to improve adhesion before adding a drop of cyanoacrylate and placing a magnet on top. Make sure the magnets seat flat!
 
 <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/256454738-f7717135-2389-451c-b2c9-9439c2159eee.png">
 
 
-## Connections
+# Connections
 <!-- tabs:start -->
 <!-- tab:PCB -->
-Plug the Qwiic cable into the matching Qwiic I2C socket on the PCB
+Plug the Qwiic cable into the J2 Qwiic I2C socket on the PCB
 
 <!-- tab:LEGO -->
 Cut off one Qwiic connector from the cable and solder it and the wires back to the component enclosure to the level shifter and LDO board, following the schematic. 
@@ -69,7 +67,7 @@ Run the Qwiic cable down through the gap on the right side of the machine sheet 
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256464601-0d54fd7a-0f65-495e-8169-83fe9bd14a53.png">
 
-## Extra Defines
+# Extra Defines
 
 The ToF and LED elements need to be enabled in the code. To do so, create a file in the project folder called "extra_defines.ini"  
 The exact contents of the file depend on your system build, but it will look something like this (green lines are commented out and inactive). 
@@ -88,7 +86,7 @@ build_flags =
     -DTOF_VL53L0X
 ```
 
-## Tubing Consolidation (Optional)
+# Tubing Consolidation (Optional)
 
 The intake and OPV tubes can be combined above the water tank using a T fitting. This reduces water agitation in the tank during pumping and hides the OPV tube.
 
