@@ -163,7 +163,7 @@ Measure distance to components in the housing, cut wires to length plus ~1 cm, t
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/53577819/211653005-8bffe9c8-1967-461d-a163-9a130534e0d0.png">
 
 >[!Note]
->Once power wiring is complete I recommend using a multimeter to check resistance between 5V and 5V GND (0 VDC) It should be extremely high or not readable. If you are getting a resistance reading under 100 kOhm it's likely you have a short (solder flux, solder pad, solder ball, wire whisker, etc.) that needs to be fixed.
+>Once power wiring is complete I recommend using a multimeter to check resistance between 5V and 5V GND (0 VDC) It should be extremely high or not readable. If you are getting a resistance reading under 10 kOhm it's likely you have a short (solder flux, solder pad, solder ball, wire whisker, etc.) that needs to be fixed.
 
 Now that power wires have been added we’ll begin adding signal wires per the schematic. Just like with the power wires, measure length in the housing, then remove from housing to solder. A few notes:
 1. Make sure to route the wires before measuring. There is not enough clearance for wires to go over the Blackpill, they must go around. 
