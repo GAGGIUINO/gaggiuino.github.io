@@ -1,5 +1,8 @@
 The Time of Flight and LED (ToFnLED) board provides a sensor for determining tank water level and and LED for tank lighting. 
 
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/256652023-fb3ead35-419b-4859-96b7-1cfbb1b0e9b8.png">
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/256652465-c6fe4def-9d61-43f8-9b23-339bb7d53b8b.png">
+
 ## Bill of Materials
 
 > [!Note] Understanding of the PCB ordering/manufacturing process is needed to order the ToFnLED. For housing compatibility do **not** add the backside connector.  
@@ -32,7 +35,7 @@ Conformal coating the PCB is highly recommended for longevity. This can be done 
     * Cyanoacrylate (super glue)
 <!-- tabs:end -->
 
-For optional tubing consolidation:
+For tubing consolidation (optional):
 
 * [6 mm barb T-type fitting](https://www.aliexpress.com/item/3256805112468750.html)
 
@@ -85,11 +88,12 @@ build_flags =
     -DTOF_VL53L0X
 ```
 
-## Tubing Consolidation
+## Tubing Consolidation (Optional)
 
 The intake and OPV tubes can be combined above the water tank using a T fitting. This reduces water agitation in the tank during pumping and eliminates a visible tube.
 
-<!-- tabs:start -->
-<!-- tab:GC -->
-<!-- tab:GCP -->
-<!-- tabs:end -->
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256653622-6f84ea94-ee0c-4dbe-aae4-88dc015f8d03.png">
+
+The intake tube should be ~175 mm long. Cut to 190 mm, then trim as needed. Make sure to cut the end into a very shallow "V" shape so that it can't get suctioned to the bottom of the tank.
+
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256655744-be96feb6-40d0-4f12-91cb-79502fb5027e.png">
