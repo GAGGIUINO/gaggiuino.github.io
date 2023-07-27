@@ -16,6 +16,8 @@
 * - __Arduino Nano (Feature frozen)__
     * [Gaggia Classic](guides-nano/gaggia-classic.md)
     * [Gaggia Classic Pro](guides-nano/gaggia-classic-pro-new-classic.md)
+* __Accessories:__
+    * [ToFnLED (Time of Flight and LED)](accessories/tofnled.md)
 * __Upgrades:__
     * [Lego Independent Relay and Dimmer](guides-upgrade/lego-independent-relay-dimmer.md)
     * [Nano to STM32 Upgrade](guides-upgrade/nano-to-stm32.md)
