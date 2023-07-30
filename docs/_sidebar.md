@@ -17,6 +17,7 @@
     * [Gaggia Classic](guides-nano/gaggia-classic.md)
     * [Gaggia Classic Pro](guides-nano/gaggia-classic-pro-new-classic.md)
 * __Accessories:__
+    * [Hardware Scales](accessories/hw-scales.md)
     * [ToFnLED (Time of Flight and LED)](accessories/tofnled.md)
 * __Upgrades:__
     * [Lego Independent Relay and Dimmer](guides-upgrade/lego-independent-relay-dimmer.md)
