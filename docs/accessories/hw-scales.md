@@ -1,4 +1,10 @@
-This assembly is for adding hardware scales to your Gaggia Classic or Gaggia Classic Pro. 
+This assembly is for adding hardware scales to your Gaggia Classic or Gaggia Classic Pro.  
+
+> [!Tip] The STM32 build has software emulated **predictive scales** that try to offer accurate sensing of the first drops into the cup as well as realtime shot weight tracking and stop-on-weight across a variety of settings and shot profiles. Predictive scales are sufficient for most users with performed calibration and standard dialed-in shots but they're not fool proof or able to cater for the more advanced minds out there.  
+If extreme experimentation with beans, grinds, or shot profiles is your fetish it's advised to use HW scales instead.
+
+> [!WARNING] This is an advanced installation step that requires accurate 3D-printed parts and good installation practices to achieve optimal results.
+
 #
 # Bill of Materials
 
@@ -155,7 +161,7 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
         <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257089574-2004216e-7231-4c33-b8eb-ff90b93f4dfa.png">
     
-    * Drip tray or drip tray adapter fits with even gaps around it, not touching Gaggia housing sides or water tank
+    * Drip tray or drip tray adapter snaps into place magnetically and fits with even gaps around it, not touching Gaggia housing sides or water tank
 
         <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257089656-57ecccf3-1225-4ff7-a387-01ace2999414.png">
 
@@ -164,3 +170,53 @@ Print files are available on [Printables](https://www.printables.com/model/28537
         <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257089747-74fd447d-a299-4d65-a408-b325f09ec326.png">
 
 # Flashing/Calibration
+
+1. Build and flash the scales calibration task
+
+<!-- tabs:start -->
+<!-- tab:2 HX711 -->
+Use the appropriate scales-calibration task to upload to the STM32 and copy scales-calibrate TFT onto a microSD card to flash the Nextion. You should see this show up on the screen (with numbers). If there are no numbers your Screen-Blackpill connection is likely bad.
+
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257109779-2888a68b-7131-4243-824b-c43cc3ac4b8c.png">
+
+<!-- tab:dualScaleBoard -->
+Before building in Platformio, create an “extra_defines.ini” file (if one doesn't already exist) with these contents in the project root:
+
+```
+[extra]
+build_flags =
+    -DSINGLE_HX711_BOARD
+```
+
+Use the appropriate scales-calibration task to upload to the STM32 and copy scales-calibrate TFT onto a microSD card to flash the Nextion. You should see this show up on the screen (with numbers). If there are no numbers your screen-STM32 connection is likely bad.
+
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257109779-2888a68b-7131-4243-824b-c43cc3ac4b8c.png">
+
+<!-- tabs:end -->
+
+2. Remove the load plates and insert the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration weight (in this case a 318.5 g tamper). Ideal calibration weight is in the 200-400g range.
+
+    <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110291-ae8bf438-a692-4b89-b511-8ef8073f1065.png">
+
+    To calibrate, use the adjustment value and +/- buttons to adjust the scale factors until the weight output in grams matches the real weight. One scale factor will likely be negative to make the output in grams positive. Take a pic or copy down the scale factors.
+
+3. Once calibrated, flash the regular build back onto the screen and STM32. Copy the scale factors into the LC1 and LC2 Factors and click Save.
+
+    <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110664-fd0f6aa1-aefe-4a6d-b167-12183f9d1b87.png">
+
+4. Add the drip tray / drip tray adapter. Congrats, your machine has a scale!
+
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257110758-a6eae8c8-c12e-41eb-bfa3-586ae03dd88a.png">
+
+> [!TIP] If using the stock GC or GCP drip trays you may want to file or cut 2 mm off of the pressure outlet tube (solenoid vent) to bring it to 130 mm and make drip tray removal easier.  
+You'll find that you might not be able to easily reach under the stock drip tray to remove it - I find holding it like this to lift over the retaining lip and pull it forward slightly works well. 
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110983-c41210d7-dbb4-4666-bb82-2f0b789a50ad.png">
+
+# Troubleshooting
+
+If you have “jumpy” scales or are struggling to calibrate, check that
+* magnets are installed flush or sub-flush
+* the bottom surface of all parts resting on the machine sheet metal is flat and free of dirt, dried adhesive, print artifacts, etc. 
+* the load cell adhesive is not clamped by the load cell housings or flex limiters (see step 1). Adhesive on the side of the load cell before the cutout area is fine.
+* the load plates have clearance to the load cell housings all the way around
+* wires are not routed by high voltage

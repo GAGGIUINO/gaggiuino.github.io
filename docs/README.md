@@ -271,6 +271,15 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 <!-- div:panel-end -->
 > 
 
+
+# Accessories
+
+Accessories can be added to the base Gaggiuino build for additional features. BOM and instructions are linked below. 
+
+* [Hardware Scales](accessories/hw-scales.md) sit below the drip tray and measure weight during shots. They're most useful for those who like to experiment with beans, grind, and profiles where predictive scales may have a difficult time
+* [ToFnLED](accessories/tofnled.md) provides an RGB LED and sensor for measuring water tank level
+
+
 # 3D Printed Parts
 > [!Tip]
 > If you prefer to purchase printed parts the oficially approved providers in the __Approved Official Suppliers__ sidebar section use recommended materials and print settings.
@@ -294,15 +303,6 @@ _Parts used for the standard install._
 * [Internal Component Housing](https://www.printables.com/model/269394)
 * [Optocoupler Case *(for Gaggia Classic)*](https://www.printables.com/model/339542)
 <!-- tabs:end -->
-
-### Hardware Scales Functionality
-> [!Tip]
-> The STM32 build has software emulated **predictive scales** enabled that are sufficient for users with performed calibration. Same as hardware scales predictive ones try to offer accurate sensing of the first drops into the cup as well as realtime shot weight tracking and stop-on-weight across a variety of settings and less traditional shot profiles but it's not fool proof or able to cater for the more advanced minds out there, if extreme experimentation is your fetish it's advised to use hw scales instead.
-
-> [!WARNING]
-> This is an advanced installation step that requires accurate 3D-printed parts, good installation practices, and an in-depth understanding to achieve optimal results.
-
-* [Gaggia Classic & Classic Pro scales housing](https://www.printables.com/model/285370-gaggia-classic-pro-scales) *(BOM and models)*
 
 Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](https://www.printables.com/social/340492-loogle/collections/265668) or on [Discord](community/community-media.md#community-discord) in the **#mod-3d-design-ideas** channel.
 >
