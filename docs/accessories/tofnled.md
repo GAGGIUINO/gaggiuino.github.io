@@ -18,8 +18,10 @@ Conformal coating the PCB is highly recommended for longevity. This can be done 
     * [(AliExpress) 10 PCS 30CM JST SH 1.0 Female Double Connector, 4P, Same Direction](https://www.aliexpress.com/item/3256804651494821.html)
 * 3D-Printed Housing, available on [Printables](https://www.printables.com/model/502813) or can be ordered from official print providers
     * [(2 disc magnets, 5 mm dia. x 1 mm ht. (for magnetic espresso machine)](https://www.aliexpress.com/item/3256801641477250.html)
+    * Cyanoacrylate / super glue (for magnetic espresso machine)
     * Double-sided tape, long-term temp rating of at least 80° C  (for non-magnetic espresso machine)
-    * Cyanoacrylate (super glue)
+        * VHB 4611/5952/4910, Gorilla Tape, Alien Tape are options
+
 <!-- tab:LEGO -->
 * ToFnLED (two options due to LED controller availability - choose one)
     * [NCP5623](https://github.com/banoz/ToFnLED)
@@ -30,7 +32,7 @@ Conformal coating the PCB is highly recommended for longevity. This can be done 
 * [2 Channel IIC I2C Logic Level Converter](https://www.aliexpress.com/item/2251832426051878.html)
 * [12 mm diameter heat shrink tubing](https://www.aliexpress.com/item/3256804353582834.html)
 * 3D-Printed Housing, available on [Printables](https://www.printables.com/model/502813) or can be ordered from official print providers
-    * [(2 disc magnets, 5 mm dia. x 1 mm ht. (for magnetic espresso machine)](https://www.aliexpress.com/item/3256801641477250.html)
+    * [2 disc magnets, 5 mm dia. x 1 mm ht. (for magnetic espresso machine)](https://www.aliexpress.com/item/3256801641477250.html)
     * Double-sided tape, long-term temp rating of at least 80° C  (for non-magnetic espresso machine)
     * Cyanoacrylate (super glue)
 <!-- tabs:end -->
