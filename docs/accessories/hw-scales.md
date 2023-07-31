@@ -1,6 +1,6 @@
 This assembly is for adding hardware scales to your Gaggia Classic or Gaggia Classic Pro. 
-
-## Bill of Materials
+#
+# Bill of Materials
 
 ## Components
 
@@ -116,3 +116,51 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257019800-ee2aac69-5ea5-421d-86a6-8499613f4875.png">
 
+    <details>
+    <summary><b>GCP Drip Tray Adapter tip</b> <i>(Click to expand)</i></summary>
+
+    If you're using the GCP Drip Tray Adapters and Clamps it's easier if you install magnets in the order shown below. Otherwise, the bottom magnets can spin the internal side-facing magnets as you try to install.
+
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257087212-fe5873c9-405e-4221-abfb-d696fab30ff1.png">
+
+    </details>
+
+9. Prep drip tray and/or adapters
+
+    <!-- tabs:start -->
+    <!-- tab:GCP Drip Tray Adapter -->
+    Cut the sides of the drip tray as seen below (thick red line) and remove scrap (red X area). This provides clearance to the load cell housings. 
+
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257088268-c1ab40c7-4c69-4b48-a10c-3b890e8cc97b.png">
+
+    A good way to cleanly cut the profile is to sketch on masking tape, make a pilot hole, use a step drill bit for a 5 mm radius (10 mm diameter), cut with a hacksaw, and then finish with a hobby knife and file.
+
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257088426-229b8358-d270-4efa-bc71-25f75c4685e1.png">
+
+    Slide the drip tray adapters (with clamps installed) onto the drip tray side fins with the “F” side facing the front of the tray. Make sure the adapters are fully seated on the underside of the tray's top surface.
+
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257088485-a41ab283-63bf-4106-9e10-a985c482aa41.png">
+    <!-- tab:GC/LP Drip Tray Adapter -->
+    Fully insert the drip tray spacers into the Gaggia Classic or Low Profile drip tray adapter with the flat surface down. If the fit is not snug use a drop of cyanoacrylate to hold each spacer in place. 
+
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257087801-911f627f-ac5b-4011-802c-8ee73655e872.png">
+    <!-- tabs:end -->
+
+10. Wire a 5P JST XH or DuPont connector (I used JST XH with the latching features cut off because it'll only fit one way with enough clearance to install under the machine) and route through the housing back to wherever your controller is. Protect the areas where it goes through the housing with heat shrink tubing and ensure the wires don't affect placement of the water tank so much that it rubs the drip tray.
+
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257089366-23a5f80e-7147-4194-ba84-740927286400.png">
+
+11. Place the assembly into the machine and check fit. Things to verify:
+    * Load cell housings are parallel to each other and the Gaggia housing sides
+
+        <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257089574-2004216e-7231-4c33-b8eb-ff90b93f4dfa.png">
+    
+    * Drip tray or drip tray adapter fits with even gaps around it, not touching Gaggia housing sides or water tank
+
+        <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257089656-57ecccf3-1225-4ff7-a387-01ace2999414.png">
+
+    * Drip tray has at least 0.5 mm clearance under the front lip and on the sides
+
+        <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257089747-74fd447d-a299-4d65-a408-b325f09ec326.png">
+
+# Flashing/Calibration
