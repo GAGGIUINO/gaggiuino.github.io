@@ -11,8 +11,8 @@ Conformal coating the PCB is highly recommended for longevity. This can be done 
 <!-- tabs:start -->
 <!-- tab:PCB -->
 * ToFnLED (two options due to LED controller availability - choose one)
-    * [NCP5623](https://github.com/banoz/ToFnLED)
-    * [PCA9632](https://github.com/SomeLucky1/ToFnLED-RGBW)
+    * [NCP5623](https://www.pcbway.com/project/shareproject/ToFnLED_v1_214578da.html)
+    * [PCA9632](https://www.pcbway.com/project/shareproject/ToFnLED_RGBW_1a918f23.html)
 * I2C Qwiic cable, 250+ mm (choose one)
     * [(Digi-Key) JST JUMPER 04SR-3S - 04SR-3S 10 A04SR04SR30K254A](https://www.digikey.com/en/products/detail/jst-sales-america-inc/A04SR04SR30K254A/9922185)
     * [(AliExpress) 10 PCS 30CM JST SH 1.0 Female Double Connector, 4P, Same Direction](https://www.aliexpress.com/item/3256804651494821.html)
@@ -24,8 +24,8 @@ Conformal coating the PCB is highly recommended for longevity. This can be done 
 
 <!-- tab:LEGO -->
 * ToFnLED (two options due to LED controller availability - choose one)
-    * [NCP5623](https://github.com/banoz/ToFnLED)
-    * [PCA9632](https://github.com/SomeLucky1/ToFnLED-RGBW)
+    * [NCP5623](https://www.pcbway.com/project/shareproject/ToFnLED_v1_214578da.html)
+    * [PCA9632](https://www.pcbway.com/project/shareproject/ToFnLED_RGBW_1a918f23.html)
 * I2C Qwiic cable, 250+ mm (choose one)
     * [(Digi-Key) JST JUMPER 04SR-3S - 04SR-3S 10 A04SR04SR30K254A](https://www.digikey.com/en/products/detail/jst-sales-america-inc/A04SR04SR30K254A/9922185)
     * [(AliExpress) 10 PCS 30CM JST SH 1.0 Female Double Connector, 4P, Same Direction](https://www.aliexpress.com/item/3256804651494821.html)
