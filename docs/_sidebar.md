@@ -1,7 +1,10 @@
 * [Home](/)
 * __Approved Official Suppliers:__
-* - [3D Printed Parts __Europe__](https://gaggiuino.espressio.nl/)
-* - [3D Printed Parts __North America__](https://gaggiuino.hudsoncreativegroup.com/)
+* - __PCB and Kits__
+    * - [Peak Coffee](https://www.peakcoffee.cc/)
+* - __3D Printed Parts__
+    * - [Espressio __(Europe)__](https://gaggiuino.espressio.nl/)
+    * - [Hudson Creative Group __(North America)__](https://gaggiuino.hudsoncreativegroup.com/)
 * __Useful:__
 * - [Announcements](announcements/)
 * - [Community media](community/community-media.md)
