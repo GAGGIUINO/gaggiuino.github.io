@@ -35,7 +35,7 @@ There are two options for HX711 boards - buying two HX711 boards from AliExpress
 * [**2** HX711 interface board](https://www.aliexpress.com/item/2251832855509243.html)
 * [**1** 1KΩ resistor](https://www.aliexpress.com/item/3256802484566250.html)
 <!-- tab:dualScaleBoard -->
-* [**1** dualScaleBoard](https://github.com/banoz/dualScaleBoard_HX711)
+* [**1** dualScaleBoard](https://www.pcbway.com/project/shareproject/Dula_HX711_scales_board_17abe179.html)
 <!-- tabs:end -->
 
 ## 3D-Printed Parts
