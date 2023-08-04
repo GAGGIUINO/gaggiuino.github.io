@@ -76,7 +76,9 @@ The exact contents of the file depend on your system build, but it will look som
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256468372-14e57794-6ded-4bc1-a641-921cd4c6ca58.png">
 
->
+> 
+
+> [!WARNING] Adding build flags that do not apply to your system hardware configuration may cause it to not work or behave unexpectedly.
 
 Here is an example of an extra_defines file for a system with the NCP5623 version of the ToFnLED board with no other defines.
 
