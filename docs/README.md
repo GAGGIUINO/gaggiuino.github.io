@@ -187,7 +187,7 @@ _Will enable brew and steam temperature control as well as pump control based on
 * [Heat-resistant silicone wires](https://bit.ly/3tjSQbI)
   * **18AWG - 1m:** Black, Red, Brown, White, Green, Blue & Yellow
   * **22AWG - 5m:** Black, Red, White, Orange & Yellow
-* [JST XH 4P](https://www.aliexpress.us/item/2251832768103991.html)
+* [JST XH 4P](https://www.aliexpress.com/item/2251832768103991.html)
 * [JST PH 3P, 4P & 5P](https://www.aliexpress.com/item/4000091077742.html)
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
