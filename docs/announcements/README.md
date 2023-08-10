@@ -19,5 +19,5 @@
 * __Current support__ - Installation support available in the discord.
 * __Recommended Install__ - If you are new to the project it is recommended you install this hardware stack.
 
->[!WARNING|style:callout|label:Future development and you] Current plans for development are always in flux.  While the current plan may be to provide new features to the recommended install route, it is always possible that those plans will change, and new hardware will be required to upgrade.  The above recommendations are given with this in mind and we will try our best to keep you informed of any changes.
+>[!WARNING|style:callout|label:Considerations and caveats] Current plans for development are always in flux.  While the current plan may be to provide new features to the recommended install route, it is always possible that those plans will change, and new hardware will be required to upgrade.  The above recommendations are given with this in mind and we will try our best to keep you informed of any changes.
 
