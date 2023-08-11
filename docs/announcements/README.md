@@ -4,16 +4,16 @@
 <!-- div:panels -->
 1. __Arduino NANO based development has reached EOL, no new features will be added to it's branch going forward.__ 
 >
-2. __Nextion development has reached EOL, SMT32 Blackpill + Nextion is still the recommended install while a new display is chosen. More will be announced in due time.__ 
+2. __Nextion UI development has reached EOL, SMT32 Blackpill + Nextion is still the recommended install while a new UI solution is being developed. More will be announced in due time.__ 
 <!-- panels:end -->
 
 ## Development Lifecycle
 >
 <div style="width:230px">Hardware</div>| Public Release Date | Development Stopped | Current Support    | Recommended Install 
 ---------------------------------|---------------------|---------------------|:---:|:----:
- Nano                      | 2020                | 2022                | :x:                | :x:                 
- SMT32 Blackpill + Nextion | 2022                | June 2023           | :heavy_check_mark: | :heavy_check_mark:  
- SMT32 Blackpill + New UI Solution| Not Released      |                     | :x:                | :x:                 
+ Nano                      | 2021                | 2022                | :x:                | :x:                 
+ SMT32 Blackpill + Nextion | 2022                | July 2023           | :heavy_check_mark: | :heavy_check_mark:  
+ SMT32 Blackpill + New UI Solution| TBD      |                     | :x:                | :x:                 
 >
 * __Development Stopped__ - Development for this combination of hardware has ceased.
 * __Current support__ - Installation support available in the discord.
