@@ -36,9 +36,9 @@
   __Stop on Weight/Dose__*|      :x:        |:heavy_check_mark:       
   __DreamSteam__*        |       :x:        |:heavy_check_mark:  
   __Predictive scales__* |       :x:        |:heavy_check_mark:  
-  Profiles Management    |       :x:        |:heavy_check_mark: 
+  Profiles Management    |       :x:        |:heavy_check_mark:
+  Profiles sharing       |       :x:        |:heavy_plus_sign: 
   Web interface          |       :x:        |:heavy_plus_sign: 
-  OTA updates            |       :x:        |:heavy_plus_sign: 
   OTA updates            |       :x:        |:heavy_plus_sign: 
 
 <!-- panels:start -->
