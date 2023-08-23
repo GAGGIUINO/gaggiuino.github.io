@@ -1,7 +1,7 @@
 !> If you have a US Gaggia Classic it likely has a 2P socket and is **ungrounded**. It is recommended that espresso machines be grounded and powered through a GFCI/AFCI/RCD device.
 
 Grounding (also known as Earthing) provides an alternate path for current to flow into the ground in the event of an issue with the wiring system or introduction of a conductive medium (such as ionized water).  
-Without a grounded housing, if the 120 V line came loose at some point and contacted the housing the machine may still work, but touching the metal housing would be the same as touching a live power socket. With a grounded housing, breaker, and ideally a GFCI/AFCI/RCD device, an AC wiring fault will trip the breaker or circuit interruptor before becoming a danger to people or the system.
+Without a grounded housing, if the 120 V line came loose at some point and contacted the housing the machine may still work, but touching the metal housing would be the same as touching a live power socket. With a grounded housing, breaker, and ideally a GFCI/AFCI/RCD device, an AC wiring fault will trip the breaker or circuit interrupter before becoming a danger to people or the system.
 
 !>Earth Ground is **not the same** as 5V GND (aka 0 V, " - ", or 5V COM). LV uses a "floating ground" for thermocouple compatibility. Do not connect the two.
 

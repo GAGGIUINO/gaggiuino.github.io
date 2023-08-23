@@ -102,7 +102,7 @@ _Dimmer high voltage circuit control ports will act as a passthrough for the pum
 ***
 
 # ASSEMBLING
-First let's check that the setup works as expected while outside the machine so you don't have it all installed and realise just afterwards it's not reading any temperature because of a faulty component or the SSR doesn't switch between the ON/OFF modes.
+First let's check that the setup works as expected while outside the machine so you don't have it all installed and realize just afterwards it's not reading any temperature because of a faulty component or the SSR doesn't switch between the ON/OFF modes.
 
 
 > [!NOTE]
