@@ -5,7 +5,6 @@ If extreme experimentation with beans, grinds, or shot profiles is your fetish i
 
 > [!WARNING] This is an advanced installation step that requires accurate 3D-printed parts and good installation practices to achieve optimal results.
 
-#
 # Bill of Materials
 
 ## Components

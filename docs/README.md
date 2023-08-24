@@ -53,6 +53,29 @@ _*2_ __DreamSteam__ - software driven steam boosting.
 _*3_ __Predictive scales__ - software driven predicted weight output.
 <!-- panels:end -->
 
+
+# Compatibility
+
+Gaggiuino is designed for the Gaggia Classic family of espresso machines with 3-way valves (**NOT the Gaggia Classic V2, SIN035U RI9403**). Other espresso machines such as the Rancilio Silvia are also supported although no official installation instructions are available at this time.
+
+<details>
+<summary><b>Compatibility table</b> <i>(Click to expand)</i></summary>
+
+Name                                      | Voltage   | Model Years | Model ID        | Notes  
+------------------------------------------|-----------|-------------|-----------------|-------
+:heavy_check_mark: Gaggia Classic         | 100-120 V | 1991-2018   | SIN035 RI9303   |  
+:heavy_check_mark: Gaggia Classic         | 220-240 V | 1991-2014   | SIN035 RI9303   |  
+:x:                Gaggia Classic V2      | 220-240 V | 2015-2018   | SIN035U RI9403  | Avoid like the plague
+:heavy_check_mark: Gaggia Classic Pro     | 100-120 V | 2019-2022   | SIN035R RI9380  | 
+:heavy_check_mark: Gaggia Classic Pro     | 220-240 V | 2019-2022   | SIN035R RI9380  | Uncommon, easier to mod than Eco
+:heavy_check_mark: Gaggia Classic Pro Eco | 220-240 V | 2019-2022   | SIN035UR RI9480 | Custom wiring recommended
+:heavy_check_mark: Gaggia Classic Evo Pro | 100-120 V | 2023-?      | SIN035R RI9380  | 9 bar OPV spring must be replaced with 10-12 bar spring or spring force increased with washers.<br /> Custom wiring recommended for models with combined switch connectors
+:heavy_check_mark: Gaggia Classic Evo Pro | 220-240 V | 2023-?      | SIN035UR RI9481 | Custom wiring recommended
+
+</details>
+
+>
+
 # Releases
 
   MCU             |                               Code branch         
@@ -162,7 +185,7 @@ _Will enable brew and steam temperature control as well as pump control based on
 
 <!-- tab:Gaggia Classic Pro -->
 * [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
-* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high qulity hose alternative if Saeco can't be bought locally**
+* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high quality hose alternative if Saeco can't be bought locally**
 * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
@@ -174,7 +197,7 @@ _Will enable brew and steam temperature control as well as pump control based on
 >
 
 > [!Note] 
-> If you're not exerienced with ordering PCBs it can be group ordered through Discord where the ordering process can be monitored and possible frauds averted.
+> If you're not exerienced with ordering PCBs it can be ordered from approved providers in the __Approved Official Suppliers__ sidebar section.
 >
 > **Make sure to read the info in the *#pcb-interest-registration* discord channel as well for more info on the ordering process as well as searching discord for any PCB related questions as many have been answered multiple times already.**
 
@@ -201,7 +224,7 @@ _Will enable brew and steam temperature control as well as pump control based on
 
 <!-- tab:Gaggia Classic Pro -->
 * [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
-* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high qulity hose alternative if Saeco can't be bought locally**
+* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high quality hose alternative if Saeco can't be bought locally**
 * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
@@ -230,7 +253,7 @@ _Will enable brew and steam temperature control as well as pump control based on
 
 <!-- tab:Gaggia Classic Pro -->
 * [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
-* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high qulity hose alternative if Saeco can't be bought locally**
+* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high quality hose alternative if Saeco can't be bought locally**
 * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
@@ -272,7 +295,7 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 
 <!-- tab:Gaggia Classic Pro -->
 * [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
-* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high qulity hose alternative if Saeco can't be bought locally**
+* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high quality hose alternative if Saeco can't be bought locally**
 * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
@@ -293,7 +316,7 @@ Accessories can be added to the base Gaggiuino build for additional features. BO
 
 # 3D Printed Parts
 > [!Tip]
-> If you prefer to purchase printed parts the oficially approved providers in the __Approved Official Suppliers__ sidebar section use recommended materials and print settings.
+> If you prefer to purchase printed parts the officially approved providers in the __Approved Official Suppliers__ sidebar section use recommended materials and print settings.
 
 _BOM and assembly instructions for the 3D printed parts are linked here._  
 If you'd like to print yourself, order from CraftCloud, or use a local print shop please carefully review the recommended print parameters on the design pages. 

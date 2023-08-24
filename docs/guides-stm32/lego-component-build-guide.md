@@ -193,7 +193,7 @@ Wiring the pull-up 5V to A1, A2, and A3 is optional, but easy. Just make sure th
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235807077-38f3fe70-f784-47da-aab0-3d9dbfc4114c.png">
 
-Make sure that the wire colors connecting to the screen line up with the schematic. If necesary, swap connector positions to correct. A small screwdriver can be used to release the tabs holding the pins in place. They can then be easily removed and swapped.
+Make sure that the wire colors connecting to the screen line up with the schematic. If necessary, swap connector positions to correct. A small screwdriver can be used to release the tabs holding the pins in place. They can then be easily removed and swapped.
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235808221-fdfc62a2-9d1f-44fa-b62b-ec041f7fc74f.png">
 
@@ -225,7 +225,7 @@ Flash the Blackpill using the ST-Link (connect SWDIO, GND, SWCLK, and 3.3V* - se
 
 Flash the Nextion with the applicable nextion-*-lcd.tft on an otherwise-empty ≤32 GB FAT32 microSD card.  
 
-Power for flashing the Nextion may be provided through the USB-C port on the Blackpill so long as you are using a USB power adapter that will supply 4.6-5.2 VDC (don't use a battery bank or your PC USB ports for power).  
+Power for flashing the Nextion may be provided through the USB-C port on the Blackpill so long as you are using a USB power adapter that will supply 4.6-5.2 VDC (don't use a battery bank or PC USB 2.0 ports for power).  
 
 ?> More stable voltage can be provided by using the 120 VAC PSU and piggybacking off of the Gaggia power switch ([example here](https://user-images.githubusercontent.com/117388662/235836724-71394491-c47a-46ed-920b-79ced184cc16.png)), however this is unnecessary for flashing and testing at this point so long as the voltage provided through the USB-C port is in range.  
 *If you wish to power the system through the 120 VAC PSU to flash the Blackpill then do **not** connect 3.3V to the ST-Link unless you're sure you do not have a knock-off/clone ST-Link.
@@ -285,4 +285,6 @@ Optional wiring that is not pictured:
 - HW Scales
 - ToFnLED
 
-**Continue the install by referencing the 3PLN machine-specific schematics and/or install instructions on the [3PLN Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md) page.**
+**Continue the install by referencing the 3PLN machine-specific schematics and/or install instructions that apply to your desired build path:**
+* [3PLN Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md) page.
+* [3PLN Custom Wiring](guides-stm32/3pln-custom-wiring.md) page.
