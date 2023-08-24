@@ -39,3 +39,30 @@
 * [GC 240v](https://user-images.githubusercontent.com/53577819/220784212-4b767c1b-8014-4902-81a5-95765ded1181.png)
 * [GCP 110v](https://user-images.githubusercontent.com/53577819/220784207-f16a0571-b90c-42f7-89bc-c71b61c03278.png)
 * [GCP 240v](https://user-images.githubusercontent.com/53577819/220784202-d218ff9d-0471-4209-afbd-ebc0a6fa8723.png)
+
+
+# Programming/Flashing
+
+!> Do not flash the Blackpill with the ST-Link while powering the system over USB-C.  
+
+Flash the Blackpill using the ST-Link (connect SWDIO, GND, SWCLK, and 3.3V* - see [Prerequisites](prereq/prerequisites.md) for details). 
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/262874364-c44f2eea-6a64-4731-adb8-a0c1a16089d6.png">
+
+Flash the Nextion with the applicable nextion-*-lcd.tft on an otherwise-empty ≤32 GB FAT32 microSD card.  
+
+Power for flashing the Nextion may be provided through the USB-C port on the Blackpill so long as you are using a USB power adapter that will supply 4.6-5.2 VDC (don't use a battery bank or PC USB 2.0 ports for power).  
+
+*If you wish to power the system through the 120 VAC PSU to flash the Blackpill then do **not** connect 3.3V to the ST-Link unless you're sure you do not have a knock-off/clone ST-Link.
+
+Wait for the Nextion to show the "Update Successed! (sic)" message, turn off power, and then remove the microSD card.
+
+# Component test
+
+Connect the thermocouple to the terminals and power on the system once again. If all is successful you should:
+- see a build number during boot (good Blackpill-Nextion communication)
+- see a "filling boiler" message a few seconds after boot
+- see a temperature reading on the screen that changes when heat is applied to the thermocouple
+- see the SSR light turn on if the temperature is below the setpoint (it will flash if temp is close to setpoint)
+- see a pressure value of 0.0 bar with no deviation
+- *not* see the steam temp as the target
