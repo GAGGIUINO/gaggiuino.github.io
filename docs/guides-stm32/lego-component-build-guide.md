@@ -193,7 +193,7 @@ Wiring the pull-up 5V to A1, A2, and A3 is optional, but easy. Just make sure th
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235807077-38f3fe70-f784-47da-aab0-3d9dbfc4114c.png">
 
-Make sure that the wire colors connecting to the screen line up with the schematic. If necesary, swap connector positions to correct. A small screwdriver can be used to release the tabs holding the pins in place. They can then be easily removed and swapped.
+Make sure that the wire colors connecting to the screen line up with the schematic. If necessary, swap connector positions to correct. A small screwdriver can be used to release the tabs holding the pins in place. They can then be easily removed and swapped.
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235808221-fdfc62a2-9d1f-44fa-b62b-ec041f7fc74f.png">
 
