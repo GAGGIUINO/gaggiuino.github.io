@@ -14,7 +14,7 @@
 * __Install Guides:__
 * - [Prerequisites](prereq/prerequisites.md)
 * - __STM32 Blackpill (Recommended)__
-    * [STM32 Lego Component Build](guides-stm32/lego-component-build-guide.md)
+    * [Component "Lego" Build](guides-stm32/lego-component-build-guide.md)
     * [PCB](pcb/singleboard.md)
     * [3PLN Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md)
     * [3PLN Custom Wiring](guides-stm32/3pln-custom-wiring.md)
