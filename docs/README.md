@@ -56,19 +56,19 @@ _*3_ __Predictive scales__ - software driven predicted weight output.
 
 # Compatibility
 
-Gaggiuino is designed for the Gaggia Classic family of espresso machines with 3-way valves (**NOT the Gaggia Classic V2, SIN035U RI9403**). Other single-boiler espresso machines with a 3-way valve (such as the Rancilio Silvia, Gaggia Baby Class, and Lelit Anna) may be compatible but are not officially supported at this time.
+Gaggiuino is designed for the Gaggia Classic family of espresso machines with 3-way valves (**NOT the Gaggia Classic V2, SIN035U RI9403**). Other espresso machines such as the Rancilio Silvia are also supported although no official installation instructions are available at this time.
 
 <details>
 <summary><b>Compatibility table</b> <i>(Click to expand)</i></summary>
 
-Name                                      | Voltage | Model Years | ID              | Notes  
+Name                                      | Voltage | Model Years | Model ID        | Notes  
 ------------------------------------------|---------|-------------|-----------------|-------
 :heavy_check_mark: Gaggia Classic         | 120 V   | 1991-2018   | SIN035 RI9303   |  
 :heavy_check_mark: Gaggia Classic         | 230 V   | 1991-2014   | SIN035 RI9303   |  
 :x:                Gaggia Classic V2      | 230 V   | 2015-2018   | SIN035U RI9403  | Avoid like the plague
 :heavy_check_mark: Gaggia Classic Pro     | 120 V   | 2019-2022   | SIN035R RI9380  | 
 :heavy_check_mark: Gaggia Classic Pro Eco | 230 V   | 2019-2022   | SIN035UR RI9480 | Custom wiring recommended
-:heavy_check_mark: Gaggia Classic Evo Pro | 120 V   | 2023-?      | SIN035R RI9380  | 9 bar spring must be replaced with 10-12 bar spring or pressure increased with washers.<br /> Custom wiring recommended for models with combined switch connectors
+:heavy_check_mark: Gaggia Classic Evo Pro | 120 V   | 2023-?      | SIN035R RI9380  | 9 bar OPV spring must be replaced with 10-12 bar spring or spring force increased with washers.<br /> Custom wiring recommended for models with combined switch connectors
 :heavy_check_mark: Gaggia Classic Evo Pro | 230 V   | 2023-?      | SIN035UR RI9481  | Custom wiring recommended
 
 </details>
