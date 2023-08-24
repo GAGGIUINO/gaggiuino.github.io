@@ -19,4 +19,4 @@ Select the environment based on the upload method i.e:
 * **Lego** build if you have individual components, **PCB** if you have that.
 * **STlink** if you are using one, **DFU** if not.
 
- 
+After building the proper task make sure to Upload it (connections vary by system, see install pages for details)
