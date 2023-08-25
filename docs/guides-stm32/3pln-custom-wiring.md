@@ -22,10 +22,10 @@
 * [GCP 240v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GCP%20PCB%20v3%20220v/GCP_wiring_PCBv3_220v.png?raw=true)
 
 **PCB v2** 
-* [GC 110v](https://user-images.githubusercontent.com/53577819/220784209-062e3b3c-e8e7-4a49-b716-87f2ce0634c7.png)
-* [GC 240v](https://user-images.githubusercontent.com/53577819/220784212-4b767c1b-8014-4902-81a5-95765ded1181.png)
-* [GCP 110v](https://user-images.githubusercontent.com/53577819/220784207-f16a0571-b90c-42f7-89bc-c71b61c03278.png)
-* [GCP 240v](https://user-images.githubusercontent.com/53577819/220784202-d218ff9d-0471-4209-afbd-ebc0a6fa8723.png)
+* [GC 120v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GC%20PCB%20v2%20120v/GC_wiring_PCBv2_120v.png?raw=true)
+* [GC 240v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GC%20PCB%20v2%20220v/GC_wiring_PCBv2_220v.png?raw=true)
+* [GCP 120v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GCP%20PCB%20v2%20120v/GCP_wiring_PCBv2_120v.png?raw=true)
+* [GCP 240v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GCP%20PCB%20v2%20220v/GCP_wiring_PCBv2_220v.png?raw=true)
 
 **HV Only**
 * [3PLN 120v, GC-specific](https://user-images.githubusercontent.com/53577819/220784232-1b254cd4-d3d7-4fe9-97e5-283fa1fb2659.png)
