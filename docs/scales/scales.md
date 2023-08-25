@@ -143,7 +143,7 @@ Adjust the Scale factors by tapping on the + or - buttons until the "Weight outp
 ![Calibration factor adjusted to match object's mass.](https://user-images.githubusercontent.com/80347096/187000749-8fd5f694-5533-435a-a60a-71868a601efb.jpg)
 
 ### Saving Calibration Constants to nano
-- Press the SAVE button to store the values of the Scale factors into eeprom. 
+- Press the SAVE button to store the values of the Scale factors into EEPROM. 
    - It is recommended that you write these values down as a safeguard. 
 
 - Reflash both the Nextion and the nano MCU with the appropriate gaggiuino code.

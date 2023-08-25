@@ -84,7 +84,7 @@ Make sure unshielded crimped wires are inserted into the terminal such that no b
 
 **Crimping Outside of the Housing**
 
-6.3 mm spade connectors are used for integration (connecting the assembled housing to the espresso machine). Molex's [TBO-Quality Crimp Handbook](https://github.com/Loogl3/gaggiuino.github.io/files/11400156/tbo.quality.crimp.handbook.pdf) is an excellent resource. Sections 6 and 7 contain information that applies to most crimped connections.
+6.3 mm spade connectors are used for integration (connecting the assembled housing to the espresso machine). For Molex connectors, [TBO-Quality Crimp Handbook](https://github.com/Loogl3/gaggiuino.github.io/files/11400156/tbo.quality.crimp.handbook.pdf) is an excellent resource. Sections 6 and 7 contain information that applies to most crimped connections.
 
 </details>
 
