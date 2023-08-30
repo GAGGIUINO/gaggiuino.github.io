@@ -15,19 +15,24 @@
 
 # Custom Wire Harness Schematics
 
-**PCB v3** 
-* [GC 120v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GC%20PCB%20v3%20120v/GC_wiring_PCBv3_120v.png?raw=true)
-* [GC 240v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GC%20PCB%20v3%20220v/GC_wiring_PCBv3_220v.png?raw=true)
-* [GCP 120v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GCP%20PCB%20v3%20120v/GCP_wiring_PCBv3_120v.png?raw=true)
-* [GCP 240v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GCP%20PCB%20v3%20220v/GCP_wiring_PCBv3_220v.png?raw=true)
+### PCB v3
+**Gaggia Classic** 
+<img height="300" alt="image" src="schematics/custom-3pln/GC_wiring_PCBv3_120v.png">
+<img height="300" alt="image" src="schematics/custom-3pln/GC_wiring_PCBv3_220v.png">
+**Gaggia Classic Pro**
+<img height="300" alt="image" src="schematics/custom-3pln/GCP_wiring_PCBv3_120v.png">
+<img height="300" alt="image" src="schematics/custom-3pln/GCP_wiring_PCBv3_220v.png">
 
-**PCB v2** 
-* [GC 120v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GC%20PCB%20v2%20120v/GC_wiring_PCBv2_120v.png?raw=true)
-* [GC 240v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GC%20PCB%20v2%20220v/GC_wiring_PCBv2_220v.png?raw=true)
-* [GCP 120v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GCP%20PCB%20v2%20120v/GCP_wiring_PCBv2_120v.png?raw=true)
-* [GCP 240v](https://github.com/thejobbitt/gaggiuino-build/blob/main/wiring/GCP%20PCB%20v2%20220v/GCP_wiring_PCBv2_220v.png?raw=true)
+### PCB v2
+**Gaggia Classic**
+<img height="300" alt="image" src="schematics/custom-3pln/GC_wiring_PCBv2_120v.png">
+<img height="300" alt="image" src="schematics/custom-3pln/GC_wiring_PCBv2_220v.png">
 
-**HV Only**
+**Gaggia Classic Pro**
+<img height="300" alt="image" src="schematics/custom-3pln/GCP_wiring_PCBv2_120v.png">
+<img height="300" alt="image" src="schematics/custom-3pln/GCP_wiring_PCBv2_220v.png">
+
+### HV Only
 * [3PLN 120v, GC-specific](https://user-images.githubusercontent.com/53577819/220784232-1b254cd4-d3d7-4fe9-97e5-283fa1fb2659.png)
 * [3PLN 120v](https://user-images.githubusercontent.com/53577819/220784237-e2b841e0-4754-4657-98bd-6adb96255aa1.png)
 * [3PLN 240v](https://user-images.githubusercontent.com/53577819/220784234-0b370f5b-fd5e-4d0d-9b9d-109ff25d2cbf.png)
