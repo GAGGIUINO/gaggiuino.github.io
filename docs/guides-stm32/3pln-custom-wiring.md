@@ -16,21 +16,26 @@
 # Custom Wire Harness Schematics
 
 ### PCB v3
-**Gaggia Classic** 
-<img height="300" alt="image" src="schematics/custom-3pln/GC_wiring_PCBv3_120v.png">
-<img height="300" alt="image" src="schematics/custom-3pln/GC_wiring_PCBv3_220v.png">
+**Gaggia Classic**
+
+<img height="300" alt="GC PCBv3 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_120v.png">
+<img height="300" alt="GC PCBv3 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_220v.png">
+
 **Gaggia Classic Pro**
-<img height="300" alt="image" src="schematics/custom-3pln/GCP_wiring_PCBv3_120v.png">
-<img height="300" alt="image" src="schematics/custom-3pln/GCP_wiring_PCBv3_220v.png">
+
+<img height="300" alt="GCP PCBv3 120v" src="schematics/custom-3pln/GCP_wiring_PCBv3_120v.png">
+<img height="300" alt="GCP PCBv3 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_220v.png">
 
 ### PCB v2
 **Gaggia Classic**
-<img height="300" alt="image" src="schematics/custom-3pln/GC_wiring_PCBv2_120v.png">
-<img height="300" alt="image" src="schematics/custom-3pln/GC_wiring_PCBv2_220v.png">
+
+<img height="300" alt="GC PCBv2 120v" src="schematics/custom-3pln/GC_wiring_PCBv2_120v.png">
+<img height="300" alt="GC PCBv2 220v" src="schematics/custom-3pln/GC_wiring_PCBv2_220v.png">
 
 **Gaggia Classic Pro**
-<img height="300" alt="image" src="schematics/custom-3pln/GCP_wiring_PCBv2_120v.png">
-<img height="300" alt="image" src="schematics/custom-3pln/GCP_wiring_PCBv2_220v.png">
+
+<img height="300" alt="GCP PCBv2 120v" src="schematics/custom-3pln/GCP_wiring_PCBv2_120v.png">
+<img height="300" alt="GCP PCBv2 220v" src="schematics/custom-3pln/GCP_wiring_PCBv2_220v.png">
 
 ### HV Only
 * [3PLN 120v, GC-specific](https://user-images.githubusercontent.com/53577819/220784232-1b254cd4-d3d7-4fe9-97e5-283fa1fb2659.png)
