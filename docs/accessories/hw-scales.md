@@ -18,7 +18,7 @@ There are two options for HX711 boards - buying two HX711 boards from AliExpress
     * [M3x6mm self-tapping screws for plastic](https://www.aliexpress.com/item/3256802230982244.html)
     * #4-20x1/4" thread rolling screws *(local USA option)*
     * M2.9x6.5mm self-tapping screws for plastic *(local EU option)*
-* **20** (GC) or **36** (GCP) [disc magnets, 5 mm dia. x 2 mm ht.](https://www.aliexpress.com/item/3256803930463196.html)  
+* **20** [disc magnets, 5 mm dia. x 2 mm ht.](https://www.aliexpress.com/item/3256803930463196.html)  
     *Most machine housings are magnetic - subtract 12 magnets if yours is not. The scales will still work but won't be held as securely.*
 * Gap-filling cyanoacrylate (super glue)
 * [**2+** 750 g load cells](https://www.aliexpress.com/item/2251832483911236.html)  
@@ -46,7 +46,7 @@ Print files are available on [Printables](https://www.printables.com/model/28537
     * GC Drip Tray: GC Drip Tray Adapter and 4 Drip Tray Spacers
     * Low-Profile Drip Tray: LP Drip Tray Adapter and 4 Drip Tray Spacers  
         *Note: designed for BaristaGadgets and Shades of Coffee low profile trays*
-    * GCP Drip Tray: GCP Drip Tray Adapter (L and R) and 2 GCP Drip Tray Adapter Clamps
+    * GCP Drip Tray: GCP Drip Tray Adapter (L and R)
     * 3D Print DripTray (no other adapters needed)
 
 # Assembly
@@ -115,16 +115,20 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
 8. Install magnets in load plates, load cell housings, and drip tray or drip tray adapter parts using the gap-filling cyanoacrylate. Make sure to match the polarity of magnets on the drip tray or drip tray adapter to those on the load plate so that it snaps in place. Holes are sized to only have 0.25 mm extra depth, so if a hole looks like it could fit another magnet put another one in.  
 
-    If your magnet holes are undersized, brush over the edge with a hobby knife to slightly widen the hole, then partially insert the magnet manually. Press down on a flat surface to seat flush.
-
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257019766-5bf71df5-d363-4e2c-8d49-f4f217209356.png">  
 
-    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257019800-ee2aac69-5ea5-421d-86a6-8499613f4875.png">
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/267487785-489c145c-5008-4d74-95f0-762e8f978df6.png">
 
+    If your magnet holes are too tight, brush over the edge with a hobby knife to slightly widen the hole, then partially insert the magnet manually. Press down on a flat surface to seat flush.
+
+    If your magnet holes are loose and you want the magnets perfectly flush use a metal ruler with a parchment paper barrier to hold the magnets flush while the glue sets. 
+
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/267475094-bec78ce0-a85b-4c68-b675-d05f1388fabc.png">  
+    
     <details>
-    <summary><b>GCP Drip Tray Adapter tip</b> <i>(Click to expand)</i></summary>
+    <summary><b>Old GCP Drip Tray Adapter tip</b> <i>(Click to expand)</i></summary>
 
-    If you're using the GCP Drip Tray Adapters and Clamps it's easier if you install magnets in the order shown below. Otherwise, the bottom magnets can spin the internal side-facing magnets as you try to install.
+    If you're using the old GCP Drip Tray Adapters and Clamps it's easier if you install magnets in the order shown below. Otherwise, the bottom magnets can spin the internal side-facing magnets as you try to install.
 
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257087212-fe5873c9-405e-4221-abfb-d696fab30ff1.png">
 
@@ -138,13 +142,13 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257088268-c1ab40c7-4c69-4b48-a10c-3b890e8cc97b.png">
 
-    A good way to cleanly cut the profile is to sketch on masking tape, make a pilot hole, use a step drill bit for a 5 mm radius (10 mm diameter), cut with a hacksaw, and then finish with a hobby knife and file.
+    A good way to cleanly cut the profile is to sketch on masking tape, make a pilot hole, use a step drill bit for a 5 mm radius (10 mm diameter), cut with a blade or saw, and then finish with a hobby knife and file.
 
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257088426-229b8358-d270-4efa-bc71-25f75c4685e1.png">
 
-    Slide the drip tray adapters (with clamps installed) onto the drip tray side fins with the “F” side facing the front of the tray. Make sure the adapters are fully seated on the underside of the tray's top surface.
+    Slide the drip tray adapters onto the drip tray side fins. The adapters are labeled F (front) and L (left) or R (right), left/right orientation as if facing the espresso machine. Make sure the adapters are fully seated on the underside of the tray's top surface.
 
-    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257088485-a41ab283-63bf-4106-9e10-a985c482aa41.png">
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/267475732-14dbea6c-ff72-45ff-959c-9a5ef89ce215.png">
     <!-- tab:GC/LP Drip Tray Adapter -->
     Fully insert the drip tray spacers into the Gaggia Classic or Low Profile drip tray adapter with the flat surface down. If the fit is not snug use a drop of cyanoacrylate to hold each spacer in place. 
 
