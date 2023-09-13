@@ -113,7 +113,7 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
     At this point you can attach the center housing cover (slides on from the front) and screw it down with the 2 thread-rolling/self-tapping screws.
 
-8. Install magnets in load plates, load cell housings, and drip tray or drip tray adapter parts using the gap-filling cyanoacrylate. Make sure to match the polarity of magnets on the drip tray or drip tray adapter to those on the load plate so that it snaps in place. Holes are sized to only have 0.25 mm extra depth, so if a hole looks like it could fit another magnet put another one in.  
+8. Install magnets in load plates, load cell housings, and drip tray or drip tray adapter parts using the gap-filling cyanoacrylate. It's easiest to put two small drops of the glue on the magnet pocket wall, below the surface. Make sure to match the polarity of magnets on the drip tray or drip tray adapter to those on the load plate so that it snaps in place. Holes are sized to only have 0.25 mm extra depth, but most magnets come in slightly undersized to varying degrees.  
 
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257019766-5bf71df5-d363-4e2c-8d49-f4f217209356.png">  
 
@@ -121,7 +121,7 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
     If your magnet holes are too tight, brush over the edge with a hobby knife to slightly widen the hole, then partially insert the magnet manually. Press down on a flat surface to seat flush.
 
-    If your magnet holes are loose and you want the magnets perfectly flush use a metal ruler with a parchment paper barrier to hold the magnets flush while the glue sets. 
+    If your magnet holes are loose and you want the magnets perfectly flush use a metal ruler or other magnetic surface with a parchment paper barrier to hold the magnets flush while the glue sets. 
 
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/267475094-bec78ce0-a85b-4c68-b675-d05f1388fabc.png">  
     
