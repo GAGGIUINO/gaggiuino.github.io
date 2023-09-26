@@ -19,7 +19,7 @@ There are two options for HX711 boards - buying two HX711 boards from AliExpress
     * #4-20x1/4" thread rolling screws *(local USA option)*
     * M2.9x6.5mm self-tapping screws for plastic *(local EU option)*
 * **20** [disc magnets, 5 mm dia. x 2 mm ht.](https://www.aliexpress.com/item/3256803930463196.html)  
-    *Most machine housings are magnetic - subtract 12 magnets if yours is not. The scales will still work but won't be held as securely.*
+    *Most machine housings are magnetic - you only need 12 if yours is not. The scales will still work but won't be held as securely.*
 * Gap-filling cyanoacrylate (super glue)
 * [**2+** 750 g load cells](https://www.aliexpress.com/item/2251832483911236.html)  
     *Buying 3-4 load cells is recommended as QC isn't great and they may need modifications that can result in damage if done improperly*
