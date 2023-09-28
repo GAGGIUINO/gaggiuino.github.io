@@ -22,6 +22,7 @@
 - **Scales**: Hardware Scales required. View and tare scales. 
 - **Tanks Water Level**: ToFnLED required. 0 to 100%.
 - **Timer**: Machine uptime, counts from 0.
+- **Dropping Beats**: Pressure release that happens about every minute if needed.
 
 # Home -> Dose
 <img height="300" alt="Dose" src="manual/01_001_dose.png">
@@ -38,23 +39,73 @@ Hardware Scales Required
 - **Weight**: Current scale weight.
 - **Tare**: Tares the scales. Scales auto tare on brew.
 
-# Brew
- - **Brew(Auto)**: All pressure settings are following the below:
-   - **PREINFUSION**: Enables pre-infusion
-     - **Time**: Sets the length of the PI phase
-     - **Bar**: Sets the max reachable pressure for the PI phase
-     - **Soak**: Sets the length of the soaking (blooming) phase
-     - **Ramp**: Sets the length of the pressure ramping phase, PI to PP windup time.
-   - **P-PROFILING**: Enables AUTO pressure profiling mode
-     - **Start**: Sets the desired starting point of the PP phase, can be High->Low or Low->High.
-     - **Finish**: Sets the desired finish point of the PP phase, same as above can be from High->Low or Low->High.
-     - **Hold**: Sets the length of the PP hold period, if it's desired to maintain the "Start" pressure for a period of time before the pressure drop/raise is applied this is where it's done.
-     - **Length/Slope**: Sets the length (aka curve speed) of the PP drop/raise behaviour, so one can change the pressure slow or fast if desired.
+# Brew -> Preinfusion
+<img height="300" alt="PI" src="manual/02_001_pi.png">
 
-**Here is a classic pre-example of how a declining pressure profile can be used once the mod is installed.**
+Preinfusion (PI) fills the basket until a threshold pressure or time is reached at specified ml/s. The idea of preinfusion is to saturate the puck of coffee, with the aim of increasing evenness of extraction and reducing channeling. It also helps when extracting lighter roasts, which are harder to extract.
+- **PI On / Off**: Turns PI on or off.
+- **Flow / Bar**: Determines if flow or pressure it the PI target.
+- **Fill**: Target for the PI phase.
+  - **Time**: Target length of the PI phase in seconds.
+  - **Flow**: Target flow rate for the PI phase.
+  - **Pressure**: Target pressure for the PI phase.
+- **Switch On**: When one of the folowing trigger move on to the Soak phase.
+  - **Filled**: Amount of water pumped as an exit criteria.
+  - **Pressure Above**: Pressure as an exit criteria if true or as a restriction if false.
+  - **Weight Above**: Shot weight as an exit PI criteria.
+- **Preview**: Preview the current profile.
 
-![PressureGraph](https://user-images.githubusercontent.com/109426580/204081504-90cd4961-5a0f-4911-b4db-00411437ff2f.png)
- - **Brew(Manual)**: Allows for manual pressure control at brew time.
+Example: if you set a flow target of 8 ml/s, you set a time of 20, pressure of 4.5, filled of 100 and weight above of 5g, and you tick pressure above off. The system will try to hit 8ml/s but only if the pressure is at or under 4.5bars. so if you grind finely, then that high of a flow rate can't be achieved so it'll do the best it can, maybe it will settle at 4ml/s. This will continue until either one of these things happen: you pumped more than a 100ml of water, you got 5g in the cup, or you hit 20s of time. (Thanks np_x!)
+
+# Brew -> Soak
+<img height="300" alt="Soak" src="manual/02_002_soak.png">
+
+Soak turns pump off completely allowing the built pressure during the fill phase to penetrate the puck naturally.
+  - **Soak**: Sets the length of the soaking (blooming) phase
+  - **Ramp**: Sets the length of the pressure ramping phase, PI to PP windup time.
+
+# Brew -> Pressure Profile
+<img height="300" alt="PP" src="manual/02_003_profile.png">
+
+**P-PROFILING**: Enables AUTO pressure profiling mode
+  - **Start**: Sets the desired starting point of the PP phase, can be High->Low or Low->High.
+  - **Finish**: Sets the desired finish point of the PP phase, same as above can be from High->Low or Low->High.
+  - **Hold**: Sets the length of the PP hold period, if it's desired to maintain the "Start" pressure for a period of time before the pressure drop/raise is applied this is where it's done.
+  - **Length/Slope**: Sets the length (aka curve speed) of the PP drop/raise behaviour, so one can change the pressure slow or fast if desired.
+
+# Brew -> Advanced
+<img height="300" alt="Advanced" src="manual/02_004_advanced.png">
+
+- **Start Bar**: 
+
+# Brew -> Preview
+<img height="300" alt="Preview" src="manual/02_005_preview.png">
+
+Sample profile preview.
+
+<img height="380" alt="Classic" src="manual/declining_pp_classic.png">
+
+Here is a classic pre-example of a declining pressure profile.
+
+# Brew -> Manual
+<img height="300" alt="Manual" src="manual/02_006_manual.png">
+
+Manual pressure control at brew time.
+  - **Status**
+    - *Temp &deg;C* : Target temperature.
+    - *Flow(g/s)* : Current flow rate in grams per second.
+    - *Pressure* : Current pressure in bars.
+    - *Weight(g)* : Current weight of shot.
+  - **Control**: Manual control slider.
+  - **Boiler Temp**: Current boiler temperature.
+  - **Flow**: Current flow rate in mililiter per second.
+
+# Brew -> More
+<img height="300" alt="More" src="manual/02_007_more.png">
+
+- **Home On Finish**: Automatically return to the **Home Screen** after 10 seconds have passed since the brew has been stopped.
+- **Brew Delta**: Boiler will increase temperature based on flow rate and be allowed to go over 100 C during the shot to more quickly transfer heat to the incoming cool water.
+- **Basket Prefill**: Fills the basket until pressure stabilises at greater than or equal 0.1 bar.
 
 # Clean -> Flush
 <img height="300" alt="Flush" src="manual/03_001_flush.png">
@@ -81,10 +132,14 @@ The descaling process takes around 45-50 minutes.
   2. Insert blind basket into porta-filter.
   3. Lock porta-filter into the grouphead.
   4. Place a reservoir under the steam wand and open the steam valve one full turn.
-  5. Wait about 30 minutes, checking for an empty water tank.
-  6. Once the descaling solution and water mix runs out fill the reservoir with clean fresh water. 
-  7. The pump should auto prime and continue the cleaning procedure.
-  8. A **FINISHED** message will popup when descaling finishes.
+  5. Turn on **Brew** switch.
+  6. Wait about 30 minutes, checking for an empty water tank.
+  7. Once the descaling solution and water mix runs out fill the reservoir with clean fresh water. 
+  8. The pump should auto prime and continue the cleaning procedure.
+  9. A **FINISHED** message will popup when descaling finishes.
+  10. Turn off **Brew** switch.
+
+  There is currently a bug with descale, after descale is finished go to settings and reset the brew temp by editing it and hitting save.
 
 # Settings -> Temp
 <img height="300" alt="Temp" src="manual/04_001_temp.png">
