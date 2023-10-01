@@ -30,7 +30,7 @@
 - **Stop On Weight**: Stop on espress shot weight. Affects both Hardware and Predictive Scales. 
 - **Coffee Dose**: Input weight of coffee grounds.
 - **Brew Ratio**: Input weight of coffee grounds compared to the output weight of the espresso shot.
-- **Shot Weight Override**: Manual override of the output weight.
+- **Shot Weight Override**: Manual override of the output weight, completely ignores **Coffee Dose** and **Brew Ratio**, set 0 to disable.
 
 # Home -> Scales
 <img height="300" alt="Scales" src="manual/01_002_scales.png">
@@ -138,7 +138,7 @@ The descaling process takes around 45-50 minutes.
   8. The pump should auto prime and continue the cleaning procedure.
   9. A **FINISHED** message will popup when descaling finishes.
   10. Turn off **Brew** switch.
-
+  <br/><br/>
   There is currently a bug with descale, after descale is finished go to settings and reset the brew temp by editing it and hitting save.
 
 # Settings -> Temp
