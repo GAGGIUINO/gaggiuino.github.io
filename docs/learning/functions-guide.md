@@ -138,8 +138,9 @@ The descaling process takes around 45-50 minutes.
   8. The pump should auto prime and continue the cleaning procedure.
   9. A **FINISHED** message will popup when descaling finishes.
   10. Turn off **Brew** switch.
-  <br/><br/>
+
   There is currently a bug with descale, after descale is finished go to settings and reset the brew temp by editing it and hitting save.
+
 
 # Settings -> Temp
 <img height="300" alt="Temp" src="manual/04_001_temp.png">
