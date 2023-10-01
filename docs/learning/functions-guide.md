@@ -127,7 +127,7 @@ Flushing can be used in one of two ways. Cleaning grounds out of the grouphead a
 # Clean -> Descale
 <img height="300" alt="Descale" src="manual/03_002_descale.png">
 
-The descaling process takes around 45-50 minutes.
+The descaling process takes around 45-50 minutes.  There is currently a bug with descale, after descale is finished go to settings and reset the brew temp by editing it and hitting save.
   1. Fill water tank to "MAX" with water and descale solution (possible 4-6tbsp citric acid per one tank of water).
   2. Insert blind basket into porta-filter.
   3. Lock porta-filter into the grouphead.
@@ -138,9 +138,6 @@ The descaling process takes around 45-50 minutes.
   8. The pump should auto prime and continue the cleaning procedure.
   9. A **FINISHED** message will popup when descaling finishes.
   10. Turn off **Brew** switch.
-
-  There is currently a bug with descale, after descale is finished go to settings and reset the brew temp by editing it and hitting save.
-
 
 # Settings -> Temp
 <img height="300" alt="Temp" src="manual/04_001_temp.png">
