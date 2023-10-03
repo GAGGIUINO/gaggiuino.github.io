@@ -236,7 +236,10 @@ Wait for the Nextion to show the "Update Successed! (sic)" message, turn off pow
 
 # Component test
 
-Connect the thermocouple to the terminals and power on the system once again. If all is successful you should:
+>[!Tip]
+>The system will not initialize if the ToFnLED board was enabled in the software but isn't plugged in
+
+Make sure the Blackpill, thermocouple, pressure transducer, screen, SSR, switch wires, and ToFnLED if defined are connected and power on the system once again. If all is successful you should:
 - see a build number during boot (good Blackpill-Nextion communication)
 - hear the relay click for boiler fill
 - see a temperature reading on the screen that changes when heat is applied to the thermocouple
