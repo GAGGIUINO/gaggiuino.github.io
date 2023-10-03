@@ -39,12 +39,17 @@ Hardware Scales Required
 - **Weight**: Current scale weight.
 - **Tare**: Tares the scales. Scales auto tare on brew.
 
+# Brew
+<img height="300" alt="Brew" src="manual/02_000_brew.png">
+
+- **Reset Weight**: Resets the weight, when on predictive scales press this when the first drips hit the cup.
+
 # Brew -> Preinfusion
 <img height="300" alt="PI" src="manual/02_001_pi.png">
 
 Preinfusion (PI) fills the basket until a threshold pressure or time is reached at specified ml/s. The idea of preinfusion is to saturate the puck of coffee, with the aim of increasing evenness of extraction and reducing channeling. It also helps when extracting lighter roasts, which are harder to extract.
 - **PI On / Off**: Turns PI on or off.
-- **Flow / Bar**: Determines if flow or pressure it the PI target.
+- **Flow / Bar**: Determines if flow or pressure is the PI target.
 - **Fill**: Target for the PI phase.
   - **Time**: Target length of the PI phase in seconds.
   - **Flow**: Target flow rate for the PI phase.
@@ -61,22 +66,43 @@ Example: if you set a flow target of 8 ml/s, you set a time of 20, pressure of 4
 <img height="300" alt="Soak" src="manual/02_002_soak.png">
 
 Soak turns pump off completely allowing the built pressure during the fill phase to penetrate the puck naturally.
-  - **Soak**: Sets the length of the soaking (blooming) phase
-  - **Ramp**: Sets the length of the pressure ramping phase, PI to PP windup time.
+- **Soat On / Off**: Turns soak on or off.
+- **Time**:  Sets the length of the soaking (blooming) phase
+- **Maintain Pressure**:
+- **Maintain Flow**:
+- **Weight Above**:
+- **Pressure Above**:
+- **Pressure Below**:
+- **Ramp/Slope**:
+- **Ramp/Slope Type**: See easing section.
 
 # Brew -> Pressure Profile
 <img height="300" alt="PP" src="manual/02_003_profile.png">
 
-**P-PROFILING**: Enables AUTO pressure profiling mode
-  - **Start**: Sets the desired starting point of the PP phase, can be High->Low or Low->High.
-  - **Finish**: Sets the desired finish point of the PP phase, same as above can be from High->Low or Low->High.
-  - **Hold**: Sets the length of the PP hold period, if it's desired to maintain the "Start" pressure for a period of time before the pressure drop/raise is applied this is where it's done.
-  - **Length/Slope**: Sets the length (aka curve speed) of the PP drop/raise behaviour, so one can change the pressure slow or fast if desired.
+- **Profile On / Off**: Turns profiling on or off.
+- **Flow / Bar**: Determines if flow or pressure is the PP target.
+- **Start**: Sets the desired starting point of the PP phase, can be High->Low or Low->High.
+- **End**: Sets the desired finish point of the PP phase, same as above can be from High->Low or Low->High.
+- **Ramp/Slope**: Sets the length (aka curve speed) of the PP drop/raise behaviour, so one can change the pressure slow or fast if desired.
+- **Ramp/Slope Type**: See easing section.
+- **Pressure Limit**:
+- **Transition**: Advanced
+- **Preview**: Preview the current profile.
+
 
 # Brew -> Advanced
 <img height="300" alt="Advanced" src="manual/02_004_advanced.png">
 
-- **Start Bar**: 
+- **Profile On / Off**: Turns profiling on or off.
+- **Flow / Bar**: Determines if flow or pressure is the PP target.
+- **Start**: Sets the desired starting point of the PP phase, can be High->Low or Low->High.
+- **End**: Sets the desired finish point of the PP phase, same as above can be from High->Low or Low->High.
+- **Hold**: Sets the length of the PP hold period, if it's desired to maintain the "Start" pressure for a period of time before the pressure drop/raise is applied this is where it's done.
+- **Ramp/Slope**: Sets the length (aka curve speed) of the PP drop/raise behaviour, so one can change the pressure slow or fast if desired.
+- **Ramp/Slope Type**: See easing section.
+- **Flow Limit**:
+- **Hold Limit**:
+- **Preview**: Preview the current profile.
 
 # Brew -> Preview
 <img height="300" alt="Preview" src="manual/02_005_preview.png">
@@ -107,6 +133,11 @@ Manual pressure control at brew time.
 - **Brew Delta**: Boiler will increase temperature based on flow rate and be allowed to go over 100 C during the shot to more quickly transfer heat to the incoming cool water.
 - **Basket Prefill**: Fills the basket until pressure stabilises at greater than or equal 0.1 bar.
 
+# Steam
+<img height="300" alt="Steam" src="manual/02_008_steam.png">
+
+Ready to steam. Open wand valve to release pressure if temperature stops building.
+
 # Clean -> Flush
 <img height="300" alt="Flush" src="manual/03_001_flush.png">
 
@@ -127,7 +158,7 @@ Flushing can be used in one of two ways. Cleaning grounds out of the grouphead a
 # Clean -> Descale
 <img height="300" alt="Descale" src="manual/03_002_descale.png">
 
-The descaling process takes around 45-50 minutes.  There is currently a bug with descale, after descale is finished go to settings and reset the brew temp by editing it and hitting save.
+The descaling process takes around 45-50 minutes.
   1. Fill water tank to "MAX" with water and descale solution (possible 4-6tbsp citric acid per one tank of water).
   2. Insert blind basket into porta-filter.
   3. Lock porta-filter into the grouphead.
@@ -138,6 +169,7 @@ The descaling process takes around 45-50 minutes.  There is currently a bug with
   8. The pump should auto prime and continue the cleaning procedure.
   9. A **FINISHED** message will popup when descaling finishes.
   10. Turn off **Brew** switch.
+  11. Retrun to **Home Screen** and select any profile to re-enable brew mode.
 
 # Settings -> Temp
 <img height="300" alt="Temp" src="manual/04_001_temp.png">
@@ -168,3 +200,10 @@ ToFnLED Required.
 - **LED On/Off**: Turn water tank led on or off. 
 - **LED Color**: Red, Green, Blue, color control
 - **Disco Mode**: Brew in style.
+
+# Easing
+- *Ease-In* :
+- *Ease-Out* :
+- *Ease-In-Out* :
+- *Linear* :
+- *Instant* :
