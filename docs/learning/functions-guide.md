@@ -202,8 +202,17 @@ ToFnLED Required.
 - **Disco Mode**: Brew in style.
 
 # Easing
-- *Ease-In* :
-- *Ease-Out* :
-- *Ease-In-Out* :
-- *Linear* :
-- *Instant* :
+- *Ease-In* : Slow start to rapid end.
+<img alt="In" src="manual/ease_in.png">
+
+- *Ease-Out* : Rapid start to slow end.
+<img  alt="Out" src="manual/ease_out.png">
+
+- *Ease-In-Out* : Slow start to slow end.
+<img  alt="In Out" src="manual/ease_in_out.png">
+
+- *Linear* : Consistnat rate of change.
+<img  alt="Linear" src="manual/ease_linear.png">
+
+- *Instant* : Instant change.
+<img  alt="Instant" src="manual/ease_instant.png">
