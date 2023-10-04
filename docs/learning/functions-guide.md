@@ -1,7 +1,7 @@
 > [!NOTE]
 > This page is a work in progress.
 # Startup
-<img height="300" alt="Startup" src="manual/00_000_startup.png">
+<img alt="Startup" src="manual/00_000_startup.png">
 
 - **Build Number**: 35b2d4d is the last Nextion Release, missing number indicates no communitaion between the Nextion and the microcontroller.
 
