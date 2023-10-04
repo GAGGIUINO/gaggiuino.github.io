@@ -90,6 +90,9 @@ build_flags =
     -DTOF_VL53L0X
 ```
 
+> [!NOTE] Sometimes the ToF sensor can be confused by reflections from the espresso machine housing, especially as the water level gets lower. Adding a matte piece of tape below the sensor can improve accuracy. Reflectivity matters more than color. 
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/265826223-1f28003f-5d1a-4046-ab25-c19f5b2376f6.png">
+
 # Tubing Consolidation (Optional)
 
 The intake and OPV tubes can be combined above the water tank using a T fitting. This reduces water agitation in the tank during pumping and hides the OPV tube.

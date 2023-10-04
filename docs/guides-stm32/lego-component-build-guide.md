@@ -1,7 +1,7 @@
-This is a quick guide on how to assemble the Gaggiuino component build into the 3D printed housing.
+> [!Warning|style:callout]
+> Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
 
-> [!Note]
-> This guide has been updated to follow a 3PLN + SSR HV connection format to synchronize the component and PCB integration options.
+This is a guide on how to assemble the Gaggiuino component build into the 3D printed housing.
 
 ## General Install Info
 
@@ -236,7 +236,10 @@ Wait for the Nextion to show the "Update Successed! (sic)" message, turn off pow
 
 # Component test
 
-Connect the thermocouple to the terminals and power on the system once again. If all is successful you should:
+>[!Tip]
+>The system will not initialize if the ToFnLED board was enabled in the software but isn't plugged in
+
+Make sure the Blackpill, thermocouple, pressure transducer, screen, SSR, switch wires, and ToFnLED if defined are connected and power on the system once again. If all is successful you should:
 - see a build number during boot (good Blackpill-Nextion communication)
 - hear the relay click for boiler fill
 - see a temperature reading on the screen that changes when heat is applied to the thermocouple

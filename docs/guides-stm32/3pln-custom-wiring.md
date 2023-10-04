@@ -40,3 +40,96 @@
 * [3PLN 120v, GC-specific](https://user-images.githubusercontent.com/53577819/220784232-1b254cd4-d3d7-4fe9-97e5-283fa1fb2659.png)
 * [3PLN 120v](https://user-images.githubusercontent.com/53577819/220784237-e2b841e0-4754-4657-98bd-6adb96255aa1.png)
 * [3PLN 240v](https://user-images.githubusercontent.com/53577819/220784234-0b370f5b-fd5e-4d0d-9b9d-109ff25d2cbf.png)
+
+# Hardware Install Notes
+
+## Thermocouple
+
+Unscrew the brew thermostat, transfer or add thermal paste, then ***Gently** screw in the thermocouple finger-tight (**do not over-tighten**). This can be done in-place, but it's easier to remove the boiler (4 SHCS up from below the sheet metal), steam knob, and steam wand so that the boiler can be tipped up a bit for easier access. You'll want to have the thermocouple wire free to rotate during the install. 
+
+>[!Tip]
+>Depending on your machine type and location of your Gaggiuino control system it may be easier to run the thermocouple wire to the front of the machine and around the boiler to the back instead of going back behind the pump area. Pick the path with the fewest AC wires in the area.
+
+>[!Note]
+>There should already be high-temp thermal paste in place. If there is not, or if the paste is dried out, replace with a paste that has at least a 180°C working temperature. 
+><details>
+><summary><b>Thermal Paste Options</b> <i>(Click to expand)</i></summary>
+>
+>* Thermal Grizzly Kryonaut (350°C max)  
+>* Noctua NT-H2 (200°C max)  
+>* SYY-157 (200°C max)  
+>* GELID GC-Extreme (180°C max)
+></details>
+
+## SSR
+
+Mount the SSR to the back wall of the machine using an M4 (or 8-32) screw, washer, and nut. Make sure the SSR has space above it for the funnel piece and its screw while not touching the pump or pump housing.
+
+## Pressure Transducer
+
+The pressure transducer comes with a base O-ring, however, the threaded length of the fittings vary and many aren't long enough to seal against the base. Insert the small O-ring into the fitting, adjust flush, then screw on the transducer until it seals on an O-ring.
+
+![Transducer and fittings](https://user-images.githubusercontent.com/117388662/239452187-429dafd7-6844-4256-ae76-b9982dcce86c.png ':size=250')
+![Transducer and fittings](https://user-images.githubusercontent.com/117388662/246572048-75f314cb-6585-4351-8c5e-085362841301.png ':size=250')
+
+Cut the tubing in between the pump and boiler, nearer to the boiler but high enough the T is mostly vertical, not horizontal. Attach the appropriate T fitting for your machine. 
+
+> [!Tip]
+> Make sure the tubing is fully engaged on the fittings. It can be helpful to use a grip aid such as silicone tape or a rubber glove to grip the tubing and push it in. For barbed fittings you may even need to use some water-based lubricant to get it all the way on.
+
+Cut a 200-250 mm length of your tubing from the BOM and attach it to the pressure transducer fitting. You'll need to fill that length of tubing with water so there are no air bubbles. There are 2 options:
+
+<details>
+<summary><b>Hand fill</b> <i>(Click to expand)</i></summary>
+
+Surface tension can make hand filling the tube difficult if you don't use a simple trick: insert a small wire down the center of the tubing and inject water with a syringe. The wire allows the water to flow down and the air to vent up because it doesn't let surface tension seal the tube.
+
+![Filling the transducer tubing](https://user-images.githubusercontent.com/117388662/239455051-c8fe0d0a-270e-4685-9478-d751eb746d49.png ':size=250')
+</details>
+
+<details>
+<summary><b>Machine fill</b> <i>(Click to expand)</i></summary>
+
+Plug the tube into the T fitting. After the screen has been connected and the remainder of the install completed, go to the Brew menu, select the Manual tab, set flow to 1 ml/s and run for ~2 minutes (with open group head) to gently fill the line.
+
+![Filling the transducer tubing](https://user-images.githubusercontent.com/117388662/239618595-844609d1-7b59-456e-afba-2d2b1bf73374.png ':size=250')
+
+</details>
+
+Arrange the connected pressure transducer so that it is at the base of the machine, lower than the T fitting. Ignore wiring in the images as they're from a machine following the stock wiring integration. 
+
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
+![pressure transducer placement](https://user-images.githubusercontent.com/117388662/239457706-7ee5d101-d209-41b4-a3d3-ce159e98032f.png ':size=500')
+<!-- tab:Gaggia Classic Pro -->
+![pressure transducer placement](https://user-images.githubusercontent.com/117388662/246573952-ca092066-d107-46e6-85f1-e2a7b19865e0.png ':size=500')
+<!-- tabs:end -->
+
+> [!Tip]
+> While some sensors/setups seem to have no issues with the pump vibration, others are affected by vibration and even the sensor coming in contact with the housing. In those cases it can be beneficial to wrap the sensor in foam.  
+![Foam-wrapped sensor](https://user-images.githubusercontent.com/117388662/239457402-b58dfe55-6572-45b7-8960-2a4d1f9d5753.png ':size=250')
+
+## Internal Finishing Touches
+
+Remove the pins from the screen connector, add a length of heat shrink tubing around the cable bundle so the sharp vent doesn't cut through the soft silicone wire jacket (don't shrink it), and pass the screen wires and ST-Link wires through the back vents. Mount the ST-Link with some double-sided tape.
+
+![Wire pass-through](https://user-images.githubusercontent.com/117388662/239461641-e4f1d5f0-e83c-458c-94ca-61b25a6c7fa0.png ':size=250')
+
+Make sure HV AC wiring and LV DC wiring/sensors are separated. Check that nothing (other than silicone-jacketed wires rated to 200C) can touch the boiler or steam wand. Zip-tie the wire bundle as needed. 
+
+When you're happy with everything, put the cover back on (don't forget to connect the ground wire).
+
+## Screen
+
+There should be extra wire length so the screen can remain connected while the cover is removed. If that is not the case, solder wire extensions. Snake the screen wires through the housing components and replace the pins in the connector. Make sure the wire order matches what you successfully tested in the bench test. I also like to put the nuts in the screen housing cover, use screws to draw them tight, and put a drop of super-glue on the nuts (**not the screws**) to hold them to the housing. When it's dry remove the screws.
+
+![Screen wiring](https://user-images.githubusercontent.com/117388662/239463397-25c3e82c-07e3-4b10-b056-59cbf8d36efc.png ':size=500')
+
+Put the screen housing together, push the spare screen wire (and heat shrink tubing) back through the vent hole and you're ready for espresso! 
+
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
+![Finished!](https://user-images.githubusercontent.com/117388662/239463949-0e90b52f-a5fa-4aed-8ea7-9047154cc213.png ':size=500')
+<!-- tab:Gaggia Classic Pro -->
+![Finished!](https://user-images.githubusercontent.com/117388662/246686394-b0ab3256-57cb-4869-b2dd-51c7778dfa68.png ':size=500')
+<!-- tabs:end -->

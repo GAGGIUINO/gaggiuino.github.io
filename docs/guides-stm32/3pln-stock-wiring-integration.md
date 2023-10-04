@@ -151,7 +151,7 @@ The 3-way solenoid valve, Pump, and Neutral connections are all integrated into 
 
 ## SSR
 
-Mount the SSR to the back wall of the machine using an M4 screw, washer, and nut. Remove the wires from the steam thermostat (Sa, Sb) and connect to the AC ports on the SSR (order doesn't matter). To ensure a good connection, loop the bare wire around the clamping screw under the clamping plate, or crimp wire to forked spade connectors and clamp those. Remove disconnected thermostat if desired.
+Mount the SSR to the back wall of the machine using an M4 (or 8-32) screw, washer, and nut. Remove the wires from the steam thermostat (Sa, Sb) and connect to the AC ports on the SSR (order doesn't matter). To ensure a good connection, loop the bare wire around the clamping screw under the clamping plate, or crimp wire to forked spade connectors and clamp those. Remove disconnected thermostat if desired.
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
@@ -238,7 +238,7 @@ Remove the pins from the screen connector, add a length of heat shrink tubing ar
 
 ![Wire pass-through](https://user-images.githubusercontent.com/117388662/239461641-e4f1d5f0-e83c-458c-94ca-61b25a6c7fa0.png ':size=250')
 
-Make sure HV AC wiring and LV DC wiring/sensors are separated. Zip-tie wire bundle, ensuring disconnected wires and connectors are constrained so they cannot make accidental contact. Here are examples with a component build enclosure:
+Make sure HV AC wiring and LV DC wiring/sensors are separated. Check that nothing (other than silicone-jacketed wires rated to 200C) can touch the boiler or steam wand. Zip-tie the wire bundle as needed, ensuring disconnected wires and connectors are constrained so they cannot make accidental contact. Here are examples with a component build enclosure:
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
