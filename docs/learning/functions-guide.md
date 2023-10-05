@@ -2,9 +2,9 @@
 > This page is a work in progress.
 
 Special Thanks to:
-wundersnooch
-np_x
-EuphoricCatastrophe
+- wundersnooch
+- np_x
+- EuphoricCatastrophe
 
 # Startup
 <img alt="Startup" src="manual/00_000_startup.png">
@@ -61,25 +61,25 @@ To access the **Profile Rename** screen long press on a profile from the **Home*
 # Brew -> Pre-Infusion
 <img alt="PI" src="manual/02_001_pi.png">
 
-Pre-infusion (PI) fills the basket until a threshold is reached. The idea of pre-infusion is to saturate the puck of coffee, with the aim of increasing evenness of extraction and reducing channeling. It also helps when extracting lighter roasts, which are harder to extract.
-- **PI On / Off**: Turns PI on or off.
+Pre-infusion phase fills the basket until a threshold is reached. The idea of pre-infusion is to saturate the puck of coffee, with the aim of increasing evenness of extraction and reducing channeling. It also helps when extracting lighter roasts, which are harder to extract.
+- **PI On / Off**: Turns pre-infusion on or off.
 - **Flow / Bar**: Determines if flow or pressure is the PI target.
-- **Fill**: Target for the PI phase.
-  - **Time**: Target length of the PI phase in seconds.
-  - **Flow**: Target flow rate for the PI phase.
-  - **Pressure**: Target pressure for the PI phase.
+- **Fill**: Target for the pre-infusion phase.
+  - **Time**: Target length of the pre-infusion phase in seconds.
+  - **Flow**: Target flow rate for the pre-infusion phase.
+  - **Pressure**: Target pressure for the pre-infusion phase.
 - **Switch On**: When one of the following trigger, move on to the **Soak** phase.
   - **Filled**: Exit when amount water pumped is set value in mL.
   - **Pressure Above**: Pressure as an exit criteria if true or as a restriction if false.
   - **Weight Above**: Exit when weight is above set value in grams.
 - **Preview**: Preview the current profile.
 
-Example: if you set a flow target of 8 ml/s, you set a time of 20, pressure of 4.5, filled of 100 and weight above of 5g, and you tick pressure above off. The system will try to hit 8ml/s but only if the pressure is at or under 4.5bars. so if you grind finely, then that high of a flow rate can't be achieved so it'll do the best it can, maybe it will settle at 4ml/s. This will continue until either one of these things happen: you pumped more than a 100ml of water, you got 5g in the cup, or you hit 20s of time. (Thanks np_x!)
+Example: if you set a flow target of 8 ml/s, you set a time of 20, pressure of 4.5, filled of 100 and weight above of 5g, and you tick pressure above off. The system will try to hit 8ml/s but only if the pressure is at or under 4.5bars. so if you grind finely, then that high of a flow rate can't be achieved so it'll do the best it can, maybe it will settle at 4ml/s. This will continue until either one of these things happen: you pumped more than a 100ml of water, you got 5g in the cup, or you hit 20s of time.
 
 # Brew -> Soak
 <img alt="Soak" src="manual/02_002_soak.png">
 
-Soak turns pump off completely allowing the built pressure during the pre-infusion phase to penetrate the puck naturally. This helps because it theoretically allows some of the trapped C02 from roasting coffee to escape, allowing easier extractions. If you have a darker roast, you might or might not want to do this phase, since darker roasts are easier to extract.
+Soak phase turns pump off completely allowing the built pressure during the pre-infusion phase to penetrate the puck naturally. This helps because it theoretically allows some of the trapped C02 from roasting coffee to escape, allowing easier extractions. If you have a darker roast, you might or might not want to do this phase, since darker roasts are easier to extract.
 - **Soak On / Off**: Turns soak on or off.
 - **Target**: Target for the Soak phase.  If you keep only one above 0, then the system will aim to maintain that target during the soak phase. If more than one are above zero, the system interprets that as a pressure target with a flow restriction. if you say don't pump any water in (i.e. both are 0) then pressure will gradually fall as the puck resistance falls, resulting in a decline in pressure and/or increase in weight.
   - **Time**: Sets the length of the soaking (blooming) phase.
@@ -89,33 +89,35 @@ Soak turns pump off completely allowing the built pressure during the pre-infusi
   - **Weight Above**: Exit when weight is above set value in grams.
   - **Pressure Above**: Exit when pressure is above set value in bars.
   - **Pressure Below**: Exit when Pressure is below set value in bars.
-- **Ramp/Slope**: Number of seconds it should take to get to the resulting target.
-- **Ramp/Slope Type**: Transition curve type, which corresponds to how the machine will get to its target. See easing section.
+- **Slope Time**: Number of seconds it should take to get to the target.
+- **Slope Type**: Curve type, which corresponds to how the machine will get to its target. See **Easing** section.
 
-# Brew -> Pressure Profile
+# Brew -> Profiling
 <img alt="PP" src="manual/02_003_profile.png">
 
+Profiling phase.
 - **Profile On / Off**: Turns profiling on or off.
-- **Flow / Bar**: Determines if flow or pressure is the PP target.
-- **Start**: Sets the desired starting point of the PP phase, can be High->Low or Low->High.
-- **End**: Sets the desired finish point of the PP phase, same as above can be from High->Low or Low->High.
-- **Ramp/Slope**: Sets the length (aka curve speed) of the PP drop/raise behavior, so one can change the pressure slow or fast if desired.
-- **Ramp/Slope Type**: See easing section.
-- **Pressure Limit**:
-- **Transition**: Advanced
+- **Flow / Bar**: Determines if flow or pressure is the profile target.
+- **Start**: Sets the desired starting point of the profile phase, can be high to low or low to high. In bars or mL/s depending on **Flow/Bar** switch.
+- **End**: Sets the desired finish point of the profile phase, same as above can be high to low or low to high. In bars or mL/s depending on **Flow/Bar** switch.
+- **Slope Time**: Number of seconds it should take to get to the target.
+- **Slope Type**: Curve type, which corresponds to how the machine will get to its target. See **Easing** section.
+- **Pressure Limit**: Machine will attempt to maintain pressure at set value in bars.
+- **Transition**: See **Advanced** section.
 - **Preview**: Preview the current profile.
 
 
 # Brew -> Advanced
 <img alt="Advanced" src="manual/02_004_advanced.png">
 
-- **Profile On / Off**: Turns profiling on or off.
-- **Flow / Bar**: Determines if flow or pressure is the PP target.
-- **Start**: Sets the desired starting point of the PP phase, can be High->Low or Low->High.
-- **End**: Sets the desired finish point of the PP phase, same as above can be from High->Low or Low->High.
-- **Hold**: Sets the length of the PP hold period, if it's desired to maintain the "Start" pressure for a period of time before the pressure drop/raise is applied this is where it's done.
-- **Ramp/Slope**: Sets the length (aka curve speed) of the PP drop/raise behaviour, so one can change the pressure slow or fast if desired.
-- **Ramp/Slope Type**: See easing section.
+Transition phase in between soak and profiling. Use this if you want to hold a target for a specified amount before profiling.
+- **Profile On / Off**: Turns transition on or off.
+- **Flow / Bar**: Determines if flow or pressure is the transition target.
+- **Start**: Sets the desired starting point of the transition phase, can be high to low or low to high. In bars or mL/s depending on **Flow/Bar** switch.
+- **End**: Sets the desired finish point of the transition phase, same as above can be high to low or low to high. In bars or mL/s depending on **Flow/Bar** switch.
+- **Hold**: Sets the length of the transition hold period in seconds, if it's desired to maintain the "Start" pressure for a period of time before the pressure drop/raise is applied this is where it's done.
+- **Slope Time**: Number of seconds it should take to get to the target.
+- **Slope Type**: Curve type, which corresponds to how the machine will get to its target. See **Easing** section.
 - **Flow Limit**:
 - **Hold Limit**:
 - **Preview**: Preview the current profile.
@@ -132,40 +134,40 @@ Here is a classic pre-example of a declining pressure profile.
 # Brew -> Manual
 <img alt="Manual" src="manual/02_006_manual.png">
 
-Manual pressure control at brew time.
+Manual flow control.
   - **Status**
     - *Temp &deg;C* : Target temperature.
     - *Flow(g/s)* : Current flow rate in grams per second.
     - *Pressure* : Current pressure in bars.
     - *Weight(g)* : Current weight of shot.
   - **Control**: Manual control slider.
-  - **Boiler Temp**: Current boiler temperature.
-  - **Flow**: Current flow rate in mililiter per second.
+  - **Water Temp**: Current boiler temperature.
+  - **Flow**: Target flow rate in mL per second.
 
 # Brew -> More
 <img alt="More" src="manual/02_007_more.png">
 
 - **Home On Finish**: Automatically return to the **Home Screen** after 10 seconds have passed since the brew has been stopped.
 - **Brew Delta**: Boiler will increase temperature based on flow rate and be allowed to go over 100 C during the shot to more quickly transfer heat to the incoming cool water.
-- **Basket Prefill**: Fills the basket until pressure stabilises at greater than or equal 0.1 bar.
+- **Basket Prefill**: Fills the basket until pressure stabilizes at greater than or equal 0.1 bar.
 
 # Steam
 <img alt="Steam" src="manual/02_008_steam.png">
 
-Ready to steam. Open wand valve to release pressure if temperature sto
+Ready to steam. Open steam wand valve to release pressure if temperature stops increasing.
 # Clean -> Flush
 <img alt="Flush" src="manual/03_001_flush.png">
 
-Flushing can be used in one of two ways. Cleaning grounds out of the grouphead after a shot and back flushing through the three wave valve. **Never flush between back to back shots.**
+Flushing can be used in one of two ways. Cleaning grounds out of the group head after a shot and back flushing through the three wave valve.
 - After shot flush
-  1. Remove porta-filter and puck.
+  1. Remove portafilter and puck.
   2. Turn on **Brew** switch.
   3. Wait a couple seconds.
   4. Turn off **Brew** switch.
 - Back flushing
-  1. Insert blind basket into porta-filter.
+  1. Insert blind basket into portafilter.
   2. *OPTIONAL* Remove shower screen and add Cafiza to blind basket.
-  3. Lock porta-filter into the grouphead.
+  3. Lock portafilter into the group head.
   4. Turn on **Brew** switch.
   5. Let machine cycle several times
   6. Turn off **Brew** switch.
@@ -175,8 +177,8 @@ Flushing can be used in one of two ways. Cleaning grounds out of the grouphead a
 
 The descaling process takes around 45-50 minutes.
   1. Fill water tank to "MAX" with water and descale solution (possible 4-6tbsp citric acid per one tank of water).
-  2. Insert blind basket into porta-filter.
-  3. Lock porta-filter into the grouphead.
+  2. Insert blind basket into portafilter.
+  3. Lock portafilter into the group head.
   4. Place a reservoir under the steam wand and open the steam valve one full turn.
   5. Turn on **Brew** switch.
   6. Wait about 30 minutes, checking for an empty water tank.
@@ -184,7 +186,7 @@ The descaling process takes around 45-50 minutes.
   8. The pump should auto prime and continue the cleaning procedure.
   9. A **FINISHED** message will popup when descaling finishes.
   10. Turn off **Brew** switch.
-  11. Retrun to **Home** Screen and select any profile to re-enable brew mode.
+  11. Return to **Home** Screen and select any profile to re-enable brew mode.
 
 # Settings -> Temp
 <img alt="Temp" src="manual/04_001_temp.png">
@@ -192,7 +194,7 @@ The descaling process takes around 45-50 minutes.
 - **Water Target Temp**: Water target temperature, set per profile.
 - **Steam Target Temp**: Steam target temperature, set system wide.
 - **HPWR**: Relay max pulse width.
-- **M. DIV**: Main cycle divider (aka non brew heating behaviour), used in conjunction with HPWR.
+- **M. DIV**: Main cycle divider (aka non brew heating behavior), used in conjunction with HPWR.
 - **B. DIV**: Brew cycle divider.
 - **Offset**: Offset value to calculate the real water temperature.
 
@@ -200,7 +202,7 @@ The descaling process takes around 45-50 minutes.
 <img alt="System" src="manual/04_002_system.png">
 
 - **Load Cells**: Hardware scales load cell values.
-- **Pump Zero**: Amount of expeced water pumped per cycle in mL.
+- **Pump Zero**: Amount of expected water pumped per cycle in mL.
 - **Warm Up**: Flashes **Warming Up** message for 15 minutes on machine power on.
 - **LCD Sleep**: LCD sleep timer in minutes, set 0 to disable.
 - **LCD Brightness**: 0 - 100%.
@@ -226,7 +228,7 @@ ToFnLED Required.
 - *Ease-In-Out* : Slow start to slow end.
 <img  alt="In Out" src="manual/ease_in_out.png">
 
-- *Linear* : Consistnat rate of change.
+- *Linear* : Consistent rate of change.
 <img  alt="Linear" src="manual/ease_linear.png">
 
 - *Instant* : Instant change.
