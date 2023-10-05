@@ -22,13 +22,13 @@ EuphoricCatastrophe
   - *Filter 2.1* : Used to make filter-style coffee with nothing but your espresso machine, some paper filters and a puck screen. Use a 58mm paper filter (or cut one to size) in the bottom of your portafilter basket, rise with hot water and fill with ground coffee (coarser than typical espresso but much finer than you would usually use for filter). WDT and optional(!) tamp. Place the metal puck screen on top and pull the shot to a 5:1 ratio. Dilute shot with 225-250g of water.
   - *Blooming Espresso* : Designed to maximize extraction quality and quantity with a flow-controlled pre-infusion and a long "blooming" phase, which allows the puck to become fully saturated before extraction. Best for light roasts, complex beans to draw out flavours the way a pour over would, while preventing sourness and sharpness.
 - **Target Temp**: Target temperature of the boiler. Normally set to brew temp ( ~ 93&deg;C ), but will display steam temp when switched on ( ~ 155&deg;C ). This is set under -> Settings -> Temp.
-- **Boiler Temp**: Current boiler temperature.
+- **Water Temp**: Current boiler temperature.
 - **Pressure**: Current system pressure in bars.
 - **Dose**: Adjust dose. Affects both Hardware and Predictive Scales.
 - **Scales**: Hardware Scales required. View and tare scales. 
 - **Tanks Water Level**: ToFnLED required. 0 to 100%.
-- **Timer**: Machine uptime, counts from 0. 10 to 15 minute warm-up is recommended.
-- **Dropping Beats**: Pressure release through the group head, happens every minute if over 0.6 bar.
+- **System Uptime**: Machine uptime, counts from 0. 10 to 15 minute warm-up is recommended.
+- **Dropping Beats**: Pressure release through the group head, system pressure and group water equalizing measure triggers when pressure is above 0.7bar.
 
 # Home -> Brew Ratio
 <img alt="Dose" src="manual/01_001_dose.png">
