@@ -21,10 +21,10 @@ Special Thanks to:
   - *Adaptive* : Designed to adapt to a given grind size by making the extraction phase decide the steady state flow relative to flow at peak pressure, as well as a pressurized bloom stage to maintain puck integrity resulting in a more consistent puck resistance. This allows it to be relatively forgiving to a range of grind settings. Best for light roasts, if using with darker roasts consider reducing temps and a shorter bloom. Use with a ratio between 1:2 and 1:25 with total shot times ranging from 25 to 45 seconds.
   - *Filter 2.1* : Used to make filter-style coffee with nothing but your espresso machine, some paper filters and a puck screen. Use a 58mm paper filter (or cut one to size) in the bottom of your portafilter basket, rise with hot water and fill with ground coffee (coarser than typical espresso but much finer than you would usually use for filter). WDT and optional(!) tamp. Place the metal puck screen on top and pull the shot to a 5:1 ratio. Dilute shot with 225-250g of water.
   - *Blooming Espresso* : Designed to maximize extraction quality and quantity with a flow-controlled pre-infusion and a long "blooming" phase, which allows the puck to become fully saturated before extraction. Best for light roasts, complex beans to draw out flavours the way a pour over would, while preventing sourness and sharpness.
-- **Target Temp**: Target temperature of the boiler. Normally set to brew temp ( ~ 93&deg;C ), but will display steam temp when switched on ( ~ 155&deg;C ). This is set under -> Settings -> Temp.
-- **Water Temp**: Current boiler temperature.
+- **Target Temp**: Target water temperature. Normally set to brew temp ( ~ 93&deg;C ), but will display steam temp when switched on ( ~ 155&deg;C ). This is set under -> Settings -> Temp.
+- **Water Temp**: Current water temperature.
 - **Pressure**: Current system pressure in bars.
-- **Dose**: Adjust dose. Affects both Hardware and Predictive Scales.
+- **Brew Ratio**: Adjust dose. Affects both Hardware and Predictive Scales.
 - **Scales**: Hardware Scales required. View and tare scales. 
 - **Tanks Water Level**: ToFnLED required. 0 to 100%.
 - **System Uptime**: Machine uptime, counts from 0. 10 to 15 minute warm-up is recommended.
@@ -50,7 +50,7 @@ Hardware Scales Required
 
 To access the **Profile Rename** screen long press on a profile from the **Home** screen. 
 - **Profile**: Change a profile’s name.
-- **Load Default**: Reload the settings and values for that profile slot back to default.
+- **Load Default**: Reload the settings and values for that profile slot back to default. Returns to **Home** screen without setting profile as default.
 - **Okay**: Renames the selected profile and sets it to the default profile that will load at start-up. Renaming is not required to set to default.
 
 # Brew
@@ -102,7 +102,7 @@ Profiling phase.
 - **End**: Sets the desired finish point of the profile phase, same as above can be high to low or low to high. In bars or mL/s depending on **Flow/Bar** switch.
 - **Slope Time**: Number of seconds it should take to get to the target.
 - **Slope Type**: Curve type, which corresponds to how the machine will get to its target. See **Easing** section.
-- **Pressure Limit**: Machine will attempt to maintain pressure at set value in bars.
+- **Limit**: Machine will attempt to maintain set value. In bars or mL/s depending on **Flow/Bar** switch.
 - **Transition**: See **Advanced** section.
 - **Preview**: Preview the current profile.
 
@@ -118,8 +118,8 @@ Transition phase in between soak and profiling. Use this if you want to hold a t
 - **Hold**: Sets the length of the transition hold period in seconds, if it's desired to maintain the "Start" pressure for a period of time before the pressure drop/raise is applied this is where it's done.
 - **Slope Time**: Number of seconds it should take to get to the target.
 - **Slope Type**: Curve type, which corresponds to how the machine will get to its target. See **Easing** section.
-- **Flow Limit**:
-- **Hold Limit**:
+- **Limit**: In bars or mL/s depending on **Flow/Bar** switch.
+- **Hold Limit**: In bars or mL/s depending on **Flow/Bar** switch.
 - **Preview**: Preview the current profile.
 
 # Brew -> Preview
@@ -141,7 +141,7 @@ Manual flow control.
     - *Pressure* : Current pressure in bars.
     - *Weight(g)* : Current weight of shot.
   - **Control**: Manual control slider.
-  - **Water Temp**: Current boiler temperature.
+  - **Water Temp**: Current water temperature.
   - **Flow**: Target flow rate in mL per second.
 
 # Brew -> More
