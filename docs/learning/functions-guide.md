@@ -28,7 +28,7 @@ Special Thanks to:
 - **Scales**: Hardware Scales required. View and tare scales. 
 - **Tanks Water Level**: ToFnLED required. 0 to 100%.
 - **System Uptime**: Machine uptime, counts from 0. 10 to 15 minute warm-up is recommended.
-- **Dropping Beats**: Pressure release through the group head, system pressure and group water equalizing measure triggers when pressure is above 0.7bar.
+- **Dropping Beats**: Automatic pressure release through the group head, it is a system pressure and group water equalizing measure that triggers when pressure is above 0.7bar. This is done to improve shot consistency.
 
 # Home -> Brew Ratio
 <img alt="Dose" src="manual/01_001_dose.png">
