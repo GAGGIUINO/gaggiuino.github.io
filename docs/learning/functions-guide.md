@@ -15,7 +15,7 @@ Special Thanks to:
 <img alt="Home" src="manual/01_000_home.png">
 
 - **Menu**: The main menu.
-- **Profiles**: Tap to select, hold to rename. Last renamed profile is set as default profile.
+- **Profiles**: Tap to select, hold to enter **Custom Profile Override**. Last renamed profile is set as default profile.
   - *IUIUIU Classic* : A lower pressure profile with average length pre-infusion and soak stages. A good all-rounder profile that should suit most beans with some tweaking.
   - *Londonium* : Simulates the extraction style and profile of a Londonium R lever machine. Described as pulling shots that are smooth with great body and an appealing syrupiness. Similar to the previous default profile, for those that are missing it. A flexible style suited for all bean and roast types, with usual consideration given to properly dialing in.
   - *Adaptive* : Designed to adapt to a given grind size by making the extraction phase decide the steady state flow relative to flow at peak pressure, as well as a pressurized bloom stage to maintain puck integrity resulting in a more consistent puck resistance. This allows it to be relatively forgiving to a range of grind settings. Best for light roasts, if using with darker roasts consider reducing temps and a shorter bloom. Use with a ratio between 1:2 and 1:25 with total shot times ranging from 25 to 45 seconds.
@@ -45,12 +45,12 @@ Hardware Scales Required
 - **Weight**: Current scale weight.
 - **Tare**: Tares the scales. Scales auto tare on brew.
 
-# Home -> Profile Rename
+# Home -> Custom Profile Override
 <img alt="Profile" src="manual/01_003_rename.png">
 
-To access the **Profile Rename** screen long press on a profile from the **Home** screen. 
+To access the **Custom Profile Override** screen long press on a profile from the **Home** screen. When building out a new brew profile select the profile slot from the home screen, make changes in the **Pre-Infusion**, **Soak**, **Profiling**, and **Advanced** pages. Return to the **Home** screen, long press on the profile, give it a custom name, press ok to save and set it as default start-up profile.
 - **Profile**: Change a profile’s name.
-- **Load Default**: Reload the settings and values for that profile slot back to default. Returns to **Home** screen without setting profile as default.
+- **Load Default**: Return profile slot to Gaggiuino preloaded settings. Exits to **Home** screen without setting profile as start-up default.
 - **Okay**: Renames the selected profile and sets it to the default profile that will load at start-up. Renaming is not required to set to default.
 
 # Brew
@@ -134,15 +134,16 @@ Here is a classic pre-example of a declining pressure profile.
 # Brew -> Manual
 <img alt="Manual" src="manual/02_006_manual.png">
 
-Manual flow control.
+Manual flow control. Adjust flow traget flow rate with sider, flipe the brew switch to start.
+  - **Control**: Manual control slider.
+  - **Target Flow**: Target flow rate in mL per second.
+  - **Shot Timer**: Shot timer in seconds.
   - **Status**
-    - *Temp &deg;C* : Target temperature.
+    - *Temp &deg;C* : Current water temperature.
     - *Flow(g/s)* : Current flow rate in grams per second.
     - *Pressure* : Current pressure in bars.
     - *Weight(g)* : Current weight of shot.
-  - **Control**: Manual control slider.
-  - **Water Temp**: Current water temperature.
-  - **Flow**: Target flow rate in mL per second.
+  
 
 # Brew -> More
 <img alt="More" src="manual/02_007_more.png">
