@@ -9,7 +9,7 @@ Special Thanks to:
 # Startup
 <img alt="Startup" src="manual/00_000_startup.png">
 
-- **Build Number**: 35b2d4d is the last Nextion Release, missing number indicates no communication between the Nextion and the micro controller.
+- **Build Number**: A missing number indicates no communication between the Nextion and the micro controller.
 
 # Home
 <img alt="Home" src="manual/01_000_home.png">
