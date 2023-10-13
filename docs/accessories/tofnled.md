@@ -60,6 +60,10 @@ Cut off one Qwiic connector from the cable and solder it and the wires back to t
 
 <img width="600" alt="image" src="schematics/stm32-comp-build.png">
 
+Connector wiring is Qwiic standard
+
+<img width="300" alt="https://cdn.sparkfun.com/assets/custom_pages/2/7/2/QwiicPinoutGraphic.jpg" src="https://user-images.githubusercontent.com/117388662/275014009-196a8bbe-da9e-4f45-be38-e82e9292c1a5.png">
+
 Once soldered cover with heat shrink tubing. 
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256456847-fcb44efb-4e87-4b8b-b4f2-4a47d036ccf5.png">
