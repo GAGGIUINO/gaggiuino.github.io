@@ -90,7 +90,18 @@ build_flags =
     -DTOF_VL53L0X
 ```
 
-> [!NOTE] Sometimes the ToF sensor can be confused by reflections from the espresso machine housing, especially as the water level gets lower. Adding a matte piece of tape below the sensor can improve accuracy. Reflectivity matters more than color. 
+>
+
+<details>
+<summary><b>See this if you're not sure which LED controller your board has</b> <i>(Click to expand)</i></summary>
+
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/274979976-ae9f02ab-8c61-438e-81ea-adfabdff183b.png">
+
+</details>
+
+>
+
+> [!NOTE] Sometimes the ToF sensor can be confused by reflections from the espresso machine housing, especially as the water level gets lower. Adding a matte piece of tape below the sensor can improve accuracy. Reflectivity matters more than color.  
 <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/265826223-1f28003f-5d1a-4046-ab25-c19f5b2376f6.png">
 
 # Tubing Consolidation (Optional)
