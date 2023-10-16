@@ -180,10 +180,10 @@ The descaling process takes around 45-50 minutes.
   1. Fill water tank to "MAX" with water and descale solution (possible 4-6tbsp citric acid per one tank of water).
   2. Insert blind basket into portafilter.
   3. Lock portafilter into the group head.
-  4. Place a reservoir under the steam wand and open the steam valve one full turn.
+  4. Place a 2+ L reservoir under the steam wand and open the steam valve one full turn.
   5. Turn on **Brew** switch.
   6. Wait about 30 minutes, checking for an empty water tank.
-  7. Once the descaling solution and water mix runs out fill the reservoir with clean fresh water. 
+  7. Once the descaling solution and water mix runs out, empty and replace the reservoir if needed and then fill the water tank with clean fresh water. 
   8. The pump should auto prime and continue the cleaning procedure.
   9. A **FINISHED** message will popup when descaling finishes.
   10. Turn off **Brew** switch.
