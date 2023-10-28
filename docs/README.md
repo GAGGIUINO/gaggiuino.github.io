@@ -12,9 +12,16 @@
 >
 >The GAGGIUINO Team
 
-**Contribute to better docs written by a professional technical writer.**
+> [!Info]
+> When buying from any of the approved suppliers you can head over to the community [Discord](community/community-media.md#community-discord) for order updates or install-help in the relevant channels.
+> Relevant channels for orders : #dyi-efi, #peak-coffee-cc
+> Relevant channels for install-help: #install-help-<logical machine choice>
+
+
+
+**Contribute to the project development efforts.**
 <!-- ko-fi :id=zer0bit :color=<color> -->
-    Support better docs
+    Support the development efforts
 <!-- ko-fi -->
 >
 # Features
@@ -151,6 +158,44 @@ Name                                      | Voltage   | Model Years | Model ID  
 # Bill of Materials
 
 <!-- tabs:start -->
+<!-- tab:STM32 PCB -->
+### BASE FUNCTIONALITY
+_Will enable brew and steam temperature control as well as pump control based on active pressure feedback (this enables pressure and flow profiling as well as other functionality)._
+>
+
+> [!Note] 
+> PCBs and kits can be ordered from __Approved Official Suppliers__ shown in the sidebar.
+>
+
+* [PCBv3 *(Group buy or custom order)*](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V3)
+* [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
+* [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
+* [2.4" Nextion LCD](https://bit.ly/3CAUzPj)
+* [C-M4 ungrounded screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
+* [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
+* [Heat-resistant silicone wires](https://bit.ly/3tjSQbI)
+  * **18AWG - 1m:** Black, Red, Brown, White, Green, Blue & Yellow
+  * **22AWG - 5m:** Black, Red, White, Orange & Yellow
+* [JST XH 4P](https://www.aliexpress.com/item/2251832768103991.html)
+* [JST PH 3P, 4P & 5P](https://www.aliexpress.com/item/4000091077742.html)
+* [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
+* [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
+* [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html) 
+
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
+* [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
+* [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
+* [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
+
+<!-- tab:Gaggia Classic Pro -->
+* [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
+* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high quality hose alternative if Saeco can't be bought locally**
+* [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
+* [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
+* [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
+
+<!-- tabs:end -->
 <!-- tab:STM32 LEGO -->
 ### BASE FUNCTIONALITY
 _Will enable brew and steam temperature control as well as pump control based on active pressure feedback (this enables pressure and flow profiling as well as other functionality)._
@@ -191,46 +236,6 @@ _Will enable brew and steam temperature control as well as pump control based on
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
 <!-- tabs:end -->
-<!-- tab:STM32 PCB -->
-### BASE FUNCTIONALITY
-_Will enable brew and steam temperature control as well as pump control based on active pressure feedback (this enables pressure and flow profiling as well as other functionality)._
->
-
-> [!Note] 
-> If you're not exerienced with ordering PCBs it can be ordered from approved providers in the __Approved Official Suppliers__ sidebar section.
->
-> **Make sure to read the info in the *#pcb-interest-registration* discord channel as well for more info on the ordering process as well as searching discord for any PCB related questions as many have been answered multiple times already.**
-
-* [PCBv3 *(Group buy or custom order)*](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V3)
-* [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
-* [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
-* [2.4" Nextion LCD](https://bit.ly/3CAUzPj)
-* [C-M4 ungrounded screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
-* [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
-* [Heat-resistant silicone wires](https://bit.ly/3tjSQbI)
-  * **18AWG - 1m:** Black, Red, Brown, White, Green, Blue & Yellow
-  * **22AWG - 5m:** Black, Red, White, Orange & Yellow
-* [JST XH 4P](https://www.aliexpress.com/item/2251832768103991.html)
-* [JST PH 3P, 4P & 5P](https://www.aliexpress.com/item/4000091077742.html)
-* [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
-* [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-* [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html) 
-
-<!-- tabs:start -->
-<!-- tab:Gaggia Classic -->
-* [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
-* [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
-* [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
-
-<!-- tab:Gaggia Classic Pro -->
-* [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
-* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high quality hose alternative if Saeco can't be bought locally**
-* [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
-* [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
-* [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
-
-<!-- tabs:end -->
-
 <!-- tab:Nano to STM32 Upgrade -->
 ### UPGRADING FROM EXTENDED FUNCTIONALITY
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
@@ -324,14 +329,14 @@ If you'd like to print yourself, order from CraftCloud, or use a local print sho
 ### Base Functionality
 _Parts used for the standard install._
 <!-- tabs:start -->
-<!-- tab:STM32 LEGO -->
-* [Screen Enclosure](https://www.printables.com/model/280617)  
-* [Internal Component Housing](https://www.printables.com/model/269394)
 <!-- tab:STM32 PCB -->
 * [Screen Enclosure](https://www.printables.com/model/280617)
 * [Protective Housing *(for Gaggia Classic or if you don't want to put the PCB into the Gaggia Classic Pro pump tower)*](https://www.printables.com/model/370513)
 * [Pump Tower Clip *(holds the PCB in non-Eco Gaggia Classic Pro pump towers)*](https://www.printables.com/model/511272)
 * [Boiler Terminal Shrouds *(for custom wire harness or to replace broken ones)*](https://www.printables.com/model/380256-gaggia-boiler-terminal-shroud)
+<!-- tab:STM32 LEGO -->
+* [Screen Enclosure](https://www.printables.com/model/280617)  
+* [Internal Component Housing](https://www.printables.com/model/269394)
 <!-- tab:Arduino Nano -->
 * [Screen Enclosure](https://www.printables.com/model/280617)  
 * [Internal Component Housing](https://www.printables.com/model/269394)
@@ -340,6 +345,19 @@ _Parts used for the standard install._
 
 Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](https://www.printables.com/social/340492-loogle/collections/265668) or on [Discord](community/community-media.md#community-discord) in the **#mod-3d-design-ideas** channel.
 >
+
+# Contributors
+
+Thank you to everyone who has contributed to the project!
+
+<a href="https://github.com/Zer0-bit/gaggiuino/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Zer0-bit/gaggiuino" />
+</a>
+<a href="https://github.com/GAGGIUINO/gaggiuino.github.io/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=GAGGIUINO/gaggiuino.github.io" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
 
 # Statistics
 
