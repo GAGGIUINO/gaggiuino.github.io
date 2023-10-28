@@ -12,9 +12,16 @@
 >
 >The GAGGIUINO Team
 
-**Contribute to better docs written by a professional technical writer.**
+> [!Info]
+> When buying from any of the approved suppliers you can head over to the community [Discord](community/community-media.md#community-discord) for order updates or install-help in the relevant channels.
+> Relevant channels for orders : #dyi-efi, #peak-coffee-cc
+> Relevant channels for install-help: #install-help-<logical machine choice>
+
+
+
+**Contribute to the project development efforts.**
 <!-- ko-fi :id=zer0bit :color=<color> -->
-    Support better docs
+    Support the development efforts
 <!-- ko-fi -->
 >
 # Features
