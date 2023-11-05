@@ -60,6 +60,10 @@ Cut off one Qwiic connector from the cable and solder it and the wires back to t
 
 <img width="600" alt="image" src="schematics/stm32-comp-build.png">
 
+Connector wiring is Qwiic standard
+
+<img width="300" alt="https://cdn.sparkfun.com/assets/custom_pages/2/7/2/QwiicPinoutGraphic.jpg" src="https://user-images.githubusercontent.com/117388662/275014009-196a8bbe-da9e-4f45-be38-e82e9292c1a5.png">
+
 Once soldered cover with heat shrink tubing. 
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256456847-fcb44efb-4e87-4b8b-b4f2-4a47d036ccf5.png">
@@ -90,7 +94,18 @@ build_flags =
     -DTOF_VL53L0X
 ```
 
-> [!NOTE] Sometimes the ToF sensor can be confused by reflections from the espresso machine housing, especially as the water level gets lower. Adding a matte piece of tape below the sensor can improve accuracy. Reflectivity matters more than color. 
+>
+
+<details>
+<summary><b>See this if you're not sure which LED controller your board has</b> <i>(Click to expand)</i></summary>
+
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/274979976-ae9f02ab-8c61-438e-81ea-adfabdff183b.png">
+
+</details>
+
+>
+
+> [!NOTE] Sometimes the ToF sensor can be confused by reflections from the espresso machine housing, especially as the water level gets lower. Adding a matte piece of tape below the sensor can improve accuracy. Reflectivity matters more than color.  
 <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/265826223-1f28003f-5d1a-4046-ab25-c19f5b2376f6.png">
 
 # Tubing Consolidation (Optional)

@@ -45,7 +45,7 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 * **1** Drip tray or adapter combo *(choose based on your system)*
     * GC Drip Tray: GC Drip Tray Adapter and 4 Drip Tray Spacers
     * Low-Profile Drip Tray: LP Drip Tray Adapter and 4 Drip Tray Spacers  
-        *Note: designed for BaristaGadgets and Shades of Coffee low profile trays*
+        *Note: designed for BaristaGadgets and Shades of Coffee low profile trays with standard footprint (not extended)*
     * GCP Drip Tray: GCP Drip Tray Adapter (L and R)
     * 3D Print DripTray (no other adapters needed)
 
@@ -197,9 +197,11 @@ Use the appropriate scales-calibration task to upload to the STM32 and copy scal
 
 <!-- tabs:end -->
 
-2. Remove the load plates and insert the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration weight (in this case a 318.5 g tamper). Ideal calibration weight is in the 200-400g range.
+2. Unscrew the load plates and replace with the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration weight (in this case a 318.5 g tamper). Ideal calibration weight is in the 200-400g range.
 
-    <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110291-ae8bf438-a692-4b89-b511-8ef8073f1065.png">
+    <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/275450371-a6c50ca3-95ef-46df-9e21-6bb3e654535e.png">
+
+    <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110291-ae8bf438-a692-4b89-b511-8ef8073f1065.png">
 
     To calibrate, use the adjustment value and +/- buttons to adjust the scale factors until the weight output in grams matches the real weight. One scale factor will likely be negative to make the output in grams positive. Take a pic or copy down the scale factors.
 

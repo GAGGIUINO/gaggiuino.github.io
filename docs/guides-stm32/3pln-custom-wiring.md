@@ -2,12 +2,25 @@
 > Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
 
 
-# Considerations
-* The [10 A Resettable Thermal Fuse 185 C](https://www.aliexpress.com/item/3256805232358051.html) or **Rancilio Silvia Boiler Thermostat 165º** (max steam temp of ~145) can be used for the thermal fuse. 
-* Get covers for spades, possibly hard covers. Stock boiler terminal covers for round boiler terminal connectors (**160783-7 TE**) cannot be purchased, a printable option is linked on the [Home page](readme.md#3d-printed-parts).
+# Custom Wiring Considerations
+
+> [!Note|style:callout]
+> Many stock components are difficult to source so component substitutions have been found and are being tested. Options range from using only stock components (by cutting the original wire harness and splicing them in) to creating a completely new HV wiring harness with alternate components. This list of components is still a work in progress. 
+
+| Description | Link(s)     | Notes       |
+| :---------- | :---------- | :---------- |
+| 22-16 Gauge Wire Connector | [BN1.25 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html) <br /> [5 mm Silicone Heat Shrink Tube](https://www.aliexpress.com/item/3256801522005095.html) | Use for splicing in components (stock or alternate) |
+| 16-14 Gauge Wire Connector | [BN2 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html) <br /> [5 mm Silicone Heat Shrink Tube](https://www.aliexpress.com/item/3256801522005095.html) | Useful for splicing 1:2 boiler connector wires on 120V machines |
+| Boiler Thermal Fuse | [Resettable Thermal Fuse, NC, 185°C, 16 A, M4](https://www.aliexpress.com/item/3256805886376281.html) | Install in the boiler boss where the steam thermostat was|
+| Pump Thermal Fuse | [KSD9700 Thermal Switch, 120°C, NC](https://www.aliexpress.com/item/2251832685942790.html) | Retain with hot glue (same method as stock)|
+| Boiler Terminal Connectors | [TE 160783-7 (DigiKey)](https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/160783-7/5157254) or [TE 160783-7 (Mouser)](https://www.mouser.com/ProductDetail/TE-Connectivity-AMP/160783-7?qs=%252BeETdXPI8nLQYJsNGAnPEA%3D%3D) | Stock part, a bit tricky to crimp properly |
+| Boiler Terminal Connector Housing | [Boiler Terminal Shroud](https://www.printables.com/model/380256) | Can be purchased from print providers, used if stock covers can't be |
+| Indicator Lamp | [Red 6x13 mm Neon Bulb](https://www.aliexpress.com/item/2261799834780054.html) - pick the voltage range for your machine <br /> [7.9 mm Clear Heat Shrink Tubing](https://www.aliexpress.com/item/3256804355023361.html) - 2 layers over bulb <br /> [4 mm Silicone Heat Shrink Tube](https://www.aliexpress.com/item/3256801522005095.html) - insulate resistor and leads | Using the stock indicators is easier. Only do this if you really don't want to cut the stock harness.
+
+
 * Consider buying a XH and PH JST kit to make up your own LV connectors instead of using pigtails.
 * Know and study difference between HV and LV lines in the schematics.
-* PCB v3 is designed to fit into the pump tower where the eco board would be on the 2019+ models (Gaggia Classic Pro, Eco, Evo).
+* PCB v3 can fit into the pump tower where the eco board would be on the 2019+ models (Gaggia Classic Pro, Eco, Evo). 
 
 >
 

@@ -53,6 +53,9 @@ Save the images or right-click and open in a new tab to view at full resolution.
 
 **Gaggia Classic Pro Eco**
 
+> [!Warning|style:callout]
+> Stock wiring integration is possible, but for machines with the eco board (automatic power-off) [3PLN custom wiring](guides-stm32/3pln-custom-wiring.md) is recommended.
+
 <img height="300" alt="image" src="schematics/install-stock-3pln/gcp_eco-hv-3pln.jpg">
 
 <img height="300" alt="image" src="schematics/install-stock-3pln/gcp_eco-lv-3pln.jpg">
