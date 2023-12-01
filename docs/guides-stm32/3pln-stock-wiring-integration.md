@@ -89,8 +89,9 @@ Switches (GCP/Eco)|P - Power <br />B - Brew/Coffee <br />S - Steam |1   �
 Heaters           |H      |3    4 <br />1    2
 Steam TS          |S      |a    b
 Brew TS           |B      |a    b
+Valve             |V      |a    b
 Pump              |P      |a    b <br /> _a is from fuse, GC unlabeled_ <br />_b is the single 18 gauge wire in most machines_
-Fuse (GC)         |F      |_there should be 2 wires_ <br />_in the connector to the fuse_
+Pump Fuse (GC)         |F      |_there should be 2 wires_ <br />_in the connector to the fuse_
 
 Here are the stock pump connections for clarity. Note that most integration connections are made at the pump, so make sure the pump wiring matches the stock [schematic](#schematics) for your machine before continuing.
 

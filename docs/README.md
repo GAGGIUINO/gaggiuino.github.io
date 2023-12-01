@@ -15,7 +15,7 @@
 > [!Info]
 > When buying from any of the approved suppliers you can head over to the community [Discord](community/community-media.md#community-discord) for order updates or install-help in the relevant channels.
 > 
-> Relevant channels for orders : #dyi-efi-co-uk, #peakcoffee-cc
+> Relevant channels for orders : #dyi-efi-co-uk, #peakcoffee-cc, #espressio-nl
 > 
 > Relevant channels for install-help: #install-help-xxx
 
@@ -76,10 +76,10 @@ Name                                      | Voltage   | Model Years | Model ID  
 :heavy_check_mark: Gaggia Classic         | 220-240 V | 1991-2014   | SIN035 RI9303   |  
 :x:                Gaggia Classic V2      | 220-240 V | 2015-2018   | SIN035U RI9403  | Avoid like the plague
 :heavy_check_mark: Gaggia Classic Pro     | 100-120 V | 2019-2022   | SIN035R RI9380  | 
-:heavy_check_mark: Gaggia Classic Pro     | 220-240 V | 2019-2022   | SIN035R RI9380  | Uncommon, easier to mod than Eco
-:heavy_check_mark: Gaggia Classic Pro Eco | 220-240 V | 2019-2022   | SIN035UR RI9480 | Custom wiring recommended
-:heavy_check_mark: Gaggia Classic Evo Pro | 100-120 V | 2023-?      | SIN035R RI9380  | 9 bar OPV spring must be replaced with 10-12 bar spring or spring force increased with washers.<br /> Custom wiring recommended for models with combined switch connectors
-:heavy_check_mark: Gaggia Classic Evo Pro | 220-240 V | 2023-?      | SIN035UR RI9481 | Custom wiring recommended
+:heavy_check_mark: Gaggia Classic Pro     | 220-240 V | 2019-2022   | SIN035R RI9380  | Uncommon, easier to mod than models with eco PCB
+:heavy_check_mark: Gaggia Classic Pro Eco | 220-240 V | 2019-2022   | SIN035UR RI9480 | Power switch mod required and custom wiring recommended due to eco PCB
+:heavy_check_mark: Gaggia Classic Evo Pro | 100-120 V | 2023-?      | SIN035R RI9380  | 9 bar OPV spring must be replaced with 10-12 bar spring or spring force increased with washers.
+:heavy_check_mark: Gaggia Classic Evo Pro | 220-240 V | 2023-?      | SIN035UR RI9481 | Power switch mod required and custom wiring recommended due to eco PCB
 
 </details>
 

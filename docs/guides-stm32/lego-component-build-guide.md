@@ -132,10 +132,13 @@ Component                                      |Colors                  |Gauge|L
 [PSU](#psu)                                    |Black, White            |22   |60 mm
 [Snubber-Relay](#snubber-relay-and-dimmer)     |Black, Red              |22   |100 mm
 [Relay-Dimmer](#snubber-relay-and-dimmer)      |Black                   |22   |50 mm
-[Relay (NO)](#snubber-relay-and-dimmer)        |Red                     |22   |250 mm
-[Dimmer (Out, N-In)](#snubber-relay-and-dimmer)|Red, White              |22   |250 mm
-[Dimmer (L-In)](#snubber-relay-and-dimmer)     |Black                   |22   |600 mm
+[Relay: NO (3)](#snubber-relay-and-dimmer)        |Red                     |22   |250 mm <sup>Note 1</sup>
+[Dimmer: Out (P), N-In (N)](#snubber-relay-and-dimmer)|Red, White              |22   |250 mm <sup>Note 1</sup>
+[Dimmer: L-In (L)](#snubber-relay-and-dimmer)     |Black                   |22   |600 mm <sup>Note 1</sup>
 
+> [!Note|style:callout|label:Note 1|iconVisibility:visible]
+> These lengths are for stock wiring integration.  
+> For custom wiring these connections can wait or a short wire can be installed to make connecting to the 3PLN of the custom harness easier.
 >
 
 # Schematic
@@ -272,7 +275,7 @@ Recommendation: zip-tie the cable strain relief at this point so the risk of str
 ## Snubber, Relay, and Dimmer
 
 [Measure and cut](#external-wire-lengths) the wires for the snubber-relay, relay-dimmer, relay, and dimmer connections. 
-As shown above, the snubber wires get routed in the channel under the PSU. Here is the full set of housing HV wires for interfacing with the power switch, 3-way solenoid valve, and pump. 
+As shown above, the snubber wires get routed in the channel under the PSU. Here is the full set of housing HV wires for interfacing with the power switch, 3-way solenoid valve, and pump (lengths shown are for integrating with stock wiring). 
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/239153554-60702e5b-7fcc-45bc-99a2-07b615da3e5d.png">
 
@@ -280,13 +283,13 @@ As shown above, the snubber wires get routed in the channel under the PSU. Here 
 
 To connect the ST-Link to the Blackpill (for flashing without opening the housing or machine) this is one of the few times in the project where DuPont connectors may be used. Another option is to solder the wires directly to the Blackpill. 
 
-?> If you wish to power the system through the 120 VAC PSU (powering on the espresso machine) to flash the Blackpill then do **not** connect 3.3V to the ST-Link unless you're sure you do not have a knock-off/clone ST-Link.
+?> If you wish to power the system through the 120 VAC PSU (powering on the espresso machine) to flash the Blackpill then do only connect 3.3V to the ST-Link if you have a genuine ST-Link or WeAct Mini Debugger.
 
 Close the housing with 4 screws to complete. 
 
 Optional wiring that is not pictured:
-- HW Scales
-- ToFnLED
+- [HW Scales](accessories/hw-scales.md)
+- [ToFnLED](accessories/tofnled.md)
 
 **Continue the install by referencing the 3PLN machine-specific schematics and/or install instructions that apply to your desired build path:**
 * [3PLN Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md) page.
