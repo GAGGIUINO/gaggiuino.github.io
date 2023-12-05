@@ -97,64 +97,53 @@ Name                                      | Voltage   | Model Years | Model ID  
 > __2. Make sure you _ALWAYS_ flash both the microcontroller as well as the LCD unit.__   
 > __3. Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.__
 
-# Timeline
+# Build Process
 
-<details>
-<summary><b>Initial checks</b> <i>(Click to expand)</i></summary>
+> [!TIP|style:callout|label:Tip|iconVisibility:visible]
+> If you need help (even during the planning phase), please use a thread in [#install-help-gc](https://discord.com/channels/890339612441063494/996814638471708683) (for Gaggia Classic), [#install-help-gcp](https://discord.com/channels/890339612441063494/996188987964268555) (for Gaggia Classic Pro/Eco/Evo).  
+> Make sure to title the thread [username][machine type][control system] Thread Title and include any links/pictures/videos that may apply to your question.  
+> ***One help thread per person/machine, please!***
 
+1. Identify your espresso machine (or determine what to buy) 
 
-1. Purchase the parts listed from Ali and expect a wait of ~1 month.
+  See the [Compatibility Table](#compatibility)
 
-   Any parts purchased anywhere else are done so at your own risk (they've not been tested).
+2. Determine your build path. 
 
-2. Connect test components described in the doc to Arduino.
+  Decide if you're going to order a [PCB](pcb/singleboard.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. In general the PCB is going to be much simpler, while the component build is more flexible for experimentation and less picky about thermocouples but requires significant wiring and soldering. 
 
-   Using the expansion board, twist the ends of cables and connect to the screw terminals. At this point using DuPont connections is fine but please note later we will solder to the boards or pins.
+  Decide how to integrate the control system with your espresso machine. It can either be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring, but sometimes more confusing) or the stock wiring can be replaced with a [custom wiring harness](guides-stm32/3pln-custom-wiring.md) (more work, but results in a clean, straightforward install). It is recommended that you check the notes in the compatibility table for your machine and and read through the instructions before deciding.
 
-3. Flash Arduino and LCD with code.
+3. Select and Order Components
 
-4. Plug in and test.
+  Order components based on your machine and install path. Make sure to check the [Bill of Materials](#bill-of-materials), the [custom wiring page](guides-stm32/3pln-custom-wiring.md) (if that's the route you're going), and the pages of any optional accessories ([HW Scales](accessories/hw-scales.md),[ToFnLED](accessories/tofnled.md)) that you'd like to install. 
 
-   Check for a temp reading. It will contain the default offset of 7 degrees which means the initial temp will be room temp -7.
-</details>
+  Note that there are separate approved suppliers for PCBs/Kits and 3D prints. 
 
-<details>
-<summary><b>Base Install</b> <i>(Click to expand)</i></summary>
+4. Parts are in - do the build!
 
-1. Plan out where the components will sit inside the machine to determine cable length
-2. Create piggyback cables. Determine what switch points to piggyback from.
-3. Wire in power delivery method - isolate the board using an enclosure or tape it up after wiring.
-4. If you have the eco timer, disable it.
-5. Swap out thermocouple - ease out the boiler (don't fully remove it) in order to gain more access.
-6. Install the max temp board - isolate the board using an enclosure or tape it up after wiring.
-7. Place and wire relay - attach the brew thermostat wires to the SSR relay and sit/attach the back plate or relay on the body of the machine, add some thermal paste
-8. Re-Wire the steam switch for steam handling - you need to swap the brew thermostat wires (above step) for the steam thermostat wires and bridge the brew thermostat wires together then take some wires from the steam switch to the Arduino.
-9. Wire brew switch for continuity
-10. Test.
-</details>
+  Follow the instructions for your control system selection
 
-<details>
-<summary><b>Extended Install</b> <i>(Click to expand)</i></summary>
+    * [PCB](pcb/singleboard.md)
+    * [component (Lego) build](guides-stm32/lego-component-build-guide.md)
 
-1. Install the pressure sensor. Ensure it does not leak under pressure.
-2. Install dimmer - isolate the board using an enclosure or tape it up after wiring.
-3. Install the load cells.
-</details>
+  Follow the instructions for your wiring selection
 
-<details>
-<summary><b>Final checks</b> <i>(Click to expand)</i></summary>
+    * [Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md)
+    * [Custom Wiring Harness](guides-stm32/3pln-custom-wiring.md)
 
-1. Make sure all connections are proper i.e., no metal is exposed and well isolated, all soldering is perfect and wrapped in heat-shrink.
-2. Flash the Arduino and LCD with the latest version from GitHub (there could have been changes since).
-3. Record your first start. Post this to [#first-start](https://discord.com/channels/890339612441063494/919183771079692328) on Discord.
-4. Find out your regional settings and set them in the settings of the Arduino.
-5. Check all other settings save correctly.
-6. Record your first shot. Post this to [#first-shot](https://discord.com/channels/890339612441063494/910972035205857320) on Discord.
-</details>
+  Follow the instructions for any accessories that may have been selected
 
->
-?> **_Total estimated install time will be based on understanding and experience._** 
-> 
+    * [HW Scales](accessories/hw-scales.md)
+    * [ToFnLED](accessories/tofnled.md)
+
+5. Make Coffee!
+
+  Record your first start. Post this to [#first-start](https://discord.com/channels/890339612441063494/919183771079692328) on Discord.
+  Record your first shot. Post this to [#first-shot](https://discord.com/channels/890339612441063494/910972035205857320) on Discord.
+  Read the [Functions Guide](learning/functions-guide.md) for more information on the machine capabilities.
+  Check out [Espresso Aficionados](https://espressoaf.com/guides/profiling.html) for info on profiling that you can now implement!
+
 <!-- panels:start -->
 <!-- div:title-panel -->
 # Bill of Materials
