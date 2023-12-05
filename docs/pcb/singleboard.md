@@ -6,7 +6,7 @@
 
 # Considerations
 * PCBs are compatible with 3PLN stock wiring integration or custom wiring, though custom wiring is recommended for certain machines (see the [compatibility table](README.md#Compatibility))
-* PCB v3 is suitable for most single-boiler espresso machines. PCB v2 supports more connection points for wiring and and/or multiple boiler control. 
+* PCB v3 is suitable for most single-boiler espresso machines and is the focus of these instructions. PCB v2 supports more connection points for wiring and and/or multiple boiler control. 
 * PCB v2 housing links *(Pick one)*
   * [Rigid Housing](https://www.printables.com/model/260901)
   * [Easy Access Housing)](https://www.printables.com/model/261267)
@@ -17,13 +17,16 @@
 
 !> Do not flash the Blackpill with the ST-Link while powering the system over USB-C.  
 
-Flash the Blackpill using the ST-Link (connect SWDIO, GND, SWCLK, and 3.3V* - see [Prerequisites](prereq/prerequisites.md) for details). 
+Flash the Blackpill using the ST-Link (connect SWDIO, GND, SWCLK, and 3.3V\* - see [Prerequisites](prereq/prerequisites.md) for details). 
+
+> [!Note|style:callout]
+> ST-Link pins should be on the back of the Blackpill for PCBv3 compatibility
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/262874364-c44f2eea-6a64-4731-adb8-a0c1a16089d6.png">
 
-Flash the Nextion with the applicable nextion-*-lcd.tft on an otherwise-empty ≤32 GB FAT32 microSD card.  
+Flash the screen with the applicable nextion-\*-lcd.tft or tjc-\*-lcd.tft on an otherwise-empty ≤32 GB FAT32 microSD card.  
 
-Power for flashing the Nextion may be provided through the USB-C port on the Blackpill so long as you are using a USB power adapter that will supply 4.6-5.2 VDC (don't use a battery bank or PC USB 2.0 ports for power).  
+Power for flashing the screen may be provided through the USB-C port on the Blackpill so long as you are using a USB power adapter that will supply 4.6-5.2 VDC (don't use a battery bank or PC USB 2.0 ports for power).  
 
 *If you wish to power the system through the 120 VAC PSU to flash the Blackpill then do **not** connect 3.3V to the ST-Link unless you're sure you do not have a knock-off/clone ST-Link.
 
@@ -31,16 +34,23 @@ Wait for the Nextion to show the "Update Successed! (sic)" message, turn off pow
 
 # Pre-install test
 
->[!Tip]
->The system will not initialize if the ToFnLED board was enabled in the software but isn't plugged in
+<!-- tabs:start -->
+<!-- tab:GC -->
+<img height="400" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_LV.png">
+<!-- tab:GCP -->
+<img height="400" alt="image" src="schematics/stm32-lv/GCP_wiring_PCBv3_LV.png">
+<!-- tabs:end -->
 
-Connect the system components (Blackpill, thermocouple, pressure transducer, screen, SSR, switch wires, ToFnLED if defined) to the PCB and power on the system through the USB-C port on the blackpill. If all is successful you should:
+Connect the system components - Blackpill, thermocouple, pressure transducer, screen, SSR, ToFnLED (if defined) - to the PCB and power on the system through the USB-C port on the blackpill. If all is successful you should:
 - see a build number during boot (good Blackpill-Nextion communication)
 - see a "filling boiler" message a few seconds after boot
 - see a temperature reading on the screen that changes when heat is applied to the thermocouple
 - see the SSR light turn on if the temperature is below the setpoint (it will flash if temp is close to setpoint)
 - see a pressure value of 0.0 bar with no deviation
 - *not* see the steam temp as the target
+
+>[!Tip]
+>The system will not initialize if the ToFnLED board was enabled in the software but isn't plugged in
 
 **Continue the install by referencing the 3PLN machine-specific schematics and/or install instructions that apply to your desired build path:**
 * [3PLN Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md) page.
