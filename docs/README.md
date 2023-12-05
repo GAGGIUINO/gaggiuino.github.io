@@ -139,10 +139,10 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 5. Make Coffee!
 
-  Record your first start. Post this to [#first-start](https://discord.com/channels/890339612441063494/919183771079692328) on Discord.
-  Record your first shot. Post this to [#first-shot](https://discord.com/channels/890339612441063494/910972035205857320) on Discord.
-  Read the [Functions Guide](learning/functions-guide.md) for more information on the machine capabilities.
-  Check out [Espresso Aficionados](https://espressoaf.com/guides/profiling.html) for info on profiling that you can now implement!
+  Record your first start. Post this to [#first-start](https://discord.com/channels/890339612441063494/919183771079692328) on Discord.  
+  Record your first shot. Post this to [#first-shot](https://discord.com/channels/890339612441063494/910972035205857320) on Discord.  
+  Read the [Functions Guide](learning/functions-guide.md) for more information on the machine capabilities.  
+  Check out [Espresso Aficionados](https://espressoaf.com/guides/profiling.html) for info on profiling that you can now implement!  
 
 <!-- panels:start -->
 <!-- div:title-panel -->
