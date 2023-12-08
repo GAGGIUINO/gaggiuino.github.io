@@ -15,22 +15,33 @@
 
 # Programming/Flashing
 
-!> Do not flash the Blackpill with the ST-Link while powering the system over USB-C.  
+## Blackpill
+  
+Make sure you have the software prerequisites. See [Prerequisites](prereq/prerequisites.md)
 
-Flash the Blackpill using the ST-Link (connect SWDIO, GND, SWCLK, and 3.3V\* - see [Prerequisites](prereq/prerequisites.md) for details). 
+Flashing instructions:
+1. Connect the Blackpill to the ST-Link (connect SWDIO, GND, SWCLK, and 3.3V**\***)
+2. Connect ST-Link to the computer
+3. Click the Upload task in VS Code
+4. Wait until you see green/success logs
 
 > [!Note|style:callout]
 > ST-Link pins should be on the back of the Blackpill for PCBv3 compatibility
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/262874364-c44f2eea-6a64-4731-adb8-a0c1a16089d6.png">
 
-Flash the screen with the applicable nextion-\*-lcd.tft or tjc-\*-lcd.tft on an otherwise-empty ≤32 GB FAT32 microSD card.  
+!> Do not flash the Blackpill with the ST-Link while the Blackpill is powered through USB-C. The ST-Link should be the only one providing power to the Blackpill*
 
-Power for flashing the screen may be provided through the USB-C port on the Blackpill so long as you are using a USB power adapter that will supply 4.6-5.2 VDC (don't use a battery bank or PC USB 2.0 ports for power).  
+?> **\*** If you wish to power the system through the 120/220 VAC PSU to flash the Blackpill then do **not** connect 3.3V to the ST-Link unless you're sure you do not have a knock-off/clone ST-Link.
 
-*If you wish to power the system through the 120 VAC PSU to flash the Blackpill then do **not** connect 3.3V to the ST-Link unless you're sure you do not have a knock-off/clone ST-Link.
+## Nextion display
 
-Wait for the Nextion to show the "Update Successed! (sic)" message, turn off power, and then remove the microSD card.
+Flashing instructions:
+1. On an otherwise-empty ≤32 GB FAT32 microSD card, copy the applicable nextion-*-lcd.tft
+2. Put the microSD card in the powered **off** Nextion display
+3. Power on the display. Power for flashing the Nextion may be provided through the USB-C port on the Blackpill so long as you are using a USB power adapter that will supply 4.6-5.2 VDC (don't use a battery bank or PC USB 2.0 ports for power).  
+4. Wait for the Nextion to show the "Update Successed! (sic)" message, turn off power, and then remove the microSD card.
+
 
 # Pre-install test
 
