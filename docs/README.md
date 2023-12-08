@@ -42,9 +42,9 @@
   Integrated scales      |:heavy_check_mark:|:heavy_check_mark:      
   Flow profiling         |       :x:        |:heavy_check_mark:  
   Advanced profiling     |       :x:        |:heavy_check_mark:      
-  __Stop on Weight/Dose__*|      :x:        |:heavy_check_mark:       
-  __DreamSteam__*        |       :x:        |:heavy_check_mark:  
-  __Predictive scales__* |       :x:        |:heavy_check_mark:  
+  __Stop on Weight/Dose__<sup> 1</sup>|      :x:        |:heavy_check_mark:       
+  __DreamSteam__<sup> 2</sup>        |       :x:        |:heavy_check_mark:  
+  __Predictive scales__<sup> 3</sup> |       :x:        |:heavy_check_mark:  
   Profiles Management    |       :x:        |:heavy_check_mark:
   Profiles sharing       |       :x:        |:heavy_plus_sign: 
   Web interface          |       :x:        |:heavy_plus_sign: 
@@ -57,11 +57,24 @@ __Explanation__
 :x:  Not available       
 :heavy_plus_sign: Planned   
 >
-_*1_ __Stop on Weight/Dose__ - stops at a desired yield.  
-_*2_ __DreamSteam__ - software driven steam boosting.  
-_*3_ __Predictive scales__ - software driven predicted weight output.
+_1_ __Stop on Weight/Dose__ - stops at a desired yield.  
+_2_ __DreamSteam__ - software driven steam boosting.  
+_3_ __Predictive scales__ - software driven predicted weight output.
 <!-- panels:end -->
 
+# Releases
+
+  MCU             |                               Code branch         
+------------------|------------------------------------------------------------------------------------
+  Arduino Nano    |[release-nano-final](https://github.com/Zer0-bit/gaggiuino/tree/release-nano-final)
+  STM32 Blackpill |[release/stm32-blackpill](https://github.com/Zer0-bit/gaggiuino/tree/release/stm32-blackpill)
+
+> [!TIP|style:callout|label:ADVICE|iconVisibility:visible]
+> __1. Failing to run the right code branch on the chosen set of hardware will yield unexpected results.__   
+> __2. Make sure you _ALWAYS_ flash both the microcontroller as well as the LCD unit.__   
+> __3. Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.__
+
+>
 
 # Compatibility
 
@@ -85,42 +98,35 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 >
 
-# Releases
-
-  MCU             |                               Code branch         
-------------------|------------------------------------------------------------------------------------
-  Arduino Nano    |[release-nano-final](https://github.com/Zer0-bit/gaggiuino/tree/release-nano-final)
-  STM32 Blackpill |[release/stm32-blackpill](https://github.com/Zer0-bit/gaggiuino/tree/release/stm32-blackpill)
-
-> [!TIP|style:callout|label:ADVICE|iconVisibility:visible]
-> __1. Failing to run the right code branch on the chosen set of hardware will yield unexpected results.__   
-> __2. Make sure you _ALWAYS_ flash both the microcontroller as well as the LCD unit.__   
-> __3. Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.__
-
 # Build Process
 
-> [!TIP|style:callout|label:Tip|iconVisibility:visible]
-> If you need help (even during the planning phase), please use a thread in [#install-help-gc](https://discord.com/channels/890339612441063494/996814638471708683) (for Gaggia Classic), [#install-help-gcp](https://discord.com/channels/890339612441063494/996188987964268555) (for Gaggia Classic Pro/Eco/Evo).  
-> Make sure to title the thread [username][machine type][control system] Thread Title and include any links/pictures/videos that may apply to your question.  
+> [!TIP|style:callout|label:WHERE TO GO FOR HELP|iconVisibility:visible]
+> If you need help (even during the planning phase) please make **one** [Discord](community/community-media.md#community-discord) help thread in [#install-help-gc](https://discord.com/channels/890339612441063494/996814638471708683) (for Gaggia Classic) or [#install-help-gcp](https://discord.com/channels/890339612441063494/996188987964268555) (for Gaggia Classic Pro/Eco/Evo).  
+> Title the thread by *[username][machine type][control system] Thread Title* and include any links/pictures/videos that may apply to your question. As you have more questions, rename the *Thread Title* and add your question to the thread.  
 > ***One help thread per person/machine, please!***
 
-1. Identify your espresso machine (or determine what to buy) 
+1. **Identify your espresso machine (or determine what to buy)**
 
   See the [Compatibility Table](#compatibility)
 
-2. Determine your build path. 
+2. **Determine your build path.** 
 
   Decide if you're going to order a [PCB](pcb/singleboard.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. In general the PCB is going to be much simpler, while the component build is more flexible for experimentation and less picky about thermocouples but requires significant wiring and soldering. 
 
-  Decide how to integrate the control system with your espresso machine. It can either be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring, but sometimes more confusing) or the stock wiring can be replaced with a [custom wiring harness](guides-stm32/3pln-custom-wiring.md) (more work, but results in a clean, straightforward install). It is recommended that you check the notes in the compatibility table for your machine and and read through the instructions before deciding.
+  Decide how to integrate the control system with your espresso machine. It can either be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring, but sometimes more confusing) or the stock wiring can be replaced with a [custom wiring harness](guides-stm32/3pln-custom-wiring.md) (more work, but results in a clean, straightforward install). It is recommended that you check the notes in the [Compatibility Table](#compatibility) for your machine and and read through the instructions before deciding.
 
-3. Select and Order Components
+3. **Select and Order Components**
 
   Order components based on your machine and install path. Make sure to check the [Bill of Materials](#bill-of-materials), the [custom wiring page](guides-stm32/3pln-custom-wiring.md) (if that's the route you're going), and the pages of any optional accessories ([HW Scales](accessories/hw-scales.md),[ToFnLED](accessories/tofnled.md)) that you'd like to install. 
 
-  Note that there are separate approved suppliers for PCBs/Kits and 3D prints. 
+  There are approved official suppliers for PCBs and Kits, and 3D printed parts linked in the sidebar. Select the 3D print provider closest to you for the lowest shipping cost. Alternatively, the BOM has sources linked so you can order components yourself and 3D print from the design files.
 
-4. Parts are in - do the build!
+4. **Parts are in, time to build!**
+
+  > [!WARNING|style:callout|label:WARNING ABOUT VIDEOS|iconVisibility:visible]
+  > There are no official build videos. It is highly recommended to only follow the instructions on this website.
+
+  Setup software per the [prerequisites](prereq/prerequisites.md) and refer back as needed when flashing the Blackpill.
 
   Follow the instructions for your control system selection
 
@@ -137,7 +143,7 @@ Name                                      | Voltage   | Model Years | Model ID  
     * [HW Scales](accessories/hw-scales.md)
     * [ToFnLED](accessories/tofnled.md)
 
-5. Make Coffee!
+5. **Make Coffee!**
 
   Record your first start. Post this to [#first-start](https://discord.com/channels/890339612441063494/919183771079692328) on Discord.  
   Record your first shot. Post this to [#first-shot](https://discord.com/channels/890339612441063494/910972035205857320) on Discord.  
