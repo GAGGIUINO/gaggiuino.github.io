@@ -218,29 +218,11 @@ Once you're done the assembly should look like this.
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236129109-bfbb6880-8942-4009-a386-3d2be94ca1c1.png">
 
-# Programming/Flashing
-
-!> Do not flash the Blackpill while powering the system over USB-C.  
-
-Flash the Blackpill using the ST-Link (connect SWDIO, GND, SWCLK, and 3.3V* - see [Prerequisites](prereq/prerequisites.md) for details). 
-
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235833233-5d8d99d3-665a-40d2-b215-489295c49480.png">
-
-Flash the Nextion with the applicable nextion-*-lcd.tft on an otherwise-empty ≤32 GB FAT32 microSD card.  
-
-Power for flashing the Nextion may be provided through the USB-C port on the Blackpill so long as you are using a USB power adapter that will supply 4.6-5.2 VDC (don't use a battery bank or PC USB 2.0 ports for power).  
-
-?> More stable voltage can be provided by using the 120 VAC PSU and piggybacking off of the Gaggia power switch ([example here](https://user-images.githubusercontent.com/117388662/235836724-71394491-c47a-46ed-920b-79ced184cc16.png)), however this is unnecessary for flashing and testing at this point so long as the voltage provided through the USB-C port is in range.  
-*If you wish to power the system through the 120 VAC PSU to flash the Blackpill then do **not** connect 3.3V to the ST-Link unless you're sure you do not have a knock-off/clone ST-Link.
-
-Wait for the Nextion to show the "Update Successed! (sic)" message, turn off power, and then remove the microSD card.
-
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236127637-fb83e05e-06d0-4a2f-b6e8-cdf48a36a077.png">
-
 # Component test
 
->[!Tip]
->The system will not initialize if the ToFnLED board was enabled in the software but isn't plugged in
+See [MCU Flashing](guides-stm32/mcu-flashing.md) for instructions on flashing the Blackpill and display
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236127637-fb83e05e-06d0-4a2f-b6e8-cdf48a36a077.png">
 
 Make sure the Blackpill, thermocouple, pressure transducer, screen, SSR, switch wires, and ToFnLED if defined are connected and power on the system once again. If all is successful you should:
 - see a build number during boot (good Blackpill-Nextion communication)
@@ -249,6 +231,10 @@ Make sure the Blackpill, thermocouple, pressure transducer, screen, SSR, switch 
 - see the SSR light turn on if the temperature is below the setpoint (it will flash if temp is close to setpoint)
 - see a pressure value of 0.0 bar with no deviation
 - *not* see the steam temp as the target (if you do then there's a short to ground, likely through the expansion board)
+
+
+>[!Tip]
+>The system will not initialize if the ToFnLED board was enabled in the software but isn't plugged in
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236076956-36ab8d35-6b5d-476e-84d2-d2e5097fafb1.png">
 
@@ -282,8 +268,6 @@ As shown above, the snubber wires get routed in the channel under the PSU. Here 
 # Final Steps
 
 To connect the ST-Link to the Blackpill (for flashing without opening the housing or machine) this is one of the few times in the project where DuPont connectors may be used. Another option is to solder the wires directly to the Blackpill. 
-
-?> If you wish to power the system through the 120 VAC PSU (powering on the espresso machine) to flash the Blackpill then do only connect 3.3V to the ST-Link if you have a genuine ST-Link or WeAct Mini Debugger.
 
 Close the housing with 4 screws to complete. 
 

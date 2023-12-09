@@ -12,7 +12,7 @@
 * - [Functions Overview](learning/functions-guide.md)
 * - [Recommendations](learning/learning-sources.md)
 * __Install Guides:__
-* - [Prerequisites](prereq/prerequisites.md)
+* - [MCU Flashing](guides-stm32/mcu-flashing.md)
 * - __STM32 Blackpill (Recommended)__
     * [Component "Lego" Build](guides-stm32/lego-component-build-guide.md)
     * [PCB](pcb/singleboard.md)

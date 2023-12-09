@@ -62,18 +62,6 @@ _2_ __DreamSteam__ - software driven steam boosting.
 _3_ __Predictive scales__ - software driven predicted weight output.
 <!-- panels:end -->
 
-# Releases
-
-  MCU             |                               Code branch         
-------------------|------------------------------------------------------------------------------------
-  Arduino Nano    |[release-nano-final](https://github.com/Zer0-bit/gaggiuino/tree/release-nano-final)
-  STM32 Blackpill |[release/stm32-blackpill](https://github.com/Zer0-bit/gaggiuino/tree/release/stm32-blackpill)
-
-> [!TIP|style:callout|label:ADVICE|iconVisibility:visible]
-> __1. Failing to run the right code branch on the chosen set of hardware will yield unexpected results.__   
-> __2. Make sure you _ALWAYS_ flash both the microcontroller as well as the LCD unit.__   
-> __3. Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.__
-
 >
 
 # Compatibility
