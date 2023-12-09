@@ -17,8 +17,6 @@
 
 See [MCU Flashing](guides-stm32/mcu-flashing.md) for instructions on flashing the Blackpill and display
 
-[MCU Flashing](guides-stm32/mcu-flashing.md ':include')
-
 <!-- tabs:start -->
 <!-- tab:GC -->
 <img height="400" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_LV.png">
