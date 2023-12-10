@@ -41,7 +41,7 @@ Make sure you have necessary [Software Prerequisites](#software-prerequisites) i
     - **STlink** if you are using one, **DFU** if not (deprecated).
 2. Click "Build" in VSCode (PlatformIO tab)
 
-  <img width="300" alt="image" src="https://private-user-images.githubusercontent.com/117388662/289216600-9e089033-9489-4816-8477-698977b2ea60.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDIwODEzMTAsIm5iZiI6MTcwMjA4MTAxMCwicGF0aCI6Ii8xMTczODg2NjIvMjg5MjE2NjAwLTllMDg5MDMzLTk0ODktNDgxNi04NDc3LTY5ODk3N2IyZWE2MC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwOVQwMDE2NTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02Mjc2NTFmZDVlNWJhM2ExYjVhOWZkNzhlMzNmYTJjZjFmZjBlZTNiMDFlZGY0M2MxYzdhYmEzMjhjYzU4OWNkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Bm8Er0F5N4gh7O3TCRYEPYRrlqOUqKkdy_YxeWzf50Q">
+  <img width="300" alt="image" src="https://github.com/Loogl3/gaggiuino.github.io/assets/117388662/0ba13397-65b5-4b8f-b528-c41bf547266f">
 
 3. Connect the Blackpill to the ST-Link<sup>1</sup> (connect SWDIO, GND, SWCLK, and 3.3V<sup>2</sup>)
 
@@ -63,7 +63,7 @@ Flashing instructions:
     - Brand: nextion or tjc  
     - Type: basic or discovery (Nextion Orange PCB)  
 
-  <img width="300" alt="image" src="https://private-user-images.githubusercontent.com/117388662/289217784-3a204b92-879b-4f91-af6c-6c1ac7ac78de.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDIwODIyNzksIm5iZiI6MTcwMjA4MTk3OSwicGF0aCI6Ii8xMTczODg2NjIvMjg5MjE3Nzg0LTNhMjA0YjkyLTg3OWItNGY5MS1hZjZjLTZjMWFjN2FjNzhkZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwOVQwMDMyNTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NTkyNDE2OGRhMDRkYzUyZDljZDJjNWFmZjMzYWEwNGI3OTU1MjJjZGM3NWQwNWM2MWVjYjRiZTUwY2FiNWVmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.bKmlZyoGGMCknnkv_aacCRapDmy5FBJqQhT5qebq6tg">
+  <img width="300" alt="image" src="https://github.com/Loogl3/gaggiuino.github.io/assets/117388662/161ef925-94d1-4ae4-a332-8dd761b0c009">
 
   > [!Tip|label:Scales Calibration Files|style:callout]
   > Display files for scales calibration are in the "scales-calibration" folder
