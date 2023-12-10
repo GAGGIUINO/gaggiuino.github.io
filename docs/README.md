@@ -68,6 +68,10 @@ _3_ __Predictive scales__ - software driven predicted weight output.
 
 Gaggiuino is designed for the Gaggia Classic family of espresso machines with 3-way valves (**NOT the Gaggia Classic V2, SIN035U RI9403**). Other espresso machines such as the Rancilio Silvia are also supported although no official installation instructions are available at this time.
 
+> [!TIP|style:callout|label:NAMING|iconVisibility:visible]
+> There are two main groups of Gaggia Classic espresso machines: Gaggia Classic, and Gaggia Classic Pro / Eco / Evo.  
+> For the sake of brevity, Gaggia Classic (or GC) and Gaggia Classic Pro (or GCP) may be used to refer to the groups.
+
 <details>
 <summary><b>Compatibility table</b> <i>(Click to expand)</i></summary>
 
@@ -155,10 +159,10 @@ _Will enable brew and steam temperature control as well as pump control based on
 * [PCBv3 *(Group buy or custom order)*](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V3)
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
-* [2.4" Nextion LCD](https://bit.ly/3CAUzPj)
+* [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html)
 * [C-M4 ungrounded screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
-* [Heat-resistant silicone wires](https://bit.ly/3tjSQbI)
+* [Heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html)
   * **18AWG - 1m:** Black, Red, Brown, White, Green, Blue & Yellow
   * **22AWG - 5m:** Black, Red, White, Orange & Yellow
 * [JST XH 4P](https://www.aliexpress.com/item/2251832768103991.html)
@@ -189,21 +193,21 @@ _Will enable brew and steam temperature control as well as pump control based on
 * [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
 * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html) **GET THE GREEN ONE**
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
-* [5V RELAY](https://a.aliexpress.com/_vpUdrT) 
-* [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card (Class 10 HC 8GB to 32GB)**
-* [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
+* [5V RELAY](https://www.aliexpress.com/item/3256803997020234.html) 
+* [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html) **+ MicroSD card (Class 10 HC 8GB to 32GB)**
+* [MAX6675 thermocouple board](https://www.aliexpress.com/item/2251832724065302.html) 
 * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
-* [Heat-resistant Silicone Wire](https://bit.ly/3tjSQbI)
+* [Heat-resistant Silicone Wire](https://www.aliexpress.com/item/2255800441309579.html)
   * **18AWG - 1m:** Black, Red, White
   * **22AWG - 5m:** Black, Red, Blue, Yellow, White
   * **26AWG - 5m:** Black, Red, Blue, Yellow
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
 * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
-* [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
+* [12v to 5v stepdown](https://www.aliexpress.com/item/3256801635468667.html)
 * [Snubber](https://www.aliexpress.com/item/3256803573244277.html)
-* [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
+* [RobotDYN dimmer module - Dimmer 4A-400V](https://www.aliexpress.com/item/2251832615710334.html)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
 * [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html)
 
@@ -226,11 +230,11 @@ _Will enable brew and steam temperature control as well as pump control based on
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
-* [5V RELAY](https://a.aliexpress.com/_vpUdrT) 
+* [5V RELAY](https://www.aliexpress.com/item/3256803997020234.html) 
 * [Snubber](https://www.aliexpress.com/item/3256803573244277.html)
 
 ### UPGRADING FROM BASE FUNCTIONALITY ADD:
-* [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
+* [RobotDYN dimmer module - Dimmer 4A-400V](https://www.aliexpress.com/item/2251832615710334.html)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
 * [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html)
 * Wire _(see STM32 Blackpill tab if you don't already have wire from your initial build)_
@@ -253,27 +257,27 @@ _Will enable brew and steam temperature control as well as pump control based on
 ### BASE FUNCTIONALITY
 _Will enable only brew and steam temperature control_
 >
-* [Arduino Nano AT328](https://bit.ly/3eXSfXZ) 
+* [Arduino Nano AT328](https://www.aliexpress.com/item/2255800717129704.html) 
 * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html) **GET GREEN - BLUE IS NOT COMPATIBLE FOR STM32 - SEE STM GUIDE FOR MORE INFO**
-* [2.4" Nextion LCD](https://bit.ly/3CAUzPj) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
-* [MAX6675 thermocouple](https://bit.ly/3ejTUIj) 
+* [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
+* [MAX6675 thermocouple board](https://www.aliexpress.com/item/2251832724065302.html) 
 * [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
-* [Heat-resistant Silicone Wire](https://bit.ly/3tjSQbI)
+* [Heat-resistant Silicone Wire](https://www.aliexpress.com/item/2255800441309579.html)
   * **18AWG - 1m:** Black, Red, White
   * **22AWG - 5m:** Black, Red, Blue, Yellow, White
   * **26AWG - 5m:** Black, Red, Blue, Yellow
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
 * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
-* [12v to 5v stepdown](https://a.aliexpress.com/_uAvaIl)
+* [12v to 5v stepdown](https://www.aliexpress.com/item/3256801635468667.html)
 
 **Gaggia Classic Specific**
 * [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html)  
 
 ### EXTENDED FUNCTIONALITY
 _Will enable pump control based on active pressure feedback, this enables pressure and flow profiling as well as other functionality._
-* [RobotDYN dimmer module - Dimmer 4A-400V](https://bit.ly/3xhTwQy)
+* [RobotDYN dimmer module - Dimmer 4A-400V](https://www.aliexpress.com/item/2251832615710334.html)
 * [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
 * [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html) 
 
@@ -294,7 +298,6 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 <!-- tabs:end -->
 <!-- div:panel-end -->
 > 
-
 
 # Accessories
 
