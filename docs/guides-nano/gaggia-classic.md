@@ -1,6 +1,40 @@
 > [!Warning|style:callout]
 > Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
 
+# Bill Of Materials
+
+### BASE FUNCTIONALITY
+_Will enable only brew and steam temperature control_
+>
+* [Arduino Nano AT328](https://www.aliexpress.com/item/2255800717129704.html) 
+* [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html) **GET GREEN - BLUE IS NOT COMPATIBLE FOR STM32 - SEE STM GUIDE FOR MORE INFO**
+* [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html) **+ MicroSD card(Class 10 HC 8GB to 32GB)**
+* [MAX6675 thermocouple board](https://www.aliexpress.com/item/2251832724065302.html) 
+* [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
+* [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
+* [Heat-resistant Silicone Wire](https://www.aliexpress.com/item/2255800441309579.html)
+  * **18AWG - 1m:** Black, Red, White
+  * **22AWG - 5m:** Black, Red, Blue, Yellow, White
+  * **26AWG - 5m:** Black, Red, Blue, Yellow
+* [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
+* [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
+* [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
+* [12v to 5v stepdown](https://www.aliexpress.com/item/3256801635468667.html)
+
+**Gaggia Classic Specific**
+* [1-Bit AC 220V Optocoupler](https://www.aliexpress.com/item/1005003228104606.html)  
+
+### EXTENDED FUNCTIONALITY
+_Will enable pump control based on active pressure feedback, this enables pressure and flow profiling as well as other functionality._
+* [RobotDYN dimmer module - Dimmer 4A-400V](https://www.aliexpress.com/item/2251832615710334.html)
+* [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
+* [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html) 
+* [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
+* [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
+* [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
+
+>
+
 # SCHEMATICS & DIAGRAMS
 
 **Schematics:**

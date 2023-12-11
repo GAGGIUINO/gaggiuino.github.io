@@ -20,8 +20,35 @@ This guide will explain how to upgrade your nano build to use a STM32F4xxx (Blac
 > [!Note]
 > This will upgrade you to the STM32 independent relay and dimmer schematics. Depending on when you completed your nano install your exact setup may not be covered step-by-step. When in doubt trust the schematics. If you prefer, reverting to stock and doing a new install is an option.
 
-## Components 
-Refer to the [Gaggiuino BOM](/?id=bill-of-materials) for the latest hardware needed.
+# Bill Of Materials
+
+### UPGRADING FROM EXTENDED FUNCTIONALITY
+* [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
+* [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
+* [ADS1115](https://www.aliexpress.com/item/32869421559.html)
+* [5V RELAY](https://www.aliexpress.com/item/3256803997020234.html) 
+* [Snubber](https://www.aliexpress.com/item/3256803573244277.html)
+
+### UPGRADING FROM BASE FUNCTIONALITY ADD:
+* [RobotDYN dimmer module - Dimmer 4A-400V](https://www.aliexpress.com/item/2251832615710334.html)
+* [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
+* [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html)
+* Wire _(see STM32 Blackpill tab if you don't already have wire from your initial build)_
+
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
+* [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
+* [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
+* [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
+
+<!-- tab:Gaggia Classic Pro -->
+* [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
+* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high quality hose alternative if Saeco can't be bought locally**
+* [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
+* [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
+* [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
+
+<!-- tabs:end -->
 
 ## Expansion Board Compatibility 
 
