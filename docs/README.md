@@ -68,13 +68,6 @@ _3_ __Predictive scales__ - software driven predicted weight output.
 
 Gaggiuino is designed for the Gaggia Classic family of espresso machines with 3-way valves (**NOT the Gaggia Classic V2, SIN035U RI9403**). Other espresso machines such as the Rancilio Silvia are also supported although no official installation instructions are available at this time.
 
-> [!TIP|style:callout|label:NAMING|iconVisibility:visible]
-> There are two main groups of Gaggia Classic espresso machines: Gaggia Classic, and Gaggia Classic Pro / Eco / Evo.  
-> For the sake of brevity, Gaggia Classic (or GC) and Gaggia Classic Pro (or GCP) may be used to refer to the groups.
-
-<details>
-<summary><b>Compatibility table</b> <i>(Click to expand)</i></summary>
-
 Name                                      | Voltage   | Model Years | Model ID        | Notes  
 ------------------------------------------|-----------|-------------|-----------------|-------
 :heavy_check_mark: Gaggia Classic         | 100-120 V | 1991-2018   | SIN035 RI9303   |  
@@ -83,10 +76,8 @@ Name                                      | Voltage   | Model Years | Model ID  
 :heavy_check_mark: Gaggia Classic Pro     | 100-120 V | 2019-2022   | SIN035R RI9380  | 
 :heavy_check_mark: Gaggia Classic Pro     | 220-240 V | 2019-2022   | SIN035R RI9380  | Uncommon, easier to mod than models with eco PCB
 :heavy_check_mark: Gaggia Classic Pro Eco | 220-240 V | 2019-2022   | SIN035UR RI9480 | Power switch mod required and custom wiring recommended due to eco PCB
-:heavy_check_mark: Gaggia Classic Evo Pro | 100-120 V | 2023-?      | SIN035R RI9380  | 9 bar OPV spring must be replaced with 10-12 bar spring or spring force increased with washers.
+:heavy_check_mark: Gaggia Classic Evo Pro | 100-120 V | 2023-?      | SIN035R RI9380  | 9 bar OPV spring must be replaced with 10-12 bar spring or spring force increased with washers. <br /> High-temp insulation required for stock wiring integration due to combined switch connectors
 :heavy_check_mark: Gaggia Classic Evo Pro | 220-240 V | 2023-?      | SIN035UR RI9481 | Power switch mod required and custom wiring recommended due to eco PCB
-
-</details>
 
 >
 
@@ -113,17 +104,20 @@ Name                                      | Voltage   | Model Years | Model ID  
 
   There are approved official suppliers for PCBs and Kits, and 3D printed parts linked in the sidebar. Select the 3D print provider closest to you for the lowest shipping cost. Alternatively, the BOM has sources linked so you can order components yourself and 3D print from the design files.
 
+  > [!TIP|style:callout|label:NAMING TIP|iconVisibility:visible]
+  > There are two main groups of Gaggia Classic espresso machines referred to in the BOM and instructions:  
+  >   - Gaggia Classic (GC)  
+  >   - Gaggia Classic Pro (GCP), which generally includes the Pro, Eco, and Evo models
+
 4. **Parts are in, time to build!**
 
   > [!WARNING|style:callout|label:WARNING ABOUT VIDEOS|iconVisibility:visible]
   > There are no official build videos. It is highly recommended to only follow the instructions on this website.
 
-  Setup software per the [prerequisites](prereq/prerequisites.md) and refer back as needed when flashing the Blackpill.
-
   Follow the instructions for your control system selection
 
     * [PCB](pcb/singleboard.md)
-    * [component (Lego) build](guides-stm32/lego-component-build-guide.md)
+    * [Component (Lego) build](guides-stm32/lego-component-build-guide.md)
 
   Follow the instructions for your wiring selection
 
@@ -152,35 +146,20 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 <!-- tabs:start -->
 <!-- tab:STM32 PCB -->
-* [PCBv3 *(Group buy or custom order)*](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V3)
+* [PCBv3 *(Approved Supplier or custom order)*](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V3)
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
 * [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html)
 * [C-M4 ungrounded screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
 * [Heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html)
-  * **18AWG - 1m:** Black, Red, Brown, White, Green, Blue & Yellow
-  * **22AWG - 5m:** Black, Red, White, Orange & Yellow
+  * **22AWG - 5m:** Black, Red, Blue, Yellow, Orange, Purple
 * [JST XH 4P](https://www.aliexpress.com/item/2251832768103991.html)
 * [JST PH 3P, 4P & 5P](https://www.aliexpress.com/item/4000091077742.html)
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
-* [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-* [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html) 
+* [Pressure sensor | 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
+* [O Ring | OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html) 
 
-<!-- tabs:start -->
-<!-- tab:Gaggia Classic -->
-* [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
-* [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
-* [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
-
-<!-- tab:Gaggia Classic Pro -->
-* [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
-* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high quality hose alternative if Saeco can't be bought locally**
-* [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
-* [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
-* [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
-
-<!-- tabs:end -->
 <!-- tab:STM32 LEGO -->
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
@@ -196,13 +175,13 @@ Name                                      | Voltage   | Model Years | Model ID  
   * **22AWG - 5m:** Black, Red, Blue, Yellow, White
   * **26AWG - 5m:** Black, Red, Blue, Yellow
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
-* [Piggy Back spades](https://www.aliexpress.com/item/32800326782.html)
 * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
 * [12v to 5v stepdown](https://www.aliexpress.com/item/3256801635468667.html)
 * [Snubber](https://www.aliexpress.com/item/3256803573244277.html)
-* [RobotDYN dimmer module - Dimmer 4A-400V](https://www.aliexpress.com/item/2251832615710334.html)
-* [Pressure sensor - 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-* [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html)
+* [RobotDYN dimmer module | Dimmer 4A-400V](https://www.aliexpress.com/item/2251832615710334.html)
+* [Pressure sensor | 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
+* [O Ring | OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html)
+<!-- tabs:end -->
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
@@ -216,8 +195,22 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
-
 <!-- tabs:end -->
+
+<!-- tabs:start -->
+<!-- tab:Stock Wiring Integration -->
+* [Heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html) **Amount is for minimal mistakes, extra is recommended**
+  * **18AWG - 1m:** Black *(x2 if 230 VAC)*, White *(x2 if 230 VAC)*, Red, Blue, Yellow
+* [Piggy Back spades 6.3mm](https://www.aliexpress.com/item/32800326782.html)
+
+<!-- tab:Custom Wiring -->
+**This list assumes components will be taken from the stock wiring harness. For alternate components see the [Custom Wiring](guides-stm32/3pln-custom-wiring.md) page**
+* [Heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html) **Amount is for minimal mistakes, extra is recommended**
+  * **18AWG - 1m:** Black, White *(x2 if 120 VAC)*, Red, Orange, Blue *(x2 if 230 VAC)*, Yellow, Green
+* [BN1.25 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html)
+* [BN2 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html)
+* [Silicone Heat Shrink Tube | 4 mm, 5 mm dia](https://www.aliexpress.com/item/3256801522005095.html) **OR** [Self-Fusing Silicone Tape | 25 mm wide, 1.5+ m long](https://www.aliexpress.com/item/3256805094022385.html)
+
 <!-- tabs:end -->
 <!-- div:panel-end -->
 > 
