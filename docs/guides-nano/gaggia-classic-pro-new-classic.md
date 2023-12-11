@@ -32,6 +32,10 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 
+### 3D Printed Parts
+* [Screen Enclosure](https://www.printables.com/model/280617)  
+* [Internal Component Housing](https://www.printables.com/model/269394)
+
 >
 
 # Test Install

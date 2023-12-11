@@ -100,7 +100,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 3. **Select and Order Components**
 
-  Order components based on your machine and install path. Make sure to check the [Bill of Materials](#bill-of-materials), the [custom wiring page](guides-stm32/3pln-custom-wiring.md) (if that's the route you're going), and the pages of any optional accessories ([HW Scales](accessories/hw-scales.md),[ToFnLED](accessories/tofnled.md)) that you'd like to install. 
+  Order components based on your machine and install path. Make sure to check the [Bill of Materials](#bill-of-materials), the [custom wiring page](guides-stm32/3pln-custom-wiring.md) (if that's the route you're going), and the pages of any optional accessories ([HW Scales](accessories/hw-scales.md), [ToFnLED](accessories/tofnled.md)) that you'd like to install. 
 
   There are approved official suppliers for PCBs and Kits, and 3D printed parts linked in the sidebar. Select the 3D print provider closest to you for the lowest shipping cost. Alternatively, the BOM has sources linked so you can order components yourself and 3D print from the design files.
 
@@ -226,10 +226,6 @@ BOM and assembly instructions for the recommended 3D printed parts used in the s
 <!-- tab:STM32 LEGO -->
 * [Screen Enclosure](https://www.printables.com/model/280617)  
 * [Internal Component Housing](https://www.printables.com/model/269394)
-<!-- tab:Arduino Nano -->
-* [Screen Enclosure](https://www.printables.com/model/280617)  
-* [Internal Component Housing](https://www.printables.com/model/269394)
-* [Optocoupler Case *(for Gaggia Classic)*](https://www.printables.com/model/339542)
 <!-- tabs:end -->
 
 If you'd like to print yourself, order from CraftCloud, or use a local print shop **please carefully review the recommended print parameters** on the design pages. 

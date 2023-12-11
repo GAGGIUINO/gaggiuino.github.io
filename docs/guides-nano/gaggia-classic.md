@@ -33,6 +33,11 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 * [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
 * [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
 
+### 3D Printed Parts
+* [Screen Enclosure](https://www.printables.com/model/280617)  
+* [Internal Component Housing](https://www.printables.com/model/269394)
+* [Optocoupler Case](https://www.printables.com/model/339542)
+
 >
 
 # SCHEMATICS & DIAGRAMS
