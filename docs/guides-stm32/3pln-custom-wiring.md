@@ -13,7 +13,7 @@
 Many stock components are difficult to source so component substitutions have been found and are being tested. Options range from using only stock components (by cutting the original wire harness and splicing them in) to creating a completely new HV wiring harness with alternate components. The list of components is still a work in progress. 
 
 <details>
-<summary><b>Alternate Component List </b> <i>(Click to expand)</i></summary>
+<summary><b>Alternate Component and Tool List </b> <i>(Click to expand)</i></summary>
 
 | Description | Link(s)     | Notes       |
 | :---------- | :---------- | :---------- |
@@ -30,30 +30,52 @@ Many stock components are difficult to source so component substitutions have be
 
 >
 
+# Custom Wiring Harness Examples
+
+These are examples of the HV portion of the 3PLN custom wiring harness. Stock harness or alternate components can be used in the boxed sections.
+
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
+| 100v - 120v | 220v - 240v |
+| :---------- | :---------- |
+| <img height="300" alt="GC 120v" src="schematics/custom-3pln-examples/GC_120v.jpg"> | <img height="300" alt="GC 220v" src="schematics/custom-3pln-examples/GC_220v.jpg"> |
+<!-- tab:Gaggia Classic Pro -->
+| 100v - 120v | 220v - 240v |
+| :---------- | :---------- |
+| <img height="300" alt="GCP 120v" src="schematics/custom-3pln-examples/GCP_120v.jpg"> | <img height="300" alt="GCP 220v" src="schematics/custom-3pln-examples/GCP_220v.jpg"> |
+<!-- tabs:end -->
+
+>
+
 # Custom Wire Harness Schematics
 
-!> As this wiring completely replaces the stock wiring harness it is expected that the reader can complete the wiring using only the schematics. Component builds can use the PCBv3 or HV Only schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md).
+> [!Note|style:callout]
+> * As this wiring completely replaces the stock wiring harness it is expected that the reader can complete the wiring using only the schematics.  
+> * Component builds can use the HV wiring on the [PCBv3 (3PLN)](#pcb-v3-3pln) schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md).
 
-### PCB v3
-> #### Gaggia Classic
-> | 100v - 120v | 220v - 240v |
-> | :---------- | :---------- |
-> | <img height="300" alt="GC PCBv3 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_120v.png"> | <img height="300" alt="GC PCBv3 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_220v.png"> |
->
-> #### Gaggia Classic Pro
-> | 100v - 120v | 220v - 240v |
-> | :---------- | :---------- |
-> | <img height="300" alt="GCP PCBv3 120v" src="schematics/custom-3pln/GCP_wiring_PCBv3_120v.png"> | <img height="300" alt="GCP PCBv3 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_220v.png"> |
+### PCB v3 (3PLN)
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
+| 100v - 120v | 220v - 240v |
+| :---------- | :---------- |
+| <img height="300" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_120v.png"> | <img height="300" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_220v.png"> |
+<!-- tab:Gaggia Classic Pro -->
+| 100v - 120v | 220v - 240v |
+| :---------- | :---------- |
+| <img height="300" alt="GCP 120v" src="schematics/custom-3pln/GCP_wiring_PCBv3_120v.png"> | <img height="300" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_220v.png"> |
+<!-- tabs:end -->
+
 ### PCB v2
-> #### Gaggia Classic
-> | 100v - 120v | 220v - 240v |
-> | :---------- | :---------- |
-> | <img height="300" alt="GC PCBv2 120v" src="schematics/custom-3pln/GC_wiring_PCBv2_120v.png"> | <img height="300" alt="GC PCBv2 220v" src="schematics/custom-3pln/GC_wiring_PCBv2_220v.png"> |
->
-> #### Gaggia Classic Pro
-> | 100v - 120v | 220v - 240v |
-> | :---------- | :---------- |
-> |<img height="300" alt="GCP PCBv2 120v" src="schematics/custom-3pln/GCP_wiring_PCBv2_120v.png"> | <img height="300" alt="GCP PCBv2 220v" src="schematics/custom-3pln/GCP_wiring_PCBv2_220v.png"> |
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
+| 100v - 120v | 220v - 240v |
+| :---------- | :---------- |
+| <img height="300" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv2_120v.png"> | <img height="300" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv2_220v.png"> |
+<!-- tab:Gaggia Classic Pro -->
+| 100v - 120v | 220v - 240v |
+| :---------- | :---------- |
+| <img height="300" alt="GCP 120v" src="schematics/custom-3pln/GCP_wiring_PCBv2_120v.png"> | <img height="300" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv2_220v.png"> |
+<!-- tabs:end -->
 
 ### HV Only
 * [3PLN 120v, GC-specific](https://user-images.githubusercontent.com/53577819/220784232-1b254cd4-d3d7-4fe9-97e5-283fa1fb2659.png)

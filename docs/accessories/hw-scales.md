@@ -45,7 +45,7 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 * **1** Drip tray or adapter combo *(choose based on your system)*
     * GC Drip Tray: GC Drip Tray Adapter and 4 Drip Tray Spacers
     * Low-Profile Drip Tray: LP Drip Tray Adapter and 4 Drip Tray Spacers  
-        *Note: designed for BaristaGadgets and Shades of Coffee low profile trays with standard footprint (not extended)*
+        *Note: designed for BaristaGadgets and Shades of Coffee (Pre 2019) low profile trays with standard footprint (not extended)*
     * GCP Drip Tray: GCP Drip Tray Adapter (L and R)
     * 3D Print DripTray (no other adapters needed)
 
