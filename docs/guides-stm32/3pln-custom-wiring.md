@@ -4,8 +4,16 @@
 
 # Custom Wiring Considerations
 
-> [!Note|style:callout]
-> Many stock components are difficult to source so component substitutions have been found and are being tested. Options range from using only stock components (by cutting the original wire harness and splicing them in) to creating a completely new HV wiring harness with alternate components. This list of components is still a work in progress. 
+* Consider buying a XH and PH JST kit to make up your own LV connectors instead of using pigtails.
+* Know and study difference between HV and LV lines in the schematics.
+* PCB v3 can fit into the pump tower where the eco board would be on the 2019+ models (Gaggia Classic Pro, Eco, Evo). 
+
+# Alternate Components
+
+Many stock components are difficult to source so component substitutions have been found and are being tested. Options range from using only stock components (by cutting the original wire harness and splicing them in) to creating a completely new HV wiring harness with alternate components. The list of components is still a work in progress. 
+
+<details>
+<summary><b>Alternate Component List </b> <i>(Click to expand)</i></summary>
 
 | Description | Link(s)     | Notes       |
 | :---------- | :---------- | :---------- |
@@ -15,18 +23,16 @@
 | Pump Thermal Fuse | [KSD9700 Thermal Switch, 120°C, NC](https://www.aliexpress.com/item/2251832685942790.html) | Retain with hot glue (same method as stock)|
 | Boiler Terminal Connectors | [TE 160783-7 (DigiKey)](https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/160783-7/5157254) or [TE 160783-7 (Mouser)](https://www.mouser.com/ProductDetail/TE-Connectivity-AMP/160783-7?qs=%252BeETdXPI8nLQYJsNGAnPEA%3D%3D) | Stock part, a bit tricky to crimp properly |
 | Boiler Terminal Connector Housing | [Boiler Terminal Shroud](https://www.printables.com/model/380256) | Can be purchased from print providers, used if stock covers can't be |
+| Boiler Terminal Crimpers | [IWISS IWS-1424A](https://www.aliexpress.com/item/3256805916886076.html) **+ Pliers** or <br /> [TE 160783-7 Crimper HS Jaws](https://www.printables.com/model/673240)| Manufacturer crimpers do not exist. Open barrel crimpers can crimp the wire connection, but the insulation needs to be done with pliers or the TE 160783-7 Crimper HS Jaws|
 | Indicator Lamp | [Red 6x13 mm Neon Bulb](https://www.aliexpress.com/item/2261799834780054.html) - pick the voltage range for your machine <br /> [7.9 mm Clear Heat Shrink Tubing](https://www.aliexpress.com/item/3256804355023361.html) - 2 layers over bulb <br /> [4 mm Silicone Heat Shrink Tube](https://www.aliexpress.com/item/3256801522005095.html) - insulate resistor and leads | Using the stock indicators is easier. Only do this if you really don't want to cut the stock harness.
-
-
-* Consider buying a XH and PH JST kit to make up your own LV connectors instead of using pigtails.
-* Know and study difference between HV and LV lines in the schematics.
-* PCB v3 can fit into the pump tower where the eco board would be on the 2019+ models (Gaggia Classic Pro, Eco, Evo). 
+| Indicator Lamp Clips | [Gaggia Classic Pro Neon Lamp Clip](https://www.printables.com/model/647745)     | For Pro/Eco/Evo. There is a version for stock lamps as well as a tighter clip for 6 mm dia neon bulbs (adding thickness with heat shrink tubing not needed)       |
+</details>
 
 >
 
-!> As this wiring completely replaces the stock wiring harness it is expected that the reader can complete the wiring using only the schematics. Component builds can use the PCBv3 or HV Only schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md).
-
 # Custom Wire Harness Schematics
+
+!> As this wiring completely replaces the stock wiring harness it is expected that the reader can complete the wiring using only the schematics. Component builds can use the PCBv3 or HV Only schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md).
 
 ### PCB v3
 > #### Gaggia Classic
