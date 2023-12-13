@@ -210,7 +210,7 @@ Name                                      | Voltage   | Model Years | Model ID  
   * **18AWG - 1m:** Black, White *(x2 if 120 VAC)*, Red, Orange, Blue *(x2 if 230 VAC)*, Yellow, Green
 * [BN1.25 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html)
 * [BN2 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html)
-* [Silicone Heat Shrink Tube | 4 mm, 5 mm dia](https://www.aliexpress.com/item/3256801522005095.html) **OR** [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html)
+* [Silicone Heat Shrink Tube | 4, 5, 6 mm dia](https://www.aliexpress.com/item/3256801522005095.html) **OR** [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html)
 
 <!-- tabs:end -->
 <!-- div:panel-end -->
