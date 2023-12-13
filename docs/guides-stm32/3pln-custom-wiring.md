@@ -74,7 +74,7 @@ Many stock components are difficult to source so component substitutions have be
 <!-- tab:Gaggia Classic 220-240v -->
 <img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv2_220v.png">
 <!-- tab:Gaggia Classic Pro 100-120v -->
-<img width="600" alt="GCP 120v" src="schematics/custom-3pln/GCP_wiring_PCBv2_120v.pngg">
+<img width="600" alt="GCP 120v" src="schematics/custom-3pln/GCP_wiring_PCBv2_120v.png">
 <!-- tab:Gaggia Classic Pro 220-240v -->
 <img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv2_220v.png">
 <!-- tabs:end -->
