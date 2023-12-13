@@ -75,9 +75,9 @@ Name                                      | Voltage   | Model Years | Model ID  
 :x:                Gaggia Classic V2      | 220-240 V | 2015-2018   | SIN035U RI9403  | Avoid like the plague
 :heavy_check_mark: Gaggia Classic Pro     | 100-120 V | 2019-2022   | SIN035R RI9380  | 
 :heavy_check_mark: Gaggia Classic Pro     | 220-240 V | 2019-2022   | SIN035R RI9380  | Uncommon, easier to mod than models with eco PCB
-:heavy_check_mark: Gaggia Classic Pro Eco | 220-240 V | 2019-2022   | SIN035UR RI9480 | Power switch mod required and custom wiring recommended due to eco PCB
+:heavy_check_mark: Gaggia Classic Pro Eco | 220-240 V | 2019-2022   | SIN035UR RI9480 | [Power switch mod](https://www.youtube.com/embed/WNs3uSLA4Ts?start=99&end=151) required and custom wiring recommended due to eco PCB
 :heavy_check_mark: Gaggia Classic Evo Pro | 100-120 V | 2023-?      | SIN035R RI9380  | 9 bar OPV spring must be replaced with 10-12 bar spring or spring force increased with washers. <br /> High-temp insulation required for stock wiring integration due to combined switch connectors
-:heavy_check_mark: Gaggia Classic Evo Pro | 220-240 V | 2023-?      | SIN035UR RI9481 | Power switch mod required and custom wiring recommended due to eco PCB
+:heavy_check_mark: Gaggia Classic Evo Pro | 220-240 V | 2023-?      | SIN035UR RI9481 | [Power switch mod](https://www.youtube.com/embed/WNs3uSLA4Ts?start=99&end=151) required and custom wiring recommended due to eco PCB
 
 >
 
