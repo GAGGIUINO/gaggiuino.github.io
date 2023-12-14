@@ -158,7 +158,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [JST PH 3P, 4P & 5P](https://www.aliexpress.com/item/4000091077742.html)
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Pressure sensor | 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-* [O Ring | OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html) 
+* [Flat gasket/o-ring | 1|4 inch pipe (11 x 6 mm), 3 mm thick](https://www.aliexpress.com/item/2255799841120591.html)
 
 <!-- tab:STM32 LEGO -->
 * [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
@@ -180,7 +180,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [Snubber](https://www.aliexpress.com/item/3256803573244277.html)
 * [RobotDYN dimmer module | Dimmer 4A-400V](https://www.aliexpress.com/item/2251832615710334.html)
 * [Pressure sensor | 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-* [O Ring | OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html)
+* [Flat gasket/o-ring | 1|4 inch pipe (11 x 6 mm), 3 mm thick](https://www.aliexpress.com/item/2255799841120591.html)
 <!-- tabs:end -->
 
 <!-- tabs:start -->
