@@ -43,12 +43,18 @@ Many stock components are difficult to source so component substitutions have be
 ### PCB v3 (3PLN)
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic 100-120v -->
+
+*Remember to check and add [Grounding](guides-upgrade/grounding-a-gaggia-classic.md) if needed.*
+
 <img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_120v_v2.png">
 <!-- tab:Gaggia Classic 220-240v -->
 <img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_220v_v2.png">
 <!-- tab:Gaggia Classic Pro 100-120v -->
 <img width="600" alt="GCP 120v" src="schematics/custom-3pln/GCP_wiring_PCBv3_120v_v2.png">
 <!-- tab:Gaggia Classic Pro 220-240v -->
+
+*Remember to do the [Power switch mod](https://www.youtube.com/embed/WNs3uSLA4Ts?start=99&end=151) to make it bistable.*  
+
 <img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_220v_v2.png">
 <!-- tabs:end -->
 
@@ -70,12 +76,18 @@ Many stock components are difficult to source so component substitutions have be
 ### PCB v2
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic 100-120v -->
+
+*Remember to check and add [Grounding](guides-upgrade/grounding-a-gaggia-classic.md) if needed.*  
+
 <img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv2_120v.png">
 <!-- tab:Gaggia Classic 220-240v -->
 <img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv2_220v.png">
 <!-- tab:Gaggia Classic Pro 100-120v -->
 <img width="600" alt="GCP 120v" src="schematics/custom-3pln/GCP_wiring_PCBv2_120v.png">
 <!-- tab:Gaggia Classic Pro 220-240v -->
+
+*Remember to do the [Power switch mod](https://www.youtube.com/embed/WNs3uSLA4Ts?start=99&end=151) to make it bistable.*  
+
 <img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv2_220v.png">
 <!-- tabs:end -->
 

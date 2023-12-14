@@ -56,6 +56,8 @@ Save the images or right-click and open in a new tab to view at full resolution.
 > [!Warning|style:callout]
 > Stock wiring integration is possible, but for machines with the eco board (automatic power-off) [3PLN custom wiring](guides-stm32/3pln-custom-wiring.md) is recommended.
 
+*Remember to do the [Power switch mod](https://www.youtube.com/embed/WNs3uSLA4Ts?start=99&end=151) to make it bistable.*  
+
 <img height="300" alt="image" src="schematics/install-stock-3pln/gcp_eco-hv-3pln.jpg">
 
 <img height="300" alt="image" src="schematics/install-stock-3pln/gcp_eco-lv-3pln.jpg">
@@ -71,7 +73,7 @@ Save the images or right-click and open in a new tab to view at full resolution.
 Take off the top cover by unscrewing the 2 top screws. You should be able to see something similar to the below image. 
 
 > [!Note]
-> If you have a US Gaggia Classic check whether you have a ground connection on your power input. If it's a 2 pole plug as seen in the image adding a ground is recommended prior to starting the integration. BOM and instructions can be found at [Grounding a Gaggia Classic](guides/grounding-a-gaggia-classic.md)
+> If you have a US Gaggia Classic check whether you have a ground connection on your power input. If it's a 2 pole plug as seen in the image adding a ground is recommended prior to starting the integration. BOM and instructions can be found at [Grounding a Gaggia Classic](guides-upgrade/grounding-a-gaggia-classic.md)
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
