@@ -56,6 +56,8 @@ Save the images or right-click and open in a new tab to view at full resolution.
 > [!Warning|style:callout]
 > Stock wiring integration is possible, but for machines with the eco board (automatic power-off) [3PLN custom wiring](guides-stm32/3pln-custom-wiring.md) is recommended.
 
+*Remember to do the [Power switch mod](https://www.youtube.com/embed/WNs3uSLA4Ts?start=99&end=151) to make it bistable.*  
+
 <img height="300" alt="image" src="schematics/install-stock-3pln/gcp_eco-hv-3pln.jpg">
 
 <img height="300" alt="image" src="schematics/install-stock-3pln/gcp_eco-lv-3pln.jpg">
@@ -71,7 +73,7 @@ Save the images or right-click and open in a new tab to view at full resolution.
 Take off the top cover by unscrewing the 2 top screws. You should be able to see something similar to the below image. 
 
 > [!Note]
-> If you have a US Gaggia Classic check whether you have a ground connection on your power input. If it's a 2 pole plug as seen in the image adding a ground is recommended prior to starting the integration. BOM and instructions can be found at [Grounding a Gaggia Classic](guides/grounding-a-gaggia-classic.md)
+> If you have a US Gaggia Classic check whether you have a ground connection on your power input. If it's a 2 pole plug as seen in the image adding a ground is recommended prior to starting the integration. BOM and instructions can be found at [Grounding a Gaggia Classic](guides-upgrade/grounding-a-gaggia-classic.md)
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
@@ -89,8 +91,9 @@ Switches (GCP/Eco)|P - Power <br />B - Brew/Coffee <br />S - Steam |1   �
 Heaters           |H      |3    4 <br />1    2
 Steam TS          |S      |a    b
 Brew TS           |B      |a    b
+Valve             |V      |a    b
 Pump              |P      |a    b <br /> _a is from fuse, GC unlabeled_ <br />_b is the single 18 gauge wire in most machines_
-Fuse (GC)         |F      |_there should be 2 wires_ <br />_in the connector to the fuse_
+Pump Fuse (GC)         |F      |_there should be 2 wires_ <br />_in the connector to the fuse_
 
 Here are the stock pump connections for clarity. Note that most integration connections are made at the pump, so make sure the pump wiring matches the stock [schematic](#schematics) for your machine before continuing.
 

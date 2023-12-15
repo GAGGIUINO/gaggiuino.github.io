@@ -132,10 +132,13 @@ Component                                      |Colors                  |Gauge|L
 [PSU](#psu)                                    |Black, White            |22   |60 mm
 [Snubber-Relay](#snubber-relay-and-dimmer)     |Black, Red              |22   |100 mm
 [Relay-Dimmer](#snubber-relay-and-dimmer)      |Black                   |22   |50 mm
-[Relay (NO)](#snubber-relay-and-dimmer)        |Red                     |22   |250 mm
-[Dimmer (Out, N-In)](#snubber-relay-and-dimmer)|Red, White              |22   |250 mm
-[Dimmer (L-In)](#snubber-relay-and-dimmer)     |Black                   |22   |600 mm
+[Relay: NO (3)](#snubber-relay-and-dimmer)        |Red                     |22   |250 mm <sup>Note 1</sup>
+[Dimmer: Out (P), N-In (N)](#snubber-relay-and-dimmer)|Red, White              |22   |250 mm <sup>Note 1</sup>
+[Dimmer: L-In (L)](#snubber-relay-and-dimmer)     |Black                   |22   |600 mm <sup>Note 1</sup>
 
+> [!Note|style:callout|label:Note 1|iconVisibility:visible]
+> These lengths are for stock wiring integration.  
+> For custom wiring these connections can wait or a short wire can be installed to make connecting to the 3PLN of the custom harness easier.
 >
 
 # Schematic
@@ -215,29 +218,11 @@ Once you're done the assembly should look like this.
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236129109-bfbb6880-8942-4009-a386-3d2be94ca1c1.png">
 
-# Programming/Flashing
-
-!> Do not flash the Blackpill while powering the system over USB-C.  
-
-Flash the Blackpill using the ST-Link (connect SWDIO, GND, SWCLK, and 3.3V* - see [Prerequisites](prereq/prerequisites.md) for details). 
-
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/235833233-5d8d99d3-665a-40d2-b215-489295c49480.png">
-
-Flash the Nextion with the applicable nextion-*-lcd.tft on an otherwise-empty ≤32 GB FAT32 microSD card.  
-
-Power for flashing the Nextion may be provided through the USB-C port on the Blackpill so long as you are using a USB power adapter that will supply 4.6-5.2 VDC (don't use a battery bank or PC USB 2.0 ports for power).  
-
-?> More stable voltage can be provided by using the 120 VAC PSU and piggybacking off of the Gaggia power switch ([example here](https://user-images.githubusercontent.com/117388662/235836724-71394491-c47a-46ed-920b-79ced184cc16.png)), however this is unnecessary for flashing and testing at this point so long as the voltage provided through the USB-C port is in range.  
-*If you wish to power the system through the 120 VAC PSU to flash the Blackpill then do **not** connect 3.3V to the ST-Link unless you're sure you do not have a knock-off/clone ST-Link.
-
-Wait for the Nextion to show the "Update Successed! (sic)" message, turn off power, and then remove the microSD card.
-
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236127637-fb83e05e-06d0-4a2f-b6e8-cdf48a36a077.png">
-
 # Component test
 
->[!Tip]
->The system will not initialize if the ToFnLED board was enabled in the software but isn't plugged in
+See [MCU Flashing](guides-stm32/mcu-flashing.md) for instructions on flashing the Blackpill and display
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236127637-fb83e05e-06d0-4a2f-b6e8-cdf48a36a077.png">
 
 Make sure the Blackpill, thermocouple, pressure transducer, screen, SSR, switch wires, and ToFnLED if defined are connected and power on the system once again. If all is successful you should:
 - see a build number during boot (good Blackpill-Nextion communication)
@@ -246,6 +231,10 @@ Make sure the Blackpill, thermocouple, pressure transducer, screen, SSR, switch 
 - see the SSR light turn on if the temperature is below the setpoint (it will flash if temp is close to setpoint)
 - see a pressure value of 0.0 bar with no deviation
 - *not* see the steam temp as the target (if you do then there's a short to ground, likely through the expansion board)
+
+
+>[!Tip]
+>The system will not initialize if the ToFnLED board was enabled in the software but isn't plugged in
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/236076956-36ab8d35-6b5d-476e-84d2-d2e5097fafb1.png">
 
@@ -272,7 +261,7 @@ Recommendation: zip-tie the cable strain relief at this point so the risk of str
 ## Snubber, Relay, and Dimmer
 
 [Measure and cut](#external-wire-lengths) the wires for the snubber-relay, relay-dimmer, relay, and dimmer connections. 
-As shown above, the snubber wires get routed in the channel under the PSU. Here is the full set of housing HV wires for interfacing with the power switch, 3-way solenoid valve, and pump. 
+As shown above, the snubber wires get routed in the channel under the PSU. Here is the full set of housing HV wires for interfacing with the power switch, 3-way solenoid valve, and pump (lengths shown are for integrating with stock wiring). 
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/117388662/239153554-60702e5b-7fcc-45bc-99a2-07b615da3e5d.png">
 
@@ -280,13 +269,11 @@ As shown above, the snubber wires get routed in the channel under the PSU. Here 
 
 To connect the ST-Link to the Blackpill (for flashing without opening the housing or machine) this is one of the few times in the project where DuPont connectors may be used. Another option is to solder the wires directly to the Blackpill. 
 
-?> If you wish to power the system through the 120 VAC PSU (powering on the espresso machine) to flash the Blackpill then do **not** connect 3.3V to the ST-Link unless you're sure you do not have a knock-off/clone ST-Link.
-
 Close the housing with 4 screws to complete. 
 
 Optional wiring that is not pictured:
-- HW Scales
-- ToFnLED
+- [HW Scales](accessories/hw-scales.md)
+- [ToFnLED](accessories/tofnled.md)
 
 **Continue the install by referencing the 3PLN machine-specific schematics and/or install instructions that apply to your desired build path:**
 * [3PLN Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md) page.

@@ -4,50 +4,92 @@
 
 # Custom Wiring Considerations
 
-> [!Note|style:callout]
-> Many stock components are difficult to source so component substitutions have been found and are being tested. Options range from using only stock components (by cutting the original wire harness and splicing them in) to creating a completely new HV wiring harness with alternate components. This list of components is still a work in progress. 
-
-| Description | Link(s)     | Notes       |
-| :---------- | :---------- | :---------- |
-| 22-16 Gauge Wire Connector | [BN1.25 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html) <br /> [5 mm Silicone Heat Shrink Tube](https://www.aliexpress.com/item/3256801522005095.html) | Use for splicing in components (stock or alternate) |
-| 16-14 Gauge Wire Connector | [BN2 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html) <br /> [5 mm Silicone Heat Shrink Tube](https://www.aliexpress.com/item/3256801522005095.html) | Useful for splicing 1:2 boiler connector wires on 120V machines |
-| Boiler Thermal Fuse | [Resettable Thermal Fuse, NC, 185°C, 16 A, M4](https://www.aliexpress.com/item/3256805886376281.html) | Install in the boiler boss where the steam thermostat was|
-| Pump Thermal Fuse | [KSD9700 Thermal Switch, 120°C, NC](https://www.aliexpress.com/item/2251832685942790.html) | Retain with hot glue (same method as stock)|
-| Boiler Terminal Connectors | [TE 160783-7 (DigiKey)](https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/160783-7/5157254) or [TE 160783-7 (Mouser)](https://www.mouser.com/ProductDetail/TE-Connectivity-AMP/160783-7?qs=%252BeETdXPI8nLQYJsNGAnPEA%3D%3D) | Stock part, a bit tricky to crimp properly |
-| Boiler Terminal Connector Housing | [Boiler Terminal Shroud](https://www.printables.com/model/380256) | Can be purchased from print providers, used if stock covers can't be |
-| Indicator Lamp | [Red 6x13 mm Neon Bulb](https://www.aliexpress.com/item/2261799834780054.html) - pick the voltage range for your machine <br /> [7.9 mm Clear Heat Shrink Tubing](https://www.aliexpress.com/item/3256804355023361.html) - 2 layers over bulb <br /> [4 mm Silicone Heat Shrink Tube](https://www.aliexpress.com/item/3256801522005095.html) - insulate resistor and leads | Using the stock indicators is easier. Only do this if you really don't want to cut the stock harness.
-
-
 * Consider buying a XH and PH JST kit to make up your own LV connectors instead of using pigtails.
 * Know and study difference between HV and LV lines in the schematics.
 * PCB v3 can fit into the pump tower where the eco board would be on the 2019+ models (Gaggia Classic Pro, Eco, Evo). 
 
->
+# Alternate Components
 
-!> As this wiring completely replaces the stock wiring harness it is expected that the reader can complete the wiring using only the schematics. Component builds can use the PCBv3 or HV Only schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md).
+Many stock components are difficult to source so component substitutions have been found and are being tested. Options range from using only stock components (by cutting the original wire harness and splicing them in) to creating a completely new HV wiring harness with alternate components. The list of components is still a work in progress. 
+
+<details>
+<summary><b>Alternate Component List </b> <i>(Click to expand)</i></summary>
+
+| Description | Link(s)     | Notes       |
+| :---------- | :---------- | :---------- |
+| 22-16 Gauge Wire Connector | [BN1.25 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html) <br /> [4 mm Silicone Heat Shrink Tube](https://www.aliexpress.com/item/3256801522005095.html) | Use for splicing in components (stock or alternate) |
+| 16-14 Gauge Wire Connector | [BN2 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html) <br /> [5 mm Silicone Heat Shrink Tube](https://www.aliexpress.com/item/3256801522005095.html) | Useful for splicing 1:2 boiler connector wires on 120V machines |
+| High-temp Insulation | [Silicone Heat Shrink Tube \| 4, 5, 6 mm](https://www.aliexpress.com/item/3256801522005095.html) or <br /> [Self-Fusing Silicone Tape](https://www.aliexpress.com/item/3256805094022385.html)    | Self-fusing silicone tape is more work to use, but is one-size-fits-all heat shrink when applied correctly      |
+| 6.3 mm Open Barrel Spade Connectors | [6.3mm Female Spade Connectors](https://www.aliexpress.com/item/3256801761334075.html)     | Requires open barrel terminal crimper. Good up to 200° C when covered with silicone high temp insulation       |
+| Nylon Spade Connectors | [Nylon Fully Insulated M/F Spade connectors](https://www.aliexpress.com/item/3256803187210898.html)     | Max temp 105° C. For connecting things away from boiler that may want to be swapped later, e.g. pump thermal fuse       |
+| Nylon Flag Spade Connectors | [Nylon Flag Female Terminals](https://www.aliexpress.com/item/3256803184573157.html)     | Max temp 105° C. Power plug on GCP. Red: 1x 18 gauge wire, Blue: 2x 18 gauge wires      |
+| Boiler Thermal Fuse | [Resettable Thermal Fuse, NC, 185°C, 16 A, M4](https://www.aliexpress.com/item/3256805886376281.html) | Install in the boiler boss where the steam thermostat was|
+| Pump Thermal Fuse | [KSD9700 Thermal Switch, 120°C, NC](https://www.aliexpress.com/item/2251832685942790.html) | Retain with hot glue (same method as stock)|
+| Boiler Terminal Connectors | [TE 160783-7 (DigiKey)](https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/160783-7/5157254) or [TE 160783-7 (Mouser)](https://www.mouser.com/ProductDetail/TE-Connectivity-AMP/160783-7?qs=%252BeETdXPI8nLQYJsNGAnPEA%3D%3D) | Stock part, a bit tricky to crimp properly |
+| Boiler Terminal Connector Housing | [Boiler Terminal Shroud](https://www.printables.com/model/380256) | Can be purchased from print providers, used if stock covers can't be |
+| Boiler Terminal Crimpers | [IWISS IWS-1424A](https://www.aliexpress.com/item/3256805916886076.html) **+ Pliers** or <br /> [TE 160783-7 Crimper HS Jaws](https://www.printables.com/model/673240)| Listed only because manufacturer crimpers don't exist. Open barrel crimpers can crimp the wire connection, but the insulation needs to be done with pliers or the TE 160783-7 Crimper HS Jaws|
+| Indicator Lamp | [Red 6x13 mm Neon Bulb](https://www.aliexpress.com/item/2261799834780054.html) - pick the voltage range for your machine <br /> [7.9 mm Clear Heat Shrink Tubing](https://www.aliexpress.com/item/3256804355023361.html) - 2 layers over bulb <br /> [4 mm Silicone Heat Shrink Tube](https://www.aliexpress.com/item/3256801522005095.html) - insulate resistor and leads | Using the stock indicators is easier. Only do this if you really don't want to cut the stock harness.
+| Indicator Lamp Clips | [Gaggia Classic Pro Neon Lamp Clip](https://www.printables.com/model/647745)     | For Pro/Eco/Evo. There is a version for stock lamps as well as a tighter clip for 6 mm dia neon bulbs (adding thickness with heat shrink tubing not needed)       |
+</details>
+
+>
 
 # Custom Wire Harness Schematics
 
-### PCB v3
-> #### Gaggia Classic
-> | 100v - 120v | 220v - 240v |
-> | :---------- | :---------- |
-> | <img height="300" alt="GC PCBv3 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_120v.png"> | <img height="300" alt="GC PCBv3 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_220v.png"> |
+> [!Note|style:callout]
+> * As this wiring completely replaces the stock wiring harness it is expected that the reader can complete the wiring using only the schematics.  
+> * Component builds can use the HV wiring on the [PCBv3 (3PLN)](#pcb-v3-3pln) schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md).
+
+### PCB v3 (3PLN)
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic 100-120v -->
+
+*Remember to check and add [Grounding](guides-upgrade/grounding-a-gaggia-classic.md) if needed.*
+
+<img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_120v_v2.png">
+<!-- tab:Gaggia Classic 220-240v -->
+<img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_220v_v2.png">
+<!-- tab:Gaggia Classic Pro 100-120v -->
+<img width="600" alt="GCP 120v" src="schematics/custom-3pln/GCP_wiring_PCBv3_120v_v2.png">
+<!-- tab:Gaggia Classic Pro 220-240v -->
+
+*Remember to do the [Power switch mod](https://www.youtube.com/embed/WNs3uSLA4Ts?start=99&end=151) to make it bistable.*  
+
+<img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_220v_v2.png">
+<!-- tabs:end -->
+
+**Examples of the high voltage 3PLN custom wiring harness:**
+
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic 100-120v -->
+<img width="600" alt="GC 120v" src="schematics/custom-3pln-examples/GC_120v.jpg">
+<!-- tab:Gaggia Classic 220-240v -->
+<img width="600" alt="GC 220v" src="schematics/custom-3pln-examples/GC_220v.jpg">
+<!-- tab:Gaggia Classic Pro 100-120v -->
+<img width="600" alt="GCP 120v" src="schematics/custom-3pln-examples/GCP_120v.jpg">
+<!-- tab:Gaggia Classic Pro 220-240v -->
+<img width="600" alt="GCP 220v" src="schematics/custom-3pln-examples/GCP_220v.jpg">
+<!-- tabs:end -->
+
 >
-> #### Gaggia Classic Pro
-> | 100v - 120v | 220v - 240v |
-> | :---------- | :---------- |
-> | <img height="300" alt="GCP PCBv3 120v" src="schematics/custom-3pln/GCP_wiring_PCBv3_120v.png"> | <img height="300" alt="GCP PCBv3 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_220v.png"> |
+
 ### PCB v2
-> #### Gaggia Classic
-> | 100v - 120v | 220v - 240v |
-> | :---------- | :---------- |
-> | <img height="300" alt="GC PCBv2 120v" src="schematics/custom-3pln/GC_wiring_PCBv2_120v.png"> | <img height="300" alt="GC PCBv2 220v" src="schematics/custom-3pln/GC_wiring_PCBv2_220v.png"> |
->
-> #### Gaggia Classic Pro
-> | 100v - 120v | 220v - 240v |
-> | :---------- | :---------- |
-> |<img height="300" alt="GCP PCBv2 120v" src="schematics/custom-3pln/GCP_wiring_PCBv2_120v.png"> | <img height="300" alt="GCP PCBv2 220v" src="schematics/custom-3pln/GCP_wiring_PCBv2_220v.png"> |
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic 100-120v -->
+
+*Remember to check and add [Grounding](guides-upgrade/grounding-a-gaggia-classic.md) if needed.*  
+
+<img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv2_120v.png">
+<!-- tab:Gaggia Classic 220-240v -->
+<img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv2_220v.png">
+<!-- tab:Gaggia Classic Pro 100-120v -->
+<img width="600" alt="GCP 120v" src="schematics/custom-3pln/GCP_wiring_PCBv2_120v.png">
+<!-- tab:Gaggia Classic Pro 220-240v -->
+
+*Remember to do the [Power switch mod](https://www.youtube.com/embed/WNs3uSLA4Ts?start=99&end=151) to make it bistable.*  
+
+<img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv2_220v.png">
+<!-- tabs:end -->
 
 ### HV Only
 * [3PLN 120v, GC-specific](https://user-images.githubusercontent.com/53577819/220784232-1b254cd4-d3d7-4fe9-97e5-283fa1fb2659.png)
