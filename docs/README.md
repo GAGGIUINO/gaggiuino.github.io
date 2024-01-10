@@ -15,7 +15,7 @@
 > [!Info]
 > When buying from any of the approved suppliers you can head over to the community [Discord](community/community-media.md#community-discord) for order updates or install-help in the relevant channels.
 > 
-> Relevant channels for orders : #dyi-efi-co-uk, #peakcoffee-cc, #espressio-nl
+> Relevant channels for orders : #diy-efi-co-uk, #peakcoffee-cc, #espressio-nl
 > 
 > Relevant channels for install-help: #install-help-xxx
 
