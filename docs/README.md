@@ -15,7 +15,7 @@
 > [!Info]
 > When buying from any of the approved suppliers you can head over to the community [Discord](community/community-media.md#community-discord) for order updates or install-help in the relevant channels.
 > 
-> Relevant channels for orders : #dyi-efi-co-uk, #peakcoffee-cc, #espressio-nl
+> Relevant channels for orders : #diy-efi-co-uk, #peakcoffee-cc, #espressio-nl
 > 
 > Relevant channels for install-help: #install-help-xxx
 
@@ -147,10 +147,10 @@ Name                                      | Voltage   | Model Years | Model ID  
 <!-- tabs:start -->
 <!-- tab:STM32 PCB -->
 * [PCBv3 *(Approved Supplier or custom order)*](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V3)
-* [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
+* [STM32F411CEU6 | F411 25M HSE](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
 * [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html)
-* [C-M4 ungrounded screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
+* [Ungrounded Thermocouple Sensor | K-type, M4, 0.5 m long](https://www.aliexpress.com/item/3256805310471537.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
 * [Heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html)
   * **22AWG - 5m:** Black, Red, Blue, Yellow, Orange, Purple
@@ -161,14 +161,14 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [Flat gasket/o-ring | 1|4 inch pipe (11 x 6 mm), 3 mm thick](https://www.aliexpress.com/item/2255799841120591.html)
 
 <!-- tab:STM32 LEGO -->
-* [STM32F411CEU6](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
+* [STM32F411CEU6 | F411 25M HSE](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
 * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html) **GET THE GREEN ONE**
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
 * [5V RELAY](https://www.aliexpress.com/item/3256803997020234.html) 
 * [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html) **+ MicroSD card (Class 10 HC 8GB to 32GB)**
 * [MAX6675 thermocouple board](https://www.aliexpress.com/item/2251832724065302.html) 
-* [C-M4 screw K-Type thermocouple sensor](https://www.aliexpress.com/item/1005004948080451.html)
+* [Ungrounded Thermocouple Sensor | K-type, M4, 0.5 m long](https://www.aliexpress.com/item/3256805310471537.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
 * [Heat-resistant Silicone Wire](https://www.aliexpress.com/item/2255800441309579.html)
   * **18AWG - 1m:** Black, Red, White
@@ -178,6 +178,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [12v/1A Power Supply](https://www.aliexpress.com/item/33012749903.html)
 * [12v to 5v stepdown](https://www.aliexpress.com/item/3256801635468667.html)
 * [Snubber](https://www.aliexpress.com/item/3256803573244277.html)
+* [Stripboard](https://www.aliexpress.com/item/2251832661583259.html)
 * [RobotDYN dimmer module | Dimmer 4A-400V](https://www.aliexpress.com/item/2251832615710334.html)
 * [Pressure sensor | 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
 * [Flat gasket/o-ring | 1|4 inch pipe (11 x 6 mm), 3 mm thick](https://www.aliexpress.com/item/2255799841120591.html)
@@ -190,8 +191,9 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
 
 <!-- tab:Gaggia Classic Pro -->
-* [Saeco OEM high pressure braided hose](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169) **HIGHLY RECOMMENDED ORIGINAL PART**
-* [Alternative high pressure braided hose](https://www.aliexpress.com/item/32370998797.html) **Aliexpress based high quality hose alternative if Saeco can't be bought locally**
+* **High Pressure braided hose (pick one)**
+  * **Saeco OEM Braided Tube** [fiyo (UK)](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169), [WLL (US)](https://www.wholelattelove.com/products/ga-16000380-reinforced-silicone-tube-5x9-mm) *(Search 96530009505 to find locally)* 
+  * [Toyox high pressure braided hose](https://www.aliexpress.com/item/3256805661123272.html) *Aliexpress alternative if Saeco can't be found*
 * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
