@@ -24,6 +24,8 @@ See [MCU Flashing](guides-stm32/mcu-flashing.md) for instructions on flashing th
 <img height="400" alt="image" src="schematics/stm32-lv/GCP_wiring_PCBv3_LV.png">
 <!-- tabs:end -->
 
+<img width="500" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/20517917-3c40-4902-8e60-052e627a0c35">
+
 Connect the system components - Blackpill, thermocouple, pressure transducer, screen, SSR, ToFnLED (if defined) - to the PCB and power on the system through the USB-C port on the blackpill. If all is successful you should:
 - see a build number during boot (good Blackpill-Nextion communication)
 - see a "filling boiler" message a few seconds after boot
