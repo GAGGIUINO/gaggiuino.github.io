@@ -19,7 +19,7 @@ Make sure to switch to the necessary [release branch](#Releases) once pulled, de
 
   MCU             |                               Code branch         
 ------------------|------------------------------------------------------------------------------------
-  Arduino Nano    |[release-nano-final](https://github.com/Zer0-bit/gaggiuino/tree/release-nano-final)
+  Arduino Nano    |[release-nano-final-v4](https://github.com/Zer0-bit/gaggiuino/tree/release-nano-final-v4)
   STM32 Blackpill |[release/stm32-blackpill](https://github.com/Zer0-bit/gaggiuino/tree/release/stm32-blackpill)
 
 > [!TIP|style:callout|label:ADVICE|iconVisibility:visible]

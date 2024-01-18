@@ -122,10 +122,14 @@ Mount the SSR to the back wall of the machine using an M4 (or 8-32) screw, washe
 
 ## Pressure Transducer
 
-The pressure transducer comes with a base O-ring, however, the threaded length of the fittings vary and many aren't long enough to seal against the base. Insert the small O-ring into the fitting, adjust flush, then screw on the transducer until it seals on an O-ring.
+The pressure transducer comes with a base O-ring (green in pictures), however, the threaded length of the fittings vary and many aren't long enough to seal against the base. Insert the small white O-ring into the fitting, adjust flush, then screw in the transducer until hand-tight. You can add 1/4 wrench turn after hand-tight if desired, but do not overtighten or you may damage the O-ring.
 
-![Transducer and fittings](https://user-images.githubusercontent.com/117388662/239452187-429dafd7-6844-4256-ae76-b9982dcce86c.png ':size=250')
-![Transducer and fittings](https://user-images.githubusercontent.com/117388662/246572048-75f314cb-6585-4351-8c5e-085362841301.png ':size=250')
+<!-- tabs:start -->
+<!-- tab:Gaggia Classic -->
+![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/78d801f3-9c4f-4c17-8105-74e32711af09 ':size=500')
+<!-- tab:Gaggia Classic Pro -->
+![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/f294cdb2-000b-4583-b258-8dd53854a2ec ':size=500')
+<!-- tabs:end -->
 
 Cut the tubing in between the pump and boiler, nearer to the boiler but high enough the T is mostly vertical, not horizontal. Attach the appropriate T fitting for your machine. 
 
