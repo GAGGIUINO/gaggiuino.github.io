@@ -192,7 +192,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 <!-- tab:Gaggia Classic Pro -->
 * **High Pressure braided hose (pick one)**
-  * **Saeco OEM Braided Tube** [fiyo (UK)](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169), [WLL (US)](https://www.wholelattelove.com/products/ga-16000380-reinforced-silicone-tube-5x9-mm) *(Search 96530009505 to find locally)* 
+  * **Saeco OEM Braided Tube** [fiyo (UK)](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169), [WLL (US)](https://www.wholelattelove.com/products/ga-16000380-reinforced-silicone-tube-5x9-mm) *(Search 996530009505 to find locally)* 
   * [Toyox high pressure braided hose](https://www.aliexpress.com/item/3256805661123272.html) *Aliexpress alternative if Saeco can't be found*
 * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
