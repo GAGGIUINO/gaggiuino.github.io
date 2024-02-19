@@ -10,7 +10,7 @@ Conformal coating the PCB is highly recommended for longevity. This can be done 
 
 <!-- tabs:start -->
 <!-- tab:PCB -->
-* ToFnLED (two options due to LED controller availability - choose one)
+* ToFnLED (two options due to LED controller availability - choose one, or order from an Official Supplier)
     * [NCP5623](https://www.pcbway.com/project/shareproject/ToFnLED_v1_214578da.html)
     * [PCA9632](https://www.pcbway.com/project/shareproject/ToFnLED_RGBW_1a918f23.html)
 * I2C Qwiic cable, 250+ mm (choose one)
@@ -23,7 +23,7 @@ Conformal coating the PCB is highly recommended for longevity. This can be done 
         * VHB 4611/5952/4910, Gorilla Tape, Alien Tape are options
 
 <!-- tab:LEGO -->
-* ToFnLED (two options due to LED controller availability - choose one)
+* ToFnLED (two options due to LED controller availability - choose one, or order from an Official Supplier)
     * [NCP5623](https://www.pcbway.com/project/shareproject/ToFnLED_v1_214578da.html)
     * [PCA9632](https://www.pcbway.com/project/shareproject/ToFnLED_RGBW_1a918f23.html)
 * I2C Qwiic cable, 250+ mm (choose one)
