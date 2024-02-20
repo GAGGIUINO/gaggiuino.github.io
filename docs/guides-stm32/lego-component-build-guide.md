@@ -143,6 +143,9 @@ Component                                      |Colors                  |Gauge|L
 
 # Schematic
  
+> [!WARNING|style:callout|label:Wire Colors|iconVisibility:visible]
+> SCL (yellow) and SDA (blue) wire colors were changed to match Qwiic cable standards after the build, so the colors may be reversed in some of the images. The schematic is accurate.
+
 Trust the schematic if you’re confused on a step or there appears to be a difference between an image and the schematic. You can use 22-26AWG wires for LV wiring unless otherwise noted; see the schematic and table for permissible wire gauges.
 
 <img width="800" alt="image" src="schematics/stm32-comp-build.png">
@@ -179,7 +182,7 @@ Here’s a pic partway through the wiring process:
 ## ADS Board
 Here are a few details on wiring the ADS
 
->[!Note]
+> [!TIP|style:callout|label:Wiring Order|iconVisibility:visible]
 > I wired power/ground first and ensured the ADDR wire was bent enough to have clearance to solder SCL and SDA connections later. You may want to solder SCL and SDA first.
 
 Connect G to ADDR like this: 
