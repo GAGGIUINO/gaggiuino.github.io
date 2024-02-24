@@ -35,10 +35,12 @@ There are specific scenarios where a regular screwdriver falls short:
 2. **Thermocouple Attachment**: A tiny flat screw used to connect the thermocouple to the board demands precision (refer to the second photo below).
 
 Here’s an example of a screwdriver kit suitable for these tasks:
-![Example Screwdriver Kit](photo1)
+
+![thin_screwdriver](https://github.com/kozikow/gaggiuino.github.io/assets/722866/4ace1768-8dd4-426b-b047-9b9075a0f5eb)
 
 Additionally, PCB screws requiring a unique tip are shown here:
-![PCB Screws](photo2)
+
+![thermo_screw](https://github.com/kozikow/gaggiuino.github.io/assets/722866/08081bcf-ebce-4a72-b67e-ffdd9d421872)
 
 ## Lighter or heat gun
 
