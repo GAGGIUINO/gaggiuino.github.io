@@ -2,9 +2,6 @@
 ## Introduction
 This article is not aimed at seasoned DIY enthusiasts who already possess a comprehensive set of tools. Instead, it's designed for primarily kit installers, offering beginner-friendly and budget-aware advice for those without extensive prior experience.
 
-## Insulated cable crimper
-Insulated crimper will be used for adding insulated ends like QC or Spades to the ends of the cables. Insulation color in those types of connectors denotes the size of the hole - so if you are atteching a connector to a single cable, you should use a connector with red insulation and use a corresponding colored spot in your crimper. Example aliexpress crimper: https://pl.aliexpress.com/item/1005005812085022.html . Process of attaching such connector is - strip about 6mm of insulation, enter the connector to appropriatelly sized spot, squeeze it a bit so it's held securly in place, insert the cable and squeeze, like seen in the following picture:
-
 ## Insulated Cable Crimper
 
 An insulated cable crimper is crucial for fitting insulated ends, like Quick Connects (QCs) or Spades, onto cables. The insulation color on these connectors corresponds to the hole size, aiding in selecting the right connector for a given cable. For single cables, a red-insulated connector should be used, matching the crimper's red slot. For two cables going into a connector, use a connection with blue insulation.
