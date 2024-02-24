@@ -19,7 +19,7 @@ Below is an example image demonstratration:
 ![insulated_crimper](https://github.com/kozikow/gaggiuino.github.io/assets/722866/5e3d69f1-0079-4ed0-954c-e3c70947c44a)
 
 > [!Tip]
-> The technique previously outlined is suitable for larger wires, such as 18 AWG wires mentioned in the bill of materials. For connecting smaller cables, such as those for the JST connector, if your kit isn't supplied with pre-crimped ends, you'll need to follow a few extra steps. An example scenario is when you need to attach fork connectors to the JST cables for the SSR. You can either splice (connect) these smaller cables with a larger 18 AWG wire and then crimp as previously described, or if you choose to crimp directly onto the smaller wire, you must strip four times the normal amount of insulation and fold the wire over itself to thicken it for the crimping process, given its original diameter is too small for conventional crimping methods.
+> The technique previously outlined is suitable for larger wires, such as 18 AWG wires mentioned in the bill of materials. For connecting smaller cables, such as those for the JST connector, if your kit isn't supplied with pre-crimped ends, you'll need to follow a few extra steps. An example scenario is when you need to attach spade (sometimes refered to as fork) connectors to the JST cables for the SSR. You can either splice (connect) these smaller cables with a larger 18 AWG wire and then crimp as previously described, or if you choose to crimp directly onto the smaller wire, you must strip four times the normal amount of insulation and fold the wire over itself to thicken it for the crimping process, given its original diameter is too small for conventional crimping methods.
 
 ## Uninsulated cable crimper
 
@@ -88,6 +88,11 @@ When it comes to soldering low-voltage wires, even the most affordable soldering
 
 ## Multimeter - Optional
 
-While not mandatory, a multimeter proves to be extremely useful. Should any component fail to operate correctly, conducting multimeter tests is the recommended initial troubleshooting step. Ideally, all components should undergo multimeter testing prior to the initial power-up. Before turning on the device for the first time, verify the continuity of both high-voltage (HV) and low-voltage (LV) lines to ensure there are no short circuits where they shouldn't exist, and to confirm continuity where necessary (e.g., between pins on various components). Ignoring these precautionary tests and directly powering on the machine could potentially harm your board, necessitating a replacement. Below is an example demonstrating how to identify a failed SSR connection using a multimeter:
+While a multimeter is not strictly required, it is immensely beneficial. Conducting multimeter tests is the first recommended step for troubleshooting should any component fail to function as expected. It's ideal for all components to be tested with a multimeter before the initial power-up. Before activating the device for the first time, it's crucial to check the continuity of both high-voltage (HV) and low-voltage (LV) lines to prevent short circuits where they shouldn't be and ensure continuity where it's needed (e.g., between pins on different components). Neglecting these preventive measures and powering on the device without prior testing could not only damage your board, necessitating a costly replacement but also pose a serious safety risk.
+
+> [!Warning|style:callout]
+> Bypassing these preliminary tests and immediately turning on the machine can lead to severe consequences beyond just damaging the board. For instance, a short circuit in the HV lines through the metal case of the Gaggia machine could lead to the case becoming electrified. This situation could quickly escalate, potentially tripping a breaker in your home. However, the more immediate danger is the risk of electric shock to anyone or anything that comes into contact with the live case, leading to a perilous situation. Always prioritize safety by conducting thorough pre-use checks to mitigate any risks of injury or damage.
+
+Below is an example of multimeter test to detect a failed SSR connection:
 
 ![multimeter_test](https://github.com/kozikow/gaggiuino.github.io/assets/722866/14193f4a-9691-4942-909b-f6fe2d8b094c)
