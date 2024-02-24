@@ -131,7 +131,7 @@ The pressure transducer comes with a base O-ring (green in pictures), however, t
 ![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/f294cdb2-000b-4583-b258-8dd53854a2ec ':size=500')
 <!-- tabs:end -->
 
-Cut the tubing in between the pump and boiler, nearer to the boiler but high enough the T is mostly vertical, not horizontal. Attach the appropriate T fitting for your machine. 
+Cut the tubing in between the pump and boiler, nearer to the boiler but high enough the T is mostly vertical, not horizontal. The location where you cut the stock tube is important and can affect the optimal placement of the transducer. To ensure this, first position the transducer at the bottom. Before cutting, hold the additional tubing at the planned spot to ensure that the chosen cutting point does not impede the transducer's ability to rest on the case bottom. Attach the appropriate T fitting for your machine. 
 
 > [!Tip]
 > Make sure the tubing is fully engaged on the fittings. It can be helpful to use a grip aid such as silicone tape or a rubber glove to grip the tubing and push it in. For barbed fittings you may even need to use some water-based lubricant to get it all the way on.
@@ -165,7 +165,7 @@ Arrange the connected pressure transducer so that it is at the base of the machi
 <!-- tabs:end -->
 
 > [!Tip]
-> While some sensors/setups seem to have no issues with the pump vibration, others are affected by vibration and even the sensor coming in contact with the housing. In those cases it can be beneficial to wrap the sensor in foam.  
+> While some sensors/setups seem to have no issues with the pump vibration, others are affected by vibration and even the sensor coming in contact with the housing. In those cases it can be beneficial to wrap the sensor in foam. When selecting foam, opt for a type that is rated to withstand temperatures, considering the inside of the case may become quite warm. However, there's no need to go overboard since it won't be in direct contact with the boiler. A practical approach that has been successful for some people is to visit a construction shop and request a small sample of thermal insulation foam, ideally flame retardant.
 ![Foam-wrapped sensor](https://user-images.githubusercontent.com/117388662/239457402-b58dfe55-6572-45b7-8960-2a4d1f9d5753.png ':size=250')
 
 ## Internal Finishing Touches
@@ -195,7 +195,7 @@ Put the screen housing together, push the spare screen wire (and heat shrink tub
 
 # Beginner recommendations
 
-This section is designed for those new to DIY projects. If you have previous experience, feel free to move on. The information below is aimed specifically at those who are primarily kit installers with little to no prior experience.
+The following recommendations are designed for those new to DIY projects. If you have previous experience, feel free to move on. The information below is aimed specifically at those who are primarily kit installers with little to no prior experience.
 
 ## Overview of Connections
 
