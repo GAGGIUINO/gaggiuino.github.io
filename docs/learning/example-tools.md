@@ -43,3 +43,13 @@ While an automated wire stripper is a convenient tool, it's not essential. You c
 
 However, for kits that include low-voltage work, such as tiny JST cables, an automated stripper might not be suitable as it could pull the cables apart. If stripping ever results in any metal strands coming off with the insulation, trim the end and strip again. For low-voltage cable stripping, gently heating the insulation and then pulling it off with pliers or even fingers, without cutting, can be effective. This method, as demonstrated in [this YouTube video](https://www.youtube.com/watch?v=n5o2drU65UM), can be used.
 
+## Solder - Optional
+
+Soldering in your Gaggiuino project can either be a necessity or an option, depending on the approach you choose.
+
+For those assembling without a pre-made kit, soldering is essential. Additionally, some kits may not include pre-assembled low-voltage cabling, making soldering a recommended step for securing low-voltage connections. While handling the cables, avoid pulling them, but tight space inside Gaggia machine may make it hard and soldered connections will be much more secure.
+
+Soldering cables together is simpler and more cost-effective than many assume, particularly when only soldering wires. For guidance, this instructional video offers excellent tips on cable soldering: [How to Connect Cables with a Soldering Iron](https://www.youtube.com/watch?v=Zu3TYBs65FM). Additionally, consult the [Solder Recommendations](learning/learning-sources.md) for best practices and always employ the "Western Union" splice technique.
+
+When it comes to soldering low-voltage wires, even the most affordable soldering iron is sufficient. Ensure good ventilation or use a fan to avoid inhaling harmful fumes. The soldering process involves melting the solder (the wire in the middle above) by touching it with a hot iron (on the left), which then fuses the cables together more robustly.
+
