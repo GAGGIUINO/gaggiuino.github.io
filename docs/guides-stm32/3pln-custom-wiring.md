@@ -165,7 +165,7 @@ Arrange the connected pressure transducer so that it is at the base of the machi
 <!-- tabs:end -->
 
 > [!Tip]
-> While some sensors/setups seem to have no issues with the pump vibration, others are affected by vibration and even the sensor coming in contact with the housing. In those cases it can be beneficial to wrap the sensor in foam. When selecting foam, opt for a type that is rated to withstand temperatures, considering the inside of the case may become quite warm. However, there's no need to go overboard since it won't be in direct contact with the boiler. A practical approach that has been successful for some people is to visit a construction shop and request a small sample of thermal insulation foam, ideally flame retardant.
+> While some sensors/setups seem to have no issues with the pump vibration, others are affected by vibration and even the sensor coming in contact with the housing. In those cases it can be beneficial to wrap the sensor in foam.
 ![Foam-wrapped sensor](https://user-images.githubusercontent.com/117388662/239457402-b58dfe55-6572-45b7-8960-2a4d1f9d5753.png ':size=250')
 
 ## Internal Finishing Touches

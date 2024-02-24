@@ -9,12 +9,12 @@ There are different types of connections used in the build. Based on the followi
 ![connectors](https://github.com/kozikow/gaggiuino.github.io/assets/722866/cba29dc6-3a60-4bd5-a2c1-92f5cc4c08e2)
 
 From the left:
-1. White plastic, first from the left – JST, those will just plug into the board. Those should come in the kit, but you may need to connect the cables (splice to another cable and add a connector – e.g. fork for SSR). It’s OK to splice those tiny cables with thicker cables.
-2. Second from the left – QC connector, sometimes referred to as spade. Those will plug into various parts of the machine like switches and into 4 big connectors (3PLN) at the board.
-3. Spade connector, Third from the left. Sometimes referred to as fork connector (yes, spade semantics are confusing). Those will connect to SSR with a screw-on.
-4. BN connector, sometimes referred to as butt connector, first from the right – those will connect two high voltage cables together, as those shouldn’t be soldered due to added resistance.
-5. Low voltage cable splicing – connecting two low voltage cables together, which may be optional depending on your route. Western Union Splice and soldering – see [recommendations page](learning-sources.md).
-6. Boiler attachments on the top and light connections are re-used from what already exists in the machine both in Stock and Custom integrations. 
+1. White plastic, first from the left – **JST**, those will just plug into the board. Those should come in the kit, but you may need to connect the cables (splice to another cable and add a connector – e.g. fork for SSR). It’s OK to splice those tiny cables to thicker cables.
+2. Second from the left – **QC connector**, sometimes refered to as spade. Those will plug into various parts of the machine like switches and into 4 big connectors (3PLN) at the board.
+3. **Spade connector**, Third from the left. Sometimes referred to as fork connector (yes, spade semantics are confusing). Those will connect to SSR with screw-on.
+4. **BN connector**, sometimes referred to as butt connector, first from the right – those will connect two high voltage cables together, as those shouldn’t be soldered due to added resistance.
+5. **Low voltage cable splicing** – connecting two low voltage cables together, that may be optional depending on your route. Western Union Splice and soldering – see [recommendations page](learning-sources.md).
+6. Boiler attachments on the top and lights connections are re-used from what already exists in the machine both in Stock and Custom integrations. 
 
 # Crimping insulated connectors
 
