@@ -165,7 +165,7 @@ Arrange the connected pressure transducer so that it is at the base of the machi
 <!-- tabs:end -->
 
 > [!Tip]
-> While some sensors/setups seem to have no issues with the pump vibration, others are affected by vibration and even the sensor coming in contact with the housing. In those cases it can be beneficial to wrap the sensor in foam. 
+> While some sensors/setups seem to have no issues with the pump vibration, others are affected by vibration and even the sensor coming in contact with the housing. In those cases it can be beneficial to wrap the sensor in foam.  
 ![Foam-wrapped sensor](https://user-images.githubusercontent.com/117388662/239457402-b58dfe55-6572-45b7-8960-2a4d1f9d5753.png ':size=250')
 
 ## Internal Finishing Touches
