@@ -33,3 +33,16 @@ Below is an example image demonstration:
 > [!Tip]
 > The technique previously outlined is suitable for larger wires, such as 18 AWG wires mentioned in the bill of materials. For connecting smaller cables, such as those for the JST connector, if your kit isn't supplied with pre-crimped ends, you'll need to follow a few extra steps. An example scenario is when you need to attach spade (sometimes referred to as fork) connectors to the JST cables for the SSR. You can either splice (connect) these smaller cables with a larger 18 AWG wire and then crimp as previously described or if you choose to crimp directly onto the smaller wire, you must strip four times the normal amount of insulation and fold the wire over itself to thicken it for the crimping process, given its original diameter is too small for conventional crimping methods.
 
+# Thermal fuse
+
+Some installers have been confused by the thermal fuse setup. Refer to the following picture: 
+
+[Picture]
+
+In all installations, the steam and brew thermostats are removed and discarded. Kits may offer a resettable thermal fuse that will go into the steam thermostat slot as a replacement; if not included, this space remains vacant. Original thermal fuse is used instead and kept as it is. This component is crucial for safety, disconnecting the circuit if the boiler overheats.
+
+
+
+
+
+
