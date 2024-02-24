@@ -87,4 +87,4 @@ When it comes to soldering low-voltage wires, even the most affordable soldering
 
 While not mandatory, a multimeter proves to be extremely useful. Should any component fail to operate correctly, conducting multimeter tests is the recommended initial troubleshooting step. Ideally, all components should undergo multimeter testing prior to the initial power-up. Before turning on the device for the first time, verify the continuity of both high-voltage (HV) and low-voltage (LV) lines to ensure there are no short circuits where they shouldn't exist, and to confirm continuity where necessary (e.g., between pins on various components). Ignoring these precautionary tests and directly powering on the machine could potentially harm your board, necessitating a replacement. Below is an example demonstrating how to identify a failed SSR connection using a multimeter:
 
-
+![multimeter_test](https://github.com/kozikow/gaggiuino.github.io/assets/722866/14193f4a-9691-4942-909b-f6fe2d8b094c)
