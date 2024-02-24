@@ -201,4 +201,4 @@ This section is designed for those new to DIY projects. If you have previous exp
 
 Throughout the build process, you'll encounter several types of connections. Please refer to the image below for a visual guide:
 
-TODO: Add image here with 
+![connections_overview](https://github.com/kozikow/gaggiuino.github.io/assets/722866/becbc86d-7dcc-45af-bf15-c3ad1571ee38)
