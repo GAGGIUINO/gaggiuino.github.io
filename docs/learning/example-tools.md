@@ -19,7 +19,7 @@ Below is an example image demonstratration:
 ![insulated_crimper](https://github.com/kozikow/gaggiuino.github.io/assets/722866/5e3d69f1-0079-4ed0-954c-e3c70947c44a)
 
 > [!Tip]
-> The previously described method is directly applicable to larger wires, such as those that are 18 AWG, listed in the bill of materials. However, when it comes to attaching connectors to smaller cables, like those accompanying the JST connector that aren't pre-crimped (for example, a fork connector for the SSR), additional steps are necessary. One approach is to splice these smaller cables onto a larger 18 AWG wire and then proceed with crimping as initially outlined. Alternatively, if you prefer to crimp directly onto the smaller wire, prepare the cable by stripping off four times the usual amount of insulation and folding the wire double before crimping, due to the smaller wire not being thick enough for standard crimping procedures.
+> The technique previously outlined is suitable for larger wires, such as 18 AWG wires mentioned in the bill of materials. For connecting smaller cables, such as those for the JST connector, if your kit isn't supplied with pre-crimped ends, you'll need to follow a few extra steps. An example scenario is when you need to attach fork connectors to the JST cables for the SSR. You can either splice (connect) these smaller cables with a larger 18 AWG wire and then crimp as previously described, or if you choose to crimp directly onto the smaller wire, you must strip four times the normal amount of insulation and fold the wire over itself to thicken it for the crimping process, given its original diameter is too small for conventional crimping methods.
 
 ## Uninsulated cable crimper
 
