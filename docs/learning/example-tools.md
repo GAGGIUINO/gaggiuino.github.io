@@ -48,7 +48,7 @@ To remove the brew and steam thermostats, a 17mm spanner key is essential. Refer
 
 ![steam_key](https://github.com/kozikow/gaggiuino.github.io/assets/722866/fac7c457-555b-4926-97bd-a386ed5b43f3)
 
-Additionally, a 4mm Allen key is required for boiler removal. You can watch [this YouTube video](https://www.youtube.com/watch?v=JTTLYj1l0KI&t=204s) to see how removing Gaggia boiler works. It's strongly advised to detach the boiler when removing the thermostat and installing the thermocouple. Attempts to perform this task without removing the boiler have led to damaged thermocouples. The thermocouple is identified by the blue cable in the photo below:
+Additionally, a 4mm Allen key is required for boiler removal. You can watch [this YouTube video](https://www.youtube.com/watch?v=JTTLYj1l0KI&t=204s) to see how removing Gaggia boiler works. It's strongly advised to detach the boiler when removing the thermostat and installing the thermocouple. Attempts to perform this task without removing the boiler have led to damaged thermocouples. The thermocouple is identified by the blue cable in the photo below (your thermocouple may have a different color):
 
 ![thermocouple](https://github.com/kozikow/gaggiuino.github.io/assets/722866/8b57b0af-07ee-483f-ba44-52cd729c7034)
 
@@ -82,4 +82,9 @@ Soldering cables together is simpler and more cost-effective than many assume, p
 When it comes to soldering low-voltage wires, even the most affordable soldering iron is sufficient. Ensure good ventilation or use a fan to avoid inhaling harmful fumes. The soldering process involves melting the solder (the wire in the middle above) by touching it with a hot iron (on the left), which then fuses the cables together more robustly.
 
 ![cheap_low_voltage](https://github.com/kozikow/gaggiuino.github.io/assets/722866/0631dcd4-7a85-4fe4-90af-71caa739cdf6)
+
+## Multimeter - Optional
+
+While not mandatory, a multimeter proves to be extremely useful. Should any component fail to operate correctly, conducting multimeter tests is the recommended initial troubleshooting step. Ideally, all components should undergo multimeter testing prior to the initial power-up. Before turning on the device for the first time, verify the continuity of both high-voltage (HV) and low-voltage (LV) lines to ensure there are no short circuits where they shouldn't exist, and to confirm continuity where necessary (e.g., between pins on various components). Ignoring these precautionary tests and directly powering on the machine could potentially harm your board, necessitating a replacement. Below is an example demonstrating how to identify a failed SSR connection using a multimeter:
+
 
