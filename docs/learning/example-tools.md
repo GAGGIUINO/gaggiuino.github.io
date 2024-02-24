@@ -18,3 +18,5 @@ Follow this step-by-step guide to utilize an insulated crimper effectively, with
 5. **Verify the connection**: Pull gently on a cable. If it's not held secure, cut the connector with pliers and redo the process.
 
 Below is an example image demonstratration:
+
+![insulated_crimper](https://github.com/kozikow/gaggiuino.github.io/assets/722866/5e3d69f1-0079-4ed0-954c-e3c70947c44a)
