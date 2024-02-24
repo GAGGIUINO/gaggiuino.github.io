@@ -22,4 +22,6 @@ Below is an example image demonstratration:
 
 You'll use an uninsulated cable crimper mainly for BN connectors, also known as butt connectors, to join two high-voltage cables. Utilize BN 1.25 connectors for joining single cables and BN 2 for connecting pairs of cables into one connector. The essential tools for working with these uninsulated terminals are a punch and block, commonly used alongside electrician pliers. Remember to put insulation on top of those connections. Refer to the images below for guidance:
 
+![uninsulated1](https://github.com/kozikow/gaggiuino.github.io/assets/722866/31e53688-562a-4ccd-818d-5727f698bb05)
+![uninsulated2](https://github.com/kozikow/gaggiuino.github.io/assets/722866/05b41975-adb5-4f51-8b1c-234508a188eb)
 
