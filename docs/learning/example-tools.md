@@ -4,22 +4,9 @@ This article is not aimed at seasoned DIY enthusiasts who already possess a comp
 
 ## Insulated Cable Crimper
 
-An insulated cable crimper is crucial for fitting insulated ends, like Quick Connects (QCs) or Spades, onto cables. The insulation color on these connectors corresponds to the hole size, aiding in selecting the right connector for a given cable. For single cables, a red-insulated connector should be used, matching the crimper's red slot. For two cables going into a connector, use a connection with blue insulation.
+An insulated cable crimper is crucial for fitting insulated ends, like Quick Connects (QCs) or Spades, onto cables. The insulation color on these connectors corresponds to the hole size, aiding in selecting the right connector for a given cable. For single cables, a red-insulated connector should be used, matching the crimper's red slot. For two cables going into a connector, use a connection with blue insulation. Such [Example Crimper](https://pl.aliexpress.com/item/1005005812085022.html) would work.
 
-Follow this step-by-step guide to utilize an insulated crimper effectively, with an example model: [Example Crimper](https://pl.aliexpress.com/item/1005005812085022.html).
-
-1. **Cable Preparation**: Start by stripping about 6mm off the cable's insulation.
-2. **Crimper Slot Selection**: Choose the crimper slot that matches the color of your connector (e.g., red for standard single cables).
-3. **Securing the Connector**: Insert the connector into the appropriate slot of the crimper and lightly squeeze to keep it in place.
-4. **Inserting the Cable and Crimping**: Place the stripped cable end into the connector. Ensure it's fully inserted before squeezing the crimper handles together to attach the connector firmly.
-5. **Verify the connection**: Pull gently on a cable. If it's not held secure, cut the connector with pliers and redo the process.
-
-Below is an example image demonstratration:
-
-![insulated_crimper](https://github.com/kozikow/gaggiuino.github.io/assets/722866/5e3d69f1-0079-4ed0-954c-e3c70947c44a)
-
-> [!Tip]
-> The technique previously outlined is suitable for larger wires, such as 18 AWG wires mentioned in the bill of materials. For connecting smaller cables, such as those for the JST connector, if your kit isn't supplied with pre-crimped ends, you'll need to follow a few extra steps. An example scenario is when you need to attach spade (sometimes refered to as fork) connectors to the JST cables for the SSR. You can either splice (connect) these smaller cables with a larger 18 AWG wire and then crimp as previously described, or if you choose to crimp directly onto the smaller wire, you must strip four times the normal amount of insulation and fold the wire over itself to thicken it for the crimping process, given its original diameter is too small for conventional crimping methods.
+For begginer-focused overview on how to use it see [Crimping insulated connectors](wiring-basics.md#Crimping insulated connectors).
 
 ## Uninsulated cable crimper
 
