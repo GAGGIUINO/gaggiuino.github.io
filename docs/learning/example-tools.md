@@ -29,6 +29,8 @@ You'll use an uninsulated cable crimper mainly for BN connectors, also known as 
 
 For tasks such as heating heat-shrink tubing and assisting with the stripping of tiny JST wires, you'll require a method to apply heat. A heat gun is excessive for the Gaggiuino project. A regular lighter can suffice, but a "flame-less" lighter, as shown in the photo below, is a better choice. It offers a more controlled application of heat, significantly reducing the risk of burning beyond the intended area. Flame-less lighters should not be more costly than traditional lighters, but consider this when selecting one for your toolkit.
 
+![lighter](https://github.com/kozikow/gaggiuino.github.io/assets/722866/11421a4c-282d-4bd0-8aff-38294498809c)
+
 ## Pliers - Optional
 
 When cutting cables, especially in hard-to-reach areas, having dedicated pliers can be invaluable, as regular scissors may not suffice. Various models are available; here is an example: [Cable Cutting Pliers](https://pl.aliexpress.com/item/4001146365274.html).
