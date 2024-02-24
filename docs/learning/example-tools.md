@@ -67,11 +67,7 @@ Soldering in your Gaggiuino project can either be a necessity or an option, depe
 
 For those assembling without a pre-made kit, soldering is essential. Additionally, some kits may not include pre-assembled low-voltage cabling, making soldering a recommended step for securing low-voltage connections. While handling the cables, avoid pulling them, but tight space inside Gaggia machine may make it hard and soldered connections will be much more secure.
 
-Soldering cables together is simpler and more cost-effective than many assume, particularly when only soldering wires. For guidance, this instructional video offers excellent tips on cable soldering: [How to Connect Cables with a Soldering Iron](https://www.youtube.com/watch?v=Zu3TYBs65FM). Additionally, consult the [Solder Recommendations](learning-sources.md) for best practices and always employ the "Western Union" splice technique. "Splicing cables" refers to connecting two cables together.
-
-When it comes to soldering low-voltage wires, even the most affordable soldering iron is sufficient. Ensure good ventilation or use a fan to avoid inhaling harmful fumes. The soldering process involves melting the solder (the wire in the middle above) by touching it with a hot iron (on the left), which then fuses the cables together more robustly.
-
-![cheap_low_voltage](https://github.com/kozikow/gaggiuino.github.io/assets/722866/0631dcd4-7a85-4fe4-90af-71caa739cdf6)
+Soldering cables together is simpler and more cost-effective than many assume, particularly when only soldering wires. For guidance, this instructional video offers excellent tips on cable soldering: [How to Connect Cables with a Soldering Iron](https://www.youtube.com/watch?v=Zu3TYBs65FM). Additionally, consult the [Solder Recommendations](learning-sources.md) for best practices and always employ the "Western Union" splice technique. "Splicing cables" refers to connecting two cables together. When it comes to soldering low-voltage wires, even the most affordable soldering iron is sufficient. 
 
 ## Multimeter - Optional
 
