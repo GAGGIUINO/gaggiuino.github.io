@@ -25,6 +25,21 @@ You'll use an uninsulated cable crimper mainly for BN connectors, also known as 
 ![uninsulated1](https://github.com/kozikow/gaggiuino.github.io/assets/722866/31e53688-562a-4ccd-818d-5727f698bb05)
 ![uninsulated2](https://github.com/kozikow/gaggiuino.github.io/assets/722866/05b41975-adb5-4f51-8b1c-234508a188eb)
 
+## Long and thin screwdriver
+
+The standard screwdriver in your toolkit may not suffice for all tasks in this project. A long, thin screwdriver with the capability to magnetize and demagnetize its tip is required.
+
+There are specific scenarios where a regular screwdriver falls short:
+
+1. **Pump and Eco Board Screws**: For removing screws that secure the pump and eco board to the machine's lower rear housing, a thin, long screwdriver with a magnetized tip.
+2. **Thermocouple Attachment**: A tiny flat screw used to connect the thermocouple to the board demands precision (refer to the second photo below).
+
+Here’s an example of a screwdriver kit suitable for these tasks:
+![Example Screwdriver Kit](photo1)
+
+Additionally, PCB screws requiring a unique tip are shown here:
+![PCB Screws](photo2)
+
 ## Lighter or heat gun
 
 For tasks such as heating heat-shrink tubing and assisting with the stripping of tiny JST wires, you'll require a method to apply heat. A heat gun is excessive for the Gaggiuino project. A regular lighter can suffice, but a "flame-less" lighter, as shown in the photo below, is a better choice. It offers a more controlled application of heat, significantly reducing the risk of burning beyond the intended area. Flame-less lighters should not be more costly than traditional lighters, but consider this when selecting one for your toolkit.
