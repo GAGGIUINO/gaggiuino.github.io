@@ -34,13 +34,23 @@ There are specific scenarios where a regular screwdriver falls short:
 1. **Pump and Eco Board Screws**: For removing screws that secure the pump and eco board to the machine's lower rear housing, a thin, long screwdriver with a magnetized tip.
 2. **Thermocouple Attachment**: A tiny flat screw used to connect the thermocouple to the board demands precision (refer to the second photo below).
 
-Here’s an example of a screwdriver kit suitable for these tasks:
+Here’s an example of a screwdriver kit suitable for these tasks, and all screwdriving needs you will need for completing the project:
 
 ![thin_screwdriver](https://github.com/kozikow/gaggiuino.github.io/assets/722866/4ace1768-8dd4-426b-b047-9b9075a0f5eb)
 
 Additionally, PCB screws requiring a unique tip are shown here:
 
 ![thermo_screw](https://github.com/kozikow/gaggiuino.github.io/assets/722866/08081bcf-ebce-4a72-b67e-ffdd9d421872)
+
+## Spanner and allen key 
+
+To remove the brew and steam thermostats, a 17mm spanner key is essential. Reference the attached photo for clarification:
+
+![17mm Spanner Key](Photo1)
+
+Additionally, a 4mm Allen key is required for boiler removal. It's strongly advised to detach the boiler when removing the thermostat and installing the thermocouple. Attempts to perform this task without removing the boiler have led to damaged thermocouples. The thermocouple is identified by the blue cable in the photo below:
+
+![Thermocouple and Boiler](Photo2)
 
 ## Lighter or heat gun
 
