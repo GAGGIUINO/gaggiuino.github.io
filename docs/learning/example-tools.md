@@ -53,3 +53,5 @@ Soldering cables together is simpler and more cost-effective than many assume, p
 
 When it comes to soldering low-voltage wires, even the most affordable soldering iron is sufficient. Ensure good ventilation or use a fan to avoid inhaling harmful fumes. The soldering process involves melting the solder (the wire in the middle above) by touching it with a hot iron (on the left), which then fuses the cables together more robustly.
 
+![cheap_low_voltage](https://github.com/kozikow/gaggiuino.github.io/assets/722866/0631dcd4-7a85-4fe4-90af-71caa739cdf6)
+
