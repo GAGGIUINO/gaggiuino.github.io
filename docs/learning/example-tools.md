@@ -18,6 +18,9 @@ Below is an example image demonstratration:
 
 ![insulated_crimper](https://github.com/kozikow/gaggiuino.github.io/assets/722866/5e3d69f1-0079-4ed0-954c-e3c70947c44a)
 
+> [!Tip]
+> The previously described method is directly applicable to larger wires, such as those that are 18 AWG, listed in the bill of materials. However, when it comes to attaching connectors to smaller cables, like those accompanying the JST connector that aren't pre-crimped (for example, a fork connector for the SSR), additional steps are necessary. One approach is to splice these smaller cables onto a larger 18 AWG wire and then proceed with crimping as initially outlined. Alternatively, if you prefer to crimp directly onto the smaller wire, prepare the cable by stripping off four times the usual amount of insulation and folding the wire double before crimping, due to the smaller wire not being thick enough for standard crimping procedures.
+
 ## Uninsulated cable crimper
 
 You'll use an uninsulated cable crimper mainly for BN connectors, also known as butt connectors, to join two high-voltage cables. Utilize BN 1.25 connectors for joining single cables and BN 2 for connecting pairs of cables into one connector. The essential tools for working with these uninsulated terminals are a punch and block, commonly used alongside electrician pliers. Remember to put insulation on top of those connections. Refer to the images below for guidance:
