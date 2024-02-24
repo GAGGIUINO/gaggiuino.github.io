@@ -48,7 +48,7 @@ To remove the brew and steam thermostats, a 17mm spanner key is essential. Refer
 
 ![steam_key](https://github.com/kozikow/gaggiuino.github.io/assets/722866/fac7c457-555b-4926-97bd-a386ed5b43f3)
 
-Additionally, a 4mm Allen key is required for boiler removal. It's strongly advised to detach the boiler when removing the thermostat and installing the thermocouple. Attempts to perform this task without removing the boiler have led to damaged thermocouples. The thermocouple is identified by the blue cable in the photo below (you can have differently colored thermocouple):
+Additionally, a 4mm Allen key is required for boiler removal. You can watch [this YouTube video](https://www.youtube.com/watch?v=JTTLYj1l0KI&t=204s) to see how removing Gaggia boiler works. It's strongly advised to detach the boiler when removing the thermostat and installing the thermocouple. Attempts to perform this task without removing the boiler have led to damaged thermocouples. The thermocouple is identified by the blue cable in the photo below:
 
 ![thermocouple](https://github.com/kozikow/gaggiuino.github.io/assets/722866/8b57b0af-07ee-483f-ba44-52cd729c7034)
 
