@@ -192,3 +192,13 @@ Put the screen housing together, push the spare screen wire (and heat shrink tub
 <!-- tab:Gaggia Classic Pro -->
 ![Finished!](https://user-images.githubusercontent.com/117388662/246686394-b0ab3256-57cb-4869-b2dd-51c7778dfa68.png ':size=500')
 <!-- tabs:end -->
+
+# Beginner recommendations
+
+This section is designed for those new to DIY projects. If you have previous experience, feel free to move on. The information below is aimed specifically at those who are primarily kit installers with little to no prior experience.
+
+## Overview of Connections
+
+Throughout the build process, you'll encounter several types of connections. Please refer to the image below for a visual guide:
+
+TODO: Add image here with 
