@@ -25,3 +25,15 @@ You'll use an uninsulated cable crimper mainly for BN connectors, also known as 
 ![uninsulated1](https://github.com/kozikow/gaggiuino.github.io/assets/722866/31e53688-562a-4ccd-818d-5727f698bb05)
 ![uninsulated2](https://github.com/kozikow/gaggiuino.github.io/assets/722866/05b41975-adb5-4f51-8b1c-234508a188eb)
 
+## Pliers - Optional
+
+When cutting cables, especially in hard-to-reach areas, having dedicated pliers can be invaluable, as regular scissors may not suffice. Various models are available; here is an example: [Cable Cutting Pliers](https://pl.aliexpress.com/item/4001146365274.html).
+
+## Cable stripper - Optional
+
+While an automated wire stripper is a convenient tool, it's not essential. You can accomplish all necessary stripping tasks with tools like pliers. Automated strippers offer useful features, such as the ability to adjust automatically to the cable's width for stripping and pulling, and pre-configured stripping lengths. For instance, when inserting two cables into the same connector, an automated stripper can ensure they are stripped to the exact same length, like 6mm, which is highly convenient.
+
+![Example of an Automated Wire Stripper](Image_here)
+
+However, for kits that include low-voltage work, such as tiny JST cables, an automated stripper might not be suitable as it could pull the cables apart. If stripping ever results in any metal strands coming off with the insulation, trim the end and strip again. For low-voltage cable stripping, gently heating the insulation and then pulling it off with pliers or even fingers, without cutting, can be effective. This method, as demonstrated in [this YouTube video](https://www.youtube.com/watch?v=n5o2drU65UM), can be used.
+
