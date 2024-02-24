@@ -17,3 +17,9 @@ Follow this step-by-step guide to utilize an insulated crimper effectively, with
 Below is an example image demonstratration:
 
 ![insulated_crimper](https://github.com/kozikow/gaggiuino.github.io/assets/722866/5e3d69f1-0079-4ed0-954c-e3c70947c44a)
+
+## Uninsulated cable crimper
+
+You'll use an uninsulated cable crimper mainly for BN connectors, also known as butt connectors, to join two high-voltage cables. Utilize BN 1.25 connectors for joining single cables and BN 2 for connecting pairs of cables into one connector. The essential tools for working with these uninsulated terminals are a punch and block, commonly used alongside electrician pliers. Remember to put insulation on top of those connections. Refer to the images below for guidance:
+
+
