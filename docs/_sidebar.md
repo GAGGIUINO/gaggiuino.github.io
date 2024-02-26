@@ -12,6 +12,7 @@
 * - [Functions Overview](learning/functions-guide.md)
 * - [Recommendations](learning/learning-sources.md)
 * - [Example tools](learning/example-tools.md)
+* - [Wiring basics](learning/wiring-basics.md)
 * __Install Guides:__
 * - [MCU Flashing](guides-stm32/mcu-flashing.md)
 * - __STM32 Blackpill (Recommended)__
