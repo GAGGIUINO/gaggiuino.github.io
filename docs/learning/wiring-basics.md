@@ -47,7 +47,8 @@ However, for kits that include low-voltage work, such as tiny JST cables, an aut
 
 Some installers have been confused by the thermal fuse setup. Refer to the following picture: 
 
-![thermal_fuse](https://github.com/kozikow/gaggiuino.github.io/assets/722866/61aa30f3-7940-4a39-afdb-e8e586c7de15)
+![fuse_new](https://github.com/kozikow/gaggiuino.github.io/assets/722866/37c18fea-959b-4788-abbe-896db287d696)
+
 
 In all installations, the steam and brew thermostats are removed and discarded. Kits may offer a resettable thermal fuse that will go into the steam thermostat slot as a replacement; if not included, this space remains vacant. Original thermal fuse is used instead and kept as it is. This component is crucial for safety, disconnecting the circuit if the boiler overheats.
 
