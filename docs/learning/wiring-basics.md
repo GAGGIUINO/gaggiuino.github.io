@@ -33,6 +33,16 @@ Below is an example image demonstration:
 > [!Tip]
 > The technique previously outlined is suitable for larger wires, such as 18 AWG wires mentioned in the bill of materials. For connecting smaller cables, such as those for the JST connector, if your kit isn't supplied with pre-crimped ends, you'll need to follow a few extra steps. An example scenario is when you need to attach spade (sometimes referred to as fork) connectors to the JST cables for the SSR. You can either splice (connect) these smaller cables with a larger 18 AWG wire and then crimp as previously described or if you choose to crimp directly onto the smaller wire, you must strip four times the normal amount of insulation and fold the wire over itself to thicken it for the crimping process, given its original diameter is too small for conventional crimping methods.
 
+# Cable stripping
+
+Any cable stripping can be achieved with pliers, scisors or a dedicated tool.  Automated strippers offer useful features, such as the ability to adjust automatically to the cable's width for stripping and pulling, and pre-configured stripping lengths. For instance, when inserting two cables into the same connector, an automated stripper can ensure they are stripped to the exact same length, like 6mm, which is highly convenient.
+
+![stripper](https://github.com/kozikow/gaggiuino.github.io/assets/722866/1950fd54-5f0d-4bfd-86a4-880c2beb114d)
+
+If stripping ever results in any metal strands coming off with the insulation, trim the end and strip again. 
+
+However, for kits that include low-voltage work, such as tiny JST cables, an automated stripper might not be suitable as it could pull the cables apart. For low-voltage cable stripping, gently heating the insulation and then pulling it off with pliers or even fingers, without cutting, can be effective. This method, as demonstrated in [this YouTube video](https://www.youtube.com/watch?v=n5o2drU65UM), can be used.
+
 # Thermal fuse
 
 Some installers have been confused by the thermal fuse setup. Refer to the following picture: 
@@ -41,8 +51,7 @@ Some installers have been confused by the thermal fuse setup. Refer to the follo
 
 In all installations, the steam and brew thermostats are removed and discarded. Kits may offer a resettable thermal fuse that will go into the steam thermostat slot as a replacement; if not included, this space remains vacant. Original thermal fuse is used instead and kept as it is. This component is crucial for safety, disconnecting the circuit if the boiler overheats.
 
+There is another thermal fuse in Gaggia machines - pump thermal fuse, seen in the following picture. Most of setups - either stock integrations or custom wirings would leave this pump as it is.
 
-
-
-
+Image
 
