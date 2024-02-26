@@ -53,5 +53,6 @@ In all installations, the steam and brew thermostats are removed and discarded. 
 
 There is another thermal fuse in Gaggia machines - pump thermal fuse, seen in the following picture. Most of setups - either stock integrations or custom wirings would leave this pump as it is.
 
-Image
+
+![pump_thermal_fuse](https://github.com/kozikow/gaggiuino.github.io/assets/722866/9f71d390-a802-4d49-851b-3ccfa03b4536)
 
