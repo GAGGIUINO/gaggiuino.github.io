@@ -14,7 +14,7 @@ From the left:
 3. **Spade connector**, Third from the left. Sometimes referred to as fork connector (yes, spade semantics are confusing). Those will connect to SSR with screw-on.
 4. **BN connector**, sometimes referred to as butt connector, first from the right – those will connect two high voltage cables together, as those shouldn’t be soldered due to added resistance. After connecting remember to add the insulation on top of this connector.
 5. **Low voltage cable splicing** – connecting two low voltage cables together, that may be optional depending on your route. Western Union Splice and soldering – see [recommendations page](learning-sources.md).
-6. Boiler attachments on the top and lights connections are re-used from what already exists in the machine both in Stock and Custom integrations. 
+6. Boiler attachments on the top and lights connections can be re-used from what already exists in the machine both in Stock and Custom integrations. 
 
 # Crimping insulated connectors
 
