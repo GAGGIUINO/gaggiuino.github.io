@@ -51,7 +51,7 @@ Some installers have been confused by the thermal fuse setup. Refer to the follo
 
 In all installations, the steam and brew thermostats are removed and discarded. Kits may offer a resettable thermal fuse that will go into the steam thermostat slot as a replacement; if not included, this space remains vacant. Original thermal fuse is used instead and kept as it is. This component is crucial for safety, disconnecting the circuit if the boiler overheats.
 
-There is another thermal fuse in Gaggia machines - pump thermal fuse, seen in the following picture. Most of setups - either stock integrations or custom wirings would leave this pump as it is.
+There is another thermal fuse in Gaggia machines - pump thermal fuse, seen in the following picture. Most of setups - either stock integrations or custom wirings would leave this pump thermal fuse as it is, just connecting cables to it.
 
 
 ![pump_thermal_fuse](https://github.com/kozikow/gaggiuino.github.io/assets/722866/9f71d390-a802-4d49-851b-3ccfa03b4536)
