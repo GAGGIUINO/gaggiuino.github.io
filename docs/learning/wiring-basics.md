@@ -35,7 +35,7 @@ Below is an example image demonstration:
 
 # Cable stripping
 
-Any cable stripping can be achieved with pliers, scisors or a dedicated tool.  Automated strippers offer useful features, such as the ability to adjust automatically to the cable's width for stripping and pulling, and pre-configured stripping lengths. For instance, when inserting two cables into the same connector, an automated stripper can ensure they are stripped to the exact same length, like 6mm, which is highly convenient.
+Cable stripping refers to taking the insulation off the cable, so metal is exposed for connections. Any previously stripped exposed metal area should be insulated after connecting. Any cable stripping can be achieved with pliers, scisors or a dedicated tool.  Automated strippers offer useful features, such as the ability to adjust automatically to the cable's width for stripping and pulling, and pre-configured stripping lengths. For instance, when inserting two cables into the same connector, an automated stripper can ensure they are stripped to the exact same length, like 6mm, which is highly convenient.
 
 ![stripper](https://github.com/kozikow/gaggiuino.github.io/assets/722866/1950fd54-5f0d-4bfd-86a4-880c2beb114d)
 
