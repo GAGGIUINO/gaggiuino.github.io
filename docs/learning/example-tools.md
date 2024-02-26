@@ -40,7 +40,7 @@ It is advisable to get an adjustable spanner due to the varying sizes of compone
 
 Additionally, a 4mm Allen key is required for boiler removal. You can watch [this YouTube video](https://www.youtube.com/watch?v=JTTLYj1l0KI&t=204s) to see how removing Gaggia boiler works. It's advised to detach the boiler when removing the thermostat and installing the thermocouple. Attempts to perform this task without removing the boiler have led to damaged thermocouples.
 
-## Lighter or heat gun
+## Lighter or heat gun - Optional
 
 For tasks such as heating heat-shrink tubing and assisting with the stripping of tiny JST wires, you'll require a method to apply heat. A heat gun is excessive for the Gaggiuino project. A regular lighter can suffice, but a "flame-less" lighter, as shown in the photo below, is a better choice. It offers a more controlled application of heat, significantly reducing the risk of burning beyond the intended area. Flame-less lighters should not be more costly than traditional lighters, but consider this when selecting one for your toolkit.
 
