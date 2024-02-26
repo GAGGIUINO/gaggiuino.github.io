@@ -34,7 +34,7 @@ Additionally, PCB screws requiring a unique tip are shown here:
 
 ## Spanner and allen key 
 
-It is advisable to get an adjustable spanner due to the varying sizes of components requiring adjustment or removal - thermostats, steam wand, pressure transducer. Thermostats necessitate a 17mm spanner, as illustrated in the photo below. Pressure transducers, in particular, feature screws of different sizes in different kits.
+It is advisable to get an adjustable spanner due to the varying sizes of components requiring adjustment or removal - thermostats, steam wand, pressure transducer. Thermostats necessitate a 17mm spanner, as illustrated in the photo below. Pressure transducers, in particular, feature screws of different sizes in different kits. Connecting pressure transducer may need two spanners.
 
 ![steam_key](https://github.com/kozikow/gaggiuino.github.io/assets/722866/fac7c457-555b-4926-97bd-a386ed5b43f3)
 
