@@ -44,7 +44,7 @@ Many stock components are difficult to source so component substitutions have be
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic 100-120v -->
 
-*Remember to check and add [Grounding](guides-upgrade/grounding-a-gaggia-classic.md) if needed.*
+*Remember to check and add [Grounding](guides/machine-specific-guide.md) if needed.*
 
 <img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_120v_v2.png">
 <!-- tab:Gaggia Classic 220-240v -->
@@ -77,7 +77,7 @@ Many stock components are difficult to source so component substitutions have be
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic 100-120v -->
 
-*Remember to check and add [Grounding](guides-upgrade/grounding-a-gaggia-classic.md) if needed.*  
+*Remember to check and add [Grounding](guides/machine-specific-guide.md) if needed.*  
 
 <img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv2_120v.png">
 <!-- tab:Gaggia Classic 220-240v -->

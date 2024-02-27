@@ -73,7 +73,7 @@ Save the images or right-click and open in a new tab to view at full resolution.
 Take off the top cover by unscrewing the 2 top screws. You should be able to see something similar to the below image. 
 
 > [!Note]
-> If you have a US Gaggia Classic check whether you have a ground connection on your power input. If it's a 2 pole plug as seen in the image adding a ground is recommended prior to starting the integration. BOM and instructions can be found at [Grounding a Gaggia Classic](guides-upgrade/grounding-a-gaggia-classic.md)
+> If you have a US Gaggia Classic check whether you have a ground connection on your power input. If it's a 2 pole plug as seen in the image adding a ground is recommended prior to starting the integration. BOM and instructions can be found at [Grounding a Gaggia Classic](guides/machine-specific-guide.md)
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->

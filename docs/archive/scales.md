@@ -5,7 +5,7 @@ The scales functionality will require two load cells and a rigid frame that need
 
 For scales to function properly, the following hardware will be needed:
 
-- [2x 750g Load Cells](https://www.aliexpress.com/item/32670225988.html)
+- [2x 500g Load Cells](https://www.aliexpress.com/item/32670225988.html)
 - [2 x HX711 Amplifiers](https://www.aliexpress.com/item/32670225988.html)
 - (STM32 ONLY) 1 kΩ resistor[^1] x the number of clock lines you plan on using.
 

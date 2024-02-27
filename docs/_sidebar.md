@@ -12,19 +12,23 @@
 * - [Functions Overview](learning/functions-guide.md)
 * - [Recommendations](learning/learning-sources.md)
 * __Install Guides:__
-* - [MCU Flashing](guides-stm32/mcu-flashing.md)
-* - __STM32 Blackpill (Recommended)__
+* - __Control System__
     * [Component "Lego" Build](guides-stm32/lego-component-build-guide.md)
     * [PCB](pcb/singleboard.md)
+* - __Wiring__
     * [3PLN Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md)
     * [3PLN Custom Wiring](guides-stm32/3pln-custom-wiring.md)
-* - __Arduino Nano (Feature frozen)__
-    * [Gaggia Classic](guides-nano/gaggia-classic.md)
-    * [Gaggia Classic Pro](guides-nano/gaggia-classic-pro-new-classic.md)
+* - __References__
+    * [Machine-Specific Instructions](guides/machine-specific-guide.md)   
+    * [MCU Flashing](guides-stm32/mcu-flashing.md)
 * __Accessories:__
     * [Hardware Scales](accessories/hw-scales.md)
     * [ToFnLED (Time of Flight and LED)](accessories/tofnled.md)
 * __Upgrades:__
     * [Lego Independent Relay and Dimmer](guides-upgrade/lego-independent-relay-dimmer.md)
     * [Nano to STM32 Upgrade](guides-upgrade/nano-to-stm32.md)
-    * [Grounding a Gaggia Classic](guides-upgrade/grounding-a-gaggia-classic.md)
+* __Archive:__
+    * __Arduino Nano (Feature frozen)__
+        * [Gaggia Classic](archive/guides-nano/gaggia-classic.md)
+        * [Gaggia Classic Pro](archive/guides-nano/gaggia-classic-pro-new-classic.md)
+        * [Scales](archive/scales.md)
