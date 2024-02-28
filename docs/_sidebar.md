@@ -11,19 +11,16 @@
 * - [Community media](community/community-media.md)
 * - [Functions Overview](learning/functions-guide.md)
 * - [Recommendations](learning/learning-sources.md)
-* __Install Guides:__
-* - __Control System__
-    * [Component "Lego" Build](guides-stm32/lego-component-build-guide.md)
-    * [PCB](pcb/singleboard.md)
-* - __Wiring__
-    * [3PLN Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md)
-    * [3PLN Custom Wiring](guides-stm32/3pln-custom-wiring.md)
-* - __References__
+* __Install Guide:__
+    * [Control A: PCB](pcb/singleboard.md)
+    * [Control B: Component (Lego) Build](guides-stm32/lego-component-build-guide.md)
+    * [Wiring A: Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md)
+    * [Wiring B: Custom Wiring](guides-stm32/3pln-custom-wiring.md)
+    * [Accessory: Hardware Scales](accessories/hw-scales.md)
+    * [Accessory: ToFnLED (Tank level and LED)](accessories/tofnled.md)
+* __Install References__
     * [Machine-Specific Instructions](guides/machine-specific-guide.md)   
-    * [MCU Flashing](guides-stm32/mcu-flashing.md)
-* __Accessories:__
-    * [Hardware Scales](accessories/hw-scales.md)
-    * [ToFnLED (Time of Flight and LED)](accessories/tofnled.md)
+    * [MCU Flashing](guides-stm32/mcu-flashing.md)    
 * __Upgrades:__
     * [Lego Independent Relay and Dimmer](guides-upgrade/lego-independent-relay-dimmer.md)
     * [Nano to STM32 Upgrade](guides-upgrade/nano-to-stm32.md)

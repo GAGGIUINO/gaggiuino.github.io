@@ -116,13 +116,13 @@ Name                                      | Voltage   | Model Years | Model ID  
 
   Follow the instructions for your control system selection
 
-    * [PCB](pcb/singleboard.md)
-    * [Component (Lego) build](guides-stm32/lego-component-build-guide.md)
+    * [A: PCB](pcb/singleboard.md)
+    * [B: Component (Lego) build](guides-stm32/lego-component-build-guide.md)
 
   Follow the instructions for your wiring selection
 
-    * [Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md)
-    * [Custom Wiring Harness](guides-stm32/3pln-custom-wiring.md)
+    * [A: Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md)
+    * [B: Custom Wiring Harness](guides-stm32/3pln-custom-wiring.md)
 
   Follow the instructions for any accessories that may have been selected
 
