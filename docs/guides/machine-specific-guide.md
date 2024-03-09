@@ -3,9 +3,9 @@
 > [!Note|style:callout|label:APPLICABLE MODELS|iconVisibility:visible]
 > 230V (EU) Gaggia Classic Pro Eco and Evo models with an Eco PCB.
 
-To comply with EU regulations, Gaggia Classic variants sold there include a PCB (Eco board) that turns the machine off after 20 minutes of inactivity. These machines also have a monostable (spring-return) switch that defaults to the "Off" position when not pressed. To make the machine bistable a spring must be removed.
+A Gaggia Classic with Gaggiuino typically takes 10-15 minutes to reach thermal equilibrium. However, in adherence to EU regulations, Gaggia Classic models available in the region are equipped with a PCB (Eco board) designed to power off the machine after 20 minutes of idle operation. These machines also have a monostable (spring-return) switch that defaults to the "Off" position when not pressed. To make the switch bistable a spring must be removed.
 
-Remove the switch from the machine. Gently push the side walls one at a time until the locking tabs (circled red) are released. Remove the 3rd spring, then reassemble. 
+Remove the switch from the machine. Use a thin pry tool to gently push the side walls one at a time until the locking tabs (circled red) are released. Remove the 3rd spring, then reassemble. 
 
 <img width="600" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/3e99f5c4-f8e1-4413-b91b-2bf3890c3737">
 
@@ -72,8 +72,8 @@ There are two methods of achieving this:
 
 Most US Gaggia Classics were sold with a 2P socket and are **ungrounded**. It is recommended that espresso machines be grounded and powered through a GFCI/AFCI/RCD device.
 
-Grounding (also known as Earthing) provides an alternate path for current to flow into the ground in the event of an issue with the wiring system or introduction of a conductive medium (such as ionized water).  
-Without a grounded housing, if the AC line came loose at some point and contacted the housing the machine may still work, but touching the metal housing would be the same as touching a live power socket. With a grounded housing, breaker, and ideally a GFCI/AFCI/RCD device, an AC wiring fault will trip the breaker or circuit interrupter before becoming a danger to people or the system.
+Grounding, also referred to as Earthing, offers an alternative route for electrical current to dissipate into the ground should there be a wiring system malfunction or the introduction of a conductive substance, such as ionized water.  
+Without a grounded housing, if the AC line came loose and contacted the housing the machine may still work, but touching the metal housing would be the same as touching a live power socket. With a grounded housing, breaker, and ideally a GFCI/AFCI/RCD device, an AC wiring fault will trip the breaker or circuit interrupter before becoming a danger to the user or the system.
 
 > [!WARNING|style:callout|label:WARNING|iconVisibility:visible]
 > Earth Ground is **not the same** as 5V GND (aka 0 V, " - ", or 5V COM). The DC system uses a "floating ground" for thermocouple compatibility. Do not connect the two.

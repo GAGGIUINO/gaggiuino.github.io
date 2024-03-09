@@ -9,15 +9,15 @@
 * __Useful:__
 * - [Announcements](announcements/)
 * - [Community media](community/community-media.md)
-* - [Functions Overview](learning/functions-guide.md)
+* - [User Manual](learning/user-manual.md)
 * - [Recommendations](learning/learning-sources.md)
-* __Install Guide:__
-    * [Control A: PCB](pcb/singleboard.md)
+* __Install Guides:__
+    * [Control A: PCB](guides-stm32/pcb-guide.md)
     * [Control B: Component (Lego) Build](guides-stm32/lego-component-build-guide.md)
     * [Wiring A: Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md)
     * [Wiring B: Custom Wiring](guides-stm32/3pln-custom-wiring.md)
     * [Accessory: Hardware Scales](accessories/hw-scales.md)
-    * [Accessory: ToFnLED (Tank level and LED)](accessories/tofnled.md)
+    * [Accessory: ToFnLED](accessories/tofnled.md)
 * __Install References__
     * [Machine-Specific Instructions](guides/machine-specific-guide.md)   
     * [MCU Flashing](guides-stm32/mcu-flashing.md)    

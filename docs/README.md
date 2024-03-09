@@ -94,7 +94,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 2. **Determine your build path.** 
 
-  Decide if you're going to order a [PCB](pcb/singleboard.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. In general the PCB is going to be much simpler, while the component build is more flexible for experimentation and less picky about thermocouples but requires significant wiring and soldering. 
+  Decide if you're going to order a [PCB](guides-stm32/pcb-guide.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. In general the PCB is going to be much simpler, while the component build is more flexible for experimentation and less picky about thermocouples but requires significant wiring and soldering. 
 
   Decide how to integrate the control system with your espresso machine. It can either be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring, but sometimes more confusing) or the stock wiring can be replaced with a [custom wiring harness](guides-stm32/3pln-custom-wiring.md) (more work, but results in a clean, straightforward install). It is recommended that you check the notes in the [Compatibility Table](#compatibility) for your machine and and read through the instructions before deciding.
 
@@ -116,7 +116,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 
   Follow the instructions for your control system selection
 
-    * [A: PCB](pcb/singleboard.md)
+    * [A: PCB](guides-stm32/pcb-guide.md)
     * [B: Component (Lego) build](guides-stm32/lego-component-build-guide.md)
 
   Follow the instructions for your wiring selection
@@ -133,7 +133,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 
   Record your first start. Post this to [#first-start](https://discord.com/channels/890339612441063494/919183771079692328) on Discord.  
   Record your first shot. Post this to [#first-shot](https://discord.com/channels/890339612441063494/910972035205857320) on Discord.  
-  Read the [Functions Guide](learning/functions-guide.md) for more information on the machine capabilities.  
+  Read the [User Manual](learning/user-manual.md) for more information on the machine capabilities.  
   Check out [Espresso Aficionados](https://espressoaf.com/guides/profiling.html) for info on profiling that you can now implement!  
 
 <!-- panels:start -->
