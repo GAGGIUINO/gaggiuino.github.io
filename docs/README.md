@@ -1,3 +1,5 @@
+# HOME
+
 > [!WARNING|style:flat|label:Impact of purchasing from unofficial sources|iconVisibility:visible]
 >
 > We want to bring your attention to an important issue that affects the sustainability of the project. We've noticed that some bad actors are taking advantage of our hard work and dedication for their own financial benefit. Buying PCBs, kits, or 3D prints from unauthorized sources directly supports these profit-driven individuals, undermining the very core ideas and values that our mod stands for.

@@ -1,3 +1,5 @@
+# Accessory: Hardware Scales
+
 This assembly is for adding hardware scales to your Gaggia Classic or Gaggia Classic Pro.  
 
 > [!Tip] The STM32 build has software emulated **predictive scales** that try to offer accurate sensing of the first drops into the cup as well as realtime shot weight tracking and stop-on-weight across a variety of settings and shot profiles. Predictive scales are sufficient for most users with performed calibration and standard dialed-in shots but they're not fool proof or able to cater for the more advanced minds out there.  
