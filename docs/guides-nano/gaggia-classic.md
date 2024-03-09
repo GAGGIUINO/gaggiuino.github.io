@@ -31,7 +31,7 @@ _Will enable pump control based on active pressure feedback, this enables pressu
 * [O Ring - OD 11mm, 2.4 mm thick](https://www.aliexpress.com/item/1005003662931218.html) 
 * [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
 * [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
-* [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
+* [Hose 1 meter | ID 4x6 mm](https://nl.aliexpress.com/item/1005005311555646.html)
 
 ### 3D Printed Parts
 * [Screen Enclosure](https://www.printables.com/model/280617)  
