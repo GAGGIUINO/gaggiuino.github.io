@@ -169,7 +169,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
 * [5V RELAY](https://www.aliexpress.com/item/3256803997020234.html) 
 * [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html) **+ MicroSD card (Class 10 HC 8GB to 32GB)**
-* [MAX6675 thermocouple board](https://www.aliexpress.com/item/2251832724065302.html) 
+* [MAX6675 thermocouple module](https://www.aliexpress.com/item/3256805086341859.html) 
 * [Ungrounded Thermocouple Sensor | K-type, M4, 0.5 m long](https://www.aliexpress.com/item/3256805310471537.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
 * [Heat-resistant Silicone Wire](https://www.aliexpress.com/item/2255800441309579.html)
