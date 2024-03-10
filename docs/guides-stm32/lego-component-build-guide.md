@@ -121,8 +121,10 @@ Note: you can use strip board for power distribution (cut for 6x5 usable points)
 
 You'll use these later on. The table is located by the schematic for ease of linking and jumping back and forth during the build.
 
-!> Wire cut lengths to connect the housing components to the espresso machine were added by request and are the length for a typical install in a GC or GCP plus a small margin.  
-**Verifying wire length in your machine is recommended.** 
+> [!Note|style:callout|label:Note|iconVisibility:visible]
+> For stock wiring integation, the wire cut lengths to connect the housing components to the espresso machine are the length for a typical install in a GC or GCP plus a small margin.  
+> For custom wiring these connections can wait or a short wire can be installed to make connecting to the 3PLN of the custom harness easier.  
+> **Verifying wire length in your machine is recommended.**
 
 Component                                      |Colors                  |Gauge|Length                        
 -----------------------------------------------|------------------------|:---:|------------------------------
@@ -137,11 +139,6 @@ Component                                      |Colors                  |Gauge|L
 [Relay: NO (3)](#snubber-relay-and-dimmer)        |Red                     |22   |250 mm <sup>Note 1</sup>
 [Dimmer: Out (P), N-In (N)](#snubber-relay-and-dimmer)|Red, White              |22   |250 mm <sup>Note 1</sup>
 [Dimmer: L-In (L)](#snubber-relay-and-dimmer)     |Black                   |22   |600 mm <sup>Note 1</sup>
-
-> [!Note|style:callout|label:Note 1|iconVisibility:visible]
-> These lengths are for stock wiring integration.  
-> For custom wiring these connections can wait or a short wire can be installed to make connecting to the 3PLN of the custom harness easier.
->
 
 # Schematic
  

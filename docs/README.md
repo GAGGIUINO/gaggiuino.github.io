@@ -69,7 +69,7 @@ _3_ __Predictive scales__ - software driven predicted weight output.
 # Compatibility
 
 Gaggiuino is designed for the Gaggia Classic family of espresso machines with 3-way valves (**NOT the Gaggia Classic V2, SIN035U RI9403**). Other espresso machines such as the Rancilio Silvia are also supported although no official installation instructions are available at this time.  
-Gaggiuino is **not** designed for espresso machines that use a heat exchanger, thermoblock, thermocoil, or rotary pump.  
+Gaggiuino is **not** designed for espresso machines that use a heat exchanger, thermoblock, thermocoil, group/check valve,  or rotary pump.  
 
 Name                                      | Voltage   | Model Years | Model ID        | Notes  
 ------------------------------------------|-----------|-------------|-----------------|-------
@@ -191,7 +191,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 <!-- tab:Gaggia Classic -->
 * [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
 * [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
-* [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
+* [PTFE Tube 1 meter | 4x6mm White](https://www.aliexpress.com/item/2251832544541096.html)
 
 <!-- tab:Gaggia Classic Pro -->
 * **High Pressure braided hose (pick one)**
