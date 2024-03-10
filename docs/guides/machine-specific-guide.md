@@ -25,7 +25,7 @@ Remove the switch from the machine. Use a thin pry tool to gently push the side 
 
 Most Evo models have a combined shield block around the switch connectors. It is recommended to remove the connectors, insulate them separately, and then label prior to completing the mod. This is especially important if doing stock wiring integration because some connectors will be left in the machine disconnected. 
 
-First, disconnect the connector block (it's easier to do if the switch or boiler is removed). To remove a connector from the block, insert a small screwdriver to depress the locking tab, then pull the connector from the rear. It is recommended to remove the connectors one at a time and insulate with self-fusing silicone tape or 6 mm silicone heat shrink tubing, labeling as you go. 
+First, disconnect the connector block (it's easier to do with the switch or boiler removed). To remove a connector from the block, insert a small screwdriver to depress the locking tab, then pull the connector from the rear. It is recommended to remove the connectors one at a time and insulate with self-fusing silicone tape or 6 mm silicone heat shrink tubing, labeling as you go. 
 
 > [!TIP|style:callout|label:|iconVisibility:hidden]
 > Oil-based permanent markers write well on silicone.
