@@ -11,7 +11,7 @@
 * PCB v3 is suitable for most single-boiler espresso machines and is the focus of these instructions. PCB v2 supports more connection points for wiring and and/or multiple boiler control. 
 * PCB v2 housing links *(Pick one)*
   * [Rigid Housing](https://www.printables.com/model/260901)
-  * [Easy Access Housing)](https://www.printables.com/model/261267)
+  * [Easy Access Housing](https://www.printables.com/model/261267)
 
 >
 
