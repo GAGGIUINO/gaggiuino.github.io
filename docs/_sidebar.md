@@ -11,6 +11,8 @@
 * - [Community media](community/community-media.md)
 * - [User Manual](learning/user-manual.md)
 * - [Recommendations](learning/learning-sources.md)
+* - [Example tools](learning/example-tools.md)
+* - [Wiring basics](learning/wiring-basics.md)
 * __Install Guides:__
     * [Control A: **PCB**](guides-stm32/pcb-guide.md)
     * [Control B: **Component (Lego) Build**](guides-stm32/lego-component-build-guide.md)
