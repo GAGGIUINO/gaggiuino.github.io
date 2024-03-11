@@ -131,7 +131,7 @@ The pressure transducer comes with a base O-ring (green in pictures), however, t
 ![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/f294cdb2-000b-4583-b258-8dd53854a2ec ':size=500')
 <!-- tabs:end -->
 
-Cut the tubing in between the pump and boiler, nearer to the boiler but high enough the T is mostly vertical, not horizontal. Attach the appropriate T fitting for your machine. 
+Cut the tubing in between the pump and boiler, nearer to the boiler but high enough the T is mostly vertical, not horizontal. The location where you cut the stock tube is important and can affect the optimal placement of the transducer. To ensure this, first position the transducer at the bottom. Before cutting, hold the additional tubing at the planned spot to ensure that the chosen cutting point does not impede the transducer's ability to rest on the case bottom. Attach the appropriate T fitting for your machine. 
 
 > [!Tip]
 > Make sure the tubing is fully engaged on the fittings. It can be helpful to use a grip aid such as silicone tape or a rubber glove to grip the tubing and push it in. For barbed fittings you may even need to use some water-based lubricant to get it all the way on.
