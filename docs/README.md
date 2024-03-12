@@ -1,3 +1,5 @@
+# HOME
+
 > [!WARNING|style:flat|label:Impact of purchasing from unofficial sources|iconVisibility:visible]
 >
 > We want to bring your attention to an important issue that affects the sustainability of the project. We've noticed that some bad actors are taking advantage of our hard work and dedication for their own financial benefit. Buying PCBs, kits, or 3D prints from unauthorized sources directly supports these profit-driven individuals, undermining the very core ideas and values that our mod stands for.
@@ -66,18 +68,19 @@ _3_ __Predictive scales__ - software driven predicted weight output.
 
 # Compatibility
 
-Gaggiuino is designed for the Gaggia Classic family of espresso machines with 3-way valves (**NOT the Gaggia Classic V2, SIN035U RI9403**). Other espresso machines such as the Rancilio Silvia are also supported although no official installation instructions are available at this time.
+Gaggiuino is designed for the Gaggia Classic family of espresso machines with 3-way valves (**NOT the Gaggia Classic V2, SIN035U RI9403**). Other espresso machines such as the Rancilio Silvia are also supported although no official installation instructions are available at this time.  
+Gaggiuino is **not** designed for espresso machines that use a heat exchanger, thermoblock, thermocoil, group/check valve,  or rotary pump.  
 
 Name                                      | Voltage   | Model Years | Model ID        | Notes  
 ------------------------------------------|-----------|-------------|-----------------|-------
-:heavy_check_mark: Gaggia Classic         | 100-120 V | 1991-2018   | SIN035 RI9303   | Needs [Grounding](guides-upgrade/grounding-a-gaggia-classic.md) 
+:heavy_check_mark: Gaggia Classic         | 100-120 V | 1991-2018   | SIN035 RI9303   | Needs [Grounding](guides/machine-specific-guide.md#grounding) 
 :heavy_check_mark: Gaggia Classic         | 220-240 V | 1991-2014   | SIN035 RI9303   |  
 :x:                Gaggia Classic V2      | 220-240 V | 2015-2018   | SIN035U RI9403  | Avoid like the plague
 :heavy_check_mark: Gaggia Classic Pro     | 100-120 V | 2019-2022   | SIN035R RI9380  | 
 :heavy_check_mark: Gaggia Classic Pro     | 220-240 V | 2019-2022   | SIN035R RI9380  | Uncommon, easier to mod than models with eco PCB
-:heavy_check_mark: Gaggia Classic Pro Eco | 220-240 V | 2019-2022   | SIN035UR RI9480 | [Power switch mod](https://www.youtube.com/embed/WNs3uSLA4Ts?start=99&end=151) required and custom wiring recommended due to eco PCB
-:heavy_check_mark: Gaggia Classic Evo Pro | 100-120 V | 2023-?      | SIN035R RI9380  | 9 bar OPV spring must be replaced with 10-12 bar spring or spring force increased with washers. <br /> High-temp insulation required for stock wiring integration due to combined switch connectors
-:heavy_check_mark: Gaggia Classic Evo Pro | 220-240 V | 2023-?      | SIN035UR RI9481 | [Power switch mod](https://www.youtube.com/embed/WNs3uSLA4Ts?start=99&end=151) required and custom wiring recommended due to eco PCB
+:heavy_check_mark: Gaggia Classic Pro Eco | 220-240 V | 2019-2022   | SIN035UR RI9480 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
+:heavy_check_mark: Gaggia Classic Evo Pro | 100-120 V | 2023-?      | SIN035R RI9380  | 9 bar OPV must be changed to be a [10-12 bar OPV](guides/machine-specific-guide.md#10-12-bar-opv) <br /> High-temp insulation required for [combined connector insulation](guides/machine-specific-guide.md#combined-connector-insulation) when doing stock wiring integration 
+:heavy_check_mark: Gaggia Classic Evo Pro | 220-240 V | 2023-?      | SIN035UR RI9481 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
 
 >
 
@@ -90,11 +93,11 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 1. **Identify your espresso machine (or determine what to buy)**
 
-  See the [Compatibility Table](#compatibility)
+  See the [Compatibility Table](#compatibility) and take note of any [Machine-Specific Instructions](guides/machine-specific-guide.md) that are mentioned there. 
 
 2. **Determine your build path.** 
 
-  Decide if you're going to order a [PCB](pcb/singleboard.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. In general the PCB is going to be much simpler, while the component build is more flexible for experimentation and less picky about thermocouples but requires significant wiring and soldering. 
+  Decide if you're going to order a [PCB](guides-stm32/pcb-guide.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. In general the PCB is going to be much simpler, while the component build is more flexible for experimentation and less picky about thermocouples but requires significant wiring and soldering. 
 
   Decide how to integrate the control system with your espresso machine. It can either be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring, but sometimes more confusing) or the stock wiring can be replaced with a [custom wiring harness](guides-stm32/3pln-custom-wiring.md) (more work, but results in a clean, straightforward install). It is recommended that you check the notes in the [Compatibility Table](#compatibility) for your machine and and read through the instructions before deciding.
 
@@ -116,13 +119,13 @@ Name                                      | Voltage   | Model Years | Model ID  
 
   Follow the instructions for your control system selection
 
-    * [PCB](pcb/singleboard.md)
-    * [Component (Lego) build](guides-stm32/lego-component-build-guide.md)
+    * [A: PCB](guides-stm32/pcb-guide.md)
+    * [B: Component (Lego) build](guides-stm32/lego-component-build-guide.md)
 
   Follow the instructions for your wiring selection
 
-    * [Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md)
-    * [Custom Wiring Harness](guides-stm32/3pln-custom-wiring.md)
+    * [A: Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md)
+    * [B: Custom Wiring Harness](guides-stm32/3pln-custom-wiring.md)
 
   Follow the instructions for any accessories that may have been selected
 
@@ -133,7 +136,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 
   Record your first start. Post this to [#first-start](https://discord.com/channels/890339612441063494/919183771079692328) on Discord.  
   Record your first shot. Post this to [#first-shot](https://discord.com/channels/890339612441063494/910972035205857320) on Discord.  
-  Read the [Functions Guide](learning/functions-guide.md) for more information on the machine capabilities.  
+  Read the [User Manual](learning/user-manual.md) for more information on the machine capabilities.  
   Check out [Espresso Aficionados](https://espressoaf.com/guides/profiling.html) for info on profiling that you can now implement!  
 
 <!-- panels:start -->
@@ -167,7 +170,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
 * [5V RELAY](https://www.aliexpress.com/item/3256803997020234.html) 
 * [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html) **+ MicroSD card (Class 10 HC 8GB to 32GB)**
-* [MAX6675 thermocouple board](https://www.aliexpress.com/item/2251832724065302.html) 
+* [MAX6675 thermocouple module](https://www.aliexpress.com/item/3256805086341859.html) 
 * [Ungrounded Thermocouple Sensor | K-type, M4, 0.5 m long](https://www.aliexpress.com/item/3256805310471537.html)
 * [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
 * [Heat-resistant Silicone Wire](https://www.aliexpress.com/item/2255800441309579.html)
@@ -188,7 +191,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 <!-- tab:Gaggia Classic -->
 * [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
 * [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
-* [Hose 1 meter | ID 4mmx6](https://www.aliexpress.com/item/1005004639155885.html)
+* [PTFE Tube 1 meter | 4x6mm White](https://www.aliexpress.com/item/2251832544541096.html)
 
 <!-- tab:Gaggia Classic Pro -->
 * **High Pressure braided hose (pick one)**
@@ -204,14 +207,16 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [Heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html) **Amount is for minimal mistakes, extra is recommended**
   * **18AWG - 1m:** Black *(x2 if 230 VAC)*, White *(x2 if 230 VAC)*, Red, Blue, Yellow
 * [Piggy Back spades 6.3mm](https://www.aliexpress.com/item/32800326782.html)
+* [Fork Crimp Terminal | SV1.25-5s](https://www.aliexpress.com/item/3256805357612913.html)
 * [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html) **nice to have, needed for Evo**
 
 <!-- tab:Custom Wiring -->
 **This list assumes components will be taken from the stock wiring harness. For alternate components see the [Custom Wiring](guides-stm32/3pln-custom-wiring.md) page**
-* [Heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html) **Amount is for minimal mistakes, extra is recommended**
+* [Heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html) **For following schematic colors. Amount is for minimal mistakes, extra is recommended**
   * **18AWG - 1m:** Black, White *(x2 if 120 VAC)*, Red, Orange, Blue *(x2 if 230 VAC)*, Yellow, Green
 * [BN1.25 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html)
 * [BN2 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html)
+* [Fork Crimp Terminal | 102PCS-SV *(SV1.25-5s & SV2-5s used)*](https://www.aliexpress.com/item/3256805357612913.html)
 * [Silicone Heat Shrink Tube | 4, 5, 6 mm dia](https://www.aliexpress.com/item/3256801522005095.html) **OR** [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html)
 
 <!-- tabs:end -->

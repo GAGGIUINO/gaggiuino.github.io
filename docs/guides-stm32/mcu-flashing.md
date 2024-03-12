@@ -1,3 +1,5 @@
+# MCU Flashing
+
 ## Software Prerequisites:
 1. Install/Update [VSCode](https://code.visualstudio.com/)
 2. Install/Update [Platform IO](https://platformio.org/) 
@@ -34,6 +36,9 @@ Make sure to switch to the necessary [release branch](#Releases) once pulled, de
 ## STM32 Blackpill
   
 Make sure you have necessary [Software Prerequisites](#software-prerequisites) installed, and any applicable extra defines entered and saved in `extra_defines.ini` before starting.
+
+>[!Tip]
+>extra_defines.ini is used for accessories and other special functions. You do not need one for the base install.
 
 1. Select the environment based on the upload method:
     - **Lego** if you have individual components, **PCB** if you have one.

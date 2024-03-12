@@ -1,7 +1,11 @@
+# Upgrade: Lego Independent Relay and Dimmer
+
 This is a guide on how to make the relay (controlling the 3-way valve) and dimmer (controlling the pump) independent on "Lego" (component) builds.
 Independent control allows proper phase recognition, calibration, and tracking.
 
-!> This is required for installs that followed schematics released before 5-May-2023 wanting to use software releases past **e8933a6** (8-Apr-2023) 
+> [!Note|style:callout|label:APPLICABLE INSTALLS|iconVisibility:visible]
+> This is required for installs that followed schematics released before 5-May-2023 wanting to use software releases past **e8933a6** (8-Apr-2023)  
+> 3PLN installs do **not** need this upgrade
 
 > [!Warning|style:callout]
 > Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!

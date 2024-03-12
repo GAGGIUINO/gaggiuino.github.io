@@ -1,3 +1,5 @@
+# Control B: Component (Lego) Build 
+
 > [!Warning|style:callout]
 > Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
 
@@ -119,8 +121,10 @@ Note: you can use strip board for power distribution (cut for 6x5 usable points)
 
 You'll use these later on. The table is located by the schematic for ease of linking and jumping back and forth during the build.
 
-!> Wire cut lengths to connect the housing components to the espresso machine were added by request and are the length for a typical install in a GC or GCP plus a small margin.  
-**Verifying wire length in your machine is recommended.** 
+> [!Note|style:callout|label:Note|iconVisibility:visible]
+> For stock wiring integation, the wire cut lengths to connect the housing components to the espresso machine are the length for a typical install in a GC or GCP plus a small margin.  
+> For custom wiring these connections can wait or a short wire can be installed to make connecting to the 3PLN of the custom harness easier.  
+> **Verifying wire length in your machine is recommended.**
 
 Component                                      |Colors                  |Gauge|Length                        
 -----------------------------------------------|------------------------|:---:|------------------------------
@@ -136,13 +140,11 @@ Component                                      |Colors                  |Gauge|L
 [Dimmer: Out (P), N-In (N)](#snubber-relay-and-dimmer)|Red, White              |22   |250 mm <sup>Note 1</sup>
 [Dimmer: L-In (L)](#snubber-relay-and-dimmer)     |Black                   |22   |600 mm <sup>Note 1</sup>
 
-> [!Note|style:callout|label:Note 1|iconVisibility:visible]
-> These lengths are for stock wiring integration.  
-> For custom wiring these connections can wait or a short wire can be installed to make connecting to the 3PLN of the custom harness easier.
->
-
 # Schematic
  
+> [!WARNING|style:callout|label:Wire Colors|iconVisibility:visible]
+> SCL (yellow) and SDA (blue) wire colors were changed to match Qwiic cable standards after the build, so the colors may be reversed in some of the images. The schematic is accurate.
+
 Trust the schematic if you’re confused on a step or there appears to be a difference between an image and the schematic. You can use 22-26AWG wires for LV wiring unless otherwise noted; see the schematic and table for permissible wire gauges.
 
 <img width="800" alt="image" src="schematics/stm32-comp-build.png">
@@ -179,7 +181,7 @@ Here’s a pic partway through the wiring process:
 ## ADS Board
 Here are a few details on wiring the ADS
 
->[!Note]
+> [!TIP|style:callout|label:Wiring Order|iconVisibility:visible]
 > I wired power/ground first and ensured the ADDR wire was bent enough to have clearance to solder SCL and SDA connections later. You may want to solder SCL and SDA first.
 
 Connect G to ADDR like this: 

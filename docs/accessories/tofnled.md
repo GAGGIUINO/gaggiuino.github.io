@@ -1,3 +1,5 @@
+# Accessory: ToFnLED
+
 The Time of Flight and LED (ToFnLED) board provides a sensor for determining tank water level and and LED for tank lighting. 
 
 <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/256652023-fb3ead35-419b-4859-96b7-1cfbb1b0e9b8.png">
@@ -10,7 +12,7 @@ Conformal coating the PCB is highly recommended for longevity. This can be done 
 
 <!-- tabs:start -->
 <!-- tab:PCB -->
-* ToFnLED (two options due to LED controller availability - choose one)
+* ToFnLED (two options due to LED controller availability - choose one, or order from an Official Supplier)
     * [NCP5623](https://www.pcbway.com/project/shareproject/ToFnLED_v1_214578da.html)
     * [PCA9632](https://www.pcbway.com/project/shareproject/ToFnLED_RGBW_1a918f23.html)
 * I2C Qwiic cable, 250+ mm (choose one)
@@ -23,7 +25,7 @@ Conformal coating the PCB is highly recommended for longevity. This can be done 
         * VHB 4611/5952/4910, Gorilla Tape, Alien Tape are options
 
 <!-- tab:LEGO -->
-* ToFnLED (two options due to LED controller availability - choose one)
+* ToFnLED (two options due to LED controller availability - choose one, or order from an Official Supplier)
     * [NCP5623](https://www.pcbway.com/project/shareproject/ToFnLED_v1_214578da.html)
     * [PCA9632](https://www.pcbway.com/project/shareproject/ToFnLED_RGBW_1a918f23.html)
 * I2C Qwiic cable, 250+ mm (choose one)

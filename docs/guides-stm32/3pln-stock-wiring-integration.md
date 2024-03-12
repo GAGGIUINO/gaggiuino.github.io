@@ -1,3 +1,5 @@
+# Wiring A: Stock Wiring Integration
+
 > [!Warning|style:callout]
 > Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
 
@@ -73,7 +75,7 @@ Save the images or right-click and open in a new tab to view at full resolution.
 Take off the top cover by unscrewing the 2 top screws. You should be able to see something similar to the below image. 
 
 > [!Note]
-> If you have a US Gaggia Classic check whether you have a ground connection on your power input. If it's a 2 pole plug as seen in the image adding a ground is recommended prior to starting the integration. BOM and instructions can be found at [Grounding a Gaggia Classic](guides-upgrade/grounding-a-gaggia-classic.md)
+> If you have a US Gaggia Classic check whether you have a ground connection on your power input. If it's a 2 pole plug as seen in the image adding a ground is recommended prior to starting the integration. BOM and instructions can be found at [Grounding a Gaggia Classic](guides/machine-specific-guide.md)
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
@@ -194,53 +196,65 @@ Connect GND, brewPin, and steamPin wires to the switches, making use of some of 
 <!-- tab:Gaggia Classic Pro -->
 ![Switch LV Connections](https://user-images.githubusercontent.com/117388662/246567190-77c4ca27-fb2d-4105-bb41-cc5875a4cc50.png ':size=500')
 <!-- tabs:end -->
+
 ## Pressure Transducer
 
-The pressure transducer comes with a base O-ring (green in pictures), however, the threaded length of the fittings vary and many aren't long enough to seal against the base. Insert the small white O-ring into the fitting, adjust flush, then screw in the transducer until hand-tight. You can add 1/4 wrench turn after hand-tight if desired, but do not overtighten or you may damage the O-ring.
+The pressure transducer comes with a base O-ring (green in pictures), however, the threaded length of the fittings vary and many aren't long enough to seal against the base. Insert the small white O-ring into the fitting, adjust flush, then screw in the transducer until hand-tight. You can add 1/4 wrench turn after hand-tight if desired, but **do not overtighten** or you may damage the O-ring and/or not get a pressure reading.
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
-![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/78d801f3-9c4f-4c17-8105-74e32711af09 ':size=500')
-<!-- tab:Gaggia Classic Pro -->
-![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/f294cdb2-000b-4583-b258-8dd53854a2ec ':size=500')
-<!-- tabs:end -->
 
-Cut the tubing in between the pump and boiler, nearer to the boiler but high enough the T is mostly vertical, not horizontal. Attach the appropriate T fitting for your machine. 
+![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/78d801f3-9c4f-4c17-8105-74e32711af09 ':size=500')
+
+Cut the tubing in between the pump and boiler, nearer to the boiler but high enough the T is mostly vertical, not horizontal. Attach the push-to-connect T fitting. 
 
 > [!Tip]
-> Make sure the tubing is fully engaged on the fittings. It can be helpful to use a grip aid such as silicone tape or a rubber glove to grip the tubing and push it in. For barbed fittings you may even need to use some water-based lubricant to get it all the way on.
+> Make sure the tubing is cut straight and fully engaged on the fittings or it may not seal. The push-to-connect fitting has a ring of teeth and then an o-ring - the tubing must be fully inserted through both. It can be helpful to use a grip aid such as silicone tape or a rubber glove to grip the tubing and push it in. 
 
-Cut a 200-250 mm length of your tubing from the BOM and attach it to the pressure transducer fitting. You'll need to fill that length of tubing with water so there are no air bubbles. There are 2 options:
+Cut a 200-250 mm length of your tubing from the BOM and attach it to the pressure transducer fitting.
+
+![pressure transducer placement](https://user-images.githubusercontent.com/117388662/239457706-7ee5d101-d209-41b4-a3d3-ce159e98032f.png ':size=500')
+<!-- tab:Gaggia Classic Pro -->
+
+![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/f294cdb2-000b-4583-b258-8dd53854a2ec ':size=500')
+
+Cut the tubing in between the pump and boiler, roughly 65 mm above the boiler connection. Attach the barbed T fitting. 
+
+> [!Tip]
+> Make sure the tubing is cut straight and fully engaged on the fittings. It can be helpful to use a grip aid such as silicone tape or a rubber glove to grip the tubing and push it in. You may even need to use some water-based lubricant to get it all the way on.
+
+Cut a 200-250 mm length of your tubing from the BOM and attach it to the pressure transducer fitting.
+
+![pressure transducer placement](https://user-images.githubusercontent.com/117388662/246573952-ca092066-d107-46e6-85f1-e2a7b19865e0.png ':size=500')
+<!-- tabs:end -->
+
+Arrange the connected pressure transducer so that it is at the base of the machine, lower than the T fitting. 
+
+> [!Tip]
+> It's not common, but some pressure transducers are affected by vibration and even the sensor coming in contact with the housing. In those cases it can be beneficial to wrap the sensor in foam or use adhesive to securely attach it to the machine frame.  
+> <details>
+> <summary><b>Foam-wrapped sensor</b> <i>(Click to expand)</i></summary>
+    <img width="300" alt="GC 120v" src="https://user-images.githubusercontent.com/117388662/239457402-b58dfe55-6572-45b7-8960-2a4d1f9d5753.png">
+> </details>
+
+ Before pulling shots you'll need to fill the tubing with water so there are no air bubbles. There are 2 options:
 
 <details>
-<summary><b>Hand fill</b> <i>(Click to expand)</i></summary>
+<summary><b>Machine fill - recommended</b> <i>(Click to expand)</i></summary>
 
-Surface tension can make hand filling the tube difficult if you don't use a simple trick: insert a small wire down the center of the tubing and inject water with a syringe. The wire allows the water to flow down and the air to vent up because it doesn't let surface tension seal the tube.
-
-![Filling the transducer tubing](https://user-images.githubusercontent.com/117388662/239455051-c8fe0d0a-270e-4685-9478-d751eb746d49.png ':size=250')
-</details>
-
-<details>
-<summary><b>Machine fill</b> <i>(Click to expand)</i></summary>
-
-Plug the tube into the T fitting. After the screen has been connected and the remainder of the install completed, go to the Brew menu, select the Manual tab, set flow to 1 ml/s and run for ~2 minutes (with open group head) to gently fill the line.
+After the screen has been connected and the remainder of the install completed, go to the Brew menu, select the Manual tab, set flow to 1 ml/s and run for ~2 minutes (with open group head) to gently fill the line.
 
 ![Filling the transducer tubing](https://user-images.githubusercontent.com/117388662/239618595-844609d1-7b59-456e-afba-2d2b1bf73374.png ':size=250')
 
 </details>
 
-Arrange the connected pressure transducer so that it is at the base of the machine, lower than the T fitting. 
+<details>
+<summary><b>Hand fill</b> <i>(Click to expand)</i></summary>
 
-<!-- tabs:start -->
-<!-- tab:Gaggia Classic -->
-![pressure transducer placement](https://user-images.githubusercontent.com/117388662/239457706-7ee5d101-d209-41b4-a3d3-ce159e98032f.png ':size=500')
-<!-- tab:Gaggia Classic Pro -->
-![pressure transducer placement](https://user-images.githubusercontent.com/117388662/246573952-ca092066-d107-46e6-85f1-e2a7b19865e0.png ':size=500')
-<!-- tabs:end -->
+This should be done before finishing the install and is easiest before connecting the T fitting. Surface tension can make hand filling the tube difficult if you don't use a simple trick: insert a small wire down the center of the tubing and inject water with a syringe. The wire allows the water to flow down and the air to vent up because it doesn't let surface tension seal the tube.
 
-> [!Tip]
-> While some sensors/setups seem to have no issues with the pump vibration, others are affected by vibration and even the sensor coming in contact with the housing. In those cases it can be beneficial to wrap the sensor in foam.  
-![Foam-wrapped sensor](https://user-images.githubusercontent.com/117388662/239457402-b58dfe55-6572-45b7-8960-2a4d1f9d5753.png ':size=250')
+![Filling the transducer tubing](https://user-images.githubusercontent.com/117388662/239455051-c8fe0d0a-270e-4685-9478-d751eb746d49.png ':size=250')
+</details>
 
 ## Internal Finishing Touches
 

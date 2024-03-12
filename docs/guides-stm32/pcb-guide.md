@@ -1,3 +1,5 @@
+# Control A: PCB
+
 > [!Warning|style:callout]
 > Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
 
@@ -9,7 +11,7 @@
 * PCB v3 is suitable for most single-boiler espresso machines and is the focus of these instructions. PCB v2 supports more connection points for wiring and and/or multiple boiler control. 
 * PCB v2 housing links *(Pick one)*
   * [Rigid Housing](https://www.printables.com/model/260901)
-  * [Easy Access Housing)](https://www.printables.com/model/261267)
+  * [Easy Access Housing](https://www.printables.com/model/261267)
 
 >
 

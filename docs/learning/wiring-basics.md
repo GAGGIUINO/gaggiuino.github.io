@@ -1,8 +1,13 @@
-# Introduction
+# Wiring Basics
+
+## Introduction
 
 This article is primarily aimed at kit installers without significant prior electrical experience. If you are already familiar with the basics of doing electronics projects information here may be redundant for you.
 
-# Connectors overview
+> [!WARNING|style:callout|label:WARNING|iconVisibility:visible]
+> The information here does not apply to every model, build method, or kit. It is a work in progress and may have inaccuracies.
+
+## Connectors overview
 
 There are different types of connections used in the build. Based on the following picture:
 
@@ -13,10 +18,10 @@ From the left:
 2. Second from the left – **QC connector**, sometimes refered to as spade. Those will plug into various parts of the machine like switches and into 4 big connectors (3PLN) at the board. You will primarily use female connectors as seen in the picture, but some setups may use male connectors.
 3. **Spade connector**, Third from the left. Sometimes referred to as fork connector (yes, spade semantics are confusing). Those will connect to SSR with screw-on.
 4. **BN connector**, sometimes referred to as butt connector, first from the right – those will connect two high voltage cables together, as those shouldn’t be soldered due to added resistance. After connecting remember to add the insulation on top of this connector.
-5. **Low voltage cable splicing** – connecting two low voltage cables together, that may be optional depending on your route. Western Union Splice and soldering – see [recommendations page](learning-sources.md).
+5. **Low voltage cable splicing** – connecting two low voltage cables together, that may be optional depending on your route. Western Union Splice and soldering – see [recommendations page](learning/learning-sources.md).
 6. Boiler attachments on the top and lights connections can be re-used from what already exists in the machine both in Stock and Custom integrations. 
 
-# Crimping insulated connectors
+## Crimping insulated connectors
 
 This is an introduction to the usage of an insulated crimper.
 
@@ -33,7 +38,7 @@ Below is an example image demonstration:
 > [!Tip]
 > The technique previously outlined is suitable for larger wires, such as 18 AWG wires mentioned in the bill of materials. For connecting smaller cables, such as those for the JST connector, if your kit isn't supplied with pre-crimped ends, you'll need to follow a few extra steps. An example scenario is when you need to attach spade (sometimes referred to as fork) connectors to the JST cables for the SSR. You can either splice (connect) these smaller cables with a larger 18 AWG wire and then crimp as previously described or if you choose to crimp directly onto the smaller wire, you must strip four times the normal amount of insulation and fold the wire over itself to thicken it for the crimping process, given its original diameter is too small for conventional crimping methods.
 
-# Cable stripping
+## Cable stripping
 
 Cable stripping refers to taking the insulation off the cable, so metal is exposed for connections. Any previously stripped exposed metal area should be insulated after connecting. Any cable stripping can be achieved with pliers, scisors or a dedicated tool.  Automated strippers offer useful features, such as the ability to adjust automatically to the cable's width for stripping and pulling, and pre-configured stripping lengths. For instance, when inserting two cables into the same connector, an automated stripper can ensure they are stripped to the exact same length, like 6mm, which is highly convenient.
 
@@ -43,7 +48,7 @@ If stripping ever results in any metal strands coming off with the insulation, t
 
 However, for kits that include low-voltage work, such as tiny JST cables, an automated stripper might not be suitable as it could pull the cables apart. For low-voltage cable stripping, gently heating the insulation and then pulling it off with pliers or even fingers, without cutting, can be effective. This method, as demonstrated in [this YouTube video](https://www.youtube.com/watch?v=n5o2drU65UM), can be used.
 
-# Thermal fuse
+## Thermal fuse
 
 Some installers have been confused by the thermal fuse setup. Refer to the following picture: 
 

@@ -1,12 +1,16 @@
 # Example tools
+
 ## Introduction
 This article is not aimed at seasoned DIY enthusiasts who already possess a comprehensive set of tools. Instead, it's designed for primarily kit installers, offering beginner-friendly and budget-aware advice for those without extensive prior experience.
+
+> [!WARNING|style:callout|label:WARNING|iconVisibility:visible]
+> The information here does not apply to every model, build method, or kit. It is a work in progress and may have inaccuracies.
 
 ## Insulated Cable Crimper
 
 An insulated cable crimper is crucial for fitting insulated ends, like Quick Connects (QCs) or Spades, onto cables. The insulation color on these connectors corresponds to the hole size, aiding in selecting the right connector for a given cable. For single cables, a red-insulated connector should be used, matching the crimper's red slot. For two cables going into a connector, use a connection with blue insulation. [An Example Crimper](https://pl.aliexpress.com/item/1005005812085022.html) that would work.
 
-For begginer-focused overview on how to use it see [Crimping insulated connectors](wiring-basics.md#crimping-insulated-connectors).
+For beginner-focused overview on how to use it see [Crimping insulated connectors](learning/wiring-basics.md#crimping-insulated-connectors).
 
 ## Uninsulated cable crimper
 
@@ -54,7 +58,7 @@ When cutting cables, especially in hard-to-reach areas, having dedicated pliers 
 
 While an automated wire stripper is a convenient tool, it's not essential. You can accomplish all necessary stripping tasks with tools like pliers. 
 
-For begginer-focused overview on cable stripping [Cable stripping](wiring-basics.md#cable-stripping).
+For begginer-focused overview on cable stripping [Cable stripping](learning/wiring-basics.md#cable-stripping).
 
 ## Solder - Optional
 
@@ -62,7 +66,7 @@ Soldering in your Gaggiuino project can either be a necessity or an option, depe
 
 For those assembling without a pre-made kit, soldering is essential. Additionally, some kits may not include pre-assembled low-voltage cabling, making soldering a recommended step for securing low-voltage connections. While handling the cables, avoid pulling them, but tight space inside Gaggia machine may make it hard and soldered connections will be much more secure.
 
-Soldering cables together is simpler and more cost-effective than many assume, particularly when only soldering wires. For guidance, this instructional video offers excellent tips on cable soldering: [How to Connect Cables with a Soldering Iron](https://www.youtube.com/watch?v=Zu3TYBs65FM). Additionally, consult the [Solder Recommendations](learning-sources.md) for best practices and always employ the "Western Union" splice technique. "Splicing cables" refers to connecting two cables together. When it comes to soldering low-voltage wires, even the most affordable soldering iron is sufficient. 
+Soldering cables together is simpler and more cost-effective than many assume, particularly when only soldering wires. For guidance, this instructional video offers excellent tips on cable soldering: [How to Connect Cables with a Soldering Iron](https://www.youtube.com/watch?v=Zu3TYBs65FM). Additionally, consult the [Solder Recommendations](learning/learning-sources.md) for best practices and always employ the "Western Union" splice technique. "Splicing cables" refers to connecting two cables together. When it comes to soldering low-voltage wires, even the most affordable soldering iron is sufficient. 
 
 ## Multimeter - Optional
 

@@ -9,24 +9,21 @@
 * __Useful:__
 * - [Announcements](announcements/)
 * - [Community media](community/community-media.md)
-* - [Functions Overview](learning/functions-guide.md)
+* - [User Manual](learning/user-manual.md)
 * - [Recommendations](learning/learning-sources.md)
 * - [Example tools](learning/example-tools.md)
 * - [Wiring basics](learning/wiring-basics.md)
 * __Install Guides:__
-* - [MCU Flashing](guides-stm32/mcu-flashing.md)
-* - __STM32 Blackpill (Recommended)__
-    * [Component "Lego" Build](guides-stm32/lego-component-build-guide.md)
-    * [PCB](pcb/singleboard.md)
-    * [3PLN Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md)
-    * [3PLN Custom Wiring](guides-stm32/3pln-custom-wiring.md)
-* - __Arduino Nano (Feature frozen)__
-    * [Gaggia Classic](guides-nano/gaggia-classic.md)
-    * [Gaggia Classic Pro](guides-nano/gaggia-classic-pro-new-classic.md)
-* __Accessories:__
-    * [Hardware Scales](accessories/hw-scales.md)
-    * [ToFnLED (Time of Flight and LED)](accessories/tofnled.md)
+    * [Control A: **PCB**](guides-stm32/pcb-guide.md)
+    * [Control B: **Component (Lego) Build**](guides-stm32/lego-component-build-guide.md)
+    * [Wiring A: **Stock Wiring Integration**](guides-stm32/3pln-stock-wiring-integration.md)
+    * [Wiring B: **Custom Wiring**](guides-stm32/3pln-custom-wiring.md)
+    * [Accessory: **Hardware Scales**](accessories/hw-scales.md)
+    * [Accessory: **ToFnLED**](accessories/tofnled.md)
+* __Install References__
+    * [Machine-Specific Instructions](guides/machine-specific-guide.md)   
+    * [MCU Flashing](guides-stm32/mcu-flashing.md)    
 * __Upgrades:__
     * [Lego Independent Relay and Dimmer](guides-upgrade/lego-independent-relay-dimmer.md)
-    * [Nano to STM32 Upgrade](guides-upgrade/nano-to-stm32.md)
-    * [Grounding a Gaggia Classic](guides-upgrade/grounding-a-gaggia-classic.md)
+    * [Lego Nano to STM32 Upgrade](guides-upgrade/nano-to-stm32.md)
+* [__Archive__](archive/archive.md)

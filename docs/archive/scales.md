@@ -1,3 +1,5 @@
+# LikeableBump HW Scales
+
 The scales functionality will require two load cells and a rigid frame that need to support the drip tray. In short, you are going to measure the weight of the drip tray + cup + espresso. Here are some terms used throughout the server:
 - Single Clock = Both HX711 amplifiers will share one SCK line from the MCU (one SCK pin coming from MCU).
 - Dual Clock = Each HX711 amplifier will have an independent SCK line supplied by the MCU (2 SCK pins coming from MCU).
@@ -5,7 +7,7 @@ The scales functionality will require two load cells and a rigid frame that need
 
 For scales to function properly, the following hardware will be needed:
 
-- [2x 750g Load Cells](https://www.aliexpress.com/item/32670225988.html)
+- [2x 500g Load Cells](https://www.aliexpress.com/item/32670225988.html)
 - [2 x HX711 Amplifiers](https://www.aliexpress.com/item/32670225988.html)
 - (STM32 ONLY) 1 kΩ resistor[^1] x the number of clock lines you plan on using.
 
