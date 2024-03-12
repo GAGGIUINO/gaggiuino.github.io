@@ -7,22 +7,22 @@
 
 <!-- panels:start -->
 <!-- div:left-panel -->
-?> Nano install overview
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EJFadpL9aOE" title="GAGGIUINO BUILD LOG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+?> Lance Hedrick review
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V4pTFCGVlmQ" title="GAGGIUINO BUILD LOG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- div:right-panel -->
 
-?> Follow up review.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Dm1uVyiZOOE" title="GAGGIUINO BUILD LOG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+?> Gaggiuino vs Decent | User review
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V4kAgPm1Xfw" title="GAGGIUINO vs Decent" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- panels:end -->
 
-?> STM32 install overview.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5-PWW3dbh1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+?> Community menber setup
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ERGxo8fYc5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
 
 <summary><b>MORE FROM THE COMMUNITY</b> <i>(Click to expand)</i></summary>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MxPNQRCxQZc" title="GAGGIUINO Upgrade Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OWcp0XEXrqw" title="GAGGIUINO review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </details>
