@@ -4,6 +4,9 @@
 
 This article is primarily aimed at kit installers without significant prior electrical experience. If you are already familiar with the basics of doing electronics projects information here may be redundant for you.
 
+> [!WARNING|style:callout|label:WARNING|iconVisibility:visible]
+> The information here does not apply to every model, build method, or kit. It is a work in progress and may have inaccuracies.
+
 ## Connectors overview
 
 There are different types of connections used in the build. Based on the following picture:
