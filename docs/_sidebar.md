@@ -8,7 +8,7 @@
     * - [Hudson Creative Group __(North America)__](https://gaggiuino.hudsoncreativegroup.com/)
 * __Useful:__
 * - [Announcements](announcements/)
-* - [Community media](community/community-media.md)
+* - [Community Portal](community/community-media.md)
 * - [User Manual](learning/user-manual.md)
 * - [Recommendations](learning/learning-sources.md)
 * - [Example tools](learning/example-tools.md)
