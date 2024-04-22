@@ -11,7 +11,7 @@ If extreme experimentation with beans, grinds, or shot profiles is your fetish i
 
 ## Components
 
-There are two options for HX711 boards - buying two HX711 boards from AliExpress or using the dualScaleBoard
+There are two options for HX711 boards - buying two HX711 boards from AliExpress or using the dualScaleBoard (sometimes called the SingleHX711Board).
 
 * M3 Flat head screws
     * [**2** M3x5 mm nickel plated steel](https://www.aliexpress.com/item/3256803315929210.html) *(must be magnetic)*  
@@ -37,13 +37,20 @@ There are two options for HX711 boards - buying two HX711 boards from AliExpress
 * [**1** 1KΩ resistor](https://www.aliexpress.com/item/3256802484566250.html)
 <!-- tab:dualScaleBoard -->
 * [**1** dualScaleBoard *(Approved Supplier or custom order)*](https://www.pcbway.com/project/shareproject/Dula_HX711_scales_board_17abe179.html) 
+<!-- tab:FPC dualScaleBoard -->
+> [!Note|style:callout]
+> The FPC connector allows for no-solder power and communication wiring, but the associated components are more difficult to source in small quantities. It is recommended to get this option from PeakCoffee or use one of the other options.
+
+* [**1** FPC dualScaleBoard](https://www.pcbway.com/project/shareproject/Dual_HX711_scales_board_with_FPC_connector_328b4082.html)
+* **1** FPC cable (600 mm, 10P, 0.5 mm)
+* **1** FPC-to-JST adapter (10P, 0.5 mm to 5P JST XH)   
 <!-- tabs:end -->
 
 ## 3D-Printed Parts
 
 Print files are available on [Printables](https://www.printables.com/model/285370) or can be ordered from official print providers
 
-* **1** Scales base assembly 
+* **1** Scales base assembly *(compatible with 2 HX711, dualScaleBoard, and FPC dualScaleBoard)*
 * **1** Drip tray or adapter combo *(choose based on your system)*
     * GC Drip Tray: GC Drip Tray Adapter and 4 Drip Tray Spacers
     * GCP Drip Tray: GCP Drip Tray Adapter (L and R)
@@ -63,20 +70,26 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256964444-025e6320-b85b-433e-99ba-829ea5907b91.png">
 
-3. Cut the stripboard to size and cut off a group of 5 right angle pins
-
-    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256964557-82f40003-01e6-4ca1-90a1-17889fbb587d.png">
-
-4. Do a quick fit-check with the base assembly. Note that the load cell housings are designed to be slightly loose so that parallelism issues in the sheet metal don't affect them. Slide the PCB retainer to check that the boards lock in.
+3. Prep and perform a quick fit-check with the base assembly. Note that the load cell housings are designed to be slightly loose so that parallelism issues in the sheet metal don't affect them. Slide the PCB retainer to check that the board(s) lock in (stop and sand down if it's too tight)
 
     <!-- tabs:start -->
     <!-- tab:2 HX711 -->
+    Cut the stripboard to size and cut off a group of 5 right angle pins
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256964557-82f40003-01e6-4ca1-90a1-17889fbb587d.png">  
+
+    Fit-check components as shown
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256964641-3acbc0d1-9491-4017-852f-5f5b65086ada.png">
     <!-- tab:dualScaleBoard -->
+    Cut the stripboard to size and cut off a group of 5 right angle pins
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256964557-82f40003-01e6-4ca1-90a1-17889fbb587d.png">  
+
+    Fit-check components as shown
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256964653-13ea4859-a5e9-4153-9c0a-796def530f7f.png">
+    <!-- tab:FPC dualScaleBoard -->
+    <img width="600" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/3c661e2a-6888-4adb-9d01-0e69c97f2c83">
     <!-- tabs:end -->
 
-5. Cut the load cell wires as shown (this provides extra for strain relief) and **save what you cut off**
+4. Cut the load cell wires as shown (this provides extra for strain relief) and **save what you cut off**
 
     <!-- tabs:start -->
     <!-- tab:2 HX711 -->
@@ -86,9 +99,12 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
     Also cut the dualScaleBoard JP11 jumper
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256964853-8b8c8c03-a83c-412a-989c-739abae6975f.png">
+    <!-- tab:FPC dualScaleBoard -->
+    No need to save the cut off wires with the FPC board. Leaving that instruction above so it doesn't get ignored in the other methods.
+    <img width="600" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/255044fd-7eb4-4113-bcc9-4ac7660eee5d">
     <!-- tabs:end -->
 
-6. Solder the stripboard
+5. Solder the stripboard
 
     <!-- tabs:start -->
     <!-- tab:2 HX711 -->
@@ -101,9 +117,17 @@ Print files are available on [Printables](https://www.printables.com/model/28537
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256965268-d3bca727-c90e-4faa-89db-13a807ecbcbb.png">  
 
     > [!Note] It's fine to make the stripboard wire order line up with the DualScaleBoard. I chose not to do so because I wanted my scale builds to be interchangeable. 
+    <!-- tab:FPC dualScaleBoard -->
+    > [!Note|style:callout]
+    > Not needed as the FPC connector replaces this, proceed to the next step
     <!-- tabs:end -->
 
-7. Now that wires are all cut to length, remove the boards from the housing and solder (don't solder in the housing, it will melt). It should look like this when complete: 
+6. Now that wires are all cut to length, remove the boards from the housing and solder (don't solder in the housing, it will melt). Then reinstall the components in the housing.
+
+    > [!Note|style:callout]
+    > The load cell wire colors are labeled on the back of the PCB  
+
+    It should look like this when complete:  
 
     <!-- tabs:start -->
     <!-- tab:2 HX711 -->
@@ -113,32 +137,39 @@ Print files are available on [Printables](https://www.printables.com/model/28537
     > [!Note] The green HX711 boards have been replaced by the purple ones. The housing is compatible with both, however, the green boards are missing a ground plane tie between E- and GND. Soldering a 30 gauge jumper wire from E- to GND will improve stability of the green boards. 
     <!-- tab:dualScaleBoard -->
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256965408-cd9db3f8-4bd6-4746-b915-601de9a9ec4a.png">
+    <!-- tab:FPC dualScaleBoard -->
+    Lift the FPC lever, fully insert the flat cable (contacts down), then close the lever to lock.  
+    <img width="600" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/5c6976a2-43b7-4867-9a70-1909f626b2b3">
     <!-- tabs:end -->
 
     At this point you can attach the center housing cover (slides on from the front) and screw it down with the 2 thread-rolling/self-tapping screws.
 
-8. Install magnets in load plates, load cell housings, and drip tray or drip tray adapter parts using the gap-filling cyanoacrylate. It's easiest to put two small drops of the glue on the magnet pocket wall, below the surface. Make sure to match the polarity of magnets on the drip tray or drip tray adapter to those on the load plate so that it snaps in place. Holes are sized to only have 0.25 mm extra depth, but most magnets come in slightly undersized to varying degrees.  
+7. Install magnets in load plates, load cell housings, and drip tray or drip tray adapter parts using the gap-filling cyanoacrylate. It's easiest to put two small drops of the glue on the magnet pocket wall, below the surface. Holes are sized to only have 0.25 mm extra depth, but most magnets come in slightly undersized to varying degrees.  
+    >
+
+    > [!Warning|style:callout|label:Important Notes]
+    > * Before installing magnets make sure the bottom surface is smooth and clean of debris or print artifacts
+    >
+    > * Magnets should be flush or just barely sub-flush for all components except the load plate  
+    >
+    > <img width="600" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/170b36e7-43d6-47af-8bd2-ca8c6598fa56">  
+    >
+    > * Make sure to match the polarity of magnets on the drip tray or drip tray adapter to those on the load plate so that it snaps in place. Save the load plates for last so you can place them against the drip tray / adapters before installing the magnets to ensure the orientation is correct. 
+
+    If your magnet holes are too tight, brush over the edge with a hobby knife to slightly widen the hole, then partially insert the magnet manually. Press down on a flat surface to seat flush.
+
+    If your magnet holes are loose, use a metal ruler or other magnetic surface with a parchment paper barrier to hold the magnets flush while the glue sets. 
+
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/267475094-bec78ce0-a85b-4c68-b675-d05f1388fabc.png">  
+
+    >
 
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257019766-5bf71df5-d363-4e2c-8d49-f4f217209356.png">  
 
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/267487785-489c145c-5008-4d74-95f0-762e8f978df6.png">
 
-    If your magnet holes are too tight, brush over the edge with a hobby knife to slightly widen the hole, then partially insert the magnet manually. Press down on a flat surface to seat flush.
 
-    If your magnet holes are loose and you want the magnets perfectly flush use a metal ruler or other magnetic surface with a parchment paper barrier to hold the magnets flush while the glue sets. 
-
-    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/267475094-bec78ce0-a85b-4c68-b675-d05f1388fabc.png">  
-    
-    <details>
-    <summary><b>Old GCP Drip Tray Adapter tip</b> <i>(Click to expand)</i></summary>
-
-    If you're using the old GCP Drip Tray Adapters and Clamps it's easier if you install magnets in the order shown below. Otherwise, the bottom magnets can spin the internal side-facing magnets as you try to install.
-
-    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257087212-fe5873c9-405e-4221-abfb-d696fab30ff1.png">
-
-    </details>
-
-9. Prep drip tray and/or adapters
+8. Prep drip tray and/or adapters 
 
     <!-- tabs:start -->
     <!-- tab:GCP Drip Tray Adapter -->
@@ -159,11 +190,11 @@ Print files are available on [Printables](https://www.printables.com/model/28537
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257087801-911f627f-ac5b-4011-802c-8ee73655e872.png">
     <!-- tabs:end -->
 
-10. Wire a 5P JST XH or DuPont connector (I used JST XH with the latching features cut off because it'll only fit one way with enough clearance to install under the machine) and route through the housing back to wherever your controller is. Protect the areas where it goes through the housing with heat shrink tubing and ensure the wires don't affect placement of the water tank so much that it rubs the drip tray.
+9. Wire a 5P JST XH or DuPont connector (I used JST XH with the latching features cut off because it'll only fit one way with enough clearance to install under the machine) and route through the housing back to wherever your controller is. Protect the areas where it goes through the housing with heat shrink tubing and ensure the wires don't affect placement of the water tank so much that it rubs the drip tray.
 
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257089366-23a5f80e-7147-4194-ba84-740927286400.png">
 
-11. Place the assembly into the machine and check fit. Things to verify:
+10. Place the assembly into the machine and check fit. Things to verify:
     * Load cell housings are parallel to each other and the Gaggia housing sides
 
         <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257089574-2004216e-7231-4c33-b8eb-ff90b93f4dfa.png">
@@ -187,7 +218,7 @@ Use the appropriate scales-calibration task to upload to the STM32 and copy scal
 <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257109779-2888a68b-7131-4243-824b-c43cc3ac4b8c.png">
 
 <!-- tab:dualScaleBoard -->
-Before building in Platformio, create an “extra_defines.ini” file (if one doesn't already exist) with these contents in the project root:
+Before building in PlatformIO, create an “extra_defines.ini” file (if one doesn't already exist) with these contents in the project root:
 
 ```
 [extra]
@@ -209,7 +240,7 @@ Use the appropriate scales-calibration task to upload to the STM32 and copy scal
 
     To calibrate, use the adjustment value and +/- buttons to adjust the scale factors until the weight output in grams matches the real weight. One scale factor will likely be negative to make the output in grams positive. Take a pic or copy down the scale factors.
 
-3. Once calibrated, flash the regular build back onto the screen and STM32. Copy the scale factors into the LC1 and LC2 Factors and click Save.
+3. Once calibrated, flash the regular build back onto the screen and STM32. Copy the scale factors into the LC1 and LC2 Factors and click Save. After saving, reboot the machine.
 
     <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110664-fd0f6aa1-aefe-4a6d-b167-12183f9d1b87.png">
 
