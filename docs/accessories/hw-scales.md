@@ -108,18 +108,26 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
     <!-- tabs:start -->
     <!-- tab:2 HX711 -->
+
+    > [!Warning|style:callout|label:Documentation Change]
+    > Stripboard wiring has changed from original released documentation to align with the PCB connector. The old wire order was VCC, CLK, D1, D2, GND, and conflicts with the new wiring. If you started/completed HW Scales before May 2024 please double-check the wiring before powering up.
+
     Solder the leftover wires, 1kOhm resistor (SCK pull-up), and header pins to the stripboard as shown. Fit the stripboard back into the housing after soldering, measure wire lengths to the HX711 boards (with extra strain relief) and cut to length. If necessary, trim backside wire tails so that the board fits in the housing.
 
-    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256965255-349887f1-3a25-4361-afe1-ce5cc0e097ed.png">
+    <img width="600" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/58e57bcd-a5f6-4057-839d-e0c8096b1ae9">
     <!-- tab:dualScaleBoard -->
+    
+    > [!Warning|style:callout|label:Documentation Change]
+    > Stripboard wiring has changed from original released documentation to align with the PCB connector. The old wire order was VCC, CLK, D1, D2, GND, and conflicts with the new wiring. If you started/completed HW Scales before May 2024 please double-check the wiring before powering up.
+    
     Solder the leftover wires and header pins to the stripboard as shown. Fit the stripboard back into the housing after soldering, measure wire lengths to the dualScaleBoard (with extra strain relief) and cut to length. If necessary, trim backside wire tails so that the board fits in the housing.
 
-    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256965268-d3bca727-c90e-4faa-89db-13a807ecbcbb.png">  
+    <img width="600" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/2e791cc1-157b-4c02-8e98-080b46ae99a9">  
 
-    > [!Note] It's fine to make the stripboard wire order line up with the DualScaleBoard. I chose not to do so because I wanted my scale builds to be interchangeable. 
-    <!-- tab:FPC dualScaleBoard -->
     > [!Note|style:callout]
-    > Not needed as the FPC connector replaces this, proceed to the next step
+    > As placed in the scales housing, the stripboard wire order is visually reversed from the dualScaleBoard. This is to align the scale-to-PCB wiring. 
+    <!-- tab:FPC dualScaleBoard -->
+    Not needed as the FPC connector replaces this, proceed to the next step
     <!-- tabs:end -->
 
 6. Now that wires are all cut to length, remove the boards from the housing and solder (don't solder in the housing, it will melt). Then reinstall the components in the housing.
@@ -131,12 +139,12 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
     <!-- tabs:start -->
     <!-- tab:2 HX711 -->
-    <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/256965397-bbc54472-f866-404d-9053-0e4850e43377.png">
+    <img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/5d5141a2-c5ab-4270-a4cd-cc8d902273d4">
     <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/256965387-c217fc32-4cf8-4c89-8a9e-5b96efc188a2.png">
 
     > [!Note] The green HX711 boards have been replaced by the purple ones. The housing is compatible with both, however, the green boards are missing a ground plane tie between E- and GND. Soldering a 30 gauge jumper wire from E- to GND will improve stability of the green boards. 
     <!-- tab:dualScaleBoard -->
-    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256965408-cd9db3f8-4bd6-4746-b915-601de9a9ec4a.png">
+    <img width="600" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/92927dc9-2266-4f6e-9814-4574f6d78684">
     <!-- tab:FPC dualScaleBoard -->
     Lift the FPC lever, fully insert the flat cable (contacts down), then close the lever to lock.  
     <img width="600" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/5c6976a2-43b7-4867-9a70-1909f626b2b3">
