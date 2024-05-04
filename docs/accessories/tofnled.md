@@ -19,7 +19,7 @@ Conformal coating the PCB is highly recommended for longevity. This can be done 
     * [(Digi-Key) JST JUMPER 04SR-3S - 04SR-3S 10 A04SR04SR30K254A](https://www.digikey.com/en/products/detail/jst-sales-america-inc/A04SR04SR30K254A/9922185)
     * [(AliExpress) 10 PCS 30CM JST Female Double Connector, 4P, SH 1.0mm Pitch, Opposite Direction](https://www.aliexpress.com/item/3256804012767557.html)
 * 3D-Printed Housing, available on [Printables](https://www.printables.com/model/502813) or can be ordered from official print providers
-    * [(2 disc magnets, 5 mm dia. x 1 mm ht. (for magnetic espresso machine)](https://www.aliexpress.com/item/3256801641477250.html)
+    * [2 disc magnets, 5 mm dia. x 1 mm ht. (for magnetic espresso machine)](https://www.aliexpress.com/item/3256801641477250.html)
     * Cyanoacrylate / super glue (for magnetic espresso machine)
     * Double-sided tape, long-term temp rating of at least 80° C  (for non-magnetic espresso machine)
         * VHB 4611/5952/4910, Gorilla Tape, Alien Tape are options
@@ -35,8 +35,9 @@ Conformal coating the PCB is highly recommended for longevity. This can be done 
 * [12 mm diameter heat shrink tubing](https://www.aliexpress.com/item/3256804353582834.html)
 * 3D-Printed Housing, available on [Printables](https://www.printables.com/model/502813) or can be ordered from official print providers
     * [2 disc magnets, 5 mm dia. x 1 mm ht. (for magnetic espresso machine)](https://www.aliexpress.com/item/3256801641477250.html)
+    * Cyanoacrylate / super glue (for magnetic espresso machine)
     * Double-sided tape, long-term temp rating of at least 80° C  (for non-magnetic espresso machine)
-    * Cyanoacrylate (super glue)
+        * VHB 4611/5952/4910, Gorilla Tape, Alien Tape are options
 <!-- tabs:end -->
 
 For tubing consolidation (optional):

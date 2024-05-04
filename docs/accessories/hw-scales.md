@@ -25,25 +25,38 @@ There are two options for HX711 boards - buying two HX711 boards from AliExpress
 * Gap-filling cyanoacrylate (super glue)
 * [**2+** 750 g load cells](https://www.aliexpress.com/item/2251832483911236.html)  
     *Buying 3-4 load cells is recommended as QC isn't great and they may need modifications that can result in damage if done improperly*
-* [**1 row** 2.54 mm right angle (reverse bending) header pins](https://www.aliexpress.com/item/2255800474074961.html) (only need 5 pins)
-* [**1** 5P JST XH or DuPont connector](https://www.aliexpress.com/item/2255799940249067.html)
-* [**1** Stripboard/protoboard](https://www.aliexpress.com/item/3256801470993306.html) (only need a small piece)
-* [Heat-resistant Silicone Wire](https://www.aliexpress.com/item/2255800441309579.html)
-    * **26AWG - 5m**: Black, Red, Yellow, Blue
 
 <!-- tabs:start -->
 <!-- tab:2 HX711 -->
 * [**2** HX711 interface board](https://www.aliexpress.com/item/2251832855509243.html)
 * [**1** 1KΩ resistor](https://www.aliexpress.com/item/3256802484566250.html)
+* [**1 row** 2.54 mm right angle (reverse bending) header pins](https://www.aliexpress.com/item/2255800474074961.html) *(only need 5 pins)*
+* [**1** Stripboard/protoboard](https://www.aliexpress.com/item/3256801470993306.html) *(only need a small piece)*
+* **1** JST XH to PH cable, 600+ mm
+    * [Silicone Parallel Wire | 5P, 26 AWG, 2 m](https://www.aliexpress.com/item/3256805974601516.html) *(Can also use individual wires)*
+    * [**1** 5P JST XH connector](https://www.aliexpress.com/item/3256806312346188.html)
+    * [**1** 5P JST PH connector](https://www.aliexpress.com/item/3256806312346188.html) *for PCBs, not needed for integration with the component build*
 <!-- tab:dualScaleBoard -->
 * [**1** dualScaleBoard *(Approved Supplier or custom order)*](https://www.pcbway.com/project/shareproject/Dula_HX711_scales_board_17abe179.html) 
+* [**1 row** 2.54 mm right angle (reverse bending) header pins](https://www.aliexpress.com/item/2255800474074961.html) *(only need 5 pins)*
+* [**1** Stripboard/protoboard](https://www.aliexpress.com/item/3256801470993306.html) *(only need a small piece)*
+* **1** JST XH to PH cable, 600+ mm
+    * [Silicone Parallel Wire | 5P, 26 AWG, 2 m](https://www.aliexpress.com/item/3256805974601516.html) *(Can also use individual wires)*
+    * [**1** 5P JST XH connector](https://www.aliexpress.com/item/3256806312346188.html)
+    * [**1** 5P JST PH connector](https://www.aliexpress.com/item/3256806312346188.html) *for PCBs, not needed for integration with the component build*
 <!-- tab:FPC dualScaleBoard -->
 > [!Note|style:callout]
-> The FPC connector allows for no-solder power and communication wiring, but the associated components are more difficult to source in small quantities. It is recommended to get this option from PeakCoffee or use one of the other options.
+> The FPC connector allows for no-solder power and communication wiring, but the associated components are more difficult to source in small quantities. Parts are listed, but it is recommended to get this from an approved supplier vs self-sourcing.
 
 * [**1** FPC dualScaleBoard](https://www.pcbway.com/project/shareproject/Dual_HX711_scales_board_with_FPC_connector_328b4082.html)
 * **1** FPC cable (600 mm, 10P, 0.5 mm)
 * **1** FPC-to-JST adapter (10P, 0.5 mm to 5P JST XH)   
+* **1** JST XH to PH cable, 150+ mm
+    * [Silicone Parallel Wire | 5P, 26 AWG, 2 m](https://www.aliexpress.com/item/3256805974601516.html) *(Can also use individual wires)*
+    * [**1** 5P JST XH connector](https://www.aliexpress.com/item/3256806312346188.html)
+    * [**1** 5P JST PH connector](https://www.aliexpress.com/item/3256806312346188.html) *for PCBs, not needed for integration with the component build*
+* Double-sided tape, long-term temp rating of at least 80° C
+    * VHB 4611/5952/4910, Gorilla Tape, Alien Tape are options
 <!-- tabs:end -->
 
 ## 3D-Printed Parts
@@ -198,10 +211,52 @@ Print files are available on [Printables](https://www.printables.com/model/28537
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257087801-911f627f-ac5b-4011-802c-8ee73655e872.png">
     <!-- tabs:end -->
 
-9. Wire a 5P JST XH or DuPont connector (I used JST XH with the latching features cut off because it'll only fit one way with enough clearance to install under the machine) and route through the housing back to wherever your controller is. Protect the areas where it goes through the housing with heat shrink tubing and ensure the wires don't affect placement of the water tank so much that it rubs the drip tray.
+9. Prep Wiring
+    <!-- tabs:start -->
+    <!-- tab:2 HX711 -->
+    Cut the latching features off of a 5P JST XH connector.  
+    <img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/8e9a1b4d-c7b5-40e6-a3a2-208fceedeef2">  
 
-    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257089366-23a5f80e-7147-4194-ba84-740927286400.png">
+    Crimp on the wires and crimp the other end to a JST PH connector (for PCB) or leave bare (for component build).
 
+    Route the wire back to the controller. It may go either inside the housing behind the water tank, or outside the housing and then back in through a vent.
+    Leave some slack so the scales may be removed, and secure the wire/cable with tape as required. If needed, protect the areas where the wire/cable goes through the housing with heat shrink tubing and ensure the water tank will not rub the drip tray.
+    <img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/3a2590cf-f572-4f2c-93c0-45c246a23b9e">  
+
+    >
+
+    <img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/356839db-de68-495b-b0ad-ada263eb3313">  
+    <img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/70b97443-6d11-4ef2-acc1-76ec9af50115"> 
+
+    <!-- tab:dualScaleBoard -->
+    Cut the latching features off of a 5P JST XH connector.  
+    <img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/8e9a1b4d-c7b5-40e6-a3a2-208fceedeef2">  
+
+    Crimp on the wires and crimp the other end to a JST PH connector (for PCB) or leave bare (for component build).
+
+    Route the wire back to the controller. It may go either inside the housing behind the water tank, or outside the housing and then back in through a vent.
+    Leave some slack so the scales may be removed, and secure the wire/cable with tape as required. If needed, protect the areas where the wire/cable goes through the housing with heat shrink tubing and ensure the water tank will not rub the drip tray.
+    <img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/3a2590cf-f572-4f2c-93c0-45c246a23b9e">  
+
+    >
+
+    <img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/356839db-de68-495b-b0ad-ada263eb3313">  
+    <img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/70b97443-6d11-4ef2-acc1-76ec9af50115"> 
+
+    <!-- tab:FPC dualScaleBoard -->
+    Route the FPC cable back to the controller (wire shown, but options are the same). It may go either inside the housing behind the water tank, or outside the housing and then back in through a vent.
+    Leave some slack so the scales may be removed, and secure the wire/cable with tape as required. If needed, protect the areas where the wire/cable goes through the housing with heat shrink tubing.
+    <img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/3a2590cf-f572-4f2c-93c0-45c246a23b9e">  
+
+    >
+
+    <img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/356839db-de68-495b-b0ad-ada263eb3313">  
+    <img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/70b97443-6d11-4ef2-acc1-76ec9af50115"> 
+
+    After routing the FPC cable, stick the FPC-to-JST board to the housing near the controller with high-temp double-side adhesive.
+    <img width="600" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/8edae9b9-3c1d-4d68-accf-dd20d7e242df">
+    <!-- tabs:end --> 
+    
 10. Place the assembly into the machine and check fit. Things to verify:
     * Load cell housings are parallel to each other and the Gaggia housing sides
 
@@ -221,7 +276,7 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
 <!-- tabs:start -->
 <!-- tab:2 HX711 -->
-Use the appropriate scales-calibration task to upload to the STM32 and copy scales-calibrate TFT onto a microSD card to flash the Nextion. You should see this show up on the screen (with numbers). If there are no numbers your Screen-Blackpill connection is likely bad.
+Use the appropriate scales-calibration task to upload to the STM32 and copy scales-calibrate TFT onto a microSD card to flash the Nextion. You should see this show up on the screen (with numbers). If there are no numbers your screen-STM32 connection is likely bad or an incorrect task was flashed.
 
 <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257109779-2888a68b-7131-4243-824b-c43cc3ac4b8c.png">
 
@@ -234,10 +289,21 @@ build_flags =
     -DSINGLE_HX711_BOARD
 ```
 
-Use the appropriate scales-calibration task to upload to the STM32 and copy scales-calibrate TFT onto a microSD card to flash the Nextion. You should see this show up on the screen (with numbers). If there are no numbers your screen-STM32 connection is likely bad.
+Use the appropriate scales-calibration task to upload to the STM32 and copy scales-calibrate TFT onto a microSD card to flash the Nextion. You should see this show up on the screen (with numbers). If there are no numbers your screen-STM32 connection is likely bad or an incorrect task was flashed.
 
 <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257109779-2888a68b-7131-4243-824b-c43cc3ac4b8c.png">
+<!-- tab:FPC dualScaleBoard -->
+Before building in PlatformIO, create an “extra_defines.ini” file (if one doesn't already exist) with these contents in the project root:
 
+```
+[extra]
+build_flags =
+    -DSINGLE_HX711_BOARD
+```
+
+Use the appropriate scales-calibration task to upload to the STM32 and copy scales-calibrate TFT onto a microSD card to flash the Nextion. You should see this show up on the screen (with numbers). If there are no numbers your screen-STM32 connection is likely bad or an incorrect task was flashed.
+
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257109779-2888a68b-7131-4243-824b-c43cc3ac4b8c.png">
 <!-- tabs:end -->
 
 2. Unscrew the load plates and replace with the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration weight (in this case a 318.5 g tamper). Ideal calibration weight is in the 200-400g range.
@@ -248,7 +314,7 @@ Use the appropriate scales-calibration task to upload to the STM32 and copy scal
 
     To calibrate, use the adjustment value and +/- buttons to adjust the scale factors until the weight output in grams matches the real weight. One scale factor will likely be negative to make the output in grams positive. Take a pic or copy down the scale factors.
 
-3. Once calibrated, flash the regular build back onto the screen and STM32. Copy the scale factors into the LC1 and LC2 Factors and click Save. After saving, reboot the machine.
+3. Once calibrated, flash the regular build back onto the screen and STM32. Copy the scale factors into the LC1 and LC2 Factors and click Save. After saving, reboot the machine to load the new LC factors.
 
     <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110664-fd0f6aa1-aefe-4a6d-b167-12183f9d1b87.png">
 
