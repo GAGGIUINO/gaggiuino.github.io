@@ -31,7 +31,7 @@ Save the images or right-click and open in a new tab to view at full resolution.
 <!-- tab:STM32 Comp -->
 <img height="400" alt="image" src="schematics/stm32-comp-build.png">
 <!-- tab:STM32 PCBv3 -->
-<img height="400" alt="image" src="schematics/stm32-pcbv3-boardlabels.png">
+<img height="400" alt="image" src="schematics/stm32_pcbv3_board_labels.png">
 <!-- tabs:end -->
 </details>
 
