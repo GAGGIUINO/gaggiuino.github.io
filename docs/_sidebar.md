@@ -1,11 +1,11 @@
 * [Home](/)
 * __Approved Official Suppliers:__
 * - __PCB and Kits__
-    * - [Peak Coffee](https://www.peakcoffee.cc/)
-    * - [DIY-EFI](https://diy-efi.co.uk/product-category/gaggiuino)
+    * - [Peak Coffee __(HKG)__](https://www.peakcoffee.cc/)
+    * - [DIY-EFI __(GBR)__](https://diy-efi.co.uk/product-category/gaggiuino)
 * - __3D Printed Parts__
-    * - [Espressio __(Europe)__](https://gaggiuino.espressio.nl/)
-    * - [Hudson Creative Group __(North America)__](https://gaggiuino.hudsoncreativegroup.com/)
+    * - [Espressio __(NLD)__](https://gaggiuino.espressio.nl/)
+    * - [Hudson Creative Group __(USA)__](https://gaggiuino.hudsoncreativegroup.com/)
 * __Useful:__
 * - [Announcements](announcements/)
 * - [Community Portal](community/community-media.md)
