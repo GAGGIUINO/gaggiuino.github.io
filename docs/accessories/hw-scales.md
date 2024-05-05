@@ -123,7 +123,7 @@ Print files are available on [Printables](https://www.printables.com/model/28537
     <!-- tab:2 HX711 -->
 
     > [!Warning|style:callout|label:Documentation Change]
-    > Stripboard wiring has changed from original released documentation to align with the PCB connector. The old wire order was VCC, CLK, D1, D2, GND, and conflicts with the new wiring. If you started/completed HW Scales before May 2024 please double-check the wiring before powering up.
+    > Stripboard wiring has changed from original released documentation to align with the PCB connector. The old wire order was VCC, CLK, D1, D2, GND, and conflicts with the new wiring. If you started/completed HW Scales before 2024-05-05 please double-check the wiring before powering up.
 
     Solder the leftover wires, 1kOhm resistor (SCK pull-up), and header pins to the stripboard as shown. Fit the stripboard back into the housing after soldering, measure wire lengths to the HX711 boards (with extra strain relief) and cut to length. If necessary, trim backside wire tails so that the board fits in the housing.
 
@@ -131,7 +131,7 @@ Print files are available on [Printables](https://www.printables.com/model/28537
     <!-- tab:dualScaleBoard -->
     
     > [!Warning|style:callout|label:Documentation Change]
-    > Stripboard wiring has changed from original released documentation to align with the PCB connector. The old wire order was VCC, CLK, D1, D2, GND, and conflicts with the new wiring. If you started/completed HW Scales before May 2024 please double-check the wiring before powering up.
+    > Stripboard wiring has changed from original released documentation to align with the PCB connector. The old wire order was VCC, CLK, D1, D2, GND, and conflicts with the new wiring. If you started/completed HW Scales before 2024-05-05 please double-check the wiring before powering up.
     
     Solder the leftover wires and header pins to the stripboard as shown. Fit the stripboard back into the housing after soldering, measure wire lengths to the dualScaleBoard (with extra strain relief) and cut to length. If necessary, trim backside wire tails so that the board fits in the housing.
 
