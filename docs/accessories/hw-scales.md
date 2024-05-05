@@ -49,8 +49,8 @@ There are two options for HX711 boards - buying two HX711 boards from AliExpress
 > The FPC connector allows for no-solder power and communication wiring, but the associated components are more difficult to source in small quantities. Parts are listed, but it is recommended to get this from an approved supplier vs self-sourcing.
 
 * [**1** FPC dualScaleBoard](https://www.pcbway.com/project/shareproject/Dual_HX711_scales_board_with_FPC_connector_328b4082.html)
-* **1** FPC cable (600 mm, 10P, 0.5 mm)
-* **1** FPC-to-JST adapter (10P, 0.5 mm to 5P JST XH)   
+* [**1** FPC scales cable adapter board](https://www.pcbway.com/project/shareproject/FPC_scales_cable_adapter_bc4d45e2.html)   
+* **1** FPC cable (600 mm, 10P, 0.5 mm)  
 * **1** JST XH to PH cable, 150+ mm
     * [Silicone Parallel Wire | 5P, 26 AWG, 2 m](https://www.aliexpress.com/item/3256805974601516.html) *(Can also use individual wires)*
     * [**1** 5P JST XH connector](https://www.aliexpress.com/item/3256806312346188.html)
