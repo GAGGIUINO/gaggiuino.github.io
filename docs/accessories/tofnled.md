@@ -107,9 +107,22 @@ build_flags =
 </details>
 
 >
+# Troubleshooting
 
-> [!NOTE] Sometimes the ToF sensor can be confused by reflections from the espresso machine housing, especially as the water level gets lower. Adding a matte piece of tape below the sensor can improve accuracy. Reflectivity matters more than color.  
-<img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/265826223-1f28003f-5d1a-4046-ab25-c19f5b2376f6.png">
+There are a few common issues and misunderstandings that can affect the accuracy of tank level readings:
+
+* Light is emitted and collected conically, not linearly. The housing shroud limits this to some degree, but tubing and water tank features can still affect readings if the ToFnLED position is not centered, tubing is in the way, or there is excessive water movement in the tank. [Tubing consolidation](#tubing-consolidation-optional) can improve these issues.  
+
+    <img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/b59cf346-f689-4e5c-b32d-8c6abc9468b5">
+
+* The ToF sensor may still have a translucent protective film on it. This can affect accuracy and should be removed.  
+
+    <img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/007150d8-7a48-4bce-859a-5bb903692cf6">
+
+
+* ToF sensors can be confused by reflections from the espresso machine housing, especially as the water level gets lower. Adding a matte piece of tape below the sensor can improve accuracy. Reflectivity matters more than color.  
+
+    <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/265826223-1f28003f-5d1a-4046-ab25-c19f5b2376f6.png">
 
 # Tubing Consolidation (Optional)
 
