@@ -39,18 +39,44 @@ The BOM is compiled for the standard install path where all components are taken
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic 100-120v -->
 
-*Remember to check and add [Grounding](guides/machine-specific-guide.md) if needed.*
+*Remember to check and add [Grounding](guides/machine-specific-guide.md#grounding) if needed.*  
 
-<img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_120v_v2.png">
+<!-- tabs:start -->
+<!-- tab:PCBv3.1 -->
+<img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_1_120v.png">
+<!-- tab:PCBv3 -->
+<img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_120v.png">
+<!-- tabs:end -->
+
 <!-- tab:Gaggia Classic 220-240v -->
-<img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_220v_v2.png">
+
+<!-- tabs:start -->
+<!-- tab:PCBv3.1 -->
+<img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_1_220v.png">
+<!-- tab:PCBv3 -->
+<img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_220v.png">
+<!-- tabs:end -->
+
 <!-- tab:Gaggia Classic Pro 100-120v -->
-<img width="600" alt="GCP 120v" src="schematics/custom-3pln/GCP_wiring_PCBv3_120v_v2.png">
+
+<!-- tabs:start -->
+<!-- tab:PCBv3.1 -->
+<img width="600" alt="GCP 120v" src="schematics/custom-3pln/GCP_wiring_PCBv3_1_120v.png">
+<!-- tab:PCBv3 -->
+<img width="600" alt="GCP 120v" src="schematics/custom-3pln/GCP_wiring_PCBv3_120v.png">
+<!-- tabs:end -->
+
 <!-- tab:Gaggia Classic Pro 220-240v -->
 
-*Remember to do the [Power switch mod](https://www.youtube.com/embed/WNs3uSLA4Ts?start=99&end=151) to make it bistable.*  
+*Remember to do the [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) to make it bistable.*  
 
-<img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_220v_v2.png">
+<!-- tabs:start -->
+<!-- tab:PCBv3.1 -->
+<img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_1_220v.png">
+<!-- tab:PCBv3 -->
+<img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_220v.png">
+<!-- tabs:end -->
+
 <!-- tabs:end -->
 
 **Examples of the high voltage 3PLN custom wiring harness:**

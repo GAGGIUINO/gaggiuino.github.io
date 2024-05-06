@@ -33,7 +33,7 @@ Make sure to switch to the necessary [release branch](#Releases) once pulled, de
 
 # Flashing
 
-## STM32 Blackpill
+## STM32 / Blackpill
   
 Make sure you have necessary [Software Prerequisites](#software-prerequisites) installed, and any applicable extra defines entered and saved in `extra_defines.ini` before starting.
 
@@ -43,23 +43,24 @@ Make sure you have necessary [Software Prerequisites](#software-prerequisites) i
 1. Select the environment based on the upload method:
     - **Lego** if you have individual components, **PCB** if you have one.
     - **forced-predictive** if you don't have hardware scales
-    - **STlink** if you are using one, **DFU** if not (deprecated).
+    - **STlink** if you are using an ST-Link or the WeAct Mini Debugger, **DFU** if not (deprecated).
 2. Click "Build" in VSCode (PlatformIO tab)
 
   <img width="300" alt="image" src="https://github.com/Loogl3/gaggiuino.github.io/assets/117388662/0ba13397-65b5-4b8f-b528-c41bf547266f">
 
-3. Connect the Blackpill to the ST-Link<sup>1</sup> (connect SWDIO, GND, SWCLK, and 3.3V<sup>2</sup>)
+3. Connect the PCBv3.1 or Blackpill to the WeAct Mini Debugger or ST-Link<sup>1</sup> (connect 3.3V<sup>2</sup>, SWDIO, SWCLK, and GND)
+  <img height="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/58377fd5-49f2-47f2-98d6-7c800eb6e712">  
 
-  <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/262874364-c44f2eea-6a64-4731-adb8-a0c1a16089d6.png">
+  <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/262874364-c44f2eea-6a64-4731-adb8-a0c1a16089d6.png">
 
-4. Make sure the Blackpill USB-C is **not** connected to anything
-5. Connect ST-Link USB to the computer
+4. Make sure the Blackpill/PCBv3.1 USB-C is **not** connected to anything
+5. Connect ST-Link/WeAct Mini Debugger USB to the computer
 6. Click Upload in VS Code (PlatformIO tab)
 7. Wait until you see green/success logs
 
 > [!Note|style:callout]
-> *1 ST-Link pins should be on the back of the Blackpill for PCBv3 compatibility*  
-> *2 If the system is powered through the 120/220 VAC PSU then only connect 3.3V to the ST-Link if you're sure you have a genuine ST-Link or WeAct Mini Debugger.*
+> *1 Pins should be on the back of the Blackpill for PCBv3 compatibility*  
+> *2 Some ST-Links may have issues if 3.3V is connected and the system is powered through the 120/220 VAC PSU when flashing. If unsure about your ST-Link, only connect 3.3V if you'll turn off or disconnect AC power before flashing.*
 
 ## Nextion/TJC display
 
@@ -74,5 +75,7 @@ Flashing instructions:
   > Display files for scales calibration are in the "scales-calibration" folder
   
 2. While **powered off**, put the microSD card in the display
-3. Power on the display. Power for flashing may be provided through the USB-C port on the Blackpill so long as the ST-Link USB is disconnected and you are using a USB power adapter that will supply 4.6-5.2 VDC (don't use a battery bank or PC USB 2.0 ports for power).  
+3. Power on the display. Power for flashing may be provided through the USB-C port on the Blackpill/PCB. Use a USB power adapter rated for 5 VDC and 500+ mA.  
+> [!Note|style:callout]
+> Make sure the ST-Link is disconnected. Don't use it, a battery bank, or PC USB ports for power).  
 4. Wait for the display to show the "Update Successed! (sic)" message, turn off power, and then remove the microSD card.

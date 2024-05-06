@@ -110,10 +110,11 @@ If you receive an expansion board with a linked ground plane then you'll need to
 >
 
 # Fit Check
-Perform a fit check in the housing of all your components. Make sure the lid closes with no interference.
-Note: you can use strip board for power distribution (cut for 6x5 usable points), Wago connectors or soldering wires to each other (provided heat shrink is applied for cover) are also acceptable options.
+Cut the strip board for 8x5 usable points, leaving a half row on all sides for retention in the housing. Verify fit.  
+<img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/ff816a75-47b2-48d2-9047-5143861f4697">
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/53577819/211652610-4b63d97b-90fd-43b1-b37f-a71ad0523008.png">
+Perform a fit check in the housing of all components. Make sure the lid closes with no interference.  
+<img width="500" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/74607bb0-1ffa-40bf-adc5-280a49b9d27d">
 
 >
 

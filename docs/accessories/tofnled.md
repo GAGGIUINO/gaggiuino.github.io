@@ -19,7 +19,7 @@ Conformal coating the PCB is highly recommended for longevity. This can be done 
     * [(Digi-Key) JST JUMPER 04SR-3S - 04SR-3S 10 A04SR04SR30K254A](https://www.digikey.com/en/products/detail/jst-sales-america-inc/A04SR04SR30K254A/9922185)
     * [(AliExpress) 10 PCS 30CM JST Female Double Connector, 4P, SH 1.0mm Pitch, Opposite Direction](https://www.aliexpress.com/item/3256804012767557.html)
 * 3D-Printed Housing, available on [Printables](https://www.printables.com/model/502813) or can be ordered from official print providers
-    * [(2 disc magnets, 5 mm dia. x 1 mm ht. (for magnetic espresso machine)](https://www.aliexpress.com/item/3256801641477250.html)
+    * [2 disc magnets, 5 mm dia. x 1 mm ht. (for magnetic espresso machine)](https://www.aliexpress.com/item/3256801641477250.html)
     * Cyanoacrylate / super glue (for magnetic espresso machine)
     * Double-sided tape, long-term temp rating of at least 80° C  (for non-magnetic espresso machine)
         * VHB 4611/5952/4910, Gorilla Tape, Alien Tape are options
@@ -35,8 +35,9 @@ Conformal coating the PCB is highly recommended for longevity. This can be done 
 * [12 mm diameter heat shrink tubing](https://www.aliexpress.com/item/3256804353582834.html)
 * 3D-Printed Housing, available on [Printables](https://www.printables.com/model/502813) or can be ordered from official print providers
     * [2 disc magnets, 5 mm dia. x 1 mm ht. (for magnetic espresso machine)](https://www.aliexpress.com/item/3256801641477250.html)
+    * Cyanoacrylate / super glue (for magnetic espresso machine)
     * Double-sided tape, long-term temp rating of at least 80° C  (for non-magnetic espresso machine)
-    * Cyanoacrylate (super glue)
+        * VHB 4611/5952/4910, Gorilla Tape, Alien Tape are options
 <!-- tabs:end -->
 
 For tubing consolidation (optional):
@@ -106,9 +107,22 @@ build_flags =
 </details>
 
 >
+# Troubleshooting
 
-> [!NOTE] Sometimes the ToF sensor can be confused by reflections from the espresso machine housing, especially as the water level gets lower. Adding a matte piece of tape below the sensor can improve accuracy. Reflectivity matters more than color.  
-<img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/265826223-1f28003f-5d1a-4046-ab25-c19f5b2376f6.png">
+There are a few common issues and misunderstandings that can affect the accuracy of tank level readings:
+
+* Light is emitted and collected conically, not linearly. The housing shroud limits this to some degree, but tubing and water tank features can still affect readings if the ToFnLED position is not centered, tubing is in the way, or there is excessive water movement in the tank. [Tubing consolidation](#tubing-consolidation-optional) can improve these issues.  
+
+    <img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/b59cf346-f689-4e5c-b32d-8c6abc9468b5">
+
+* The ToF sensor may still have a translucent protective film on it. This can affect accuracy and should be removed.  
+
+    <img width="300" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/007150d8-7a48-4bce-859a-5bb903692cf6">
+
+
+* ToF sensors can be confused by reflections from the espresso machine housing, especially as the water level gets lower. Adding a matte piece of tape below the sensor can improve accuracy. Reflectivity matters more than color.  
+
+    <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/265826223-1f28003f-5d1a-4046-ab25-c19f5b2376f6.png">
 
 # Tubing Consolidation (Optional)
 
