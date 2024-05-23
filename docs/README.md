@@ -75,7 +75,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 ------------------------------------------|-----------|-------------|-----------------|-------
 :heavy_check_mark: Gaggia Classic         | 100-120 V | 1991-2018   | SIN035 RI9303   | Needs [Grounding](guides/machine-specific-guide.md#grounding) 
 :heavy_check_mark: Gaggia Classic         | 220-240 V | 1991-2014   | SIN035 RI9303   |  
-:x:                Gaggia Classic V2      | 220-240 V | 2015-2018   | SIN035U RI9403  | Avoid like the plague
+:x:                Gaggia Classic V2      | 220-240 V | 2015-2018   | SIN035U RI9403  | <details><summary><b>Avoid like the plague</b> <i>(Click for image)</i></summary><img width="600" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/4170cdbf-aebc-4e09-bafa-3f9b5e95a5bb"></details> 
 :heavy_check_mark: Gaggia Classic Pro     | 100-120 V | 2019-2022   | SIN035R RI9380  | 
 :heavy_check_mark: Gaggia Classic Pro     | 220-240 V | 2019-2022   | SIN035R RI9380  | Uncommon, easier to mod than models with eco PCB
 :heavy_check_mark: Gaggia Classic Pro Eco | 220-240 V | 2019-2022   | SIN035UR RI9480 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
