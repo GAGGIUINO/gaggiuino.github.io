@@ -167,6 +167,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [STM32F411CEU6 | F411 25M HSE](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
 * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html) **GET THE GREEN ONE**
+  * Alternative sellers [A](https://www.aliexpress.us/item/3256806437782547.html) or [B](https://www.aliexpress.us/item/3256806096706809.html)
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
 * [5V RELAY](https://www.aliexpress.com/item/3256803997020234.html) 
 * [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html) **+ MicroSD card (Class 10 HC 8GB to 32GB)**
