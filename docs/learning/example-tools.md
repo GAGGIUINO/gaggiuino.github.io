@@ -58,7 +58,7 @@ When cutting cables, especially in hard-to-reach areas, having dedicated pliers 
 
 While an automated wire stripper is a convenient tool, it's not essential. You can accomplish all necessary stripping tasks with tools like pliers. 
 
-For begginer-focused overview on cable stripping [Cable stripping](learning/wiring-basics.md#cable-stripping).
+For beginner-focused overview on cable stripping [Cable stripping](learning/wiring-basics.md#cable-stripping).
 
 ## Solder - Optional
 

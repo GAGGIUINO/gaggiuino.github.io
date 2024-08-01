@@ -15,7 +15,7 @@ There are different types of connections used in the build. Based on the followi
 
 From the left:
 1. White plastic, first from the left – **JST**, those will just plug into the board. Those should come in the kit, but you may need to connect the cables (splice to another cable and add a connector – e.g. fork for SSR). It’s OK to splice those tiny cables to thicker cables.
-2. Second from the left – **QC connector**, sometimes refered to as spade. Those will plug into various parts of the machine like switches and into 4 big connectors (3PLN) at the board. You will primarily use female connectors as seen in the picture, but some setups may use male connectors.
+2. Second from the left – **QC connector**, sometimes referred to as spade. Those will plug into various parts of the machine like switches and into 4 big connectors (3PLN) at the board. You will primarily use female connectors as seen in the picture, but some setups may use male connectors.
 3. **Spade connector**, Third from the left. Sometimes referred to as fork connector (yes, spade semantics are confusing). Those will connect to SSR with screw-on.
 4. **BN connector**, sometimes referred to as butt connector, first from the right – those will connect two high voltage cables together, as those shouldn’t be soldered due to added resistance. After connecting remember to add the insulation on top of this connector.
 5. **Low voltage cable splicing** – connecting two low voltage cables together, that may be optional depending on your route. Western Union Splice and soldering – see [recommendations page](learning/learning-sources.md).
@@ -40,7 +40,7 @@ Below is an example image demonstration:
 
 ## Cable stripping
 
-Cable stripping refers to taking the insulation off the cable, so metal is exposed for connections. Any previously stripped exposed metal area should be insulated after connecting. Any cable stripping can be achieved with pliers, scisors or a dedicated tool.  Automated strippers offer useful features, such as the ability to adjust automatically to the cable's width for stripping and pulling, and pre-configured stripping lengths. For instance, when inserting two cables into the same connector, an automated stripper can ensure they are stripped to the exact same length, like 6mm, which is highly convenient.
+Cable stripping refers to taking the insulation off the cable, so metal is exposed for connections. Any previously stripped exposed metal area should be insulated after connecting. Any cable stripping can be achieved with pliers, scissors or a dedicated tool.  Automated strippers offer useful features, such as the ability to adjust automatically to the cable's width for stripping and pulling, and pre-configured stripping lengths. For instance, when inserting two cables into the same connector, an automated stripper can ensure they are stripped to the exact same length, like 6mm, which is highly convenient.
 
 ![stripper](https://github.com/kozikow/gaggiuino.github.io/assets/722866/1950fd54-5f0d-4bfd-86a4-880c2beb114d)
 

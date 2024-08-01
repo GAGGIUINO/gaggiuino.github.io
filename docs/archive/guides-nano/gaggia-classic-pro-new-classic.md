@@ -347,7 +347,7 @@ The pressure sensor will be tapping into the orange braided hose connecting the 
 - Splice into the braided original saeco hose from the centre and add the T fitting.
 - Makes sure to add clamps to each end where there is a barb. 
 - Add the additional/new hose to the free T end.
-- Put the o-ring inside the 1/4" fiting.
+- Put the o-ring inside the 1/4" fitting.
 - Tighten the fitting to the pressure sensor (see below note). 
 - Tighten clamps. 
 
