@@ -3,18 +3,6 @@
 > [!Warning|style:callout]
 > Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
 
->[!Note]
->BOM and 3D printed parts for PCBv3 have moved to the [Home page](README.md#bill-of-materials)
-
-# Considerations
-* PCBs are compatible with 3PLN stock wiring integration or custom wiring, though custom wiring is recommended for certain machines (see the [compatibility table](README.md#Compatibility))
-* PCB v3 is suitable for most single-boiler espresso machines and is the focus of these instructions. PCB v2 supports more connection points for wiring and and/or multiple boiler control. 
-* PCB v2 housing links *(Pick one)*
-  * [Rigid Housing](https://www.printables.com/model/260901)
-  * [Easy Access Housing](https://www.printables.com/model/261267)
-
->
-
 # Pre-install test
 
 See [MCU Flashing](guides-stm32/mcu-flashing.md) for instructions on flashing the Blackpill and display
@@ -35,6 +23,9 @@ See [MCU Flashing](guides-stm32/mcu-flashing.md) for instructions on flashing th
   <img height="400" alt="image" src="schematics/stm32-lv/GCP_wiring_PCBv3_LV.png">
   <!-- tabs:end -->
 <!-- tabs:end -->
+
+> [!Warning|style:callout|label:Risk of Shorts]
+> The PCB is shown out of its case for clarity. Make sure all cases are installed and components are on a non-conductive surface **before power is supplied**!
 
 <!-- tabs:start -->
 <!-- tab:PCBv3.1 -->
@@ -69,6 +60,8 @@ If all is successful you should:
 > * The system will not initialize if the ToFnLED board was enabled in the software but isn't plugged in
 > * If built, HW scales can be included in the bench test and even calibrated at this point
 
-**Continue the install by referencing the 3PLN machine-specific schematics and/or install instructions that apply to your desired build path:**
+**Continue the installation by referencing the 3PLN machine-specific schematics and/or instructions that apply to your desired build path.**  
+Custom wiring is recommended for certain machines (see the [compatibility table](README.md#Compatibility))
+
 * [3PLN Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md) page.
 * [3PLN Custom Wiring](guides-stm32/3pln-custom-wiring.md) page.

@@ -278,6 +278,8 @@ Optional wiring that is not pictured:
 - [HW Scales](accessories/hw-scales.md)
 - [ToFnLED](accessories/tofnled.md)
 
-**Continue the install by referencing the 3PLN machine-specific schematics and/or install instructions that apply to your desired build path:**
+**Continue the installation by referencing the 3PLN machine-specific schematics and/or instructions that apply to your desired build path.**  
+Custom wiring is recommended for certain machines (see the [compatibility table](README.md#Compatibility))
+
 * [3PLN Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md) page.
 * [3PLN Custom Wiring](guides-stm32/3pln-custom-wiring.md) page.

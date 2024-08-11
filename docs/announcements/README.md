@@ -11,11 +11,11 @@
 
 ## Development Lifecycle
 >
-<div style="width:230px">Hardware</div>| Public Release Date | Development Stopped | Current Support    | Recommended Install 
----------------------------------------|---------------------|---------------------|:------------------:|:-------------------:
- Nano                                  | 2021                | 2022                | :x:                | :x:                 
- STM32 Blackpill + Nextion             | 2022                | July 2023           | :heavy_check_mark: | :heavy_check_mark:  
- STM32 Blackpill + New UI Solution     | TBD                 |                     | :x:                | :x:                 
+<div style="width:230px">Architecture</div>| Release Date      | Development Stopped | Current Support    | Recommended Install 
+---------------------------------------|-----------------------|---------------------|:------------------:|:-------------------:
+ Arduino Nano + Nextion                | 2021                  | 2022                | :x:                | :x:                 
+ STM32 + Nextion                       | 2022                  | July 2023           | :heavy_check_mark: | :heavy_check_mark:  
+ STM32 + ESP32                         | Closed Beta - May 2024|                     | :x:                | :x:                 
 >
 * __Development Stopped__ - Development for this combination of hardware has ceased.
 * __Current support__ - Installation support available in the discord.

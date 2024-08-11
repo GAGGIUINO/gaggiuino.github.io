@@ -154,7 +154,8 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
 * [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html)
 * [Ungrounded Thermocouple Sensor | K-type, M4, 0.5 m long](https://www.aliexpress.com/item/3256805310471537.html)
-* [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
+* [SSR-40DA Relay](https://www.aliexpress.com/item/3256806134543825.html)
+* [M4x10 Screw, washer, and nut](https://www.aliexpress.com/item/2255801137435920.html) **or an 8-32 set from a local store**
 * [Heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html)
   * **22AWG - 5m:** Black, Red, Blue, Yellow, Orange, Purple
 * [JST XH 4P](https://www.aliexpress.com/item/2251832768103991.html)
@@ -172,7 +173,8 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html) **+ MicroSD card (Class 10 HC 8GB to 32GB)**
 * [MAX6675 thermocouple module](https://www.aliexpress.com/item/3256805086341859.html) 
 * [Ungrounded Thermocouple Sensor | K-type, M4, 0.5 m long](https://www.aliexpress.com/item/3256805310471537.html)
-* [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
+* [SSR-40DA Relay](https://www.aliexpress.com/item/3256806134543825.html)
+* [M4x10 Screw, washer, and nut](https://www.aliexpress.com/item/2255801137435920.html) **or an 8-32 set from a local store**
 * [Heat-resistant Silicone Wire](https://www.aliexpress.com/item/2255800441309579.html)
   * **18AWG - 1m:** Black, Red, White
   * **22AWG - 5m:** Black, Red, Blue, Yellow, White
