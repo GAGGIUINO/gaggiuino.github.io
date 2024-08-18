@@ -4,9 +4,7 @@
 1. Install/Update [VSCode](https://code.visualstudio.com/)
 2. Install/Update [Platform IO](https://platformio.org/) 
 3. Install [Git](https://www.git-scm.com/)
-4. Drivers (select per your build type)
-    * STM32 USB/ST-Link [Cube Programmer](https://www.st.com/en/development-tools/stm32cubeprog.html)
-    * Arduino Nano [CH340 USB Driver](http://www.wch-ic.com/downloads/CH341SER_ZIP.html)
+4. Install [STM32 Cube Programmer](https://www.st.com/en/development-tools/stm32cubeprog.html)
 
 Then pull the code as shown in the below video:
 <details>
@@ -15,19 +13,17 @@ Then pull the code as shown in the below video:
 [Platform IO](https://user-images.githubusercontent.com/109426580/193900425-15c42d9c-adf4-4073-aa46-34874528bf43.mp4 ':include :type=video controls width=70%')
 </details>
 
-Make sure to switch to the necessary [release branch](#Releases) once pulled, depending on the target platform (nano or stm32). If using blackpill the recommended upload method is by using a physical ST-Link.
+Make sure to switch to the necessary [release branch](#Releases) once pulled, depending on the target platform (nano or STM32). For STM32 the recommended upload method is by using a physical ST-Link or WeAct Mini Debugger.
 
 # Releases
 
   MCU             |                               Code branch         
 ------------------|------------------------------------------------------------------------------------
-  Arduino Nano    |[release-nano-final-v4](https://github.com/Zer0-bit/gaggiuino/tree/release-nano-final-v4)
-  STM32 Blackpill |[release/stm32-blackpill](https://github.com/Zer0-bit/gaggiuino/tree/release/stm32-blackpill)
+  STM32/Blackpill |[release/stm32-blackpill](https://github.com/Zer0-bit/gaggiuino/tree/release/stm32-blackpill)
 
 > [!TIP|style:callout|label:ADVICE|iconVisibility:visible]
 > __1. Failing to run the right code branch on the chosen set of hardware will yield unexpected results.__   
-> __2. Make sure you _ALWAYS_ flash both the microcontroller as well as the LCD unit.__   
-> __3. Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.__
+> __2. Make sure the microcontroller and screen unit are in sync. When in doubt, flash both.__  
 
 >
 
@@ -35,7 +31,7 @@ Make sure to switch to the necessary [release branch](#Releases) once pulled, de
 
 ## STM32 / Blackpill
   
-Make sure you have necessary [Software Prerequisites](#software-prerequisites) installed, and any applicable extra defines entered and saved in `extra_defines.ini` before starting.
+Make sure you have necessary [Software Prerequisites](#software-prerequisites) installed, and any applicable extra defines entered and saved in `extra_defines.ini` before starting. Do not have STM32 Cube Programmer open if uploading via VS Code.
 
 >[!Tip]
 >extra_defines.ini is used for accessories and other special functions. You do not need one for the base install.
@@ -75,7 +71,7 @@ Flashing instructions:
   > Display files for scales calibration are in the "scales-calibration" folder
   
 2. While **powered off**, put the microSD card in the display
-3. Power on the display. Power for flashing may be provided through the USB-C port on the Blackpill/PCB. Use a USB power adapter rated for 5 VDC and 500+ mA.  
+3. Power on the display. When not installed in the machine, power for flashing may be provided through the USB-C port on the Blackpill/PCB. Use a USB power adapter rated for 5 VDC and 500+ mA.  
 > [!Note|style:callout]
 > Make sure the ST-Link is disconnected. Don't use it, a battery bank, or PC USB ports for power).  
 4. Wait for the display to show the "Update Successed! (sic)" message, turn off power, and then remove the microSD card.

@@ -6,6 +6,17 @@ The files linked here should generally not be used for new systems. They are bei
 
 * [Nano Install: Gaggia Classic](archive/guides-nano/gaggia-classic.md)
 * [Nano Install: Gaggia Classic Pro](archive/guides-nano/gaggia-classic-pro-new-classic.md)
+* Arduino Nano [CH340 USB Driver](http://www.wch-ic.com/downloads/CH341SER_ZIP.html)
+
+
+  MCU             |                               Code branch         
+------------------|------------------------------------------------------------------------------------
+  Arduino Nano    |[release-nano-final-v4](https://github.com/Zer0-bit/gaggiuino/tree/release-nano-final-v4)
+
+> [!TIP|style:callout|label:ADVICE|iconVisibility:visible]
+> __1. Failing to run the right code branch on the chosen set of hardware will yield unexpected results.__   
+> __2. Make sure you _ALWAYS_ flash both the microcontroller as well as the LCD unit.__   
+> __3. Arduino Nano won't flash with the LCD attached to the RX/TX pins so make sure to disconnect it at that time.__
 
 # PCBv2
 

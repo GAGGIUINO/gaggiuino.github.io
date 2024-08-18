@@ -232,7 +232,7 @@ BOM and assembly instructions for the recommended 3D printed parts used in the s
 <!-- tabs:start -->
 <!-- tab:STM32 PCB -->
 * [Screen Enclosure](https://www.printables.com/model/280617)
-* [PCBv3 Protective Housing](https://www.printables.com/model/370513)
+* [PCBv3.1 Housing](https://www.printables.com/model/894339) **OR** [PCBv3 Protective Housing](https://www.printables.com/model/370513)
 <!-- tab:STM32 LEGO -->
 * [Screen Enclosure](https://www.printables.com/model/280617)  
 * [Internal Component Housing](https://www.printables.com/model/269394)
