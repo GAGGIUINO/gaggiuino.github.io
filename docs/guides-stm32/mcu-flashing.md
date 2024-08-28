@@ -88,6 +88,8 @@ Make sure the **Verify programming** checkbox is selected.
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/13df020c-9989-4ae9-ac7b-abaf5ce19d6c">
 
+6. Acknowledge the success messages and click **Disconnect**. Once disconnected, unplug the WeAct Mini Debugger / ST-Link USB from the computer.
+
 ## UI (ESP32)
 
 1. If your Gaggiuino is not on your local network, connect to Gaggiuino AP.
