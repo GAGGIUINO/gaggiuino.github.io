@@ -65,7 +65,7 @@ Files are at [release/stm32-blackpill](https://github.com/Zer0-bit/gaggiuino/tre
 Make sure you have necessary [Software Prerequisites](#software-prerequisites) installed.
 
 > [!Warning|style:callout|label:Warning|iconVisibility:visible]
-> __PCBv3 and PCBv3.1 should be flashed using STM32CubeProgrammer with machine power off unless PA15 pulldown rework has been completed. Otherwise, the boiler heaters may turn on while the STM32 is connected or flashing.__  
+> __PCBv3 and PCBv3.1 should be flashed using STM32CubeProgrammer with machine power off unless the [PA15 pulldown rework](guides-upgrade/pcb-upgrade.md#pa15-pulldown-upgrade) has been completed. Otherwise, the boiler heaters may turn on while the STM32 is connected or flashing.__  
 
 1. Identify the core file to flash from [Releases](#Releases). 
 
@@ -91,6 +91,9 @@ Make sure the **Verify programming** checkbox is selected.
 6. Acknowledge the success messages and click **Disconnect**. Once disconnected, unplug the WeAct Mini Debugger / ST-Link USB from the computer.
 
 ## UI (ESP32)
+
+> [!Warning|style:callout|label:Warning|iconVisibility:visible]
+> ESP32 systems **must be enabled by official suppliers** to work with Gaggiuino Gen 3.  
 
 1. If your Gaggiuino is not on your local network, connect to Gaggiuino AP.
 
