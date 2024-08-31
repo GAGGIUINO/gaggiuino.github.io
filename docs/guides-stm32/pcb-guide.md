@@ -18,7 +18,7 @@ See [MCU Flashing](guides-stm32/mcu-flashing.md) for instructions on flashing th
 <!-- tab:GC -->
   <!-- tabs:start -->
   <!-- tab:PCBv3.1/PCBv4 -->
-  <img width="400" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_1_LV.png">
+  <img height="400" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_1_LV.png">
   <!-- tab:PCBv3 -->
   <img height="400" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_LV.png">
   <!-- tabs:end -->
