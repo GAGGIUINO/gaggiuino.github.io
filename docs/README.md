@@ -25,6 +25,11 @@
 >
 # Features
 
+Advanced pressure and flow profiling, web interface, shot history, OTA updates, Bluetooth scales... so many features we decided to put them under a dropdown. If you want to dive in, expand below!
+
+<details>
+<summary><b>Gaggiuino Features Comparison</b> <i>(Click to expand)</i></summary>
+
   Feature                |Gen 1<br/>Nano & Nextion|Gen 2<br/>STM32 & Nextion|Gen 3<br/>STM32 & ESP32
 -----------------------  |:----------------------:|:-----------------------:|:----------------------:
   Neat integration       |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:      
@@ -33,22 +38,25 @@
   Auto Shot Timer        |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:       
   Graphing               |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:                
   Pressure profiling     |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:   
-  Manual flow control    |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:       
+  Manual flow control    |:heavy_check_mark:|:heavy_check_mark:  |:heavy_plus_sign:       
   Settings persistence   |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark: 
-  Descale program        |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:       
-  Integrated scales      |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:      
+  Descale program        |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:  
+  Integrated scales      |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark: 
+  Stop on Weight/Dose<sup> 1</sup>|:x:      |:heavy_check_mark:  |:heavy_check_mark:       
+  DreamSteam<sup> 2</sup>         |:x:      |:heavy_check_mark:  |:heavy_check_mark:  
+  Predictive scales<sup> 3</sup>  |:x:      |:heavy_check_mark:  |:heavy_check_mark:            
   Flow profiling         |:x:               |:heavy_check_mark:  |:heavy_check_mark:  
-  Advanced profiling     |:x:               |:heavy_check_mark:  |:heavy_check_mark:      
-  __Stop on Weight/Dose__<sup> 1</sup>|:x:  |:heavy_check_mark:  |:heavy_check_mark:       
-  __DreamSteam__<sup> 2</sup>         |:x:  |:heavy_check_mark:  |:heavy_check_mark:  
-  __Predictive scales__<sup> 3</sup>  |:x:  |:heavy_check_mark:  |:heavy_check_mark:  
-  Profiles Management    |:x:               |:heavy_check_mark:  |:heavy_check_mark:
+  Advanced profiling     |:x:               |:heavy_check_mark:  |:heavy_check_mark:  
+  Profile Management     |:x:               |:heavy_check_mark:  |:heavy_check_mark:    
+  Unlimited<sup> 4</sup> profiling  |:x:    |:x:                 |:heavy_check_mark:
+  Unlimited<sup> 4</sup> phases     |:x:    |:x:                 |:heavy_check_mark:
+  Advanced phase limits  |:x:               |:x:                 |:heavy_check_mark:
+  Bluetooth scales       |:x:               |:x:                 |:heavy_check_mark:
   Profiles sharing       |:x:               |:x:                 |:heavy_check_mark: 
   Web interface          |:x:               |:x:                 |:heavy_check_mark: 
-  OTA updates            |:x:               |:x:                 |:heavy_plus_sign: 
+  OTA updates            |:x:               |:x:                 |:heavy_check_mark: 
+  REST API               |:x:               |:x:                 |:heavy_plus_sign: 
 
-<!-- panels:start -->
-<!-- div:left-panel -->
 __Explanation__  
 :heavy_check_mark:  Available      
 :x:  Not available       
@@ -56,8 +64,10 @@ __Explanation__
 >
 _1_ __Stop on Weight/Dose__ - stops at a desired yield.  
 _2_ __DreamSteam__ - software driven steam boosting.  
-_3_ __Predictive scales__ - software driven predicted weight output.
-<!-- panels:end -->
+_3_ __Predictive scales__ - software driven predicted weight output.  
+_4_ __Unlimited__ - probably has a limit, but we haven't found it yet.
+
+</details>
 
 >
 
