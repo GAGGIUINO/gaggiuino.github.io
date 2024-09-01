@@ -1,14 +1,9 @@
 # HOME
 
-> [!WARNING|style:flat|label:Impact of purchasing from unofficial sources|iconVisibility:visible]
+> [!WARNING|style:flat|label:Result of unofficial sources|iconVisibility:visible]
 >
-> We want to bring your attention to an important issue that affects the sustainability of the project. We've noticed that some bad actors are taking advantage of our hard work and dedication for their own financial benefit. Buying PCBs, kits, or 3D prints from unauthorized sources directly supports these profit-driven individuals, undermining the very core ideas and values that our mod stands for.
->
-> We are committed to sticking to our principles and keeping the community strong. We have consciously chosen not to commercialize the project, allowing it to remain open and accessible to all. Therefore, we urge you to pause and think twice before making any purchases from websites that are not officially approved and listed on the left side menu.
->
-> Instead, we encourage you to support our officially approved suppliers who are dedicated to upholding our mod's principles and ensuring top-notch quality. By doing so, you not only help us maintain the integrity of the project but also show your support for the countless hours of work invested by our team and contributors.
->
->Thank you for being a part of the GAGGIUINO community and for your understanding in this matter.
+> Gaggiuino Gen 3 is free to use and will offer free software updates, but the source code is no longer available.  
+> This decision was made to maintain high standards for the hardware required for the project and prevent individuals from fracturing the community with subpar, non-standard components and processes that were untenable for Gaggiuino’s community-driven support to accommodate.
 >
 >Sincerely,
 >
