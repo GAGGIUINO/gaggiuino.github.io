@@ -245,12 +245,13 @@ BOM and assembly instructions for the recommended 3D printed parts used in the s
 <!-- tabs:start -->
 <!-- tab:Gen 3 -->
 * [Gen 3 Screen Housing](https://www.printables.com/model/356026)  
-  There are 3 mount options that all use the same screen housing  
+  There are 3 mount options that all use the same screen housing. Pick one.  
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/888b31f2-d0e5-48d8-af31-7133bd122f70">
   
   <!-- tabs:start -->
   <!-- tab:Front Mount -->
   * 6 [20x10x3 mm magnets](https://www.aliexpress.com/item/3256803170039630.html)
+  * [Kapton tape, 20 mm wide](https://www.aliexpress.com/item/3256803012935630.html)
   * Cyanoacrylate (super glue) or Epoxy
   <!-- tab:Funnel Mount -->
   * 3 [M3x30 socket head cap screws](https://www.aliexpress.com/item/2251832782719381.html)
