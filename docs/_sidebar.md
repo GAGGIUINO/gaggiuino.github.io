@@ -24,6 +24,7 @@
     * [Machine-Specific Instructions](guides/machine-specific-guide.md)   
     * [MCU Flashing](guides-stm32/mcu-flashing.md)    
 * __Upgrades:__
+    * [PCB Upgrade Guide](guides-upgrade/pcb-upgrade.md)
     * [Lego Independent Relay and Dimmer](guides-upgrade/lego-independent-relay-dimmer.md)
     * [Lego Nano to STM32 Upgrade](guides-upgrade/nano-to-stm32.md)
 * [__Archive__](archive/archive.md)

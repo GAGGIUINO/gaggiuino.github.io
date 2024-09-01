@@ -138,7 +138,8 @@ Print files are available on [Printables](https://www.printables.com/model/28537
     <img width="600" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/2e791cc1-157b-4c02-8e98-080b46ae99a9">  
 
     > [!Note|style:callout]
-    > As placed in the scales housing, the stripboard wire order is visually reversed from the dualScaleBoard. This is to align the scale-to-PCB wiring. 
+    > * C1 and C2 are already connected to each other through JP10 on the dualScaleBoard
+    > * As placed in the scales housing, the stripboard wire order is visually reversed from the dualScaleBoard. This is to align the scale-to-PCB wiring. 
     <!-- tab:FPC dualScaleBoard -->
     Not needed as the FPC connector replaces this, proceed to the next step
     <!-- tabs:end -->

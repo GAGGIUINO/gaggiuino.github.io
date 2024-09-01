@@ -1,14 +1,9 @@
 # HOME
 
-> [!WARNING|style:flat|label:Impact of purchasing from unofficial sources|iconVisibility:visible]
+> [!WARNING|style:flat|label:Result of unofficial sources|iconVisibility:visible]
 >
-> We want to bring your attention to an important issue that affects the sustainability of the project. We've noticed that some bad actors are taking advantage of our hard work and dedication for their own financial benefit. Buying PCBs, kits, or 3D prints from unauthorized sources directly supports these profit-driven individuals, undermining the very core ideas and values that our mod stands for.
->
-> We are committed to sticking to our principles and keeping the community strong. We have consciously chosen not to commercialize the project, allowing it to remain open and accessible to all. Therefore, we urge you to pause and think twice before making any purchases from websites that are not officially approved and listed on the left side menu.
->
-> Instead, we encourage you to support our officially approved suppliers who are dedicated to upholding our mod's principles and ensuring top-notch quality. By doing so, you not only help us maintain the integrity of the project but also show your support for the countless hours of work invested by our team and contributors.
->
->Thank you for being a part of the GAGGIUINO community and for your understanding in this matter.
+> Gaggiuino Gen 3 is free to use and will offer free software updates, but the source code is no longer available.  
+> This decision was made to maintain high standards for the hardware required for the project and prevent individuals from fracturing the community with subpar, non-standard components and processes that were untenable for Gaggiuino’s community-driven support to accommodate.
 >
 >Sincerely,
 >
@@ -30,27 +25,27 @@
 >
 # Features
 
-  Feature                |  Arduino Nano    |  STM32 Blackpill
------------------------  |------------------|-----------------
-  Neat integration       |:heavy_check_mark:|:heavy_check_mark:       
-  Embedded UI            |:heavy_check_mark:|:heavy_check_mark:       
-  Full temp control      |:heavy_check_mark:|:heavy_check_mark:       
-  Auto Shot Timer        |:heavy_check_mark:|:heavy_check_mark:       
-  Graphing               |:heavy_check_mark:|:heavy_check_mark:                
-  Pressure profiling     |:heavy_check_mark:|:heavy_check_mark:   
-  Manual flow control    |:heavy_check_mark:|:heavy_check_mark:       
-  Settings persistence   |:heavy_check_mark:|:heavy_check_mark: 
-  Descale program        |:heavy_check_mark:|:heavy_check_mark:       
-  Integrated scales      |:heavy_check_mark:|:heavy_check_mark:      
-  Flow profiling         |       :x:        |:heavy_check_mark:  
-  Advanced profiling     |       :x:        |:heavy_check_mark:      
-  __Stop on Weight/Dose__<sup> 1</sup>|      :x:        |:heavy_check_mark:       
-  __DreamSteam__<sup> 2</sup>        |       :x:        |:heavy_check_mark:  
-  __Predictive scales__<sup> 3</sup> |       :x:        |:heavy_check_mark:  
-  Profiles Management    |       :x:        |:heavy_check_mark:
-  Profiles sharing       |       :x:        |:heavy_plus_sign: 
-  Web interface          |       :x:        |:heavy_plus_sign: 
-  OTA updates            |       :x:        |:heavy_plus_sign: 
+  Feature                |Gen 1<br/>Nano & Nextion|Gen 2<br/>STM32 & Nextion|Gen 3<br/>STM32 & ESP32
+-----------------------  |:----------------------:|:-----------------------:|:----------------------:
+  Neat integration       |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:      
+  Embedded UI            |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:       
+  Full temp control      |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:       
+  Auto Shot Timer        |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:       
+  Graphing               |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:                
+  Pressure profiling     |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:   
+  Manual flow control    |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:       
+  Settings persistence   |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark: 
+  Descale program        |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:       
+  Integrated scales      |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:      
+  Flow profiling         |:x:               |:heavy_check_mark:  |:heavy_check_mark:  
+  Advanced profiling     |:x:               |:heavy_check_mark:  |:heavy_check_mark:      
+  __Stop on Weight/Dose__<sup> 1</sup>|:x:  |:heavy_check_mark:  |:heavy_check_mark:       
+  __DreamSteam__<sup> 2</sup>         |:x:  |:heavy_check_mark:  |:heavy_check_mark:  
+  __Predictive scales__<sup> 3</sup>  |:x:  |:heavy_check_mark:  |:heavy_check_mark:  
+  Profiles Management    |:x:               |:heavy_check_mark:  |:heavy_check_mark:
+  Profiles sharing       |:x:               |:x:                 |:heavy_check_mark: 
+  Web interface          |:x:               |:x:                 |:heavy_check_mark: 
+  OTA updates            |:x:               |:x:                 |:heavy_plus_sign: 
 
 <!-- panels:start -->
 <!-- div:left-panel -->
@@ -152,9 +147,9 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [PCBv3 *(Approved Supplier or custom order)*](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V3)
 * [STM32F411CEU6 | F411 25M HSE](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
 * [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
-* [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html)
 * [Ungrounded Thermocouple Sensor | K-type, M4, 0.5 m long](https://www.aliexpress.com/item/3256805310471537.html)
-* [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
+* [SSR-40DA Relay](https://www.aliexpress.com/item/3256806134543825.html)
+* [M4x10 Screw, washer, and nut](https://www.aliexpress.com/item/2255801137435920.html) **or an 8-32 set from a local store**
 * [Heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html)
   * **22AWG - 5m:** Black, Red, Blue, Yellow, Orange, Purple
 * [JST XH 4P](https://www.aliexpress.com/item/2251832768103991.html)
@@ -169,10 +164,10 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html) **GET THE GREEN ONE**
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
 * [5V RELAY](https://www.aliexpress.com/item/3256803997020234.html) 
-* [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html) **+ MicroSD card (Class 10 HC 8GB to 32GB)**
 * [MAX6675 thermocouple module](https://www.aliexpress.com/item/3256805086341859.html) 
 * [Ungrounded Thermocouple Sensor | K-type, M4, 0.5 m long](https://www.aliexpress.com/item/3256805310471537.html)
-* [40DA SSR Relay](https://www.aliexpress.com/item/4000045425145.html)
+* [SSR-40DA Relay](https://www.aliexpress.com/item/3256806134543825.html)
+* [M4x10 Screw, washer, and nut](https://www.aliexpress.com/item/2255801137435920.html) **or an 8-32 set from a local store**
 * [Heat-resistant Silicone Wire](https://www.aliexpress.com/item/2255800441309579.html)
   * **18AWG - 1m:** Black, Red, White
   * **22AWG - 5m:** Black, Red, Blue, Yellow, White
@@ -220,6 +215,14 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [Silicone Heat Shrink Tube | 4, 5, 6 mm dia](https://www.aliexpress.com/item/3256801522005095.html) **OR** [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html)
 
 <!-- tabs:end -->
+
+<!-- tabs:start -->
+<!-- tab:Gen 3 -->
+* 4.3" ESP32-S3 Screen **- must be activated by [PeakCoffee](https://www.peakcoffee.cc/product/4-3-iot-gaggiuino-lcd/) or [DIY-EFI](https://diy-efi.co.uk/product/gaggiuino_esp32_43_screen)**
+
+<!-- tab:Gen 2 -->
+* [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html) **+ MicroSD card (Class 10 HC 2GB to 32GB)**
+<!-- tabs:end -->
 <!-- div:panel-end -->
 > 
 
@@ -229,11 +232,39 @@ BOM and assembly instructions for the recommended 3D printed parts used in the s
 
 <!-- tabs:start -->
 <!-- tab:STM32 PCB -->
-* [Screen Enclosure](https://www.printables.com/model/280617)
-* [PCBv3 Protective Housing](https://www.printables.com/model/370513)
+* [PCBv3.1/v4 Housing](https://www.printables.com/model/894339) **OR** [PCBv3 Protective Housing](https://www.printables.com/model/370513)
 <!-- tab:STM32 LEGO -->
-* [Screen Enclosure](https://www.printables.com/model/280617)  
 * [Internal Component Housing](https://www.printables.com/model/269394)
+<!-- tabs:end -->
+
+<!-- tabs:start -->
+<!-- tab:Gen 3 -->
+* [Gen 3 Screen Housing](https://www.printables.com/model/356026)  
+  There are 3 mount options that all use the same screen housing. Pick one.  
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/888b31f2-d0e5-48d8-af31-7133bd122f70">
+  
+  <!-- tabs:start -->
+  <!-- tab:Front Mount -->
+  * 6 [20x10x3 mm magnets](https://www.aliexpress.com/item/3256803170039630.html)
+  * [Kapton tape, 20 mm wide](https://www.aliexpress.com/item/3256803012935630.html)
+  * Cyanoacrylate (super glue) or Epoxy
+  <!-- tab:Funnel Mount -->
+  * 3 [M3x30 socket head cap screws](https://www.aliexpress.com/item/2251832782719381.html)
+  * 5 [M3 washers (OD ≤7 mm)](https://www.aliexpress.com/item/3256804576158708.html)
+  * 5 [M3 split lock washers](https://www.aliexpress.com/item/2251832789389968.html)
+  * 2 [M3 nylock nuts](https://www.aliexpress.com/item/2251832802681129.html)
+  * 1 [M3 Heat Set Insert Nut, 4.5 or 4.6 mm OD, 5 or 6 mm L](https://www.aliexpress.com/item/3256804684678316.html)
+  * Cyanoacrylate (super glue) or Epoxy
+  <!-- tab:Rear Mount -->
+  * 2 [M3x30 socket head cap screws](https://www.aliexpress.com/item/2251832782719381.html)
+  * 4 [M3 washers (OD ≤7 mm)](https://www.aliexpress.com/item/3256804576158708.html)
+  * 4 [M3 split lock washers](https://www.aliexpress.com/item/2251832789389968.html)
+  * 2 [M3 nylock nuts](https://www.aliexpress.com/item/2251832802681129.html)
+  <!-- tabs:end -->
+<!-- tab:Gen 2 -->
+* [Screen Enclosure](https://www.printables.com/model/280617)
+  * 2 M4x10 button-head screws
+  * 2 M4 nuts
 <!-- tabs:end -->
 
 If you'd like to print yourself, order from CraftCloud, or use a local print shop **please carefully review the recommended print parameters** on the design pages. 

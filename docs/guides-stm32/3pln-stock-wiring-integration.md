@@ -39,7 +39,7 @@ Save the images or right-click and open in a new tab to view at full resolution.
 
 >
 
-> [!Note]
+> [!Note|style:callout]
 > Only one version (120 V) of the Gaggia Classic and Classic Pro schematics are shown as the integration points are identical between 120/230 V. The wire colors may be different, but those differ between models of the same voltage type as well.  
 
 <!-- tabs:start -->
@@ -69,15 +69,13 @@ Save the images or right-click and open in a new tab to view at full resolution.
 
 # Integration
 
-> [!Warning]
-> At this point you should have already completed a test of your system (especially if doing the component build). It's much easier to resolve issues prior to integration.
+> [!Warning|style:callout]
+> * Make sure your control system has been flashed and passed the pre-install test checklist. It's much easier to resolve issues prior to integration.
+> * If you have a US Gaggia Classic with a 2 pole power cord and plug then please see the [Grounding](guides/machine-specific-guide.md#Grounding) section of the machine-specific instructions before continuing.
 
 ## Open machine
 
 Take off the top cover by unscrewing the 2 top screws. You should be able to see something similar to the below image. 
-
-> [!Note]
-> If you have a US Gaggia Classic check whether you have a ground connection on your power input. If it's a 2 pole plug as seen in the image adding a ground is recommended prior to starting the integration. BOM and instructions can be found at [Grounding a Gaggia Classic](guides/machine-specific-guide.md)
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
@@ -99,7 +97,10 @@ Valve             |V      |a    b
 Pump              |P      |a    b <br /> _a is from fuse, GC unlabeled_ <br />_b is the single 18 gauge wire in most machines_
 Pump Fuse (GC)         |F      |_there should be 2 wires_ <br />_in the connector to the fuse_
 
-Here are the stock pump connections for clarity. Note that most integration connections are made at the pump, so make sure the pump wiring matches the stock [schematic](#schematics) for your machine before continuing.
+> [!Warning|style:callout]
+> Stock wiring colors and connector positions (especially at the pump) may not match the schematics and pictures. Please make sure the wiring matches the stock [schematic](#schematics) for your machine before continuing.
+
+Here are the stock pump connections for clarity. 
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
@@ -154,9 +155,9 @@ The 3-way solenoid valve, Pump, and Neutral connections are all integrated into 
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
-![Pump Area Connections](https://user-images.githubusercontent.com/117388662/239402660-557bd63c-4aec-4503-8b24-29163e3ed695.png ':size=500')
+![Pump Area Connections](https://github.com/user-attachments/assets/08201c41-7c72-4839-b85b-654710d979d0 ':size=500')
 <!-- tab:Gaggia Classic Pro -->
-![Pump Area Connections](https://user-images.githubusercontent.com/117388662/243797948-933b4a3c-172c-4ef8-8f9d-a7572624f3a2.png ':size=500')
+![Pump Area Connections](https://github.com/user-attachments/assets/b8b0da1a-111e-4a19-8c0f-7b933b973026 ':size=500')
 <!-- tabs:end -->
 
 ## SSR
