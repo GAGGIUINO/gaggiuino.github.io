@@ -42,7 +42,7 @@ The BOM is compiled for the standard install path where all components are taken
 *Remember to check and add [Grounding](guides/machine-specific-guide.md#grounding) if needed.*  
 
 <!-- tabs:start -->
-<!-- tab:PCBv3.1 -->
+<!-- tab:PCBv3.1/v4 -->
 <img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_1_120v.png">
 <!-- tab:PCBv3 -->
 <img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_120v.png">
@@ -51,7 +51,7 @@ The BOM is compiled for the standard install path where all components are taken
 <!-- tab:Gaggia Classic 220-240v -->
 
 <!-- tabs:start -->
-<!-- tab:PCBv3.1 -->
+<!-- tab:PCBv3.1/v4 -->
 <img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_1_220v.png">
 <!-- tab:PCBv3 -->
 <img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_220v.png">
@@ -60,7 +60,7 @@ The BOM is compiled for the standard install path where all components are taken
 <!-- tab:Gaggia Classic Pro 100-120v -->
 
 <!-- tabs:start -->
-<!-- tab:PCBv3.1 -->
+<!-- tab:PCBv3.1/v4 -->
 <img width="600" alt="GCP 120v" src="schematics/custom-3pln/GCP_wiring_PCBv3_1_120v.png">
 <!-- tab:PCBv3 -->
 <img width="600" alt="GCP 120v" src="schematics/custom-3pln/GCP_wiring_PCBv3_120v.png">
@@ -71,7 +71,7 @@ The BOM is compiled for the standard install path where all components are taken
 *Remember to do the [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) to make it bistable.*  
 
 <!-- tabs:start -->
-<!-- tab:PCBv3.1 -->
+<!-- tab:PCBv3.1/v4 -->
 <img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_1_220v.png">
 <!-- tab:PCBv3 -->
 <img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_220v.png">

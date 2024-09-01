@@ -10,14 +10,14 @@ See [MCU Flashing](guides-stm32/mcu-flashing.md) for instructions on flashing th
 <!-- tabs:start -->
 <!-- tab:GCP -->
   <!-- tabs:start -->
-  <!-- tab:PCBv3.1/PCBv4 -->
+  <!-- tab:PCBv3.1/v4 -->
   <img height="400" alt="image" src="schematics/stm32-lv/GCP_wiring_PCBv3_1_LV.png">
   <!-- tab:PCBv3 -->
   <img height="400" alt="image" src="schematics/stm32-lv/GCP_wiring_PCBv3_LV.png">
   <!-- tabs:end -->
 <!-- tab:GC -->
   <!-- tabs:start -->
-  <!-- tab:PCBv3.1/PCBv4 -->
+  <!-- tab:PCBv3.1/v4 -->
   <img height="400" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_1_LV.png">
   <!-- tab:PCBv3 -->
   <img height="400" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_LV.png">
@@ -30,7 +30,7 @@ See [MCU Flashing](guides-stm32/mcu-flashing.md) for instructions on flashing th
 > Make sure electronics are in their housings and/or secure on a non-conductive surface **before power is supplied**!
 
 <!-- tabs:start -->
-<!-- tab:PCBv3.1/PCBv4 -->
+<!-- tab:PCBv3.1/v4 -->
 Connect the system components - thermocouple, pressure transducer, screen, SSR, ToFnLED (if available) - to the PCB and power on the system through the USB-C port on the PCB.  
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/5ea67541-0cf4-4064-9f87-19ad900bef8b">
