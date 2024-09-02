@@ -51,7 +51,7 @@ Advanced pressure and flow profiling, web interface, shot history, OTA updates, 
   Unlimited<sup> 4</sup> profiling  |:x:    |:x:                 |:heavy_check_mark:
   Unlimited<sup> 4</sup> phases     |:x:    |:x:                 |:heavy_check_mark:
   Advanced phase limits  |:x:               |:x:                 |:heavy_check_mark:
-  Bluetooth scales       |:x:               |:x:                 |:heavy_check_mark:
+  Bluetooth scales<sup> 5</sup>    |:x:     |:x:                 |:heavy_check_mark:
   Profiles sharing       |:x:               |:x:                 |:heavy_check_mark: 
   Web interface          |:x:               |:x:                 |:heavy_check_mark: 
   OTA updates            |:x:               |:x:                 |:heavy_check_mark: 
@@ -66,6 +66,7 @@ _1_ __Stop on Weight/Dose__ - stops at a desired yield.
 _2_ __DreamSteam__ - software driven steam boosting.  
 _3_ __Predictive scales__ - software driven predicted weight output.  
 _4_ __Unlimited__ - probably has a limit, but we haven't found it yet.
+_5_ __Bluettot scales__ - [find the currently supported scales here](https://github.com/kstam/esp-arduino-ble-scales?tab=readme-ov-file#bluetooth-scales-library-for-esp-on-arduino-framework).
 
 </details>
 
