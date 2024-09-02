@@ -65,8 +65,8 @@ __Explanation__
 _1_ __Stop on Weight/Dose__ - stops at a desired yield.  
 _2_ __DreamSteam__ - software driven steam boosting.  
 _3_ __Predictive scales__ - software driven predicted weight output.  
-_4_ __Unlimited__ - probably has a limit, but we haven't found it yet.
-_5_ __Bluettot scales__ - [find the currently supported scales here](https://github.com/kstam/esp-arduino-ble-scales?tab=readme-ov-file#bluetooth-scales-library-for-esp-on-arduino-framework).
+_4_ __Unlimited__ - probably has a limit, but we haven't found it yet.   
+_5_ __Bluetooth scales__ - [find the currently supported scales here](https://github.com/kstam/esp-arduino-ble-scales?tab=readme-ov-file#bluetooth-scales-library-for-esp-on-arduino-framework).   
 
 </details>
 
