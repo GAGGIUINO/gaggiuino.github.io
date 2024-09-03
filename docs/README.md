@@ -36,18 +36,18 @@ Advanced pressure and flow profiling, web interface, shot history, OTA updates, 
   Embedded UI            |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:       
   Full temp control      |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:       
   Auto Shot Timer        |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:       
-  Graphing               |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:                
-  Pressure profiling     |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:   
+  Graphing               |:heavy_check_mark:|:white_check_mark:  |:heavy_check_mark:                
+  Pressure profiling     |:heavy_check_mark:|:white_check_mark:  |:heavy_check_mark:   
   Manual flow control    |:heavy_check_mark:|:heavy_check_mark:  |:heavy_plus_sign:       
   Settings persistence   |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark: 
-  Descale program        |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:  
+  Descale program        |:heavy_check_mark:|:white_check_mark:  |:heavy_check_mark:  
   Integrated scales      |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark: 
   Stop on Weight/Dose<sup> 1</sup>|:x:      |:heavy_check_mark:  |:heavy_check_mark:       
-  DreamSteam<sup> 2</sup>         |:x:      |:heavy_check_mark:  |:heavy_check_mark:  
-  Predictive scales<sup> 3</sup>  |:x:      |:heavy_check_mark:  |:heavy_check_mark:            
+  DreamSteam<sup> 2</sup>         |:x:      |:white_check_mark:  |:heavy_check_mark:  
+  Predictive scales<sup> 3</sup>  |:x:      |:white_check_mark:  |:heavy_check_mark:            
   Flow profiling         |:x:               |:heavy_check_mark:  |:heavy_check_mark:  
-  Advanced profiling     |:x:               |:heavy_check_mark:  |:heavy_check_mark:  
-  Profile Management     |:x:               |:heavy_check_mark:  |:heavy_check_mark:    
+  Advanced profiling     |:x:               |:white_check_mark:  |:heavy_check_mark:  
+  Profile Management     |:x:               |:white_check_mark:  |:heavy_check_mark:    
   Unlimited<sup> 4</sup> profiling  |:x:    |:x:                 |:heavy_check_mark:
   Unlimited<sup> 4</sup> phases     |:x:    |:x:                 |:heavy_check_mark:
   Advanced phase limits  |:x:               |:x:                 |:heavy_check_mark:
@@ -57,7 +57,8 @@ Advanced pressure and flow profiling, web interface, shot history, OTA updates, 
   OTA updates            |:x:               |:x:                 |:heavy_check_mark: 
   REST API               |:x:               |:x:                 |:heavy_plus_sign: 
 
-__Explanation__  
+__Explanation__       
+:white_check_mark: Available in a limted form             
 :heavy_check_mark:  Available      
 :x:  Not available       
 :heavy_plus_sign: Planned   
