@@ -34,14 +34,14 @@ Advanced pressure and flow profiling, web interface, shot history, OTA updates, 
 -----------------------  |:----------------------:|:-----------------------:|:----------------------:
   Neat integration       |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:      
   Embedded UI            |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:       
-  Full temp control      |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:       
+  Full temp control      |:white_check_mark:|:white_check_mark:  |:heavy_check_mark:       
   Auto Shot Timer        |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:       
-  Graphing               |:heavy_check_mark:|:white_check_mark:  |:heavy_check_mark:                
-  Pressure profiling     |:heavy_check_mark:|:white_check_mark:  |:heavy_check_mark:   
-  Manual flow control    |:heavy_check_mark:|:heavy_check_mark:  |:heavy_plus_sign:       
-  Settings persistence   |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark: 
-  Descale program        |:heavy_check_mark:|:white_check_mark:  |:heavy_check_mark:  
-  Integrated scales      |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark: 
+  Graphing               |:white_check_mark:|:white_check_mark:  |:heavy_check_mark:                
+  Pressure profiling     |:white_check_mark:|:white_check_mark:  |:heavy_check_mark:   
+  Manual flow control    |:white_check_mark:|:heavy_check_mark:  |:heavy_plus_sign:       
+  Settings persistence   |:white_check_mark:|:heavy_check_mark:  |:heavy_check_mark: 
+  Descale program        |:white_check_mark:|:white_check_mark:  |:heavy_check_mark:  
+  Integrated scales      |:white_check_mark:|:heavy_check_mark:  |:heavy_check_mark: 
   Stop on Weight/Dose<sup> 1</sup>|:x:      |:heavy_check_mark:  |:heavy_check_mark:       
   DreamSteam<sup> 2</sup>         |:x:      |:white_check_mark:  |:heavy_check_mark:  
   Predictive scales<sup> 3</sup>  |:x:      |:white_check_mark:  |:heavy_check_mark:            
