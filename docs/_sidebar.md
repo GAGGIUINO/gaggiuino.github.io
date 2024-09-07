@@ -18,6 +18,7 @@
     * [Control B: **Component (Lego) Build**](guides-stm32/lego-component-build-guide.md)
     * [Wiring A: **Stock Wiring Integration**](guides-stm32/3pln-stock-wiring-integration.md)
     * [Wiring B: **Custom Wiring**](guides-stm32/3pln-custom-wiring.md)
+    * [Interface: **Screen**](guides/interface-screen.md)
     * [Accessory: **Hardware Scales**](accessories/hw-scales.md)
     * [Accessory: **ToFnLED**](accessories/tofnled.md)
 * __Install References__
