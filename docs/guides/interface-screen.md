@@ -15,7 +15,28 @@ Overview of mount variants:
 > [!TIP|style:callout]
 > If not already done, connect the wiring to the control system first as was done during the [pre-install test](guides-stm32/pcb-guide.md#pre-install-test) - the 2 small screen connectors can typically slip through the recommended housing gaps but the other side often cannot. 
 
+<details><summary><b>Schematics for reference</b> <i>(click to expand)</i></summary>
 
+<!-- tabs:start -->
+<!-- tab:PCBv3.1/v4 -->
+  <!-- tabs:start -->
+  <!-- tab:GCP -->
+  <img height="500" alt="image" src="schematics/stm32-lv/GCP_wiring_PCBv3_1_LV.png">
+  <!-- tab:GC -->
+  <img height="500" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_1_LV.png">
+  <!-- tabs:end -->
+<!-- tab:PCBv3 -->
+  <!-- tabs:start -->
+  <!-- tab:GCP -->
+  <img height="500" alt="image" src="schematics/stm32-lv/GCP_wiring_PCBv3_LV.png">
+  <!-- tab:GC -->
+  <img height="500" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_LV.png">
+  <!-- tabs:end -->
+<!-- tab: Lego -->
+  <img height="500" alt="image" src="schematics/stm32-comp-build.png">
+<!-- tabs:end -->
+
+</details> 
 
   <!-- tabs:start -->
   <!-- tab:Front Mount -->
@@ -60,27 +81,6 @@ Overview of mount variants:
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/8724315e-99c0-4e59-8242-e98b0531ee6c">
   <!-- tabs:end -->
-
-Schematics for reference:
-
-<!-- tabs:start -->
-<!-- tab:PCBv3.1/v4 -->
-  <!-- tabs:start -->
-  <!-- tab:GCP -->
-  <img height="500" alt="image" src="schematics/stm32-lv/GCP_wiring_PCBv3_1_LV.png">
-  <!-- tab:GC -->
-  <img height="500" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_1_LV.png">
-  <!-- tabs:end -->
-<!-- tab:PCBv3 -->
-  <!-- tabs:start -->
-  <!-- tab:GCP -->
-  <img height="500" alt="image" src="schematics/stm32-lv/GCP_wiring_PCBv3_LV.png">
-  <!-- tab:GC -->
-  <img height="500" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_LV.png">
-  <!-- tabs:end -->
-<!-- tab: Lego -->
-  <img height="500" alt="image" src="schematics/stm32-comp-build.png">
-<!-- tabs:end -->
 
 Place the screen onto the upper posts first as they have a retention feature. Ensure the wires settle below the surface of the housing and screen PCB, and are not pinched under the connectors. 
 
