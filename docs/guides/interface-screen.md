@@ -61,6 +61,27 @@ Overview of mount variants:
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/8724315e-99c0-4e59-8242-e98b0531ee6c">
   <!-- tabs:end -->
 
+Schematics for reference:
+
+<!-- tabs:start -->
+<!-- tab:PCBv3.1/v4 -->
+  <!-- tabs:start -->
+  <!-- tab:GCP -->
+  <img height="500" alt="image" src="schematics/stm32-lv/GCP_wiring_PCBv3_1_LV.png">
+  <!-- tab:GC -->
+  <img height="500" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_1_LV.png">
+  <!-- tabs:end -->
+<!-- tab:PCBv3 -->
+  <!-- tabs:start -->
+  <!-- tab:GCP -->
+  <img height="500" alt="image" src="schematics/stm32-lv/GCP_wiring_PCBv3_LV.png">
+  <!-- tab:GC -->
+  <img height="500" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_LV.png">
+  <!-- tabs:end -->
+<!-- tab: Lego -->
+  <img height="500" alt="image" src="schematics/stm32-comp-build.png">
+<!-- tabs:end -->
+
 Place the screen onto the upper posts first as they have a retention feature. Ensure the wires settle below the surface of the housing and screen PCB, and are not pinched under the connectors. 
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/2d059c58-a688-409c-9bd9-183443854bc7">
@@ -82,7 +103,7 @@ Place the front cover on, starting with the top side (with the thinner bezel). V
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/2a1c65f7-1ec7-46a0-bfa5-59710317190d">
 
-  >
+  Put the machine funnel and cup warming plate back on after everything is arranged as desired (don't forget to connect the ground wire).
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/44cd4587-2e95-4c72-bc0c-595ed9d91755">
 
@@ -103,7 +124,7 @@ Place the front cover on, starting with the top side (with the thinner bezel). V
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/bc3a08cb-6f48-489a-9d2c-367b53e5f1c9">
 
-  >
+  Put the machine funnel and cup warming plate back on after everything is arranged as desired (don't forget to connect the ground wire). Place the funnel mount onto the funnel.
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/8f151c1e-93fa-4e46-81d0-cb45a3dc9d63">
   
@@ -117,6 +138,7 @@ Place the front cover on, starting with the top side (with the thinner bezel). V
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/69b796ea-27e1-4fb2-a55e-b474187ac989">
 
+  Put the machine funnel and cup warming plate back on after everything is arranged as desired (don't forget to connect the ground wire). While it's possible to install with the rear mount in place, it's much easier without.  
   Insert the upper mounting features into place in the vent, then clip the bottom side in. Push on the back of the latch handles to make sure they're fully attached. 
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/d8067907-8ccb-4b46-b1b2-455515eea056">
