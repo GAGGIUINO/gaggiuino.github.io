@@ -266,6 +266,11 @@ BOM and assembly instructions for the recommended 3D printed parts used in the s
   * 6 [20x10x3 mm magnets](https://www.aliexpress.com/item/3256803170039630.html)
   * [Kapton tape, 20 mm wide](https://www.aliexpress.com/item/3256803012935630.html)
   * Cyanoacrylate (super glue) or Epoxy
+
+  > [!TIP|style:callout|label:Non-magnetic Machines|iconVisibility:visible]
+  > For non-magnetic espresso machines, sub double-sided tape with a long-term temp rating of at least 80° C for the magnets
+  > * VHB 4611/5952/4910, Gorilla Tape, Alien Tape are options
+
   <!-- tab:Funnel Mount -->
   * 3 [M3x30 socket head cap screws](https://www.aliexpress.com/item/2251832782719381.html)
   * 5 [M3 washers (OD ≤7 mm)](https://www.aliexpress.com/item/3256804576158708.html)

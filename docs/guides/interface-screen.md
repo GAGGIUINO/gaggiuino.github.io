@@ -33,6 +33,15 @@ Overview of mount variants:
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/028e9195-825e-48e4-b37b-14276b37e91b">
   <!-- tab:Funnel Mount -->
+
+  Use a screwdriver in the backside pry slot of the funnel cover assembly to gently separate the sliding lid.   
+
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/9c2613aa-ff02-441f-bdfa-e8db1686fb72">
+
+  Use a soldering iron to install the heat-set insert (if not pre-installed), and then press the latch into the cover plate by hand. The latch is what locks screen rotation - press it to rotate the screen out of the way for water tank fill.    
+
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/6b5498d2-14ce-473d-86b5-116dd9999caa">
+
   Route the wires through the vent as shown. The wires may be centered if desired, but shifting them over gives more clearance to the AC wiring. 
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/8c1e694a-89a4-4cce-9641-f92db90aab87">
@@ -52,7 +61,7 @@ Overview of mount variants:
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/8724315e-99c0-4e59-8242-e98b0531ee6c">
   <!-- tabs:end -->
 
-Slide the screen over the upper retention posts and then down the rest of the way. Ensure the wires settle below the surface of the housing and screen PCB, and are not pinched under the connectors. 
+Place the screen onto the upper posts first as they have a retention feature. Ensure the wires settle below the surface of the housing and screen PCB, and are not pinched under the connectors. 
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/2d059c58-a688-409c-9bd9-183443854bc7">
 
@@ -78,8 +87,43 @@ Place the front cover on, starting with the top side (with the thinner bezel). V
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/44cd4587-2e95-4c72-bc0c-595ed9d91755">
 
   <!-- tab:Funnel Mount -->
+
+  Tape wires into place. Align the adjustable plate with the interface. Gently press the clip down to align the features, then push the plate forward until the retaining clip can relax back into place. Make sure the wires are in the gap, then remove the tape. 
+
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/d9653f52-dd7f-4593-b4bb-dfeb9fba9cd2">
+
+  Attach the swivel to the adjustable plate with the screws, washers, lock washers, and lock nuts. Pay attention to the washer order so the lock washers can't cut into the print. The lock washers are used as springs - tighten the screws and nuts until the mount angle can be adjusted by hand and stays in place when released.    
+
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/9bc40925-76a9-4868-bed5-2a554826f1b7">
+
+  > [!TIP|style:callout]
+  > If the vertical screw loosens over time, a **tiny drop** of plastic-safe threadlocker or cyanoacrylate may be used on the heat-set insert threads to hold it in place. 
+
+  Zip-tie the wires into place (optional).
+
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/bc3a08cb-6f48-489a-9d2c-367b53e5f1c9">
+
+  >
+
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/8f151c1e-93fa-4e46-81d0-cb45a3dc9d63">
   
   <!-- tab:Rear Mount -->
+
+  Tape wires into place. Align the adjustable plate with the interface. Gently press the clip down to align the features, then push the plate forward until the retaining clip can relax back into place. Make sure the wires are in the gap, then remove the tape. 
+
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/d9653f52-dd7f-4593-b4bb-dfeb9fba9cd2">
+
+  Attach the rear mount to the adjustable plate with the screws, washers, lock washers, and lock nuts. Pay attention to the washer order so the lock washers can't cut into the print. The lock washers are used as springs - tighten the screws and nuts until the mount angle can be adjusted by hand and stays in place when released.   
+
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/69b796ea-27e1-4fb2-a55e-b474187ac989">
+
+  Insert the upper mounting features into place in the vent, then clip the bottom side in. Push on the back of the latch handles to make sure they're fully attached. 
+
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/d8067907-8ccb-4b46-b1b2-455515eea056">
+
+  >
+
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/e498133e-9f96-4136-bac3-5a3531091e48">
   
   <!-- tabs:end -->
 <!-- tab:Gen 2 -->
