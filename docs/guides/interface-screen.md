@@ -57,7 +57,7 @@ Overview of mount variants:
 
   Use a screwdriver in the backside pry slot of the funnel cover assembly to gently separate the sliding lid.   
 
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/9c2613aa-ff02-441f-bdfa-e8db1686fb72">
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/0518f3f7-57b9-4031-8ed6-851a54bbdb63">
 
   Use a soldering iron to install the heat-set insert (if not pre-installed), and then press the latch into the cover plate by hand. The latch is what locks screen rotation - press it to rotate the screen out of the way for water tank fill.    
 
