@@ -274,19 +274,6 @@ Make sure HV AC wiring and LV DC wiring/sensors are separated. Check that nothin
 ![Finished Internals](https://user-images.githubusercontent.com/117388662/246574886-6a137c93-dc74-4d76-9eff-661204bd7571.png ':size=500')
 <!-- tabs:end -->
 
-When you're happy with everything, put the cover back on (don't forget to connect the ground wire).
+**Continue the installation by referencing the interface instructions.**  
 
-## Screen
-
-There's extra wire length so the screen can remain connected while the cover is removed. Snake the screen wires through the housing components and replace the pins in the connector. Make sure the wire order matches what you successfully tested in the bench test. I also like to put the nuts in the screen housing cover, use screws to draw them tight, and put a drop of super-glue on the nuts (**not the screws**) to hold them to the housing. When it's dry remove the screws.
-
-![Screen wiring](https://user-images.githubusercontent.com/117388662/239463397-25c3e82c-07e3-4b10-b056-59cbf8d36efc.png ':size=500')
-
-Put the screen housing together, push the spare screen wire (and heat shrink tubing) back through the vent hole and you're ready for espresso! 
-
-<!-- tabs:start -->
-<!-- tab:Gaggia Classic -->
-![Finished!](https://user-images.githubusercontent.com/117388662/239463949-0e90b52f-a5fa-4aed-8ea7-9047154cc213.png ':size=500')
-<!-- tab:Gaggia Classic Pro -->
-![Finished!](https://user-images.githubusercontent.com/117388662/246686394-b0ab3256-57cb-4869-b2dd-51c7778dfa68.png ':size=500')
-<!-- tabs:end -->
+* [Interface: Screen](guides/interface-screen.md) page.

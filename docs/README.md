@@ -104,9 +104,11 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 2. **Determine your build path.** 
 
-  Decide if you're going to order a [PCB](guides-stm32/pcb-guide.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. In general the PCB is going to be much simpler, while the component build is more flexible for experimentation and less picky about thermocouples but requires significant wiring and soldering. 
+  Decide if you're going to order a [PCB](guides-stm32/pcb-guide.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. PCBv4 is recommended for new Gen 3 builds, while PCBv3.1 is recommended for Gen 2 builds. The component build is slightly more flexible for experimentation and less picky about thermocouple grounding, however, it adds significant effort and makes reliability dependent on the maker's skill. 
 
   Decide how to integrate the control system with your espresso machine. It can either be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring, but sometimes more confusing) or the stock wiring can be replaced with a [custom wiring harness](guides-stm32/3pln-custom-wiring.md) (more work, but results in a clean, straightforward install). It is recommended that you check the notes in the [Compatibility Table](#compatibility) for your machine and and read through the instructions before deciding.
+
+  If you're building Gen 3, decide which interface option you prefer. Currently there is a 4.3" IPS [touchscreen](guides/interface-screen.md) (embedded and web UI) with 3 mounting options. A headless option (web UI only) is in development.
 
 3. **Select and Order Components**
 
@@ -133,6 +135,10 @@ Name                                      | Voltage   | Model Years | Model ID  
 
     * [A: Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md)
     * [B: Custom Wiring Harness](guides-stm32/3pln-custom-wiring.md)
+
+  Follow the instructions for your interface selection
+
+    * [Interface: Screen](guides/interface-screen.md)
 
   Follow the instructions for any accessories that may have been selected
 
@@ -260,6 +266,11 @@ BOM and assembly instructions for the recommended 3D printed parts used in the s
   * 6 [20x10x3 mm magnets](https://www.aliexpress.com/item/3256803170039630.html)
   * [Kapton tape, 20 mm wide](https://www.aliexpress.com/item/3256803012935630.html)
   * Cyanoacrylate (super glue) or Epoxy
+
+  > [!TIP|style:callout|label:Non-magnetic Machines|iconVisibility:visible]
+  > For non-magnetic espresso machines, sub double-sided tape with a long-term temp rating of at least 80° C for the magnets
+  > * VHB 4611/5952/4910, Gorilla Tape, Alien Tape are options
+
   <!-- tab:Funnel Mount -->
   * 3 [M3x30 socket head cap screws](https://www.aliexpress.com/item/2251832782719381.html)
   * 5 [M3 washers (OD ≤7 mm)](https://www.aliexpress.com/item/3256804576158708.html)
@@ -279,7 +290,7 @@ BOM and assembly instructions for the recommended 3D printed parts used in the s
   * 2 M4 nuts
 <!-- tabs:end -->
 
-If you'd like to print yourself, order from CraftCloud, or use a local print shop **please carefully review the recommended print parameters** on the design pages. 
+If you'd like to print the files yourself instead of purchasing from the official suppliers **please carefully review the recommended print parameters** on the design pages.
 
 Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](https://www.printables.com/social/340492-loogle/collections/265668) or on [Discord](community/community-media.md#community-discord) in the **#mod-3d-design-ideas** channel.
 >
