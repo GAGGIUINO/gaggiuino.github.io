@@ -162,8 +162,9 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 <!-- tabs:start -->
 <!-- tab:STM32 PCB -->
-* [PCBv3 *(Approved Supplier or custom order)*](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V3)
-* [STM32F411CEU6 | F411 25M HSE](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
+* **PCB (Pick one)**
+  * **PCBv4 (recommended, available at approved suppliers)**
+  * [PCBv3 *(custom order)*](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V3) and [BlackPill | F411 25M HSE *(make sure the proper version is selected)*](https://www.aliexpress.com/item/1005001456186625.html)
 * [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
 * [Ungrounded Thermocouple Sensor | K-type, M4, 0.5 m long](https://www.aliexpress.com/item/3256805310471537.html)
 * [SSR-40DA Relay](https://www.aliexpress.com/item/3256806134543825.html)

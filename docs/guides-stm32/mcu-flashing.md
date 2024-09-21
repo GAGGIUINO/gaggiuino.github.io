@@ -65,7 +65,7 @@ Files are at [release/stm32-blackpill](https://github.com/Zer0-bit/gaggiuino/tre
 Make sure you have necessary [Software Prerequisites](#software-prerequisites) installed.
 
 > [!Warning|style:callout|label:Warning|iconVisibility:visible]
-> __PCBv3 and PCBv3.1 should be flashed using STM32CubeProgrammer with machine power off unless the [PA15 pulldown rework](guides-upgrade/pcb-upgrade.md#pa15-pulldown-upgrade) has been completed. Otherwise, the boiler heaters may turn on while the STM32 is connected or flashing.__  
+> BlackPill-based PCBs (PCBv2, PCBv3) and PCBv3.1 should be flashed using STM32CubeProgrammer with **machine power off** unless the [PA15 pulldown has been tested](guides-upgrade/pcb-upgrade.md#pa15-pulldown-upgrade) and confirmed working. Otherwise, the boiler heaters may turn on while the STM32 is connected or flashing.  
 
 1. Identify the core file to flash from [Releases](#Releases). 
 
