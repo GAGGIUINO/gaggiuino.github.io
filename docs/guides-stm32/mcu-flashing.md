@@ -67,11 +67,12 @@ Make sure you have necessary [Software Prerequisites](#software-prerequisites) i
 
 > [!Warning|style:callout|label:Warning|iconVisibility:visible]
 > * BlackPill-based PCBs (PCBv2, PCBv3) and PCBv3.1 should be flashed using STM32CubeProgrammer with **machine power off** unless the [PA15 pulldown has been tested](guides-upgrade/pcb-upgrade.md#pa15-pulldown-upgrade) and confirmed working. Otherwise, the boiler heaters may turn on while the STM32 is connected or flashing.  
+> * If your ST-Link doesn't work with STM32CubeProgrammer try using the old [ST-Link utility](https://www.st.com/en/development-tools/stsw-link004.html)
 
 1. Identify the core file to flash from [Releases](#Releases). 
 
-2. Open STM32CubeProgrammer and in the **Erasing & programming** pane (A) browse to and select the *MCU - Build Type - LED Controller .bin* that corresponds to your system using the **File path** input (B).
-Make sure the **Verify programming** checkbox is selected.  
+2. Open STM32CubeProgrammer and in the **Erasing & programming** pane (A) browse to and select the *MCU - Build Type - LED Controller .bin* that corresponds to your system using the **File path** input (B).  
+Make sure **Verify programming** is selected and **Skip flash erase before programming** is not selected.  
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/fee8093d-cabe-4158-bfdf-40ce2cc233a3">
 
@@ -109,7 +110,7 @@ Make sure the **Verify programming** checkbox is selected.
 
   <img width="300" alt="image" src="https://github.com/user-attachments/assets/0c7114ec-6e85-4894-bfc8-d779a8de38b5">
 
-5. Select **Core Upgrade Package** for core (STM32) files, or **LCD Upgrade Package** for UI (ESP32) files. Click **SELECT FILE**, select the file to flash, then click **UPLOAD**.
+5. Select **Core Upgrade Package** for core (STM32U585) files, or **LCD Upgrade Package** for UI (ESP32) files. Click **SELECT FILE**, select the file to flash, then click **UPLOAD**.
 
   <img width="300" alt="image" src="https://github.com/user-attachments/assets/f70a4726-daa2-459b-aacc-4167444edf87">
 
