@@ -66,7 +66,7 @@ Files are at [release/stm32-blackpill](https://github.com/Zer0-bit/gaggiuino/tre
 Make sure you have necessary [Software Prerequisites](#software-prerequisites) installed.
 
 > [!Warning|style:callout|label:Warning|iconVisibility:visible]
-> * BlackPill-based PCBs (PCBv2, PCBv3) and PCBv3.1 should be flashed using STM32CubeProgrammer with **machine power off** unless the [PA15 pulldown has been tested](guides-upgrade/pcb-upgrade.md#pa15-pulldown-upgrade) and confirmed working. Otherwise, the boiler heaters may turn on while the STM32 is connected or flashing.  
+> * BlackPill-based PCBs (PCBv2, PCBv3) and PCBv3.1 should be flashed using STM32CubeProgrammer with **machine power off** unless [PA15 pulldown functionality ](guides-upgrade/pcb-upgrade.md#pa15-pulldown-upgrade) has been verified. Otherwise, the boiler heaters may turn on while the STM32 is connected or flashing.  
 > * If your ST-Link doesn't work with STM32CubeProgrammer try using the old [ST-Link utility](https://www.st.com/en/development-tools/stsw-link004.html)
 
 1. Identify the core file to flash from [Releases](#Releases). 
@@ -100,7 +100,8 @@ Make sure **Verify programming** is selected and **Skip flash erase before progr
 
 1. Identify the file(s) to flash from [Releases](#Releases).  
 
-2. If your Gaggiuino is not on your local network, connect to Gaggiuino AP. The password is the network name with a zero substituted for the "o" and the space removed.
+2. If your Gaggiuino is not on your local network, connect to Gaggiuino AP.  
+The password is the network name with a zero substituted for the "o" and the space removed.
 
   <img width="300" alt="image" src="https://github.com/user-attachments/assets/af24bb4e-1608-4b45-b78d-ccb7d15bec18">
 
@@ -118,7 +119,7 @@ Make sure **Verify programming** is selected and **Skip flash erase before progr
 > Flash files in the following order unless otherwise noted in the release notes:
 > * *ui-embedded.bin* / *ui-headless.bin*
 > * *ui-web.bin*
-> * core *MCU - Build Type - LED Controller .bin* per hardware  
+> * core file (per hardware)  
 
 6. Wait for the upload, flash process, and reboot. The screen will be black during these operations. 
 
@@ -130,7 +131,7 @@ Make sure **Verify programming** is selected and **Skip flash erase before progr
 
 
 > [!Note|style:callout|label:Notes|iconVisibility:visible]
-> * If an update fails or is cancelled before completion the system will automatically revert to the previous firmware.  
+> * Do not power down the system during an update. If an update fails or is cancelled before completion the system will automatically revert to the previous firmware.  
 > * After a *ui-web.bin* update the browser may need to be refreshed to load new elements (if any). 
 
 <!-- tab:Gen 2 -->
