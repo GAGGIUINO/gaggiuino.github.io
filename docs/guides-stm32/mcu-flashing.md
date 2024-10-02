@@ -100,7 +100,7 @@ Make sure **Verify programming** is selected and **Skip flash erase before progr
 
 1. Identify the file(s) to flash from [Releases](#Releases).  
 
-2. If your Gaggiuino is not on your local network, connect to Gaggiuino AP.
+2. If your Gaggiuino is not on your local network, connect to Gaggiuino AP. The password is the network name with a zero substituted for the "o" and the space removed.
 
   <img width="300" alt="image" src="https://github.com/user-attachments/assets/af24bb4e-1608-4b45-b78d-ccb7d15bec18">
 
