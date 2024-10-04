@@ -89,6 +89,10 @@ Name                                      | Voltage   | Model Years | Model ID  
 :heavy_check_mark: Gaggia Classic Evo Pro | 100-120 V | 2023-?      | SIN035R RI9380  | 9 bar OPV must be changed to be a [10-12 bar OPV](guides/machine-specific-guide.md#10-12-bar-opv) <br /> High-temp insulation required for [combined connector insulation](guides/machine-specific-guide.md#combined-connector-insulation) when doing stock wiring integration 
 :heavy_check_mark: Gaggia Classic Evo Pro | 220-240 V | 2023-?      | SIN035UR RI9481 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
 
+> [!Note|style:callout|label:New Gaggia Classic Pro|iconVisibility:visible]
+> The Gaggia Classic Pro E24 has been released to some regions. It's reported that this model is a Gaggia Classic Evo Pro with a new brass boiler, so all notes regarding the Evo *should* apply.  
+> The table will be updated when more info is available and we've been able to confirm there are no unexpected deviations.    
+
 >
 
 # Build Process
