@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firmware Upload</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vh;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #333;
+      text-align: center;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* max-width: 50hv; */
+      /* width: 60%; */
+    }
+
+    label {
+      font-size: 1.2em;
+      color: #555;
+	  padding: 10px;
+      display: block;
+	  text-align: left;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+	  justify-content: flex-start;
+      margin-bottom: 10px;
+	  text-align: left;
+    }
+
+    .form-group label {
+      flex: 1;
+    }
+
+    .form-group input[type="file"], 
+    .form-group input[type="checkbox"] {
+      flex-shrink: 0;
+      margin-left: 0px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1.1em;
+      width: 30%;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .info {
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Restore Webserver Static</h1>
+    <form id="uploadForm">
+      <label>1. Download the latest GitHub release of the <strong>ui-web.bin</strong> file.</label>
+      <label>2. Make sure the machine is powered and reachable on <strong>http://gaggiuino.local</strong> DNS.</label>
+
+      <!-- File input and its label on the same line -->
+      <div class="form-group">
+        <label for="fileInput">3. Choose the correct static container file <strong>(ui-web.bin)</strong>:</label>
+        <input type="file" id="fileInput" accept=".bin">
+      </div>
+
+      <!-- Checkbox and its label on the same line -->
+      <div class="form-group">
+        <label for="urlToggle">4.On unstable wifi network, connect your device directly to Gaggiuino AP and tick the checkbox:</label>
+		<input type="checkbox" id="urlToggle"> 
+      </div>
+
+      <label>5. Hit the upload button.</label>
+      <button type="submit">Upload</button>
+
+      <p class="info">Make sure to select the correct file before proceeding with the upload.</p>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('uploadForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const fileInput = document.getElementById('fileInput');
+      const file = fileInput.files[0];
+
+      // Ensure the file is selected and named 'ui-web.bin'
+      if (!file || file.name !== 'ui-web.bin') {
+        alert('Please select the file named ui-web.bin');
+        return;
+      }
+
+      // Get the selected URL based on the checkbox toggle
+      const useFallback = document.getElementById('urlToggle').checked;
+      const url = useFallback
+        ? 'http://192.168.4.1/firmware-upload?name=ui-web.bin&type=F_FW'
+        : 'http://gaggiuino.local/firmware-upload?name=ui-web.bin&type=F_FW';
+
+      // Create a FormData object to hold the file
+      const formData = new FormData();
+      formData.append('file', file);
+
+      // Send a POST request with the file
+      fetch(url, {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => {
+        if (response.ok) {
+          alert('Firmware uploaded successfully!');
+        } else {
+          alert('Failed to upload firmware.');
+        }
+      })
+      .catch(error => {
+        console.error('Error uploading firmware:', error);
+        alert('Error occurred during upload.');
+      });
+    });
+  </script>
+</body>
+</html>
