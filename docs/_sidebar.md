@@ -6,6 +6,8 @@
 * - __3D Printed Parts__
     * - [Espressio __(NLD)__](https://gaggiuino.espressio.nl/)
     * - [Hudson Creative Group __(USA)__](https://gaggiuino.hudsoncreativegroup.com/)
+* __TOOLS:__
+* - [Restore __ui-web.bin__](/restore.html)
 * __Useful:__
 * - [Announcements](announcements/)
 * - [Community Portal](community/community-media.md)
