@@ -7,7 +7,7 @@
     * - [Espressio __(NLD)__](https://gaggiuino.espressio.nl/)
     * - [Hudson Creative Group __(USA)__](https://gaggiuino.hudsoncreativegroup.com/)
 * __TOOLS:__
-* - [Restore __ui-web.bin__](/restore.html)
+* - [Restore __ui-web.bin__](https://gaggiuino.github.io/restore.html)
 * __Useful:__
 * - [Announcements](announcements/)
 * - [Community Portal](community/community-media.md)
