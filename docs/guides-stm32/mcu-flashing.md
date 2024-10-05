@@ -3,7 +3,8 @@
 ## Software Prerequisites:
 <!-- tabs:start -->
 <!-- tab:Gen 3 -->
-1. Install [STM32 Cube Programmer](https://www.st.com/en/development-tools/stm32cubeprog.html) *(Email signup required)*
+For wired flashing - required for BlackPill-based PCBs (PCBv2, PCBv3) and PCBv3.1:  
+* [STM32 Cube Programmer](https://www.st.com/en/development-tools/stm32cubeprog.html) *(Email signup required)*
 
 <!-- tab:Gen 2 -->
 1. Install/Update [VSCode](https://code.visualstudio.com/)
@@ -31,15 +32,15 @@ Make sure to switch to the necessary [release branch](#Releases) once pulled, de
 > __2. Failing to flash the correct binary for your hardware will yield unexpected results.__   
 > __3. Make sure the microcontroller and screen unit are in sync.__  
 
-Released binary (.bin) files can be found on the [Gaggiuino Github Releases](https://github.com/Zer0-bit/gaggiuino/releases) page.
-
-Core (STM32) files are named *MCU - Build Type - LED Controller .bin*.  
-UI (ESP32) files *ui-embedded.bin* and *ui-web.bin* are both flashed.
-
-*MCU*                                    | *Build Type*                  | *LED Controller*     |  
-:---------------------------------------:|:-----------------------------:|:--------------------:|  
-**performance**<br/>*STM32**U585**CIU6*  |**pcb**<br/>*PCBv2 - PCBv4*    |**ncp**<br/>*NCP5623* |  
-<br/>*STM32**F411**CEU6*                 |**lego**<br/>*Component build* |**pca**<br/>*PCA9632* |
+Released binary (.bin) files can be found on the [Gaggiuino Github Releases](https://github.com/Zer0-bit/gaggiuino/releases) page. Files selection depends on your system hardware.
+  * Core (STM32): 1 file, named in format *MCU - Build Type - LED Controller .bin* per hardware (see table below).  
+   _MCU_                                    | *Build Type*                  | *LED Controller*     |  
+   :---------------------------------------:|:-----------------------------:|:--------------------:|  
+   __performance__<br/>*STM32**U585**CIU6*  |**pcb**<br/>*PCBv2 - PCBv4*    |**ncp**<br/>*NCP5623* |  
+   <br/>*STM32**F411**CEU6*                 |**lego**<br/>*Component build* |**pca**<br/>*PCA9632* |  
+  * UI (ESP32)
+    * Screen: *ui-embedded.bin* and *ui-web.bin*  
+    * Headless: *ui-headless.bin* and *ui-web.bin* 
 
 > [!Note|style:callout|label:Note - Extra Defines Eliminated] 
 > * Those without an LED module can use either ncp or pca firmware as ToF presence/absence and LED absence are recognized automatically. 
@@ -60,17 +61,18 @@ Files are at [release/stm32-blackpill](https://github.com/Zer0-bit/gaggiuino/tre
 # Flashing
 <!-- tabs:start -->
 <!-- tab:Gen 3 -->
-## Core (STM32 / BlackPill)
+## Wired - STM32 / BlackPill
 
 Make sure you have necessary [Software Prerequisites](#software-prerequisites) installed.
 
 > [!Warning|style:callout|label:Warning|iconVisibility:visible]
-> __PCBv3 and PCBv3.1 should be flashed using STM32CubeProgrammer with machine power off unless the [PA15 pulldown rework](guides-upgrade/pcb-upgrade.md#pa15-pulldown-upgrade) has been completed. Otherwise, the boiler heaters may turn on while the STM32 is connected or flashing.__  
+> * BlackPill-based PCBs (PCBv2, PCBv3) and PCBv3.1 should be flashed using STM32CubeProgrammer with **machine power off** unless [PA15 pulldown functionality ](guides-upgrade/pcb-upgrade.md#pa15-pulldown-upgrade) has been verified. Otherwise, the boiler heaters may turn on while the STM32 is connected or flashing.  
+> * If your ST-Link doesn't work with STM32CubeProgrammer try using the old [ST-Link utility](https://www.st.com/en/development-tools/stsw-link004.html)
 
 1. Identify the core file to flash from [Releases](#Releases). 
 
-2. Open STM32CubeProgrammer and in the **Erasing & programming** pane (A) browse to and select the *MCU - Build Type - LED Controller .bin* that corresponds to your system using the **File path** input (B).
-Make sure the **Verify programming** checkbox is selected.  
+2. Open STM32CubeProgrammer and in the **Erasing & programming** pane (A) browse to and select the *MCU - Build Type - LED Controller .bin* that corresponds to your system using the **File path** input (B).  
+Make sure **Verify programming** is selected and **Skip flash erase before programming** is not selected.  
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/fee8093d-cabe-4158-bfdf-40ce2cc233a3">
 
@@ -90,36 +92,46 @@ Make sure the **Verify programming** checkbox is selected.
 
 6. Acknowledge the success messages and click **Disconnect**. Once disconnected, unplug the WeAct Mini Debugger / ST-Link USB from the computer.
 
-## UI (ESP32)
+## OTA - ESP32, STM32U585
 
 > [!Warning|style:callout|label:Warning|iconVisibility:visible]
-> ESP32 systems **must be enabled by official suppliers** to work with Gaggiuino Gen 3.  
+> * ESP32 systems **must be enabled by official suppliers** to work with Gaggiuino Gen 3.  
+> * Core OTA is compatible with STM32**U585** (PCBv4 and PCBs with custom uPill) only. Sometimes those PCBs may need to be flashed with STM32CubeProgrammer - this will be stated in the release notes if necessary. 
 
-1. If your Gaggiuino is not on your local network, connect to Gaggiuino AP.
+1. Identify the file(s) to flash from [Releases](#Releases).  
+
+2. If your Gaggiuino is not on your local network, connect to Gaggiuino AP.  
+The password is the network name with a zero substituted for the "o" and the space removed.
 
   <img width="300" alt="image" src="https://github.com/user-attachments/assets/af24bb4e-1608-4b45-b78d-ccb7d15bec18">
 
-2. Navigate to [gaggiuino.local](http://gaggiuino.local/)
+3. Navigate to [gaggiuino.local](http://gaggiuino.local/)
 
-3. Select the SETTINGS page and scroll down to the **OTA Update** section.
+4. Select the SETTINGS page and scroll down to the **OTA Update** section.
 
   <img width="300" alt="image" src="https://github.com/user-attachments/assets/0c7114ec-6e85-4894-bfc8-d779a8de38b5">
 
-4. Click **SELECT FILE**, select *ui-embedded.bin*, then click **UPLOAD**.
+5. Select **Core Upgrade Package** for core (STM32U585) files, or **LCD Upgrade Package** for UI (ESP32) files. Click **SELECT FILE**, select the file to flash, then click **UPLOAD**.
 
   <img width="300" alt="image" src="https://github.com/user-attachments/assets/f70a4726-daa2-459b-aacc-4167444edf87">
 
-5. Wait for the upload, bootloader update, and reboot. The screen will be black during these operations. 
+> [!Note|style:callout|label:File Order|iconVisibility:visible]
+> Flash files in the following order unless otherwise noted in the release notes:
+> * *ui-embedded.bin* / *ui-headless.bin*
+> * *ui-web.bin*
+> * core file (per hardware)  
+
+6. Wait for the upload, flash process, and reboot. The screen will be black during these operations. 
 
   <img width="300" alt="image" src="https://github.com/user-attachments/assets/ae9f802d-d9a1-4b26-a504-dbecb29cdab7">
 
-6. After a successful upgrade, click **START OVER** and follow steps 4 and 5 to flash *ui-web.bin* 
+7. After a successful upgrade, click **START OVER** and begin again from step 5 to flash additional files. 
 
   <img width="300" alt="image" src="https://github.com/user-attachments/assets/faba0d3e-15fd-4324-a28f-f170c0950757">
 
 
 > [!Note|style:callout|label:Notes|iconVisibility:visible]
-> * If an update fails or is cancelled before completion the system will automatically revert to the previous firmware.  
+> * Do not power down the system during an update. If an update fails or is cancelled before completion the system will automatically revert to the previous firmware.  
 > * After a *ui-web.bin* update the browser may need to be refreshed to load new elements (if any). 
 
 <!-- tab:Gen 2 -->

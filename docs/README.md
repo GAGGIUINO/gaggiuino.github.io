@@ -89,6 +89,10 @@ Name                                      | Voltage   | Model Years | Model ID  
 :heavy_check_mark: Gaggia Classic Evo Pro | 100-120 V | 2023-?      | SIN035R RI9380  | 9 bar OPV must be changed to be a [10-12 bar OPV](guides/machine-specific-guide.md#10-12-bar-opv) <br /> High-temp insulation required for [combined connector insulation](guides/machine-specific-guide.md#combined-connector-insulation) when doing stock wiring integration 
 :heavy_check_mark: Gaggia Classic Evo Pro | 220-240 V | 2023-?      | SIN035UR RI9481 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
 
+> [!Note|style:callout|label:New Gaggia Classic Pro|iconVisibility:visible]
+> The Gaggia Classic Pro E24 has been released to some regions. It's reported that this model is a Gaggia Classic Evo Pro with a new brass boiler, so all notes regarding the Evo *should* apply.  
+> The table will be updated when more info is available and we've been able to confirm there are no unexpected deviations.    
+
 >
 
 # Build Process
@@ -162,8 +166,9 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 <!-- tabs:start -->
 <!-- tab:STM32 PCB -->
-* [PCBv3 *(Approved Supplier or custom order)*](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V3)
-* [STM32F411CEU6 | F411 25M HSE](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
+* **PCB (Pick one)**
+  * **PCBv4 (recommended, available at approved suppliers)**
+  * [PCBv3 *(custom order)*](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V3) and [BlackPill | F411 25M HSE *(make sure the proper version is selected)*](https://www.aliexpress.com/item/1005001456186625.html)
 * [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
 * [Ungrounded Thermocouple Sensor | K-type, M4, 0.5 m long](https://www.aliexpress.com/item/3256805310471537.html)
 * [SSR-40DA Relay](https://www.aliexpress.com/item/3256806134543825.html)

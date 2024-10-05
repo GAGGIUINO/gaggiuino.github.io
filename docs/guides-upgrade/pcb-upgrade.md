@@ -11,7 +11,7 @@ These instructions are for experienced makers only! In many cases buying a new P
 > The following modifications pull down the pin on affected PCBs. They are risky and recommended only for experienced solderers.  
 > If your board is affected and you do not feel comfortable with the modifications then firmware updates should be flashed with machine power off.
 
-The STM32F411CEU6 and STM32U585CIU6 PA15 have an internal pull-up resistor for JTDI that is enabled by default. Gaggiuino firmware disables it, but until that firmware is running the pin is being pulled up. As this pin controls SSR1, on certain versions of the PCB the boiler heaters will be turned on if the STM32 is flashed with power enabled. 
+The STM32 PA15 pin, used to control SSR1, has an internal pull-up resistor enabled by default that will activate the SSR. This pull-up can be disabled on the STM32U585, however, the STM32F411 pull-up can only be turned off when firmware is running. As a result, the boiler heaters will be turned on if an STM32F411 board without a pull-down is flashed with machine power on. 
 
 With Gaggiuino Gen 2 the heating effects are minimal when flashing because VSCode automatically connects, flashes, restarts, and disconnects. However, when flashing Gaggiuino Gen 3 firmware with STM32CubeProgrammer the user must manually connect, start flashing, acknowledge flash results, and then disconnect. This slows the process and adds significant risk that the user will forget to disconnect in time, increasing the possibility that the system will overheat and trip the boiler's thermal fuse. 
 
@@ -55,8 +55,8 @@ PCBv3.1b has R30 and R10 near Q12, and the pull-down value can be fixed by repla
 <!-- tab:PCBv3 -->
 There are two different versions of PCBv3, differentiated as PCBv3a and PCBv3b below.
 
-A pull-down can be added to PCBv3a by soldering the resistor on the backside of the PCB between PA15 and the ground pin of J5.  
-PCBv3b has 3.3k&Omega; R6 and R7 pull-downs, so a pull-down change shouldn't be necessary.  
+PCBv3a can have a pull-down added by soldering the resistor on the backside of the PCB between PA15 and the ground pin of J5.  
+PCBv3b has R6 and R7 pull-downs, so a pull-down change shouldn't be necessary.  
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/8284a0e3-2bcf-451d-af7e-9672731f7cff">  
 
@@ -75,7 +75,7 @@ PCBv2b has 3.3k&Omega; R36 and R37 pull-downs, so a pull-down change shouldn't b
 > [!Warning|style:callout]
 > This is documented because it's a possible upgrade path, but it's also an order of magnitude more difficult than anything else in this project and should not be attempted unless you have experience reworking SMDs. 
 
-For our purposes, the STM32U585CIU6 is pin-compatible with the STM32F411CEU6. PCBs with the F411, such as the BlackPill or PCBv3.1, can be upgraded to the U585.  
+For our purposes, the STM32U585CIU6 is pin-compatible with the STM32F411CEU6, so the BlackPill F411 can be replaced with the U585. 
 
 ## Bill Of Materials
 
@@ -83,7 +83,7 @@ For our purposes, the STM32U585CIU6 is pin-compatible with the STM32F411CEU6. PC
 
 ## Instructions
 
-1. Remove the STM32F411CEU6 from the PCB
+1. Remove the STM32F411CEU6 from the BlackPill
 2. Solder the STM32U585CIU6 in its place
 
 This document will not cover SMD rework processes. If further instruction is needed you may want to reconsider the attempt (see warning above). 

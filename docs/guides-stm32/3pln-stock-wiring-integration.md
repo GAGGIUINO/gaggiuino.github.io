@@ -221,12 +221,12 @@ Cut a 200-250 mm length of your tubing from the BOM and attach it to the pressur
 
 ![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/f294cdb2-000b-4583-b258-8dd53854a2ec ':size=500')
 
-Cut the tubing in between the pump and boiler, roughly 65 mm above the boiler connection. Attach the barbed T fitting. 
+Cut the tubing in between the pump and boiler, roughly 65 mm above the boiler connection. Slide a loose hose clamp onto each tube, attach the barbed T fitting, and secure the hose clamps over the middle of the barbed area. 
 
 > [!Tip]
 > Make sure the tubing is cut straight and fully engaged on the fittings. It can be helpful to use a grip aid such as silicone tape or a rubber glove to grip the tubing and push it in. You may even need to use some water-based lubricant to get it all the way on.
 
-Cut a 200-250 mm length of your tubing from the BOM and attach it to the pressure transducer fitting.
+Cut a 200-250 mm length of your tubing from the BOM and attach it to the pressure transducer fitting, securing each end with a hose clamp as before.
 
 ![pressure transducer placement](https://user-images.githubusercontent.com/117388662/246573952-ca092066-d107-46e6-85f1-e2a7b19865e0.png ':size=500')
 <!-- tabs:end -->
