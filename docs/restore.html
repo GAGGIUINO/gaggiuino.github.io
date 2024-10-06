@@ -28,24 +28,22 @@
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      /* max-width: 50hv; */
-      /* width: 60%; */
     }
 
     label {
       font-size: 1.2em;
       color: #555;
-	  padding: 10px;
+      padding: 10px;
       display: block;
-	  text-align: left;
+      text-align: left;
     }
 
     .form-group {
       display: flex;
       align-items: center;
-	  justify-content: flex-start;
+      justify-content: flex-start;
       margin-bottom: 10px;
-	  text-align: left;
+      text-align: left;
     }
 
     .form-group label {
@@ -67,21 +65,21 @@
       border-radius: 4px;
       cursor: pointer;
       font-size: 1.1em;
-      width: 30%;
+      width: auto;
     }
 
     button:hover {
       background-color: #45a049;
     }
 
-    download-button {
+    .download-button {
       padding: 12px 20px;
       margin-top: 10px;
       border: none;
       border-radius: 4px;
       cursor: pointer;
       font-size: 1.1em;
-      width: 100%;
+      width: auto;
       text-align: center;
     }
 
@@ -99,8 +97,15 @@
       color: #888;
     }
 
-     /* Flex container for the buttons */
-     .button-group {
+    .warning {
+      font-size: 1em;
+      color: red;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .button-group {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -110,7 +115,6 @@
       margin-left: 10px;
       width: auto;
     }
-
   </style>
 </head>
 <body>
@@ -118,6 +122,9 @@
     <h1>Restore Webserver Static</h1>
     <form id="uploadForm">
       <button type="button" class="download-button" onclick="downloadPage()">Download Page</button>
+      <p class="warning">
+        If you're accessing this resource over HTTPS, please enable **Mixed Content** in your browser settings to allow this page to communicate with HTTP resources. If you're unable to change this setting, you can download this page and run it locally by clicking the button above.
+      </p>
       <label>1. Download the latest GitHub release of the <strong>ui-web.bin</strong> file.</label>
       <label>2. Make sure the machine is powered and reachable on <strong>http://gaggiuino.local</strong> DNS.</label>
 
@@ -129,8 +136,8 @@
 
       <!-- Checkbox and its label on the same line -->
       <div class="form-group">
-        <label for="urlToggle">4.On unstable wifi network, connect your device directly to Gaggiuino AP and tick the checkbox:</label>
-		<input type="checkbox" id="urlToggle"> 
+        <label for="urlToggle">4. On unstable wifi network, connect your device directly to Gaggiuino AP and tick the checkbox:</label>
+        <input type="checkbox" id="urlToggle"> 
       </div>
 
       <label>5. Hit the upload button.</label>
@@ -163,7 +170,7 @@
       fetch(url, {
         method: 'POST',
         headers: {
-        'Content-Type': 'application/mac-binary'
+          'Content-Type': 'application/mac-binary'
         },
         body: file,
         mode: 'no-cors',
