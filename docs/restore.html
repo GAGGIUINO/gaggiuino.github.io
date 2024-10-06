@@ -74,6 +74,21 @@
       background-color: #45a049;
     }
 
+    download-button {
+      padding: 12px 20px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1.1em;
+      width: 100%;
+      text-align: center;
+    }
+
+    .download-button:hover {
+      background-color: #0056b3;
+    }
+
     .container {
       text-align: center;
       padding: 20px;
@@ -83,12 +98,26 @@
       font-size: 0.9em;
       color: #888;
     }
+
+     /* Flex container for the buttons */
+     .button-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .button-group .download-button {
+      margin-left: 10px;
+      width: auto;
+    }
+
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Restore Webserver Static</h1>
     <form id="uploadForm">
+      <button type="button" class="download-button" onclick="downloadPage()">Download Page</button>
       <label>1. Download the latest GitHub release of the <strong>ui-web.bin</strong> file.</label>
       <label>2. Make sure the machine is powered and reachable on <strong>http://gaggiuino.local</strong> DNS.</label>
 
@@ -137,7 +166,8 @@
       // Send a POST request with the file
       fetch(url, {
         method: 'POST',
-        body: formData
+        body: formData,
+        mode: 'no-cors'
       })
       .then(response => {
         if (response.ok) {
@@ -151,6 +181,20 @@
         alert('Error occurred during upload.');
       });
     });
+
+    // Function to download the current page as an HTML file
+    function downloadPage() {
+      const htmlContent = document.documentElement.outerHTML;
+      const blob = new Blob([htmlContent], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'firmware_upload.html';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
   </script>
 </body>
 </html>
