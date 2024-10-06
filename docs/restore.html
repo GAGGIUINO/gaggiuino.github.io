@@ -159,22 +159,18 @@
         ? 'http://192.168.4.1/firmware-upload?name=ui-web.bin&type=F_FW'
         : 'http://gaggiuino.local/firmware-upload?name=ui-web.bin&type=F_FW';
 
-      // Create a FormData object to hold the file
-      const formData = new FormData();
-      formData.append('file', file);
-
       // Send a POST request with the file
       fetch(url, {
         method: 'POST',
-        body: formData,
-        mode: 'no-cors'
+        headers: {
+        'Content-Type': 'application/mac-binary'
+        },
+        body: file,
+        mode: 'no-cors',
       })
-      .then(response => {
-        if (response.ok) {
-          alert('Firmware uploaded successfully!');
-        } else {
-          alert('Failed to upload firmware.');
-        }
+      .then(() => {
+        // Assume success since we can't verify the response because of the no-cors mode
+        alert('Firmware upload triggered, wait for LCD notification on binary flashing status.');
       })
       .catch(error => {
         console.error('Error uploading firmware:', error);
