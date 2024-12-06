@@ -14,7 +14,7 @@ For wired flashing - required for BlackPill-based PCBs (PCBv2, PCBv3) and PCBv3.
 
 Then pull the code as shown in the below video:
 <details>
-<summary>Setup project using PIO (Click to expand)</summary>
+<summary>Setup project using PIO <i>(Click to expand)</i></summary>
 
 [Platform IO](https://user-images.githubusercontent.com/109426580/193900425-15c42d9c-adf4-4073-aa46-34874528bf43.mp4 ':include :type=video controls width=70%')
 </details>
@@ -32,12 +32,20 @@ Make sure to switch to the necessary [release branch](#Releases) once pulled, de
 > __2. Failing to flash the correct binary for your hardware will yield unexpected results.__   
 > __3. Make sure the microcontroller and screen unit are in sync.__  
 
-Released binary (.bin) files can be found on the [Gaggiuino Github Releases](https://github.com/Zer0-bit/gaggiuino/releases) page. Files selection depends on your system hardware.
+Released binary (.bin) files are on the [Gaggiuino Github Release (Latest)](https://github.com/Zer0-bit/gaggiuino/releases/latest) page. Files selection depends on your system hardware.
   * Core (STM32): 1 file, named in format *MCU - Build Type - LED Controller .bin* per hardware (see table below).  
-   _MCU_                                    | *Build Type*                  | *LED Controller*     |  
-   :---------------------------------------:|:-----------------------------:|:--------------------:|  
-   __performance__<br/>*STM32**U585**CIU6*  |**pcb**<br/>*PCBv2 - PCBv4*    |**ncp**<br/>*NCP5623* |  
-   <br/>*STM32**F411**CEU6*                 |**lego**<br/>*Component build* |**pca**<br/>*PCA9632* |  
+    |Title | Name | Hardware |
+    |:--:|:--:|:--|
+    |**MCU**            | performance <br/> -           | STM32**U585**CIU6 (PCBv4, fuPill) <br/> STM32**F411**CEU6 (PCBv3.1, BlackPill)|
+    |**Build Type**     | pcb <br/> lego                | PCBv2 - PCBv4 <br/> Component build |
+    |**LED Controller <sup>[1]</sup>** | pca <br/> ncp  | PCA9632 <br/> NCP5623 |
+    <details>
+    <summary><b>[1] See this for help identifying your LED controller - most are PCA </b><i>(Click to expand)</i></summary>
+
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/274979976-ae9f02ab-8c61-438e-81ea-adfabdff183b.png">
+
+    </details>  
+  
   * UI (ESP32)
     * Screen: *ui-embedded.bin* and *ui-web.bin*  
     * Headless: *ui-headless.bin* and *ui-web.bin* 
@@ -132,6 +140,7 @@ The password is the network name with a zero substituted for the "o" and the spa
 
 > [!Note|style:callout|label:Notes|iconVisibility:visible]
 > * Do not power down the system during an update. If an update fails or is cancelled before completion the system will automatically revert to the previous firmware.  
+> * If OTA updates fail while connected to a network: disconnect Gaggiuino from the network and connect your device directly to Gaggiuino AP (step 2).
 > * After a *ui-web.bin* update the browser may need to be refreshed to load new elements (if any). 
 
 <!-- tab:Gen 2 -->
