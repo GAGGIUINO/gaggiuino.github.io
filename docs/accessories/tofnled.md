@@ -86,6 +86,8 @@ Run the Qwiic cable down through the gap on the right side of the machine sheet 
 
 Flash core (the MCU) with the applicable binary (.bin) file per [MCU Flashing](guides-stm32/mcu-flashing.md).
 
+Select a color and intensity via WebUI or on the screen (certain combinations of colors and themes may reduce control visibility on the screen)
+
 <!-- tab:Gen 2 -->
 Create a file in the project folder called "extra_defines.ini"  
 The exact contents of the file depend on your system build, but it will look something like this (green lines are commented out and inactive). 
