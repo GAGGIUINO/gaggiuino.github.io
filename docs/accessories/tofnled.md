@@ -7,8 +7,11 @@ The Time of Flight and LED (ToFnLED) board provides a sensor for determining tan
 
 ## Bill of Materials
 
-> [!Note] Understanding of the PCB ordering/manufacturing process is needed to order the ToFnLED. For housing compatibility do **not** add the backside connector.  
-Conformal coating the PCB is highly recommended for longevity. This can be done as part of the PCB assembly process or manually post-assembly.
+> [!TIP|style:callout|label:Sourcing|iconVisibility:visible]
+> PCBs, kits, and 3D-printed parts may be ordered from the **Approved Official Suppliers** in the sidebar.  
+> Alternatively, components can be ordered individually and parts can be printed from the design files. Understanding of the PCB ordering/manufacturing process is needed to order the ToFnLED from PCBWay. For housing compatibility do **not** add the backside connector.
+
+> [!Note] Conformal coating the PCB is highly recommended for longevity. This can be done as part of the PCB assembly process or manually post-assembly.
 
 <!-- tabs:start -->
 <!-- tab:PCB -->
@@ -76,9 +79,17 @@ Run the Qwiic cable down through the gap on the right side of the machine sheet 
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256464601-0d54fd7a-0f65-495e-8169-83fe9bd14a53.png">
 
-# Extra Defines
+# Software Changes
 
-The ToF and LED elements need to be enabled in the code. To do so, create a file in the project folder called "extra_defines.ini"  
+<!-- tabs:start -->
+<!-- tab:Gen 3 -->
+
+Flash core (the MCU) with the applicable binary (.bin) file per [MCU Flashing](guides-stm32/mcu-flashing.md).
+
+Select a color and intensity via WebUI or on the screen (certain combinations of colors and themes may reduce control visibility on the screen)
+
+<!-- tab:Gen 2 -->
+Create a file in the project folder called "extra_defines.ini"  
 The exact contents of the file depend on your system build, but it will look something like this (green lines are commented out and inactive). 
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/256468372-14e57794-6ded-4bc1-a641-921cd4c6ca58.png">
@@ -105,6 +116,7 @@ build_flags =
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/274979976-ae9f02ab-8c61-438e-81ea-adfabdff183b.png">
 
 </details>
+<!-- tabs:end -->
 
 >
 # Troubleshooting

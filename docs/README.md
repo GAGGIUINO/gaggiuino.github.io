@@ -108,7 +108,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 2. **Determine your build path.** 
 
-  Decide if you're going to order a [PCB](guides-stm32/pcb-guide.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. PCBv4 is recommended for new Gen 3 builds, while PCBv3.1 is recommended for Gen 2 builds. The component build is slightly more flexible for experimentation and less picky about thermocouple grounding, however, it adds significant effort and makes reliability dependent on the maker's skill. 
+  Decide if you're going to order a [PCB](guides-stm32/pcb-guide.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. PCBv4 is recommended for new Gen 3 builds, while PCBv3.1 is recommended for Gen 2 builds (see [Features](#features) and [Announcements](announcements/) to compare Gen 2 and Gen 3). The component build is slightly more flexible for experimentation and less picky about thermocouple grounding, however, it adds significant effort and makes reliability dependent on the maker's skill. 
 
   Decide how to integrate the control system with your espresso machine. It can either be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring, but sometimes more confusing) or the stock wiring can be replaced with a [custom wiring harness](guides-stm32/3pln-custom-wiring.md) (more work, but results in a clean, straightforward install). It is recommended that you check the notes in the [Compatibility Table](#compatibility) for your machine and and read through the instructions before deciding.
 
@@ -168,7 +168,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 <!-- tab:STM32 PCB -->
 * **PCB (Pick one)**
   * **PCBv4 (recommended, available at approved suppliers)**
-  * [PCBv3 *(custom order)*](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V3) and [BlackPill | F411 25M HSE *(make sure the proper version is selected)*](https://www.aliexpress.com/item/1005001456186625.html)
+  * [PCBv3 *(custom order)*](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V3) and [STM32U585CIU6 *(for Gen 3)*](https://www.aliexpress.com/item/3256807730943902.html) or [BlackPill | F411 25M HSE *(for Gen 2)*](https://www.aliexpress.com/item/1005001456186625.html)
 * [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
 * [Ungrounded Thermocouple Sensor | K-type, M4, 0.5 m long](https://www.aliexpress.com/item/3256805310471537.html)
 * [SSR-40DA Relay](https://www.aliexpress.com/item/3256806134543825.html)
@@ -182,7 +182,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [Flat gasket/o-ring | 1|4 inch pipe (11 x 6 mm), 3 mm thick](https://www.aliexpress.com/item/2255799841120591.html)
 
 <!-- tab:STM32 LEGO -->
-* [STM32F411CEU6 | F411 25M HSE](https://www.aliexpress.com/item/1005001456186625.html) **MAKE SURE THE PROPER BOARD IS SELECTED**
+* [STM32U585CIU6 *(for Gen 3)*](https://www.aliexpress.com/item/3256807730943902.html) or [BlackPill | F411 25M HSE *(for Gen 2)*](https://www.aliexpress.com/item/1005001456186625.html)
 * [ST-Link-STM32](https://www.aliexpress.com/item/1005005303809188.html)
 * [Arduino Nano expansion board](https://www.aliexpress.com/item/32325724150.html) **GET THE GREEN ONE**
 * [ADS1115](https://www.aliexpress.com/item/32869421559.html)
@@ -241,7 +241,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 <!-- tabs:start -->
 <!-- tab:Gen 3 -->
-* 4.3" ESP32-S3 Screen **- must be activated by [PeakCoffee](https://www.peakcoffee.cc/product/4-3-iot-gaggiuino-lcd/) or [DIY-EFI](https://diy-efi.co.uk/product/gaggiuino_esp32_43_screen)**
+* 4.3" ESP32-S3 Screen & cable - **must be activated by [PeakCoffee](https://www.peakcoffee.cc/product/4-3-iot-gaggiuino-lcd/) or [DIY-EFI](https://diy-efi.co.uk/product/gaggiuino_esp32_43_screen)**
 
 <!-- tab:Gen 2 -->
 * [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html) **+ MicroSD card (Class 10 HC 2GB to 32GB)**

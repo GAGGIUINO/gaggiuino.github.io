@@ -14,11 +14,11 @@
 
 ## Development Lifecycle
 >
-Gen| Microcontroller (MCU)                  | Screen/UI| Compatible Builds                                                     | Release Date       |Dev Stop | Current Support  | 
-:-:|----------------------------------------|----------|-----------------------------------------------------------------------|--------------------|---------|:----------------:|
-1  |ATmega328<br/> (Arduino Nano)           |Nextion   |**Component (Lego)**<br/>PCBv1<br/>(MainBoard + SubBoard)              | 2021               |June 2022|:x:               |
-2  |STM32F411CEU6                           |Nextion   |Component (Lego)<br/>PCBv2 / PCBv2.1 :warning:<br/>PCBv3 / **PCBv3.1**           | June 2022          |July 2023|:heavy_check_mark:| 
-3  |STM32F411CEU6 (OC)<br/>**STM32U585CIU6**|ESP32-S3<br/>(Embedded & Web)|Component (Lego)<br/>PCBv2 / PCBv2.1 :warning:<br/>PCBv3 / PCBv3.1<br/>**PCBv4**|September 2024|         |:heavy_check_mark:|     
+Gen| Microcontroller (MCU)                  | Screen/UI| Compatible Builds                                                     |Beta    | Release  |Last Commit   | Current Support  | 
+:-:|:---------------------------------------|:--------:|:----------------------------------------------------------------------|:------:|:--------:|:------------:|:----------------:|
+1  |ATmega328<br/> (Arduino Nano)           |Nextion   |**Component (Lego)**<br/>PCBv1<br/>(MainBoard + SubBoard)              |2021    | -        |Sep 2022      |:x:               |
+2  |STM32F411CEU6                           |Nextion   |Component (Lego)<br/>PCBv2 / PCBv2.1 :warning:<br/>PCBv3 / **PCBv3.1** |Jul 2022| May 2023 |Mar 2024      |:heavy_check_mark:| 
+3  |STM32F411CEU6 (OC)<br/>**STM32U585CIU6**|ESP32-S3<br/>(Embedded & Web)|Component (Lego)<br/>PCBv2 / PCBv2.1 :warning:<br/>PCBv3 / PCBv3.1<br/>**PCBv4**|May 2024|Sep 2024|-|:heavy_check_mark:|     
 
 >
 * :warning: - *PCBv2 / PCBv2.1 are compatible but support is minimal.*

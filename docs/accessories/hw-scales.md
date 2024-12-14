@@ -9,6 +9,10 @@ If extreme experimentation with beans, grinds, or shot profiles is your fetish i
 
 # Bill of Materials
 
+> [!TIP|style:callout|label:Sourcing|iconVisibility:visible]
+> PCBs, kits, and 3D-printed parts may be ordered from the **Approved Official Suppliers** in the sidebar.  
+> Alternatively, components can be ordered individually and parts can be printed from the design files. 
+
 ## Components
 
 There are two options for HX711 boards - buying two HX711 boards from AliExpress or using the dualScaleBoard (sometimes called the SingleHX711Board).
@@ -273,6 +277,36 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
 # Flashing/Calibration
 
+
+<!-- tabs:start -->
+<!-- tab:Gen 3 -->
+
+1. Enter calibration menu
+
+    Go to [gaggiuino.local](http://gaggiuino.local/), then navigate to **SETTINGS**, **SCALES**, and then click **CALIBRATE**
+
+    <img width="500" alt="image" src="https://github.com/user-attachments/assets/c120b6d2-3a97-42e5-9bd1-bd1d96d96f4f">
+
+2. Unscrew both load plates, keeping track of which screws are more magnetic. You'll use the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration load (in this case a 318.5 g tamper). Weigh the calibration load plate and load **together** on a scale to get the calibration weight - ideal calibration weight is in the 200-400g range. 
+
+    <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/275450371-a6c50ca3-95ef-46df-9e21-6bb3e654535e.png">
+
+    <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110291-ae8bf438-a692-4b89-b511-8ef8073f1065.png">
+
+    To calibrate:
+    - Tare (with load cells empty)
+    - Place the calibration load plate and load on one load cell
+    - Compare the reported weight value to the total calibration weight
+    - Remove the calibration load plate and load
+    - Type (or use the +/- buttons) to adjust the load cell calibration factor, then wait for the "Updated running settings" message (scales will auto-tare)
+    - Repeat on the same load cell until the weight value matches the calibration weight, then switch to the other load cell. 
+    - Click Save  
+
+> [!NOTE|style:callout|label:Weight must be positive|iconVisibility:visible]
+> Make sure the **weight value (grams) is positive** - due to the mirrored load cell orientation one load cell calibration factor will likely be negative.  
+
+<!-- tab:Gen 2 -->
+
 1. Build and flash the scales calibration task
 
 <!-- tabs:start -->
@@ -305,19 +339,22 @@ build_flags =
 Use the appropriate scales-calibration task to upload to the STM32 and copy scales-calibrate TFT onto a microSD card to flash the Nextion. You should see this show up on the screen (with numbers). If there are no numbers your screen-STM32 connection is likely bad or an incorrect task was flashed.
 
 <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257109779-2888a68b-7131-4243-824b-c43cc3ac4b8c.png">
+
 <!-- tabs:end -->
 
-2. Unscrew the load plates and replace with the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration weight (in this case a 318.5 g tamper). Ideal calibration weight is in the 200-400g range.
+2. Unscrew the load plates and replace with the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration load (in this case a 318.5 g tamper). Weigh the calibration load plate and load **together** on a scale to get the calibration weight - ideal calibration weight is in the 200-400g range. 
 
     <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/275450371-a6c50ca3-95ef-46df-9e21-6bb3e654535e.png">
 
     <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110291-ae8bf438-a692-4b89-b511-8ef8073f1065.png">
 
-    To calibrate, use the adjustment value and +/- buttons to adjust the scale factors until the weight output in grams matches the real weight. One scale factor will likely be negative to make the output in grams positive. Take a pic or copy down the scale factors.
+    To calibrate, use the adjustment value and +/- buttons to adjust the scale factors until the weight output in grams matches the calibration weight (load + calibration load plate). One scale factor will likely be negative to make the output in grams positive. Take a pic or copy down the scale factors.
 
 3. Once calibrated, flash the regular build back onto the screen and STM32. Copy the scale factors into the LC1 and LC2 Factors and click Save. After saving, reboot the machine to load the new LC factors.
 
     <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110664-fd0f6aa1-aefe-4a6d-b167-12183f9d1b87.png">
+
+<!-- tabs:end -->
 
 4. Add the drip tray / drip tray adapter. Congrats, your machine has a scale!
 
