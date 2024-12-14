@@ -287,20 +287,19 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
     <img width="500" alt="image" src="https://github.com/user-attachments/assets/c120b6d2-3a97-42e5-9bd1-bd1d96d96f4f">
 
-2. One at a time, unscrew the load plates. You'll use the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration load (in this case a 318.5 g tamper). Ideal calibration weight is in the 200-400g range. 
+2. Unscrew both load plates, keeping track of which screws are more magnetic. You'll use the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration load (in this case a 318.5 g tamper). Weigh the calibration load plate and load **together** on a scale to get the calibration weight - ideal calibration weight is in the 200-400g range. 
 
     <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/275450371-a6c50ca3-95ef-46df-9e21-6bb3e654535e.png">
 
     <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110291-ae8bf438-a692-4b89-b511-8ef8073f1065.png">
 
     To calibrate:
-    - Weigh the calibration load plate and load together to get the calibration weight
-    - Tare with load cells empty
-    - Place calibration load plate and load
+    - Tare (with load cells empty)
+    - Place the calibration load plate and load on one load cell
     - Compare reported weight to the total calibration weight
     - Remove the calibration load plate and load
-    - Type (or use the +/- buttons) to adjust the scale factor, then wait for the "Updated running settings" message (it will auto-tare)
-    - Repeat on each side until the weight output in grams matches the calibration weight. One scale factor will likely be negative to make the output in grams positive.
+    - Type (or use the +/- buttons) to adjust the scale factor, then wait for the "Updated running settings" message (scales will auto-tare)
+    - Repeat on the same load cell until the weight value (grams) matches the calibration weight, then switch to the other load cell. One load cell calibration factor will likely be negative to make the weight value positive.
     - Click Save
 
 <!-- tab:Gen 2 -->
@@ -340,13 +339,13 @@ Use the appropriate scales-calibration task to upload to the STM32 and copy scal
 
 <!-- tabs:end -->
 
-2. Unscrew the load plates and replace with the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration load (in this case a 318.5 g tamper). Ideal calibration weight is in the 200-400g range.
+2. Unscrew the load plates and replace with the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration load (in this case a 318.5 g tamper). Weigh the calibration load plate and load **together** on a scale to get the calibration weight - ideal calibration weight is in the 200-400g range. 
 
     <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/275450371-a6c50ca3-95ef-46df-9e21-6bb3e654535e.png">
 
     <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110291-ae8bf438-a692-4b89-b511-8ef8073f1065.png">
 
-    To calibrate, use the adjustment value and +/- buttons to adjust the scale factors until the weight output in grams matches the real weight (load + calibration load plate). One scale factor will likely be negative to make the output in grams positive. Take a pic or copy down the scale factors.
+    To calibrate, use the adjustment value and +/- buttons to adjust the scale factors until the weight output in grams matches the calibration weight (load + calibration load plate). One scale factor will likely be negative to make the output in grams positive. Take a pic or copy down the scale factors.
 
 3. Once calibrated, flash the regular build back onto the screen and STM32. Copy the scale factors into the LC1 and LC2 Factors and click Save. After saving, reboot the machine to load the new LC factors.
 
