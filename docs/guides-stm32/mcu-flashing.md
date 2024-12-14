@@ -104,7 +104,7 @@ Make sure **Verify programming** is selected and **Skip flash erase before progr
 
 > [!Warning|style:callout|label:Warning|iconVisibility:visible]
 > * ESP32 systems **must be enabled by official suppliers** to work with Gaggiuino Gen 3.  
-> * Core OTA is compatible with STM32**U585** only (PCBv4 and systems with uPill or WeAct U585 Core Board). Sometimes those PCBs may need to be flashed with STM32CubeProgrammer - this will be stated in the release notes if necessary. 
+> * Core OTA is compatible with STM32**U585** only (PCBv4 and systems with uPill or WeAct U585 Core Board). Sometimes the U585 may need to be flashed with STM32CubeProgrammer - this will be stated in the release notes if necessary. 
 
 1. Identify the file(s) to flash from [Releases](#Releases).  
 

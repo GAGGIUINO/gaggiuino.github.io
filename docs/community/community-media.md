@@ -5,20 +5,31 @@
 
 ## Community Speaks
 
+> [!Note|style:callout|label:Video Note|iconVisibility:visible]
+> Videos are from the Gaggiuino community and showcase some of the capabilities and impressions of the project.  
+> **They should not be referenced for installation techniques, technical data, or seen as feature documentation** as the project is still in active development and video accuracy has not been verified.
+
 <!-- panels:start -->
 <!-- div:left-panel -->
-?> Lance Hedrick review
-<iframe width="560" height="315" src="https://www.youtube.com/embed/V4pTFCGVlmQ" title="GAGGIUINO BUILD LOG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+?> Gaggiuino Gen 3 | Lance Hedrick
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UaC4IQO2WCk" title="Ultimate Budget Espresso Machine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- div:right-panel -->
-
-?> Gaggiuino vs Decent | User review
-<iframe width="560" height="315" src="https://www.youtube.com/embed/V4kAgPm1Xfw" title="GAGGIUINO vs Decent" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+?> Gaggiuino Gen 2 | Lance Hedrick
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V4pTFCGVlmQ" title="GAGGIUINO BUILD LOG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- panels:end -->
 
-?> Community menber setup
+<!-- panels:start -->
+<!-- div:left-panel -->
+?> Gaggiuino vs Decent | User review
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V4kAgPm1Xfw" title="GAGGIUINO vs Decent" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!-- div:right-panel -->
+?> Community member setup
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ERGxo8fYc5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!-- panels:end -->
 
 <details>
 
