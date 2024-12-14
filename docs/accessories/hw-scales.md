@@ -296,11 +296,14 @@ Print files are available on [Printables](https://www.printables.com/model/28537
     To calibrate:
     - Tare (with load cells empty)
     - Place the calibration load plate and load on one load cell
-    - Compare reported weight to the total calibration weight
+    - Compare the reported weight value to the total calibration weight
     - Remove the calibration load plate and load
-    - Type (or use the +/- buttons) to adjust the scale factor, then wait for the "Updated running settings" message (scales will auto-tare)
-    - Repeat on the same load cell until the weight value (grams) matches the calibration weight, then switch to the other load cell. One load cell calibration factor will likely be negative to make the weight value positive.
-    - Click Save
+    - Type (or use the +/- buttons) to adjust the load cell calibration factor, then wait for the "Updated running settings" message (scales will auto-tare)
+    - Repeat on the same load cell until the weight value matches the calibration weight, then switch to the other load cell. 
+    - Click Save  
+
+> [!NOTE|style:callout|label:Weight must be positive|iconVisibility:visible]
+> Make sure the **weight value (grams) is positive** - due to the mirrored load cell orientation one load cell calibration factor will likely be negative.  
 
 <!-- tab:Gen 2 -->
 
