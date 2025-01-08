@@ -302,5 +302,19 @@ If a stop condition is configured and triggered, the profile transitions to the 
 - **Water pumped [ml]:** Switch to the next profile phase if the amount of water pumped exceeds the configured value. 
 
 ### Transition
-- **Curve**: Choose a transition curve for the profile stages. A description of the available transitions can be found [here](https://gaggiuino.github.io/#/learning/user-manual?id=easing).
+- **Curve**: Choose a transition curve for the profile stages. 
+- *Ease-In* : Slow start to rapid end.
+<img alt="In" src="manual/gen2/ease_in.png">
+
+- *Ease-Out* : Rapid start to slow end.
+<img  alt="Out" src="manual/gen2/ease_out.png">
+
+- *Ease-In-Out* : Slow start to slow end.
+<img  alt="In Out" src="manual/gen2/ease_in_out.png">
+
+- *Linear* : Consistent rate of change.
+<img  alt="Linear" src="manual/gen2/ease_linear.png">
+
+- *Instant* : Instant change.
+<img  alt="Instant" src="manual/gen2/ease_instant.png">
 
