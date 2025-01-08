@@ -11,7 +11,8 @@
 * __Useful:__
 * - [Announcements](announcements/)
 * - [Community Portal](community/community-media.md)
-* - [User Manual](learning/user-manual.md)
+* - [User Manual Gen 2](learning/user-manual-gen2.md)
+* - [User Manual Gen 3](learning/user-manual-gen3.md)
 * - [Recommendations](learning/learning-sources.md)
 * - [Example tools](learning/example-tools.md)
 * - [Wiring basics](learning/wiring-basics.md)

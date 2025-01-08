@@ -6,9 +6,9 @@
 # Home screen
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
-<img alt="Home embedded" src="manual-gen3/mbed/001_000_home.png">
+<img alt="Home embedded" src="manual/gen3/mbed/001_000_home.png">
 <!-- tab:Web UI -->
-<img alt="Home web" src="manual-gen3/web/001_000_home.png">
+<img alt="Home web" src="manual/gen3/web/001_000_home.png">
 <!-- tabs:end -->
 
 - **Profile selection:** Shows the available profiles. The active profile is highlighted in color (e.g. 'IUIUIU Classic'). The field can be swiped horizontally, to access additional profiles.
@@ -65,11 +65,11 @@ If the TofnLED board is installed, the descale cycle will stop automatically whe
 
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
-<img alt="Descaling embedded" src="manual-gen3/mbed/001_004_descale.png">
+<img alt="Descaling embedded" src="manual/gen3/mbed/001_004_descale.png">
 
 - **Pause:** Pause the descaling.
 <!-- tab:Web UI -->
-<img alt="Shot in progress web" src="manual-gen3/web/001_004_descaling.png">
+<img alt="Shot in progress web" src="manual/gen3/web/001_004_descaling.png">
 
 - **Elapsed time:** Shows for how long descaling has been active.
 <!-- tabs:end -->
@@ -83,11 +83,11 @@ If the TofnLED board is installed, the descale cycle will stop automatically whe
 When a shot is started the live data is displayed. The time axis scales automatically. If scales are installed, the weight in the cup is shown.
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
-<img alt="Shot in progress embedded" src="manual-gen3/mbed/001_001_shot_in_progress.png">
+<img alt="Shot in progress embedded" src="manual/gen3/mbed/001_001_shot_in_progress.png">
 
 - **Tare:** (Hardware scales are tared automatically when a shot is started.) Tare the scales by tapping the circle in the top right hand corner of the screen. If you are using predictive scales and weight is greater than 0g, even though there is no liquid in the cup, press the tare button when the first drops land in the cup.
 <!-- tab:Web UI -->
-<img alt="Shot in progress web" src="manual-gen3/web/001_001_shot_in_progress.png">
+<img alt="Shot in progress web" src="manual/gen3/web/001_001_shot_in_progress.png">
 <!-- tabs:end -->
 
 ## Shot history
@@ -97,12 +97,12 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
-<img alt="Shot history embedded" src="manual-gen3/mbed/001_002_shot_history.png">
+<img alt="Shot history embedded" src="manual/gen3/mbed/001_002_shot_history.png">
 
 - **Older shots:** Tap on the right arrow key to load older shots.
 - **More recent shots:** Tap on the left arrow key to load more recent shots.
 <!-- tab:Web UI -->
-<img alt="Shot history web" src="manual-gen3/web/001_002_shot_history.png">
+<img alt="Shot history web" src="manual/gen3/web/001_002_shot_history.png">
 
 - **Load more:** Tap on the button to load older shots.
 <!-- tabs:end -->
@@ -111,10 +111,10 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
-<img alt="Shot graph embedded" src="manual-gen3/mbed/001_003_shot_review.png">
+<img alt="Shot graph embedded" src="manual/gen3/mbed/001_003_shot_review.png">
 
 <!-- tab:Web UI -->
-<img alt="Shot graph web" src="manual-gen3/web/001_003_shot_review.png">
+<img alt="Shot graph web" src="manual/gen3/web/001_003_shot_review.png">
 
 - **Menu:** Tap on the icon to open the menu.
 - **Name and date:** Shows the name of the profile and the date the shot was recorded.
@@ -131,10 +131,10 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
-<img alt="Settings embedded" src="manual-gen3/mbed/003_000_settings_boiler.png">
+<img alt="Settings embedded" src="manual/gen3/mbed/003_000_settings_boiler.png">
 
 <!-- tab:Web UI -->
-<img alt="Settings web" src="manual-gen3/web/003_000_settings_boiler.png">
+<img alt="Settings web" src="manual/gen3/web/003_000_settings_boiler.png">
 <!-- tabs:end -->
 
 - **Steam Temperature [°C]:** Set the default temperature for steaming. This setting applies for all profiles.
@@ -151,10 +151,10 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 ## System
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
-<img alt="Settings embedded" src="manual-gen3/mbed/003_002_settings_system.png">
+<img alt="Settings embedded" src="manual/gen3/mbed/003_002_settings_system.png">
 
 <!-- tab:Web UI -->
-<img alt="Settings web" src="manual-gen3/web/003_002_settings_system.png">
+<img alt="Settings web" src="manual/gen3/web/003_002_settings_system.png">
 
 - **(Experimental) brewiu.io/sprofiler.io API key:** Reqiured to upload your shot to [SproFiler](https://sprofiler.io). For instructions on how to register and use SproFiler join the [Gaggiuino Discord](https://discord.com/channels/890339612441063494/1289578499581149204).
 
@@ -169,9 +169,9 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 ### LCD Settings
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
-<img alt="Settings embedded" src="manual-gen3/mbed/003_003_settings_display.png">
+<img alt="Settings embedded" src="manual/gen3/mbed/003_003_settings_display.png">
 <!-- tab:Web UI -->
-<img alt="Settings embedded" src="manual-gen3/web/003_003_settings_display.png">
+<img alt="Settings embedded" src="manual/gen3/web/003_003_settings_display.png">
 <!-- tabs:end -->
 
 - **Brightness:** Adjust the brightness of the LCD screen.
@@ -187,9 +187,9 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 ### Hardware Scales
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
-<img alt="Settings scales embedded" src="manual-gen3/mbed/003_004_settings_scales.png">
+<img alt="Settings scales embedded" src="manual/gen3/mbed/003_004_settings_scales.png">
 <!-- tab:Web UI -->
-<img alt="Settings scales web" src="manual-gen3/web/003_004_settings_scales.png">
+<img alt="Settings scales web" src="manual/gen3/web/003_004_settings_scales.png">
 <!-- tabs:end -->
 
 - **Enabled:** Enable hardware scales if installed.
@@ -204,9 +204,9 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 ## LED
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
-<img alt="Settings LED embedded" src="manual-gen3/mbed/003_005_settings_led.png">
+<img alt="Settings LED embedded" src="manual/gen3/mbed/003_005_settings_led.png">
 <!-- tab:Web UI -->
-<img alt="Settings LED web" src="manual-gen3/web/003_005_settings_led.png">
+<img alt="Settings LED web" src="manual/gen3/web/003_005_settings_led.png">
 <!-- tabs:end -->
 
 - **Enable:** Enable the LED light if installed.
@@ -216,11 +216,11 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 ## About/Update
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
-<img alt="Settings about embedded" src="manual-gen3/mbed/003_006_settings_about.png">
+<img alt="Settings about embedded" src="manual/gen3/mbed/003_006_settings_about.png">
 
 - **Firmware Versions:** Shows the firmware versions of the MCU (Core), Embedded UI, i.e. the screen/headless module (Mbed) and Web UI (Web).
 <!-- tab:Web UI -->
-<img alt="Settings update web" src="manual-gen3/web/003_006_settings_ota_update.png">
+<img alt="Settings update web" src="manual/gen3/web/003_006_settings_ota_update.png">
 
 - **Over The Air (OTA) update:** Detailed instructions on how to update your Gaggiuino can be found [here](https://gaggiuino.github.io/#/guides-stm32/mcu-flashing).
 - **Firmware Versions:** Shows the firmware versions of the MCU (Core), Embedded UI, i.e. the screen or headless module (Mbed) and Web UI (Web).
@@ -233,11 +233,11 @@ If you have made a change to the settings, a save icon will appear in the left h
 # Profiles 
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
-<img alt="Profiles embedded" src="manual-gen3/mbed/002_000_profiles.png">
+<img alt="Profiles embedded" src="manual/gen3/mbed/002_000_profiles.png">
 
 - **Available profiles:** Tap on a name to select the active profile (a preview of the selected profile is shown). The selected profile is highlighted in color. 
 <!-- tab:Web UI -->
-<img alt="Profiles web" src="manual-gen3/web/002_000_profiles.png">
+<img alt="Profiles web" src="manual/gen3/web/002_000_profiles.png">
 
 - **Available profiles:** Tap on a name to select the active profile (a preview of the selected profile is shown). The selected profile is highlighted in color. To change the order of the profiles, tap the 4 lines and drag the profile to the desired position in the list. 
 - **Import:** Import a profile. The default and additional profiles can be downloaded from the [Gaggiuino Discord](https://discord.gg/gaggiuino). 
@@ -257,9 +257,9 @@ If you have made a change to the settings, a save icon will appear in the left h
 ## Global profile settings
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
-<img alt="Profiles global settings embedded" src="manual-gen3/mbed/002_001_profiles_edit_global_settings.png">
+<img alt="Profiles global settings embedded" src="manual/gen3/mbed/002_001_profiles_edit_global_settings.png">
 <!-- tab:Web UI -->
-<img alt="Profiles global settings web" src="manual-gen3/web/002_001_profiles_edit_global_settings.png">
+<img alt="Profiles global settings web" src="manual/gen3/web/002_001_profiles_edit_global_settings.png">
 <!-- tabs:end -->
 
 - **Name:** Edit the profile name.
@@ -276,10 +276,10 @@ If you have made a change to the settings, a save icon will appear in the left h
 ## Phase settings
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
-<img alt="Profiles phase settings embedded" src="manual-gen3/mbed/002_002_profiles_edit_phase.png"> 
+<img alt="Profiles phase settings embedded" src="manual/gen3/mbed/002_002_profiles_edit_phase.png"> 
 
 <!-- tab:Web UI -->
-<img alt="Profiles phase settings web" src="manual-gen3/web/002_002_profiles_edit_phase.png"> 
+<img alt="Profiles phase settings web" src="manual/gen3/web/002_002_profiles_edit_phase.png"> 
 <!-- tabs:end -->
 
 - **Phase characteristic:** Either the configured pressure or flow are the target for the phase. The target/primary variable is displayed as a solid line while the secondary variable is a dotted line. 

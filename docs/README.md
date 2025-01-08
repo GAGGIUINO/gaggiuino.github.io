@@ -153,7 +153,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 
   Record your first start. Post this to [#first-start](https://discord.com/channels/890339612441063494/919183771079692328) on Discord.  
   Record your first shot. Post this to [#first-shot](https://discord.com/channels/890339612441063494/910972035205857320) on Discord.  
-  Read the [User Manual](learning/user-manual.md) for more information on the machine capabilities.  
+  Read the [User Manual Gen 2](learning/user-manual-gen2.md) or [User Manual Gen 3](learning/user-manual-gen3.md) for more information on the machine capabilities.  
   Check out [Espresso Aficionados](https://espressoaf.com/guides/profiling.html) for info on profiling that you can now implement!  
 
 <!-- panels:start -->
