@@ -1,9 +1,4 @@
-# User Manual Gen3 (Next Monday™)
-
-> [!NOTE]
-> This page is a work in progress.
-
-# Home screen
+# Home
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
 <img alt="Home embedded" src="manual/gen3/mbed/001_000_home.png">
@@ -11,33 +6,44 @@
 <img alt="Home web" src="manual/gen3/web/001_000_home.png">
 <!-- tabs:end -->
 
-- **Profile selection:** Shows the available profiles. The active profile is highlighted in color (e.g. 'IUIUIU Classic'). The field can be swiped horizontally, to access additional profiles.
-- **Edit profile:** Edit and create new profiles.
-- **Save profile:** Save the current profile (e.g. after changing the brew temperature, shot weight). This also saves the currently selected profile, as the startup profile.
+- **Home**: Navigate to the [Home](/learning/user-manual-gen3.md#Home) screen.
 
-<!-- tabs:start -->
-<!-- tab:Embedded UI -->
-- **Shot history:** Tap the list icon on the left side of the screen or swipe up in the profile selection to display the shot history (shot history is only available when an SD card is inserted).
-- **Temperature:** The top value is the current boiler temperature in Celsius. At the bottom (colored background) is the setpoint temperature of the current profile. The setpoint temperature can be changed by tapping and holding the setpoint value and swiping up or down.
-- **Shot weight:** Shows the shot weight in grams for the current profile. The weight can be adjusted in 1g increments by tapping the '+' and '-' buttons. By tapping the weight field a numpad is shown to put in a weight value.
+- **Settings**: Navigate to the [Settings](/learning/user-manual-gen3.md#Settings) screen.
 
-<!-- tab:Web UI -->
-- **Shot history:** Tap the field to display the shot history (shot history is only available when an SD card is inserted).
-- **Temperature:** The top value is the current boiler temperature in Celsius. At the bottom (colored background) is the setpoint temperature of the current profile. The setpoint temperature can be adjusted by tapping the '+' and '-' fields or tapping on the input field.
-- **Shot weight:** Shows the shot weight in grams for the current profile. The weight can be adjusted in the global profile settings.
-<!-- tabs:end -->
+- **Shot History**: Navigate to the [Shot History](/learning/user-manual-gen3.md#ShotHistory) screen. The screen can be swiped upward, to access Shot History.
+> [!NOTE]
+> Shot history is only available when an SD card is inserted.
 
-- **Settings:** Tap on the cog wheel icon to go into the settings menu.
-- **Home:** Tap on the home icon to get to the profile selection and profile preview screen.
-- **Profile preview:** Shows a preview of the selected profile.
-- **Pressure:** Shows the current system pressure in Bar.
-- **Tank level:** If the TofnLED board is installed, the current water level in the water tank is shown in percent. When the water level is below 20%, a notification is displayed to fill the water tank. When no TofnLED board is installed, the graph permanently shows the maximum water level.
-- **System uptime:** Shows for how long the machine has been switched on.
-- **Weight:** If hardware scales are installed or Bluetooth scales connected, the current weight of the scales is shown in grams. The scales can be tared by tapping the current weight field. (Note: the scales tare automatically, when a shot is started.)
-- **Flush:** Tap the flush button to activate flush mode. The grey circle inside the button will light up green. Flushing can now be activated with the **brew** switch. Tap the flush button again to deactivate flush mode.
+- **Profile Preview**: Shows a preview of the selected profile.
+
+- **Profile Selection**: Shows the available profiles. The active profile is highlighted in color (e.g. 'IUIUIU Classic'). The field can be swiped horizontally, to access additional profiles.
+
+- **Edit Erofile**: Edit and create new profiles.
+
+- **Save Profile**: Save the current profile (e.g. after changing the brew temperature, shot weight). This also saves the currently selected profile, as the startup profile.
+
+- **Temperature**: Current boiler temperature in Celsius. 
+
+- **Target Temperature**: Target temperature of the current profile. On the Embedded UI setpoint temperature can be changed by tapping and holding the setpoint value and swiping up or down.
+
+- **Pressure**: Shows the current system pressure in Bar.
+
+- **Tank level**: If an [TofnLED](/accessories/tofnled.md) is installed, the current water level in the water tank is shown in percent. When the water level is below 20%, a notification is displayed to fill the water tank. When no TofnLED board is installed, the graph permanently shows the maximum water level.
+
+- **System uptime**: Shows for how long the machine has been switched on.
+
+- **Shot weight**: Shows the shot weight in grams for the current profile. On the embedded UI the weight can be adjusted temporarily in 1g increments by tapping the '+' and '-' buttons or by tapping the weight field and using the number pad.
+
+- **Weight**: If hardware scales are installed or Bluetooth scales connected, the current weight of the scales is shown in grams. The scales can be tared by tapping the current weight field. 
+> [!NOTE]
+> The scales tare automatically, when a shot is started.
+
+- **Flush**: Tap the flush button to activate flush mode. The grey circle inside the button will light up green. Flushing can now be activated with the **brew** switch. Tap the flush button again to deactivate flush mode.
 Tap and hold the button to perform a 5s flush. The grey circle will light up blue. The flush can be stopped by tapping the button again.
 
-## Cleaning 
+- **Descale**: Descale the machine.
+
+# Cleaning 
 
 ### Back flushing
 
@@ -78,7 +84,7 @@ If the TofnLED board is installed, the descale cycle will stop automatically whe
 - **Progress bar:** The progress of the descaling.
 - **Close:** Close the descale progress view. (The descaling will continue.)
 
-## Shot in progress
+# Shot in progress
 
 When a shot is started the live data is displayed. The time axis scales automatically. If scales are installed, the weight in the cup is shown.
 <!-- tabs:start -->
@@ -90,7 +96,7 @@ When a shot is started the live data is displayed. The time axis scales automati
 <img alt="Shot in progress web" src="manual/gen3/web/001_001_shot_in_progress.png">
 <!-- tabs:end -->
 
-## Shot history
+# Shot History
 
 The recorded shot graphs are shown in a list. The shots are shown with a serial number, name, date and time and duration. Tap on an entry in the available shots to view a shot graph.
 > [!NOTE] The date and time will only display correctly, if Gaggiuino is connected to the Internet.
@@ -107,7 +113,7 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 - **Load more:** Tap on the button to load older shots.
 <!-- tabs:end -->
 
-### Shot graph 
+### Shot Graph 
 
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
@@ -127,7 +133,7 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 
 # Settings
 
-## Boiler
+### Boiler
 
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
@@ -148,7 +154,7 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
     - *Brew Diviver:* Brew cycle divider.
 
 
-## System
+### System
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
 <img alt="Settings embedded" src="manual/gen3/mbed/003_002_settings_system.png">
@@ -164,7 +170,7 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 - **Timezone offset [min]:** Set an offset for your current time zone.
 - **WiFi:** Connect your Gaggiuino to a local WiFi network. If Gaggiuino is connected to the Internet, it will retrieve the current date and time. If Gaggiuino is not connected to a network, it acts as a WiFi access point named: *Gaggiuino AP*. The password is the network name with a zero substituted for the "o" and the space removed.
 
-## Display
+### Display
 
 ### LCD Settings
 <!-- tabs:start -->
@@ -182,7 +188,7 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 - **Theme:** Choose a color scheme for the UI.
 - **Accent:** Choose an accent color for the UI.
 
-## Scales
+### Scales
 
 ### Hardware Scales
 <!-- tabs:start -->
@@ -213,7 +219,7 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 - **Brew Disco/Disco mode:** Brew in style.
 - **LED Color:** Choose the LED color and brightness.
 
-## About/Update
+## About / Update
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
 <img alt="Settings about embedded" src="manual/gen3/mbed/003_006_settings_about.png">
