@@ -7,15 +7,14 @@
     * - [Espressio __(NLD)__](https://gaggiuino.espressio.nl/)
     * - [Hudson Creative Group __(USA)__](https://gaggiuino.hudsoncreativegroup.com/)
 * __TOOLS:__
-* - [Restore __ui-web.bin__](https://gaggiuino.github.io/restore.html)
+  - [Restore __ui-web.bin__](https://gaggiuino.github.io/restore.html)
 * __Useful:__
-* - [Announcements](announcements/)
-* - [Community Portal](community/community-media.md)
-* - [User Manual Gen 2](learning/user-manual-gen2.md)
-* - [User Manual Gen 3](learning/user-manual-gen3.md)
-* - [Recommendations](learning/learning-sources.md)
-* - [Example tools](learning/example-tools.md)
-* - [Wiring basics](learning/wiring-basics.md)
+  - [Announcements](announcements/)
+  - [Community Portal](community/community-media.md)
+  - [User Manual Gen 3](learning/user-manual-gen3.md)
+  - [Recommendations](learning/learning-sources.md)
+  - [Example tools](learning/example-tools.md)
+  - [Wiring basics](learning/wiring-basics.md)
 * __Install Guides:__
     * [Control A: **PCB**](guides-stm32/pcb-guide.md)
     * [Control B: **Component (Lego) Build**](guides-stm32/lego-component-build-guide.md)
@@ -32,3 +31,4 @@
     * [Lego Independent Relay and Dimmer](guides-upgrade/lego-independent-relay-dimmer.md)
     * [Lego Nano to STM32 Upgrade](guides-upgrade/nano-to-stm32.md)
 * [__Archive__](archive/archive.md)
+ - [User Manual Gen 2](learning/user-manual-gen2.md)
