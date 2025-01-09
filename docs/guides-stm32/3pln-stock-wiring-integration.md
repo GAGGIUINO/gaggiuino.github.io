@@ -86,16 +86,16 @@ Take off the top cover by unscrewing the 2 top screws. You should be able to see
 
 I recommend labeling the stock connectors with a permanent marker for ease of troubleshooting and reversal. Here are the labels I used:
 
-Component         |Prefix |Labels <br />_see images and schematic for detail_
-------------------|:-----:|:-------:
-Switch Assem. (GC)|-      |1   3      7 <br />P(1-2) P(3-4) P(5-6) P(7-8)<br />2      6   8
-Switches (GCP/Eco)|P - Power <br />B - Brew/Coffee <br />S - Steam |1    4<br /> 2    5<br /> 3    6
-Heaters           |H      |3    4 <br />1    2
-Steam TS          |S      |a    b
-Brew TS           |B      |a    b
-Valve             |V      |a    b
-Pump              |P      |a    b <br /> _a is from fuse, GC unlabeled_ <br />_b is the single 18 gauge wire in most machines_
-Pump Fuse (GC)         |F      |_there should be 2 wires_ <br />_in the connector to the fuse_
+Component             |Prefix |Labels <br />_see images and schematic for detail_
+----------------------|:-----:|:-------:
+Switch Assem. (GC)    |-      |1   3      7 <br />P(1-2) P(3-4) P(5-6) P(7-8)<br />2      6   8
+Switches (GCP/Eco)    |P - Power <br />B - Brew/Coffee <br />S - Steam |1    4<br /> 2    5<br /> 3    6
+Heaters               |H      |3    4 <br />1    2
+Steam Temp Switch (TS)|S      |a    b
+Brew Temp Switch (TS) |B      |a    b
+Valve                 |V      |a    b
+Pump                  |P      |a    b <br /> _a is from fuse, GC unlabeled_ <br />_b is the single 18 gauge wire in most machines_
+Pump Fuse (GC)        |F      |_there should be 2 wires_ <br />_in the connector to the fuse_
 
 > [!Warning|style:callout]
 > Stock wiring colors and connector positions (especially at the pump) may not match the schematics and pictures. Please make sure the wiring matches the stock [schematic](#schematics) for your machine before continuing.
