@@ -1,34 +1,13 @@
 # HOME
 
-> [!WARNING|style:flat|label:Result of unofficial sources|iconVisibility:visible]
->
-> Gaggiuino Gen 3 is free to use and will offer free software updates, but the source code is no longer available.  
-> This decision was made to maintain high standards for the hardware required for the project and prevent individuals from fracturing the community with subpar, non-standard components and processes that were untenable for Gaggiuino’s community-driven support to accommodate.
->
->Sincerely,
->
->The GAGGIUINO Team
+Gaggiuino is a community-driven project to add high-end features to Gaggia Classic espresso machines. Implementing the Gaggiuino mod improves performance and precision with temp control, profiling, profile sharing, and other features (see below).
 
-> [!Info]
-> When buying from any of the approved suppliers you can head over to the community [Discord](community/community-media.md#community-discord) for order updates or install-help in the relevant channels.
-> 
-> Relevant channels for orders : #diy-efi-co-uk, #peakcoffee-cc, #espressio-nl
-> 
-> Relevant channels for install-help: #install-help-xxx
-
-
-
-**Contribute to the project development efforts.**
-<!-- ko-fi :id=zer0bit :color=<color> -->
-    Support the development efforts
-<!-- ko-fi -->
->
 # Features
 
-Advanced pressure and flow profiling, web interface, shot history, OTA updates, Bluetooth scales... so many features we decided to put them under a dropdown. If you want to dive in, expand below!
+Advanced pressure and flow profiling, web interface, shot history, OTA updates, Bluetooth scales... so many features we decided to put them under a dropdown. 
 
 <details>
-<summary><b>Gaggiuino Features Comparison</b> <i>(Click to expand)</i></summary>
+<summary><b>Click to expand the Gaggiuino Features Comparison Table</b></i></summary>
 
   Feature                |Gen 1<br/>Nano & Nextion|Gen 2<br/>STM32 & Nextion|Gen 3<br/>STM32 & ESP32
 -----------------------  |:----------------------:|:-----------------------:|:----------------------:
@@ -58,7 +37,7 @@ Advanced pressure and flow profiling, web interface, shot history, OTA updates, 
   REST API               |:x:               |:x:                 |:heavy_plus_sign: 
 
 __Explanation__       
-:white_check_mark: Available in a limted form             
+:white_check_mark: Available in a limited form             
 :heavy_check_mark:  Available      
 :x:  Not available       
 :heavy_plus_sign: Planned   
@@ -162,6 +141,11 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 > [!TIP|style:callout|label:Sourcing|iconVisibility:visible]
 > PCBs, kits, and 3D-printed parts may be ordered from the **Approved Official Suppliers** in the sidebar.  
+> Head over to the community [Discord](community/community-media.md#community-discord) for updates in the relevant channels:  
+> * #diy-efi-co-uk
+> * #peakcoffee-cc
+> * #espressio-nl  
+>
 > Alternatively, components can be ordered from AliExpress and parts can be printed from the design files. 
 
 <!-- tabs:start -->
@@ -307,9 +291,17 @@ Accessories can be added to the base Gaggiuino build for additional features. BO
 * [Hardware Scales](accessories/hw-scales.md) sit below the drip tray and measure weight during shots. They're most useful for those who like to experiment with beans, grind, and profiles where predictive scales may have a difficult time
 * [ToFnLED](accessories/tofnled.md) provides an RGB LED and sensor for measuring water tank level
 
-# Contributors
 
-Thank you to everyone who has contributed to the project!
+
+# Support & Contributors
+
+**Support project development efforts.**
+<!-- ko-fi :id=zer0bit :color=<color> -->
+    Support the development efforts
+<!-- ko-fi -->
+>
+
+**Thank you to everyone who has contributed their time and effort to the project!**
 
 <a href="https://github.com/Zer0-bit/gaggiuino/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Zer0-bit/gaggiuino" />

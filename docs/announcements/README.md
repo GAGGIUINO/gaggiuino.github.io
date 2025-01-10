@@ -8,6 +8,7 @@
     * Main features and basic installation documentation are complete. Additional features and comprehensive documentation are in process.  
     * The BlackPill / SMT32F411CEU6 is a Cortex&reg;-M4 that is nearing its limits. Significant effort was put into optimization and testing a stable overclock so Gen 3 software will work on current builds.
     * For new builds, PCBv4 will be available with a Cortex&reg;-M33 STM32U585CIU6. This "performance" option improves stability, cycle time, and capability with "unlimited" phases. It also has more headroom for future development. 
+    * Gaggiuino Gen 3 is free to use and will offer free software updates. Unlike Gen 2, the source code for Gen 3 is not available. This decision was not desired, but sadly necessary due to issues with individuals misusing project resources and providing subpar, non-standard components and processes that were untenable for Gaggiuino’s community-driven support to accommodate.
 * __July 2023 - Nextion UI development has reached EOL, STM32 BlackPill + Nextion is the recommended install while a new UI solution is being developed.__ 
 * __June 2022 - Arduino NANO based development has reached EOL, no new features will be added to it's branch going forward.__ 
 <!-- panels:end -->
