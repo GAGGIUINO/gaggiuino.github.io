@@ -159,7 +159,6 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [M4x10 Screw, washer, and nut](https://www.aliexpress.com/item/2255801137435920.html) **or an 8-32 set from a local store**
 * [Heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html)
   * **22AWG - 5m:** Black, Red, Blue, Yellow, Orange, Purple
-* [JST XH 4P](https://www.aliexpress.com/item/2251832768103991.html)
 * [JST PH 3P, 4P](https://www.aliexpress.com/item/4000091077742.html)
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Pressure sensor | 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
@@ -219,13 +218,14 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [BN1.25 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html)
 * [BN2 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html)
 * [Fork Crimp Terminal | 102PCS-SV *(SV1.25-5s & SV2-5s used)*](https://www.aliexpress.com/item/3256805357612913.html)
-* [Silicone Heat Shrink Tube | 4, 5, 6 mm dia](https://www.aliexpress.com/item/3256801522005095.html) **OR** [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html)
+* * [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html) **OR** [Silicone Heat Shrink Tube | 4, 5, 6 mm dia](https://www.aliexpress.com/item/3256801522005095.html) and a heat gun
 
 <!-- tabs:end -->
 
 <!-- tabs:start -->
 <!-- tab:Gen 3 -->
 * 4.3" ESP32-S3 Screen & cable - **must be activated by [PeakCoffee](https://www.peakcoffee.cc/product/4-3-iot-gaggiuino-lcd/) or [DIY-EFI](https://diy-efi.co.uk/product/gaggiuino_esp32_43_screen)**
+* MicroSD card | 1-8 GB, FAT32 (FAT32 cards ≤32 GB may work) - optional, for shot history
 
 <!-- tab:Gen 2 -->
 * [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html) **+ MicroSD card (Class 10 HC 2GB to 32GB)**

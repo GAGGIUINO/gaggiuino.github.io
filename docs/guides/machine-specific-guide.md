@@ -25,7 +25,16 @@ Remove the switch from the machine. Use a thin pry tool to gently push the side 
 
 Most Evo models have a combined shield block around the switch connectors. It is recommended to remove the connectors, insulate them separately, and then label prior to completing the mod. This is especially important if doing stock wiring integration because some connectors will be left in the machine disconnected. 
 
-First, disconnect the connector block (it's easier to do with the switch or boiler removed). To remove a connector from the block, insert a small screwdriver to depress the locking tab, then pull the connector from the rear. It is recommended to remove the connectors one at a time and insulate with self-fusing silicone tape or 6 mm silicone heat shrink tubing, labeling as you go. 
+### Bill of Materials
+
+* [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html) **OR** [Silicone Heat Shrink Tube | 6 mm dia](https://www.aliexpress.com/item/3256801522005095.html) and a heat gun *(duplicate from the Wiring section of the [BOM](Readme.md#bill-of-materials))*
+* Oil-based permanent marker recommended
+
+### Instructions
+
+Disconnect the connector block (it's easier to do with the switch or boiler removed). To remove a connector from the block, insert a small screwdriver to depress the locking tab, then pull the connector from the rear. 
+
+It is recommended to remove the connectors one at a time and insulate with self-fusing silicone tape or 6 mm silicone heat shrink tubing, labeling as you go. 
 
 > [!TIP|style:callout|label:|iconVisibility:hidden]
 > Oil-based permanent markers write well on silicone.
@@ -45,22 +54,27 @@ First, disconnect the connector block (it's easier to do with the switch or boil
 Gaggia decided that the Evo would come with a 9 bar OPV in the US, likely due to the number of people there who changed out the spring in their Gaggia Classic Pro OPVs.  
 Unfortunately, OPVs don't open all at once. For example, a 9 bar spring might initially open a bit at 8.2 bar, slightly increasing flow until fully open around 9 bar. When the OPV opens, water is diverted and Gaggiuino control can't determine if or when that happens. For this reason, the OPV should be set at least 1 bar above the highest desired shot pressure. Most people want to have 9 bar shot profiles available, so for Gaggiuino the OPV should be 10-12 bar.
 
-There are two methods of achieving this: 
-1. Purchase a 12 bar OPV spring and install  
+### Bill of Materials
 
-    Sources: [Etsy (US)](https://www.etsy.com/listing/1556589768/12-bar-opv-spring-for-gaggia-classic-pro), [Shades of Coffee (UK)](https://www.shadesofcoffee.co.uk/115bar-opv-spring), and many more
+Pick one option (see instructions below)
+1. New Spring: [Etsy (US)](https://www.etsy.com/listing/1556589768/12-bar-opv-spring-for-gaggia-classic-pro), [Shades of Coffee (UK)](https://www.shadesofcoffee.co.uk/115bar-opv-spring), and many more
 
-2. Increase the 9 bar OPV spring force by pre-loading it with 3-4 M3 washers
-
-    Sources: [Home Depot (US)](https://www.homedepot.com/p/Everbilt-3-mm-Stainless-Steel-Metric-Flat-Washer-4-Piece-842358/204994885)  
+2. Washers: [Home Depot (US)](https://www.homedepot.com/p/Everbilt-3-mm-Stainless-Steel-Metric-Flat-Washer-4-Piece-842358/204994885) or other hardware stores  
     Washer Specifications: 300 series stainless steel, M3 (6.9-7.1 mm outer diameter, 3.0-3.6 mm inner diameter, 0.5-0.8 mm thick)  
-    Starting quantity: If washers are 0.5 mm thick, use 4. If 0.8 mm thick, use 3.  
+
+### Instructions
+
+There are two methods: 
+1. Install a new 12 bar OPV spring  
+
+2. Increase the 9 bar OPV spring force by pre-loading it with 3-4 M3 washers  
+    Start with 4 washers if they're 0.5 mm thick; start with 3 if 0.8 mm thick.  
     <img width="600" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/69a9cfbf-e2bc-4868-9f57-f510457fa61b">
 
-    The OPV pressure can be tested (and the number of washers adjusted if necessary) after Gaggiuino installation is complete by inserting a blank basket portafilter and doing one of the following:  
-    a. Run a shot set to a 12+ bar target and verify it reaches 10-12 bar  
-    b. Run a manual shot set at max flow and verify it reaches 10-12 bar
-
+In both cases you will need to open the OPV and access the spring (see video below for details).  
+After Gaggiuino installation is complete, the OPV pressure can be tested (and the number of washers adjusted if necessary) by inserting a blank basket portafilter and doing one of the following:  
+* Run a shot set to a 12+ bar target and verify pressure reaches 10-12 bar  
+* Run backflush and verify pressure reaches 10-12 bar
 
 > [!TIP|style:callout|label:Video Guide|iconVisibility:visible]
 > Here is a quick video on how to access and change the OPV in a Gaggia Classic Pro or Evo:
