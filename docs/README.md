@@ -87,7 +87,12 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 2. **Determine your build path** 
 
-  Decide if you're going to order a [PCB](guides-stm32/pcb-guide.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. PCBv4 is recommended for Gen 3 builds, while PCBv3.1 is recommended for Gen 2 builds. Gen 3 is the newest release and most full featured, see [Features](#features) and [Announcements](announcements/) to compare Gen 2 and Gen 3 both are great options but one may fit your needs better than the other. The component build is slightly more flexible for experimentation and less picky about thermocouple grounding, however, it adds significant effort and makes reliability dependent on the maker's skill. 
+  Select the Gaggiuino generation (see [Features](#features) and [Announcements](announcements/) to compare Gen 2 and Gen 3).  
+  Gen 3 is recommended for Gaggia Classic and Rancilio Silvia variants - it's newest, has more features, and is being actively worked on.  
+  Gen 2 is recommended if attempting a Gaggiuino install on machines that aren't officially compatible - it provides a stable code base to start with.  
+
+  Decide if you're going to order a [PCB](guides-stm32/pcb-guide.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. PCBv4 is recommended for Gen 3 builds, while PCBv3.1 is recommended for Gen 2 builds. 
+  The component build is slightly more flexible for experimentation and less picky about thermocouple grounding, however, it adds significant effort and makes reliability dependent on the maker's skill. 
 
   Decide how to integrate the control system with your espresso machine. It can either be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring, but sometimes more confusing) or the stock wiring can be replaced with a [custom wiring harness](guides-stm32/3pln-custom-wiring.md) (more work, but results in a clean, straightforward install). It is recommended that you check the *notes* in the [Compatibility Table](#compatibility) for your machine and and read through the instructions before deciding.
 
@@ -252,7 +257,8 @@ BOM and assembly instructions for the recommended 3D printed parts used in the s
   
   <!-- tabs:start -->
   <!-- tab:Front Mount -->
-  * 6 [20x10x3 mm magnets](https://www.aliexpress.com/item/3256803170039630.html)
+  * 6 [20x10x3 mm magnets](https://www.aliexpress.com/item/3256806984976303.html) (N35-N52, rectangular)  
+    *consider buying locally - magnets have had issues being shipped internationally*
   * [Kapton tape, 20 mm wide](https://www.aliexpress.com/item/3256803012935630.html)
   * Cyanoacrylate (super glue) or Epoxy
 
