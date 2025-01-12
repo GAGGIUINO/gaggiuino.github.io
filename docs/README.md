@@ -85,11 +85,11 @@ Name                                      | Voltage   | Model Years | Model ID  
 
   See the [Compatibility Table](#compatibility) and take note of any [Machine-Specific Instructions](guides/machine-specific-guide.md) that are mentioned there. 
 
-2. **Determine your build path.** 
+2. **Determine your build path** 
 
-  Decide if you're going to order a [PCB](guides-stm32/pcb-guide.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. PCBv4 is recommended for new Gen 3 builds, while PCBv3.1 is recommended for Gen 2 builds (see [Features](#features) and [Announcements](announcements/) to compare Gen 2 and Gen 3). The component build is slightly more flexible for experimentation and less picky about thermocouple grounding, however, it adds significant effort and makes reliability dependent on the maker's skill. 
+  Decide if you're going to order a [PCB](guides-stm32/pcb-guide.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. PCBv4 is recommended for Gen 3 builds, while PCBv3.1 is recommended for Gen 2 builds. Gen 3 is the newest release and most full featured, see [Features](#features) and [Announcements](announcements/) to compare Gen 2 and Gen 3 both are great options but one may fit your needs better than the other. The component build is slightly more flexible for experimentation and less picky about thermocouple grounding, however, it adds significant effort and makes reliability dependent on the maker's skill. 
 
-  Decide how to integrate the control system with your espresso machine. It can either be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring, but sometimes more confusing) or the stock wiring can be replaced with a [custom wiring harness](guides-stm32/3pln-custom-wiring.md) (more work, but results in a clean, straightforward install). It is recommended that you check the notes in the [Compatibility Table](#compatibility) for your machine and and read through the instructions before deciding.
+  Decide how to integrate the control system with your espresso machine. It can either be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring, but sometimes more confusing) or the stock wiring can be replaced with a [custom wiring harness](guides-stm32/3pln-custom-wiring.md) (more work, but results in a clean, straightforward install). It is recommended that you check the *notes* in the [Compatibility Table](#compatibility) for your machine and and read through the instructions before deciding.
 
   If you're building Gen 3, decide which interface option you prefer. Currently there is a 4.3" IPS [touchscreen](guides/interface-screen.md) (embedded and web UI) with 3 mounting options. A headless option (web UI only) is in development.
 
@@ -132,7 +132,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 
   Record your first start. Post this to [#first-start](https://discord.com/channels/890339612441063494/919183771079692328) on Discord.  
   Record your first shot. Post this to [#first-shot](https://discord.com/channels/890339612441063494/910972035205857320) on Discord.  
-  Read the [User Manual Gen 2](learning/user-manual-gen2.md) or [User Manual Gen 3](learning/user-manual-gen3.md) for more information on the machine capabilities.  
+  Read the [User Manual Gen 3](learning/user-manual-gen3.md) or [User Manual Gen 2](learning/user-manual-gen2.md) for more information on the machine capabilities.  
   Check out [Espresso Aficionados](https://espressoaf.com/guides/profiling.html) for info on profiling that you can now implement!  
 
 <!-- panels:start -->
@@ -162,7 +162,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [JST PH 3P, 4P](https://www.aliexpress.com/item/4000091077742.html)
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Pressure sensor | 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-* [Flat gasket/o-ring | 1|4 inch pipe (11 x 6 mm), 3 mm thick](https://www.aliexpress.com/item/2255799841120591.html)
+* [Flat gasket/o-ring | 1/4 inch pipe (11 x 6 mm), 3 mm thick](https://www.aliexpress.com/item/2255799841120591.html)
 
 <!-- tab:STM32 LEGO -->
 * [STM32U585CIU6 *(for Gen 3)*](https://www.aliexpress.com/item/3256807730943902.html) or [BlackPill | F411 25M HSE *(for Gen 2)*](https://www.aliexpress.com/item/1005001456186625.html)
