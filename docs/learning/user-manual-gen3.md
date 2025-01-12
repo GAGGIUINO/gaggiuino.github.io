@@ -1,4 +1,8 @@
 # Home
+
+> [!Warning|style:callout|label:Work in Progress|iconVisibility:visible]
+> This manual (and Gaggiuino Gen 3) are a work in progress. Expect the manual to naturally lag feature releases.
+
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
 <img alt="Home embedded" src="manual/gen3/mbed/001_000_home.png">
@@ -10,21 +14,24 @@
 
 - **Settings**: Navigate to the [Settings](/learning/user-manual-gen3.md#Settings) screen.
 
-- **Shot History**: Navigate to the [Shot History](/learning/user-manual-gen3.md#ShotHistory) screen. The screen can be swiped upward, to access Shot History.
-> [!NOTE]
-> Shot history is only available when an SD card is inserted.
+- **Shot History**: Navigate to the [Shot History](/learning/user-manual-gen3.md#ShotHistory) screen. Shot History can also be accessed by swiping up on the screen. 
 
 - **Profile Preview**: Shows a preview of the selected profile.
 
 - **Profile Selection**: Shows the available profiles. The active profile is highlighted in color (e.g. 'IUIUIU Classic'). The field can be swiped horizontally, to access additional profiles.
 
-- **Edit Erofile**: Edit and create new profiles.
+- **Edit Profile**: Edit and create new profiles.
 
 - **Save Profile**: Save the current profile (e.g. after changing the brew temperature, shot weight). This also saves the currently selected profile, as the startup profile.
 
 - **Temperature**: Current boiler temperature in Celsius. 
 
-- **Target Temperature**: Target temperature of the current profile. On the Embedded UI setpoint temperature can be changed by tapping and holding the setpoint value and swiping up or down.
+- **Target Temperature**: Water temperature from the current profile or the Steam Temperature from Boiler Settings if the Steam switch is active.
+
+    > [!Note|style:callout|label:Changing and Saving|iconVisibility:visible]
+    > On the Embedded UI, the Target Temperature can be temporarily changed by pressing and holding the temperature and swiping up or down.  Pressing Save will update the current profile's Water Temperature (or the Steam Temperature from Boiler Settings if the Steam switch is active).
+
+- **Target Temperature**: Target temperature of the current profile. On the Embedded UI the setpoint temperature can be changed by swiping up or down on it.
 
 - **Pressure**: Shows the current system pressure in Bar.
 
@@ -35,8 +42,9 @@
 - **Shot weight**: Shows the shot weight in grams for the current profile. On the embedded UI the weight can be adjusted temporarily in 1g increments by tapping the '+' and '-' buttons or by tapping the weight field and using the number pad.
 
 - **Weight**: If hardware scales are installed or Bluetooth scales connected, the current weight of the scales is shown in grams. The scales can be tared by tapping the current weight field. 
-> [!NOTE]
-> The scales tare automatically, when a shot is started.
+
+    > [!Note|style:callout|label:Scales Auto-tare|iconVisibility:visible]
+    > The scales tare automatically when a shot is started.
 
 - **Flush**: Tap the flush button to activate flush mode. The grey circle inside the button will light up green. Flushing can now be activated with the **brew** switch. Tap the flush button again to deactivate flush mode.
 Tap and hold the button to perform a 5s flush. The grey circle will light up blue. The flush can be stopped by tapping the button again.
@@ -98,8 +106,11 @@ When a shot is started the live data is displayed. The time axis scales automati
 
 # Shot History
 
+> [!Note|style:callout|label:Requirements|iconVisibility:visible]
+> * A microSD card is required to record and display shot history.
+> * Gaggiuino must be connected to the internet with the time offset set to properly display the date and time
+
 The recorded shot graphs are shown in a list. The shots are shown with a serial number, name, date and time and duration. Tap on an entry in the available shots to view a shot graph.
-> [!NOTE] The date and time will only display correctly, if Gaggiuino is connected to the Internet.
 
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
@@ -148,7 +159,8 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 - **Temperature Offset [°C]:** If you have a device (e.g. Scathe) that can measure the temperature at the group head/portafilter accurately, you can adjust this value for more accurate brew temperature.
 - **Brew Delta:** The boiler will increase temperature based on flow rate and be allowed to go over 100 °C during the shot, to more quickly transfer heat to the incoming cool water.
 - **Advanced:** 
-    > [!NOTE] Only change these values if you have a non Gaggia machine.
+    > [!Warning|style:callout|label:Warning|iconVisibility:visible]
+    > Only change these values if you have a non-Gaggia machine.
     - *HPWR:* Relay max pulse width (**H**igh **P**eak **W**idth **R**esolution).
     - *Main Divider:* Main cycle divider (aka non brew heating behavior), used in conjunction with HPWR.
     - *Brew Diviver:* Brew cycle divider.
