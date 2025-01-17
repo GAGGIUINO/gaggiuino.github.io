@@ -4,7 +4,7 @@
     * - [Peak Coffee __(HKG)__](https://www.peakcoffee.cc/)
     * - [DIY-EFI __(GBR)__](https://diy-efi.co.uk/product-category/gaggiuino)
 * - __3D Printed Parts__
-    * - [Espressio __(NLD)__](https://gaggiuino.espressio.nl/)
+    * - [Espressio __(NLD)__](https://espressio.shop/)
     * - [Hudson Creative Group __(USA)__](https://gaggiuino.hudsoncreativegroup.com/)
 * __TOOLS:__
 * - [Restore __ui-web.bin__](https://gaggiuino.github.io/restore.html)
