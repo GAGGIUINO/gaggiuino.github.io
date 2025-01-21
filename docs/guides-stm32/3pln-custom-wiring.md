@@ -98,12 +98,14 @@ The BOM is compiled for the standard install path where all components are taken
 
 ## Thermocouple
 
-Unscrew the brew thermostat, transfer or add thermal paste, then ***Gently** screw in the thermocouple finger-tight (**do not over-tighten**). This can be done in-place, but it's easier to remove the boiler (4 SHCS up from below the sheet metal), steam knob, and steam wand so that the boiler can be tipped up a bit for easier access. You'll want to have the thermocouple wire free to rotate during the install. 
+Unscrew the brew thermostat, transfer or add thermal paste, then ***Gently** screw in the thermocouple barely finger-tight (**do not over-tighten**).  
+This can be done in-place, but it's easier to remove the boiler (4 SHCS up from below the sheet metal), steam knob, and steam wand so that the boiler can be tipped up a bit for easier access. Make sure the thermocouple wire is free to rotate during the install. 
 
->[!Tip]
->Depending on your machine type and location of your Gaggiuino control system it may be easier to run the thermocouple wire to the front of the machine and around the boiler to the back instead of going back behind the pump area. Pick the path with the fewest AC wires in the area.
+![Thermocouple Install Detail](https://github.com/user-attachments/assets/7eef096a-bcce-4d98-8a7d-ae898c3afec3 ':size=500')
 
->[!Note]
+After screwing in the thermocouple (and reinstalling the boiler, if necessary), run the thermocouple wire to the front of the Gaggia, around the boiler, and back to the control enclosure (avoid going back behind the pump area). 
+
+> [!Note|style:callout]
 >There should already be high-temp thermal paste in place. If there is not, or if the paste is dried out, replace with a paste that has at least a 180°C working temperature. 
 ><details>
 ><summary><b>Thermal Paste Options</b> <i>(Click to expand)</i></summary>
