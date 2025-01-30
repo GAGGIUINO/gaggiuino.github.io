@@ -3,6 +3,8 @@
 > [!Warning|style:callout]
 > Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
 
+<img height="300" alt="Custom Wiring - Leon McKee" src="media/custom_wiring.png">
+
 # Alternate Components
 
 The BOM is compiled for the standard install path where all components are taken from the stock wiring harness and crimped onto new wires, following the schematics and wiring diagrams. **This is not part of the BOM**, however, stock components may be broken, unavailable, or a completely new wiring harness desired. Alternate components may be substituted for stock components as needed. Note that this list of components is still a work in progress. 

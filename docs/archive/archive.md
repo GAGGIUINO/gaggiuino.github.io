@@ -2,7 +2,11 @@
 
 The files linked here should generally not be used for new systems. They are being saved in case an older install needs to be repaired. 
 
-# Arduino Nano  
+# Gen 2 - STM32 + Nextion
+
+* [User Manual - Gen 2](learning/user-manual-gen2.md)
+
+# Gen 1 - Arduino Nano + Nextion
 
 * [Nano Install: Gaggia Classic](archive/guides-nano/gaggia-classic.md)
 * [Nano Install: Gaggia Classic Pro](archive/guides-nano/gaggia-classic-pro-new-classic.md)

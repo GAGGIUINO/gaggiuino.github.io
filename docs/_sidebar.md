@@ -21,6 +21,7 @@
     * [Wiring A: **Stock Wiring Integration**](guides-stm32/3pln-stock-wiring-integration.md)
     * [Wiring B: **Custom Wiring**](guides-stm32/3pln-custom-wiring.md)
     * [Interface: **Screen**](guides/interface-screen.md)
+    * [Interface: **Headless**](guides/interface-headless.md)
     * [Accessory: **Hardware Scales**](accessories/hw-scales.md)
     * [Accessory: **ToFnLED**](accessories/tofnled.md)
 * __Install References__
@@ -31,4 +32,3 @@
     * [Lego Independent Relay and Dimmer](guides-upgrade/lego-independent-relay-dimmer.md)
     * [Lego Nano to STM32 Upgrade](guides-upgrade/nano-to-stm32.md)
 * [__Archive__](archive/archive.md)
- - [User Manual Gen 2](learning/user-manual-gen2.md)

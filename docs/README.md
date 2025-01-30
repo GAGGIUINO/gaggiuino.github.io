@@ -1,5 +1,10 @@
 # HOME
 
+<img width="250" alt="GCP Install" src="media/gcp_install.jpg">  
+<img width="250" alt="GCP Install" src="media/gaggiuino_tray_shot.jpg">  
+<img width="250" alt="GCP Install" src="media/spro_plot.jpg">  
+<img width="250" alt="GCP Install" src="media/blackpill_shot.jpg">  
+
 Gaggiuino is a community-driven project to add high-end features to Gaggia Classic espresso machines. Implementing the Gaggiuino mod improves performance and precision with temp control, profiling, profile sharing, and other features (see below).
 
 # Features
@@ -96,7 +101,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 
   Decide how to integrate the control system with your espresso machine. It can either be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring, but sometimes more confusing) or the stock wiring can be replaced with a [custom wiring harness](guides-stm32/3pln-custom-wiring.md) (more work, but results in a clean, straightforward install). It is recommended that you check the *notes* in the [Compatibility Table](#compatibility) for your machine and and read through the instructions before deciding.
 
-  If you're building Gen 3, decide which interface option you prefer. Currently there is a 4.3" IPS [touchscreen](guides/interface-screen.md) (embedded and web UI) with 3 mounting options. A headless option (web UI only) is in development.
+  If you're building Gen 3, decide which interface option you prefer. For an on-machine (embedded) and web UI, select the 4.3" IPS [touchscreen](guides/interface-screen.md) and one of its mounting options. For a "stealth" install with web UI only, select the [headless](guides/interface-headless.md) PCB.
 
 3. **Select and Order Components**
 
@@ -127,6 +132,7 @@ Name                                      | Voltage   | Model Years | Model ID  
   Follow the instructions for your interface selection
 
     * [Interface: Screen](guides/interface-screen.md)
+    * [Interface: Headless](guides/interface-headless.md)
 
   Follow the instructions for any accessories that may have been selected
 

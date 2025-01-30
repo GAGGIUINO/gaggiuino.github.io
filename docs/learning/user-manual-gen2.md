@@ -1,8 +1,5 @@
 # User Manual
 
-> [!NOTE]
-> This page is a work in progress.
-
 Special Thanks to:
 - wundersnooch
 - np_x

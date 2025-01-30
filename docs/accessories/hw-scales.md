@@ -1,5 +1,10 @@
 # Accessory: Hardware Scales
 
+> [!Warning|style:callout]
+> Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
+
+<img height="300" alt="Hardware Scales" src="media/scales.png">
+
 This assembly is for adding hardware scales to your Gaggia Classic or Gaggia Classic Pro.  
 
 > [!Tip] The STM32 build has software emulated **predictive scales** that try to offer accurate sensing of the first drops into the cup as well as realtime shot weight tracking and stop-on-weight across a variety of settings and shot profiles. Predictive scales are sufficient for most users with performed calibration and standard dialed-in shots but they're not fool proof or able to cater for the more advanced minds out there.  

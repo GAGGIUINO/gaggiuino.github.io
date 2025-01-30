@@ -2,8 +2,7 @@
 
 The Time of Flight and LED (ToFnLED) board provides a sensor for determining tank water level and and LED for tank lighting. 
 
-<img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/256652023-fb3ead35-419b-4859-96b7-1cfbb1b0e9b8.png">
-<img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/256652465-c6fe4def-9d61-43f8-9b23-339bb7d53b8b.png">
+<img height="300" alt="ToFnLED Photo" src="media/tofnled.png">
 
 ## Bill of Materials
 

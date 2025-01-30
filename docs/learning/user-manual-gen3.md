@@ -2,6 +2,25 @@
 
 > [!Warning|style:callout|label:Work in Progress|iconVisibility:visible]
 > This manual (and Gaggiuino Gen 3) are a work in progress. Expect the manual to naturally lag feature releases.
+> 
+> The [Gen 2 User Manual](learning/user-manual-gen2.md) is linked in the [Archive](archive/archive.md).
+
+> [!Note|style:callout|label:Connecting to WebUI|iconVisibility:visible]
+> The ESP32 can be connected to your local network, and will generate its own access point if it is not connected to a network.
+> 
+> * Connect to Gaggiuino AP (the password is the network name with a zero substituted for the "o" and the space removed).  
+>
+>   <img width="300" alt="image" src="https://github.com/user-attachments/assets/af24bb4e-1608-4b45-b78d-ccb7d15bec18">  
+>
+>   The network may initially be named ESP_xxxxxx instead of Gaggiuino AP. The password is based on Gaggiuino AP, and the access point name should become Gaggiuino AP after connecting and disconnecting from a network. 
+> * Navigate to [gaggiuino.local](http://gaggiuino.local/)
+> 
+> The system can be used in access point mode, but won't have access to a time server so shot history times won't be accurate. To access a time server Gaggiuino must be connected to a network. 
+> * To connect to a network go to [gaggiuino.local](http://gaggiuino.local/), navigate to the "Settings" tab, and click "Connect" to select a 2.4 GHz Wi-Fi network and enter the password. 
+
+> 
+
+# UI Descriptions
 
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
