@@ -2,7 +2,7 @@
 * __Approved Official Suppliers:__
 * - __PCB and Kits__
     * - [Peak Coffee __(HKG)__](https://www.peakcoffee.cc/)
-    * - [DIY-EFI __(GBR)__](https://diy-efi.co.uk/product-category/gaggiuino)
+    * - [DIY-EFI __(GBR)__](https://diy-efi.co.uk/product-category/gaggiuino/)
 * - __3D Printed Parts__
     * - [Espressio __(NLD)__](https://espressio.shop/)
     * - [Hudson Creative Group __(USA)__](https://gaggiuino.hudsoncreativegroup.com/)

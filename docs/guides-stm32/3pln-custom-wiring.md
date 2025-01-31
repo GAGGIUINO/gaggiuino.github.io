@@ -33,7 +33,9 @@ The BOM is compiled for the standard install path where all components are taken
 
 # Custom Wire Harness Schematics
 
-> [!Note|style:callout]
+> [!Warning|style:callout]
+> * Make sure your control system has been flashed and passed the pre-install test checklist. It's much easier to resolve issues prior to integration.
+> * If you have a US Gaggia Classic with a 2 pole power cord and plug then please see the [Grounding](guides/machine-specific-guide.md#Grounding) section of the machine-specific instructions before continuing.
 > * As this wiring completely replaces the stock wiring harness it is expected that the reader can complete the wiring using only the schematics.  
 > * Component builds can use the HV wiring on the [PCBv3 (3PLN)](#pcb-v3-3pln) schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md).
 

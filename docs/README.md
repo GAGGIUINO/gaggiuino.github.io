@@ -1,9 +1,9 @@
 # HOME
 
-<img width="250" alt="GCP Install" src="media/gcp_install.jpg">  
-<img width="250" alt="GCP Install" src="media/gaggiuino_tray_shot.jpg">  
-<img width="250" alt="GCP Install" src="media/spro_plot.jpg">  
-<img width="250" alt="GCP Install" src="media/blackpill_shot.jpg">  
+![img1](media/gcp_install.jpg ':size=24%')
+![img2](media/gaggiuino_tray_shot.jpg ':size=24%')
+![img3](media/spro_plot.jpg ':size=24%')
+![img4](media/blackpill_shot.jpg ':size=24%')
 
 Gaggiuino is a community-driven project to add high-end features to Gaggia Classic espresso machines. Implementing the Gaggiuino mod improves performance and precision with temp control, profiling, profile sharing, and other features (see below).
 
@@ -66,16 +66,14 @@ Name                                      | Voltage   | Model Years | Model ID  
 ------------------------------------------|-----------|-------------|-----------------|-------
 :heavy_check_mark: Gaggia Classic         | 100-120 V | 1991-2018   | SIN035 RI9303   | Needs [Grounding](guides/machine-specific-guide.md#grounding) 
 :heavy_check_mark: Gaggia Classic         | 220-240 V | 1991-2014   | SIN035 RI9303   |  
-:x:                Gaggia Classic V2      | 220-240 V | 2015-2018   | SIN035U RI9403  | <details><summary><b>Avoid like the plague</b> <i>(Click for image)</i></summary><img width="600" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/4170cdbf-aebc-4e09-bafa-3f9b5e95a5bb"></details> 
+:x:                Gaggia Classic V2      | 220-240 V | 2015-2018   | SIN035U RI9403  | <details><summary><b>Avoid like the plague</b> <i>(Click for image)</i></summary>![avoid_like_plague_v2](https://github.com/user-attachments/assets/64fff151-a350-4bfc-804c-dd938b5e02b6 ':size=50%')</details> 
 :heavy_check_mark: Gaggia Classic Pro     | 100-120 V | 2019-2022   | SIN035R RI9380  | 
 :heavy_check_mark: Gaggia Classic Pro     | 220-240 V | 2019-2022   | SIN035R RI9380  | Uncommon, easier to mod than models with eco PCB
 :heavy_check_mark: Gaggia Classic Pro Eco | 220-240 V | 2019-2022   | SIN035UR RI9480 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
-:heavy_check_mark: Gaggia Classic Evo Pro | 100-120 V | 2023-?      | SIN035R RI9380  | 9 bar OPV must be changed to be a [10-12 bar OPV](guides/machine-specific-guide.md#10-12-bar-opv) <br /> High-temp insulation required for [combined connector insulation](guides/machine-specific-guide.md#combined-connector-insulation) when doing stock wiring integration 
-:heavy_check_mark: Gaggia Classic Evo Pro | 220-240 V | 2023-?      | SIN035UR RI9481 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
-
-> [!Note|style:callout|label:New Gaggia Classic Pro|iconVisibility:visible]
-> The Gaggia Classic Pro E24 has been released to some regions. It's reported that this model is a Gaggia Classic Evo Pro with a new brass boiler, so all notes regarding the Evo *should* apply.  
-> The table will be updated when more info is available and we've been able to confirm there are no unexpected deviations.    
+:heavy_check_mark: Gaggia Classic Evo Pro | 100-120 V | 2023-2024   | SIN035R RI9380  | 9 bar OPV must be changed to be a [10-12 bar OPV](guides/machine-specific-guide.md#10-12-bar-opv) <br /> High-temp insulation required for [combined connector insulation](guides/machine-specific-guide.md#combined-connector-insulation) when doing stock wiring integration 
+:heavy_check_mark: Gaggia Classic Evo Pro | 220-240 V | 2023-2024   | SIN035UR RI9481 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
+:heavy_check_mark: Gaggia Classic Pro E24 | 100-120 V | 2024-?      | SIN035R RI9380  | 9 bar OPV must be changed to be a [10-12 bar OPV](guides/machine-specific-guide.md#10-12-bar-opv) <br /> High-temp insulation required for [combined connector insulation](guides/machine-specific-guide.md#combined-connector-insulation) when doing stock wiring integration <br /> Brass boiler behavior is not fully characterized 
+:heavy_check_mark: Gaggia Classic Pro E24 | 220-240 V | 2024-?      | SIN035UR RI9481 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB <br /> Brass boiler behavior is not fully characterized 
 
 >
 
@@ -235,7 +233,9 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 <!-- tabs:start -->
 <!-- tab:Gen 3 -->
-* 4.3" ESP32-S3 Screen & cable - **must be activated by [PeakCoffee](https://www.peakcoffee.cc/product/4-3-iot-gaggiuino-lcd/) or [DIY-EFI](https://diy-efi.co.uk/product/gaggiuino_esp32_43_screen)**
+* Interface (pick one)
+  * 4.3" ESP32-S3 Screen & cable - **must be activated by [PeakCoffee](https://www.peakcoffee.cc/) or [DIY-EFI](https://diy-efi.co.uk/product-category/gaggiuino/)**
+  * Headless E177 PCB & cable- **must be activated by [PeakCoffee](https://www.peakcoffee.cc/) or [DIY-EFI](https://diy-efi.co.uk/product-category/gaggiuino/)**
 * MicroSD card | 1-8 GB, FAT32 (FAT32 cards ≤32 GB may work) - optional, for shot history
 
 <!-- tab:Gen 2 -->
@@ -257,6 +257,9 @@ BOM and assembly instructions for the recommended 3D printed parts used in the s
 
 <!-- tabs:start -->
 <!-- tab:Gen 3 -->
+
+<!-- tabs:start -->
+<!-- tab:Screen -->
 * [Gen 3 Screen Housing](https://www.printables.com/model/356026)  
   There are 3 mount options that all use the same screen housing. Pick one.  
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/888b31f2-d0e5-48d8-af31-7133bd122f70">
@@ -285,6 +288,15 @@ BOM and assembly instructions for the recommended 3D printed parts used in the s
   * 4 [M3 split lock washers](https://www.aliexpress.com/item/2251832789389968.html)
   * 2 [M3 nylock nuts](https://www.aliexpress.com/item/2251832802681129.html)
   <!-- tabs:end -->
+
+<!-- tab:Headless -->
+* [Headless PCB Housing](https://www.printables.com/model/1132631) (2 mounting options, pick one)
+  * VentClips - Recommended for all Gaggia Classic variants. Clips into the rear vents, no extra components required.
+  * Magnets - Recommended for non-Classic machines. Attach magnet(s) to the back with cyanoacrylate or high-temp double-side tape.  
+    2 [20x10x3 mm magnets](https://www.aliexpress.com/item/3256806984976303.html) (N35-N52, rectangular) work well, but magnet shape and size are flexible.  
+    *consider buying locally - magnets have had issues being shipped internationally*
+
+<!-- tabs:end -->
 <!-- tab:Gen 2 -->
 * [Screen Enclosure](https://www.printables.com/model/280617)
   * 2 M4x10 button-head screws

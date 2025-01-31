@@ -46,27 +46,33 @@ Save the images or right-click and open in a new tab to view at full resolution.
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
-<img height="300" alt="image" src="schematics/install-stock-3pln/gc-hv-3pln.jpg">
 
-<img height="300" alt="image" src="schematics/install-stock-3pln/gc-lv-3pln.jpg">
+<!-- tabs:start -->
+<!-- tab:STM32 PCB -->
+
+![GC SI PCB](../schematics/install-stock-3pln/gc_si_wiring_pcbv3_1_120v.png ':size=80%')
+
+test  
+<img width="500" alt="image" src="schematics/install-stock-3pln/gc_si_wiring_pcbv3_1_120v.png">
+
+<!-- tab:STM32 LEGO -->
+![GC SI COMP](../schematics/install-stock-3pln/gc_si_wiring_comp_120v.png ':size=80%')
+
+<!-- tabs:end -->
+
 <!-- tab:Gaggia Classic Pro -->
 
-**Gaggia Classic Pro**
+<!-- tabs:start -->
+<!-- tab:STM32 PCB -->
 
-<img height="300" alt="image" src="schematics/install-stock-3pln/gcp-hv-3pln.jpg">
+![GCP SI COMP](../schematics/install-stock-3pln/gcp_si_wiring_pcbv3_1_120v.png ':size=80%')
 
-<img height="300" alt="image" src="schematics/install-stock-3pln/gcp-lv-3pln.jpg">
+<!-- tab:STM32 LEGO -->
 
-**Gaggia Classic Pro Eco**
+![GCP SI COMP](../schematics/install-stock-3pln/gcp_si_wiring_comp_120v.png ':size=80%')
 
-> [!Warning|style:callout]
-> Stock wiring integration is possible, but for machines with the eco board (automatic power-off) [3PLN custom wiring](guides-stm32/3pln-custom-wiring.md) is recommended.
+<!-- tabs:end -->
 
-*Remember to do the [Power switch mod](https://www.youtube.com/embed/WNs3uSLA4Ts?start=99&end=151) to make it bistable.*  
-
-<img height="300" alt="image" src="schematics/install-stock-3pln/gcp_eco-hv-3pln.jpg">
-
-<img height="300" alt="image" src="schematics/install-stock-3pln/gcp_eco-lv-3pln.jpg">
 <!-- tabs:end -->
 
 # Integration

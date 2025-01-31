@@ -4,18 +4,56 @@ The files linked here should generally not be used for new systems. They are bei
 
 # Gen 2 - STM32 + Nextion
 
+### User Manual 
+
 * [User Manual - Gen 2](learning/user-manual-gen2.md)
+
+### Stock Wiring Integration Schematics
+  <!-- tabs:start -->
+  <!-- tab:Gaggia Classic -->
+  <img height="300" alt="image" src="schematics/install-stock-3pln/archive/gc-hv-3pln.jpg">
+
+  <img height="300" alt="image" src="schematics/install-stock-3pln/archive/gc-lv-3pln.jpg">
+  <!-- tab:Gaggia Classic Pro -->
+
+  **Gaggia Classic Pro**
+
+  <img height="300" alt="image" src="schematics/install-stock-3pln/archive/gcp-hv-3pln.jpg">
+
+  <img height="300" alt="image" src="schematics/install-stock-3pln/archive/gcp-lv-3pln.jpg">
+
+  **Gaggia Classic Pro Eco**
+
+  > [!Warning|style:callout]
+  > Stock wiring integration is possible, but for machines with the eco board (automatic power-off) [3PLN custom wiring](guides-stm32/3pln-custom-wiring.md) is recommended.
+
+  *Remember to do the [Power switch mod](https://www.youtube.com/embed/WNs3uSLA4Ts?start=99&end=151) to make it bistable.*  
+
+  <img height="300" alt="image" src="schematics/install-stock-3pln/archive/gcp_eco-hv-3pln.jpg">
+
+  <img height="300" alt="image" src="schematics/install-stock-3pln/archive/gcp_eco-lv-3pln.jpg">
+  <!-- tabs:end -->
+
+### Basic HV Wiring diagrams
+
+* [3PLN 120v, GC-specific](https://user-images.githubusercontent.com/53577819/220784232-1b254cd4-d3d7-4fe9-97e5-283fa1fb2659.png)
+* [3PLN 120v](https://user-images.githubusercontent.com/53577819/220784237-e2b841e0-4754-4657-98bd-6adb96255aa1.png)
+* [3PLN 240v](https://user-images.githubusercontent.com/53577819/220784234-0b370f5b-fd5e-4d0d-9b9d-109ff25d2cbf.png)
 
 # Gen 1 - Arduino Nano + Nextion
 
+### Installation Documents
+
 * [Nano Install: Gaggia Classic](archive/guides-nano/gaggia-classic.md)
 * [Nano Install: Gaggia Classic Pro](archive/guides-nano/gaggia-classic-pro-new-classic.md)
+
+### Software 
+
 * Arduino Nano [CH340 USB Driver](http://www.wch-ic.com/downloads/CH341SER_ZIP.html)
 
-
-  MCU             |                               Code branch         
-------------------|------------------------------------------------------------------------------------
-  Arduino Nano    |[release-nano-final-v4](https://github.com/Zer0-bit/gaggiuino/tree/release-nano-final-v4)
+|  MCU             |                               Code branch         
+|------------------|------------------------------------------------------------------------------------
+|  Arduino Nano    |[release-nano-final-v4](https://github.com/Zer0-bit/gaggiuino/tree/release-nano-final-v4)
 
 > [!TIP|style:callout|label:ADVICE|iconVisibility:visible]
 > __1. Failing to run the right code branch on the chosen set of hardware will yield unexpected results.__   
@@ -27,7 +65,7 @@ The files linked here should generally not be used for new systems. They are bei
 * [PCBv2 Github](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V2)
 * [Rigid Housing](https://www.printables.com/model/260901), [Easy Access Housing](https://www.printables.com/model/261267)
 
-## PCB v2 Schematics
+### PCB v2 Schematics
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic 100-120v -->
 
@@ -45,11 +83,9 @@ The files linked here should generally not be used for new systems. They are bei
 <img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv2_220v.png">
 <!-- tabs:end -->
 
-# Basic HV Wiring diagrams
-* [3PLN 120v, GC-specific](https://user-images.githubusercontent.com/53577819/220784232-1b254cd4-d3d7-4fe9-97e5-283fa1fb2659.png)
-* [3PLN 120v](https://user-images.githubusercontent.com/53577819/220784237-e2b841e0-4754-4657-98bd-6adb96255aa1.png)
-* [3PLN 240v](https://user-images.githubusercontent.com/53577819/220784234-0b370f5b-fd5e-4d0d-9b9d-109ff25d2cbf.png)
 
-# Hardware Scales (500 g load cells)
+# Accessories
 
-* [LikeableBump HW Scales](archive/scales.md)
+### Hardware Scales 
+
+* [LikeableBump HW Scales (500 g load cells)](archive/scales.md)
