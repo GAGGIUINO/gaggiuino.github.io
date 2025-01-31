@@ -46,16 +46,13 @@ Save the images or right-click and open in a new tab to view at full resolution.
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
-<img height="300" alt="image" src="schematics/install-stock-3pln/gc-hv-3pln.jpg">
+<img height="300" alt="image" src="schematics/install-stock-3pln/GC_SI_wiring_PCBv3_1_120V.png">
 
-<img height="300" alt="image" src="schematics/install-stock-3pln/gc-lv-3pln.jpg">
 <!-- tab:Gaggia Classic Pro -->
 
 **Gaggia Classic Pro**
 
-<img height="300" alt="image" src="schematics/install-stock-3pln/gcp-hv-3pln.jpg">
-
-<img height="300" alt="image" src="schematics/install-stock-3pln/gcp-lv-3pln.jpg">
+<img height="300" alt="image" src="schematics/install-stock-3pln/GCP_SI_wiring_PCBv3_1_120V.png">
 
 **Gaggia Classic Pro Eco**
 
