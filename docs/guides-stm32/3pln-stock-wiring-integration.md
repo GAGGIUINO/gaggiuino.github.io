@@ -50,13 +50,14 @@ Save the images or right-click and open in a new tab to view at full resolution.
 <!-- tabs:start -->
 <!-- tab:STM32 PCB -->
 
-![GC SI PCB](../schematics/install-stock-3pln/gc_si_wiring_pcbv3_1_120v.png ':size=80%')
+![GC SI PCB](../schematics/install-stock-3pln/GC_SI_wiring_PCBv3_1_120v.png ':size=80%')
 
 test  
-<img width="500" alt="image" src="schematics/install-stock-3pln/gc_si_wiring_pcbv3_1_120v.png">
+<img width="500" alt="image" src="schematics/install-stock-3pln/GC_SI_wiring_PCBv3_1_120v.png">
 
 <!-- tab:STM32 LEGO -->
-![GC SI COMP](../schematics/install-stock-3pln/gc_si_wiring_comp_120v.png ':size=80%')
+
+![GC SI COMP](../schematics/install-stock-3pln/GC_SI_wiring_COMP_120v.png ':size=80%')
 
 <!-- tabs:end -->
 
@@ -65,11 +66,11 @@ test
 <!-- tabs:start -->
 <!-- tab:STM32 PCB -->
 
-![GCP SI COMP](../schematics/install-stock-3pln/gcp_si_wiring_pcbv3_1_120v.png ':size=80%')
+![GCP SI PCB](../schematics/install-stock-3pln/GCP_SI_wiring_PCBv3_1_120v.png ':size=80%')
 
 <!-- tab:STM32 LEGO -->
 
-![GCP SI COMP](../schematics/install-stock-3pln/gcp_si_wiring_comp_120v.png ':size=80%')
+![GCP SI COMP](../schematics/install-stock-3pln/GCP_SI_wiring_COMP_120v.png ':size=80%')
 
 <!-- tabs:end -->
 
