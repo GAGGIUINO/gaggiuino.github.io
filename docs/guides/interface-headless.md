@@ -41,6 +41,8 @@ The headless PCB uses the same connection as the screens, JST-PH.
 
 Route the power/serial cable to the mounting location (the left vent is recommended for all Gaggia Classic models).
 
+<img height="300" alt="image" src="https://github.com/user-attachments/assets/ac94b5ae-ba9a-4b9a-9ed9-bf49a61af009">
+
 Plug the power/serial cable into the headless PCB, *then* slide the PCB into the housing. Make sure it is fully seated before closing the case.
 
   > [!Tip|style:callout|label:Poka-Yoke|iconVisibility:visible]

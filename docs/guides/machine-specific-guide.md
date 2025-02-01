@@ -3,7 +3,7 @@
 # Power Switch Mod
 
 > [!Note|style:callout|label:APPLICABLE MODELS|iconVisibility:visible]
-> 230V (EU) Gaggia Classic Pro Eco and Evo models with an Eco PCB.
+> 230V (EU) Gaggia Classic Pro, Eco, Evo, and E24 models with an Eco PCB.
 
 A Gaggia Classic with Gaggiuino typically takes 10-15 minutes to reach thermal equilibrium. However, in adherence to EU regulations, Gaggia Classic models available in the region are equipped with a PCB (Eco board) designed to power off the machine after 20 minutes of idle operation. These machines also have a monostable (spring-return) switch that defaults to the "Off" position when not pressed. To make the switch bistable a spring must be removed.
 
@@ -19,11 +19,11 @@ Remove the switch from the machine. Use a thin pry tool to gently push the side 
 # Combined Connector Insulation
 
 > [!Note|style:callout|label:APPLICABLE MODELS|iconVisibility:visible]
-> Gaggia Classic Evo Pro
+> Gaggia Classic Evo Pro and E24
 
 <img width="600" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/4c670b12-c555-4aab-91ad-5a9d8e9cec66">
 
-Most Evo models have a combined shield block around the switch connectors. It is recommended to remove the connectors, insulate them separately, and then label prior to completing the mod. This is especially important if doing stock wiring integration because some connectors will be left in the machine disconnected. 
+Most Evo and E24 models have a combined shield block around the switch connectors. It is recommended to remove the connectors, insulate them separately, and then label prior to completing the mod. This is especially important if doing stock wiring integration because some connectors will be left in the machine disconnected. 
 
 ### Bill of Materials
 
@@ -49,9 +49,9 @@ It is recommended to remove the connectors one at a time and insulate with self-
 # 10-12 Bar OPV
 
 > [!Note|style:callout|label:APPLICABLE MODELS|iconVisibility:visible]
-> 120V (US) Gaggia Classic Evo Pro
+> 120V (US) Gaggia Classic Evo Pro and E24
 
-Gaggia decided that the Evo would come with a 9 bar OPV in the US, likely due to the number of people there who changed out the spring in their Gaggia Classic Pro OPVs.  
+Gaggia decided that the Evo and E24 would come with a 9 bar OPV in the US, likely due to the number of people there who changed out the spring in their Gaggia Classic Pro OPVs.  
 Unfortunately, OPVs don't open all at once. For example, a 9 bar spring might initially open a bit at 8.2 bar, slightly increasing flow until fully open around 9 bar. When the OPV opens, water is diverted and Gaggiuino control can't determine if or when that happens. For this reason, the OPV should be set at least 1 bar above the highest desired shot pressure. Most people want to have 9 bar shot profiles available, so for Gaggiuino the OPV should be 10-12 bar.
 
 ### Bill of Materials

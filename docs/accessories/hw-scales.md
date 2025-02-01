@@ -82,6 +82,8 @@ Print files are available on [Printables](https://www.printables.com/model/28537
     * 3D Print DripTray (no other adapters needed)  
         *Note: not recommended unless your stock tray is broken*
 
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/b9ac4959-6f34-436a-aa8e-3d7717b38456">
+
 # Assembly
 
 1. The load cells are often covered with adhesive in places it shouldn't be. Use a sharp razor blade and cut the adhesive away from the screw holes, being careful to not cut a wire or cut into the load sensing area.

@@ -1,4 +1,4 @@
-# Home
+# User Manual - Gen 3
 
 > [!Warning|style:callout|label:Work in Progress|iconVisibility:visible]
 > This manual (and Gaggiuino Gen 3) are a work in progress. Expect the manual to naturally lag feature releases.

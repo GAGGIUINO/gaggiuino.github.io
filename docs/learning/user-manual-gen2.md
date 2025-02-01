@@ -1,4 +1,4 @@
-# User Manual
+# User Manual - Gen 2
 
 Special Thanks to:
 - wundersnooch
