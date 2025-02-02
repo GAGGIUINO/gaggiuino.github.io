@@ -12,7 +12,7 @@ Gaggiuino is a community-driven project to add high-end features to Gaggia Class
 Advanced pressure and flow profiling, web interface, shot history, OTA updates, Bluetooth scales... so many features we decided to put them under a dropdown. 
 
 <details>
-<summary><b>Click to expand the Gaggiuino Features Comparison Table</b></i></summary>
+<summary><b>Gaggiuino Features Comparison Table</b> <i>(Click to expand)</i></summary>
 
   Feature                |Gen 1<br/>Nano & Nextion|Gen 2<br/>STM32 & Nextion|Gen 3<br/>STM32 & ESP32
 -----------------------  |:----------------------:|:-----------------------:|:----------------------:
