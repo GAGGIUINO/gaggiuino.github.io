@@ -28,44 +28,33 @@ These schematics show the connection points for integrating into the stock wirin
 Save the images or right-click and open in a new tab to view at full resolution.
 
 <details>
-<summary><b>Gaggiuino STM32 schematics/diagrams for connection reference  </b> <i>(Click to expand)</i></summary>
+<summary><b>Control system schematics/diagrams for connection reference  </b> <i>(Click to expand)</i></summary>
 <!-- tabs:start -->
-<!-- tab:STM32 Comp -->
+<!-- tab:Comp Build -->
 <img height="400" alt="image" src="schematics/stm32-comp-build.png">
-<!-- tab:STM32 PCBv3.1 -->
+<!-- tab:PCBv3.1/v4 -->
 <img height="400" alt="image" src="schematics/stm32_pcbv3_1_board_labels.png">
-<!-- tab:STM32 PCBv3 -->
+<!-- tab:PCBv3 -->
 <img height="400" alt="image" src="schematics/stm32_pcbv3_board_labels.png">
 <!-- tabs:end -->
 </details>
 
 >
 
-> [!Note|style:callout]
-> Only one version (120 V) of the Gaggia Classic and Classic Pro schematics are shown as the integration points are identical between 120/230 V. The wire colors may be different, but those differ between models of the same voltage type as well.  
+> [!Warning|style:callout]
+> * Stock integration of the 220-240v Gaggia Classic Pro variants with Eco PCB is not recommended. Please use [Custom Wiring](guides-stm32/3pln-custom-wiring.md).
+> * Component builds can use the AC wiring on the schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md). 
 
 <!-- tabs:start -->
-<!-- tab:Gaggia Classic -->
-
-<!-- tabs:start -->
-<!-- tab:STM32 PCB -->
-![GC SI PCB](../schematics/install-stock-3pln/GC_SI_wiring_PCBv3_1_120v.png ':size=80%')
-
-<!-- tab:STM32 LEGO -->
-![GC SI COMP](../schematics/install-stock-3pln/GC_SI_wiring_COMP_120v.png ':size=80%')
-
-<!-- tabs:end -->
-
-<!-- tab:Gaggia Classic Pro -->
-
-<!-- tabs:start -->
-<!-- tab:STM32 PCB -->
+<!-- tab:Gaggia Classic Pro 120v -->
 ![GCP SI PCB](../schematics/install-stock-3pln/GCP_SI_wiring_PCBv3_1_120v.png ':size=80%')
 
-<!-- tab:STM32 LEGO -->
-![GCP SI COMP](../schematics/install-stock-3pln/GCP_SI_wiring_COMP_120v.png ':size=80%')
+<!-- tab:Gaggia Classic 100-120v -->
+![GC SI PCB](../schematics/install-stock-3pln/GC_SI_wiring_PCBv3_1_120v.png ':size=80%')
 
-<!-- tabs:end -->
+<!-- tab:Gaggia Classic 220-240v -->
+![GC SI PCB](../schematics/install-stock-3pln/GC_SI_wiring_PCBv3_1_220v.png ':size=80%')
+
 <!-- tabs:end -->
 
 # Integration

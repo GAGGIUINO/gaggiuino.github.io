@@ -37,30 +37,9 @@ The BOM is compiled for the standard install path where all components are taken
 > * Make sure your control system has been flashed and passed the pre-install test checklist ([PCB](guides-stm32/pcb-guide.md#pre-install-test), [Component (Lego) build](guides-stm32/lego-component-build-guide.md#component-test)). It's much easier to resolve issues prior to integration.
 > * If you have a US Gaggia Classic with a 2 pole power cord and plug then please see the [Grounding](guides/machine-specific-guide.md#Grounding) section of the machine-specific instructions before continuing.
 > * As this wiring completely replaces the stock wiring harness it is expected that the reader can complete the wiring using only the schematics.  
-> * Component builds can use the HV wiring on the [PCBv3 (3PLN)](#pcb-v3-3pln) schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md).
-
-### PCB v3 (3PLN)
-<!-- tabs:start -->
-<!-- tab:Gaggia Classic 100-120v -->
-
-*Remember to check and add [Grounding](guides/machine-specific-guide.md#grounding) if needed.*  
+> * Component builds can use the AC wiring on the schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md).
 
 <!-- tabs:start -->
-<!-- tab:PCBv3.1/v4 -->
-<img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_1_120v.png">
-<!-- tab:PCBv3 -->
-<img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_120v.png">
-<!-- tabs:end -->
-
-<!-- tab:Gaggia Classic 220-240v -->
-
-<!-- tabs:start -->
-<!-- tab:PCBv3.1/v4 -->
-<img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_1_220v.png">
-<!-- tab:PCBv3 -->
-<img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_220v.png">
-<!-- tabs:end -->
-
 <!-- tab:Gaggia Classic Pro 100-120v -->
 
 <!-- tabs:start -->
@@ -79,6 +58,26 @@ The BOM is compiled for the standard install path where all components are taken
 <img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_1_220v.png">
 <!-- tab:PCBv3 -->
 <img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_220v.png">
+<!-- tabs:end -->
+
+<!-- tab:Gaggia Classic 100-120v -->
+
+*Remember to check and add [Grounding](guides/machine-specific-guide.md#grounding) if needed.*  
+
+<!-- tabs:start -->
+<!-- tab:PCBv3.1/v4 -->
+<img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_1_120v.png">
+<!-- tab:PCBv3 -->
+<img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_120v.png">
+<!-- tabs:end -->
+
+<!-- tab:Gaggia Classic 220-240v -->
+
+<!-- tabs:start -->
+<!-- tab:PCBv3.1/v4 -->
+<img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_1_220v.png">
+<!-- tab:PCBv3 -->
+<img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_220v.png">
 <!-- tabs:end -->
 
 <!-- tabs:end -->
