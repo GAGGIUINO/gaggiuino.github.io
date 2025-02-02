@@ -71,7 +71,7 @@ Save the images or right-click and open in a new tab to view at full resolution.
 # Integration
 
 > [!Warning|style:callout]
-> * Make sure your control system has been flashed and passed the pre-install test checklist. It's much easier to resolve issues prior to integration.
+> * Make sure your control system has been flashed and passed the pre-install test checklist ([PCB](guides-stm32/pcb-guide.md#pre-install-test), [Component (Lego) build](guides-stm32/lego-component-build-guide.md#component-test)). It's much easier to resolve issues prior to integration.
 > * If you have a US Gaggia Classic with a 2 pole power cord and plug then please see the [Grounding](guides/machine-specific-guide.md#Grounding) section of the machine-specific instructions before continuing.
 
 ## Open machine
@@ -99,6 +99,8 @@ Pump                  |P      |a    b <br /> _a is from fuse, GC unlabel
 Pump Fuse (GC)        |F      |_there should be 2 wires_ <br />_in the connector to the fuse_
 
 > [!Warning|style:callout]
+> Misidentifying connections may result in a damaged control system! Please [ask for help](readme.md#build-process) in your Discord install-help thread if unsure.
+> 
 > Stock wiring colors and connector positions (especially at the pump) may not match the schematics and pictures. Please make sure the wiring matches the stock [schematic](#schematics) for your machine before continuing.
 
 Here are the stock pump connections for clarity. 

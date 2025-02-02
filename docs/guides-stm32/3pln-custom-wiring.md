@@ -34,7 +34,7 @@ The BOM is compiled for the standard install path where all components are taken
 # Custom Wire Harness Schematics
 
 > [!Warning|style:callout]
-> * Make sure your control system has been flashed and passed the pre-install test checklist. It's much easier to resolve issues prior to integration.
+> * Make sure your control system has been flashed and passed the pre-install test checklist ([PCB](guides-stm32/pcb-guide.md#pre-install-test), [Component (Lego) build](guides-stm32/lego-component-build-guide.md#component-test)). It's much easier to resolve issues prior to integration.
 > * If you have a US Gaggia Classic with a 2 pole power cord and plug then please see the [Grounding](guides/machine-specific-guide.md#Grounding) section of the machine-specific instructions before continuing.
 > * As this wiring completely replaces the stock wiring harness it is expected that the reader can complete the wiring using only the schematics.  
 > * Component builds can use the HV wiring on the [PCBv3 (3PLN)](#pcb-v3-3pln) schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md).
@@ -122,7 +122,9 @@ After screwing in the thermocouple (and reinstalling the boiler, if necessary), 
 
 ## SSR
 
-Mount the SSR to the back wall of the machine using an M4 (or 8-32) screw, washer, and nut. Make sure the SSR has space above it for the funnel piece and its screw while not touching the pump or pump housing.
+Mount the SSR to the back wall of the machine using an M4 (or 8-32) screw, washer, and nut thru a vent slot. Make sure the SSR has space above it for the funnel piece and its screw while not touching the pump or pump housing.
+
+![SSR Install Detail](https://github.com/user-attachments/assets/94bcb6c1-6e65-4ced-957c-9c00551140b3 ':size=300')
 
 ## Pressure Transducer
 
