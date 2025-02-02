@@ -80,7 +80,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 # Build Process
 
 > [!TIP|style:callout|label:WHERE TO GO FOR HELP|iconVisibility:visible]
-> If you need help (even during the planning phase) please make **one** [Discord](community/community-media.md#community-discord) help thread in [#install-help-gc](https://discord.com/channels/890339612441063494/996814638471708683) (for Gaggia Classic) or [#install-help-gcp](https://discord.com/channels/890339612441063494/996188987964268555) (for Gaggia Classic Pro/Eco/Evo).  
+> If you need help (even during the planning phase) please make **one** [Discord](community/community-media.md#community-discord) help thread in [#install-help-gc](https://discord.com/channels/890339612441063494/996814638471708683) (for Gaggia Classic) or [#install-help-gcp](https://discord.com/channels/890339612441063494/996188987964268555) (for Gaggia Classic Pro/Eco/Evo/E24).  
 > Title the thread by *[username][machine type][control system] Thread Title* and include any links/pictures/videos that may apply to your question. As you have more questions, rename the *Thread Title* and add your question to the thread.  
 > ***One help thread per person/machine, please!***
 
@@ -110,7 +110,7 @@ Name                                      | Voltage   | Model Years | Model ID  
   > [!TIP|style:callout|label:NAMING TIP|iconVisibility:visible]
   > There are two main groups of Gaggia Classic espresso machines referred to in the BOM and instructions:  
   >   - Gaggia Classic (GC)  
-  >   - Gaggia Classic Pro (GCP), which generally includes the Pro, Eco, and Evo models
+  >   - Gaggia Classic Pro (GCP), which generally includes the Pro, Eco, Evo, and E24 models
 
 4. **Parts are in, time to build!**
 
