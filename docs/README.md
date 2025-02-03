@@ -1,34 +1,18 @@
 # HOME
 
-> [!WARNING|style:flat|label:Result of unofficial sources|iconVisibility:visible]
->
-> Gaggiuino Gen 3 is free to use and will offer free software updates, but the source code is no longer available.  
-> This decision was made to maintain high standards for the hardware required for the project and prevent individuals from fracturing the community with subpar, non-standard components and processes that were untenable for Gaggiuino’s community-driven support to accommodate.
->
->Sincerely,
->
->The GAGGIUINO Team
+![img1](media/gcp_install.jpg ':size=24%')
+![img2](media/gaggiuino_tray_shot.jpg ':size=24%')
+![img3](media/spro_plot.jpg ':size=24%')
+![img4](media/blackpill_shot.jpg ':size=24%')
 
-> [!Info]
-> When buying from any of the approved suppliers you can head over to the community [Discord](community/community-media.md#community-discord) for order updates or install-help in the relevant channels.
-> 
-> Relevant channels for orders : #diy-efi-co-uk, #peakcoffee-cc, #espressio-nl
-> 
-> Relevant channels for install-help: #install-help-xxx
+Gaggiuino is a community-driven project to add high-end features to Gaggia Classic espresso machines. Implementing the Gaggiuino mod improves performance and precision with temp control, profiling, profile sharing, and other features (see below).
 
-
-
-**Contribute to the project development efforts.**
-<!-- ko-fi :id=zer0bit :color=<color> -->
-    Support the development efforts
-<!-- ko-fi -->
->
 # Features
 
-Advanced pressure and flow profiling, web interface, shot history, OTA updates, Bluetooth scales... so many features we decided to put them under a dropdown. If you want to dive in, expand below!
+Advanced pressure and flow profiling, web interface, shot history, OTA updates, Bluetooth scales... so many features we decided to put them under a dropdown. 
 
 <details>
-<summary><b>Gaggiuino Features Comparison</b> <i>(Click to expand)</i></summary>
+<summary><b>Gaggiuino Features Comparison Table</b> <i>(Click to expand)</i></summary>
 
   Feature                |Gen 1<br/>Nano & Nextion|Gen 2<br/>STM32 & Nextion|Gen 3<br/>STM32 & ESP32
 -----------------------  |:----------------------:|:-----------------------:|:----------------------:
@@ -58,7 +42,7 @@ Advanced pressure and flow profiling, web interface, shot history, OTA updates, 
   REST API               |:x:               |:x:                 |:heavy_plus_sign: 
 
 __Explanation__       
-:white_check_mark: Available in a limted form             
+:white_check_mark: Available in a limited form             
 :heavy_check_mark:  Available      
 :x:  Not available       
 :heavy_plus_sign: Planned   
@@ -82,23 +66,21 @@ Name                                      | Voltage   | Model Years | Model ID  
 ------------------------------------------|-----------|-------------|-----------------|-------
 :heavy_check_mark: Gaggia Classic         | 100-120 V | 1991-2018   | SIN035 RI9303   | Needs [Grounding](guides/machine-specific-guide.md#grounding) 
 :heavy_check_mark: Gaggia Classic         | 220-240 V | 1991-2014   | SIN035 RI9303   |  
-:x:                Gaggia Classic V2      | 220-240 V | 2015-2018   | SIN035U RI9403  | <details><summary><b>Avoid like the plague</b> <i>(Click for image)</i></summary><img width="600" alt="image" src="https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/4170cdbf-aebc-4e09-bafa-3f9b5e95a5bb"></details> 
+:x:                Gaggia Classic V2      | 220-240 V | 2015-2018   | SIN035U RI9403  | <details><summary><b>Avoid like the plague</b> <i>(Click for image)</i></summary>![avoid_like_plague_v2](https://github.com/user-attachments/assets/64fff151-a350-4bfc-804c-dd938b5e02b6 ':size=50%')</details> 
 :heavy_check_mark: Gaggia Classic Pro     | 100-120 V | 2019-2022   | SIN035R RI9380  | 
 :heavy_check_mark: Gaggia Classic Pro     | 220-240 V | 2019-2022   | SIN035R RI9380  | Uncommon, easier to mod than models with eco PCB
 :heavy_check_mark: Gaggia Classic Pro Eco | 220-240 V | 2019-2022   | SIN035UR RI9480 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
-:heavy_check_mark: Gaggia Classic Evo Pro | 100-120 V | 2023-?      | SIN035R RI9380  | 9 bar OPV must be changed to be a [10-12 bar OPV](guides/machine-specific-guide.md#10-12-bar-opv) <br /> High-temp insulation required for [combined connector insulation](guides/machine-specific-guide.md#combined-connector-insulation) when doing stock wiring integration 
-:heavy_check_mark: Gaggia Classic Evo Pro | 220-240 V | 2023-?      | SIN035UR RI9481 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
-
-> [!Note|style:callout|label:New Gaggia Classic Pro|iconVisibility:visible]
-> The Gaggia Classic Pro E24 has been released to some regions. It's reported that this model is a Gaggia Classic Evo Pro with a new brass boiler, so all notes regarding the Evo *should* apply.  
-> The table will be updated when more info is available and we've been able to confirm there are no unexpected deviations.    
+:heavy_check_mark: Gaggia Classic Evo Pro | 100-120 V | 2023-2024   | SIN035R RI9380  | 9 bar OPV must be changed to be a [10-12 bar OPV](guides/machine-specific-guide.md#10-12-bar-opv) <br /> High-temp insulation required for [combined connector insulation](guides/machine-specific-guide.md#combined-connector-insulation) when doing stock wiring integration 
+:heavy_check_mark: Gaggia Classic Evo Pro | 220-240 V | 2023-2024   | SIN035UR RI9481 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
+:heavy_check_mark: Gaggia Classic Pro E24 | 100-120 V | 2024-?      | SIN035R RI9380  | 9 bar OPV must be changed to be a [10-12 bar OPV](guides/machine-specific-guide.md#10-12-bar-opv) <br /> High-temp insulation required for [combined connector insulation](guides/machine-specific-guide.md#combined-connector-insulation) when doing stock wiring integration <br /> Brass boiler behavior is not fully characterized 
+:heavy_check_mark: Gaggia Classic Pro E24 | 220-240 V | 2024-?      | SIN035UR RI9481 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB <br /> Brass boiler behavior is not fully characterized 
 
 >
 
 # Build Process
 
 > [!TIP|style:callout|label:WHERE TO GO FOR HELP|iconVisibility:visible]
-> If you need help (even during the planning phase) please make **one** [Discord](community/community-media.md#community-discord) help thread in [#install-help-gc](https://discord.com/channels/890339612441063494/996814638471708683) (for Gaggia Classic) or [#install-help-gcp](https://discord.com/channels/890339612441063494/996188987964268555) (for Gaggia Classic Pro/Eco/Evo).  
+> If you need help (even during the planning phase) please make **one** [Discord](community/community-media.md#community-discord) help thread in [#install-help-gc](https://discord.com/channels/890339612441063494/996814638471708683) (for Gaggia Classic) or [#install-help-gcp](https://discord.com/channels/890339612441063494/996188987964268555) (for Gaggia Classic Pro/Eco/Evo/E24).  
 > Title the thread by *[username][machine type][control system] Thread Title* and include any links/pictures/videos that may apply to your question. As you have more questions, rename the *Thread Title* and add your question to the thread.  
 > ***One help thread per person/machine, please!***
 
@@ -106,13 +88,18 @@ Name                                      | Voltage   | Model Years | Model ID  
 
   See the [Compatibility Table](#compatibility) and take note of any [Machine-Specific Instructions](guides/machine-specific-guide.md) that are mentioned there. 
 
-2. **Determine your build path.** 
+2. **Determine your build path** 
 
-  Decide if you're going to order a [PCB](guides-stm32/pcb-guide.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. PCBv4 is recommended for new Gen 3 builds, while PCBv3.1 is recommended for Gen 2 builds (see [Features](#features) and [Announcements](announcements/) to compare Gen 2 and Gen 3). The component build is slightly more flexible for experimentation and less picky about thermocouple grounding, however, it adds significant effort and makes reliability dependent on the maker's skill. 
+  Select the Gaggiuino generation (see [Features](#features) and [Announcements](announcements/) to compare Gen 2 and Gen 3).  
+  Gen 3 is recommended for Gaggia Classic and Rancilio Silvia variants - it's newest, has more features, and is being actively worked on.  
+  Gen 2 is recommended if attempting a Gaggiuino install on machines that aren't officially compatible - it provides a stable code base to start with.  
 
-  Decide how to integrate the control system with your espresso machine. It can either be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring, but sometimes more confusing) or the stock wiring can be replaced with a [custom wiring harness](guides-stm32/3pln-custom-wiring.md) (more work, but results in a clean, straightforward install). It is recommended that you check the notes in the [Compatibility Table](#compatibility) for your machine and and read through the instructions before deciding.
+  Decide if you're going to order a [PCB](guides-stm32/pcb-guide.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. PCBv4 is recommended for Gen 3 builds, while PCBv3.1 is recommended for Gen 2 builds. 
+  The component build is slightly more flexible for experimentation and less picky about thermocouple grounding, however, it adds significant effort and makes reliability dependent on the maker's skill. 
 
-  If you're building Gen 3, decide which interface option you prefer. Currently there is a 4.3" IPS [touchscreen](guides/interface-screen.md) (embedded and web UI) with 3 mounting options. A headless option (web UI only) is in development.
+  Decide how to integrate the control system with your espresso machine. It can either be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring, but sometimes more confusing) or the stock wiring can be replaced with a [custom wiring harness](guides-stm32/3pln-custom-wiring.md) (more work, but results in a clean, straightforward install). It is recommended that you check the *notes* in the [Compatibility Table](#compatibility) for your machine and and read through the instructions before deciding.
+
+  If you're building Gen 3, decide which interface option you prefer. For an on-machine (embedded) and web UI, select the 4.3" IPS [touchscreen](guides/interface-screen.md) and one of its mounting options. For a "stealth" install with web UI only, select the [headless](guides/interface-headless.md) PCB.
 
 3. **Select and Order Components**
 
@@ -123,7 +110,7 @@ Name                                      | Voltage   | Model Years | Model ID  
   > [!TIP|style:callout|label:NAMING TIP|iconVisibility:visible]
   > There are two main groups of Gaggia Classic espresso machines referred to in the BOM and instructions:  
   >   - Gaggia Classic (GC)  
-  >   - Gaggia Classic Pro (GCP), which generally includes the Pro, Eco, and Evo models
+  >   - Gaggia Classic Pro (GCP), which generally includes the Pro, Eco, Evo, and E24 models
 
 4. **Parts are in, time to build!**
 
@@ -143,6 +130,7 @@ Name                                      | Voltage   | Model Years | Model ID  
   Follow the instructions for your interface selection
 
     * [Interface: Screen](guides/interface-screen.md)
+    * [Interface: Headless](guides/interface-headless.md)
 
   Follow the instructions for any accessories that may have been selected
 
@@ -153,7 +141,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 
   Record your first start. Post this to [#first-start](https://discord.com/channels/890339612441063494/919183771079692328) on Discord.  
   Record your first shot. Post this to [#first-shot](https://discord.com/channels/890339612441063494/910972035205857320) on Discord.  
-  Read the [User Manual](learning/user-manual.md) for more information on the machine capabilities.  
+  Read the [User Manual Gen 3](learning/user-manual-gen3.md) or [User Manual Gen 2](learning/user-manual-gen2.md) for more information on the machine capabilities.  
   Check out [Espresso Aficionados](https://espressoaf.com/guides/profiling.html) for info on profiling that you can now implement!  
 
 <!-- panels:start -->
@@ -162,6 +150,11 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 > [!TIP|style:callout|label:Sourcing|iconVisibility:visible]
 > PCBs, kits, and 3D-printed parts may be ordered from the **Approved Official Suppliers** in the sidebar.  
+> Head over to the community [Discord](community/community-media.md#community-discord) for updates in the relevant channels:  
+> * #diy-efi-co-uk
+> * #peakcoffee-cc
+> * #espressio-nl  
+>
 > Alternatively, components can be ordered from AliExpress and parts can be printed from the design files. 
 
 <!-- tabs:start -->
@@ -175,11 +168,10 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [M4x10 Screw, washer, and nut](https://www.aliexpress.com/item/2255801137435920.html) **or an 8-32 set from a local store**
 * [Heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html)
   * **22AWG - 5m:** Black, Red, Blue, Yellow, Orange, Purple
-* [JST XH 4P](https://www.aliexpress.com/item/2251832768103991.html)
 * [JST PH 3P, 4P](https://www.aliexpress.com/item/4000091077742.html)
 * [Spade connectors M/F 6.3mm](https://www.aliexpress.com/item/1005002765359666.html)
 * [Pressure sensor | 0-1.2Mpa](https://www.aliexpress.com/item/4000756631924.html)
-* [Flat gasket/o-ring | 1|4 inch pipe (11 x 6 mm), 3 mm thick](https://www.aliexpress.com/item/2255799841120591.html)
+* [Flat gasket/o-ring | 1/4 inch pipe (11 x 6 mm), 3 mm thick](https://www.aliexpress.com/item/2255799841120591.html)
 
 <!-- tab:STM32 LEGO -->
 * [STM32U585CIU6 *(for Gen 3)*](https://www.aliexpress.com/item/3256807730943902.html) or [BlackPill | F411 25M HSE *(for Gen 2)*](https://www.aliexpress.com/item/1005001456186625.html)
@@ -235,13 +227,16 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [BN1.25 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html)
 * [BN2 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html)
 * [Fork Crimp Terminal | 102PCS-SV *(SV1.25-5s & SV2-5s used)*](https://www.aliexpress.com/item/3256805357612913.html)
-* [Silicone Heat Shrink Tube | 4, 5, 6 mm dia](https://www.aliexpress.com/item/3256801522005095.html) **OR** [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html)
+* * [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html) **OR** [Silicone Heat Shrink Tube | 4, 5, 6 mm dia](https://www.aliexpress.com/item/3256801522005095.html) and a heat gun
 
 <!-- tabs:end -->
 
 <!-- tabs:start -->
 <!-- tab:Gen 3 -->
-* 4.3" ESP32-S3 Screen & cable - **must be activated by [PeakCoffee](https://www.peakcoffee.cc/product/4-3-iot-gaggiuino-lcd/) or [DIY-EFI](https://diy-efi.co.uk/product/gaggiuino_esp32_43_screen)**
+* Interface (pick one)
+  * 4.3" ESP32-S3 Screen & cable - **must be activated by [PeakCoffee](https://www.peakcoffee.cc/) or [DIY-EFI](https://diy-efi.co.uk/product-category/gaggiuino/)**
+  * Headless E177 PCB & cable- **must be activated by [PeakCoffee](https://www.peakcoffee.cc/) or [DIY-EFI](https://diy-efi.co.uk/product-category/gaggiuino/)**
+* MicroSD card | 1-8 GB, FAT32 (FAT32 cards ≤32 GB may work) - optional, for shot history
 
 <!-- tab:Gen 2 -->
 * [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html) **+ MicroSD card (Class 10 HC 2GB to 32GB)**
@@ -262,13 +257,17 @@ BOM and assembly instructions for the recommended 3D printed parts used in the s
 
 <!-- tabs:start -->
 <!-- tab:Gen 3 -->
+
+<!-- tabs:start -->
+<!-- tab:Screen -->
 * [Gen 3 Screen Housing](https://www.printables.com/model/356026)  
   There are 3 mount options that all use the same screen housing. Pick one.  
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/888b31f2-d0e5-48d8-af31-7133bd122f70">
   
   <!-- tabs:start -->
   <!-- tab:Front Mount -->
-  * 6 [20x10x3 mm magnets](https://www.aliexpress.com/item/3256803170039630.html)
+  * 6 [20x10x3 mm magnets](https://www.aliexpress.com/item/3256806984976303.html) (N35-N52, rectangular)  
+    *consider buying locally - magnets have had issues being shipped internationally*
   * [Kapton tape, 20 mm wide](https://www.aliexpress.com/item/3256803012935630.html)
   * Cyanoacrylate (super glue) or Epoxy
 
@@ -289,6 +288,15 @@ BOM and assembly instructions for the recommended 3D printed parts used in the s
   * 4 [M3 split lock washers](https://www.aliexpress.com/item/2251832789389968.html)
   * 2 [M3 nylock nuts](https://www.aliexpress.com/item/2251832802681129.html)
   <!-- tabs:end -->
+
+<!-- tab:Headless -->
+* [Headless PCB Housing](https://www.printables.com/model/1132631) (2 mounting options, pick one)
+  * VentClips - Recommended for all Gaggia Classic variants. Clips into the rear vents, no extra components required.
+  * Magnets - Recommended for non-Classic machines. Attach magnet(s) to the back with cyanoacrylate or high-temp double-side tape.  
+    2 [20x10x3 mm magnets](https://www.aliexpress.com/item/3256806984976303.html) (N35-N52, rectangular) work well, but magnet shape and size are flexible.  
+    *consider buying locally - magnets have had issues being shipped internationally*
+
+<!-- tabs:end -->
 <!-- tab:Gen 2 -->
 * [Screen Enclosure](https://www.printables.com/model/280617)
   * 2 M4x10 button-head screws
@@ -307,9 +315,17 @@ Accessories can be added to the base Gaggiuino build for additional features. BO
 * [Hardware Scales](accessories/hw-scales.md) sit below the drip tray and measure weight during shots. They're most useful for those who like to experiment with beans, grind, and profiles where predictive scales may have a difficult time
 * [ToFnLED](accessories/tofnled.md) provides an RGB LED and sensor for measuring water tank level
 
-# Contributors
 
-Thank you to everyone who has contributed to the project!
+
+# Support & Contributors
+
+**Support project development efforts.**
+<!-- ko-fi :id=zer0bit :color=<color> -->
+    Support the development efforts
+<!-- ko-fi -->
+>
+
+**Thank you to everyone who has contributed their time and effort to the project!**
 
 <a href="https://github.com/Zer0-bit/gaggiuino/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Zer0-bit/gaggiuino" />

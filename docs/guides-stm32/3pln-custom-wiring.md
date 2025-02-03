@@ -3,6 +3,8 @@
 > [!Warning|style:callout]
 > Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
 
+<img height="300" alt="Custom Wiring - Leon McKee" src="media/custom_wiring.png">
+
 # Alternate Components
 
 The BOM is compiled for the standard install path where all components are taken from the stock wiring harness and crimped onto new wires, following the schematics and wiring diagrams. **This is not part of the BOM**, however, stock components may be broken, unavailable, or a completely new wiring harness desired. Alternate components may be substituted for stock components as needed. Note that this list of components is still a work in progress. 
@@ -31,32 +33,13 @@ The BOM is compiled for the standard install path where all components are taken
 
 # Custom Wire Harness Schematics
 
-> [!Note|style:callout]
+> [!Warning|style:callout]
+> * Make sure your control system has been flashed and passed the pre-install test checklist ([PCB](guides-stm32/pcb-guide.md#pre-install-test), [Component (Lego) build](guides-stm32/lego-component-build-guide.md#component-test)). It's much easier to resolve issues prior to integration.
+> * If you have a US Gaggia Classic with a 2 pole power cord and plug then please see the [Grounding](guides/machine-specific-guide.md#Grounding) section of the machine-specific instructions before continuing.
 > * As this wiring completely replaces the stock wiring harness it is expected that the reader can complete the wiring using only the schematics.  
-> * Component builds can use the HV wiring on the [PCBv3 (3PLN)](#pcb-v3-3pln) schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md).
-
-### PCB v3 (3PLN)
-<!-- tabs:start -->
-<!-- tab:Gaggia Classic 100-120v -->
-
-*Remember to check and add [Grounding](guides/machine-specific-guide.md#grounding) if needed.*  
+> * Component builds can use the AC wiring on the schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md).
 
 <!-- tabs:start -->
-<!-- tab:PCBv3.1/v4 -->
-<img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_1_120v.png">
-<!-- tab:PCBv3 -->
-<img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_120v.png">
-<!-- tabs:end -->
-
-<!-- tab:Gaggia Classic 220-240v -->
-
-<!-- tabs:start -->
-<!-- tab:PCBv3.1/v4 -->
-<img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_1_220v.png">
-<!-- tab:PCBv3 -->
-<img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_220v.png">
-<!-- tabs:end -->
-
 <!-- tab:Gaggia Classic Pro 100-120v -->
 
 <!-- tabs:start -->
@@ -75,6 +58,26 @@ The BOM is compiled for the standard install path where all components are taken
 <img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_1_220v.png">
 <!-- tab:PCBv3 -->
 <img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_220v.png">
+<!-- tabs:end -->
+
+<!-- tab:Gaggia Classic 100-120v -->
+
+*Remember to check and add [Grounding](guides/machine-specific-guide.md#grounding) if needed.*  
+
+<!-- tabs:start -->
+<!-- tab:PCBv3.1/v4 -->
+<img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_1_120v.png">
+<!-- tab:PCBv3 -->
+<img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_120v.png">
+<!-- tabs:end -->
+
+<!-- tab:Gaggia Classic 220-240v -->
+
+<!-- tabs:start -->
+<!-- tab:PCBv3.1/v4 -->
+<img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_1_220v.png">
+<!-- tab:PCBv3 -->
+<img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_220v.png">
 <!-- tabs:end -->
 
 <!-- tabs:end -->
@@ -98,12 +101,14 @@ The BOM is compiled for the standard install path where all components are taken
 
 ## Thermocouple
 
-Unscrew the brew thermostat, transfer or add thermal paste, then ***Gently** screw in the thermocouple finger-tight (**do not over-tighten**). This can be done in-place, but it's easier to remove the boiler (4 SHCS up from below the sheet metal), steam knob, and steam wand so that the boiler can be tipped up a bit for easier access. You'll want to have the thermocouple wire free to rotate during the install. 
+Unscrew the brew thermostat, transfer or add thermal paste, then ***Gently** screw in the thermocouple barely finger-tight (**do not over-tighten**).  
+This can be done in-place, but it's easier to remove the boiler (4 SHCS up from below the sheet metal), steam knob, and steam wand so that the boiler can be tipped up a bit for easier access. Make sure the thermocouple wire is free to rotate during the install. 
 
->[!Tip]
->Depending on your machine type and location of your Gaggiuino control system it may be easier to run the thermocouple wire to the front of the machine and around the boiler to the back instead of going back behind the pump area. Pick the path with the fewest AC wires in the area.
+![Thermocouple Install Detail](https://github.com/user-attachments/assets/7eef096a-bcce-4d98-8a7d-ae898c3afec3 ':size=500')
 
->[!Note]
+After screwing in the thermocouple (and reinstalling the boiler, if necessary), run the thermocouple wire to the front of the Gaggia, around the boiler, and back to the control enclosure (avoid going back behind the pump area). 
+
+> [!Note|style:callout]
 >There should already be high-temp thermal paste in place. If there is not, or if the paste is dried out, replace with a paste that has at least a 180°C working temperature. 
 ><details>
 ><summary><b>Thermal Paste Options</b> <i>(Click to expand)</i></summary>
@@ -116,7 +121,9 @@ Unscrew the brew thermostat, transfer or add thermal paste, then ***Gently** scr
 
 ## SSR
 
-Mount the SSR to the back wall of the machine using an M4 (or 8-32) screw, washer, and nut. Make sure the SSR has space above it for the funnel piece and its screw while not touching the pump or pump housing.
+Mount the SSR to the back wall of the machine using an M4 (or 8-32) screw, washer, and nut thru a vent slot. Make sure the SSR has space above it for the funnel piece and its screw while not touching the pump or pump housing.
+
+![SSR Install Detail](https://github.com/user-attachments/assets/94bcb6c1-6e65-4ced-957c-9c00551140b3 ':size=300')
 
 ## Pressure Transducer
 

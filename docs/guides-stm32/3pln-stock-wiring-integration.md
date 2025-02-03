@@ -3,6 +3,8 @@
 > [!Warning|style:callout]
 > Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
 
+<img height="300" alt="Stock Wiring (lego build)" src="media/stock_wiring.jpg">
+
 These instructions detail how to integrate a 3PLN + SSR Gaggiuino control system (such as the [component build](guides-stm32/lego-component-build-guide.md), PCBv2, or PCBv3) into a Gaggia Classic | Pro | Eco espresso machine. They assume that you already have an assembled control system that has successfully completed a bench test.
 
 # What is 3PLN + SSR?
@@ -26,51 +28,40 @@ These schematics show the connection points for integrating into the stock wirin
 Save the images or right-click and open in a new tab to view at full resolution.
 
 <details>
-<summary><b>Gaggiuino STM32 schematics/diagrams for connection reference  </b> <i>(Click to expand)</i></summary>
+<summary><b>Control system schematics/diagrams for connection reference  </b> <i>(Click to expand)</i></summary>
 <!-- tabs:start -->
-<!-- tab:STM32 Comp -->
+<!-- tab:Comp Build -->
 <img height="400" alt="image" src="schematics/stm32-comp-build.png">
-<!-- tab:STM32 PCBv3.1 -->
+<!-- tab:PCBv3.1/v4 -->
 <img height="400" alt="image" src="schematics/stm32_pcbv3_1_board_labels.png">
-<!-- tab:STM32 PCBv3 -->
+<!-- tab:PCBv3 -->
 <img height="400" alt="image" src="schematics/stm32_pcbv3_board_labels.png">
 <!-- tabs:end -->
 </details>
 
 >
 
-> [!Note|style:callout]
-> Only one version (120 V) of the Gaggia Classic and Classic Pro schematics are shown as the integration points are identical between 120/230 V. The wire colors may be different, but those differ between models of the same voltage type as well.  
+> [!Warning|style:callout]
+> * Stock integration of the 220-240v Gaggia Classic Pro variants with Eco PCB is not recommended. Please use [Custom Wiring](guides-stm32/3pln-custom-wiring.md).
+> * Component builds can use the AC wiring on the schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md). 
+> * The old stock integration diagrams (drawn on manufacturer schematics) have been [archived](archive/archive.md#stock-wiring-integration-schematics)
 
 <!-- tabs:start -->
-<!-- tab:Gaggia Classic -->
-<img height="300" alt="image" src="schematics/install-stock-3pln/gc-hv-3pln.jpg">
+<!-- tab:Gaggia Classic Pro 120v -->
+![GCP SI PCB](../schematics/install-stock-3pln/GCP_SI_wiring_PCBv3_1_120v.png ':size=80%')
 
-<img height="300" alt="image" src="schematics/install-stock-3pln/gc-lv-3pln.jpg">
-<!-- tab:Gaggia Classic Pro -->
+<!-- tab:Gaggia Classic 100-120v -->
+![GC SI PCB](../schematics/install-stock-3pln/GC_SI_wiring_PCBv3_1_120v.png ':size=80%')
 
-**Gaggia Classic Pro**
+<!-- tab:Gaggia Classic 220-240v -->
+![GC SI PCB](../schematics/install-stock-3pln/GC_SI_wiring_PCBv3_1_220v.png ':size=80%')
 
-<img height="300" alt="image" src="schematics/install-stock-3pln/gcp-hv-3pln.jpg">
-
-<img height="300" alt="image" src="schematics/install-stock-3pln/gcp-lv-3pln.jpg">
-
-**Gaggia Classic Pro Eco**
-
-> [!Warning|style:callout]
-> Stock wiring integration is possible, but for machines with the eco board (automatic power-off) [3PLN custom wiring](guides-stm32/3pln-custom-wiring.md) is recommended.
-
-*Remember to do the [Power switch mod](https://www.youtube.com/embed/WNs3uSLA4Ts?start=99&end=151) to make it bistable.*  
-
-<img height="300" alt="image" src="schematics/install-stock-3pln/gcp_eco-hv-3pln.jpg">
-
-<img height="300" alt="image" src="schematics/install-stock-3pln/gcp_eco-lv-3pln.jpg">
 <!-- tabs:end -->
 
 # Integration
 
 > [!Warning|style:callout]
-> * Make sure your control system has been flashed and passed the pre-install test checklist. It's much easier to resolve issues prior to integration.
+> * Make sure your control system has been flashed and passed the pre-install test checklist ([PCB](guides-stm32/pcb-guide.md#pre-install-test), [Component (Lego) build](guides-stm32/lego-component-build-guide.md#component-test)). It's much easier to resolve issues prior to integration.
 > * If you have a US Gaggia Classic with a 2 pole power cord and plug then please see the [Grounding](guides/machine-specific-guide.md#Grounding) section of the machine-specific instructions before continuing.
 
 ## Open machine
@@ -98,6 +89,8 @@ Pump                  |P      |a    b <br /> _a is from fuse, GC unlabel
 Pump Fuse (GC)        |F      |_there should be 2 wires_ <br />_in the connector to the fuse_
 
 > [!Warning|style:callout]
+> Misidentifying connections may result in a damaged control system! Please [ask for help](readme.md#build-process) in your Discord install-help thread if unsure.
+> 
 > Stock wiring colors and connector positions (especially at the pump) may not match the schematics and pictures. Please make sure the wiring matches the stock [schematic](#schematics) for your machine before continuing.
 
 Here are the stock pump connections for clarity. 
@@ -119,12 +112,14 @@ Make a short jumper wire with male spades on both ends. Remove the wires attache
 ![Brew Thermostat Jumper Wire](https://user-images.githubusercontent.com/117388662/243794746-39d788cb-2b08-45ae-a08e-f1bb0907129d.png ':size=500')
 <!-- tabs:end -->
 
-Unscrew the brew thermostat, transfer or add thermal paste, then ***Gently** screw in the thermocouple barely finger-tight (**do not over-tighten**). This can be done in-place, but it's easier to remove the boiler (4 SHCS up from below the sheet metal), steam knob, and steam wand so that the boiler can be tipped up a bit for easier access. You'll want to have the thermocouple wire free to rotate during the install. 
+Unscrew the brew thermostat, transfer or add thermal paste, then ***Gently** screw in the thermocouple barely finger-tight (**do not over-tighten**).  
+This can be done in-place, but it's easier to remove the boiler (4 SHCS up from below the sheet metal), steam knob, and steam wand so that the boiler can be tipped up a bit for easier access. Make sure the thermocouple wire is free to rotate during the install. 
 
->[!Tip]
->Depending on your machine type and location of your Gaggiuino control system it may be easier to run the thermocouple wire to the front of the machine and around the boiler to the back instead of going back behind the pump area. Pick the path with the fewest AC wires in the area.
+![Thermocouple Install Detail](https://github.com/user-attachments/assets/7eef096a-bcce-4d98-8a7d-ae898c3afec3 ':size=500')
 
->[!Note]
+After screwing in the thermocouple (and reinstalling the boiler, if necessary), run the thermocouple wire to the front of the Gaggia, around the boiler, and back to the control enclosure (avoid going back behind the pump area). 
+
+> [!Note|style:callout]
 >There should already be high-temp thermal paste in place. If there is not, or if the paste is dried out, replace with a paste that has at least a 180°C working temperature. 
 ><details>
 ><summary><b>Thermal Paste Options</b> <i>(Click to expand)</i></summary>
@@ -134,16 +129,6 @@ Unscrew the brew thermostat, transfer or add thermal paste, then ***Gently** scr
 >* SYY-157 (200°C max)  
 >* GELID GC-Extreme (180°C max)
 ></details>
-
-
-<!-- tabs:start -->
-<!-- tab:Gaggia Classic -->
-![Brew Thermostat Replaced with TC](https://user-images.githubusercontent.com/117388662/239386114-4c98cdc0-8ad6-459f-921d-61014fc1cf9c.png ':size=500')
-
-*Note: Old BOM thermocouple is pictured. Yours may appear different.*
-<!-- tab:Gaggia Classic Pro -->
-![Brew Thermostat Replaced with TC](https://user-images.githubusercontent.com/117388662/243795408-5d2a4d6e-a194-4edf-a98b-608d153504ed.png ':size=500')
-<!-- tabs:end -->
 
 ## Pump Area
 

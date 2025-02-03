@@ -1,7 +1,4 @@
-# User Manual
-
-> [!NOTE]
-> This page is a work in progress.
+# User Manual - Gen 2
 
 Special Thanks to:
 - wundersnooch
@@ -9,12 +6,12 @@ Special Thanks to:
 - EuphoricCatastrophe
 
 # Startup
-<img alt="Startup" src="manual/00_000_startup.png">
+<img alt="Startup" src="manual/gen2/00_000_startup.png">
 
 - **Build Number**: A missing number indicates no communication between the Nextion and the micro controller.
 
 # Home
-<img alt="Home" src="manual/01_000_home.png">
+<img alt="Home" src="manual/gen2/01_000_home.png">
 
 - **Menu**: The main menu.
 - **Profiles**: Tap to select, hold to enter **Custom Profile Override**. Last renamed profile is set as default profile.
@@ -33,7 +30,7 @@ Special Thanks to:
 - **Dropping Beats**: Automatic pressure release through the group head, it is a system pressure and group water equalizing measure that triggers when pressure is above 0.7bar. This is done to improve shot consistency.
 
 # Home -> Brew Ratio
-<img alt="Dose" src="manual/01_001_dose.png">
+<img alt="Dose" src="manual/gen2/01_001_dose.png">
 
 - **Stop On Weight**: Stop on espresso shot weight. Affects both Hardware and Predictive Scales. 
 - **Coffee Dose**: Input weight of coffee grounds.
@@ -41,14 +38,14 @@ Special Thanks to:
 - **Shot Weight Override**: Manual override of the output weight, completely ignores **Coffee Dose** and **Brew Ratio**, set 0 to disable.
 
 # Home -> Scales
-<img alt="Scales" src="manual/01_002_scales.png">
+<img alt="Scales" src="manual/gen2/01_002_scales.png">
 
 Hardware Scales Required
 - **Weight**: Current scale weight.
 - **Tare**: Tares the scales. Scales auto tare on brew.
 
 # Home -> Custom Profile Override
-<img alt="Profile" src="manual/01_003_rename.png">
+<img alt="Profile" src="manual/gen2/01_003_rename.png">
 
 To access the **Custom Profile Override** screen long press on a profile from the **Home** screen. When building out a new brew profile select the profile slot from the home screen, make changes in the **Pre-Infusion**, **Soak**, **Profiling**, and **Advanced** pages. Return to the **Home** screen, long press on the profile, give it a custom name, press ok to save and set it as default start-up profile.
 - **Profile**: Change a profile’s name.
@@ -56,12 +53,12 @@ To access the **Custom Profile Override** screen long press on a profile from th
 - **Okay**: Renames the selected profile and sets it to the default profile that will load at start-up. Renaming is not required to set to default.
 
 # Brew
-<img alt="Brew" src="manual/02_000_brew.png">
+<img alt="Brew" src="manual/gen2/02_000_brew.png">
 
 - **Reset Weight**: Resets the weight, when on predictive scales press this when the first drips hit the cup.
 
 # Brew -> Pre-Infusion
-<img alt="PI" src="manual/02_001_pi.png">
+<img alt="PI" src="manual/gen2/02_001_pi.png">
 
 Pre-infusion phase fills the basket until a threshold is reached. The idea of pre-infusion is to saturate the puck of coffee, with the aim of increasing evenness of extraction and reducing channeling. It also helps when extracting lighter roasts, which are harder to extract.
 - **PI On / Off**: Turns pre-infusion on or off.
@@ -79,7 +76,7 @@ Pre-infusion phase fills the basket until a threshold is reached. The idea of pr
 Example: if you set a flow target of 8 ml/s, you set a time of 20, pressure of 4.5, filled of 100 and weight above of 5g, and you tick pressure above off. The system will try to hit 8ml/s but only if the pressure is at or under 4.5bars. so if you grind finely, then that high of a flow rate can't be achieved so it'll do the best it can, maybe it will settle at 4ml/s. This will continue until either one of these things happen: you pumped more than a 100ml of water, you got 5g in the cup, or you hit 20s of time.
 
 # Brew -> Soak
-<img alt="Soak" src="manual/02_002_soak.png">
+<img alt="Soak" src="manual/gen2/02_002_soak.png">
 
 Soak phase turns pump off completely allowing the built pressure during the pre-infusion phase to penetrate the puck naturally. This helps because it theoretically allows some of the trapped C02 from roasting coffee to escape, allowing easier extractions. If you have a darker roast, you might or might not want to do this phase, since darker roasts are easier to extract.
 - **Soak On / Off**: Turns soak on or off.
@@ -95,7 +92,7 @@ Soak phase turns pump off completely allowing the built pressure during the pre-
 - **Slope Type**: Curve type, which corresponds to how the machine will get to its target. See **Easing** section.
 
 # Brew -> Profiling
-<img alt="PP" src="manual/02_003_profile.png">
+<img alt="PP" src="manual/gen2/02_003_profile.png">
 
 Profiling phase.
 - **Profile On / Off**: Turns profiling on or off.
@@ -110,7 +107,7 @@ Profiling phase.
 
 
 # Brew -> Advanced
-<img alt="Advanced" src="manual/02_004_advanced.png">
+<img alt="Advanced" src="manual/gen2/02_004_advanced.png">
 
 Transition phase in between soak and profiling. Use this if you want to hold a target for a specified amount before profiling.
 - **Profile On / Off**: Turns transition on or off.
@@ -125,16 +122,16 @@ Transition phase in between soak and profiling. Use this if you want to hold a t
 - **Preview**: Preview the current profile.
 
 # Brew -> Preview
-<img alt="Preview" src="manual/02_005_preview.png">
+<img alt="Preview" src="manual/gen2/02_005_preview.png">
 
 Sample profile preview.
 
-<img alt="Classic" src="manual/declining_pp_classic.png">
+<img alt="Classic" src="manual/gen2/declining_pp_classic.png">
 
 Here is a classic pre-example of a declining pressure profile.
 
 # Brew -> Manual
-<img alt="Manual" src="manual/02_006_manual.png">
+<img alt="Manual" src="manual/gen2/02_006_manual.png">
 
 Manual flow control. Adjust flow traget flow rate with sider, flipe the brew switch to start.
   - **Control**: Manual control slider.
@@ -148,18 +145,18 @@ Manual flow control. Adjust flow traget flow rate with sider, flipe the brew swi
   
 
 # Brew -> More
-<img alt="More" src="manual/02_007_more.png">
+<img alt="More" src="manual/gen2/02_007_more.png">
 
 - **Home On Finish**: Automatically return to the **Home Screen** after 10 seconds have passed since the brew has been stopped.
 - **Brew Delta**: Boiler will increase temperature based on flow rate and be allowed to go over 100 C during the shot to more quickly transfer heat to the incoming cool water.
 - **Basket Prefill**: Fills the basket until pressure stabilizes at greater than or equal 0.1 bar.
 
 # Steam
-<img alt="Steam" src="manual/02_008_steam.png">
+<img alt="Steam" src="manual/gen2/02_008_steam.png">
 
 Ready to steam. Open steam wand valve to release pressure if temperature stops increasing.
 # Clean -> Flush
-<img alt="Flush" src="manual/03_001_flush.png">
+<img alt="Flush" src="manual/gen2/03_001_flush.png">
 
 Flushing can be used in one of two ways. Cleaning grounds out of the group head after a shot and back flushing through the three wave valve.
 - After shot flush
@@ -176,7 +173,7 @@ Flushing can be used in one of two ways. Cleaning grounds out of the group head 
   6. Turn off **Brew** switch.
 
 # Clean -> Descale
-<img alt="Descale" src="manual/03_002_descale.png">
+<img alt="Descale" src="manual/gen2/03_002_descale.png">
 
 The descaling process takes around 45-50 minutes.
   1. Fill water tank to "MAX" with water and descale solution (possible 4-6tbsp citric acid per one tank of water).
@@ -192,7 +189,7 @@ The descaling process takes around 45-50 minutes.
   11. Return to **Home** Screen and select any profile to re-enable brew mode.
 
 # Settings -> Temp
-<img alt="Temp" src="manual/04_001_temp.png">
+<img alt="Temp" src="manual/gen2/04_001_temp.png">
 
 - **Water Target Temp**: Water target temperature, set per profile.
 - **Steam Target Temp**: Steam target temperature, set system wide.
@@ -202,7 +199,7 @@ The descaling process takes around 45-50 minutes.
 - **Offset**: Offset value to calculate the real water temperature.
 
 # Settings -> System
-<img alt="System" src="manual/04_002_system.png">
+<img alt="System" src="manual/gen2/04_002_system.png">
 
 - **Load Cells**: Hardware scales load cell values.
 - **Pump Zero**: Amount of expected water pumped per cycle in mL.
@@ -213,7 +210,7 @@ The descaling process takes around 45-50 minutes.
 - **Reset**: Reset machine to default settings and profiles.
 
 # Settings -> System -> LED
-<img alt="LED" src="manual/04_003_led.png">
+<img alt="LED" src="manual/gen2/04_003_led.png">
 
 ToFnLED Required.
 
@@ -223,16 +220,16 @@ ToFnLED Required.
 
 # Easing
 - *Ease-In* : Slow start to rapid end.
-<img alt="In" src="manual/ease_in.png">
+<img alt="In" src="manual/gen2/ease_in.png">
 
 - *Ease-Out* : Rapid start to slow end.
-<img  alt="Out" src="manual/ease_out.png">
+<img  alt="Out" src="manual/gen2/ease_out.png">
 
 - *Ease-In-Out* : Slow start to slow end.
-<img  alt="In Out" src="manual/ease_in_out.png">
+<img  alt="In Out" src="manual/gen2/ease_in_out.png">
 
 - *Linear* : Consistent rate of change.
-<img  alt="Linear" src="manual/ease_linear.png">
+<img  alt="Linear" src="manual/gen2/ease_linear.png">
 
 - *Instant* : Instant change.
-<img  alt="Instant" src="manual/ease_instant.png">
+<img  alt="Instant" src="manual/gen2/ease_instant.png">
