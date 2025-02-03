@@ -44,6 +44,7 @@ Save the images or right-click and open in a new tab to view at full resolution.
 > [!Warning|style:callout]
 > * Stock integration of the 220-240v Gaggia Classic Pro variants with Eco PCB is not recommended. Please use [Custom Wiring](guides-stm32/3pln-custom-wiring.md).
 > * Component builds can use the AC wiring on the schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md). 
+> * The old stock integration diagrams (drawn on manufacturer schematics) have been [archived](archive/archive.md#stock-wiring-integration-schematics)
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic Pro 120v -->
