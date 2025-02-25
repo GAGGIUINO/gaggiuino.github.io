@@ -39,7 +39,7 @@ Advanced pressure and flow profiling, web interface, shot history, OTA updates, 
   Profiles sharing       |:x:               |:x:                 |:heavy_check_mark: 
   Web interface          |:x:               |:x:                 |:heavy_check_mark: 
   OTA updates            |:x:               |:x:                 |:heavy_check_mark: 
-  REST API               |:x:               |:x:                 |:heavy_plus_sign: 
+  REST API               |:x:               |:x:                 |:heavy_check_mark: 
 
 __Explanation__       
 :white_check_mark: Available in a limited form             
