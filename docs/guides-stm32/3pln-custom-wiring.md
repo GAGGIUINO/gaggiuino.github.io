@@ -49,6 +49,10 @@ The BOM is compiled for the standard install path where all components are taken
 <img width="600" alt="GCP 120v" src="schematics/custom-3pln/GCP_wiring_PCBv3_120v.png">
 <!-- tabs:end -->
 
+* Example of the AC portion of the wiring harness:  
+
+    <img width="600" alt="GCP 120v" src="schematics/custom-3pln-examples/GCP_120v.jpg">
+
 <!-- tab:Gaggia Classic Pro 220-240v -->
 
 *Remember to do the [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) to make it bistable.*  
@@ -59,6 +63,10 @@ The BOM is compiled for the standard install path where all components are taken
 <!-- tab:PCBv3 -->
 <img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_220v.png">
 <!-- tabs:end -->
+
+* Example of the AC portion of the wiring harness:  
+
+    <img width="600" alt="GCP 220v" src="schematics/custom-3pln-examples/GCP_220v.jpg">
 
 <!-- tab:Gaggia Classic 100-120v -->
 
@@ -71,6 +79,10 @@ The BOM is compiled for the standard install path where all components are taken
 <img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_120v.png">
 <!-- tabs:end -->
 
+* Example of the AC portion of the wiring harness:  
+
+    <img width="600" alt="GC 120v" src="schematics/custom-3pln-examples/GC_120v.jpg">
+
 <!-- tab:Gaggia Classic 220-240v -->
 
 <!-- tabs:start -->
@@ -80,19 +92,10 @@ The BOM is compiled for the standard install path where all components are taken
 <img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_220v.png">
 <!-- tabs:end -->
 
-<!-- tabs:end -->
+* Example of the AC portion of the wiring harness:  
 
-**Examples of the high voltage 3PLN custom wiring harness:**
+    <img width="600" alt="GC 220v" src="schematics/custom-3pln-examples/GC_220v.jpg">
 
-<!-- tabs:start -->
-<!-- tab:Gaggia Classic 100-120v -->
-<img width="600" alt="GC 120v" src="schematics/custom-3pln-examples/GC_120v.jpg">
-<!-- tab:Gaggia Classic 220-240v -->
-<img width="600" alt="GC 220v" src="schematics/custom-3pln-examples/GC_220v.jpg">
-<!-- tab:Gaggia Classic Pro 100-120v -->
-<img width="600" alt="GCP 120v" src="schematics/custom-3pln-examples/GCP_120v.jpg">
-<!-- tab:Gaggia Classic Pro 220-240v -->
-<img width="600" alt="GCP 220v" src="schematics/custom-3pln-examples/GCP_220v.jpg">
 <!-- tabs:end -->
 
 >
