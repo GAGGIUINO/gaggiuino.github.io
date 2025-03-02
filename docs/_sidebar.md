@@ -8,6 +8,7 @@
     * - [Hudson Creative Group __(USA)__](https://gaggiuino.hudsoncreativegroup.com/)
 * __TOOLS:__
   - [Restore __ui-web.bin__](https://gaggiuino.github.io/restore.html)
+  - [REST API](rest-api/rest-api.md)
 * __Useful:__
   - [Announcements](announcements/)
   - [Community Portal](community/community-media.md)
