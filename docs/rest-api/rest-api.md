@@ -7,7 +7,7 @@ http://gaggiuino.local
 
 ### 1. Shots API
 ---
-#### POST `/api/shots`
+#### `POST /api/shots`
 **Description:**
 - Handles shot persistence (streamed upload).
 - Used to log espresso shot data.
