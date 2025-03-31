@@ -32,6 +32,11 @@ http://gaggiuino.local
 - Selects a specific profile.
 - The wildcard `*` represents the profile identifier.
 
+#### `DELETE /api/profile-select/*`
+**Description:**
+- Deletes a specific profile.
+- The wildcard `*` represents the profile identifier.
+
 ### 3. System API
 ---
 #### `GET /api/system/status`
