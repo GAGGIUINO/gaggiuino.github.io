@@ -218,7 +218,7 @@ Name                                      | Voltage   | Model Years | Model ID  
   * **18AWG - 1m:** Black *(x2 if 230 VAC)*, White *(x2 if 230 VAC)*, Red, Blue, Yellow
 * [Piggy Back spades 6.3mm](https://www.aliexpress.com/item/32800326782.html)
 * [Fork Crimp Terminal | SV1.25-5s](https://www.aliexpress.com/item/3256805357612913.html)
-* [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html) **nice to have, needed for Evo**
+* [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html) **nice to have, needed for Evo & E24**
 
 <!-- tab:Custom Wiring -->
 **This list assumes components will be taken from the stock wiring harness. For alternate components see the [Custom Wiring](guides-stm32/3pln-custom-wiring.md) page**
@@ -236,7 +236,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 * Interface (pick one)
   * 4.3" ESP32-S3 Screen & cable - **must be activated by [PeakCoffee](https://www.peakcoffee.cc/) or [DIY-EFI](https://diy-efi.co.uk/product-category/gaggiuino/)**
   * Headless E177 PCB & cable- **must be activated by [PeakCoffee](https://www.peakcoffee.cc/) or [DIY-EFI](https://diy-efi.co.uk/product-category/gaggiuino/)**
-* MicroSD card | 1-8 GB, FAT32 (FAT32 cards ≤32 GB may work) - optional, for shot history
+* MicroSD card | 1-8 GB, FAT32 - optional, for shot history
 
 <!-- tab:Gen 2 -->
 * [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html) **+ MicroSD card (Class 10 HC 2GB to 32GB)**

@@ -31,6 +31,7 @@ Make sure to switch to the necessary [release branch](#Releases) once pulled, de
 > __1. Gaggiuino Gen 3 (NextMonday&trade;) is *NOT* compatible with Nextion screens.__  
 > __2. Failing to flash the correct binary for your hardware will yield unexpected results.__   
 > __3. Make sure the microcontroller and screen unit are in sync.__  
+> __4. If upgrading a pre-2025-02-16 build, flash [breaking update 616ea70](https://github.com/Zer0-bit/gaggiuino/releases/tag/dev-616ea70) before flashing latest.__ 
 
 Released binary (.bin) files are on the [Gaggiuino Github Release (Latest)](https://github.com/Zer0-bit/gaggiuino/releases/latest) page. Files selection depends on your system hardware.
   * Core (STM32): 1 file, named in format *MCU - Build Type - LED Controller .bin* per hardware (see table below).  
@@ -104,7 +105,7 @@ Make sure **Verify programming** is selected and **Skip flash erase before progr
 
 > [!Warning|style:callout|label:Warning|iconVisibility:visible]
 > * ESP32 systems **must be enabled by official suppliers** to work with Gaggiuino Gen 3.  
-> * Core OTA is compatible with STM32**U585** only (PCBv4 and systems with uPill or WeAct U585 Core Board). Sometimes the U585 may need to be flashed with STM32CubeProgrammer - this will be stated in the release notes if necessary. 
+> * Core OTA is compatible with STM32**U585** only (PCBv4 and systems with uPill or WeAct U585 Core Board). If breaking updates are flashed in the wrong order the U585 may need to be flashed with STM32CubeProgrammer. 
 
 1. Identify the file(s) to flash from [Releases](#Releases).  
 
@@ -125,9 +126,9 @@ The password is the network name with a zero substituted for the "o" and the spa
 
 > [!Note|style:callout|label:File Order|iconVisibility:visible]
 > Flash files in the following order unless otherwise noted in the release notes:
+> * core file (per hardware)
 > * *ui-embedded.bin* / *ui-headless.bin*
 > * *ui-web.bin*
-> * core file (per hardware)  
 
 6. Wait for the upload, flash process, and reboot. The screen will be black during these operations. 
 
