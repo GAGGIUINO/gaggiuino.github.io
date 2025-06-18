@@ -56,6 +56,9 @@ If all is successful you should see:
 > * The headless module is connected to J1 in place of the screen. To see the test information you'll need to connect to the headless unit via Wi-Fi as described in [User Manual Gen 3](learning/user-manual-gen3.md).
 > * Depending on revision, the Blue and Yellow screen wires may be reversed from the schematics. Do not disassemble pre-made cables! Verify connection points, not just color.
 > * If built, HW scales can be included in the bench test and even calibrated at this point
+> * Bare Thermocouple wires should be folded over before being clamped in the connector
+> 
+> <img width="300" alt="image" src="https://github.com/user-attachments/assets/fe33ebf1-4759-4fd4-90ae-daa434dbd495">
 
 <!-- tab:Gen 2 -->
 > [!Warning|style:callout|label:Risk of Shorts]
