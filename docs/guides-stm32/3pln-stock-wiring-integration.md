@@ -58,6 +58,25 @@ Save the images or right-click and open in a new tab to view at full resolution.
 
 <!-- tabs:end -->
 
+# Integration Wires
+
+<img height="300" alt="image" src="https://github.com/user-attachments/assets/83dd3887-6ac7-4c8d-a0f3-c763b03180c6">
+
+CBL   | Connections                    | Description                                  |Length (mm)
+:----:|--------------------------------|----------------------------------------------|:----------:
+J     | Male Spade - Male Spade        | Jumper in place of Brew Thermostat           | 70
+Sa    | Fork Spade - Male Spade        | SSR AC1 in place of Steam Thermostat Spade 1 | 100
+Sb    | Fork Spade - Male Spade        | SSR AC2 in place of Steam Thermostat Spade 2 | 100
+3     | Female Spade - Male Spade      | PCB 3 to Pb                                  | 350
+P     | Female Spade - Female Spade    | PCB P to Pump                                | 300
+L     | Female Spade - Male Spade      | PCB L to B4                                  | 350
+N     | Female Spade - Piggyback Spade | PCB N to Pump and Pa (into fuse)             | 300
+
+> [!Note|style:callout]
+> The listed length is generous to fit a wide variety of machines and routing paths; feel free to route and then cut to optimize for a specific build if making your own.
+
+>
+
 # Integration
 
 > [!Warning|style:callout]
