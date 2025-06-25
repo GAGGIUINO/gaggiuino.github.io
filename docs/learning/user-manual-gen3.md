@@ -107,18 +107,26 @@ If the TofnLED board is installed, the descale cycle will stop automatically whe
 - **Elapsed time:** Shows for how long descaling has been active.
 <!-- tabs:end -->
 
-- **Descaling phase:** Shows the current descaling phase. During descaling the machine will cycle multiple times thorugh all descaling phases.
+- **Descaling phase:** Shows the current descaling phase. During descaling the machine will cycle multiple times through all descaling phases.
 - **Progress bar:** The progress of the descaling.
 - **Close:** Close the descale progress view. (The descaling will continue.)
 
 # Shot in progress
 
-When a shot is started the live data is displayed. The time axis scales automatically. If scales are installed, the weight in the cup is shown.
+When a shot is started the live data is displayed. The time axis scales automatically. If hardware or Bluetooth scales are present the weight in the cup is shown, otherwise weight is calculated with predictive scales.
+
+> [!TIP|style:callout|label:Shot Tips|iconVisibility:visible]
+> * The boiler will heat based on flow rate to maintain the target water temperature at the puck with Brew Delta enabled. As the thermocouple is attached to the boiler it will not match the output temperature so the plot is capped at the target temperature.
+> * Do not expect Gaggiuino shot settings to behave the same as the stock machine. 
+>   * Temperature with Brew Delta will be much more stable during the shot than the stock machine or even PID mods, so the resulting average temperature will be higher.  
+>   * Profiles with preinfusion and soak will increase the flow significantly during the extraction phase(s), so grind must be finer to hit the same pressure as without.
+> * The shot will predictively stop ahead of the target weight to account for what hasn't hit the cup yet - the espresso in the air and the last bit that comes out of the puck as the shot is stopped and pressure equalizes.
+
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
 <img alt="Shot in progress embedded" src="manual/gen3/mbed/001_001_shot_in_progress.png">
 
-- **Tare:** (Hardware scales are tared automatically when a shot is started.) Tare the scales by tapping the circle in the top right hand corner of the screen. If you are using predictive scales and weight is greater than 0g, even though there is no liquid in the cup, press the tare button when the first drops land in the cup.
+- **Tare:** (Hardware and Bluetooth scales are tared automatically when a shot is started.) Tare the scales by tapping the circle in the top right hand corner of the screen. If you are using predictive scales and weight is greater than 0g, even though there is no liquid in the cup, press the tare button when the first drops land in the cup.
 <!-- tab:Web UI -->
 <img alt="Shot in progress web" src="manual/gen3/web/001_001_shot_in_progress.png">
 <!-- tabs:end -->
@@ -176,7 +184,7 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 - **Steam Temperature [°C]:** Set the default temperature for steaming. This setting applies for all profiles.
 - **DreamSteam:** When enabled, fresh water is pumped into the boiler during steaming (Not recommended for machines with bigger boilers, like the Rancilio Silvia).
 - **Temperature Offset [°C]:** If you have a device (e.g. Scathe) that can measure the temperature at the group head/portafilter accurately, you can adjust this value for more accurate brew temperature.
-- **Brew Delta:** The boiler will increase temperature based on flow rate and be allowed to go over 100 °C during the shot, to more quickly transfer heat to the incoming cool water.
+- **Brew Delta:** When enabled, the boiler temperature during shots will increase based on flow rate to more quickly transfer heat to the incoming cool water. Higher flow rates during a shot result in higher boiler temperature after the shot, which should settle before pulling the next shot. 
 - **Advanced:** 
     > [!Warning|style:callout|label:Warning|iconVisibility:visible]
     > Only change these values if you have a non-Gaggia machine.
