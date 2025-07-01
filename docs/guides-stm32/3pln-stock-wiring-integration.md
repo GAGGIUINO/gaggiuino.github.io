@@ -60,7 +60,9 @@ Save the images or right-click and open in a new tab to view at full resolution.
 
 # Integration Wires
 
-<img height="300" alt="image" src="https://github.com/user-attachments/assets/83dd3887-6ac7-4c8d-a0f3-c763b03180c6">
+The following wires are used to integrate the stock wiring with the Gaggiuino control system:
+
+<img height="300" alt="image" src="https://github.com/user-attachments/assets/09a876da-2380-4a97-9aad-7fbbed6007fa">
 
 CBL   | Connections                    | Description                                  |Length (mm)
 :----:|--------------------------------|----------------------------------------------|:----------:
