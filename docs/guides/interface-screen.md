@@ -105,7 +105,7 @@ Place the front cover on, starting with the top side (with the thinner bezel). V
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/2a1c65f7-1ec7-46a0-bfa5-59710317190d">
 
-  Put the machine funnel and cup warming plate back on after everything is arranged as desired (don't forget to connect the ground wire).
+  Put the machine funnel and cup warming plate back on after everything is arranged as desired (don't forget to connect the ground wires).
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/44cd4587-2e95-4c72-bc0c-595ed9d91755">
 
@@ -126,7 +126,7 @@ Place the front cover on, starting with the top side (with the thinner bezel). V
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/bc3a08cb-6f48-489a-9d2c-367b53e5f1c9">
 
-  Put the machine funnel and cup warming plate back on after everything is arranged as desired (don't forget to connect the ground wire). Place the funnel mount onto the funnel.
+  Put the machine funnel and cup warming plate back on after everything is arranged as desired (don't forget to connect the ground wires). Place the funnel mount onto the funnel.
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/8f151c1e-93fa-4e46-81d0-cb45a3dc9d63">
   
@@ -140,7 +140,7 @@ Place the front cover on, starting with the top side (with the thinner bezel). V
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/69b796ea-27e1-4fb2-a55e-b474187ac989">
 
-  Put the machine funnel and cup warming plate back on after everything is arranged as desired (don't forget to connect the ground wire). While it's possible to install with the rear mount in place, it's much easier without.  
+  Put the machine funnel and cup warming plate back on after everything is arranged as desired (don't forget to connect the ground wires). While it's possible to install with the rear mount in place, it's much easier without.  
   Insert the upper mounting features into place in the vent, then clip the bottom side in. Push on the back of the latch handles to make sure they're fully attached. 
 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/d8067907-8ccb-4b46-b1b2-455515eea056">

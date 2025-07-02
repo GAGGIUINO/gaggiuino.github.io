@@ -45,7 +45,7 @@
 
 - **Temperature**: Current boiler temperature in Celsius. 
 
-- **Target Temperature**: Water temperature from the current profile or the Steam Temperature from Boiler Settings if the Steam switch is active.
+- **Target Temperature**: Water temperature from the current profile or the Steam Temperature from Boiler Settings if the Steam switch is active. If the temperature exceeds 120°C (typically while steaming), the circle around the temperature reading will pulsate to warn you of the high temperature. Exercise caution to prevent burns, especially from hot components like the steam wand.
 
     > [!Note|style:callout|label:Changing and Saving|iconVisibility:visible]
     > On the Embedded UI, the Target Temperature can be temporarily changed by pressing and holding the temperature and swiping up or down.  Pressing Save will update the current profile's Water Temperature (or the Steam Temperature from Boiler Settings if the Steam switch is active).
@@ -54,9 +54,9 @@
 
 - **Pressure**: Shows the current system pressure in Bar.
 
-- **Tank level**: If an [TofnLED](/accessories/tofnled.md) is installed, the current water level in the water tank is shown in percent. When the water level is below 20%, a notification is displayed to fill the water tank. When no TofnLED board is installed, the graph permanently shows the maximum water level.
+- **Tank level**: If a [TofnLED](/accessories/tofnled.md) is installed, the current water level in the water tank is shown in percent. When the water level is below 20%, a notification is displayed to fill the water tank. When no TofnLED board is installed, the graph permanently shows the maximum water level.
 
-- **System uptime**: Shows for how long the machine has been switched on.
+- **System uptime**: Shows how long the machine has been switched on.
 
 - **Shot weight**: Shows the shot weight in grams for the current profile. On the embedded UI the weight can be adjusted temporarily in 1g increments by tapping the '+' and '-' buttons or by tapping the weight field and using the number pad.
 
@@ -75,18 +75,18 @@ Tap and hold the button to perform a 5s flush. The grey circle will light up blu
 ### Back flushing
 
 1. Insert a blind basket into the portafilter.
-2. *OPTIONAL* Remove shower screen and add Cafiza to blind basket.
+2. *OPTIONAL* Remove shower screen and add some Cafiza to the blind basket.
 3. Lock the portafilter into the group head. 
 4. Activate flush mode by tapping the flush button and press the **brew** switch. 
-5. Let the machine perform multiple cycles.
-6. Turn off the **brew** switch. Tap on the flush buttom to deactivateflush mode.
+5. Let the machine perform multiple cycles until the water runs clear.
+6. Turn off the **brew** switch. Tap on the flush button to deactivate flush mode.
 
 ### Descaling
 
 1. Empty the drip tray.
 2. Fill the water tank up to the 'max' line with descale solution (i.e. water and citric acid). 
 3. Lock a portafilter with a blind basket into the group head. 
-4. Place a sufficiently big container under the steam wand (2l). 
+4. Place a sufficiently large container under the steam wand (2 L). 
 5. Open the steam wand a quarter turn. 
 6. Activate the descale mode by tapping the descale button (the circle inside will turn green). Press the **brew** switch. The machine will run through the descale cycle until the tank is empty. This will take around 30 minutes. 
 7. When the tank is empty, turn off the **brew** switch. Take out the tank, clean it and fill it with clean fresh water to the 'max' line to rinse the machine. 
@@ -107,7 +107,7 @@ If the TofnLED board is installed, the descale cycle will stop automatically whe
 - **Elapsed time:** Shows for how long descaling has been active.
 <!-- tabs:end -->
 
-- **Descaling phase:** Shows the current descaling phase. During descaling the machine will cycle multiple times thorugh all descaling phases.
+- **Descaling phase:** Shows the current descaling phase. During descaling the machine will cycle multiple times through all descaling phases.
 - **Progress bar:** The progress of the descaling.
 - **Close:** Close the descale progress view. (The descaling will continue.)
 
@@ -182,7 +182,7 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
     > Only change these values if you have a non-Gaggia machine.
     - *HPWR:* Relay max pulse width (**H**igh **P**eak **W**idth **R**esolution).
     - *Main Divider:* Main cycle divider (aka non brew heating behavior), used in conjunction with HPWR.
-    - *Brew Diviver:* Brew cycle divider.
+    - *Brew Divider:* Brew cycle divider.
 
 
 ### System
@@ -193,7 +193,7 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 <!-- tab:Web UI -->
 <img alt="Settings web" src="manual/gen3/web/003_002_settings_system.png">
 
-- **(Experimental) brewiu.io/sprofiler.io API key:** Reqiured to upload your shot to [SproFiler](https://sprofiler.io). For instructions on how to register and use SproFiler join the [Gaggiuino Discord](https://discord.com/channels/890339612441063494/1289578499581149204).
+- **(Experimental) brewiu.io/sprofiler.io API key:** Required to upload your shot to [SproFiler](https://sprofiler.io). For instructions on how to register and use SproFiler join the [Gaggiuino Discord](https://discord.com/channels/890339612441063494/1289578499581149204).
 
 <!-- tabs:end -->
 
@@ -230,13 +230,13 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 <!-- tabs:end -->
 
 - **Enabled:** Enable hardware scales if installed.
-- **Calibration Factor:** Calibration factors for the to load cells. The calibration factors can be determined via the Web UI. Detailed instructions on how to calibrate the scales can be found [here](https://gaggiuino.github.io/#/accessories/hw-scales?id=flashingcalibration).
+- **Calibration Factor:** Calibration factors for the two load cells. The calibration factors can be determined via the Web UI. Detailed instructions on how to calibrate the scales can be found [here](https://gaggiuino.github.io/#/accessories/hw-scales?id=flashingcalibration).
 
 ### Bluetooth Scales
 - Enabled: Enable Bluetooth scales. A list of supported scales can be found [here](https://github.com/kstam/esp-arduino-ble-scales).
 
 ### Force Predictive Scales
-- Enabled: Values from HW scales are ignored. The machine will stop on weight by the weight it has calculated during extraction.
+- Enabled: Values from HW scales are ignored. The machine will stop based on the weight it has calculated during extraction.
 
 ## LED
 <!-- tabs:start -->
@@ -307,7 +307,7 @@ If you have made a change to the settings, a save icon will appear in the left h
 - **Switch to phase:** Switches to a different phase (e.g. next phase, previous phase).
 - **Global profile settings:** Go to the global profile settings. 
 - **Add phase:** Add a phase after the phase you are currently viewing. 
-- **Delete phase:** Delte the phase you are currently viewing. 
+- **Delete phase:** Delete the phase you are currently viewing. 
 - **Water temp [°C]:** Target shot temperature.
 
 ## Phase settings
@@ -319,17 +319,17 @@ If you have made a change to the settings, a save icon will appear in the left h
 <img alt="Profiles phase settings web" src="manual/gen3/web/002_002_profiles_edit_phase.png"> 
 <!-- tabs:end -->
 
-- **Phase characteristic:** Either the configured pressure or flow are the target for the phase. The target/primary variable is displayed as a solid line while the secondary variable is a dotted line. 
+- **Phase characteristic:** Either the configured pressure or flow is the target for the phase. The target/primary variable is displayed as a solid line while the secondary variable is a dotted line. 
 
 ### Targets
-- **Adaptive:** Adapts the start of the next phase to match the actual end value of the previous phase. Example: Phase 1 of a profile targets 4 bar of pressure for 10 seconds. Phase 2 is a linear ramp from 4 to 7 bar over 10 seconds. During brewing phase 1 only reaches 2 bar. Adative option will change the ramp to match the real-time conditions, to have a smooth transition into phase 2. Practically this results in a linear ramp from 2 bar to 7 bar over the specified 10 second time interval.
+- **Adaptive:** Adapts the start of the next phase to match the actual end value of the previous phase. Example: Phase 1 of a profile targets 4 bar of pressure for 10 seconds. Phase 2 is a linear ramp from 4 to 7 bar over 10 seconds. During brewing phase 1 only reaches 2 bar. Adaptive option will change the ramp to match the real-time conditions, to have a smooth transition into phase 2. Practically this results in a linear ramp from 2 bar to 7 bar over the specified 10 second time interval.
 - **Target:** Either flow [ml/s] or pressure [bar] target, depending on selection. 
 - **limit:** If the phase characteristic is set to flow, the pressure won't exceed the limit value, to reach the desired flow and vice versa. 
 - **Time [s]:** Transition to the next phase of the profile after the configured time if no stop condition is selected or met. 
 
 ### Stop conditions
 
-If a stop condition is configured and triggered, the profile transitions to the next phase. If no stop conditions is configured or triggered, the profile transitions to the next phase after the configured time.
+If a stop condition is configured and triggered, the profile transitions to the next phase. If no stop condition is configured or triggered, the profile transitions to the next phase after the configured time.
 
 - **Pressure above [bar]:** Switch to the next profile phase if the pressure exceeds the configured value.
 - **Pressure below [bar]:** Switch to the next profile phase if the pressure drops below the configured value. 

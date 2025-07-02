@@ -103,7 +103,7 @@ Here are the stock pump connections for clarity.
 <!-- tabs:end -->
 
 ## Brew Thermostat Replacement
-Make a short jumper wire with male spades on both ends. Remove the wires attached to the brew thermostat (Ba and Bb) and jumper them together. Heat shrink the connections as required to prevent electrical faults. 
+Make a short jumper wire (18 AWG or thicker) with male Quick Disconnect connectors on both ends. Remove the wires attached to the brew thermostat (Ba and Bb) and jumper them together. Heat shrink the connections as required to prevent electrical faults. 
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
@@ -112,7 +112,7 @@ Make a short jumper wire with male spades on both ends. Remove the wires attache
 ![Brew Thermostat Jumper Wire](https://user-images.githubusercontent.com/117388662/243794746-39d788cb-2b08-45ae-a08e-f1bb0907129d.png ':size=500')
 <!-- tabs:end -->
 
-Unscrew the brew thermostat, transfer or add thermal paste, then ***Gently** screw in the thermocouple barely finger-tight (**do not over-tighten**).  
+Unscrew the brew thermostat, transfer or add thermal paste on the thermocouple's threads, then **gently** screw in the thermocouple barely finger-tight (**do not over-tighten**).  
 This can be done in-place, but it's easier to remove the boiler (4 SHCS up from below the sheet metal), steam knob, and steam wand so that the boiler can be tipped up a bit for easier access. Make sure the thermocouple wire is free to rotate during the install. 
 
 ![Thermocouple Install Detail](https://github.com/user-attachments/assets/7eef096a-bcce-4d98-8a7d-ae898c3afec3 ':size=500')
@@ -168,7 +168,7 @@ Disconnect wires from the switch and connect your last 3PLN connection (Line) wi
 
 ![L Connection](https://user-images.githubusercontent.com/117388662/239404551-97d6f3e4-f62e-45c4-93d7-52d8ae373526.png ':size=500')
 <!-- tab:Gaggia Classic Pro -->
-Disconnect and move wires from the switches and connect your last 3PLN connection (Line) with a male spade to the brew switch source wire. **Follow the [schematic](#schematics) for your machine**. When you're done you should have one empty column of spades on both the brew and steam switches.
+Disconnect and move wires from the switches and connect the brew switch wire to the control L wire. **Follow the [schematic](#schematics) for your machine**. When you're done you should have one empty column of spades on both the brew and steam switches.
 
 ![L Connection](https://user-images.githubusercontent.com/117388662/243890489-77c730e4-20e3-4e6f-9cb5-6295780194fc.png ':size=500')
 <!-- tabs:end -->
@@ -192,9 +192,9 @@ The pressure transducer comes with a base O-ring (green in pictures), however, t
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
 
-![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/78d801f3-9c4f-4c17-8105-74e32711af09 ':size=500')
+![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/78d801f3-9c4f-4c17-8105-74e32711af09.png ':size=500')
 
-Cut the tubing in between the pump and boiler, nearer to the boiler but high enough the T is mostly vertical, not horizontal. Attach the push-to-connect T fitting. 
+Cut the insulated tubing in between the pump and boiler, nearer to the boiler but high enough so the T is mostly vertical, not horizontal. Attach the push-to-connect T fitting. 
 
 > [!Tip]
 > Make sure the tubing is cut straight and fully engaged on the fittings or it may not seal. The push-to-connect fitting has a ring of teeth and then an o-ring - the tubing must be fully inserted through both. It can be helpful to use a grip aid such as silicone tape or a rubber glove to grip the tubing and push it in. 
@@ -204,9 +204,9 @@ Cut a 200-250 mm length of your tubing from the BOM and attach it to the pressur
 ![pressure transducer placement](https://user-images.githubusercontent.com/117388662/239457706-7ee5d101-d209-41b4-a3d3-ce159e98032f.png ':size=500')
 <!-- tab:Gaggia Classic Pro -->
 
-![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/f294cdb2-000b-4583-b258-8dd53854a2ec ':size=500')
+![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/f294cdb2-000b-4583-b258-8dd53854a2ec.png ':size=500')
 
-Cut the tubing in between the pump and boiler, roughly 65 mm above the boiler connection. Slide a loose hose clamp onto each tube, attach the barbed T fitting, and secure the hose clamps over the middle of the barbed area. 
+Cut the insulated tubing in between the pump and boiler, roughly 65 mm above the boiler connection. Slide a loose hose clamp onto each tube, attach the barbed T fitting, and secure the hose clamps over the middle of the barbed area. 
 
 > [!Tip]
 > Make sure the tubing is cut straight and fully engaged on the fittings. It can be helpful to use a grip aid such as silicone tape or a rubber glove to grip the tubing and push it in. You may even need to use some water-based lubricant to get it all the way on.
