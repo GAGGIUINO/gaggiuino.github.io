@@ -288,29 +288,31 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 <!-- tabs:start -->
 <!-- tab:Gen 3 -->
 
-1. Enter calibration menu
+1. Enter calibration settings:
 
-    Go to [gaggiuino.local](http://gaggiuino.local/), then navigate to **SETTINGS**, **SCALES**, and then click **CALIBRATE**
+    Go to [gaggiuino.local](http://gaggiuino.local/), then navigate to **Settings**, **Scales**, enable the hardware scales and disable the others.
 
-    <img width="500" alt="image" src="https://github.com/user-attachments/assets/c120b6d2-3a97-42e5-9bd1-bd1d96d96f4f">
-
-2. Unscrew both load plates, keeping track of which screws are more magnetic. You'll use the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration load (in this case a 318.5 g tamper). Weigh the calibration load plate and load **together** on a scale to get the calibration weight - ideal calibration weight is in the 200-400g range. 
+2. Unscrew both load plates, keeping track of which screws are more magnetic. You'll use the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). Pick an object with a flat bottom and a weight in the 200-400g range. Measure the calibration object's exact weight on another scale that you own and take note of that number (Let's call that value `Weight_Actual`). It's recommended to detach the load cell housing from the center housing as shown to get more room to fit the calibration load. 
 
     <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/275450371-a6c50ca3-95ef-46df-9e21-6bb3e654535e.png">
 
     <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110291-ae8bf438-a692-4b89-b511-8ef8073f1065.png">
 
-    To calibrate:
-    - Tare (with load cells empty)
-    - Place the calibration load plate and load on one load cell
-    - Compare the reported weight value to the total calibration weight
-    - Remove the calibration load plate and load
-    - Type (or use the +/- buttons) to adjust the load cell calibration factor, then wait for the "Updated running settings" message (scales will auto-tare)
-    - Repeat on the same load cell until the weight value matches the calibration weight, then switch to the other load cell. 
-    - Click Save  
+    To calibrate a load cell:
+    - Start with both load cells empty.
+    - Place the calibration load plate on one load cell.
+    - Tare the Gaggiuino.
+    - Place the calibration object on the calibration load plate.
+    - Take note the weight value reported on the Gaggiuino. Let's call that value `Weight_Reported`. Note that due to the mirrored orientation, the reported weight for one of the load cells be might negative.
+    - Remove the calibration object from the calibration plate.
+    - Now let's calculate the new factor. In the scales settings menu, take note of the current factor ("Factor One" for the left load cell, and "Factor Two" for the right load cell). Let's call that value `Old_Factor`.
+    - Calculate the new factor using this formula: `New_Factor = (Reported_Weight * Old_Factor) / Actual_Weight`. If either `Weight_Reported` or `Old_Factor` is negative, then the new factor should be negative as well.
+    - Replace the old factor with the new value.
+    - Click "Save". Then wait for the "Persisted settings" message. The scales will auto-tare.
 
-> [!NOTE|style:callout|label:Weight must be positive|iconVisibility:visible]
-> Make sure the **weight value (grams) is positive** - due to the mirrored load cell orientation one load cell calibration factor will likely be negative.  
+    Place the calibration object on the calibration plate. If the weight reported by Gaggiuino still doesn't match the actual weight, then repeat the above steps for the same load cell. If it does match, then follow the same process for the other load cell.
+    
+3. Re-assemble the load plates. Make sure to put the right screws in their original locations.
 
 <!-- tab:Gen 2 -->
 
@@ -349,7 +351,7 @@ Use the appropriate scales-calibration task to upload to the STM32 and copy scal
 
 <!-- tabs:end -->
 
-2. Unscrew the load plates and replace with the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration load (in this case a 318.5 g tamper). Weigh the calibration load plate and load **together** on a scale to get the calibration weight - ideal calibration weight is in the 200-400g range. 
+2. Unscrew the load plates and replace with the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration load. Weigh the calibration load plate and load **together** on a scale to get the calibration weight - ideal calibration weight is in the 200-400g range. 
 
     <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/275450371-a6c50ca3-95ef-46df-9e21-6bb3e654535e.png">
 
