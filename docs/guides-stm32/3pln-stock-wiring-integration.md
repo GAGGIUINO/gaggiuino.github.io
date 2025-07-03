@@ -60,22 +60,23 @@ Save the images or right-click and open in a new tab to view at full resolution.
 
 # Integration Wires
 
-The following wires are used to integrate the stock wiring with the Gaggiuino control system:
+The following wires are used to integrate the stock wiring with the Gaggiuino control system. Not all wires are unique; select wires and label the connector on each end so there is one of each listed in the table. 
 
 <img height="300" alt="image" src="https://github.com/user-attachments/assets/09a876da-2380-4a97-9aad-7fbbed6007fa">
 
-CBL   | Connections                    | Description                                  |Length (mm)
-:----:|--------------------------------|----------------------------------------------|:----------:
-J     | Male Spade - Male Spade        | Jumper in place of Brew Thermostat           | 70
-Sa    | Fork Spade - Male Spade        | SSR AC1 in place of Steam Thermostat Spade 1 | 100
-Sb    | Fork Spade - Male Spade        | SSR AC2 in place of Steam Thermostat Spade 2 | 100
-3     | Female Spade - Male Spade      | PCB 3 to Pb                                  | 350
-P     | Female Spade - Female Spade    | PCB P to Pump                                | 300
-L     | Female Spade - Male Spade      | PCB L to B4                                  | 350
-N     | Female Spade - Piggyback Spade | PCB N to Pump and Pa (into fuse)             | 300
+CBL   | Connections                    | Description                                  |Length<sup>1</sup> (mm) | Color<sup>2</sup>
+:----:|--------------------------------|----------------------------------------------|:----------:|------
+J     | Male Spade - Male Spade        | Jumper in place of Brew Thermostat           | 70         | Red
+Sa    | Fork Spade - Male Spade        | SSR AC1 in place of Steam Thermostat Spade 1 | 100        | Red
+Sb    | Fork Spade - Male Spade        | SSR AC2 in place of Steam Thermostat Spade 2 | 100        | Red
+3     | Female Spade - Male Spade      | PCB 3 to Pb                                  | 350        | Red
+P     | Female Spade - Female Spade    | PCB P to Pump                                | 300        | Red
+L     | Female Spade - Male Spade      | PCB L to B4                                  | 350        | Black
+N     | Female Spade - Piggyback Spade | PCB N to Pump and Pa (into fuse)             | 300        | White
 
-> [!Note|style:callout]
-> The listed length is generous to fit a wide variety of machines and routing paths; feel free to route and then cut to optimize for a specific build if making your own.
+> [!Note|style:callout|label:Notes]
+> 1. The listed length is generous to fit a variety of machines and routing paths; if making your own, feel free to route and then cut to optimize for your build.
+> 2. This is the color shown in the build pictures
 
 >
 
@@ -138,7 +139,7 @@ This can be done in-place, but it's easier to remove the boiler (4 SHCS up from 
 
 ![Thermocouple Install Detail](https://github.com/user-attachments/assets/7eef096a-bcce-4d98-8a7d-ae898c3afec3 ':size=500')
 
-After screwing in the thermocouple (and reinstalling the boiler, if necessary), run the thermocouple wire to the front of the Gaggia, around the boiler, and back to the control enclosure (avoid going back behind the pump area). 
+After screwing in the thermocouple (and reinstalling the boiler, if necessary), run the thermocouple wire to the front of the Gaggia, around the boiler, and back to the control enclosure on the right side of the machine enclosure. 
 
 > [!Note|style:callout]
 >There should already be high-temp thermal paste in place. If there is not, or if the paste is dried out, replace with a paste that has at least a 180°C working temperature. 
@@ -195,8 +196,8 @@ Disconnect and move wires from the switches and connect your last 3PLN connectio
 <!-- tabs:end -->
 **Low Voltage**
 
-> [!Tip]
-> Keep LV (DC) and sensors separated from HV (AC) wires to reduce interference. I like to run AC wires near the top of the machine enclosure, mostly left of the boiler. DC wires are run near the bottom of the enclosure, mostly on the right side.
+> [!Tip|style:callout]
+> Keep LV (DC) wires and sensors separated from HV (AC) wires to reduce interference. Run AC wires on the left side of the enclosure, staying above the thermocouple wire. Run DC wires on the right side of the enclosure.
 
 Connect GND, brewPin, and steamPin wires to the switches, making use of some of the space you've freed up by removing the HV wires. **Follow the [schematic](#schematics) for your machine**.
 <!-- tabs:start -->
@@ -246,24 +247,16 @@ Arrange the connected pressure transducer so that it is at the base of the machi
     <img width="300" alt="GC 120v" src="https://user-images.githubusercontent.com/117388662/239457402-b58dfe55-6572-45b7-8960-2a4d1f9d5753.png">
 > </details>
 
- Before pulling shots you'll need to fill the tubing with water so there are no air bubbles. There are 2 options:
+ Before pulling shots you'll need to fill the tubing with water so there are no air bubbles. After the screen has been connected and the remainder of the install completed:
 
-<details>
-<summary><b>Machine fill - recommended</b> <i>(Click to expand)</i></summary>
-
-After the screen has been connected and the remainder of the install completed, go to the Brew menu, select the Manual tab, set flow to 1 ml/s and run for ~2 minutes (with open group head) to gently fill the line.
+<!-- tabs:start -->
+<!-- tab:Gen 3 -->
+Download and run the utility profile **[UT] Tube Fill** from Community profiles in WebUI. 
+<!-- tab:Gen 2 -->
+Go to the Brew menu, select the Manual tab, set flow to 1 ml/s and run for ~2 minutes (with open group head) to gently fill the line.
 
 ![Filling the transducer tubing](https://user-images.githubusercontent.com/117388662/239618595-844609d1-7b59-456e-afba-2d2b1bf73374.png ':size=250')
-
-</details>
-
-<details>
-<summary><b>Hand fill</b> <i>(Click to expand)</i></summary>
-
-This should be done before finishing the install and is easiest before connecting the T fitting. Surface tension can make hand filling the tube difficult if you don't use a simple trick: insert a small wire down the center of the tubing and inject water with a syringe. The wire allows the water to flow down and the air to vent up because it doesn't let surface tension seal the tube.
-
-![Filling the transducer tubing](https://user-images.githubusercontent.com/117388662/239455051-c8fe0d0a-270e-4685-9478-d751eb746d49.png ':size=250')
-</details>
+<!-- tabs:end -->
 
 ## Internal Finishing Touches
 
