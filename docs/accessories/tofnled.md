@@ -21,7 +21,7 @@ The Time of Flight and LED (ToFnLED) board provides a sensor for determining tan
     * [(Digi-Key) JST JUMPER 04SR-3S - 04SR-3S 10 A04SR04SR30K254A](https://www.digikey.com/en/products/detail/jst-sales-america-inc/A04SR04SR30K254A/9922185)
     * [(AliExpress) 10 PCS 30CM JST Female Double Connector, 4P, SH 1.0mm Pitch, Opposite Direction](https://www.aliexpress.com/item/3256804012767557.html)
 * 3D-Printed Housing, available on [Printables](https://www.printables.com/model/502813) or can be ordered from official print providers
-    * [2 disc magnets, 5 mm dia. x 1 mm ht. (for magnetic espresso machine)](https://www.aliexpress.com/item/3256801641477250.html). Installation is cleanest with 1 mm thick magnets, but you can use 2 mm thick ones if you have some left over from the [hardware scales build](hw-scales.md). 
+    * [2 disc magnets, 5 mm dia. x 1 mm ht. (for magnetic espresso machine)](https://www.aliexpress.com/item/3256801641477250.html). Installation is cleanest with 1 mm thick magnets, but you can use 2 mm thick ones if you have some left over from the [hardware scales build](accessories/hw-scales.md). 
     * Cyanoacrylate / super glue (for magnetic espresso machine)
     * Double-sided tape, long-term temp rating of at least 80° C  (for non-magnetic espresso machine)
         * VHB 4611/5952/4910, Gorilla Tape, Alien Tape are options
