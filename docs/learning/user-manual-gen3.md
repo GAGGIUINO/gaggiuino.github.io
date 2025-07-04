@@ -45,7 +45,7 @@
 
 - **Temperature**: Current boiler temperature in Celsius. 
 
-- **Target Temperature**: Water temperature from the current profile or the Steam Temperature from Boiler Settings if the Steam switch is active. If the temperature exceeds 120°C (typically while steaming), the circle around the temperature reading will pulsate to warn you of the high temperature. Exercise caution to prevent burns, especially from hot components like the steam wand.
+- **Target Temperature**: Water temperature from the current profile or the Steam Temperature from Boiler Settings if the Steam switch is active. The temperature ring will pulse above 120° C to alert the user. Be cautious of coming into contact with steam, steam wand, and group head.
 
     > [!Note|style:callout|label:Changing and Saving|iconVisibility:visible]
     > On the Embedded UI, the Target Temperature can be temporarily changed by pressing and holding the temperature and swiping up or down.  Pressing Save will update the current profile's Water Temperature (or the Steam Temperature from Boiler Settings if the Steam switch is active).
@@ -56,7 +56,7 @@
 
 - **Tank level**: If a [TofnLED](/accessories/tofnled.md) is installed, the current water level in the water tank is shown in percent. When the water level is below 20%, a notification is displayed to fill the water tank. When no TofnLED board is installed, the graph permanently shows the maximum water level.
 
-- **System uptime**: Shows how long the machine has been switched on.
+- **System uptime**: Shows for how long the machine has been switched on.
 
 - **Shot weight**: Shows the shot weight in grams for the current profile. On the embedded UI the weight can be adjusted temporarily in 1g increments by tapping the '+' and '-' buttons or by tapping the weight field and using the number pad.
 
@@ -236,7 +236,7 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 - Enabled: Enable Bluetooth scales. A list of supported scales can be found [here](https://github.com/kstam/esp-arduino-ble-scales).
 
 ### Force Predictive Scales
-- Enabled: Values from HW scales are ignored. The machine will stop based on the weight it has calculated during extraction.
+- Enabled: Enables predictive scales algorithm. Accuracy can be improved by calibrating Pump Zero and using the in-shot Tare button.
 
 ## LED
 <!-- tabs:start -->
