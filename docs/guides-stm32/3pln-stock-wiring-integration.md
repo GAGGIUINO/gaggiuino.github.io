@@ -103,7 +103,7 @@ Here are the stock pump connections for clarity.
 <!-- tabs:end -->
 
 ## Brew Thermostat Replacement
-Make a short jumper wire (18 AWG or thicker) with male Quick Disconnect connectors on both ends. Remove the wires attached to the brew thermostat (Ba and Bb) and jumper them together. Heat shrink the connections as required to prevent electrical faults. 
+Make a short jumper wire with male spades on both ends. Remove the wires attached to the brew thermostat (Ba and Bb) and jumper them together. Heat shrink the connections as required to prevent electrical faults. 
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
@@ -194,7 +194,7 @@ The pressure transducer comes with a base O-ring (green in pictures), however, t
 
 ![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/78d801f3-9c4f-4c17-8105-74e32711af09 ':size=500')
 
-Cut the insulated tubing in between the pump and boiler, nearer to the boiler but high enough so the T is mostly vertical, not horizontal. Attach the push-to-connect T fitting. 
+Cut the tubing in between the pump and boiler, nearer to the boiler but high enough so the T is mostly vertical, not horizontal. Attach the push-to-connect T fitting. 
 
 > [!Tip]
 > Make sure the tubing is cut straight and fully engaged on the fittings or it may not seal. The push-to-connect fitting has a ring of teeth and then an o-ring - the tubing must be fully inserted through both. It can be helpful to use a grip aid such as silicone tape or a rubber glove to grip the tubing and push it in. 
@@ -206,7 +206,7 @@ Cut a 200-250 mm length of your tubing from the BOM and attach it to the pressur
 
 ![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/f294cdb2-000b-4583-b258-8dd53854a2ec ':size=500')
 
-Cut the insulated tubing in between the pump and boiler, roughly 65 mm above the boiler connection. Slide a loose hose clamp onto each tube, attach the barbed T fitting, and secure the hose clamps over the middle of the barbed area. 
+Cut the tubing in between the pump and boiler, roughly 65 mm above the boiler connection. Slide a loose hose clamp onto each tube, attach the barbed T fitting, and secure the hose clamps over the middle of the barbed area. 
 
 > [!Tip]
 > Make sure the tubing is cut straight and fully engaged on the fittings. It can be helpful to use a grip aid such as silicone tape or a rubber glove to grip the tubing and push it in. You may even need to use some water-based lubricant to get it all the way on.
