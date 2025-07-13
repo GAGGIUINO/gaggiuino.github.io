@@ -236,7 +236,7 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 - Enabled: Enable Bluetooth scales. A list of supported scales can be found [here](https://github.com/kstam/esp-arduino-ble-scales).
 
 ### Force Predictive Scales
-- Enabled: Enables predictive scales algorithm. Accuracy can be improved by calibrating Pump Zero and using the in-shot Tare button.
+- Enabled: Enables predictive scales algorithm and ignores other scales. Accuracy can be improved by calibrating Pump Zero and using the in-shot Tare button.
 
 ## LED
 <!-- tabs:start -->
