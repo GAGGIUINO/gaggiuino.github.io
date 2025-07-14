@@ -168,24 +168,16 @@ Arrange the connected pressure transducer so that it is at the base of the machi
     <img width="300" alt="GC 120v" src="https://user-images.githubusercontent.com/117388662/239457402-b58dfe55-6572-45b7-8960-2a4d1f9d5753.png">
 > </details>
 
- Before pulling shots you'll need to fill the tubing with water so there are no air bubbles. There are 2 options:
+Before pulling shots you'll need to fill the tubing with water so there are no air bubbles. After the screen has been connected and the remainder of the install completed:
 
-<details>
-<summary><b>Machine fill - recommended</b> <i>(Click to expand)</i></summary>
-
-After the screen has been connected and the remainder of the install completed, go to the Brew menu, select the Manual tab, set flow to 1 ml/s and run for ~2 minutes (with open group head) to gently fill the line.
+<!-- tabs:start -->
+<!-- tab:Gen 3 -->
+Download and run the utility profile **[UT] Tube Fill** from Community profiles in WebUI. 
+<!-- tab:Gen 2 -->
+Go to the Brew menu, select the Manual tab, set flow to 1 ml/s and run for ~2 minutes (with open group head) to gently fill the line.
 
 ![Filling the transducer tubing](https://user-images.githubusercontent.com/117388662/239618595-844609d1-7b59-456e-afba-2d2b1bf73374.png ':size=250')
-
-</details>
-
-<details>
-<summary><b>Hand fill</b> <i>(Click to expand)</i></summary>
-
-This should be done before finishing the install and is easiest before connecting the T fitting. Surface tension can make hand filling the tube difficult if you don't use a simple trick: insert a small wire down the center of the tubing and inject water with a syringe. The wire allows the water to flow down and the air to vent up because it doesn't let surface tension seal the tube.
-
-![Filling the transducer tubing](https://user-images.githubusercontent.com/117388662/239455051-c8fe0d0a-270e-4685-9478-d751eb746d49.png ':size=250')
-</details>
+<!-- tabs:end -->
 
 ## Internal Finishing Touches
 
