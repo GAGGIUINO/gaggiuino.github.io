@@ -35,11 +35,45 @@ Make sure to switch to the necessary [release branch](#Releases) once pulled, de
 
 Released binary (.bin) files are on the [Gaggiuino Github Release (Latest)](https://github.com/Zer0-bit/gaggiuino/releases/latest) page. Files selection depends on your system hardware.
   * Core (STM32): 1 file, named in format *MCU - Build Type - LED Controller .bin* per hardware (see table below).  
-    |Title | Name | Hardware |
-    |:--:|:--:|:--|
-    |**MCU**            | performance <br/> -           | STM32**U585**CIU6 (PCBv4, fuPill) <br/> STM32**F411**CEU6 (PCBv3.1, BlackPill)|
-    |**Build Type**     | pcb <br/> lego                | PCBv2 - PCBv4 <br/> Component build |
-    |**LED Controller <sup>[1]</sup>** | pca <br/> ncp  | PCA9632 <br/> NCP5623 |
+    <table>
+    <thead>
+    <tr>
+    <th align="center">Title</th>
+    <th align="center">Name</th>
+    <th align="left">Hardware</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td align="center" rowspan="2"><strong>MCU</strong></td>
+    <td align="center">performance</td>
+    <td align="left">STM32<strong>U585</strong>CIU6 (PCBv4, fuPill)</td>
+    </tr>
+    <tr>
+    <td align="center"></td>
+    <td align="left">STM32<strong>F411</strong>CEU6 (PCBv3.1, BlackPill)</td>
+    </tr>
+    <tr>
+    <td align="center" rowspan="2"><strong>Build Type</strong></td>
+    <td align="center">pcb</td>
+    <td align="left">PCBv2 - PCBv4</td>
+    </tr>
+    <tr>
+    <td align="center">lego</td>
+    <td align="left">Component build</td>
+    </tr>
+    <tr>
+    <td align="center" rowspan="2"><strong>LED Controller <sup>[1]</sup></strong></td>
+    <td align="center">pca</td>
+    <td align="left">PCA9632</td>
+    </tr>
+    <tr>
+    <td align="center">ncp</td>
+    <td align="left">NCP5623</td>
+    </tr>
+    </tbody>
+    </table>
+
     <details>
     <summary><b>[1] See this for help identifying your LED controller - most are PCA </b><i>(Click to expand)</i></summary>
 
