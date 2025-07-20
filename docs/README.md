@@ -72,8 +72,8 @@ Name                                      | Voltage   | Model Years | Model ID  
 :heavy_check_mark: Gaggia Classic Pro Eco | 220-240 V | 2019-2022   | SIN035UR RI9480 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
 :heavy_check_mark: Gaggia Classic Evo Pro | 100-120 V | 2023-2024   | SIN035R RI9380  | 9 bar OPV must be changed to be a [10-12 bar OPV](guides/machine-specific-guide.md#10-12-bar-opv) <br /> High-temp insulation required for [combined connector insulation](guides/machine-specific-guide.md#combined-connector-insulation) when doing stock wiring integration 
 :heavy_check_mark: Gaggia Classic Evo Pro | 220-240 V | 2023-2024   | SIN035UR RI9481 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
-:heavy_check_mark: Gaggia Classic Pro E24 | 100-120 V | 2024-?      | SIN035R RI9380  | 9 bar OPV must be changed to be a [10-12 bar OPV](guides/machine-specific-guide.md#10-12-bar-opv) <br /> High-temp insulation required for [combined connector insulation](guides/machine-specific-guide.md#combined-connector-insulation) when doing stock wiring integration <br /> Brass boiler behavior is not fully characterized 
-:heavy_check_mark: Gaggia Classic Pro E24 | 220-240 V | 2024-?      | SIN035UR RI9481 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB <br /> Brass boiler behavior is not fully characterized 
+:heavy_check_mark: Gaggia Classic Pro E24 | 100-120 V | 2024-?      | SIN035R RI9380  | 9 bar OPV must be changed to be a [10-12 bar OPV](guides/machine-specific-guide.md#10-12-bar-opv) <br /> High-temp insulation required for [combined connector insulation](guides/machine-specific-guide.md#combined-connector-insulation) when doing stock wiring integration
+:heavy_check_mark: Gaggia Classic Pro E24 | 220-240 V | 2024-?      | SIN035UR RI9481 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
 
 >
 
