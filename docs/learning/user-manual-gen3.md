@@ -16,12 +16,12 @@ The ESP32 can be connected to your local network, and will generate its own acce
   <img width="300" alt="image" src="https://github.com/user-attachments/assets/af24bb4e-1608-4b45-b78d-ccb7d15bec18">  
 
 * **Network:**  
-  On the screen or in WebUI, go to "Settings" tab, select "System" and click "Connect" to select a 2.4 GHz Wi-Fi network and enter the password<sup>3</sup>. 
+  Go to "Settings" tab (WebUI) or gear icon (screen), select "System" and click "Connect" to select a 2.4 GHz Wi-Fi network and enter the password<sup>3</sup>. 
 
 > [!Note|style:callout|label:Notes|iconVisibility:visible]
 > 1 - Gaggiuino can be used in access point mode, but shot history times will be inaccurate because it won't have access to a time server.  
 > 2 - The network name may initially be ESP_xxxxxx instead of Gaggiuino AP. The password is based on Gaggiuino AP, and the access point name should become Gaggiuino AP after connecting and disconnecting from a network.  
-> 3- if a special character is unavailable on the on-screen keyboard, connect to the access point and enter the password through the WebUI.
+> 3- if a special character is unavailable on the on-screen keyboard, connect to the access point and enter the password through WebUI.
 
 ## Initial Startup
 
