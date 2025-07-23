@@ -5,18 +5,43 @@
 > 
 > The [Gen 2 User Manual](learning/user-manual-gen2.md) is linked in the [Archive](archive/archive.md).
 
-> [!Note|style:callout|label:Connecting to WebUI|iconVisibility:visible]
-> The ESP32 can be connected to your local network, and will generate its own access point if it is not connected to a network.
-> 
-> * Connect to Gaggiuino AP (the password is the network name with a zero substituted for the "o" and the space removed).  
->
->   <img width="300" alt="image" src="https://github.com/user-attachments/assets/af24bb4e-1608-4b45-b78d-ccb7d15bec18">  
->
->   The network may initially be named ESP_xxxxxx instead of Gaggiuino AP. The password is based on Gaggiuino AP, and the access point name should become Gaggiuino AP after connecting and disconnecting from a network. 
-> * Navigate to [gaggiuino.local](http://gaggiuino.local/)
-> 
-> The system can be used in access point mode, but won't have access to a time server so shot history times won't be accurate. To access a time server Gaggiuino must be connected to a network. 
-> * To connect to a network go to [gaggiuino.local](http://gaggiuino.local/), navigate to the "Settings" tab, and click "Connect" to select a 2.4 GHz Wi-Fi network and enter the password. 
+# Getting Started
+
+## Connecting to WebUI
+
+The ESP32 can be connected to your local network, and will generate its own access point if it is not connected to a network. WebUI is located at [gaggiuino.local](http://gaggiuino.local/).
+
+* **Access point<sup>1</sup>:**  
+  Select Gaggiuino AP<sup>2</sup> on a WiFi-capable device. The password is the network name with a zero substituted for the "o" and the space removed.  
+  <img width="300" alt="image" src="https://github.com/user-attachments/assets/af24bb4e-1608-4b45-b78d-ccb7d15bec18">  
+
+* **Network:**  
+  On the screen or in WebUI, go to "Settings" tab, select "System" and click "Connect" to select a 2.4 GHz Wi-Fi network and enter the password<sup>3</sup>. 
+
+> [!Note|style:callout|label:Notes|iconVisibility:visible]
+> 1 - Gaggiuino can be used in access point mode, but shot history times will be inaccurate because it won't have access to a time server.  
+> 2 - The network name may initially be ESP_xxxxxx instead of Gaggiuino AP. The password is based on Gaggiuino AP, and the access point name should become Gaggiuino AP after connecting and disconnecting from a network.  
+> 3- if a special character is unavailable on the on-screen keyboard, connect to the access point and enter the password through the WebUI.
+
+## Initial Startup
+
+* Fill the boiler by enabling Flush and running the system until water comes out of the group head for 5+ seconds.  
+* If your pressure transducer is connected via a T-Fitting, run the utility profile **[UT] Tube Fill**.
+* Test pressure by inserting a portafilter with a blank basket and running **[UT] Test OPV**. Confirm:
+  * Max pressure is 10.5-13 bar
+  * Water is moving through the OPV tubing
+  * No leaks are present
+
+> [!Note|style:callout|label:Community Profiles|iconVisibility:visible]
+> Utility profiles can be downloaded from Community Profiles in WebUI or [Github](https://github.com/Zer0-bit/gaggiuino/tree/community/profiles).  
+
+## Gaggiuino Tips
+
+* If Brew Delta is enabled, the boiler will be used like a thermoblock, adding heat based on flow rate to maintain the target water temperature at the puck. As the thermocouple is attached to the boiler it will not match the output temperature, so the plot is capped at the target temperature. When returning to the home page you may see the high boiler temperature; wait for it to settle before pulling another shot. 
+* Do not expect Gaggiuino shot settings to behave the same as the stock machine. 
+  * Temperature with Brew Delta will be much more stable during the shot than the stock machine (or even PID mods), so the resulting average temperature will be higher.  
+  * Pre-infusion and soak increase flow significantly during the extraction phase(s). Dialing-in should be done per-profile, and grind will typically be finer than with a stock machine.
+* If stop-on-weight is enabled, the shot will predictively stop ahead of the target weight to account for what hasn't hit the cup yet - the espresso in the air and the last bit that comes out of the puck as the shot is stopped and pressure equalizes.
 
 > 
 
@@ -114,13 +139,6 @@ If the TofnLED board is installed, the descale cycle will stop automatically whe
 # Shot in progress
 
 When a shot is started the live data is displayed. The time axis scales automatically. If hardware or Bluetooth scales are present the weight in the cup is shown, otherwise weight is calculated with predictive scales.
-
-> [!TIP|style:callout|label:Shot Tips|iconVisibility:visible]
-> * The boiler will heat based on flow rate to maintain the target water temperature at the puck with Brew Delta enabled. As the thermocouple is attached to the boiler it will not match the output temperature so the plot is capped at the target temperature.
-> * Do not expect Gaggiuino shot settings to behave the same as the stock machine. 
->   * Temperature with Brew Delta will be much more stable during the shot than the stock machine or even PID mods, so the resulting average temperature will be higher.  
->   * Profiles with preinfusion and soak will increase the flow significantly during the extraction phase(s), so grind must be finer to hit the same pressure as without.
-> * The shot will predictively stop ahead of the target weight to account for what hasn't hit the cup yet - the espresso in the air and the last bit that comes out of the puck as the shot is stopped and pressure equalizes.
 
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
