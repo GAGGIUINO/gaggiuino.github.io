@@ -134,7 +134,7 @@ Make a short jumper wire with male spades on both ends. Remove the wires attache
 ![Brew Thermostat Jumper Wire](https://user-images.githubusercontent.com/117388662/243794746-39d788cb-2b08-45ae-a08e-f1bb0907129d.png ':size=500')
 <!-- tabs:end -->
 
-Unscrew the brew thermostat, transfer or add thermal paste, then ***Gently** screw in the thermocouple barely finger-tight (**do not over-tighten**).  
+Unscrew the brew thermostat, transfer or add thermal paste on the thermocouple's threads, then **gently** screw in the thermocouple barely finger-tight (**do not over-tighten**).  
 This can be done in-place, but it's easier to remove the boiler (4 SHCS up from below the sheet metal), steam knob, and steam wand so that the boiler can be tipped up a bit for easier access. Make sure the thermocouple wire is free to rotate during the install. 
 
 ![Thermocouple Install Detail](https://github.com/user-attachments/assets/7eef096a-bcce-4d98-8a7d-ae898c3afec3 ':size=500')
@@ -190,7 +190,7 @@ Disconnect wires from the switch and connect your last 3PLN connection (Line) wi
 
 ![L Connection](https://user-images.githubusercontent.com/117388662/239404551-97d6f3e4-f62e-45c4-93d7-52d8ae373526.png ':size=500')
 <!-- tab:Gaggia Classic Pro -->
-Disconnect and move wires from the switches and connect your last 3PLN connection (Line) with a male spade to the brew switch source wire. **Follow the [schematic](#schematics) for your machine**. When you're done you should have one empty column of spades on both the brew and steam switches.
+Disconnect and move wires from the switches and connect the brew switch wire to the control L wire. **Follow the [schematic](#schematics) for your machine**. When you're done you should have one empty column of spades on both the brew and steam switches.
 
 ![L Connection](https://user-images.githubusercontent.com/117388662/243890489-77c730e4-20e3-4e6f-9cb5-6295780194fc.png ':size=500')
 <!-- tabs:end -->
@@ -225,7 +225,11 @@ The pressure transducer may have a base O-ring (green in pictures), however, the
 
 ![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/78d801f3-9c4f-4c17-8105-74e32711af09 ':size=500')
 
+<<<<<<< HEAD
 Cut the tubing in between the pump and boiler, nearer to the boiler but high enough the T is mostly vertical, not horizontal. Attach the push-to-connect T fitting.  
+=======
+Cut the tubing in between the pump and boiler, nearer to the boiler but high enough so the T is mostly vertical, not horizontal. Attach the push-to-connect T fitting. 
+>>>>>>> pr/165
 
 > [!Tip]
 > Make sure the tubing is cut straight and fully engaged on the fittings or it may not seal. The push-to-connect fitting has a ring of teeth and then an o-ring - the tubing must be fully inserted through both. It can be helpful to use a grip aid such as silicone tape or a rubber glove to grip the tubing and push it in. 

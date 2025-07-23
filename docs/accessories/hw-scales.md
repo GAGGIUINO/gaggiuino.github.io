@@ -282,7 +282,7 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
         <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257089747-74fd447d-a299-4d65-a408-b325f09ec326.png">
 
-# Flashing/Calibration
+# Calibration
 
 
 <!-- tabs:start -->
@@ -368,8 +368,8 @@ Use the appropriate scales-calibration task to upload to the STM32 and copy scal
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257110758-a6eae8c8-c12e-41eb-bfa3-586ae03dd88a.png">
 
 > [!TIP] If using the stock GC or GCP drip trays you may want to file or cut 2 mm off of the pressure outlet tube (solenoid vent) to bring it to 130 mm and make drip tray removal easier.  
-You'll find that you might not be able to easily reach under the stock drip tray to remove it - I find holding it like this to lift over the retaining lip and pull it forward slightly works well. 
-<img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110983-c41210d7-dbb4-4666-bb82-2f0b789a50ad.png">
+You'll find that you might not be able to easily reach under the stock drip tray to remove it - I find holding it like this to lift over the retaining lip and pull it forward slightly works well.  
+> <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110983-c41210d7-dbb4-4666-bb82-2f0b789a50ad.png">
 
 # Troubleshooting
 
@@ -378,4 +378,4 @@ If you have “jumpy” scales or are struggling to calibrate, check that
 * the bottom surface of all parts resting on the machine sheet metal is flat and free of dirt, dried adhesive, print artifacts, etc. 
 * the load cell adhesive is not clamped by the load cell housings or flex limiters (see step 1). Adhesive on the side of the load cell before the cutout area is fine.
 * the load plates have clearance to the load cell housings all the way around
-* wires are not routed by high voltage
+* the scales' DC wires are not routed near AC
