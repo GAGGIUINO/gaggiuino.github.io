@@ -35,13 +35,24 @@ The ESP32 can be connected to your local network, and will generate its own acce
 > [!Note|style:callout|label:Community Profiles|iconVisibility:visible]
 > Utility profiles can be downloaded from Community Profiles in WebUI or [Github](https://github.com/Zer0-bit/gaggiuino/tree/community/profiles).  
 
+## PZ Calibration
+
+Vibratory pumps move a volume of water each pulse, with volume decreasing as pressure increases. Gaggiuino uses a functional model of the Ulka E5 series pump, where Pump Zero (PZ) is the flow per pump pulse at 0 bar. As pumps are slightly different, calibrating PZ shifts the model to improve alignment with a specific pump. 
+
+The simplest way to calibrate PZ is to follow instructions in the **[UT] PZ Cal** community profile. 
+
+
+> [!Note|style:callout|label:Calibration Improvement|iconVisibility:visible]
+> Calibration at 0 bar may result in a slightly high PZ. Accuracy can be improved by comparing pump flow to weight flow when pressure is >4 bar, flow is >1 ml/s, and both are stable (HW or BT scales must be connected). This can be done during a shot or by using a pressurized puck simulator basket.  
+
 ## Gaggiuino Tips
 
-* If Brew Delta is enabled, the boiler will be used like a thermoblock, adding heat based on flow rate to maintain the target water temperature at the puck. As the thermocouple is attached to the boiler it will not match the output temperature, so the plot is capped at the target temperature. When returning to the home page you may see the high boiler temperature; wait for it to settle before pulling another shot. 
-* Do not expect Gaggiuino shot settings to behave the same as the stock machine. 
-  * Temperature with Brew Delta will be much more stable during the shot than the stock machine (or even PID mods), so the resulting average temperature will be higher.  
-  * Pre-infusion and soak increase flow significantly during the extraction phase(s). Dialing-in should be done per-profile, and grind will typically be finer than with a stock machine.
-* If stop-on-weight is enabled, the shot will predictively stop ahead of the target weight to account for what hasn't hit the cup yet - the espresso in the air and the last bit that comes out of the puck as the shot is stopped and pressure equalizes.
+* If Brew Delta is enabled, the boiler will be used like a thermoblock, adding heat based on flow rate to maintain the target water temperature at the puck. The plot is capped at the target temperature because the thermocouple is reading the boiler temperature, not the output temperature. When returning to the home page you may see the high boiler temperature; wait for it to settle before pulling another shot.  
+* Do not expect Gaggiuino shot settings to behave the same as the stock machine.  
+  * Dialing-in should be done based on the profile's targets rather than targeting a traditional 25-30 second shot time. 
+  * Pre-infusion and soak increase flow significantly during the extraction phase(s), so grind will need to be finer to reach the same pressure as stock.  
+  * Temperature with Brew Delta will be much more stable during the shot than the stock machine (or even PID mods), so the average in-shot temperature will be higher.  
+* If stop-on-weight is enabled, the shot will predictively stop ahead of the target weight to account for what hasn't hit the cup yet - the espresso in the air and the last bit that comes out of the puck as the shot is stopped and pressure equalizes.  
 
 > 
 
