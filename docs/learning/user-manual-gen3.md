@@ -9,19 +9,18 @@
 
 ## Connecting to WebUI
 
-The ESP32 can be connected to your local network, and will generate its own access point if it is not connected to a network. WebUI is located at [gaggiuino.local](http://gaggiuino.local/).
+Gaggiuino can be connected to your local network, and will generate its own access point if it is not connected to a network. WebUI is located at [gaggiuino.local](http://gaggiuino.local/).
 
 * **Access point<sup>1</sup>:**  
-  Select Gaggiuino AP<sup>2</sup> on a WiFi-capable device. The password is the network name with a zero substituted for the "o" and the space removed.  
-  <img width="300" alt="image" src="https://github.com/user-attachments/assets/af24bb4e-1608-4b45-b78d-ccb7d15bec18">  
+  Select Gaggiuino AP<sup>2</sup> on a WiFi-capable device. The password is `Gaggiuino AP` with a zero substituted for the "o" and the space removed.  
 
 * **Network:**  
   Go to "Settings" tab (WebUI) or gear icon (screen), select "System" and click "Connect" to select a 2.4 GHz Wi-Fi network and enter the password<sup>3</sup>. 
 
 > [!Note|style:callout|label:Notes|iconVisibility:visible]
 > 1 - Gaggiuino can be used in access point mode, but shot history times will be inaccurate because it won't have access to a time server.  
-> 2 - The network name may initially be ESP_xxxxxx instead of Gaggiuino AP. The password is based on Gaggiuino AP, and the access point name should become Gaggiuino AP after connecting and disconnecting from a network.  
-> 3- if a special character is unavailable on the on-screen keyboard, connect to the access point and enter the password through WebUI.
+> 2 - The network name may initially be ESP_xxxxxx instead of Gaggiuino AP.  
+> 3 - if a special character is unavailable on the on-screen keyboard, connect to the access point and enter the password through WebUI.
 
 ## Initial Startup
 
@@ -37,13 +36,13 @@ The ESP32 can be connected to your local network, and will generate its own acce
 
 ## PZ Calibration
 
-Vibratory pumps move a volume of water each pulse, with volume decreasing as pressure increases. Gaggiuino uses a functional model of the Ulka E5 series pump, where Pump Zero (PZ) is the flow per pump pulse at 0 bar. As pumps are slightly different, calibrating PZ shifts the model to improve alignment with a specific pump. 
+Vibratory pumps move a volume of water each pulse, with volume decreasing as pressure increases. Gaggiuino uses a functional model of the Ulka E5 series pump, where Pump Zero (PZ) is the flow per pump pulse at 0 bar. As pumps are slightly different, calibrating PZ shifts the model to align with your pump. 
 
 The simplest way to calibrate PZ is to follow instructions in the **[UT] PZ Cal** community profile. 
 
 
 > [!Note|style:callout|label:Calibration Improvement|iconVisibility:visible]
-> Calibration at 0 bar may result in a slightly high PZ. Accuracy can be improved by comparing pump flow to weight flow when pressure is >4 bar, flow is >1 ml/s, and both are stable (HW or BT scales must be connected). This can be done during a shot or by using a pressurized puck simulator basket.  
+> Calibration at 0 bar may result in a slightly high PZ. Accuracy can be improved by comparing pump flow to weight flow when pressure is >4 bar, flow is >1 ml/s, and both are stable (HW or BT scales must be active). This can be done during a shot or by using a pressurized puck simulator basket.  
 
 ## Gaggiuino Tips
 
@@ -149,7 +148,7 @@ If the TofnLED board is installed, the descale cycle will stop automatically whe
 
 # Shot in progress
 
-When a shot is started the live data is displayed. The time axis scales automatically. If hardware or Bluetooth scales are present the weight in the cup is shown, otherwise weight is calculated with predictive scales.
+When a shot is started the live data is displayed. The time axis scales automatically. If hardware or Bluetooth scales are enabled the weight in the cup is shown, otherwise weight is calculated with predictive scales.
 
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
@@ -210,13 +209,14 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 <img alt="Settings web" src="manual/gen3/web/003_000_settings_boiler.png">
 <!-- tabs:end -->
 
+> [!Warning|style:callout|label:Warning|iconVisibility:visible]
+> Default settings are recommended for Gaggia Classic and Gaggia Classic Pro/Eco/E24 models.   
+
 - **Steam Temperature [°C]:** Set the default temperature for steaming. This setting applies for all profiles.
-- **DreamSteam:** When enabled, fresh water is pumped into the boiler during steaming (Not recommended for machines with bigger boilers, like the Rancilio Silvia).
+- **DreamSteam:** When enabled, fresh water is pumped into the boiler during steaming (Not recommended for machines with other boilers, like the Rancilio Silvia).
 - **Temperature Offset [°C]:** If you have a device (e.g. Scathe) that can measure the temperature at the group head/portafilter accurately, you can adjust this value for more accurate brew temperature.
 - **Brew Delta:** When enabled, the boiler temperature during shots will increase based on flow rate to more quickly transfer heat to the incoming cool water. Higher flow rates during a shot result in higher boiler temperature after the shot, which should settle before pulling the next shot. 
 - **Advanced:** 
-    > [!Warning|style:callout|label:Warning|iconVisibility:visible]
-    > Only change these values if you have a non-Gaggia machine.
     - *HPWR:* Relay max pulse width (**H**igh **P**eak **W**idth **R**esolution).
     - *Main Divider:* Main cycle divider (aka non brew heating behavior), used in conjunction with HPWR.
     - *Brew Divider:* Brew cycle divider.
