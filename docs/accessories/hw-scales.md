@@ -290,29 +290,43 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
 1. Enter calibration settings:
 
-    Go to [gaggiuino.local](http://gaggiuino.local/), then navigate to **Settings**, **Scales**, enable the hardware scales and disable the others.
+ Go to [gaggiuino.local](http://gaggiuino.local/), navigate to **Settings**, **Scales**.  
+ Enable hardware scales and disable the others.  
+ Click **Calibrate** next to Hardware Scales to enter the calibration settings.  
 
-2. Unscrew both load plates, keeping track of which screws are more magnetic. You'll use the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). Pick an object with a flat bottom and a weight in the 200-400g range. Measure the calibration object's exact weight on another scale that you own and take note of that number (Let's call that value `Weight_Actual`). It's recommended to detach the load cell housing from the center housing as shown to get more room to fit the calibration load. 
+2. Determine load cell placement and orientation:
 
-    <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/275450371-a6c50ca3-95ef-46df-9e21-6bb3e654535e.png">
+ Unscrew and remove both load plates, keeping track of which screws are more magnetic.  
+    <img height="300" alt="image" src="https://github.com/user-attachments/assets/018a0a44-ac59-4ced-9f2d-6c56f6de97ef">  
+
+ Set both loadcell calibration factors to 2500.
+
+ Check load cells by *gently* pressing on the end of each and observing the Weight Value. Pressing on one load cell should result in a positive weight value, while pressing the other should result in a negative weight value. **Note which side results in a negative value.**  
+ Set loadcell factor 2 to -2500, wait for "Updated running settings," then re-check load cells.  
+   * If both sides result in positive weight values then loadcell 2 corresponds to the previously negative side.  
+   * If both sides result in a negative weight values then loadcell 1 corresponds to the previously negative side - swap signs on both loadcell factors and re-check.  
+
+ Once confirmed, marking LC1 and LC2 on the corresponding load cells with permanent marker. 
+
+3. Select a calibration object with a flat bottom and a weight in the 200-400g range (tamper shown). Measure the calibration object's weight on another scale and record the value as `Actual_Weight`. It's recommended to detach the load cell housing from the center housing as shown to get more room to fit the calibration load. 
 
     <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110291-ae8bf438-a692-4b89-b511-8ef8073f1065.png">
 
-    To calibrate a load cell:
-    - Start with both load cells empty.
-    - Place the calibration load plate on one load cell.
-    - Tare the Gaggiuino.
-    - Place the calibration object on the calibration load plate.
-    - Take note the weight value reported on the Gaggiuino. Let's call that value `Weight_Reported`. Note that due to the mirrored orientation, the reported weight for one of the load cells be might negative.
-    - Remove the calibration object from the calibration plate.
-    - Now let's calculate the new factor. In the scales settings menu, take note of the current factor ("Factor One" for the left load cell, and "Factor Two" for the right load cell). Let's call that value `Old_Factor`.
-    - Calculate the new factor using this formula: `New_Factor = (Reported_Weight * Old_Factor) / Actual_Weight`. If either `Weight_Reported` or `Old_Factor` is negative, then the new factor should be negative as well.
-    - Replace the old factor with the new value.
-    - Click "Save". Then wait for the "Persisted settings" message. The scales will auto-tare.
-
-    Place the calibration object on the calibration plate. If the weight reported by Gaggiuino still doesn't match the actual weight, then repeat the above steps for the same load cell. If it does match, then follow the same process for the other load cell.
+ To calibrate a load cell:
+   - Start with both load cells empty.
+   - Place the calibration load plate on one load cell.
+   - Tare.
+   - Place the calibration object on the calibration load plate.
+   - Record the weight value reported as `Reported_Weight`.
+   - In the scales settings menu, record the loadcell factor of the load cell being calibrated as  `Old_Factor`.
+   - Calculate the new loadcell factor using this formula:  
+   `New_Factor = (Reported_Weight * Old_Factor) / Actual_Weight`.
+   - Remove the calibration object from the calibration plate.
+   - In the scales settings menu, replace the loadcell factor with `New_Factor`. The scales will auto-tare.
+   - Place the calibration object on the calibration plate. If the weight reported by Gaggiuino still doesn't match the actual weight, then repeat the above steps for the same load cell. If it does match, then follow the same process for the other load cell.  
+   - Once both load cells have been calibrated and verified, click "Save" and wait for the "Persisted settings" message. 
     
-3. Re-assemble the load plates. Make sure to put the right screws in their original locations.
+4. Re-assemble the load plates. Make sure to put the screws in their original locations.
 
 <!-- tab:Gen 2 -->
 
