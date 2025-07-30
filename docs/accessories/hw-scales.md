@@ -288,43 +288,49 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 <!-- tabs:start -->
 <!-- tab:Gen 3 -->
 
-1. Enter calibration settings:
+1. **Preparation**  
 
- Go to [gaggiuino.local](http://gaggiuino.local/), navigate to **Settings**, **Scales**.  
- Enable hardware scales and disable the others.  
- Click **Calibrate** next to Hardware Scales to enter the calibration settings.  
+* Gather:  
+    * A calibration object with a flat bottom, weighing 200-400 g (tampers typically work well)  
+    * An accurate scale to weigh the calibration object  
+    * A permanent marker  
 
-2. Determine load cell placement and orientation:
+* Initial Setup:  
+    * Weigh the calibration object on the accurate scale and record its weight as `Weight_Actual`.
+    * Navigate to [gaggiuino.local](http://gaggiuino.local/), then go to **Settings** > **Scales**.  
+    * Enable hardware scales and disable any other scale types.  
+    * Click **Calibrate** next to Hardware Scales to enter the calibration settings.  
+    * Unscrew and remove both load plates, keeping track of which screws are more magnetic.  
+        <img height="300" alt="image" src="https://github.com/user-attachments/assets/018a0a44-ac59-4ced-9f2d-6c56f6de97ef">  
+    * Detach the load cell housing from the center housing to get more room to fit the calibration load.  
+        <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110291-ae8bf438-a692-4b89-b511-8ef8073f1065.png">
 
- Unscrew and remove both load plates, keeping track of which screws are more magnetic.  
-    <img height="300" alt="image" src="https://github.com/user-attachments/assets/018a0a44-ac59-4ced-9f2d-6c56f6de97ef">  
+2. **Identify Load Cells:**  
 
- Set both loadcell calibration factors to 2500.
+* Set both loadcell calibration factors to 2500 and wait for an "Updated running settings" message.
+* Check the load cells by *gently* pressing on the end of each and observing the Weight Value. 
+    * Note the sign (positive `+` or negative `-`) of the Weight Value that corresponds to the left and right load cells (e.g. L+, R-)
+* Set loadcell factor 2 to -2500 and wait for an "Updated running settings" message.
+* Check the load cells and note corresponding signs (positive `+` or negative `-`) again 
+* Determine load cell orientation and mark the corresponding load cell ends with permanent marker
+    * Loadcell 1 (LC1): sign of Weight Value **did not change** between checks.
+    * Loadcell 2 (LC2): sign of Weight Value **changed** between checks.
+* If needed, adjust the sign of the loadcell calibration factors so that both load cells result in a positive Weight Value when pressed. 
 
- Check load cells by *gently* pressing on the end of each and observing the Weight Value. Pressing on one load cell should result in a positive weight value, while pressing the other should result in a negative weight value. **Note which side results in a negative value.**  
- Set loadcell factor 2 to -2500, wait for "Updated running settings," then re-check load cells.  
-   * If both sides result in positive weight values then loadcell 2 corresponds to the previously negative side.  
-   * If both sides result in a negative weight values then loadcell 1 corresponds to the previously negative side - swap signs on both loadcell factors and re-check.  
-
- Once confirmed, marking LC1 and LC2 on the corresponding load cells with permanent marker. 
-
-3. Select a calibration object with a flat bottom and a weight in the 200-400g range (tamper shown). Measure the calibration object's weight on another scale and record the value as `Actual_Weight`. It's recommended to detach the load cell housing from the center housing as shown to get more room to fit the calibration load. 
-
-    <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110291-ae8bf438-a692-4b89-b511-8ef8073f1065.png">
-
- To calibrate a load cell:
-   - Start with both load cells empty.
-   - Place the calibration load plate on one load cell.
-   - Tare.
-   - Place the calibration object on the calibration load plate.
-   - Record the weight value reported as `Reported_Weight`.
-   - In the scales settings menu, record the loadcell factor of the load cell being calibrated as  `Old_Factor`.
-   - Calculate the new loadcell factor using this formula:  
-   `New_Factor = (Reported_Weight * Old_Factor) / Actual_Weight`.
-   - Remove the calibration object from the calibration plate.
-   - In the scales settings menu, replace the loadcell factor with `New_Factor`. The scales will auto-tare.
-   - Place the calibration object on the calibration plate. If the weight reported by Gaggiuino still doesn't match the actual weight, then repeat the above steps for the same load cell. If it does match, then follow the same process for the other load cell.  
-   - Once both load cells have been calibrated and verified, click "Save" and wait for the "Persisted settings" message. 
+3. **Calibrate Load Cells**
+* Start with nothing on the load cells.
+* Place the calibration load plate cell you are calibrating (e.g., LC1).
+* Click **Tare**.
+* Place the calibration object on the calibration load plate.
+* Record the Weight Value reported as `Weight_Reported`.
+* Record the loadcell factor of the load cell being calibrated as `Factor_Old`.
+* Calculate the new loadcell factor using this formula:  
+   `Factor_New = (Weight_Reported * Factor_Old) / Weight_Actual`.
+* Remove the calibration object from the calibration plate.
+* In the scales settings menu, replace the loadcell factor with the calculated `Factor_New`. The scales will auto-tare.
+* Place the calibration object on the calibration plate. The weight shown should now match your `Weight_Actual`. If it's off by more than 0.2 g, repeat calibration. 
+* After calibrating the first load cell, repeate the process for the second.  
+* Once both load cells have been calibrated and verified, click "Save" and wait for the "Persisted settings" message. 
     
 4. Re-assemble the load plates. Make sure to put the screws in their original locations.
 
