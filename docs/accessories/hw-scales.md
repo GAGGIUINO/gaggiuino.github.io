@@ -307,9 +307,12 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
 2. **Identify Load Cells:**  
 
-* Set both loadcell calibration factors to 2500 and wait for an "Updated running settings" message.
-* Check the load cells by *gently* pressing on the end of each and observing the Weight Value. 
-    * Note the sign (positive `+` or negative `-`) of the Weight Value that corresponds to the left and right load cells (e.g. L+, R-)
+* Set both loadcell calibration factors to 2500 and wait for an "Updated running settings" message.  
+    <img width="400" alt="image" src="https://github.com/user-attachments/assets/6487f076-fbb9-44a5-bfa1-153c4965f1c4">
+* Check the load cells by *gently* pressing on the end of each and observing the Weight Value.  
+    * Note the signs (positive `+` or negative `-`) of the Weight Values that correspond to the left and right load cells (e.g. L+, R-).  
+    
+     <img width="400" alt="image" src="https://github.com/user-attachments/assets/706d466d-bffa-43f5-b1f4-ac8d25a39c4b">
 * Set loadcell factor 2 to -2500 and wait for an "Updated running settings" message.
 * Check the load cells and note corresponding signs (positive `+` or negative `-`) again 
 * Determine load cell orientation and mark the corresponding load cell ends with permanent marker
