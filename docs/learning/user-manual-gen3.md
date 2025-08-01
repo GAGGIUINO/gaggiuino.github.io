@@ -52,6 +52,7 @@ The simplest way to calibrate PZ is to follow instructions in the **[UT] PZ Cal*
   * Pre-infusion and soak increase flow significantly during the extraction phase(s), so grind will need to be finer to reach the same pressure as stock.  
   * Temperature with Brew Delta will be much more stable during the shot than the stock machine (or even PID mods), so the average in-shot temperature will be higher.  
 * If stop-on-weight is enabled, the shot will predictively stop ahead of the target weight to account for what hasn't hit the cup yet - the espresso in the air and the last bit that comes out of the puck as the shot is stopped and pressure equalizes.  
+* Hot Water Mode is triggered by turning on the Brew & Steam switches together (same as a stock machine).
 
 > 
 
