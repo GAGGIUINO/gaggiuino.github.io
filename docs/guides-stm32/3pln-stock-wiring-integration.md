@@ -58,6 +58,28 @@ Save the images or right-click and open in a new tab to view at full resolution.
 
 <!-- tabs:end -->
 
+# Integration Wires
+
+The following wires are used to integrate the stock wiring with the Gaggiuino control system. Not all wires are unique; select wires and label the connector on each end so there is one of each listed in the table. 
+
+<img height="300" alt="image" src="https://github.com/user-attachments/assets/09a876da-2380-4a97-9aad-7fbbed6007fa">
+
+CBL   | Connections                    | Description                                  |Length<sup>1</sup> (mm) | Color<sup>2</sup>
+:----:|--------------------------------|----------------------------------------------|:----------:|------
+J     | Male Spade - Male Spade        | Jumper in place of Brew Thermostat           | 70         | Red
+Sa    | Fork Spade - Male Spade        | SSR AC1 in place of Steam Thermostat Spade 1 | 100        | Red
+Sb    | Fork Spade - Male Spade        | SSR AC2 in place of Steam Thermostat Spade 2 | 100        | Red
+3     | Female Spade - Male Spade      | PCB 3 to Pb                                  | 350        | Red
+P     | Female Spade - Female Spade    | PCB P to Pump                                | 300        | Red
+L     | Female Spade - Male Spade      | PCB L to B4                                  | 350        | Black
+N     | Female Spade - Piggyback Spade | PCB N to Pump and Pa (into fuse)             | 300        | White
+
+> [!Note|style:callout|label:Notes]
+> 1. The listed length is generous to fit a variety of machines and routing paths; if making your own, feel free to route and then cut to optimize for your build.
+> 2. This is the color shown in the build pictures
+
+>
+
 # Integration
 
 > [!Warning|style:callout]
@@ -112,12 +134,12 @@ Make a short jumper wire with male spades on both ends. Remove the wires attache
 ![Brew Thermostat Jumper Wire](https://user-images.githubusercontent.com/117388662/243794746-39d788cb-2b08-45ae-a08e-f1bb0907129d.png ':size=500')
 <!-- tabs:end -->
 
-Unscrew the brew thermostat, transfer or add thermal paste, then ***Gently** screw in the thermocouple barely finger-tight (**do not over-tighten**).  
+Unscrew the brew thermostat, transfer or add thermal paste on the thermocouple's threads, then **gently** screw in the thermocouple barely finger-tight (**do not over-tighten**).  
 This can be done in-place, but it's easier to remove the boiler (4 SHCS up from below the sheet metal), steam knob, and steam wand so that the boiler can be tipped up a bit for easier access. Make sure the thermocouple wire is free to rotate during the install. 
 
 ![Thermocouple Install Detail](https://github.com/user-attachments/assets/7eef096a-bcce-4d98-8a7d-ae898c3afec3 ':size=500')
 
-After screwing in the thermocouple (and reinstalling the boiler, if necessary), run the thermocouple wire to the front of the Gaggia, around the boiler, and back to the control enclosure (avoid going back behind the pump area). 
+After screwing in the thermocouple (and reinstalling the boiler, if necessary), run the thermocouple wire to the front of the Gaggia, around the boiler, and back to the control enclosure on the right side of the machine enclosure. 
 
 > [!Note|style:callout]
 >There should already be high-temp thermal paste in place. If there is not, or if the paste is dried out, replace with a paste that has at least a 180°C working temperature. 
@@ -168,14 +190,14 @@ Disconnect wires from the switch and connect your last 3PLN connection (Line) wi
 
 ![L Connection](https://user-images.githubusercontent.com/117388662/239404551-97d6f3e4-f62e-45c4-93d7-52d8ae373526.png ':size=500')
 <!-- tab:Gaggia Classic Pro -->
-Disconnect and move wires from the switches and connect your last 3PLN connection (Line) with a male spade to the brew switch source wire. **Follow the [schematic](#schematics) for your machine**. When you're done you should have one empty column of spades on both the brew and steam switches.
+Disconnect and move wires from the switches and connect the brew switch wire to the control L wire. **Follow the [schematic](#schematics) for your machine**. When you're done you should have one empty column of spades on both the brew and steam switches.
 
 ![L Connection](https://user-images.githubusercontent.com/117388662/243890489-77c730e4-20e3-4e6f-9cb5-6295780194fc.png ':size=500')
 <!-- tabs:end -->
 **Low Voltage**
 
-> [!Tip]
-> Keep LV (DC) and sensors separated from HV (AC) wires to reduce interference. I like to run AC wires near the top of the machine enclosure, mostly left of the boiler. DC wires are run near the bottom of the enclosure, mostly on the right side.
+> [!Tip|style:callout]
+> Keep LV (DC) wires and sensors separated from HV (AC) wires to reduce interference. Run AC wires on the left side of the enclosure, staying above the thermocouple wire. Run DC wires on the right side of the enclosure.
 
 Connect GND, brewPin, and steamPin wires to the switches, making use of some of the space you've freed up by removing the HV wires. **Follow the [schematic](#schematics) for your machine**.
 <!-- tabs:start -->
@@ -187,14 +209,27 @@ Connect GND, brewPin, and steamPin wires to the switches, making use of some of 
 
 ## Pressure Transducer
 
-The pressure transducer comes with a base O-ring (green in pictures), however, the threaded length of the fittings vary and many aren't long enough to seal against the base. Insert the small white O-ring into the fitting, adjust flush, then screw in the transducer until hand-tight. You can add 1/4 wrench turn after hand-tight if desired, but **do not overtighten** or you may damage the O-ring and/or not get a pressure reading.
+There are two methods of attaching the pressure transducer to the system: 
+* T-Fitting - Tubing between Pump and boiler is cut, a T-fitting is inserted with a pressure transducer on the new branch line.
+* Pressure Tap Block (PTB) - the PTB is fastened between the boiler and inlet fitting, with the pressure transducer attached to the PTB via fittings and PTFE tubing. 
+
+Select the method that matches your components.
+
+<!-- tabs:start -->
+<!-- tab:T-Fitting -->
+
+The pressure transducer may have a base O-ring (green in pictures), however, the threaded length of the fittings vary and many aren't long enough to seal against the base. Insert the small white O-ring into the fitting, adjust flush, then screw in the transducer until hand-tight. You can add 1/4 wrench turn after hand-tight if desired, but **do not overtighten** or you may damage the O-ring and/or not get a pressure reading.
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic -->
 
 ![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/78d801f3-9c4f-4c17-8105-74e32711af09 ':size=500')
 
-Cut the tubing in between the pump and boiler, nearer to the boiler but high enough the T is mostly vertical, not horizontal. Attach the push-to-connect T fitting. 
+<<<<<<< HEAD
+Cut the tubing in between the pump and boiler, nearer to the boiler but high enough the T is mostly vertical, not horizontal. Attach the push-to-connect T fitting.  
+=======
+Cut the tubing in between the pump and boiler, nearer to the boiler but high enough so the T is mostly vertical, not horizontal. Attach the push-to-connect T fitting. 
+>>>>>>> pr/165
 
 > [!Tip]
 > Make sure the tubing is cut straight and fully engaged on the fittings or it may not seal. The push-to-connect fitting has a ring of teeth and then an o-ring - the tubing must be fully inserted through both. It can be helpful to use a grip aid such as silicone tape or a rubber glove to grip the tubing and push it in. 
@@ -225,24 +260,45 @@ Arrange the connected pressure transducer so that it is at the base of the machi
     <img width="300" alt="GC 120v" src="https://user-images.githubusercontent.com/117388662/239457402-b58dfe55-6572-45b7-8960-2a4d1f9d5753.png">
 > </details>
 
- Before pulling shots you'll need to fill the tubing with water so there are no air bubbles. There are 2 options:
+Before pulling shots you'll need to fill the tubing with water so there are no air bubbles. After the screen has been connected and the remainder of the install completed:
 
-<details>
-<summary><b>Machine fill - recommended</b> <i>(Click to expand)</i></summary>
-
-After the screen has been connected and the remainder of the install completed, go to the Brew menu, select the Manual tab, set flow to 1 ml/s and run for ~2 minutes (with open group head) to gently fill the line.
+<!-- tabs:start -->
+<!-- tab:Gen 3 -->
+Download and run the utility profile **[UT] Tube Fill** from Community profiles in WebUI. 
+<!-- tab:Gen 2 -->
+Go to the Brew menu, select the Manual tab, set flow to 1 ml/s and run for ~2 minutes (with open group head) to gently fill the line.
 
 ![Filling the transducer tubing](https://user-images.githubusercontent.com/117388662/239618595-844609d1-7b59-456e-afba-2d2b1bf73374.png ':size=250')
+<!-- tabs:end -->
 
-</details>
+<!-- tab:Pressure Tap Block -->
 
-<details>
-<summary><b>Hand fill</b> <i>(Click to expand)</i></summary>
+>[!Note|style:callout|label:2 PTB Versions|iconVisibility:visible]
+> There are 2 different versions of the PTB, designed for compatibility with different manufacturing methods. The LM version is shown; both follow the same assembly process and are compatible with all Gaggia Classic, Pro, Eco, Evo, and E24 models.
 
-This should be done before finishing the install and is easiest before connecting the T fitting. Surface tension can make hand filling the tube difficult if you don't use a simple trick: insert a small wire down the center of the tubing and inject water with a syringe. The wire allows the water to flow down and the air to vent up because it doesn't let surface tension seal the tube.
+The pressure transducer may have a base O-ring (green in pictures), however, the threaded length of the fittings vary and many aren't long enough to seal against the base. Insert the small white O-ring into the fitting, adjust flush, then screw in the transducer until hand-tight. You can add 1/4 wrench turn after hand-tight if desired, but **do not overtighten** or you may damage the O-ring and/or not get a pressure reading.
 
-![Filling the transducer tubing](https://user-images.githubusercontent.com/117388662/239455051-c8fe0d0a-270e-4685-9478-d751eb746d49.png ':size=250')
-</details>
+![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/78d801f3-9c4f-4c17-8105-74e32711af09 ':size=500')
+
+Screw the fitting into the PTB hand-tight, fully insert the tube into the fitting, and place the O-ring. The fitting thread should not protrude more than 1/4 of the hole diameter. 
+
+![PTB Assembly](https://github.com/user-attachments/assets/bd6a1e31-b43d-4b4d-abfe-4204d290cf39 ':size=500')
+
+Remove the inlet connector (metal OPV on a GC) by unscrewing the two M5 screws.
+
+![Remove inlet](https://github.com/user-attachments/assets/12e2f8d8-5313-4f5d-b932-4b213ebf22e8 ':size=500')
+
+Clamp the pressure tap block assembly between the group head and the inlet connector (or OPV). O-rings both face toward the group head.
+
+![Clamped PTB Assembly](https://github.com/user-attachments/assets/8cf1157b-b990-41c1-9770-24d7ac5af067 ':size=500')
+
+Plug the pressure transducer assembly onto the PTFE tubing; make sure the tube is fully inserted into the fitting, and the pressure transducer isn't touching any metal components.
+
+![Finished PTB Assembly](https://github.com/user-attachments/assets/53026edc-2026-4144-9714-200cdb2ebf51 ':size=500')
+
+After the install is complete, run flush for 10 seconds (with open group head) to fill the system, then run flush with a blank basket to test pressure.
+
+<!-- tabs:end -->
 
 ## Internal Finishing Touches
 

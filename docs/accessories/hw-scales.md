@@ -282,35 +282,60 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
         <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257089747-74fd447d-a299-4d65-a408-b325f09ec326.png">
 
-# Flashing/Calibration
+# Calibration
 
 
 <!-- tabs:start -->
 <!-- tab:Gen 3 -->
 
-1. Enter calibration menu
+1. **Preparation**  
 
-    Go to [gaggiuino.local](http://gaggiuino.local/), then navigate to **SETTINGS**, **SCALES**, and then click **CALIBRATE**
+* Gather:  
+    * A calibration object with a flat bottom, weighing 200-400 g (tampers typically work well)  
+    * An accurate scale to weigh the calibration object  
+    * A permanent marker  
 
-    <img width="500" alt="image" src="https://github.com/user-attachments/assets/c120b6d2-3a97-42e5-9bd1-bd1d96d96f4f">
+* Initial Setup:  
+    * Weigh the calibration object on the accurate scale and record its weight as `Weight_Actual`.
+    * Navigate to [gaggiuino.local](http://gaggiuino.local/), then go to **Settings** > **Scales**.  
+    * Enable hardware scales and disable any other scale types.  
+    * Click **Calibrate** next to Hardware Scales to enter the calibration settings.  
+    * Unscrew and remove both load plates, keeping track of which screws are more magnetic.  
+        <img height="300" alt="image" src="https://github.com/user-attachments/assets/018a0a44-ac59-4ced-9f2d-6c56f6de97ef">  
+    * Detach the load cell housing from the center housing to get more room to fit the calibration load.  
+        <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110291-ae8bf438-a692-4b89-b511-8ef8073f1065.png">
 
-2. Unscrew both load plates, keeping track of which screws are more magnetic. You'll use the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration load (in this case a 318.5 g tamper). Weigh the calibration load plate and load **together** on a scale to get the calibration weight - ideal calibration weight is in the 200-400g range. 
+2. **Identify Load Cells:**  
 
-    <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/275450371-a6c50ca3-95ef-46df-9e21-6bb3e654535e.png">
+* Set both loadcell calibration factors to 2500 and wait for an "Updated running settings" message.  
+    <img width="400" alt="image" src="https://github.com/user-attachments/assets/6487f076-fbb9-44a5-bfa1-153c4965f1c4">
+* Check the load cells by *gently* pressing on the end of each and observing the Weight Value.  
+    * Note the signs (positive `+` or negative `-`) of the Weight Values that correspond to the left and right load cells (e.g. L+, R-).  
+    
+     <img width="400" alt="image" src="https://github.com/user-attachments/assets/706d466d-bffa-43f5-b1f4-ac8d25a39c4b">
+* Set loadcell factor 2 to -2500 and wait for an "Updated running settings" message.
+* Check the load cells and note corresponding signs (positive `+` or negative `-`) again 
+* Determine load cell orientation and mark the corresponding load cell ends with permanent marker
+    * Loadcell 1 (LC1): sign of Weight Value **did not change** between checks.
+    * Loadcell 2 (LC2): sign of Weight Value **changed** between checks.
+* If needed, adjust the sign of the loadcell calibration factors so that both load cells result in a positive Weight Value when pressed. 
 
-    <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110291-ae8bf438-a692-4b89-b511-8ef8073f1065.png">
-
-    To calibrate:
-    - Tare (with load cells empty)
-    - Place the calibration load plate and load on one load cell
-    - Compare the reported weight value to the total calibration weight
-    - Remove the calibration load plate and load
-    - Type (or use the +/- buttons) to adjust the load cell calibration factor, then wait for the "Updated running settings" message (scales will auto-tare)
-    - Repeat on the same load cell until the weight value matches the calibration weight, then switch to the other load cell. 
-    - Click Save  
-
-> [!NOTE|style:callout|label:Weight must be positive|iconVisibility:visible]
-> Make sure the **weight value (grams) is positive** - due to the mirrored load cell orientation one load cell calibration factor will likely be negative.  
+3. **Calibrate Load Cells**
+* Start with nothing on the load cells.
+* Place the calibration load plate cell you are calibrating (e.g., LC1).
+* Click **Tare**.
+* Place the calibration object on the calibration load plate.
+* Record the Weight Value reported as `Weight_Reported`.
+* Record the loadcell factor of the load cell being calibrated as `Factor_Old`.
+* Calculate the new loadcell factor using this formula:  
+   `Factor_New = (Weight_Reported * Factor_Old) / Weight_Actual`.
+* Remove the calibration object from the calibration plate.
+* In the scales settings menu, replace the loadcell factor with the calculated `Factor_New`. The scales will auto-tare.
+* Place the calibration object on the calibration plate. The weight shown should now match your `Weight_Actual`. If it's off by more than 0.2 g, repeat calibration. 
+* After calibrating the first load cell, repeate the process for the second.  
+* Once both load cells have been calibrated and verified, click "Save" and wait for the "Persisted settings" message. 
+    
+4. Re-assemble the load plates. Make sure to put the screws in their original locations.
 
 <!-- tab:Gen 2 -->
 
@@ -349,7 +374,7 @@ Use the appropriate scales-calibration task to upload to the STM32 and copy scal
 
 <!-- tabs:end -->
 
-2. Unscrew the load plates and replace with the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration load (in this case a 318.5 g tamper). Weigh the calibration load plate and load **together** on a scale to get the calibration weight - ideal calibration weight is in the 200-400g range. 
+2. Unscrew the load plates and replace with the calibration load plate to space the load away from the load cell housing (otherwise the housing will take some of the load). I prefer to detach the load cell housing from the center housing as shown to get more room to fit the calibration load. Weigh the calibration load plate and load **together** on a scale to get the calibration weight - ideal calibration weight is in the 200-400g range. 
 
     <img height="300" alt="image" src="https://user-images.githubusercontent.com/117388662/275450371-a6c50ca3-95ef-46df-9e21-6bb3e654535e.png">
 
@@ -368,8 +393,8 @@ Use the appropriate scales-calibration task to upload to the STM32 and copy scal
     <img width="600" alt="image" src="https://user-images.githubusercontent.com/117388662/257110758-a6eae8c8-c12e-41eb-bfa3-586ae03dd88a.png">
 
 > [!TIP] If using the stock GC or GCP drip trays you may want to file or cut 2 mm off of the pressure outlet tube (solenoid vent) to bring it to 130 mm and make drip tray removal easier.  
-You'll find that you might not be able to easily reach under the stock drip tray to remove it - I find holding it like this to lift over the retaining lip and pull it forward slightly works well. 
-<img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110983-c41210d7-dbb4-4666-bb82-2f0b789a50ad.png">
+You'll find that you might not be able to easily reach under the stock drip tray to remove it - I find holding it like this to lift over the retaining lip and pull it forward slightly works well.  
+> <img width="300" alt="image" src="https://user-images.githubusercontent.com/117388662/257110983-c41210d7-dbb4-4666-bb82-2f0b789a50ad.png">
 
 # Troubleshooting
 
@@ -378,4 +403,4 @@ If you have “jumpy” scales or are struggling to calibrate, check that
 * the bottom surface of all parts resting on the machine sheet metal is flat and free of dirt, dried adhesive, print artifacts, etc. 
 * the load cell adhesive is not clamped by the load cell housings or flex limiters (see step 1). Adhesive on the side of the load cell before the cutout area is fine.
 * the load plates have clearance to the load cell housings all the way around
-* wires are not routed by high voltage
+* the scales' DC wires are not routed near AC

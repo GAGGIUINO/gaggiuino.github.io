@@ -72,8 +72,8 @@ Name                                      | Voltage   | Model Years | Model ID  
 :heavy_check_mark: Gaggia Classic Pro Eco | 220-240 V | 2019-2022   | SIN035UR RI9480 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
 :heavy_check_mark: Gaggia Classic Evo Pro | 100-120 V | 2023-2024   | SIN035R RI9380  | 9 bar OPV must be changed to be a [10-12 bar OPV](guides/machine-specific-guide.md#10-12-bar-opv) <br /> High-temp insulation required for [combined connector insulation](guides/machine-specific-guide.md#combined-connector-insulation) when doing stock wiring integration 
 :heavy_check_mark: Gaggia Classic Evo Pro | 220-240 V | 2023-2024   | SIN035UR RI9481 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
-:heavy_check_mark: Gaggia Classic Pro E24 | 100-120 V | 2024-?      | SIN035R RI9380  | 9 bar OPV must be changed to be a [10-12 bar OPV](guides/machine-specific-guide.md#10-12-bar-opv) <br /> High-temp insulation required for [combined connector insulation](guides/machine-specific-guide.md#combined-connector-insulation) when doing stock wiring integration <br /> Brass boiler behavior is not fully characterized 
-:heavy_check_mark: Gaggia Classic Pro E24 | 220-240 V | 2024-?      | SIN035UR RI9481 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB <br /> Brass boiler behavior is not fully characterized 
+:heavy_check_mark: Gaggia Classic Pro E24 | 100-120 V | 2024-?      | SIN035R RI9380  | 9 bar OPV must be changed to be a [10-12 bar OPV](guides/machine-specific-guide.md#10-12-bar-opv) <br /> High-temp insulation required for [combined connector insulation](guides/machine-specific-guide.md#combined-connector-insulation) when doing stock wiring integration
+:heavy_check_mark: Gaggia Classic Pro E24 | 220-240 V | 2024-?      | SIN035UR RI9481 | [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) required and custom wiring recommended due to eco PCB
 
 >
 
@@ -97,7 +97,7 @@ Name                                      | Voltage   | Model Years | Model ID  
   Decide if you're going to order a [PCB](guides-stm32/pcb-guide.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. PCBv4 is recommended for Gen 3 builds, while PCBv3.1 is recommended for Gen 2 builds. 
   The component build is slightly more flexible for experimentation and less picky about thermocouple grounding, however, it adds significant effort and makes reliability dependent on the maker's skill. 
 
-  Decide how to integrate the control system with your espresso machine. It can either be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring, but sometimes more confusing) or the stock wiring can be replaced with a [custom wiring harness](guides-stm32/3pln-custom-wiring.md) (more work, but results in a clean, straightforward install). It is recommended that you check the *notes* in the [Compatibility Table](#compatibility) for your machine and and read through the instructions before deciding.
+  Decide how to integrate the control system with your espresso machine. It can either be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring, but sometimes more confusing) or the stock wiring can be replaced with a [custom wiring harness](guides-stm32/3pln-custom-wiring.md) (more work, but results in a clean, straightforward install). It is recommended that you check the *notes* in the [Compatibility Table](#compatibility) for your machine and read through the instructions before deciding.
 
   If you're building Gen 3, decide which interface option you prefer. For an on-machine (embedded) and web UI, select the 4.3" IPS [touchscreen](guides/interface-screen.md) and one of its mounting options. For a "stealth" install with web UI only, select the [headless](guides/interface-headless.md) PCB.
 
@@ -210,15 +210,23 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
 * [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
 * [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
+<!-- tab:Pressure Tap Block -->
+*The pressure tap block is compatible with Gaggia Classic and Gaggia Classic Pro/Eco/E24 models*
+* [Pressure Tap Block (CNC or LM version)](https://www.pcbway.com/project/shareproject/Pressure_Tap_Block_304743ea.html)
+* [PTB Fitting | PC 6-M5 (6mm-M5)](https://www.aliexpress.com/item/3256806892186651.html)
+* [Transducer Fitting | PLF 6-02 (6mm-1/4)](https://www.aliexpress.com/item/3256804142354807.html)
+* [PTFE Tube 1 meter | 4x6mm White](https://www.aliexpress.com/item/2251832544541096.html)
+* [010 Silicone O-Ring | ID6xCS1.8(10pcs)](https://www.aliexpress.com/item/3256806781414214.html) *Other names: Gaggia 996530063887, S70010, 3/8"x1/4", CS0.070"(1.78mm)xID0.239"(6.07mm)*
+* [M5x25 Stainless Steel Socket Head Screws | 10pcsM5 / 25mm](https://www.aliexpress.com/item/3256805692722422.html)
 <!-- tabs:end -->
 
 <!-- tabs:start -->
 <!-- tab:Stock Wiring Integration -->
-* [Heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html) **Amount is for minimal mistakes, extra is recommended**
-  * **18AWG - 1m:** Black *(x2 if 230 VAC)*, White *(x2 if 230 VAC)*, Red, Blue, Yellow
+* [2+ m 18 AWG heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html) 
+  * 1 m Red, 1 m Black, 1 m White recommended
 * [Piggy Back spades 6.3mm](https://www.aliexpress.com/item/32800326782.html)
 * [Fork Crimp Terminal | SV1.25-5s](https://www.aliexpress.com/item/3256805357612913.html)
-* [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html) **nice to have, needed for Evo**
+* [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html) **nice to have, needed for Evo & E24**
 
 <!-- tab:Custom Wiring -->
 **This list assumes components will be taken from the stock wiring harness. For alternate components see the [Custom Wiring](guides-stm32/3pln-custom-wiring.md) page**
@@ -227,7 +235,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [BN1.25 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html)
 * [BN2 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html)
 * [Fork Crimp Terminal | 102PCS-SV *(SV1.25-5s & SV2-5s used)*](https://www.aliexpress.com/item/3256805357612913.html)
-* * [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html) **OR** [Silicone Heat Shrink Tube | 4, 5, 6 mm dia](https://www.aliexpress.com/item/3256801522005095.html) and a heat gun
+* [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html) **OR** [Silicone Heat Shrink Tube | 4, 5, 6 mm dia](https://www.aliexpress.com/item/3256801522005095.html) and a heat gun
 
 <!-- tabs:end -->
 
@@ -236,7 +244,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 * Interface (pick one)
   * 4.3" ESP32-S3 Screen & cable - **must be activated by [PeakCoffee](https://www.peakcoffee.cc/) or [DIY-EFI](https://diy-efi.co.uk/product-category/gaggiuino/)**
   * Headless E177 PCB & cable- **must be activated by [PeakCoffee](https://www.peakcoffee.cc/) or [DIY-EFI](https://diy-efi.co.uk/product-category/gaggiuino/)**
-* MicroSD card | 1-8 GB, FAT32 (FAT32 cards ≤32 GB may work) - optional, for shot history
+* MicroSD card | 1-8 GB, FAT32 - optional, for shot history
 
 <!-- tab:Gen 2 -->
 * [2.4" Nextion LCD](https://www.aliexpress.com/item/3256803271061345.html) **+ MicroSD card (Class 10 HC 2GB to 32GB)**

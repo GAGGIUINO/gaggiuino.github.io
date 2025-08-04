@@ -31,14 +31,49 @@ Make sure to switch to the necessary [release branch](#Releases) once pulled, de
 > __1. Gaggiuino Gen 3 (NextMonday&trade;) is *NOT* compatible with Nextion screens.__  
 > __2. Failing to flash the correct binary for your hardware will yield unexpected results.__   
 > __3. Make sure the microcontroller and screen unit are in sync.__  
+> __4. If upgrading a pre-2025-02-16 build, flash [breaking update 616ea70](https://github.com/Zer0-bit/gaggiuino/releases/tag/dev-616ea70) before flashing latest.__ 
 
 Released binary (.bin) files are on the [Gaggiuino Github Release (Latest)](https://github.com/Zer0-bit/gaggiuino/releases/latest) page. Files selection depends on your system hardware.
   * Core (STM32): 1 file, named in format *MCU - Build Type - LED Controller .bin* per hardware (see table below).  
-    |Title | Name | Hardware |
-    |:--:|:--:|:--|
-    |**MCU**            | performance <br/> -           | STM32**U585**CIU6 (PCBv4, fuPill) <br/> STM32**F411**CEU6 (PCBv3.1, BlackPill)|
-    |**Build Type**     | pcb <br/> lego                | PCBv2 - PCBv4 <br/> Component build |
-    |**LED Controller <sup>[1]</sup>** | pca <br/> ncp  | PCA9632 <br/> NCP5623 |
+    <table>
+    <thead>
+    <tr>
+    <th align="center">Title</th>
+    <th align="center">Name</th>
+    <th align="left">Hardware</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td align="center" rowspan="2"><strong>MCU</strong></td>
+    <td align="center">performance</td>
+    <td align="left">STM32<strong>U585</strong>CIU6 (PCBv4, fuPill)</td>
+    </tr>
+    <tr>
+    <td align="center"></td>
+    <td align="left">STM32<strong>F411</strong>CEU6 (PCBv3.1, BlackPill)</td>
+    </tr>
+    <tr>
+    <td align="center" rowspan="2"><strong>Build Type</strong></td>
+    <td align="center">pcb</td>
+    <td align="left">PCBv2 - PCBv4</td>
+    </tr>
+    <tr>
+    <td align="center">lego</td>
+    <td align="left">Component build</td>
+    </tr>
+    <tr>
+    <td align="center" rowspan="2"><strong>LED Controller <sup>[1]</sup></strong></td>
+    <td align="center">pca</td>
+    <td align="left">PCA9632</td>
+    </tr>
+    <tr>
+    <td align="center">ncp</td>
+    <td align="left">NCP5623</td>
+    </tr>
+    </tbody>
+    </table>
+
     <details>
     <summary><b>[1] See this for help identifying your LED controller - most are PCA </b><i>(Click to expand)</i></summary>
 
@@ -104,7 +139,7 @@ Make sure **Verify programming** is selected and **Skip flash erase before progr
 
 > [!Warning|style:callout|label:Warning|iconVisibility:visible]
 > * ESP32 systems **must be enabled by official suppliers** to work with Gaggiuino Gen 3.  
-> * Core OTA is compatible with STM32**U585** only (PCBv4 and systems with uPill or WeAct U585 Core Board). Sometimes the U585 may need to be flashed with STM32CubeProgrammer - this will be stated in the release notes if necessary. 
+> * Core OTA is compatible with STM32**U585** only (PCBv4 and systems with uPill or WeAct U585 Core Board). If breaking updates are flashed in the wrong order the U585 may need to be flashed with STM32CubeProgrammer. 
 
 1. Identify the file(s) to flash from [Releases](#Releases).  
 
@@ -125,9 +160,9 @@ The password is the network name with a zero substituted for the "o" and the spa
 
 > [!Note|style:callout|label:File Order|iconVisibility:visible]
 > Flash files in the following order unless otherwise noted in the release notes:
+> * core file (per hardware)
 > * *ui-embedded.bin* / *ui-headless.bin*
 > * *ui-web.bin*
-> * core file (per hardware)  
 
 6. Wait for the upload, flash process, and reboot. The screen will be black during these operations. 
 
