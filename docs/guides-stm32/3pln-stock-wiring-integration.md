@@ -225,11 +225,7 @@ The pressure transducer may have a base O-ring (green in pictures), however, the
 
 ![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/78d801f3-9c4f-4c17-8105-74e32711af09 ':size=500')
 
-<<<<<<< HEAD
-Cut the tubing in between the pump and boiler, nearer to the boiler but high enough the T is mostly vertical, not horizontal. Attach the push-to-connect T fitting.  
-=======
 Cut the tubing in between the pump and boiler, nearer to the boiler but high enough so the T is mostly vertical, not horizontal. Attach the push-to-connect T fitting. 
->>>>>>> pr/165
 
 > [!Tip]
 > Make sure the tubing is cut straight and fully engaged on the fittings or it may not seal. The push-to-connect fitting has a ring of teeth and then an o-ring - the tubing must be fully inserted through both. It can be helpful to use a grip aid such as silicone tape or a rubber glove to grip the tubing and push it in. 
