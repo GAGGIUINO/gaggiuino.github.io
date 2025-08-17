@@ -276,9 +276,9 @@ The pressure transducer may have a base O-ring (green in pictures), however, the
 
 ![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/78d801f3-9c4f-4c17-8105-74e32711af09 ':size=500')
 
-Screw the fitting into the PTB hand-tight, fully insert the tube into the fitting, and place the O-ring. The fitting thread should not protrude more than 1/4 of the hole diameter. 
+Cut a 40 mm length of PTFE tubing, ensuring the ends are square. Screw the fitting into the PTB hand-tight, fully insert the tube into the fitting, and place the O-ring. The fitting thread should not protrude more than 1/4 of the hole diameter. 
 
-![PTB Assembly](https://github.com/user-attachments/assets/4ff7aa74-9b9b-4f52-9397-e3aeabeb8606 ':size=500')
+![PTB Assembly](https://github.com/user-attachments/assets/7a151da5-3759-4801-97a8-5676c3f7284a ':size=500')
 
 Remove the inlet connector (metal OPV on a GC) by unscrewing the two M5 screws.
 
