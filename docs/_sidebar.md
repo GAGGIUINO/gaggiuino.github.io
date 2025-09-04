@@ -7,7 +7,7 @@
     * - [Espressio __(NLD)__](https://espressio.shop/)
     * - [Hudson Creative Group __(USA)__](https://gaggiuino.hudsoncreativegroup.com/)
 * __TOOLS:__
-  - [__Emergency Firmware Restore__](https://gaggiuino.github.io/emergency_restore.html)
+  - [__Emergency Firmware Restore__](http://localhost:3000/emergency_restore.html)
   - [Restore __ui-web.bin__](https://gaggiuino.github.io/restore.html)
   - [REST API](rest-api/rest-api.md)
 * __Useful:__
