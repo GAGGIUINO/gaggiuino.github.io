@@ -65,6 +65,23 @@
         list-style: none;
         line-height: 2em;
       }
+      .warning {
+        color: #d32f2f; /* red */
+        font-weight: bold;
+        margin: 8px 0 16px 0;
+        text-align: center;
+      }
+
+      .blink {
+        animation: blink-animation 2s steps(2, start) infinite;
+      }
+
+      @keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+
       @media (prefers-color-scheme: dark) {
         body {
           background-color: #333;
@@ -82,6 +99,9 @@
       <h1>Gaggiuino Emergency Restore</h1>
       <p>This tool is undergoing testing, it might not be compatible with all the browsers so users are advised to never use this without prior advice form discord artisans.</p>
       <p>Select your install type:</p>
+        <p class="warning blink">
+         <strong>DO NOT TICK THE ERASE CHECKBOX BEFORE HITTING THE INSTALL BUTTON AS THIS WILL BRICK YOUR DEVICE COMPLETELY!</strong>
+        </p>
       <ul class="radios">
         <li>
           <label><input type="radio" name="type" value="lcd" /> LCD</label>
