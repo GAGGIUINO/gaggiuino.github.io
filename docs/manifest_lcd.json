@@ -1,0 +1,17 @@
+{
+  "name": "GAGGIUINO LCD firmware",
+  "version": "802253a",
+  "home_assistant_domain": "slim_player",
+  "funding_url": "https://esphome.io/guides/supporters.html",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "firmware/nvs_blank.bin", "offset": 36864 },
+        { "path": "firmware/lcd_enc.bin", "offset": 65536 },
+        { "path": "firmware/lcd2_enc.bin", "offset": 2686976 }
+      ]
+    }
+  ]
+}
