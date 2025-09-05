@@ -34,7 +34,9 @@ Make sure to switch to the necessary [release branch](#Releases) once pulled, de
 > __4. If upgrading a pre-2025-02-16 build, flash [breaking update 616ea70](https://github.com/Zer0-bit/gaggiuino/releases/tag/dev-616ea70) before flashing latest.__ 
 
 Released binary (.bin) files are on the [Gaggiuino Github Release (Latest)](https://github.com/Zer0-bit/gaggiuino/releases/latest) page. Files selection depends on your system hardware.
-  * Core (STM32): 1 file, named in format *MCU - Build Type - LED Controller .bin* per hardware (see table below).  
+  * Core (STM32): 
+    1 file, named in format *MCU - Build Type - LED Controller .bin* per hardware (see table below).  
+    *Core is compatible with [wired](#wired---stm32--blackpill) flashing; performance bins are also compatible with [OTA](#ota---esp32-stm32u585)*
     <table>
     <thead>
     <tr>
@@ -81,7 +83,8 @@ Released binary (.bin) files are on the [Gaggiuino Github Release (Latest)](http
 
     </details>  
   
-  * UI (ESP32)
+  * UI (ESP32)  
+    *UI bins are compatible with [OTA](#ota---esp32-stm32u585) only*
     * Screen: *ui-embedded.bin* and *ui-web.bin*  
     * Headless: *ui-headless.bin* and *ui-web.bin* 
 
@@ -109,6 +112,7 @@ Files are at [release/stm32-blackpill](https://github.com/Zer0-bit/gaggiuino/tre
 Make sure you have necessary [Software Prerequisites](#software-prerequisites) installed.
 
 > [!Warning|style:callout|label:Warning|iconVisibility:visible]
+> * Wired flashing is for core (STM32) files only. Do not use this method to flash UI (ESP32) files. 
 > * BlackPill-based PCBs (PCBv2, PCBv3) and PCBv3.1 should be flashed using STM32CubeProgrammer with **machine power off** unless [PA15 pulldown functionality ](guides-upgrade/pcb-upgrade.md#pa15-pulldown-upgrade) has been verified. Otherwise, the boiler heaters may turn on while the STM32 is connected or flashing.  
 > * If your ST-Link doesn't work with STM32CubeProgrammer try using the old [ST-Link utility](https://www.st.com/en/development-tools/stsw-link004.html)
 
