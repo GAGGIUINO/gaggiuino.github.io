@@ -1,126 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Gaggiuino firmware reset</title>
-    <meta
-      name="description"
-      content="Easily reset the Gaggiuino UI firmware via the web in case you got yourself in a catch 22 situation."
-    />
-    <meta name="viewport" content="width=device-width" />
+    <title>Gaggiuino UI Firmware Reset</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark light" />
     <style>
       body {
         font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
           Roboto, Ubuntu, sans-serif;
-        padding: 0;
         margin: 0;
-        line-height: 1.4;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+        color: #222;
       }
+
       .content {
-        max-width: 600px;
+        max-width: 720px;
         margin: 0 auto;
-        padding: 12px;
+        padding: 2rem 1rem;
       }
-      h2 {
-        margin-top: 2em;
+
+      h1 {
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
       }
-      h3 {
-        margin-top: 1.5em;
+      h1 img {
+        height: 3rem;
+        margin-right: 0.75rem;
       }
-      a {
-        color: #03a9f4;
+
+      p {
+        margin-bottom: 1rem;
       }
-      .invisible {
-        visibility: hidden;
-      }
-      .hidden {
-        display: none;
-      }
-      esp-web-install-button[install-unsupported] {
-        visibility: inherit;
-      }
-      .content pre {
-        max-width: 100%;
-        overflow-y: scroll;
-      }
-      .footer {
-        margin-top: 24px;
-        border-top: 1px solid #ccc;
-        padding-top: 24px;
+
+      /* Warning box with pulse animation */
+      .warning {
+        background: #ffe5e5;
+        color: #a10000;
+        font-weight: 600;
+        padding: 1rem;
+        border-radius: 8px;
         text-align: center;
+        margin: 2rem 0;
+        border: 1px solid #ffb3b3;
+        animation: pulse 2.5s infinite;
       }
-      .footer .initiative {
-        font-style: italic;
-        margin-top: 16px;
+
+      @keyframes pulse {
+        0%, 100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.05);
+          opacity: 0.8;
+        }
       }
-      table {
-        border-spacing: 0;
-      }
-      td {
-        padding: 8px;
-        border-bottom: 1px solid #ccc;
+
+      /* Radio group */
+      .radios {
+        display: flex;
+        gap: 1rem;
+        margin: 1.5rem 0 2rem;
+        padding: 0;
+        justify-content: center;
       }
       .radios li {
         list-style: none;
-        line-height: 2em;
+        flex: 1;
       }
-      .warning {
-        color: #d32f2f; /* red */
-        font-weight: bold;
-        margin: 8px 0 16px 0;
+      .radios input {
+        display: none;
+      }
+      .radios label {
+        display: block;
         text-align: center;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        font-weight: 500;
+        min-width: 140px;
+        background: #fff;
+      }
+      .radios label:hover {
+        background-color: #f0f0f0;
+      }
+      .radios input:checked + label {
+        background-color: #03a9f4;
+        color: #fff;
+        border-color: #0288d1;
+        box-shadow: 0 0 12px rgba(3, 169, 244, 0.6);
       }
 
-      .blink {
-        animation: blink-animation 2s steps(2, start) infinite;
+      .button-row {
+        text-align: center;
+        margin-top: 1.5rem;
       }
-
-      @keyframes blink-animation {
-        to {
-          visibility: hidden;
-        }
+      esp-web-install-button {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+      }
+      esp-web-install-button:hover {
+        transform: scale(1.05);
       }
 
       @media (prefers-color-scheme: dark) {
         body {
-          background-color: #333;
-          color: #fff;
+          background-color: #1e1e1e;
+          color: #ddd;
         }
-        a {
-          color: #58a6ff;
+        .radios label {
+          border-color: #555;
+          background: #2a2a2a;
+        }
+        .radios label:hover {
+          background-color: #333;
+        }
+        .radios input:checked + label {
+          background-color: #58a6ff;
+          border-color: #1f6feb;
+          color: #fff;
+          box-shadow: 0 0 12px rgba(88, 166, 255, 0.6);
+        }
+        .warning {
+          background: #3a1e1e;
+          color: #ff8a8a;
+          border: 1px solid #5a2a2a;
         }
       }
     </style>
-    <script type="module" src="https://unpkg.com/esp-web-tools@8.0.1/dist/web/install-button.js?module"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/esp-web-tools@8.0.1/dist/web/install-button.js?module"
+    ></script>
   </head>
   <body>
     <div class="content">
-      <h1>Gaggiuino Emergency Restore</h1>
-      <p>This tool is undergoing testing, it might not be compatible with all the browsers so users are advised to never use this without prior advice form discord artisans.</p>
-      <p>Select your install type:</p>
-        <p class="warning blink">
-         <strong>DO NOT TICK THE ERASE CHECKBOX BEFORE HITTING THE INSTALL BUTTON AS THIS WILL BRICK YOUR DEVICE COMPLETELY!</strong>
-        </p>
+      <h1>
+        <img src="./media/GAGGIUINO_ICON_transp.png" alt="Logo" />
+        UI Firmware Reset
+      </h1>
+
+      <p>
+        This tool is undergoing testing and may not work in all browsers. Please
+        use it only if you have been advised to do so by the Discord artisans.
+      </p>
+
+      <div class="warning">
+        ⚠️ DO NOT tick the erase checkbox before hitting the install button —
+        this will brick your device completely!
+      </div>
+
+      <p style="text-align:center;">Select your install type:</p>
       <ul class="radios">
         <li>
-          <label><input type="radio" name="type" value="lcd" /> LCD</label>
+          <input type="radio" id="lcd" name="type" value="lcd" />
+          <label for="lcd">LCD</label>
         </li>
         <li>
-          <label><input type="radio" name="type" value="headless" /> HEADLESS</label>
+          <input type="radio" id="headless" name="type" value="headless" />
+          <label for="headless">HEADLESS</label>
         </li>
       </ul>
-      <p class="button-row" align="center">
+
+      <div class="button-row">
         <esp-web-install-button class="invisible"></esp-web-install-button>
-      </p>
-      <script>
-        document.querySelectorAll('input[name="type"]').forEach(radio =>
-          radio.addEventListener("change", () => {
-            const button = document.querySelector('esp-web-install-button');
-            button.manifest = `./manifest_${radio.value}.json`;
-            button.classList.remove('invisible');
-        }
-      ));
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll('input[name="type"]').forEach((radio) =>
+        radio.addEventListener("change", () => {
+          const button = document.querySelector("esp-web-install-button");
+          button.manifest = `./manifest_${radio.value}.json`;
+          button.classList.remove("invisible");
+        })
+      );
     </script>
   </body>
 </html>
