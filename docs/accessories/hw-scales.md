@@ -322,7 +322,7 @@ Print files are available on [Printables](https://www.printables.com/model/28537
 
 3. **Calibrate Load Cells**
 * Start with nothing on the load cells.
-* Place the calibration load plate cell you are calibrating (e.g., LC1).
+* Place the calibration load plate on the load cell you are calibrating (e.g., LC1).
 * Click **Tare**.
 * Place the calibration object on the calibration load plate.
 * Record the Weight Value reported as `Weight_Reported`.

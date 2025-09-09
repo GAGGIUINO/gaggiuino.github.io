@@ -192,13 +192,13 @@ Go to the Brew menu, select the Manual tab, set flow to 1 ml/s and run for ~2 mi
 >[!Note|style:callout|label:2 PTB Versions|iconVisibility:visible]
 > There are 2 different versions of the PTB, designed for compatibility with different manufacturing methods. The LM version is shown; both follow the same assembly process and are compatible with all Gaggia Classic, Pro, Eco, Evo, and E24 models.
 
-The pressure transducer may have a base O-ring (green in pictures), however, the threaded length of the fittings vary and many aren't long enough to seal against the base. Insert the small white O-ring into the fitting, adjust flush, then screw in the transducer until hand-tight. You can add 1/4 wrench turn after hand-tight if desired, but **do not overtighten** or you may damage the O-ring and/or not get a pressure reading.
+The pressure transducer may have a base O-ring (green in pictures), however, the threaded length of the fittings vary and many aren't long enough to seal against the base. Insert the white O-ring (OD 11 mm) into the fitting, adjust flush, then screw in the transducer until hand-tight. You can add 1/4 wrench turn after hand-tight if desired, but **do not overtighten** or you may damage the O-ring and/or not get a pressure reading.
 
 ![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/78d801f3-9c4f-4c17-8105-74e32711af09 ':size=500')
 
-Screw the fitting into the PTB hand-tight, fully insert the tube into the fitting, and place the O-ring. The fitting thread should not protrude more than 1/4 of the hole diameter. 
+Cut a 40 mm length of PTFE tubing, ensuring the ends are square. Screw the fitting into the PTB hand-tight, fully insert the tube into the fitting, and place the O-ring. Fitting variations may result in the thread extending into the water path; ensure it protrudes less than 1 mm (1/4 hole diameter). 
 
-![PTB Assembly](https://github.com/user-attachments/assets/bd6a1e31-b43d-4b4d-abfe-4204d290cf39 ':size=500')
+![PTB Assembly](https://github.com/user-attachments/assets/14188d93-508f-4ab4-b003-80f8aeb243a8 ':size=500')
 
 Remove the inlet connector (metal OPV on a GC) by unscrewing the two M5 screws.
 
