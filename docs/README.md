@@ -241,9 +241,9 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 <!-- tabs:start -->
 <!-- tab:Gen 3 -->
-* Interface (pick one)
-  * 4.3" ESP32-S3 Screen & cable - **must be activated by [PeakCoffee](https://www.peakcoffee.cc/) or [DIY-EFI](https://diy-efi.co.uk/product-category/gaggiuino/)**
-  * Headless E177 PCB & cable- **must be activated by [PeakCoffee](https://www.peakcoffee.cc/) or [DIY-EFI](https://diy-efi.co.uk/product-category/gaggiuino/)**
+* Interface (pick one) *- must be purchased from an Official Supplier (see sidebar)*
+  * 4.3" ESP32-S3 Screen & cable
+  * Headless E177 PCB & cable
 * MicroSD card | 1-8 GB, FAT32 - optional, for shot history
 
 <!-- tab:Gen 2 -->
