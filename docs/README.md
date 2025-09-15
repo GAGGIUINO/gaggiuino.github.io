@@ -216,7 +216,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [PTB Fitting | PC 6-M5 (6mm-M5)](https://www.aliexpress.com/item/3256806892186651.html)
 * [Transducer Fitting | PLF 6-02 (6mm-1/4)](https://www.aliexpress.com/item/3256804142354807.html)
 * [PTFE Tube 1 meter | 4x6mm White](https://www.aliexpress.com/item/2251832544541096.html)
-* [010 Silicone O-Ring | ID6xCS1.8(10pcs)](https://www.aliexpress.com/item/3256806781414214.html) *Other names: Gaggia 996530063887, S70010, 3/8"x1/4", CS0.070"(1.78mm)xID0.239"(6.07mm)*
+* [010 Silicone O-Ring | ID6xCS1.8(10pcs)](https://www.aliexpress.com/item/3256806781414214.html) *Other names: Gaggia 996530063887, S70010, CS0.070"(1.78mm)xID0.239"(6.07mm)*
 * [M5x25 Stainless Steel Socket Head Screws | 10pcsM5 / 25mm](https://www.aliexpress.com/item/3256805692722422.html)
 <!-- tabs:end -->
 
@@ -241,9 +241,9 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 <!-- tabs:start -->
 <!-- tab:Gen 3 -->
-* Interface (pick one)
-  * 4.3" ESP32-S3 Screen & cable - **must be activated by [PeakCoffee](https://www.peakcoffee.cc/) or [DIY-EFI](https://diy-efi.co.uk/product-category/gaggiuino/)**
-  * Headless E177 PCB & cable- **must be activated by [PeakCoffee](https://www.peakcoffee.cc/) or [DIY-EFI](https://diy-efi.co.uk/product-category/gaggiuino/)**
+* Interface (pick one) *- must be purchased from an Official Supplier (see sidebar)*
+  * 4.3" ESP32-S3 Screen & cable
+  * Headless E177 PCB & cable
 * MicroSD card | 1-8 GB, FAT32 - optional, for shot history
 
 <!-- tab:Gen 2 -->
