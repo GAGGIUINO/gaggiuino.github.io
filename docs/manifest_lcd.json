@@ -1,6 +1,6 @@
 {
   "name": "GAGGIUINO LCD firmware",
-  "version": "802253a",
+  "version": "2e8c114",
   "home_assistant_domain": "slim_player",
   "funding_url": "https://esphome.io/guides/supporters.html",
   "new_install_prompt_erase": true,
