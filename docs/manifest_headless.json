@@ -10,7 +10,8 @@
       "parts": [
         { "path": "firmware/nvs_blank.bin", "offset": 36864 },
         { "path": "firmware/headless_enc.bin", "offset": 65536 },
-        { "path": "firmware/headless2_enc.bin", "offset": 2686976 }
+        { "path": "firmware/headless2_enc.bin", "offset": 2686976 },
+        { "path": "firmware/web_enc.bin", "offset": 12779520 }
       ]
     }
   ]
