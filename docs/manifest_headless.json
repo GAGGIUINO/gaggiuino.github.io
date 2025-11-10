@@ -9,7 +9,7 @@
       "chipFamily": "ESP32-S3",
       "parts": [
         { "path": "firmware/bootloader_enc.bin", "offset": 0 },
-        { "path": "firmware/bootloader_enc.bin", "offset": 32768 },
+        { "path": "firmware/partitions_enc.bin", "offset": 32768 },
         { "path": "firmware/nvs_blank.bin", "offset": 36864 },
         { "path": "firmware/headless_enc.bin", "offset": 65536 },
         { "path": "firmware/headless2_enc.bin", "offset": 2686976 },
