@@ -31,7 +31,7 @@ Make sure to switch to the necessary [release branch](#Releases) once pulled, de
 > __1. Gaggiuino Gen 3 (NextMonday&trade;) is *NOT* compatible with Nextion screens.__  
 > __2. Failing to flash the correct binary for your hardware will yield unexpected results.__   
 > __3. Make sure the microcontroller and screen unit are in sync.__  
-> __4. If upgrading a pre-2025-02-16 build, flash [breaking update 616ea70](https://github.com/Zer0-bit/gaggiuino/releases/tag/dev-616ea70) before flashing latest.__ 
+> __4. If upgrading a pre-2025-02-16 build, flash [breaking update 616ea70](https://github.com/Zer0-bit/gaggiuino/releases/tag/dev-616ea70) before flashing latest. (A wired connection is reccomended for the core update on version 616ea70. This version breaks communication between the display and PCB and you will not recieve any feedback in the event of a failed or interrupted OTA core update.)__ 
 
 Released binary (.bin) files are on the [Gaggiuino Github Release (Latest)](https://github.com/Zer0-bit/gaggiuino/releases/latest) page. Files selection depends on your system hardware.
   * Core (STM32): 
