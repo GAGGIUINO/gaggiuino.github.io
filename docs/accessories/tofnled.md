@@ -1,6 +1,6 @@
 # Accessory: ToFnLED
 
-The Time of Flight and LED (ToFnLED) board provides a sensor for determining tank water level and and LED for tank lighting. 
+The Time of Flight and LED (ToFnLED) board provides a sensor for determining tank water level and LED for tank lighting. 
 
 <img height="300" alt="ToFnLED Photo" src="media/tofnled.png">
 
