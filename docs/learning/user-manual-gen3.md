@@ -271,7 +271,7 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 - **Calibration Factor:** Calibration factors for the two load cells. The calibration factors can be determined via the Web UI. Detailed instructions on how to calibrate the scales can be found [here](https://gaggiuino.github.io/#/accessories/hw-scales?id=flashingcalibration).
 
 ### Bluetooth Scales
-- Enabled: Enable Bluetooth scales. A list of supported scales can be found [here](https://github.com/kstam/esp-arduino-ble-scales).
+- Enabled: Enable Bluetooth scales. A list of supported scales can be found [here](https://github.com/Zer0-bit/esp-arduino-ble-scales).
 
 ### Force Predictive Scales
 - Enabled: Enables predictive scales algorithm and ignores other scales. Accuracy can be improved by calibrating Pump Zero and using the in-shot Tare button.
