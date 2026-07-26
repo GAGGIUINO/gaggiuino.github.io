@@ -1,7 +1,7 @@
 * [Home](/)
 * __Approved Official Suppliers:__
 * - __PCB and Kits__
-    * - [NEW SUPPLIER COMING SOON]()
+    * - [Gaggiuino.co](https://gaggiuino.co)
     * - [DIY-EFI __(GBR)__](https://diy-efi.co.uk/product-category/gaggiuino/)
 * - __3D Printed Parts__
     * - [Espressio __(NLD)__](https://espressio.shop/)
