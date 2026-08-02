@@ -21,6 +21,12 @@ http://gaggiuino.local
 - Handles retrieving shot data.
 - The wildcard `*` is used to specify individual shot IDs.
 
+#### `DELETE /api/shots/*`
+**Description:**
+- Deletes a specific shot's data file.
+- The wildcard `*` represents the shot ID.
+- Requires an SD card to be present.
+
 ### 2. Profiles API
 ---
 #### `GET /api/profiles/all`
@@ -36,6 +42,58 @@ http://gaggiuino.local
 **Description:**
 - Deletes a specific profile.
 - The wildcard `*` represents the profile identifier.
+
+#### `GET /api/profile/*`
+**Description:**
+- Downloads a single profile's full definition (phases, recipe, stop conditions).
+- The wildcard `*` represents the profile identifier.
+- REST equivalent of the web UI's profile Export button.
+
+**Response Example:**
+```json
+{
+  "name": "18g Double",
+  "waterTemperature": 93,
+  "phases": [
+    {
+      "type": "PRESSURE",
+      "skip": false,
+      "name": "Preinfusion",
+      "target": { "end": 3, "curve": "LINEAR", "time": 5000 },
+      "stopConditions": { "time": 10000, "pressureAbove": 4 },
+      "restriction": 0
+    }
+  ],
+  "globalStopConditions": { "time": 40000, "weight": 36 },
+  "recipe": { "coffeeIn": 18, "coffeeOut": 36, "ratio": 2 }
+}
+```
+
+**Field Notes:**
+- `id` is intentionally omitted so the profile can be re-imported without collisions; a fresh id is assigned on upload.
+- Served with `Content-Disposition: attachment` — hitting the URL in a browser downloads a `<name>.json` file.
+
+---
+#### `POST /api/profile`
+**Description:**
+- Creates a new saved profile from a full profile JSON body.
+- REST equivalent of the web UI's profile Import button.
+- Requires `name` and at least one phase; other missing/malformed fields are filled with zero-value defaults.
+- A fresh id is always assigned, regardless of any id in the body.
+
+**Request Body:**
+- Same shape as the `GET /api/profile/*` response.
+
+**Success Response:**
+```json
+{
+  "id": 4,
+  "name": "18g Double"
+}
+```
+
+**Error Response:**
+- `422` for bad/incomplete JSON, `500` if the profile couldn't be persisted (plain-text body).
 
 ### 3. System API
 ---
@@ -125,12 +183,22 @@ http://gaggiuino.local
   "visualizerToken": "def456uvw",
   "servicesState": true,
   "wifiEnabled": true,
-  "releaseChannel": 0
+  "releaseChannel": 0,
+  "momentarySwitches": false,
+  "ungroupHomeTiles": false,
+  "alternativeFlush": false,
+  "mqttEnabled": false,
+  "mqttHost": "",
+  "mqttPort": 1883,
+  "mqttUsername": "",
+  "mqttPassword": "",
+  "mqttTopicPrefix": "gaggiuino"
 }
 ```
 
 **Field Notes:**
 - `releaseChannel`: 0 = stable, 1 = test, 2 = debug
+- `mqtt*`: configures the built-in MQTT client (full details in `MQTT.md`).
 
 #### `POST /api/settings/system`
 **Description:**
@@ -147,7 +215,16 @@ http://gaggiuino.local
   "visualizerToken": "def456uvw",
   "servicesState": true,
   "wifiEnabled": true,
-  "releaseChannel": 0
+  "releaseChannel": 0,
+  "momentarySwitches": false,
+  "ungroupHomeTiles": false,
+  "alternativeFlush": false,
+  "mqttEnabled": false,
+  "mqttHost": "",
+  "mqttPort": 1883,
+  "mqttUsername": "",
+  "mqttPassword": "",
+  "mqttTopicPrefix": "gaggiuino"
 }
 ```
 
@@ -205,7 +282,9 @@ http://gaggiuino.local
   "lcdBrightness": 80,
   "lcdDarkMode": "false",
   "lcdSleep": 10,
-  "lcdGoHome": 5
+  "lcdGoHome": 5,
+  "lcdCloseOnBrewOff": false,
+  "simpleUI": false
 }
 ```
 
@@ -226,7 +305,9 @@ http://gaggiuino.local
   "lcdBrightness": 80,
   "lcdDarkMode": "false",
   "lcdSleep": 10,
-  "lcdGoHome": 5
+  "lcdGoHome": 5,
+  "lcdCloseOnBrewOff": false,
+  "simpleUI": false
 }
 ```
 
@@ -251,7 +332,8 @@ http://gaggiuino.local
   "hwScalesF1": 1000,
   "hwScalesF2": 2000,
   "btScalesEnabled": "false",
-  "btScalesAutoConnect": "false"
+  "btScalesAutoConnect": "false",
+  "btScalesPinnedMac": "AA:BB:CC:DD:EE:FF"
 }
 ```
 
@@ -272,7 +354,8 @@ http://gaggiuino.local
   "hwScalesF1": 1000,
   "hwScalesF2": 2000,
   "btScalesEnabled": "false",
-  "btScalesAutoConnect": "false"
+  "btScalesAutoConnect": "false",
+  "btScalesPinnedMac": "AA:BB:CC:DD:EE:FF"
 }
 ```
 
@@ -378,6 +461,71 @@ http://gaggiuino.local
   "error": "Description of the error"
 }
 ```
+
+### 5. Maintenance API
+---
+#### `GET /api/maintenance`
+**Description:**
+- Retrieves service history the machine tracks automatically (descale/backflush).
+
+**Response Example:**
+```json
+{
+  "lastDescaleTimestamp": 1753900000,
+  "shotsSinceDescale": 42,
+  "lastBackflushTimestamp": 1753000000,
+  "shotsSinceBackflush": 10
+}
+```
+
+**Field Notes:**
+- `*Timestamp` fields are epoch seconds; `0` means never recorded.
+- A descale is recorded at 50% cycle progress; a backflush once pressure exceeds 10 bar in flush mode for more than 2 seconds.
+- `shotsSince*` counters only count shots meeting the 5s minimum-recording threshold.
+
+### 6. Firmware / OTA API
+---
+#### `POST /api/firmware/update-all`
+**Description:**
+- Triggers an update from GitHub releases for both ESP32 and STM32, using `system.releaseChannel`.
+- Only *starts* the process — poll `/api/firmware/progress` for status.
+
+**Success Response:**
+```json
+{ "message": "Update started", "success": true }
+```
+
+**Error Response:**
+```json
+{ "message": "Failed to start update", "success": false }
+```
+
+---
+#### `GET /api/firmware/progress`
+**Description:**
+- Polls the progress of an in-flight update.
+
+**Response Example:**
+```json
+{ "progress": 42, "status": "IN_PROGRESS", "type": "C_FW" }
+```
+
+**Field Notes:**
+- `status`: `IDLE` | `IN_PROGRESS` | `SUCCESS` | `ERROR`
+- `type`: `C_FW` | `F_FW` | `F_FS` (frontend filesystem image)
+
+---
+#### `GET /api/health`
+**Description:**
+- Liveness check — always `200` if the webserver is up.
+- Useful after triggering an update: when the device reboots mid-flash or on completion, poll this expecting connection failures while down to detect when it's back.
+
+**Response Example:**
+```json
+{ "status": "ok" }
+```
+
+**Note:** The firmware/OTA endpoints do **not** set the `Access-Control-Allow-Origin` header, unlike the settings endpoints.
 
 ## Notes
 
