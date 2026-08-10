@@ -16,30 +16,34 @@ Advanced pressure and flow profiling, web interface, shot history, OTA updates, 
 
   Feature                |Gen 1<br/>Nano & Nextion|Gen 2<br/>STM32 & Nextion|Gen 3<br/>STM32 & ESP32
 -----------------------  |:----------------------:|:-----------------------:|:----------------------:
-  Neat integration       |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:      
-  Embedded UI            |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:       
-  Full temp control      |:white_check_mark:|:white_check_mark:  |:heavy_check_mark:       
-  Auto Shot Timer        |:heavy_check_mark:|:heavy_check_mark:  |:heavy_check_mark:       
-  Graphing               |:white_check_mark:|:white_check_mark:  |:heavy_check_mark:                
-  Pressure profiling     |:white_check_mark:|:white_check_mark:  |:heavy_check_mark:   
-  Manual flow control    |:white_check_mark:|:heavy_check_mark:  |:heavy_plus_sign:       
-  Settings persistence   |:white_check_mark:|:heavy_check_mark:  |:heavy_check_mark: 
-  Descale program        |:white_check_mark:|:white_check_mark:  |:heavy_check_mark:  
-  Integrated scales      |:white_check_mark:|:heavy_check_mark:  |:heavy_check_mark: 
-  Stop on Weight/Dose<sup> 1</sup>|:x:      |:heavy_check_mark:  |:heavy_check_mark:       
-  DreamSteam<sup> 2</sup>         |:x:      |:white_check_mark:  |:heavy_check_mark:  
-  Predictive scales<sup> 3</sup>  |:x:      |:white_check_mark:  |:heavy_check_mark:            
-  Flow profiling         |:x:               |:heavy_check_mark:  |:heavy_check_mark:  
-  Advanced profiling     |:x:               |:white_check_mark:  |:heavy_check_mark:  
-  Profile Management     |:x:               |:white_check_mark:  |:heavy_check_mark:    
-  Unlimited<sup> 4</sup> profiling  |:x:    |:x:                 |:heavy_check_mark:
-  Unlimited<sup> 4</sup> phases     |:x:    |:x:                 |:heavy_check_mark:
-  Advanced phase limits  |:x:               |:x:                 |:heavy_check_mark:
-  Bluetooth scales<sup> 5</sup>    |:x:     |:x:                 |:heavy_check_mark:
-  Profiles sharing       |:x:               |:x:                 |:heavy_check_mark: 
-  Web interface          |:x:               |:x:                 |:heavy_check_mark: 
-  OTA updates            |:x:               |:x:                 |:heavy_check_mark: 
-  REST API               |:x:               |:x:                 |:heavy_check_mark: 
+  Neat integration       |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:
+  Embedded UI            |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:
+  Temperature control    |:white_check_mark:|:white_check_mark:|:heavy_check_mark:
+  Auto Shot Timer        |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:
+  Graphing               |:white_check_mark:|:white_check_mark:|:heavy_check_mark:
+  Pressure profiling     |:white_check_mark:|:white_check_mark:|:heavy_check_mark:
+  Manual flow control    |:white_check_mark:|:white_check_mark:|:heavy_check_mark:
+  Settings persistence   |:white_check_mark:|:heavy_check_mark:|:heavy_check_mark:
+  Descale program        |:white_check_mark:|:white_check_mark:|:heavy_check_mark:
+  Integrated scales      |:white_check_mark:|:heavy_check_mark:|:heavy_check_mark:
+  Stop on Weight/Dose<sup>1</sup>  |:x:|:heavy_check_mark:|:heavy_check_mark:
+  DreamSteam<sup>2</sup>           |:x:|:white_check_mark:|:heavy_check_mark:
+  Predictive scales<sup>3</sup>    |:x:|:white_check_mark:|:heavy_check_mark:
+  Flow profiling         |:x:|:heavy_check_mark:|:heavy_check_mark:
+  Advanced profiling     |:x:|:white_check_mark:|:heavy_check_mark:
+  Profile Management     |:x:|:white_check_mark:|:heavy_check_mark:
+  Unlimited<sup>4</sup> profiling  |:x:|:x:|:heavy_check_mark:
+  Unlimited<sup>4</sup> phases     |:x:|:x:|:heavy_check_mark:
+  Advanced phase limits  |:x:|:x:|:heavy_check_mark:
+  Bluetooth scales<sup>5</sup>     |:x:|:x:|:heavy_check_mark:
+  Profiles sharing       |:x:|:x:|:heavy_check_mark:
+  Web interface          |:x:|:x:|:heavy_check_mark:
+  OTA updates            |:x:|:x:|:heavy_check_mark:
+  Shots history          |:x:|:x:|:heavy_check_mark:
+  Cloud upload (sprofiler.io / visualizer.coffee) |:x:|:x:|:heavy_check_mark:
+  Shot Compare           |:x:|:x:|:heavy_check_mark:
+  REST API               |:x:|:x:|:heavy_check_mark:
+  MQTT                   |:x:|:x:|:heavy_check_mark:
 
 __Explanation__       
 :white_check_mark: Available in a limited form             
