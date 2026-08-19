@@ -15,7 +15,7 @@ Advanced pressure and flow profiling, web interface, shot history, OTA updates, 
 <summary><b>Gaggiuino Features Comparison Table</b> <i>(Click to expand)</i></summary>
 
 ?> Gaggiuino | UI and Features
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=8bVGmYRHgHg" title="Gaggiuino | UI and Features" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8bVGmYRHgHg" title="Gaggiuino | UI and Features" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
   Feature                |Gen 1<br/>Nano & Nextion|Gen 2<br/>STM32 & Nextion|Gen 3<br/>STM32 & ESP32
