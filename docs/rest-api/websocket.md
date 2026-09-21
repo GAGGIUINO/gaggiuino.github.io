@@ -1,8 +1,8 @@
 # WebSocket API
 
-Gaggiuino exposes a WebSocket endpoint served by the same webserver instance as the rest-api.md and MQTT.md. It's the primary channel the bundled web interface and embedded touchscreen UI use for anything that needs to be live (sensor readings, shot graphs, logs) or round-trip a response (profile CRUD, settings).
+Gaggiuino exposes a WebSocket endpoint served by the same webserver instance as the rest-api.md and mqtt.md. It's the primary channel the bundled web interface and embedded touchscreen UI use for anything that needs to be live (sensor readings, shot graphs, logs) or round-trip a response (profile CRUD, settings).
 
-If you only need to read state or issue occasional commands, the [REST API](rest-api.md) or [MQTT](MQTT.md) are simpler to integrate against - reach for this one when you need push updates or the handful of operations (full profile editing) that aren't exposed anywhere else.
+If you only need to read state or issue occasional commands, the [REST API](REST_API.md) or [MQTT](MQTT.md) are simpler to integrate against - reach for this one when you need push updates or the handful of operations (full profile editing) that aren't exposed anywhere else.
 
 Every frame - in both directions - is a [Protocol Buffers](https://protobuf.dev/) message sent as a binary WebSocket frame (`WEBSOCKET_OP_BINARY`), **not** JSON text. This is the same nanopb-based wire format used for STM32↔ESP32 communication internally. There is no JSON fallback.
 
@@ -64,6 +64,8 @@ The web interface's generated output (`frontend-controls/web-interface/src/proto
 | `d_settings` | `GaggiaSettingsDto` | On connect, and in response to `g_settings` |
 | `d_notif` | `NotificationDto` | Whenever the machine raises a notification (mirrors the on-screen/MQTT ones - see [MQTT.md](MQTT.md#prefixnotification)) |
 | `d_desc_progr` | `DescalingProgressDto` | During a descale cycle |
+| `d_pump_cal_progr` | `PumpCalProgressDto` | During guided pump auto-calibration |
+| `d_pump_cal` | `PumpCalibrationDto` | In response to `g_pump_cal`, and after accepted calibration changes |
 | `d_ble_scls` | `BleConnectedScalesDto` | In response to `g_ble_scls`, and when the connected BLE scale changes |
 | `d_wifi_state` | `WiFiConnectionDto` | In response to `g_wifi_state`, and after any wifi command |
 | `d_wifi_networks` | `WiFiNetworksDto` | In response to `g_wifi_networks`/`c_wifi_refresh_networks` |
@@ -147,6 +149,7 @@ message ShotSnapshotDto {
 enum OperationModeDto {
   BREW_AUTO = 0; BREW_MANUAL = 1; FLUSH = 2; DESCALE = 3;
   STEAM = 4; FLUSH_AUTO = 5; HOT_WATER = 6; HOME = 7;
+  PUMP_CALIBRATION = 8; POWER_OFF = 9;
 }
 message SystemStateDto {
   bool startupInitFinished = 1; bool tofReady = 2; bool isSteamForgottenON = 3;
@@ -156,12 +159,32 @@ message SystemStateDto {
   bool thermocoupleFaulted = 10; bool pressureSensorFaulted = 11;
   string thermocoupleFaultReason = 12; string pressureSensorFaultReason = 13;
   bool pcbV2 = 14;
+  uint32 powerLineFrequency = 15;
+  repeated float defaultPumpCurveSamples = 16;
+  float defaultPumpCurveMaxPressureBar = 17;
+  bool debugLoggingEnabled = 18;
+  uint32 dashboardLivePowerWatts = 19;
+  float dashboardEnergyWattHours = 20;
+  uint32 dashboardEnergyTrackedSeconds = 21;
+  bool dashboardConsistencyAvailable = 22;
+  uint32 dashboardConsistencyScore = 23;
+  uint32 dashboardConsistencySampleCount = 24;
+  float dashboardConsistencyTimeDeviation = 25;
+  float dashboardConsistencyYieldDeviation = 26;
+  float dashboardConsistencyPressureDeviation = 27;
+  float dashboardConsistencyFlowDeviation = 28;
+  float dashboardConsistencyTemperatureDeviation = 29;
+  uint32 persistedActiveProfileId = 30;
+  float dashboardSessionEnergyWattHours = 31;
+  uint32 dashboardSessionEnergyTrackedSeconds = 32;
 }
 ```
 
 **Field Notes:**
 - `thermocoupleFaultReason`/`pressureSensorFaultReason` describe *why* the corresponding `*Faulted` flag is set (e.g. `"Open circuit"`, `"Short to GND"`, `"Temp above range"`, `"Stuck reading"` for the thermocouple; `"ADS error code: -100"` for the pressure sensor's I2C ADS1x15). Both are empty strings whenever the matching `*Faulted` flag is `false`.
 - `pcbV2` reports whether the connected board was built with `PCBV2` defined (the macro gating `steamValveRelayPin`/`steamBoilerRelayPin` in `pindef.h`) - runtime, not compile-time, same reasoning as `coreType`: the ESP32 firmware is shared across every STM32 core variant and can't see the STM32's build-time macros directly. No current PlatformIO environment defines `PCBV2`, so this is always `false` today; the Maintenance page's "MCU Pins" table hides the `steamValveRelayPin`/`steamBoilerRelayPin` rows whenever it is.
+- `dashboardLivePowerWatts`, `dashboardEnergyWattHours`, and `dashboardEnergyTrackedSeconds` expose the machine-owned energy monitor. The corresponding `dashboardSession*` fields reset only for a physical power cycle, not for software or OTA restarts.
+- The `dashboardConsistency*` fields contain the shared recent-shot consistency calculation used by both UIs.
 
 #### `NotificationDto`
 **Description:**
@@ -231,6 +254,11 @@ Two conventions: `g_*` actions **request** a `d_*` push in response (no `data` p
 | `c_opmode` | command | `UpdateSystemStateCommandDto` | Switches operation mode (brew/steam/flush/etc.) - also how you enter/exit `BREW_MANUAL`, see below |
 | `c_tare_pend` | command | `UpdateSystemStateCommandDto` | Requests a scale tare |
 | `c_upd_manual_prof` | command | `ProfileManualDto` | Sets the live pressure/flow setpoint while in `BREW_MANUAL` |
+| `c_service_test` | command | `ServiceTestCommandDto` | Briefly tests a maintenance peripheral when the machine is idle |
+| `c_set_debug_logging` | command | `SetDebugLoggingCommandDto` | Enables/disables core debug-log relay; state is reflected in `d_sys_state` |
+| `g_pump_cal` | request | *(empty)* | → `d_pump_cal` with the stored pump calibration |
+| `c_upd_pump_cal_state` | command | `UpdatePumpCalibrationStateCommandDto` | Starts, advances or cancels guided pump calibration |
+| `c_accept_pump_cal` | command | `PumpCalibrationDto` | Applies and persists a reviewed calibration result |
 | `g_ble_scls` | request | *(empty)* | → `d_ble_scls` (currently connected scale) |
 | `g_ble_scls_avail` | request | *(empty)* | Starts a BLE scan (no direct response documented here - see `common/ble/ble_scales.h`) |
 | `g_settings` | request | *(empty)* | → `d_settings` |
@@ -268,6 +296,21 @@ message UpdateSystemStateCommandDto {
 
 **Field Notes:**
 - Both `c_opmode` and `c_tare_pend` share this message shape but each handler only reads the one field it cares about - so for `c_tare_pend` you still need to set `operationMode` to *something* (nanopb has no way to omit a non-optional enum field), but it's ignored; only `tarePending` takes effect. Same the other way round for `c_opmode`.
+
+#### Debug logging and pump calibration commands
+
+```protobuf
+message SetDebugLoggingCommandDto { bool enabled = 1; }
+
+enum PumpCalCommandDto {
+  PUMP_CAL_CMD_START = 0; PUMP_CAL_CMD_ADVANCE_STEP = 1;
+  PUMP_CAL_CMD_CANCEL = 2;
+}
+message UpdatePumpCalibrationStateCommandDto { PumpCalCommandDto command = 1; }
+```
+
+- `c_set_debug_logging` controls the opt-in STM32 log relay consumed through `d_log_record`.
+- Guided calibration progress arrives asynchronously as `d_pump_cal_progr`; once it finishes, pass the reviewed `PumpCalibrationDto` to `c_accept_pump_cal` to persist it.
 
 #### `WebSocketProfileIdCommandDto` / `WebSocketReorderProfileCommandDto`
 **Schema:**
@@ -358,3 +401,4 @@ ws.onopen = () => {
 5. **Request/command conventions**: `g_*` requests a matching `d_*` push (empty payload); `c_*` commands a change and is acknowledged by `d_resp`.
 6. **Broadcast vs targeted**: most `d_*` pushes go to all connected clients; `g_*` responses and `d_prof` go only to the requesting connection.
 7. **Unrecognised/malformed frames**: logged and silently dropped before the handler runs - no error frame is returned.
+8. **When to use this API**: prefer REST or MQTT for simple reads/occasional commands; use the WebSocket for live push updates and full profile editing.
