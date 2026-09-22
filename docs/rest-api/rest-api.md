@@ -71,7 +71,7 @@ http://gaggiuino.local
 
 **Field Notes:**
 - `id` is intentionally omitted so the profile can be re-imported without collisions; a fresh id is assigned on upload.
-- Served with `Content-Disposition: attachment` — hitting the URL in a browser downloads a `<name>.json` file.
+- Served with `Content-Disposition: attachment` - hitting the URL in a browser downloads a `<name>.json` file.
 
 ---
 #### `POST /api/profile`
@@ -100,6 +100,12 @@ http://gaggiuino.local
 #### `GET /api/system/status`
 **Description:**
 - Handles retrieving the system sensors latest data.
+- Includes the machine-owned energy monitor values:
+  - `livePowerWatts`: current estimated load.
+  - `energyWattHours`: cumulative total.
+  - `energyTrackedSeconds`: cumulative measurement time.
+  - `sessionEnergyWattHours`: energy used since the last physical power cycle.
+  - `sessionEnergyTrackedSeconds`: measurement time since the last physical power cycle.
 
 ### 4. Settings API
 ---
@@ -488,7 +494,7 @@ http://gaggiuino.local
 #### `POST /api/firmware/update-all`
 **Description:**
 - Triggers an update from GitHub releases for both ESP32 and STM32, using `system.releaseChannel`.
-- Only *starts* the process — poll `/api/firmware/progress` for status.
+- Only *starts* the process - poll `/api/firmware/progress` for status.
 
 **Success Response:**
 ```json
@@ -517,7 +523,7 @@ http://gaggiuino.local
 ---
 #### `GET /api/health`
 **Description:**
-- Liveness check — always `200` if the webserver is up.
+- Liveness check - always `200` if the webserver is up.
 - Useful after triggering an update: when the device reboots mid-flash or on completion, poll this expecting connection failures while down to detect when it's back.
 
 **Response Example:**

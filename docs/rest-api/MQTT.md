@@ -108,11 +108,19 @@ All topics below are prefixed with your configured topic prefix (default `gaggiu
   "scalesPresent": false,
   "timeAliveSec": 1234,
   "coreVersion": "1.5.0",
+  "machineName": "GC-01",
+  "coreType": "STM32U585-PCB-PCA",
+  "powerLineFrequency": 50,
   "tarePending": false,
   "thermocoupleFaulted": false,
   "pressureSensorFaulted": false,
   "thermocoupleFaultReason": "",
-  "pressureSensorFaultReason": ""
+  "pressureSensorFaultReason": "",
+  "livePowerWatts": 1304,
+  "energyWattHours": 482.37,
+  "energyTrackedSeconds": 41862,
+  "sessionEnergyWattHours": 31.52,
+  "sessionEnergyTrackedSeconds": 3764
 }
 ```
 
@@ -120,6 +128,8 @@ All topics below are prefixed with your configured topic prefix (default `gaggiu
 - `operationMode` is one of: `BREW_AUTO`, `BREW_MANUAL`, `FLUSH`, `DESCALE`, `STEAM`, `FLUSH_AUTO`, `HOT_WATER`, `HOME`.
 - `thermocoupleFaulted`/`pressureSensorFaulted` flag a sensor read failure (open/shorted thermocouple, or the pressure sensor's I2C ADC unreachable/erroring) - same diagnostics shown on the embedded/web UI's Maintenance page.
 - `thermocoupleFaultReason`/`pressureSensorFaultReason` give the specific cause (e.g. `"Open circuit"`, `"Short to GND"`, `"Temp above range"`, `"Stuck reading"`, or `"ADS error code: -100"`) and are empty strings whenever the matching `*Faulted` flag is `false`.
+- `livePowerWatts` is the current estimated load. `energyWattHours` and `energyTrackedSeconds` are cumulative counters persisted by the frontend controller; the corresponding `session*` fields start at zero after each physical power cycle and survive software/OTA restarts during that power session.
+- Home Assistant discovery exposes live power, total energy and session energy as enabled sensors. The two tracking-duration counters are diagnostic sensors and disabled by default.
 - There is no MQTT/REST equivalent of the Maintenance page's "Component Tests" (pump/valve/valveB/LED activation buttons, valveB only on Silver Knight boards) - those are available on the embedded touchscreen and over WebSocket (`c_service_test`), but deliberately not over MQTT/REST. See [WEBSOCKET.md](WEBSOCKET.md#key-payload-shapes).
 
 ### 4. Shot
@@ -194,6 +204,19 @@ All topics below are prefixed with your configured topic prefix (default `gaggiu
 
 **Field Notes:**
 - `type` is one of: `INFO`, `SUCCESS`, `WARN`, `ERROR`.
+
+---
+
+### 8. Settings
+#### `<prefix>/settings` *(retained)*
+**Description:**
+- Publishes the current machine configuration whenever settings change.
+- Contains `machineName` plus the `boiler`, `system`, `scales`, `display`, `led`, and `versions` objects using the same field names as the REST settings API.
+- Repeated identical updates are suppressed, while a fresh MQTT/Home Assistant connection forces the current value to be published.
+
+**Security:**
+- Broker credentials (`mqttUsername`, `mqttPassword`) and third-party service tokens (`sprofilerToken`, `visualizerToken`) are deliberately omitted.
+- The MQTT host, port, and topic prefix are included so multi-machine dashboards can identify which broker configuration produced the retained message.
 
 ---
 
@@ -272,7 +295,10 @@ The discovery message is re-published automatically whenever Home Assistant's ow
 | Brewing, Steaming, Hot water, Boiler heating | `sensors` | binary sensors |
 | Operation mode | `system` | `select`; writes to `cmd/opmode` |
 | Uptime, Core version *(diagnostic)* | `system` | |
+| Live power, Total energy, Session energy | `system` | machine-owned estimates; available without an open UI |
+| Total/Session energy tracking time *(diagnostic, disabled by default)* | `system` | |
 | Scales connected, Water sensor ready *(diagnostic)* | `system` | binary sensors |
+| Steam setpoint, Brew temperature offset *(diagnostic)* | `settings` | |
 | Active profile | `profile/active` | |
 | Target temperature | `profile/active` | the active profile's configured brew target, not a live reading - always available (not tied to a running shot), not diagnostic, enabled by default. See below. |
 | Tare scales | `cmd/tare` | `button` |
