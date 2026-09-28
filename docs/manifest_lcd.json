@@ -11,9 +11,9 @@
         { "path": "firmware/bootloader_enc.bin", "offset": 0 },
         { "path": "firmware/partitions_enc.bin", "offset": 32768 },
         { "path": "firmware/nvs_blank.bin", "offset": 5373952 },
-        { "path": "firmware/lcd_enc.bin", "offset": 65536 },
-        { "path": "firmware/lcd2_enc.bin", "offset": 2686976 },
-        { "path": "firmware/web_enc.bin", "offset": 12779520 }
+        { "path": "firmware/ui-embedded_s3x10000.bin", "offset": 65536 },
+        { "path": "firmware/ui-embedded_s3x290000.bin", "offset": 2686976 },
+        { "path": "firmware/ui-web_xC30000.bin", "offset": 12779520 }
       ]
     }
   ]
