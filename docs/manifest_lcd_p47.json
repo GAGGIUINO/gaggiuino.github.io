@@ -1,0 +1,20 @@
+{
+  "name": "GAGGIUINO GEN 3.5 - 7 inch LCD firmware",
+  "version": "67889e5",
+  "home_assistant_domain": "slim_player",
+  "funding_url": "https://esphome.io/guides/supporters.html",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-P4",
+      "parts": [
+        { "path": "firmware/bootloader_p4_enc.bin", "offset": 8192 },
+        { "path": "firmware/partitions_p4_enc.bin", "offset": 32768 },
+        { "path": "firmware/nvs_blank.bin", "offset": 7536640 },
+        { "path": "firmware/ui-embedded_p47x10000.bin", "offset": 65536 },
+        { "path": "firmware/ui-embedded_p47x390000.bin", "offset": 3735552 },
+        { "path": "firmware/ui-web_xD00000.bin", "offset": 13631488 }
+      ]
+    }
+  ]
+}
