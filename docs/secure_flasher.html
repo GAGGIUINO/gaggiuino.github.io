@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gaggiuino P4 Secure Firmware Flasher — Prototype</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, -apple-system, Segoe UI, sans-serif; }
+    body { margin:0; background:#141517; color:#e7e8e9; }
+    main { max-width:740px; margin: 30px auto; padding:20px; }
+    h1 { font-size:1.65rem; margin-top:0; }
+    .muted {color:#b6bcc5;}
+    .warning { padding:14px 18px; border-left:3px solid #f5ae5d; background:#2a241c; border-radius:6px; margin:18px 0; }
+    fieldset { border:1px solid #484b51; border-radius:9px; padding:15px; margin:15px 0; }
+    legend { padding:0 8px; color:#ffb07c; }
+    label { display:inline-flex; align-items:center; gap:8px; cursor:pointer; margin:6px 14px 6px 0; }
+    button { background:#df6b39; color:#fff; border:none; border-radius:6px; padding:11px 18px; font-weight:700; cursor:pointer; }
+    button:disabled {opacity:.5; cursor:wait; }
+    pre { font-size:.85rem; padding:14px; background:#0a0b0d; color:#c1e6c0; min-height:120px; max-height:340px; overflow:auto; border:1px solid #383b40; border-radius:7px; white-space:pre-wrap; overflow-wrap:anywhere; }
+    progress {width:100%; height:13px;}
+    .small { font-size:.86rem; }
+    code {background:#303339; border-radius:3px; padding:1px 3px;}
+  </style>
+</head>
+<body>
+<main>
+  <h1>Gaggiuino ESP32-P4 Secure Flash</h1>
+  <p class="muted">Prototype for ESP32-P4 boards with flash encryption enabled and Secure Download Mode active. Runs via Web Serial; does not erase the chip.</p>
+  <div class="warning"><strong>Important:</strong> Use only binaries already encrypted for this board's key and <em>exact flash offsets</em>. Never use ordinary plaintext application/web images on a release-locked board. This tool does <strong>not</strong> flash the bootloader, partition table or NVS. Test on a recoverable development board before public deployment.</div>
+  <fieldset>
+    <legend>LCD firmware</legend>
+    <label><input type="radio" name="variant" value="p43" checked> LCD P4.3</label>
+    <label><input type="radio" name="variant" value="p47"> LCD P4.7</label>
+  </fieldset>
+  <fieldset>
+    <legend>Partitions to update</legend>
+    <p class="small">Always flashes both application slots (<code>0x10000</code> and <code>0x390000</code>). Bootloader, partition table, otadata, NVS, tempdata and coredump remain untouched.</p>
+    <label><input id="includeWeb" type="checkbox"> Also flash pre-encrypted webdata (<code>0xD00000</code>)</label>
+  </fieldset>
+  <p class="small muted">Reads <code>manifest_lcd_p43.json</code> or <code>manifest_lcd_p47.json</code> from this page's directory. The manifest's <code>parts[].path</code> points to the hosted binary files.</p>
+  <p><button id="go" type="button">Connect and flash</button></p>
+  <progress id="progress" max="100" value="0"></progress>
+  <pre id="log" aria-live="polite">Ready. Enter the ESP32-P4 ROM download mode and connect via Chrome or Edge on HTTPS/localhost.</pre>
+  <p class="small muted">Based on esptool-js 0.7.0 plus the ROM's SPI_SET_PARAMS command. Secure Download Mode prevents reading back the flash for verification; success means the ROM acknowledged writing all blocks, not that boot was verified. You may need to reset the board manually afterwards.</p>
+</main>
+<script type="module">
+  import { ESPLoader, Transport } from 'https://unpkg.com/esptool-js@0.7.0/bundle.js';
+
+  const go = document.querySelector('#go');
+  const logEl = document.querySelector('#log');
+  const progress = document.querySelector('#progress');
+  const includeWeb = document.querySelector('#includeWeb');
+  const PARTS = new Map([
+    [0x10000, 0x380000],
+    [0x390000, 0x380000],
+    [0xD00000, 0x300000]
+  ]);
+  const hex = n => `0x${n.toString(16).toUpperCase()}`;
+  function log(s) { logEl.textContent += `\n${s}`; logEl.scrollTop = logEl.scrollHeight; }
+
+  async function getParts(variant, web) {
+    const manifestUrl = new URL(`./manifest_lcd_${variant}.json`, location.href);
+    const response = await fetch(manifestUrl, { cache:'no-store' });
+    if (!response.ok) throw new Error(`Cannot fetch ${manifestUrl.pathname} (HTTP ${response.status})`);
+    const manifest = await response.json();
+    const build = (manifest.builds || []).find(b => b.chipFamily === 'ESP32-P4');
+    if (!build) throw new Error('Manifest must contain a build with chipFamily "ESP32-P4"');
+    const offsets = web ? [0x10000, 0x390000, 0xD00000] : [0x10000, 0x390000];
+    const images = [];
+    for (const offset of offsets) {
+      const part = (build.parts || []).find(p => p.offset === offset);
+      if (!part) throw new Error(`Manifest is missing ${hex(offset)}`);
+      const url = new URL(part.path, manifestUrl);
+      if (url.origin !== location.origin) throw new Error('Cross-origin binaries are intentionally blocked in this prototype');
+      log(`Fetching ${url.pathname} for ${hex(offset)}...`);
+      const res = await fetch(url, {cache:'no-store'});
+      if (!res.ok) throw new Error(`Cannot fetch ${url.pathname} (HTTP ${res.status})`);
+      const data = new Uint8Array(await res.arrayBuffer());
+      if (!data.length || data.length > PARTS.get(offset)) {
+        throw new Error(`File at ${hex(offset)} is empty or exceeds partition capacity ${hex(PARTS.get(offset))}`);
+      }
+      if (data.length % 16) {
+        throw new Error(`File at ${hex(offset)} is not a multiple of 16 bytes, as expected for pre-encrypted data`);
+      }
+      if (offset + data.length > 16 * 1024 * 1024) throw new Error('File exceeds 16MB flash');
+      images.push({ address:offset, data });
+      log(`Loaded ${data.length} bytes @ ${hex(offset)}.`);
+    }
+    return images;
+  }
+
+  // ROM SPI_SET_PARAMS (0x0B): 6 little-endian uint32 values.
+  // Mirrors esptool's flash_set_parameters(16 * 1024 * 1024).
+  async function configure16MB(loader) {
+    const params = [0, 16 * 1024 * 1024, 64 * 1024, 4 * 1024, 256, 0xFFFF];
+    const bytes = new Uint8Array(24);
+    const view = new DataView(bytes.buffer);
+    params.forEach((val, idx) => view.setUint32(idx * 4, val, true));
+    await loader.checkCommand('set SPI flash parameters (16MB)', 0x0B, bytes);
+  }
+
+  go.addEventListener('click', async () => {
+    go.disabled = true;
+    progress.value = 0;
+    logEl.textContent = '';
+    let transport;
+    try {
+      if (!navigator.serial) throw new Error('Web Serial unavailable. Use Chrome/Edge on HTTPS or localhost.');
+      // Web Serial requires a direct user gesture: request the port BEFORE async fetches.
+      const port = await navigator.serial.requestPort();
+      const variant = document.querySelector('input[name="variant"]:checked').value;
+      const files = await getParts(variant, includeWeb.checked);
+      log(`Selected LCD ${variant}; ${files.length} images.`);
+      if (!confirm(`Flash ${files.length} existing pre-encrypted images to ESP32-P4?\n\n${files.map(f=>`${hex(f.address)} — ${f.data.length} bytes`).join('\n')}\n\nNO full chip erase, NO NVS/bootloader write.\n\nProceed?`)) return;
+      transport = new Transport(port, true);
+      const loader = new ESPLoader({
+        transport,
+        baudrate: 115200,
+        terminal: { clean(){}, write: s=>log(s), writeLine: s=>log(s) }
+      });
+      const chip = await loader.main();
+      log(`Connected: ${chip} / secure download: ${loader.secureDownloadMode}`);
+      if (loader.chip?.CHIP_NAME !== 'ESP32-P4') throw new Error('Wrong chip type; expected ESP32-P4.');
+      if (!loader.secureDownloadMode) throw new Error('Secure Download Mode was not detected. This prototype is only for release-locked P4 boards.');
+      if (loader.IS_STUB) throw new Error('A stub is active; refusing to flash in this secure-mode tool.');
+      // Python esptool uses 0x400-byte blocks in ROM mode; esptool-js defaults to stub-sized 0x4000.
+      loader.FLASH_WRITE_SIZE = 0x400;
+      await configure16MB(loader);
+      log('ROM configured for 16MB flash. Writing raw (noncompressed) ciphertext...');
+      const lengths = files.map(f => f.data.length);
+      const grandTotal = lengths.reduce((a,b)=>a+b,0);
+      const preceding = lengths.map((_,i)=>lengths.slice(0,i).reduce((a,b)=>a+b,0));
+      await loader.writeFlash({
+        fileArray: files,
+        flashMode:'keep', flashFreq:'keep', flashSize:'keep',
+        eraseAll:false, compress:false,
+        reportProgress(index, written) {
+          progress.value = Math.max(0, Math.min(100, (preceding[index] + written) * 100 / grandTotal));
+        }
+      });
+      progress.value = 100;
+      log('DONE: ROM acknowledged all flash writes. Reset or power-cycle the board to test boot.');
+    } catch (err) {
+      log(`ERROR: ${err?.message || String(err)}`);
+      console.error(err);
+    } finally {
+      if (transport) {
+        try { await transport.disconnect(); } catch(err) { log('Port disconnect issue: ' + err); }
+      }
+      go.disabled = false;
+    }
+  });
+</script>
+</body>
+</html>
