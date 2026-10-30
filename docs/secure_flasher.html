@@ -48,7 +48,7 @@
     <div class="brand" aria-hidden="true">∞</div>
     <div>
       <h1>Gaggiuino secure firmware flasher</h1>
-      <div class="sub">ESP32-P4 and ESP32-S3 · Release / Dev · ROM-only flash</div>
+      <div class="sub">ESP32-P4 and ESP32-S3 · Release / Dev · ROM-only flash · SPI attach fix</div>
     </div>
   </header>
   <p class="hint">Development prototype. Use Chrome or Edge on HTTPS/localhost with the device in <strong>ROM download mode</strong>. Flashing pre-encrypted images is for boards provisioned with the matching encryption key.</p>
@@ -90,16 +90,18 @@
     <label class="check"><input id="ack" type="checkbox"><span>I have verified the device type, the flash layout, and that encrypted binaries were built for this device/key and their exact offsets. I understand writing the wrong images can stop the device from booting.</span></label>
   </fieldset>
 
+  <div class="warning"><strong>ROM connection fix:</strong> SPI flash is explicitly attached before applying 16 MB parameters. The flasher uses 64 KiB erase/write batches to avoid a multi-megabyte ROM erase timeout, and Web Serial byte-level tracing is disabled. If a command fails, the log identifies its stage. Hardware validation is still required.</div>
   <p class="hint">Files are resolved from the selected release/dev manifest beside this HTML page; binary paths are relative to the manifest. <strong>16 MB flash is assumed</strong> for both targets. No other applications may have the COM port open.</p>
   <div class="row"><button type="button" id="go">Connect and flash</button><span id="status" class="hint" role="status">Ready</span></div>
   <progress id="progress" value="0" max="100"></progress>
   <pre id="log" aria-live="polite">Ready. Put the board into ROM download mode (BOOT + RESET), then select its COM port.</pre>
-  <p class="small muted">Dev channel swaps only the application binary paths via a separate manifest. Bootloader, partitions, NVS and webdata can be shared, but must be compatible with that firmware build. Built on <code>esptool-js@0.7.0</code> Web Serial. ROM flashing (no stub), raw data (no compression), 1 KiB blocks and explicit 16 MB <code>SPI_SET_PARAMS</code>. Successful writes mean ROM acknowledgements only; secure download mode may prevent readback verification. The reset may require unplugging/replugging USB.</p>
+  <p class="small muted">Dev channel swaps only the application binary paths via a separate manifest. Bootloader, partitions, NVS and webdata can be shared, but must be compatible with that firmware build. Built on <code>esptool-js@0.7.0</code> Web Serial. ROM flashing (no stub), raw data (no compression), 1 KiB ROM blocks, explicit <code>SPI_ATTACH</code> and 16 MB <code>SPI_SET_PARAMS</code>, with 64 KiB erase/write batches. Successful writes mean ROM acknowledgements only; secure download mode may prevent readback verification. The reset may require unplugging/replugging USB.</p>
 </main>
 <script type="module">
   import { ESPLoader, Transport } from 'https://unpkg.com/esptool-js@0.7.0/bundle.js';
 
   const FLASH_SIZE = 16 * 1024 * 1024;
+  const ROM_BATCH_SIZE = 64 * 1024; // 16 sectors; avoids a multi-megabyte FLASH_BEGIN erase
   const BOARDS = Object.freeze({
     p43: {
       label: 'LCD P4.3', chip: 'ESP32-P4', manifest: 'manifest_lcd_p43.json', devManifest: 'manifest_lcd_p43_dev.json',
@@ -231,6 +233,15 @@
     return files;
   }
 
+  // SPI_ATTACH (0x0D) is REQUIRED before SPI flash operations with the
+  // ESP32-S3/P4 ROM loader. Both 32-bit words are zero for default flash pins.
+  // Sending SPI_SET_PARAMS alone does NOT attach/enable the flash interface.
+  async function attachSPIFlash(loader) {
+    log('ROM SPI_ATTACH (0x0D): enabling default SPI flash interface...');
+    await loader.checkCommand('attach SPI flash', 0x0D, new Uint8Array(8));
+    log('ROM SPI_ATTACH acknowledged.');
+  }
+
   // ROM SPI_SET_PARAMS (0x0B), six little-endian 32-bit values.
   // Set the flash capacity before writing high offsets to a 16 MiB chip.
   async function configure16MB(loader) {
@@ -262,7 +273,9 @@
       } else if (!confirm(`Flash ${files.length} image(s) to ${board.label} (${channel})?\n\n${details}\n\nSystem partitions and NVS will be preserved.`)) {
         log('Cancelled.'); status.textContent = 'Cancelled'; return;
       }
-      transport = new Transport(port, true);
+      // IMPORTANT: tracing=true records/logs the hex dump of every 1 KiB flash
+      // block, causing tremendous memory/console overhead and serial timeouts.
+      transport = new Transport(port, false);
       const loader = new ESPLoader({
         transport, baudrate: 115200,
         terminal: { clean(){}, write(s){/* avoid per-block console flood */}, writeLine(s){
@@ -279,24 +292,58 @@
       }
       if (loader.IS_STUB) throw new Error('RAM stub unexpectedly active: refusing to flash');
       log(`Connected to ${loader.chip.CHIP_NAME}; secure download mode: ${loader.secureDownloadMode ? 'ON' : 'OFF'}.`);
+      // Add failing ROM command to the error log; the default esptool-js
+      // timeout text alone cannot distinguish FLASH_BEGIN from FLASH_DATA.
+      const originalCommand = loader.checkCommand.bind(loader);
+      loader.checkCommand = async function(desc, op, ...args) {
+        try { return await originalCommand(desc, op, ...args); }
+        catch (e) {
+          log(`ROM command ${hex(op)} (${desc}) failed: ${e?.message || e}`);
+          throw e;
+        }
+      };
       if (!loader.secureDownloadMode) {
         if (!confirm('Secure Download Mode is NOT enabled. Continue using ROM-only RAW image writes? Only proceed if this board uses the matching pre-encrypted images.')) {
           log('Cancelled; secure mode not detected.'); status.textContent = 'Cancelled'; return;
         }
       }
       loader.FLASH_WRITE_SIZE = 0x400; // ROM protocol block size
+      // Critical missing step from the previous flasher: SPI_ATTACH is
+      // mandatory for the ROM before SPI_SET_PARAMS / FLASH_BEGIN.
+      await attachSPIFlash(loader);
       await configure16MB(loader);
-      log('SPI flash configured: 16 MB. Using ROM-only, uncompressed raw writes.');
-      const totals = files.map(f => f.data.length);
-      const total = totals.reduce((a, b) => a+b, 0);
-      const before = totals.map((_, i) => totals.slice(0, i).reduce((a, b) => a + b, 0));
+      log('SPI flash attached and configured: 16 MB. ROM-only, raw, uncompressed writes.');
+      const total = files.reduce((sum, f) => sum + f.data.length, 0);
+      let completed = 0;
       status.textContent = 'Flashing';
-      await loader.writeFlash({
-        fileArray: files.map(f => ({ address: f.address, data: f.data })),
-        flashMode: 'keep', flashFreq: 'keep', flashSize: 'keep',
-        eraseAll: false, compress: false,
-        reportProgress(i, sent) { progress.value = Math.max(0, Math.min(100, 100 * (before[i] + sent) / total)); }
-      });
+      // Segment each image on a 64 KiB sector boundary. This reduces the
+      // FLASH_BEGIN erase duration and makes the exact point of failure clear.
+      // A new ROM sequence starts for each segment. The image bytes and their
+      // absolute addresses remain unchanged, including encrypted ciphertext.
+      for (let fileIndex = 0; fileIndex < files.length; fileIndex++) {
+        const file = files[fileIndex];
+        log(`Starting image ${fileIndex+1}/${files.length}: ${file.path} at ${hex(file.address)} (${file.data.length.toLocaleString()} bytes)`);
+        let fileSent = 0;
+        for (let chunkStart = 0; chunkStart < file.data.length; chunkStart += ROM_BATCH_SIZE) {
+          const data = file.data.subarray(chunkStart, Math.min(chunkStart + ROM_BATCH_SIZE, file.data.length));
+          const address = file.address + chunkStart;
+          if (chunkStart % (ROM_BATCH_SIZE * 8) === 0 || chunkStart + data.length === file.data.length) {
+            log(`ROM FLASH_BEGIN: ${hex(address)} (${data.length.toLocaleString()} bytes)`);
+          }
+          await loader.writeFlash({
+            fileArray: [{ address, data }],
+            flashMode: 'keep', flashFreq: 'keep', flashSize: 'keep',
+            eraseAll: false, compress: false,
+            reportProgress(i, sent) {
+              progress.value = Math.max(0, Math.min(100, 100 * (completed + sent) / total));
+            }
+          });
+          fileSent += data.length;
+          completed += data.length;
+          progress.value = Math.max(0, Math.min(100, 100 * completed / total));
+        }
+        log(`Image ${fileIndex+1}/${files.length} ROM write acknowledged: ${fileSent.toLocaleString()} bytes.`);
+      }
       progress.value = 100;
       status.textContent = 'Write completed';
       log('FINISHED: ROM acknowledged every selected image write. This is NOT a readback or boot verification. Power-cycle/reset the board to verify.');
