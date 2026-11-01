@@ -48,7 +48,7 @@
     <div class="brand" aria-hidden="true">∞</div>
     <div>
       <h1>Gaggiuino secure firmware flasher</h1>
-      <div class="sub">ESP32-P4 and ESP32-S3 · LCD / Headless · ROM-only flash</div>
+      <div class="sub">ESP32-P4 and ESP32-S3 · Release / Dev · ROM-only flash</div>
     </div>
   </header>
   <p class="hint">Development prototype. Use Chrome or Edge on HTTPS/localhost with the device in <strong>ROM download mode</strong>. Flashing pre-encrypted images is for boards provisioned with the matching encryption key.</p>
@@ -58,15 +58,24 @@
   <fieldset>
     <legend>1 · Select hardware</legend>
     <div class="choices">
-      <label class="choice"><span class="headline"><input name="target" type="radio" value="p43" checked> LCD P4.3</span><small>ESP32-P4 · manifest_lcd_p43.json</small></label>
-      <label class="choice"><span class="headline"><input name="target" type="radio" value="p47"> LCD P4.7</span><small>ESP32-P4 · manifest_lcd_p47.json</small></label>
-      <label class="choice"><span class="headline"><input name="target" type="radio" value="s3lcd"> LCD 4.3 (S3)</span><small>ESP32-S3 · manifest_lcd.json</small></label>
-      <label class="choice"><span class="headline"><input name="target" type="radio" value="headless"> HEADLESS</span><small>ESP32-S3 · manifest_headless.json</small></label>
+      <label class="choice"><span class="headline"><input name="target" type="radio" value="p43" checked> LCD P4.3</span><small>ESP32-P4 · P4.3 panel</small></label>
+      <label class="choice"><span class="headline"><input name="target" type="radio" value="p47"> LCD P4.7</span><small>ESP32-P4 · P4.7 panel</small></label>
+      <label class="choice"><span class="headline"><input name="target" type="radio" value="s3lcd"> LCD 4.3 (S3)</span><small>ESP32-S3 · 4.3-inch LCD</small></label>
+      <label class="choice"><span class="headline"><input name="target" type="radio" value="headless"> HEADLESS</span><small>ESP32-S3 · no LCD</small></label>
     </div>
   </fieldset>
 
   <fieldset>
-    <legend>2 · Select operation</legend>
+    <legend>2 · Select firmware channel</legend>
+    <div class="choices">
+      <label class="choice"><span class="headline"><input name="channel" type="radio" value="release" checked> Release</span><small>Stable firmware · original manifests</small></label>
+      <label class="choice"><span class="headline"><input name="channel" type="radio" value="dev"> Development</span><small>Dev firmware · *_dev.json manifests</small></label>
+    </div>
+    <p class="hint">Development here means the <strong>firmware build channel</strong>, not ESP-IDF flash-encryption development mode. Release-locked boards still require correctly pre-encrypted images for this exact device and offset.</p>
+  </fieldset>
+
+  <fieldset>
+    <legend>3 · Select operation</legend>
     <div class="choices">
       <label class="choice"><span class="headline"><input name="operation" type="radio" value="apps" checked> Firmware update</span><small>Both app slots; keep system partitions and NVS</small></label>
       <label class="choice"><span class="headline"><input name="operation" type="radio" value="reset"> Full reset</span><small>Also flash webdata, NVS, partition table, bootloader</small></label>
@@ -77,15 +86,15 @@
   </fieldset>
 
   <fieldset>
-    <legend>3 · Safety acknowledgement</legend>
+    <legend>4 · Safety acknowledgement</legend>
     <label class="check"><input id="ack" type="checkbox"><span>I have verified the device type, the flash layout, and that encrypted binaries were built for this device/key and their exact offsets. I understand writing the wrong images can stop the device from booting.</span></label>
   </fieldset>
 
-  <p class="hint">Files are resolved from the selected manifest beside this HTML page; binary paths are relative to the manifest. <strong>16 MB flash is assumed</strong> for both targets. No other applications may have the COM port open.</p>
+  <p class="hint">Files are resolved from the selected release/dev manifest beside this HTML page; binary paths are relative to the manifest. <strong>16 MB flash is assumed</strong> for both targets. No other applications may have the COM port open.</p>
   <div class="row"><button type="button" id="go">Connect and flash</button><span id="status" class="hint" role="status">Ready</span></div>
   <progress id="progress" value="0" max="100"></progress>
   <pre id="log" aria-live="polite">Ready. Put the board into ROM download mode (BOOT + RESET), then select its COM port.</pre>
-  <p class="small muted">Built on <code>esptool-js@0.7.0</code> Web Serial. ROM flashing (no stub), raw data (no compression), 1 KiB blocks and explicit 16 MB <code>SPI_SET_PARAMS</code>. Successful writes mean ROM acknowledgements only; secure download mode may prevent readback verification. The reset may require unplugging/replugging USB.</p>
+  <p class="small muted">Dev channel swaps only the application binary paths via a separate manifest. Bootloader, partitions, NVS and webdata can be shared, but must be compatible with that firmware build. Built on <code>esptool-js@0.7.0</code> Web Serial. ROM flashing (no stub), raw data (no compression), 1 KiB blocks and explicit 16 MB <code>SPI_SET_PARAMS</code>. Successful writes mean ROM acknowledgements only; secure download mode may prevent readback verification. The reset may require unplugging/replugging USB.</p>
 </main>
 <script type="module">
   import { ESPLoader, Transport } from 'https://unpkg.com/esptool-js@0.7.0/bundle.js';
@@ -93,25 +102,25 @@
   const FLASH_SIZE = 16 * 1024 * 1024;
   const BOARDS = Object.freeze({
     p43: {
-      label: 'LCD P4.3', chip: 'ESP32-P4', manifest: 'manifest_lcd_p43.json',
+      label: 'LCD P4.3', chip: 'ESP32-P4', manifest: 'manifest_lcd_p43.json', devManifest: 'manifest_lcd_p43_dev.json',
       slots: [0x10000, 0x390000], web: 0xD00000, nvs: 0x730000, boot: 0x2000,
       limits: { 0x2000: 0x6000, 0x8000: 0x1000, 0x10000: 0x380000,
                 0x390000: 0x380000, 0x730000: 0x200000, 0xD00000: 0x300000 }
     },
     p47: {
-      label: 'LCD P4.7', chip: 'ESP32-P4', manifest: 'manifest_lcd_p47.json',
+      label: 'LCD P4.7', chip: 'ESP32-P4', manifest: 'manifest_lcd_p47.json', devManifest: 'manifest_lcd_p47_dev.json',
       slots: [0x10000, 0x390000], web: 0xD00000, nvs: 0x730000, boot: 0x2000,
       limits: { 0x2000: 0x6000, 0x8000: 0x1000, 0x10000: 0x380000,
                 0x390000: 0x380000, 0x730000: 0x200000, 0xD00000: 0x300000 }
     },
     s3lcd: {
-      label: 'LCD 4.3 (S3)', chip: 'ESP32-S3', manifest: 'manifest_lcd.json',
+      label: 'LCD 4.3 (S3)', chip: 'ESP32-S3', manifest: 'manifest_lcd.json', devManifest: 'manifest_lcd_dev.json',
       slots: [0x10000, 0x290000], web: 0xC30000, nvs: 0x520000, boot: 0x0,
       limits: { 0x0: 0x8000, 0x8000: 0x1000, 0x10000: 0x280000,
                 0x290000: 0x290000, 0x520000: 0x200000, 0xC30000: 0x3D0000 }
     },
     headless: {
-      label: 'HEADLESS (S3)', chip: 'ESP32-S3', manifest: 'manifest_headless.json',
+      label: 'HEADLESS (S3)', chip: 'ESP32-S3', manifest: 'manifest_headless.json', devManifest: 'manifest_headless_dev.json',
       slots: [0x10000, 0x290000], web: 0xC30000, nvs: 0x520000, boot: 0x0,
       limits: { 0x0: 0x8000, 0x8000: 0x1000, 0x10000: 0x280000,
                 0x290000: 0x290000, 0x520000: 0x200000, 0xC30000: 0x3D0000 }
@@ -126,6 +135,8 @@
   const hex = n => `0x${n.toString(16).toUpperCase()}`;
   const targetKey = () => $('input[name="target"]:checked').value;
   const selectedMode = () => $('input[name="operation"]:checked').value;
+  const selectedChannel = () => $('input[name="channel"]:checked').value;
+  const manifestName = (board, channel = selectedChannel()) => channel === 'dev' ? board.devManifest : board.manifest;
   function log(s) { logEl.textContent += `\n${s}`; logEl.scrollTop = logEl.scrollHeight; }
   function selectedOffsets(board, full, web) {
     // Write apps and assets first; replace the bootloader LAST to reduce risk
@@ -142,18 +153,28 @@
     $('#resetDetails').hidden = !full;
     const names = new Map([[board.slots[0],'app0'],[board.slots[1],'app1'],[board.web,'webdata'],
       [board.nvs,'NVS'],[0x8000,'partition table'],[board.boot,'bootloader']]);
-    $('#plan').textContent = `${board.label} — ${board.chip}\n${board.manifest}\n` +
+    $('#plan').textContent = `${board.label} — ${board.chip} — ${selectedChannel() === 'dev' ? 'Development' : 'Release'}\n${manifestName(board)}\n` +
       selectedOffsets(board, full, includeWeb.checked).map(o => `${names.get(o)}: ${hex(o)}`).join('  ·  ');
   }
-  document.querySelectorAll('input[name="target"],input[name="operation"]').forEach(el => el.addEventListener('change', updateUI));
+  document.querySelectorAll('input[name="target"],input[name="operation"],input[name="channel"]').forEach(el => el.addEventListener('change', updateUI));
   includeWeb.addEventListener('change', updateUI);
   updateUI();
 
-  function validateManifestPart(board, part, expectedOffset) {
+  function validateManifestPart(board, part, expectedOffset, channel) {
     if (!part || typeof part.path !== 'string' || !part.path.endsWith('.bin')) {
       throw new Error(`Manifest missing .bin image at ${hex(expectedOffset)}`);
     }
     if (part.offset !== expectedOffset) throw new Error(`Offset mismatch at ${hex(expectedOffset)}`);
+    if (board.slots.includes(expectedOffset)) {
+      const basename = part.path.split('/').pop().toLowerCase();
+      const isDevImage = /(?:^|[_-])dev(?:[_\.-]|$)/i.test(basename);
+      if (channel === 'dev' && !isDevImage) {
+        throw new Error(`Dev channel requires a dev app image at ${hex(expectedOffset)}; found ${part.path}. Edit the dev manifest if your filenames differ.`);
+      }
+      if (channel === 'release' && isDevImage) {
+        throw new Error(`Release channel points to a dev app image at ${hex(expectedOffset)}: ${part.path}`);
+      }
+    }
     // Apply variant-specific safety checks to prevent accidental image mixing.
     if (board.chip === 'ESP32-P4' && board.slots.includes(expectedOffset)) {
       const type = board.label.endsWith('P4.3') ? 'p43' : 'p47';
@@ -165,21 +186,22 @@
     }
   }
 
-  async function loadImages(board, full, web) {
-    const manifestUrl = new URL(`./${board.manifest}`, location.href);
+  async function loadImages(board, full, web, channel) {
+    const name = manifestName(board, channel);
+    const manifestUrl = new URL(`./${name}`, location.href);
     const response = await fetch(manifestUrl, { cache: 'no-store' });
-    if (!response.ok) throw new Error(`Cannot load ${board.manifest} (HTTP ${response.status})`);
+    if (!response.ok) throw new Error(`Cannot load ${name} (HTTP ${response.status}). Check that the chosen channel manifest exists.`);
     const manifest = await response.json();
     const builds = (manifest.builds || []).filter(b => b.chipFamily === board.chip);
-    if (builds.length !== 1) throw new Error(`Expected exactly one ${board.chip} build in ${board.manifest}`);
+    if (builds.length !== 1) throw new Error(`Expected exactly one ${board.chip} build in ${name}`);
     const parts = builds[0].parts || [];
     const wanted = selectedOffsets(board, full, web);
     const files = [];
     for (const offset of wanted) {
       const matches = parts.filter(p => p.offset === offset);
-      if (matches.length !== 1) throw new Error(`Expected one image at ${hex(offset)} in ${board.manifest}`);
+      if (matches.length !== 1) throw new Error(`Expected one image at ${hex(offset)} in ${name}`);
       const part = matches[0];
-      validateManifestPart(board, part, offset);
+      validateManifestPart(board, part, offset, channel);
       const url = new URL(part.path, manifestUrl);
       if (url.origin !== location.origin) throw new Error(`Cross-origin image blocked: ${part.path}`);
       log(`Downloading ${part.path} at ${hex(offset)}...`);
@@ -229,14 +251,15 @@
       // before any asynchronous manifest fetch, to retain the user gesture.
       const port = await navigator.serial.requestPort();
       const board = BOARDS[targetKey()];
+      const channel = selectedChannel();
       const full = selectedMode() === 'reset';
       const web = includeWeb.checked;
-      const files = await loadImages(board, full, web);
+      const files = await loadImages(board, full, web, channel);
       const details = files.map(f => `${hex(f.address)}  ${f.path}  (${f.data.length} bytes)`).join('\n');
       if (full) {
-        const answer = prompt(`HIGH RISK: You are about to replace system firmware including bootloader, partition table and NVS on ${board.label}.\n\n${details}\n\nThis may leave the device unable to boot.\nType RESET to proceed:`);
+        const answer = prompt(`HIGH RISK: You are about to replace system firmware including bootloader, partition table and NVS on ${board.label} (${channel}).\n\n${details}\n\nThis may leave the device unable to boot.\nType RESET to proceed:`);
         if (answer !== 'RESET') { log('Cancelled before connecting: RESET not confirmed.'); status.textContent = 'Cancelled'; return; }
-      } else if (!confirm(`Flash ${files.length} image(s) to ${board.label}?\n\n${details}\n\nSystem partitions and NVS will be preserved.`)) {
+      } else if (!confirm(`Flash ${files.length} image(s) to ${board.label} (${channel})?\n\n${details}\n\nSystem partitions and NVS will be preserved.`)) {
         log('Cancelled.'); status.textContent = 'Cancelled'; return;
       }
       transport = new Transport(port, true);
