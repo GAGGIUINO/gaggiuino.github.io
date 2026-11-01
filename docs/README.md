@@ -219,18 +219,6 @@ Name                                      | Voltage   | Model Years | Model ID  
 <!-- tabs:end -->
 
 <!-- tabs:start -->
-<!-- tab:Gaggia Classic -->
-* [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
-* [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
-* [PTFE Tube 1 meter | 4x6mm White](https://www.aliexpress.com/item/2251832544541096.html)
-
-<!-- tab:Gaggia Classic Pro -->
-* **High Pressure braided hose (pick one)**
-  * **Saeco OEM Braided Tube** [fiyo (UK)](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169), [WLL (US)](https://www.wholelattelove.com/products/ga-16000380-reinforced-silicone-tube-5x9-mm) *(Search 996530009505 to find locally)* 
-  * [Toyox high pressure braided hose](https://www.aliexpress.com/item/3256805661123272.html) *Aliexpress alternative if Saeco can't be found*
-* [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
-* [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
-* [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
 <!-- tab:Pressure Tap Block -->
 *The pressure tap block is compatible with Gaggia Classic and Gaggia Classic Pro/Eco/E24 models*
 * [Pressure Tap Block (CNC or LM version)](https://www.pcbway.com/project/shareproject/Pressure_Tap_Block_304743ea.html)
@@ -239,25 +227,33 @@ Name                                      | Voltage   | Model Years | Model ID  
 * [PTFE Tube 1 meter | 4x6mm White](https://www.aliexpress.com/item/2251832544541096.html)
 * [010 Silicone O-Ring | ID6xCS1.8(10pcs)](https://www.aliexpress.com/item/3256806781414214.html) *Other names: Gaggia 996530063887, S70010, CS0.070"(1.78mm)xID0.239"(6.07mm)*
 * [M5x25 Stainless Steel Socket Head Screws | 10pcsM5 / 25mm](https://www.aliexpress.com/item/3256805692722422.html)
+
+<!-- tab:Gaggia Classic Pro -->
+* **High Pressure braided hose (pick one)**
+  * **Saeco OEM Braided Tube** [fiyo (UK)](https://www.fiyo.co.uk/saeco-hose-silicone-hose-5-x-8-9-for-coffee-machine-16000380-42169), [WLL (US)](https://www.wholelattelove.com/products/ga-16000380-reinforced-silicone-tube-5x9-mm) *(Search 996530009505 to find locally)* 
+  * [Toyox high pressure braided hose](https://www.aliexpress.com/item/3256805661123272.html) *Aliexpress alternative if Saeco can't be found*
+* [Transducer Fitting | 6mm Barb x 1/4"](https://www.aliexpress.com/item/32827914331.html)
+* [T-tee | 6mm](https://www.aliexpress.com/item/1005004145756673.html)
+* [Clamps | 100pcs and plier](https://www.aliexpress.com/item/1005003341137707.html) 
+
+<!-- tab:Gaggia Classic -->
+* [T-fitting | PE/6mm ](https://www.aliexpress.com/item/1005003750203358.html)
+* [Transducer Fitting | PLF/6-02 (6mm-1l4)](https://www.aliexpress.com/item/1005003753827787.html)
+* [PTFE Tube 1 meter | 4x6mm White](https://www.aliexpress.com/item/2251832544541096.html)
+
 <!-- tabs:end -->
 
 <!-- tabs:start -->
+
+<!-- tab:PnP/Custom Wiring -->
+**The Plug-and-Play wiring harness can be purchased from official suppliers. It contains components that are difficult to source, must be purchased at high quantities, and require specialized tooling, so a user-sourcable Bill of Materials is still in a work in process - see the Component List on the [Plug-and-Play/Custom Wiring](guides-stm32/3pln-custom-wiring.md) page**
+
 <!-- tab:Stock Wiring Integration -->
 * [2+ m 18 AWG heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html) 
   * 1 m Red, 1 m Black, 1 m White recommended
 * [Piggy Back spades 6.3mm](https://www.aliexpress.com/item/32800326782.html)
 * [Fork Crimp Terminal | SV1.25-5s](https://www.aliexpress.com/item/3256805357612913.html)
 * [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html) **nice to have, needed for Evo & E24**
-
-<!-- tab:Custom Wiring -->
-**This list assumes components will be taken from the stock wiring harness. For alternate components see the [Custom Wiring](guides-stm32/3pln-custom-wiring.md) page**
-* [Heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html) **For following schematic colors. Amount is for minimal mistakes, extra is recommended**
-  * **18AWG - 1m:** Black, White *(x2 if 120 VAC)*, Red, Orange, Blue *(x2 if 230 VAC)*, Yellow, Green
-* [BN1.25 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html)
-* [BN2 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html)
-* [Fork Crimp Terminal | 102PCS-SV *(SV1.25-5s & SV2-5s used)*](https://www.aliexpress.com/item/3256805357612913.html)
-* [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html) **OR** [Silicone Heat Shrink Tube | 4, 5, 6 mm dia](https://www.aliexpress.com/item/3256801522005095.html) and a heat gun
-
 <!-- tabs:end -->
 
 <!-- tabs:start -->
@@ -275,11 +271,13 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 # 3D Printed Parts
 
-BOM and assembly instructions for the recommended 3D printed parts used in the standard install are linked here.  
+BOM and assembly instructions for the recommended 3D printed parts used in the standard build path are linked here.  
+If you'd like to print the files yourself instead of purchasing from the official suppliers **please carefully review the recommended print parameters** on the design pages.  
+Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](https://www.printables.com/social/340492-loogle/collections/265668) or on [Discord](community/community-media.md#community-discord) in the **#mod-3d-design-ideas** channel.
 
 <!-- tabs:start -->
 <!-- tab:STM32 PCB -->
-* [PCBv3.1/v4 Housing](https://www.printables.com/model/894339) **OR** [PCBv3 Protective Housing](https://www.printables.com/model/370513)
+* [PCBv3.1/v4 Housing](https://www.printables.com/model/894339) **OR** [PCBv3 Protective Housing](https://www.printables.com/model/370513) (select based on PCB)
 <!-- tab:STM32 LEGO -->
 * [Internal Component Housing](https://www.printables.com/model/269394)
 <!-- tabs:end -->
@@ -289,8 +287,11 @@ BOM and assembly instructions for the recommended 3D printed parts used in the s
 
 <!-- tabs:start -->
 <!-- tab:Screen -->
+
+* [Gen 3.5 Screen Housing](https://www.printables.com/model/1851987)  
 * [Gen 3 Screen Housing](https://www.printables.com/model/356026)  
-  There are 3 mount options that all use the same screen housing. Pick one.  
+* Screen mount: There are 3 mount options, compatible with both screen housings (Gen 3 screen shown). Pick one.  
+
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/888b31f2-d0e5-48d8-af31-7133bd122f70">
   
   <!-- tabs:start -->
@@ -332,9 +333,6 @@ BOM and assembly instructions for the recommended 3D printed parts used in the s
   * 2 M4 nuts
 <!-- tabs:end -->
 
-If you'd like to print the files yourself instead of purchasing from the official suppliers **please carefully review the recommended print parameters** on the design pages.
-
-Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](https://www.printables.com/social/340492-loogle/collections/265668) or on [Discord](community/community-media.md#community-discord) in the **#mod-3d-design-ideas** channel.
 >
 
 # Accessories

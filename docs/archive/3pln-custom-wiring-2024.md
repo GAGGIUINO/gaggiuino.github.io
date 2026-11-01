@@ -3,6 +3,16 @@
 > [!Warning|style:callout]
 > Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
 
+# BOM
+
+**This list assumes components will be taken from the stock wiring harness. For alternate components see below**
+* [Heat-resistant silicone wires](https://www.aliexpress.com/item/2255800441309579.html) **For following schematic colors. Amount is for minimal mistakes, extra is recommended**
+  * **18AWG - 1m:** Black, White *(x2 if 120 VAC)*, Red, Orange, Blue *(x2 if 230 VAC)*, Yellow, Green
+* [BN1.25 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html)
+* [BN2 Bare Crimp](https://www.aliexpress.com/item/3256801144001097.html)
+* [Fork Crimp Terminal | 102PCS-SV *(SV1.25-5s & SV2-5s used)*](https://www.aliexpress.com/item/3256805357612913.html)
+* [Self-Fusing Silicone Tape | 25 mm W, 1.5+ m L](https://www.aliexpress.com/item/3256805094022385.html) **OR** [Silicone Heat Shrink Tube | 4, 5, 6 mm dia](https://www.aliexpress.com/item/3256801522005095.html) and a heat gun
+
 # Alternate Components
 
 The BOM is compiled for the standard install path where all components are taken from the stock wiring harness and crimped onto new wires, following the schematics and wiring diagrams. **This is not part of the BOM**, however, stock components may be broken, unavailable, or a completely new wiring harness desired. Alternate components may be substituted for stock components as needed. Note that this list of components is still a work in progress. 
