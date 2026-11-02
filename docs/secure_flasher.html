@@ -58,26 +58,26 @@
   <fieldset>
     <legend>1 · Select hardware</legend>
     <div class="choices">
-      <label class="choice"><span class="headline"><input name="target" type="radio" value="p43" checked> LCD P4.3</span><small>ESP32-P4 · P4.3 panel</small></label>
-      <label class="choice"><span class="headline"><input name="target" type="radio" value="p47"> LCD P4.7</span><small>ESP32-P4 · P4.7 panel</small></label>
-      <label class="choice"><span class="headline"><input name="target" type="radio" value="s3lcd"> LCD 4.3 (S3)</span><small>ESP32-S3 · 4.3-inch LCD</small></label>
-      <label class="choice"><span class="headline"><input name="target" type="radio" value="headless"> HEADLESS</span><small>ESP32-S3 · no LCD</small></label>
+      <label class="choice"><span class="headline"><input name="target" type="radio" value="p43" checked> GEN3.5 LCD P4.3</span><small>ESP32-P4 · 4.3-inch LCD</small></label>
+      <label class="choice"><span class="headline"><input name="target" type="radio" value="p47"> GEN3.5 LCD P4.7</span><small>ESP32-P4 · P4.7 panel</small></label>
+      <label class="choice"><span class="headline"><input name="target" type="radio" value="s3lcd"> GEN3 LCD 4.3 (S3)</span><small>ESP32-S3 · 4.3-inch LCD</small></label>
+      <label class="choice"><span class="headline"><input name="target" type="radio" value="headless"> GEN3 HEADLESS</span><small>ESP32-S3 · no LCD</small></label>
     </div>
   </fieldset>
 
   <fieldset>
     <legend>2 · Select firmware channel</legend>
     <div class="choices">
-      <label class="choice"><span class="headline"><input name="channel" type="radio" value="release" checked> Release</span><small>Stable firmware · original manifests</small></label>
-      <label class="choice"><span class="headline"><input name="channel" type="radio" value="dev"> Development</span><small>Dev firmware · *_dev.json manifests</small></label>
+      <label class="choice"><span class="headline"><input name="channel" type="radio" value="release" checked> Release</span><small>Stable firmware </small></label>
+      <label class="choice"><span class="headline"><input name="channel" type="radio" value="dev"> Artisan</span><small>Artisan specific firmware </small></label>
     </div>
-    <p class="hint">Development here means the <strong>firmware build channel</strong>, not ESP-IDF flash-encryption development mode. Release-locked boards still require correctly pre-encrypted images for this exact device and offset.</p>
+    <p class="hint">Artisan here means the <strong>firmware built spcifically</strong>, for the Gaggiuino artisan team. Release-locked boards still require correctly pre-encrypted images for this exact device and offset.</p>
   </fieldset>
 
   <fieldset>
     <legend>3 · Select operation</legend>
     <div class="choices">
-      <label class="choice"><span class="headline"><input name="operation" type="radio" value="apps" checked> Firmware update</span><small>Both app slots; keep system partitions and NVS</small></label>
+      <label class="choice"><span class="headline"><input name="operation" type="radio" value="apps" checked> Firmware reset</span><small>Both app slots; keep system partitions and NVS</small></label>
       <label class="choice"><span class="headline"><input name="operation" type="radio" value="reset"> Full reset</span><small>Also flash webdata, NVS, partition table, bootloader</small></label>
     </div>
     <label class="check" id="webRow"><input id="includeWeb" type="checkbox"><span>Also flash <strong>webdata</strong> in firmware-update mode</span></label>
@@ -90,12 +90,9 @@
     <label class="check"><input id="ack" type="checkbox"><span>I have verified the device type, the flash layout, and that encrypted binaries were built for this device/key and their exact offsets. I understand writing the wrong images can stop the device from booting.</span></label>
   </fieldset>
 
-  <div class="warning"><strong>ROM connection fix:</strong> SPI flash is explicitly attached before applying 16 MB parameters. The flasher uses 64 KiB erase/write batches to avoid a multi-megabyte ROM erase timeout, and Web Serial byte-level tracing is disabled. If a command fails, the log identifies its stage. Hardware validation is still required.</div>
-  <p class="hint">Files are resolved from the selected release/dev manifest beside this HTML page; binary paths are relative to the manifest. <strong>16 MB flash is assumed</strong> for both targets. No other applications may have the COM port open.</p>
   <div class="row"><button type="button" id="go">Connect and flash</button><span id="status" class="hint" role="status">Ready</span></div>
   <progress id="progress" value="0" max="100"></progress>
   <pre id="log" aria-live="polite">Ready. Put the board into ROM download mode (BOOT + RESET), then select its COM port.</pre>
-  <p class="small muted">Dev channel swaps only the application binary paths via a separate manifest. Bootloader, partitions, NVS and webdata can be shared, but must be compatible with that firmware build. Built on <code>esptool-js@0.7.0</code> Web Serial. ROM flashing (no stub), raw data (no compression), 1 KiB ROM blocks, explicit <code>SPI_ATTACH</code> and 16 MB <code>SPI_SET_PARAMS</code>, with 64 KiB erase/write batches. Successful writes mean ROM acknowledgements only; secure download mode may prevent readback verification. The reset may require unplugging/replugging USB.</p>
 </main>
 <script type="module">
   import { ESPLoader, Transport } from 'https://unpkg.com/esptool-js@0.7.0/bundle.js';
