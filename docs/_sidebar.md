@@ -7,7 +7,7 @@
     * - [Espressio __(NLD)__](https://espressio.shop/)
     * - [Hudson Creative Group __(USA)__](https://gaggiuino.hudsoncreativegroup.com/)
 * __TOOLS:__
-  - [__Firmware Reset__](https://gaggiuino.github.io/emergency_restore.html)
+  - [__Firmware Reset__](https://gaggiuino.github.io/secure_flasher.html)
 * __APIs/Telemetry:__
   - [REST API](rest-api/rest-api.md)
   - [MQTT](rest-api/MQTT.md)
