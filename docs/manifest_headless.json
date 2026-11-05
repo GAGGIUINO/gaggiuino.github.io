@@ -9,11 +9,11 @@
       "chipFamily": "ESP32-S3",
       "parts": [
         { "path": "firmware/bootloader_enc.bin", "offset": 0 },
-        { "path": "firmware/partitions_enc.bin", "offset": 32768 },
-        { "path": "firmware/nvs_blank.bin", "offset": 5373952 },
-        { "path": "firmware/ui-headless_s3x10000.bin", "offset": 65536 },
-        { "path": "firmware/ui-headless_s3x290000.bin", "offset": 2686976 },
-        { "path": "firmware/ui-web_xC30000.bin", "offset": 12779520 }
+        { "path": "firmware/partition-table_s3_v2x8000.bin", "offset": 32768 },
+        { "path": "firmware/nvs_blank.bin", "offset": 7536640 },
+        { "path": "firmware/ui-headless_s3_v2x10000.bin", "offset": 65536 },
+        { "path": "firmware/ui-headless_s3_v2x390000.bin", "offset": 3735552 },
+        { "path": "firmware/ui-web_s3_v2xD00000.bin", "offset": 13631488 }
       ]
     }
   ]
