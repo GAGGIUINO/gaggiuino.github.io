@@ -1,6 +1,6 @@
 {
   "name": "GAGGIUINO HEADLESS firmware",
-  "version": "1af8db8",
+  "version": "8aaf6f0",
   "home_assistant_domain": "slim_player",
   "funding_url": "https://esphome.io/guides/supporters.html",
   "new_install_prompt_erase": true,
