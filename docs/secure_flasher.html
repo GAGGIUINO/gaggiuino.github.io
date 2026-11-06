@@ -92,7 +92,7 @@
 
   <div class="row"><button type="button" id="go">Connect and flash</button><span id="status" class="hint" role="status">Ready</span></div>
   <progress id="progress" value="0" max="100"></progress>
-  <pre id="log" aria-live="polite">Ready. Put the board into ROM download mode (BOOT + RESET), then select its COM port.</pre>
+  <pre id="log" aria-live="polite">Ready. Put the board into ROM download mode (Hold BOOT -> Plug USB -> Release BOOT after 3 seconds), then select its COM port.</pre>
 </main>
 <script type="module">
   import { ESPLoader, Transport } from 'https://unpkg.com/esptool-js@0.7.0/bundle.js';
@@ -124,7 +124,7 @@
       label: 'HEADLESS (S3)', chip: 'ESP32-S3', manifest: 'manifest_headless.json', devManifest: 'manifest_headless_dev.json',
       slots: [0x10000, 0x390000], web: 0xD00000, nvs: 0x730000, boot: 0x0,
       limits: { 0x0: 0x8000, 0x8000: 0x1000, 0x10000: 0x380000,
-                0x290000: 0x380000, 0x730000: 0x200000, 0xD00000: 0x300000 }
+                0x390000: 0x380000, 0x730000: 0x200000, 0xD00000: 0x300000 }
     }
   });
   // All manifests use the same 1 MiB NVS partition. Keep the separate
