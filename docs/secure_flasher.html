@@ -92,7 +92,11 @@
 
   <div class="row"><button type="button" id="go">Connect and flash</button><span id="status" class="hint" role="status">Ready</span></div>
   <progress id="progress" value="0" max="100"></progress>
-  <pre id="log" aria-live="polite">Ready to connect. Please put the screen/headless module into ROM download mode (hold BOOT -> plug in USB -> release BOOT after 3 seconds), then select its COM port.</pre>
+  <pre id="log" aria-live="polite">Ready to connect.
+To connect:
+- Put the screen/headless module into ROM download mode (hold BOOT -> plug in USB -> release BOOT after 3 seconds)
+- Click "Connect and flash"
+- Select the COM port (typically USB JTAG/serial debug unit)</pre>
 </main>
 <script type="module">
   import { ESPLoader, Transport } from 'https://unpkg.com/esptool-js@0.7.0/bundle.js';
