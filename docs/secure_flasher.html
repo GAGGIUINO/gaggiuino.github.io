@@ -4,14 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <title>Gaggiuino Secure Firmware Flasher — ESP32-S3 / ESP32-P4</title>
+  <title>Secure Firmware Flasher — ESP32-S3 / ESP32-P4</title>
   <style>
     :root { color-scheme: dark; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
     * {box-sizing:border-box}
     body { margin:0; color:#ededee; background:#111316; line-height:1.55; }
     main { max-width:800px; padding:24px 18px 44px; margin:18px auto; }
     header {display:flex; gap:14px; align-items:center; margin-bottom:8px}
-    .brand {width:47px;height:47px;border-radius:13px;background:#ec7040;color:#17191a;display:grid;place-items:center;font-weight:900;font-size:1.3rem}
+    .brand {width:145px;height:58px;flex:0 0 145px;display:flex;align-items:center;justify-content:center}
+    .brand img {display:block;width:100%;height:100%;object-fit:contain}
     h1 {font-size:clamp(1.42rem,3vw,1.9rem);line-height:1.2;margin:0}
     .sub {font-size:.92rem;color:#b7bfc8;margin-top:5px}
     fieldset {border:1px solid #42474e; border-radius:12px; padding:17px; margin:18px 0;min-width:0}
@@ -39,27 +40,25 @@
     pre {font-size:.81rem;line-height:1.45;padding:14px;background:#090b0d;color:#b9e7c4;min-height:150px;max-height:360px;overflow:auto;border:1px solid #383c43;border-radius:8px;white-space:pre-wrap;overflow-wrap:anywhere}
     code {background:#32363d;padding:1px 4px;border-radius:4px}
     .small {font-size:.85rem}
-    @media(max-width:580px){.choices{grid-template-columns:1fr} main{margin:0}}
+    @media(max-width:580px){.choices{grid-template-columns:1fr} main{margin:0} header{gap:10px} .brand{width:105px;height:48px;flex-basis:105px}}
   </style>
 </head>
 <body>
 <main>
   <header>
-    <div class="brand" aria-hidden="true">∞</div>
+    <div class="brand"><img src="https://raw.githubusercontent.com/GAGGIUINO/gaggiuino.github.io/main/images/GAGGIUINO_LOGO_transp.png" alt="Gaggiuino logo" width="145" height="58"></div>
     <div>
-      <h1>Gaggiuino secure firmware flasher</h1>
-      <div class="sub">ESP32-P4 and ESP32-S3 · Release / Dev · ROM-only flash · SPI attach fix</div>
+      <h1>Secure Firmware Flasher</h1>
+      <div class="sub">ESP32-P4 and ESP32-S3 · PRD / ART · ROM-only flash </div>
     </div>
   </header>
-  <p class="hint">Development prototype. Use Chrome or Edge on HTTPS/localhost with the device in <strong>ROM download mode</strong>. Flashing pre-encrypted images is for boards provisioned with the matching encryption key.</p>
-
-  <div class="warning"><strong>No chip erase.</strong> This tool writes only the selected manifest images at the configured offsets. It never changes eFuses. Flash encryption in Release Mode cannot be undone; wrong ciphertext or a wrong bootloader may prevent normal boot.</div>
+  <p class="hint">Development prototype. Use Chrome or Edge with the device in <strong>ROM download mode</strong>. Flashing pre-encrypted images is for boards provisioned with the matching encryption key.</p>
 
   <fieldset>
     <legend>1 · Select hardware</legend>
     <div class="choices">
       <label class="choice"><span class="headline"><input name="target" type="radio" value="p43" checked> GEN3.5 LCD P4.3</span><small>ESP32-P4 · 4.3-inch LCD</small></label>
-      <label class="choice"><span class="headline"><input name="target" type="radio" value="p47"> GEN3.5 LCD P4.7</span><small>ESP32-P4 · P4.7 panel</small></label>
+      <label class="choice"><span class="headline"><input name="target" type="radio" value="p47"> GEN3.5 LCD P4.7</span><small>ESP32-P4 · 7-inch LCD</small></label>
       <label class="choice"><span class="headline"><input name="target" type="radio" value="s3lcd"> GEN3 LCD 4.3 (S3)</span><small>ESP32-S3 · 4.3-inch LCD</small></label>
       <label class="choice"><span class="headline"><input name="target" type="radio" value="headless"> GEN3 HEADLESS</span><small>ESP32-S3 · no LCD</small></label>
     </div>
@@ -68,36 +67,43 @@
   <fieldset>
     <legend>2 · Select firmware channel</legend>
     <div class="choices">
-      <label class="choice"><span class="headline"><input name="channel" type="radio" value="release" checked> Release</span><small>Stable firmware </small></label>
+      <label class="choice"><span class="headline"><input name="channel" type="radio" value="release" checked> Public Release</span><small>Stable firmware </small></label>
       <label class="choice"><span class="headline"><input name="channel" type="radio" value="dev"> Artisan</span><small>Artisan specific firmware </small></label>
     </div>
-    <p class="hint">Artisan here means the <strong>firmware built spcifically</strong>, for the Gaggiuino artisan team. Release-locked boards still require correctly pre-encrypted images for this exact device and offset.</p>
+    <p class="hint">Artisan here means the <strong>firmware built spcifically</strong> for the Gaggiuino artisan team. Release-locked boards still require correctly pre-encrypted images for this exact device and offset.</p>
   </fieldset>
 
   <fieldset>
     <legend>3 · Select operation</legend>
     <div class="choices">
       <label class="choice"><span class="headline"><input name="operation" type="radio" value="apps" checked> Firmware reset</span><small>Both app slots; keep system partitions and NVS</small></label>
-      <label class="choice"><span class="headline"><input name="operation" type="radio" value="reset"> Full reset</span><small>Also flash webdata, NVS, partition table, bootloader</small></label>
+      <label class="choice"><span class="headline"><input name="operation" type="radio" value="reset"> Full reset</span><small>Erase ALL of NVS; reflash both apps, webdata, partition table and bootloader</small></label>
     </div>
-    <label class="check" id="webRow"><input id="includeWeb" type="checkbox"><span>Also flash <strong>webdata</strong> in firmware-update mode</span></label>
-    <div id="resetDetails" class="danger" hidden><strong>HIGH RISK: System image rewrite.</strong> This mode replaces the bootloader, encrypted partition table and NVS image, in addition to both apps and webdata. This is <em>not</em> a whole-chip factory erase: OTA metadata, tempdata, coredump and other untouched partitions remain as-is. Make sure all encrypted files match this board's key and the exact offsets. On S3, verify the actual NVS partition size against your partition CSV.</div>
+    <label class="check" id="webRow"><input id="includeWeb" type="checkbox"><span>Also flash <strong>webdata</strong> in firmware-reset mode</span></label>
+    <p id="nvsInfo" class="hint" hidden>Full reset erases the entire 0x100000-byte (1 MiB) NVS partition at the selected board’s NVS offset.</p>
+    <div id="resetDetails" class="danger" hidden><strong>HIGH RISK: System image rewrite.</strong> Full reset permanently erases NVS and rewrites both apps, webdata, partition table, and bootloader. Other partitions are left untouched. Use only the correctly pre-encrypted images for this device and offset.</div>
     <div class="plan" id="plan" aria-live="polite"></div>
   </fieldset>
 
   <fieldset>
     <legend>4 · Safety acknowledgement</legend>
-    <label class="check"><input id="ack" type="checkbox"><span>I have verified the device type, the flash layout, and that encrypted binaries were built for this device/key and their exact offsets. I understand writing the wrong images can stop the device from booting.</span></label>
+    <label class="check"><input id="ack" type="checkbox"><span>I have verified the device type, the flash layout (including the standard 0x100000 NVS partition), and that encrypted binaries were built for this device/key and their exact offsets. I understand Full reset permanently deletes all NVS data, and writing the wrong images can stop the device from booting.</span></label>
   </fieldset>
 
   <div class="row"><button type="button" id="go">Connect and flash</button><span id="status" class="hint" role="status">Ready</span></div>
   <progress id="progress" value="0" max="100"></progress>
-  <pre id="log" aria-live="polite">Ready. Put the board into ROM download mode (BOOT + RESET), then select its COM port.</pre>
+  <pre id="log" aria-live="polite">Ready to connect.
+To connect:
+- Put the screen/headless module into ROM download mode (hold BOOT -> plug in USB -> release BOOT after 3 seconds)
+- Click "Connect and flash"
+- Select the COM port (typically USB JTAG/serial debug unit)</pre>
 </main>
 <script type="module">
   import { ESPLoader, Transport } from 'https://unpkg.com/esptool-js@0.7.0/bundle.js';
 
   const FLASH_SIZE = 16 * 1024 * 1024;
+  const FLASH_SECTOR_SIZE = 4096;
+  const NVS_PARTITION_SIZE = 0x100000; // standard 1 MiB NVS partition on every supported board
   const ROM_BATCH_SIZE = 64 * 1024; // 16 sectors; avoids a multi-megabyte FLASH_BEGIN erase
   const BOARDS = Object.freeze({
     p43: {
@@ -114,19 +120,19 @@
     },
     s3lcd: {
       label: 'LCD 4.3 (S3)', chip: 'ESP32-S3', manifest: 'manifest_lcd.json', devManifest: 'manifest_lcd_dev.json',
-      slots: [0x10000, 0x290000], web: 0xC30000, nvs: 0x520000, boot: 0x0,
-      limits: { 0x0: 0x8000, 0x8000: 0x1000, 0x10000: 0x280000,
-                0x290000: 0x290000, 0x520000: 0x200000, 0xC30000: 0x3D0000 }
+      slots: [0x10000, 0x390000], web: 0xD00000, nvs: 0x730000, boot: 0x0,
+      limits: { 0x0: 0x8000, 0x8000: 0x1000, 0x10000: 0x380000,
+                0x390000: 0x380000, 0x730000: 0x200000, 0xD00000: 0x300000 }
     },
     headless: {
       label: 'HEADLESS (S3)', chip: 'ESP32-S3', manifest: 'manifest_headless.json', devManifest: 'manifest_headless_dev.json',
-      slots: [0x10000, 0x290000], web: 0xC30000, nvs: 0x520000, boot: 0x0,
-      limits: { 0x0: 0x8000, 0x8000: 0x1000, 0x10000: 0x280000,
-                0x290000: 0x290000, 0x520000: 0x200000, 0xC30000: 0x3D0000 }
+      slots: [0x10000, 0x390000], web: 0xD00000, nvs: 0x730000, boot: 0x0,
+      limits: { 0x0: 0x8000, 0x8000: 0x1000, 0x10000: 0x380000,
+                0x390000: 0x380000, 0x730000: 0x200000, 0xD00000: 0x300000 }
     }
   });
-  // For S3 the exact NVS capacity is not provided by the user. 2 MiB is only
-  // a conservative upper guard, NOT a verified partition size. Check the CSV.
+  // All manifests use the same 1 MiB NVS partition. Keep the separate
+  // board.limits[nvs] check as a safety bound, not as the erase size.
 
   const $ = q => document.querySelector(q);
   const go = $('#go'), status = $('#status'), logEl = $('#log'), progress = $('#progress');
@@ -139,21 +145,38 @@
   function log(s) { logEl.textContent += `\n${s}`; logEl.scrollTop = logEl.scrollHeight; }
   function selectedOffsets(board, full, web) {
     // Write apps and assets first; replace the bootloader LAST to reduce risk
-    // if a previous image write fails mid-way.
+    // if a previous image write fails mid-way. NVS is ERASED in full separately,
+    // not written using a short nvs_blank.bin file.
     const offsets = [...board.slots];
     if (web || full) offsets.push(board.web);
-    if (full) offsets.push(board.nvs, 0x8000, board.boot);
+    if (full) offsets.push(0x8000, board.boot);
     return offsets;
+  }
+
+  function getNvsEraseSize(board) {
+    const size = NVS_PARTITION_SIZE;
+    const max = board.limits[board.nvs];
+    if (board.nvs % FLASH_SECTOR_SIZE !== 0 ||
+        size % FLASH_SECTOR_SIZE !== 0 ||
+        !Number.isSafeInteger(max) || size > max || board.nvs + size > FLASH_SIZE) {
+      throw new Error(`NVS erase ${hex(board.nvs)}–${hex(board.nvs + size)} exceeds the configured safety bound ${hex(max)}. Nothing was erased.`);
+    }
+    return size;
   }
   function updateUI() {
     const board = BOARDS[targetKey()];
     const full = selectedMode() === 'reset';
     $('#webRow').hidden = full;
+    $('#nvsInfo').hidden = !full;
     $('#resetDetails').hidden = !full;
     const names = new Map([[board.slots[0],'app0'],[board.slots[1],'app1'],[board.web,'webdata'],
-      [board.nvs,'NVS'],[0x8000,'partition table'],[board.boot,'bootloader']]);
-    $('#plan').textContent = `${board.label} — ${board.chip} — ${selectedChannel() === 'dev' ? 'Development' : 'Release'}\n${manifestName(board)}\n` +
-      selectedOffsets(board, full, includeWeb.checked).map(o => `${names.get(o)}: ${hex(o)}`).join('  ·  ');
+      [0x8000,'partition table'],[board.boot,'bootloader']]);
+    const steps = selectedOffsets(board, full, includeWeb.checked).map(o => `${names.get(o)}: ${hex(o)}`);
+    if (full) {
+      const eraseLabel = `NVS FULL ERASE: ${hex(board.nvs)}–${hex(board.nvs + NVS_PARTITION_SIZE)} (0x100000 bytes)`;
+      steps.splice(steps.length - 2, 0, eraseLabel);
+    }
+    $('#plan').textContent = `${board.label} — ${board.chip} — ${selectedChannel() === 'dev' ? 'Artisan' : 'Release'}\n${manifestName(board)}\n` + steps.join('  ·  ');
   }
   document.querySelectorAll('input[name="target"],input[name="operation"],input[name="channel"]').forEach(el => el.addEventListener('change', updateUI));
   includeWeb.addEventListener('change', updateUI);
@@ -193,7 +216,10 @@
     const manifest = await response.json();
     const builds = (manifest.builds || []).filter(b => b.chipFamily === board.chip);
     if (builds.length !== 1) throw new Error(`Expected exactly one ${board.chip} build in ${name}`);
-    const parts = builds[0].parts || [];
+    const build = builds[0];
+    // Validate the fixed whole-partition NVS erase range before fetching or writing.
+    const nvsEraseSize = full ? getNvsEraseSize(board) : 0;
+    const parts = build.parts || [];
     const wanted = selectedOffsets(board, full, web);
     const files = [];
     for (const offset of wanted) {
@@ -224,10 +250,35 @@
     }
     const sorted = [...files].sort((a, b) => a.address - b.address);
     for (let i = 1; i < sorted.length; i++) {
-      const lastEndSector = Math.ceil((sorted[i-1].address + sorted[i-1].data.length) / 4096) * 4096;
+      const lastEndSector = Math.ceil((sorted[i-1].address + sorted[i-1].data.length) / FLASH_SECTOR_SIZE) * FLASH_SECTOR_SIZE;
       if (lastEndSector > sorted[i].address) throw new Error('Image erase sectors overlap; refusing to flash');
     }
-    return files;
+    if (full) {
+      const eraseEnd = board.nvs + nvsEraseSize;
+      for (const file of files) {
+        const end = Math.ceil((file.address + file.data.length) / FLASH_SECTOR_SIZE) * FLASH_SECTOR_SIZE;
+        if (board.nvs < end && file.address < eraseEnd) {
+          throw new Error(`NVS full erase overlaps ${file.path}; check NVS size and partition CSV. Nothing flashed.`);
+        }
+      }
+      log(`Validated FULL NVS erase: ${hex(board.nvs)}–${hex(eraseEnd)} (${nvsEraseSize.toLocaleString()} bytes).`);
+    }
+    return { files, nvsEraseSize };
+  }
+
+  async function eraseFullNvs(loader, board, size) {
+    if (loader.IS_STUB || !Number.isSafeInteger(size) || size <= 0 ||
+        board.nvs % FLASH_SECTOR_SIZE !== 0 || size % FLASH_SECTOR_SIZE !== 0 ||
+        size > board.limits[board.nvs] || board.nvs + size > FLASH_SIZE) {
+      throw new Error('Unsafe full NVS erase requested; refusing ROM erase');
+    }
+    // Secure Download Mode does NOT support the stub-only ERASE_REGION (0xD1).
+    // Like Espressif esptool --no-stub erase-region, ROM FLASH_BEGIN (0x02)
+    // performs the full sector erase up-front, even with no FLASH_DATA packets.
+    // The following image's FLASH_BEGIN starts its own download sequence.
+    log(`ROM FLASH_BEGIN: erasing ALL NVS sectors ${hex(board.nvs)}–${hex(board.nvs + size)} (${size.toLocaleString()} bytes)...`);
+    await loader.flashBegin(size, board.nvs);
+    log('ROM acknowledged full NVS partition erase. (Readback is not available in Secure Download Mode.)');
   }
 
   // SPI_ATTACH (0x0D) is REQUIRED before SPI flash operations with the
@@ -262,10 +313,11 @@
       const channel = selectedChannel();
       const full = selectedMode() === 'reset';
       const web = includeWeb.checked;
-      const files = await loadImages(board, full, web, channel);
+      const { files, nvsEraseSize } = await loadImages(board, full, web, channel);
       const details = files.map(f => `${hex(f.address)}  ${f.path}  (${f.data.length} bytes)`).join('\n');
       if (full) {
-        const answer = prompt(`HIGH RISK: You are about to replace system firmware including bootloader, partition table and NVS on ${board.label} (${channel}).\n\n${details}\n\nThis may leave the device unable to boot.\nType RESET to proceed:`);
+        const eraseDetails = `FULL NVS ERASE: ${hex(board.nvs)}–${hex(board.nvs + nvsEraseSize)} (${nvsEraseSize} bytes)`;
+        const answer = prompt(`HIGH RISK: You are about to ERASE THE ENTIRE NVS PARTITION and replace the bootloader, partition table and firmware on ${board.label} (${channel}).\n\n${eraseDetails}\n${details}\n\nAll saved NVS settings will be deleted. The NVS erase size is fixed at 0x100000 (1 MiB). This may leave the device unable to boot.\nType RESET to proceed:`);
         if (answer !== 'RESET') { log('Cancelled before connecting: RESET not confirmed.'); status.textContent = 'Cancelled'; return; }
       } else if (!confirm(`Flash ${files.length} image(s) to ${board.label} (${channel})?\n\n${details}\n\nSystem partitions and NVS will be preserved.`)) {
         log('Cancelled.'); status.textContent = 'Cancelled'; return;
@@ -310,8 +362,9 @@
       await attachSPIFlash(loader);
       await configure16MB(loader);
       log('SPI flash attached and configured: 16 MB. ROM-only, raw, uncompressed writes.');
-      const total = files.reduce((sum, f) => sum + f.data.length, 0);
+      const total = files.reduce((sum, f) => sum + f.data.length, 0) + nvsEraseSize;
       let completed = 0;
+      let nvsErased = false;
       status.textContent = 'Flashing';
       // Segment each image on a 64 KiB sector boundary. This reduces the
       // FLASH_BEGIN erase duration and makes the exact point of failure clear.
@@ -319,6 +372,16 @@
       // absolute addresses remain unchanged, including encrypted ciphertext.
       for (let fileIndex = 0; fileIndex < files.length; fileIndex++) {
         const file = files[fileIndex];
+        // All app and web assets are flashed first. Erase NVS immediately
+        // before replacing the partition table/bootloader (which are written last).
+        if (full && !nvsErased && file.address === 0x8000) {
+          status.textContent = 'Erasing full NVS';
+          await eraseFullNvs(loader, board, nvsEraseSize);
+          nvsErased = true;
+          completed += nvsEraseSize;
+          progress.value = Math.max(0, Math.min(100, 100 * completed / total));
+          status.textContent = 'Flashing';
+        }
         log(`Starting image ${fileIndex+1}/${files.length}: ${file.path} at ${hex(file.address)} (${file.data.length.toLocaleString()} bytes)`);
         let fileSent = 0;
         for (let chunkStart = 0; chunkStart < file.data.length; chunkStart += ROM_BATCH_SIZE) {
@@ -341,9 +404,11 @@
         }
         log(`Image ${fileIndex+1}/${files.length} ROM write acknowledged: ${fileSent.toLocaleString()} bytes.`);
       }
+      if (full && !nvsErased) throw new Error('Full reset incomplete: full NVS erase was not executed');
       progress.value = 100;
       status.textContent = 'Write completed';
-      log('FINISHED: ROM acknowledged every selected image write. This is NOT a readback or boot verification. Power-cycle/reset the board to verify.');
+      log(full ? 'FINISHED: ROM acknowledged full NVS partition erase and every selected image write. This is NOT readback or boot verification. Power-cycle/reset the board to verify.'
+               : 'FINISHED: ROM acknowledged every selected image write. NVS was preserved. This is NOT readback or boot verification. Power-cycle/reset the board to verify.');
     } catch (err) {
       status.textContent = 'Error';
       log(`ERROR: ${err?.message || String(err)}`);
