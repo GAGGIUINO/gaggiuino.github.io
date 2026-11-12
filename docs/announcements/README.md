@@ -4,6 +4,7 @@
 <!-- panels:title -->
 ## Milestones
 <!-- div:panels -->
+* __November 2026 - Documents and schematics updated, Gen 2 and component/Lego build removed from official support (volunteer support members have all moved to later builds).__  
 * __September 2026 - New screen released, plug-and-play wire harness developed for all compatible Gaggia Classic versions, new UI design. Documentation efforts in process.__ 
 * __September 2024 - Gaggiuino Generation 3 (NextMonday&trade;), based on an STM32 + ESP32-S3 UI architecture, is now open for public use.__  
     * Main features and basic installation documentation are complete. Additional features and comprehensive documentation are in process.  

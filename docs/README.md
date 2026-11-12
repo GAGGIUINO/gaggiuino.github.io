@@ -259,7 +259,8 @@ Name                                      | Voltage   | Model Years | Model ID  
 <!-- tabs:start -->
 <!-- tab:Gen 3 -->
 * Interface (pick one) *- must be purchased from an Official Supplier (see sidebar)*
-  * 4.3" ESP32-S3 Screen & cable
+  * 4.3" ESP32-P4 (Gen 3.5) Screen & cable
+  * 4.3" ESP32-S3 (Gen 3) Screen & cable
   * Headless E177 PCB & cable
 * MicroSD card | 1-8 GB, FAT32 - optional, for shot history
 
@@ -290,9 +291,9 @@ Additional Gaggiuino models can be found in the [Gaggiuino Model Collection](htt
 
 * [Gen 3.5 Screen Housing](https://www.printables.com/model/1851987)  
 * [Gen 3 Screen Housing](https://www.printables.com/model/356026)  
-* Screen mount: There are 3 mount options, compatible with both screen housings (Gen 3 screen shown). Pick one.  
+* Screen mount: There are 3 mount options, compatible with both screen housings (ESP32-P4 Gen 3.5 screen shown). Pick one.  
 
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/888b31f2-d0e5-48d8-af31-7133bd122f70">
+  <img width="500" alt="image" src="media/screen_mounts_g_3_5.webp">
   
   <!-- tabs:start -->
   <!-- tab:Front Mount -->
