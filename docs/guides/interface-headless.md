@@ -22,16 +22,16 @@ The headless PCB uses the same connection as the screens, JST-PH.
 <!-- tab:PCBv3.1/v4 -->
   <!-- tabs:start -->
   <!-- tab:GCP -->
-  <img height="500" alt="image" src="schematics/stm32-lv/GCP_wiring_PCBv3_1_LV.png">
+  <img height="500" alt="image" src="schematics/stm32-lv/GCP_g3_5_PCBv4_LV.png">
   <!-- tab:GC -->
-  <img height="500" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_1_LV.png">
+  <img height="500" alt="image" src="schematics/stm32-lv/GC_g3_5_PCBv4_LV.png">
   <!-- tabs:end -->
 <!-- tab:PCBv3 -->
   <!-- tabs:start -->
   <!-- tab:GCP -->
-  <img height="500" alt="image" src="schematics/stm32-lv/GCP_wiring_PCBv3_LV.png">
+  <img height="500" alt="image" src="schematics/stm32-lv/GCP_g3_5_PCBv3_LV.png">
   <!-- tab:GC -->
-  <img height="500" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_LV.png">
+  <img height="500" alt="image" src="schematics/stm32-lv/GC_g3_5_PCBv3_LV.png">
   <!-- tabs:end -->
 <!-- tab: Lego -->
   <img height="500" alt="image" src="schematics/stm32-comp-build.png">

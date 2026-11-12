@@ -19,13 +19,12 @@
 Gen| Microcontroller (MCU)                  | Screen/UI| Compatible Builds                                                     |Beta    | Release  |Last Commit   | Current Support  | 
 :-:|:---------------------------------------|:--------:|:----------------------------------------------------------------------|:------:|:--------:|:------------:|:----------------:|
 1  |ATmega328<br/> (Arduino Nano)           |Nextion   |**Component (Lego)**<br/>PCBv1<br/>(MainBoard + SubBoard)              |2021    | -        |Sep 2022      |:x:               |
-2  |STM32F411CEU6                           |Nextion   |Component (Lego)<br/>PCBv2 / PCBv2.1 :warning:<br/>PCBv3 / **PCBv3.1** |Jul 2022| May 2023 |Mar 2024      |:x:               | 
-3  |STM32F411CEU6 (OC)<br/>**STM32U585CIU6**|ESP32-S3<br/>**ESP32-P4**<br/>|Component (Lego)<br/>PCBv2 / PCBv2.1 :warning:<br/>PCBv3 / PCBv3.1<br/>**PCBv4**|May 2024|Sep 2024|-|:heavy_check_mark:|     
+2  |STM32F411CEU6                           |Nextion   |Component (Lego):warning:<br/>PCBv2 / PCBv2.1 :warning:<br/>PCBv3 / **PCBv3.1** |Jul 2022| May 2023 |Mar 2024      |:x:               | 
+3  |STM32F411CEU6 (OC)<br/>**STM32U585CIU6**|ESP32-S3<br/>**ESP32-P4**<br/>|Component (Lego):warning:<br/>PCBv2 / PCBv2.1 :warning:<br/>PCBv3 / PCBv3.1<br/>**PCBv4**|May 2024|Sep 2024|-|:heavy_check_mark:|     
 
 >
-* :warning: - *PCBv2 / PCBv2.1 are compatible but support is minimal.*
+* :warning: - *compatible, but support is minimal.*
 * **Bold** Item - *Recommended*
-* Dev Stop - *Development for this combination of hardware has ceased.*
 * Current Support - *Installation support available in the discord.*
 
 >[!WARNING|style:callout|label:Considerations and caveats] Current plans for development are always in flux.  While the current plan may be to provide new features to the recommended install route, it is always possible that those plans will change, and new hardware will be required to upgrade.  The above recommendations are given with this in mind and we will try our best to keep you informed of any changes.

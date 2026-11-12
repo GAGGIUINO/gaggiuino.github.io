@@ -4,7 +4,7 @@
 > Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
 
 > [!Note|style:callout]
-> **Oct 2026**: [3PLN Custom Wiring (May 2024 Version)](archive/3pln-custom-wiring-2024.md) has been archived.
+> **Nov 2026**: [3PLN Custom Wiring (May 2024 Version)](archive/3pln-custom-wiring-2024.md) has been archived.
 
 These instructions detail how to replace the stock wiring harness to install a 3PLN + SSR Gaggiuino control system (such as PCBv4, PCBv3, or the component (Lego) build) into a Gaggia Classic | Pro | Eco | Evo | E24 espresso machine. They assume that you already have a bench-tested control system.
 
