@@ -20,10 +20,10 @@
   - [Example tools](learning/example-tools.md)
   - [Wiring basics](learning/wiring-basics.md)
 * __Install Guides:__
-    * [Control A: **PCB**](guides-stm32/pcb-guide.md)
-    * [Control B: **Component (Lego) Build**](guides-stm32/lego-component-build-guide.md)
-    * [Wiring A: **Stock Wiring Integration**](guides-stm32/3pln-stock-wiring-integration.md)
-    * [Wiring B: **Custom Wiring**](guides-stm32/3pln-custom-wiring.md)
+    * [Control: **PCB**](guides-stm32/pcb-guide.md)
+    * [Control: **Component (Lego) Build**](guides-stm32/lego-component-build-guide.md)
+    * [Wiring: **Stock Integration**](guides-stm32/3pln-stock-wiring-integration.md)
+    * [Wiring: **Plug-and-Play/Custom**](guides-stm32/3pln-custom-wiring.md)
     * [Interface: **Screen**](guides/interface-screen.md)
     * [Interface: **Headless**](guides/interface-headless.md)
     * [Accessory: **Hardware Scales**](accessories/hw-scales.md)
@@ -33,6 +33,4 @@
     * [MCU Flashing](guides-stm32/mcu-flashing.md)    
 * __Upgrades:__
     * [PCB Upgrade Guide](guides-upgrade/pcb-upgrade.md)
-    * [Lego Independent Relay and Dimmer](guides-upgrade/lego-independent-relay-dimmer.md)
-    * [Lego Nano to STM32 Upgrade](guides-upgrade/nano-to-stm32.md)
 * [__Archive__](archive/archive.md)

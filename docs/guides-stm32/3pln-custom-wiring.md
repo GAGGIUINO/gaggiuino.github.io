@@ -1,13 +1,32 @@
-# Wiring B: Custom Wiring
+# Wiring: Plug-and-Play/Custom Wiring
 
 > [!Warning|style:callout]
 > Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
 
-<img height="300" alt="Custom Wiring - Leon McKee" src="media/custom_wiring.png">
+> [!Note|style:callout]
+> **Nov 2026**: [3PLN Custom Wiring (May 2024 Version)](archive/3pln-custom-wiring-2024.md) has been archived.
 
-# Alternate Components
+These instructions detail how to replace the stock wiring harness to install a 3PLN + SSR Gaggiuino control system (such as PCBv4, PCBv3, or the component (Lego) build) into a Gaggia Classic | Pro | Eco | Evo | E24 espresso machine. They assume that you already have a bench-tested control system.
 
-The BOM is compiled for the standard install path where all components are taken from the stock wiring harness and crimped onto new wires, following the schematics and wiring diagrams. **This is not part of the BOM**, however, stock components may be broken, unavailable, or a completely new wiring harness desired. Alternate components may be substituted for stock components as needed. Note that this list of components is still a work in progress. 
+# What is 3PLN + SSR?
+
+3PLN + SSR (often noted as "3PLN") describes the AC integration points of a Gaggiuino control system into an espresso machine. Through these points the Gaggiuino control device can control the espresso machine AC components either by connecting into the stock wire harness or by replacing the stock wire harness with a custom one. 
+
+
+Abbr. |Name               |Description 
+------|-------------------|-----------
+3     | 3-Way Valve       | 3-Way Solenoid Valve that controls flow between the group head, boiler, and vent tube
+P     | Pump              | Vibratory pump that pumps the water
+L     | Line              | AC Line voltage
+N     | Neutral           | AC Neutral voltage
+SSR   | Solid-State Relay | Relay placed in-line with the boiler heaters for control
+
+The PCB and component installs both utilize 3PLN, harmonizing the install process. The install principles and machine connection points are the same for both build types.
+
+# Component List
+
+This is a work in process, with the goal of listing all components necessary to build the wire harness based on the cut list, and corresponding to the components used in the kit Plug-and-Play wiring harness.  
+If building your own harness, alternate and stock components may be substituted as desired - components and wires may be taken from the stock wiring harness or an entire harness may be created from scratch.
 
 <details>
 <summary><b>Alternate Component List </b> <i>(Click to expand)</i></summary>
@@ -25,82 +44,57 @@ The BOM is compiled for the standard install path where all components are taken
 | Boiler Terminal Connectors | [TE 160783-7 (DigiKey)](https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/160783-7/5157254) or [TE 160783-7 (Mouser)](https://www.mouser.com/ProductDetail/TE-Connectivity-AMP/160783-7?qs=%252BeETdXPI8nLQYJsNGAnPEA%3D%3D) | Stock part, a bit tricky to crimp properly |
 | Boiler Terminal Connector Housing | [Boiler Terminal Shroud](https://www.printables.com/model/380256) | Can be purchased from print providers, used if stock covers are unavailable |
 | Boiler Terminal Crimpers | [IWISS IWS-1424A](https://www.aliexpress.com/item/3256805916886076.html) **+ Pliers** or <br /> [TE 160783-7 Crimper HS Jaws](https://www.printables.com/model/673240)| Listed only because manufacturer crimpers don't exist. Open barrel crimpers can crimp the wire connection, but the insulation needs to be done with pliers or the TE 160783-7 Crimper HS Jaws|
-| Indicator Lamp | [Red 6x13 mm Neon Bulb](https://www.aliexpress.com/item/2261799834780054.html) - pick the voltage range for your machine <br /> [7.9 mm Clear Heat Shrink Tubing](https://www.aliexpress.com/item/3256804355023361.html) - 2 layers over bulb <br /> [4 mm Silicone Heat Shrink Tube](https://www.aliexpress.com/item/3256801522005095.html) - insulate resistor and leads | Using the stock indicators is easier. Only do this if you really don't want to cut the stock harness.
+| Indicator Lamp | [230 VAC Neon Lamp - 5x12-13 mm](https://www.aliexpress.com/item/3256805272160130.html)<br/> [BN 0.75 (22-18 AWG) crimp ferrules](https://www.aliexpress.com/item/3256807272595471.html)<br/>[7.9 mm Clear Heat Shrink Tubing](https://www.aliexpress.com/item/3256804355023361.html) | Using the stock indicators is easier. Only do this if you really don't want to cut the stock harness.
 | Indicator Lamp Clips | [Gaggia Classic Pro Neon Lamp Clip](https://www.printables.com/model/647745)     | For Pro/Eco/Evo. There is a version for stock lamps as well as a tighter clip for 6 mm dia neon bulbs (adding thickness with heat shrink tubing not needed)       |
 </details>
 
 >
 
-# Custom Wire Harness Schematics
+# Wire Cut List
+<!-- tabs:start -->
+<!-- tab:100-120v -->
+<img width="400" alt="100-120v Cut List" src="schematics/custom-3pln/GC_P_HV_wire_guide_120v.png">
+<!-- tab:220-240v -->
+<img width="400" alt="220-240v Cut List" src="schematics/custom-3pln/GC_P_HV_wire_guide_220v.png">
+<!-- tabs:end -->
+
+# Wire Harness Schematics
 
 > [!Warning|style:callout]
 > * Make sure your control system has been flashed and passed the pre-install test checklist ([PCB](guides-stm32/pcb-guide.md#pre-install-test), [Component (Lego) build](guides-stm32/lego-component-build-guide.md#component-test)). It's much easier to resolve issues prior to integration.
 > * If you have a US Gaggia Classic with a 2 pole power cord and plug then please see the [Grounding](guides/machine-specific-guide.md#Grounding) section of the machine-specific instructions before continuing.
 > * As this wiring completely replaces the stock wiring harness it is expected that the reader can complete the wiring using only the schematics.  
 > * Component builds can use the AC wiring on the schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md).
+> * PCBv3 has the same AC connections as PCBv4; refer to the [PCB page](guides-stm32/pcb-guide.md) for the PCBv3 DC connections if needed. 
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic Pro 100-120v -->
 
-<!-- tabs:start -->
-<!-- tab:PCBv3.1/v4 -->
-<img width="600" alt="GCP 120v" src="schematics/custom-3pln/GCP_wiring_PCBv3_1_120v.png">
-<!-- tab:PCBv3 -->
-<img width="600" alt="GCP 120v" src="schematics/custom-3pln/GCP_wiring_PCBv3_120v.png">
-<!-- tabs:end -->
-
-* Example of the AC portion of the wiring harness:  
-
-    <img width="600" alt="GCP 120v" src="schematics/custom-3pln-examples/GCP_120v.jpg">
+<img width="600" alt="GCP 120v" src="schematics/custom-3pln/GCP_pnp_custom_g3_5_120v.png">
 
 <!-- tab:Gaggia Classic Pro 220-240v -->
 
 *Remember to do the [Power switch mod](guides/machine-specific-guide.md#power-switch-mod) to make it bistable.*  
 
-<!-- tabs:start -->
-<!-- tab:PCBv3.1/v4 -->
-<img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_1_220v.png">
-<!-- tab:PCBv3 -->
-<img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_wiring_PCBv3_220v.png">
-<!-- tabs:end -->
-
-* Example of the AC portion of the wiring harness:  
-
-    <img width="600" alt="GCP 220v" src="schematics/custom-3pln-examples/GCP_220v.jpg">
+<img width="600" alt="GCP 220v" src="schematics/custom-3pln/GCP_pnp_custom_g3_5_220v.png">
 
 <!-- tab:Gaggia Classic 100-120v -->
 
 *Remember to check and add [Grounding](guides/machine-specific-guide.md#grounding) if needed.*  
 
-<!-- tabs:start -->
-<!-- tab:PCBv3.1/v4 -->
-<img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_1_120v.png">
-<!-- tab:PCBv3 -->
-<img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_wiring_PCBv3_120v.png">
-<!-- tabs:end -->
-
-* Example of the AC portion of the wiring harness:  
-
-    <img width="600" alt="GC 120v" src="schematics/custom-3pln-examples/GC_120v.jpg">
+<img width="600" alt="GC 120v" src="schematics/custom-3pln/GC_pnp_custom_g3_5_120v.png">
 
 <!-- tab:Gaggia Classic 220-240v -->
 
-<!-- tabs:start -->
-<!-- tab:PCBv3.1/v4 -->
-<img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_1_220v.png">
-<!-- tab:PCBv3 -->
-<img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_wiring_PCBv3_220v.png">
-<!-- tabs:end -->
-
-* Example of the AC portion of the wiring harness:  
-
-    <img width="600" alt="GC 220v" src="schematics/custom-3pln-examples/GC_220v.jpg">
+<img width="600" alt="GC 220v" src="schematics/custom-3pln/GC_pnp_custom_g3_5_220v.png">
 
 <!-- tabs:end -->
 
 >
 
 # Hardware Install Notes
+
+Remove all stock wiring, thermostats, and eco PCB (if present) from the system before beginning the install. Your control system will be assembled after passing bench test - with a PCB it's easiest to unplug DC components (thermocouple, pressure transducer, screen, etc.), install them in the machine, then plug everything into the PCB at the end. 
 
 ## Thermocouple
 
@@ -130,12 +124,38 @@ Mount the SSR to the back wall of the machine using an M4 (or 8-32) screw, washe
 
 ## Pressure Transducer
 There are two methods of attaching the pressure transducer to the system: 
-* T-Fitting - Tubing between Pump and boiler is cut, a T-fitting is inserted with a pressure transducer on the new branch line.
 * Pressure Tap Block (PTB) - the PTB is fastened between the boiler and inlet fitting, with the pressure transducer attached to the PTB via fittings and PTFE tubing. 
+* T-Fitting - Tubing between Pump and boiler is cut, a T-fitting is inserted with a pressure transducer on the new branch line.
 
 Select the method that matches your components.
 
 <!-- tabs:start -->
+<!-- tab:Pressure Tap Block -->
+
+>[!Note|style:callout|label:2 PTB Versions|iconVisibility:visible]
+> There are 2 different versions of the PTB, designed for compatibility with different manufacturing methods. The LM version is shown; both follow the same assembly process and are compatible with all Gaggia Classic, Pro, Eco, Evo, and E24 models.
+
+The pressure transducer may have a base O-ring (green in pictures), however, the threaded length of the fittings vary and many aren't long enough to seal against the base. Insert the white O-ring (OD 11 mm) into the fitting, adjust flush, then screw in the transducer until hand-tight. You can add 1/4 wrench turn after hand-tight if desired, but **do not overtighten** or you may damage the O-ring and/or not get a pressure reading.
+
+![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/78d801f3-9c4f-4c17-8105-74e32711af09 ':size=500')
+
+Cut a 40 mm length of PTFE tubing, ensuring the ends are square. Screw the fitting into the PTB hand-tight, fully insert the tube into the fitting, and place the O-ring. Fitting variations may result in the thread extending into the water path; ensure it protrudes less than 1 mm (1/4 hole diameter). 
+
+![PTB Assembly](https://github.com/user-attachments/assets/14188d93-508f-4ab4-b003-80f8aeb243a8 ':size=500')
+
+Remove the inlet connector (metal OPV on a GC) by unscrewing the two M5 screws.
+
+![Remove inlet](https://github.com/user-attachments/assets/12e2f8d8-5313-4f5d-b932-4b213ebf22e8 ':size=500')
+
+Clamp the pressure tap block assembly between the group head and the inlet connector (or OPV). O-rings both face toward the group head.
+
+![Clamped PTB Assembly](https://github.com/user-attachments/assets/8cf1157b-b990-41c1-9770-24d7ac5af067 ':size=500')
+
+Plug the pressure transducer assembly onto the PTFE tubing; make sure the tube is fully inserted into the fitting, and the pressure transducer isn't touching any metal components.
+
+![Finished PTB Assembly](https://github.com/user-attachments/assets/53026edc-2026-4144-9714-200cdb2ebf51 ':size=500')
+
+After the install is complete, run flush for 10 seconds (with open group head) to fill the system, then run flush with a blank basket to test pressure.
 <!-- tab:T-Fitting -->
 
 The pressure transducer may have a base O-ring (green in pictures), however, the threaded length of the fittings vary and many aren't long enough to seal against the base. Insert the small white O-ring into the fitting, adjust flush, then screw in the transducer until hand-tight. You can add 1/4 wrench turn after hand-tight if desired, but **do not overtighten** or you may damage the O-ring and/or not get a pressure reading.
@@ -186,43 +206,11 @@ Go to the Brew menu, select the Manual tab, set flow to 1 ml/s and run for ~2 mi
 
 ![Filling the transducer tubing](https://user-images.githubusercontent.com/117388662/239618595-844609d1-7b59-456e-afba-2d2b1bf73374.png ':size=250')
 <!-- tabs:end -->
-
-<!-- tab:Pressure Tap Block -->
-
->[!Note|style:callout|label:2 PTB Versions|iconVisibility:visible]
-> There are 2 different versions of the PTB, designed for compatibility with different manufacturing methods. The LM version is shown; both follow the same assembly process and are compatible with all Gaggia Classic, Pro, Eco, Evo, and E24 models.
-
-The pressure transducer may have a base O-ring (green in pictures), however, the threaded length of the fittings vary and many aren't long enough to seal against the base. Insert the white O-ring (OD 11 mm) into the fitting, adjust flush, then screw in the transducer until hand-tight. You can add 1/4 wrench turn after hand-tight if desired, but **do not overtighten** or you may damage the O-ring and/or not get a pressure reading.
-
-![Transducer and fittings](https://github.com/GAGGIUINO/gaggiuino.github.io/assets/117388662/78d801f3-9c4f-4c17-8105-74e32711af09 ':size=500')
-
-Cut a 40 mm length of PTFE tubing, ensuring the ends are square. Screw the fitting into the PTB hand-tight, fully insert the tube into the fitting, and place the O-ring. Fitting variations may result in the thread extending into the water path; ensure it protrudes less than 1 mm (1/4 hole diameter). 
-
-![PTB Assembly](https://github.com/user-attachments/assets/14188d93-508f-4ab4-b003-80f8aeb243a8 ':size=500')
-
-Remove the inlet connector (metal OPV on a GC) by unscrewing the two M5 screws.
-
-![Remove inlet](https://github.com/user-attachments/assets/12e2f8d8-5313-4f5d-b932-4b213ebf22e8 ':size=500')
-
-Clamp the pressure tap block assembly between the group head and the inlet connector (or OPV). O-rings both face toward the group head.
-
-![Clamped PTB Assembly](https://github.com/user-attachments/assets/8cf1157b-b990-41c1-9770-24d7ac5af067 ':size=500')
-
-Plug the pressure transducer assembly onto the PTFE tubing; make sure the tube is fully inserted into the fitting, and the pressure transducer isn't touching any metal components.
-
-![Finished PTB Assembly](https://github.com/user-attachments/assets/53026edc-2026-4144-9714-200cdb2ebf51 ':size=500')
-
-After the install is complete, run flush for 10 seconds (with open group head) to fill the system, then run flush with a blank basket to test pressure.
-
 <!-- tabs:end -->
 
 ## Internal Finishing Touches
 
-Remove the pins from the screen connector, add a length of heat shrink tubing around the cable bundle so the sharp vent doesn't cut through the soft silicone wire jacket (don't shrink it), and pass the screen wires and ST-Link wires through the back vents. Mount the ST-Link with some double-sided tape.
-
-![Wire pass-through](https://user-images.githubusercontent.com/117388662/239461641-e4f1d5f0-e83c-458c-94ca-61b25a6c7fa0.png ':size=250')
-
-Make sure HV AC wiring and LV DC wiring/sensors are separated. Check that nothing (other than silicone-jacketed wires rated to 200C) can touch the boiler or steam wand. Zip-tie the wire bundle as needed. 
+Make sure HV AC wiring and LV DC wiring/sensors are separated and control system is securely positioned. Check that nothing (other than silicone-jacketed wires rated to 200C) can touch the boiler or steam wand. Zip-tie the wire bundle as needed. 
 
 **Continue the installation by referencing the interface instructions.**  
 

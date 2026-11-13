@@ -1,4 +1,4 @@
-# Control A: PCB
+# Control: PCB
 
 > [!Warning|style:callout]
 > Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
@@ -15,16 +15,16 @@
 <!-- tab:GCP -->
   <!-- tabs:start -->
   <!-- tab:PCBv3.1/v4 -->
-  <img height="400" alt="image" src="schematics/stm32-lv/GCP_wiring_PCBv3_1_LV.png">
+  <img height="400" alt="image" src="schematics/stm32-lv/GCP_g3_5_PCBv4_LV.png">
   <!-- tab:PCBv3 -->
-  <img height="400" alt="image" src="schematics/stm32-lv/GCP_wiring_PCBv3_LV.png">
+  <img height="400" alt="image" src="schematics/stm32-lv/GCP_g3_5_PCBv3_LV.png">
   <!-- tabs:end -->
 <!-- tab:GC -->
   <!-- tabs:start -->
   <!-- tab:PCBv3.1/v4 -->
-  <img height="400" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_1_LV.png">
+  <img height="400" alt="image" src="schematics/stm32-lv/GC_g3_5_PCBv4_LV.png">
   <!-- tab:PCBv3 -->
-  <img height="400" alt="image" src="schematics/stm32-lv/GC_wiring_PCBv3_LV.png">
+  <img height="400" alt="image" src="schematics/stm32-lv/GC_g3_5_PCBv3_LV.png">
   <!-- tabs:end -->
 <!-- tabs:end -->
 

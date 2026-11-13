@@ -1,11 +1,11 @@
-# Wiring A: Stock Wiring Integration
+# Wiring: Stock Wiring Integration
 
 > [!Warning|style:callout]
 > Please understand that modifying your coffee machine involves working with potentially lethal mains level voltage. Do not undertake this project if this makes you uncomfortable. Understanding & utilizing safe electrical practices is critical to your safety and safely completing this project. Only start working on your machine while it's completely disconnected from the mains power socket. By agreeing to follow the below guide, you agree that the authors cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, your friend, or your gold fish. It will be entirely your fault!
 
 <img height="300" alt="Stock Wiring (lego build)" src="media/stock_wiring.jpg">
 
-These instructions detail how to integrate a 3PLN + SSR Gaggiuino control system (such as the [component build](guides-stm32/lego-component-build-guide.md), PCBv2, or PCBv3) into a Gaggia Classic | Pro | Eco espresso machine. They assume that you already have an assembled control system that has successfully completed a bench test.
+These instructions detail how to integrate a 3PLN + SSR Gaggiuino control system (such as PCBv4, PCBv3, or the component (Lego) build) into a Gaggia Classic | Pro | Eco | Evo | E24 espresso machine. They assume that you already have a bench-tested control system.
 
 # What is 3PLN + SSR?
 
@@ -20,7 +20,7 @@ L     | Line              | AC Line voltage
 N     | Neutral           | AC Neutral voltage
 SSR   | Solid-State Relay | Relay placed in-line with the boiler heaters for control
 
-The PCB and component installs have been synchronized to both utilize 3PLN, harmonizing the install process. Although the images shown in this guide may use the component build the install principles and machine connection points are the same for the PCB when using the stock wire harness.
+The PCB and component installs both utilize 3PLN, harmonizing the install process. The install principles and machine connection points are the same for both build types.
 
 # Schematics
 These schematics show the connection points for integrating into the stock wiring harness with 3PLN + SSR. Study both HV and LV pages for your specific machine, as well as the notes on the schematic. In general, HV wiring changes must be made before LV.
@@ -42,19 +42,18 @@ Save the images or right-click and open in a new tab to view at full resolution.
 >
 
 > [!Warning|style:callout]
-> * Stock integration of the 220-240v Gaggia Classic Pro variants with Eco PCB is not recommended. Please use [Custom Wiring](guides-stm32/3pln-custom-wiring.md).
+> * Stock integration of the 220-240v Gaggia Classic Pro variants with Eco PCB is not recommended. Please use [Plug-and-Play/Custom Wiring](guides-stm32/3pln-custom-wiring.md).
 > * Component builds can use the AC wiring on the schematics after completing the [Lego Component Build Guide](guides-stm32/lego-component-build-guide.md). 
-> * The old stock integration diagrams (drawn on manufacturer schematics) have been [archived](archive/archive.md#stock-wiring-integration-schematics)
 
 <!-- tabs:start -->
 <!-- tab:Gaggia Classic Pro 120v -->
-![GCP SI PCB](../schematics/install-stock-3pln/GCP_SI_wiring_PCBv3_1_120v.png ':size=80%')
+![GCP SI PCB](../schematics/install-stock-3pln/GCP_SI_g3_5_120v.png ':size=80%')
 
 <!-- tab:Gaggia Classic 100-120v -->
-![GC SI PCB](../schematics/install-stock-3pln/GC_SI_wiring_PCBv3_1_120v.png ':size=80%')
+![GC SI PCB](../schematics/install-stock-3pln/GC_SI_g3_5_120v.png ':size=80%')
 
 <!-- tab:Gaggia Classic 220-240v -->
-![GC SI PCB](../schematics/install-stock-3pln/GC_SI_wiring_PCBv3_1_220v.png ':size=80%')
+![GC SI PCB](../schematics/install-stock-3pln/GC_SI_g3_5_220v.png ':size=80%')
 
 <!-- tabs:end -->
 
@@ -297,10 +296,6 @@ After the install is complete, run flush for 10 seconds (with open group head) t
 <!-- tabs:end -->
 
 ## Internal Finishing Touches
-
-Remove the pins from the screen connector, add a length of heat shrink tubing around the cable bundle so the sharp vent doesn't cut through the soft silicone wire jacket (don't shrink it), and pass the screen wires and ST-Link wires through the back vents. Mount the ST-Link with some double-sided tape.
-
-![Wire pass-through](https://user-images.githubusercontent.com/117388662/239461641-e4f1d5f0-e83c-458c-94ca-61b25a6c7fa0.png ':size=250')
 
 Make sure HV AC wiring and LV DC wiring/sensors are separated. Check that nothing (other than silicone-jacketed wires rated to 200C) can touch the boiler or steam wand. Zip-tie the wire bundle as needed, ensuring disconnected wires and connectors are constrained so they cannot make accidental contact. Here are examples with a component build enclosure:
 

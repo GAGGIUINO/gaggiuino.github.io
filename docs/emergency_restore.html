@@ -38,19 +38,19 @@
       }
 
       /* Warning box with pulse animation */
-      /* .warning {
+       .warning {
         background: #ffe5e5;
         color: #a10000;
         font-weight: 600;
-        padding: 1rem;
+        padding: 0rem;
         border-radius: 8px;
         text-align: center;
-        margin: 2rem 0;
+        margin: 0rem 0;
         border: 1px solid #ffb3b3;
-        animation: pulse 2.5s infinite;
+        /*animation: pulse 2.5s infinite;*/
       }
 
-      @keyframes pulse {
+      /*@keyframes pulse {
         0%, 100% {
           transform: scale(1);
           opacity: 1;
@@ -153,15 +153,29 @@
       </h1>
 
       <p>
-        This tool is undergoing testing and may not work in all browsers. Please
-        use it only if you have been advised to do so by the Discord artisans.
+        This tool is undergoing testing and may not work in all browsers.
       </p>
 
-      <!-- <div class="warning">
-        ⚠️ DO NOT tick the erase checkbox before hitting the install button —
-        this will brick your device completely!
-      </div> -->
+      <div class="warning">
+        <b>⚠️ Reset erases settings!</b> <br/>Backup PZ, load cell factors, custom profiles, etc. before starting.
+      </div>
+      <p>
+        Recovery Steps:
+        <ul>
+          <li>Connect the screen or headless module directly to a computer using a USB A-C data cable.</li>
+          <li>Select the LCD or Headless option that matches your hardware and then click Connect.</li>
+          <li>Grant browser permission (if necessary) and connect to the USB JTAG/serial debug unit.
+            <br/><i>For the headless module:<br> Hold BOOT, tap RESET, release BOOT before trying to connect to the USB JTAG/serial debug unit. If the unit connects but install fails, try again and continue holding BOOT until starting the install.</i></li>
+          <li>Follow recovery instructions with default settings (note that recovery may take longer than the estimate)</li>
+        </ul>
+        Post-Recovery Steps:
+        <ul>
+          <li>Connect the screen or headless module to a Wi-Fi network</li>
+          <li>Navigate to System Settings &rarr; About and select "Update All" 
+            <br>If the Core build number is zeros then it can't be automatically updated - download and <a href="https://gaggiuino.github.io/#/guides-stm32/mcu-flashing">flash the latest core bin to your STM32</a> with an ST-Link/mini debugger.</li>
+        </ul>
 
+      </p>
       <p style="text-align:center;">Select your install type:</p>
       <ul class="radios">
         <li>
